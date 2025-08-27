@@ -378,7 +378,7 @@ interface CurrentAppSimulator
 
 interface LicenseInformation : Windows.ApplicationModel.Store.ILicenseInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Store.ProductLicense) ProductLicenses()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Store.ProductLicense) _ret;
@@ -411,7 +411,7 @@ extern(Windows):
 
 interface ListingInformation : Windows.ApplicationModel.Store.IListingInformation, Windows.ApplicationModel.Store.IListingInformation2
 {
-extern(Windows):
+extern(D):
 	final wstring CurrentMarket()
 	{
 		HSTRING _ret;
@@ -476,7 +476,7 @@ extern(Windows):
 
 interface ProductLicense : Windows.ApplicationModel.Store.IProductLicense, Windows.ApplicationModel.Store.IProductLicenseWithFulfillment
 {
-extern(Windows):
+extern(D):
 	final wstring ProductId()
 	{
 		HSTRING _ret;
@@ -505,7 +505,7 @@ extern(Windows):
 
 interface ProductListing : Windows.ApplicationModel.Store.IProductListing, Windows.ApplicationModel.Store.IProductListingWithMetadata, Windows.ApplicationModel.Store.IProductListing2
 {
-extern(Windows):
+extern(D):
 	final wstring ProductId()
 	{
 		HSTRING _ret;
@@ -582,7 +582,7 @@ extern(Windows):
 
 interface ProductPurchaseDisplayProperties : Windows.ApplicationModel.Store.IProductPurchaseDisplayProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -630,7 +630,7 @@ extern(Windows):
 
 interface PurchaseResults : Windows.ApplicationModel.Store.IPurchaseResults
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Store.ProductPurchaseStatus Status()
 	{
 		Windows.ApplicationModel.Store.ProductPurchaseStatus _ret;
@@ -659,7 +659,7 @@ extern(Windows):
 
 interface UnfulfilledConsumable : Windows.ApplicationModel.Store.IUnfulfilledConsumable
 {
-extern(Windows):
+extern(D):
 	final wstring ProductId()
 	{
 		HSTRING _ret;

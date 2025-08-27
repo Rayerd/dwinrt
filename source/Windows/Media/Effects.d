@@ -201,7 +201,7 @@ interface IVideoTransformEffectDefinition : IVideoTransformEffectDefinition_Base
 
 interface AudioCaptureEffectsManager : Windows.Media.Effects.IAudioCaptureEffectsManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAudioCaptureEffectsChanged(void delegate(Windows.Media.Effects.AudioCaptureEffectsManager, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -222,7 +222,7 @@ extern(Windows):
 
 interface AudioEffect : Windows.Media.Effects.IAudioEffect
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Effects.AudioEffectType AudioEffectType()
 	{
 		Windows.Media.Effects.AudioEffectType _ret;
@@ -233,7 +233,7 @@ extern(Windows):
 
 interface AudioEffectDefinition : Windows.Media.Effects.IAudioEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -300,7 +300,7 @@ interface AudioEffectsManager
 
 interface AudioRenderEffectsManager : Windows.Media.Effects.IAudioRenderEffectsManager, Windows.Media.Effects.IAudioRenderEffectsManager2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAudioRenderEffectsChanged(void delegate(Windows.Media.Effects.AudioRenderEffectsManager, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -340,7 +340,7 @@ extern(Windows):
 
 interface CompositeVideoFrameContext : Windows.Media.Effects.ICompositeVideoFrameContext
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface) SurfacesToOverlay()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface) _ret;
@@ -369,7 +369,7 @@ extern(Windows):
 
 interface ProcessAudioFrameContext : Windows.Media.Effects.IProcessAudioFrameContext
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.AudioFrame InputFrame()
 	{
 		Windows.Media.AudioFrame _ret;
@@ -386,7 +386,7 @@ extern(Windows):
 
 interface ProcessVideoFrameContext : Windows.Media.Effects.IProcessVideoFrameContext
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.VideoFrame InputFrame()
 	{
 		Windows.Media.VideoFrame _ret;
@@ -403,7 +403,7 @@ extern(Windows):
 
 interface VideoCompositorDefinition : Windows.Media.Effects.IVideoCompositorDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -434,7 +434,7 @@ extern(Windows):
 
 interface VideoEffectDefinition : Windows.Media.Effects.IVideoEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -465,7 +465,7 @@ extern(Windows):
 
 interface VideoTransformEffectDefinition : Windows.Media.Effects.IVideoEffectDefinition, Windows.Media.Effects.IVideoTransformEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;

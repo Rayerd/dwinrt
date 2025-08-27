@@ -32,7 +32,7 @@ extern(Windows):
 
 interface CharacterGrouping : Windows.Globalization.Collation.ICharacterGrouping
 {
-extern(Windows):
+extern(D):
 	final wstring First()
 	{
 		HSTRING _ret;
@@ -49,7 +49,7 @@ extern(Windows):
 
 interface CharacterGroupings : Windows.Globalization.Collation.ICharacterGroupings, Windows.Foundation.Collections.IVectorView!(Windows.Globalization.Collation.CharacterGrouping), Windows.Foundation.Collections.IIterable!(Windows.Globalization.Collation.CharacterGrouping)
 {
-extern(Windows):
+extern(D):
 	final wstring Lookup(wstring text)
 	{
 		HSTRING _ret;

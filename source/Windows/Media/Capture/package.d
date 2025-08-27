@@ -1262,7 +1262,7 @@ extern(Windows):
 
 interface AdvancedCapturedPhoto : Windows.Media.Capture.IAdvancedCapturedPhoto, Windows.Media.Capture.IAdvancedCapturedPhoto2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -1291,7 +1291,7 @@ extern(Windows):
 
 interface AdvancedPhotoCapture : Windows.Media.Capture.IAdvancedPhotoCapture
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.AdvancedCapturedPhoto) CaptureAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.AdvancedCapturedPhoto) _ret;
@@ -1335,7 +1335,7 @@ extern(Windows):
 
 interface AppBroadcastBackgroundService : Windows.Media.Capture.IAppBroadcastBackgroundService
 {
-extern(Windows):
+extern(D):
 	final void PlugInState(Windows.Media.Capture.AppBroadcastPlugInState value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppBroadcastBackgroundService)this.asInterface(uuid("bad1e72a-fa94-46f9-95fc-d71511cda70b"))).set_PlugInState(value));
@@ -1412,7 +1412,7 @@ extern(Windows):
 
 interface AppBroadcastBackgroundServiceSignInInfo : Windows.Media.Capture.IAppBroadcastBackgroundServiceSignInInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastSignInState SignInState()
 	{
 		Windows.Media.Capture.AppBroadcastSignInState _ret;
@@ -1469,7 +1469,7 @@ extern(Windows):
 
 interface AppBroadcastBackgroundServiceStreamInfo : Windows.Media.Capture.IAppBroadcastBackgroundServiceStreamInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastStreamState StreamState()
 	{
 		Windows.Media.Capture.AppBroadcastStreamState _ret;
@@ -1546,7 +1546,7 @@ extern(Windows):
 
 interface AppBroadcastCameraCaptureStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastCameraCaptureStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastCameraCaptureState State()
 	{
 		Windows.Media.Capture.AppBroadcastCameraCaptureState _ret;
@@ -1563,7 +1563,7 @@ extern(Windows):
 
 interface AppBroadcastGlobalSettings : Windows.Media.Capture.IAppBroadcastGlobalSettings
 {
-extern(Windows):
+extern(D):
 	final bool IsBroadcastEnabled()
 	{
 		bool _ret;
@@ -1692,7 +1692,7 @@ extern(Windows):
 
 interface AppBroadcastHeartbeatRequestedEventArgs : Windows.Media.Capture.IAppBroadcastHeartbeatRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void Handled(bool value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppBroadcastHeartbeatRequestedEventArgs)this.asInterface(uuid("cea54283-ee51-4dbf-9472-79a9ed4e2165"))).set_Handled(value));
@@ -1737,7 +1737,7 @@ interface AppBroadcastManager
 
 interface AppBroadcastMicrophoneCaptureStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastMicrophoneCaptureStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastMicrophoneCaptureState State()
 	{
 		Windows.Media.Capture.AppBroadcastMicrophoneCaptureState _ret;
@@ -1754,7 +1754,7 @@ extern(Windows):
 
 interface AppBroadcastPlugIn : Windows.Media.Capture.IAppBroadcastPlugIn
 {
-extern(Windows):
+extern(D):
 	final wstring AppId()
 	{
 		HSTRING _ret;
@@ -1783,7 +1783,7 @@ extern(Windows):
 
 interface AppBroadcastPlugInManager : Windows.Media.Capture.IAppBroadcastPlugInManager
 {
-extern(Windows):
+extern(D):
 	final bool IsBroadcastProviderAvailable()
 	{
 		bool _ret;
@@ -1829,7 +1829,7 @@ extern(Windows):
 
 interface AppBroadcastPlugInStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastPlugInStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastPlugInState PlugInState()
 	{
 		Windows.Media.Capture.AppBroadcastPlugInState _ret;
@@ -1840,7 +1840,7 @@ extern(Windows):
 
 interface AppBroadcastPreview : Windows.Media.Capture.IAppBroadcastPreview
 {
-extern(Windows):
+extern(D):
 	final void StopPreview()
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppBroadcastPreview)this.asInterface(uuid("14b60f5a-6e4a-4b80-a14f-67ee77d153e7"))).abi_StopPreview());
@@ -1877,7 +1877,7 @@ extern(Windows):
 
 interface AppBroadcastPreviewStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastPreviewStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastPreviewState PreviewState()
 	{
 		Windows.Media.Capture.AppBroadcastPreviewState _ret;
@@ -1894,7 +1894,7 @@ extern(Windows):
 
 interface AppBroadcastPreviewStreamReader : Windows.Media.Capture.IAppBroadcastPreviewStreamReader
 {
-extern(Windows):
+extern(D):
 	final UINT32 VideoWidth()
 	{
 		UINT32 _ret;
@@ -1945,7 +1945,7 @@ extern(Windows):
 
 interface AppBroadcastPreviewStreamVideoFrame : Windows.Media.Capture.IAppBroadcastPreviewStreamVideoFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastPreviewStreamVideoHeader VideoHeader()
 	{
 		Windows.Media.Capture.AppBroadcastPreviewStreamVideoHeader _ret;
@@ -1962,7 +1962,7 @@ extern(Windows):
 
 interface AppBroadcastPreviewStreamVideoHeader : Windows.Media.Capture.IAppBroadcastPreviewStreamVideoHeader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime AbsoluteTimestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1991,7 +1991,7 @@ extern(Windows):
 
 interface AppBroadcastProviderSettings : Windows.Media.Capture.IAppBroadcastProviderSettings
 {
-extern(Windows):
+extern(D):
 	final void DefaultBroadcastTitle(wstring value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppBroadcastProviderSettings)this.asInterface(uuid("c30bdf62-9948-458f-ad50-aa06ec03da08"))).set_DefaultBroadcastTitle(hstring(value).handle));
@@ -2066,7 +2066,7 @@ extern(Windows):
 
 interface AppBroadcastServices : Windows.Media.Capture.IAppBroadcastServices
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastCaptureTargetType CaptureTargetType()
 	{
 		Windows.Media.Capture.AppBroadcastCaptureTargetType _ret;
@@ -2147,7 +2147,7 @@ extern(Windows):
 
 interface AppBroadcastSignInStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastSignInStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastSignInState SignInState()
 	{
 		Windows.Media.Capture.AppBroadcastSignInState _ret;
@@ -2164,7 +2164,7 @@ extern(Windows):
 
 interface AppBroadcastState : Windows.Media.Capture.IAppBroadcastState
 {
-extern(Windows):
+extern(D):
 	final bool IsCaptureTargetRunning()
 	{
 		bool _ret;
@@ -2355,7 +2355,7 @@ extern(Windows):
 
 interface AppBroadcastStreamAudioFrame : Windows.Media.Capture.IAppBroadcastStreamAudioFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastStreamAudioHeader AudioHeader()
 	{
 		Windows.Media.Capture.AppBroadcastStreamAudioHeader _ret;
@@ -2372,7 +2372,7 @@ extern(Windows):
 
 interface AppBroadcastStreamAudioHeader : Windows.Media.Capture.IAppBroadcastStreamAudioHeader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime AbsoluteTimestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -2407,7 +2407,7 @@ extern(Windows):
 
 interface AppBroadcastStreamReader : Windows.Media.Capture.IAppBroadcastStreamReader
 {
-extern(Windows):
+extern(D):
 	final UINT32 AudioChannels()
 	{
 		UINT32 _ret;
@@ -2486,7 +2486,7 @@ extern(Windows):
 
 interface AppBroadcastStreamStateChangedEventArgs : Windows.Media.Capture.IAppBroadcastStreamStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastStreamState StreamState()
 	{
 		Windows.Media.Capture.AppBroadcastStreamState _ret;
@@ -2497,7 +2497,7 @@ extern(Windows):
 
 interface AppBroadcastStreamVideoFrame : Windows.Media.Capture.IAppBroadcastStreamVideoFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastStreamVideoHeader VideoHeader()
 	{
 		Windows.Media.Capture.AppBroadcastStreamVideoHeader _ret;
@@ -2514,7 +2514,7 @@ extern(Windows):
 
 interface AppBroadcastStreamVideoHeader : Windows.Media.Capture.IAppBroadcastStreamVideoHeader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime AbsoluteTimestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -2555,7 +2555,7 @@ extern(Windows):
 
 interface AppBroadcastTriggerDetails : Windows.Media.Capture.IAppBroadcastTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppBroadcastBackgroundService BackgroundService()
 	{
 		Windows.Media.Capture.AppBroadcastBackgroundService _ret;
@@ -2566,7 +2566,7 @@ extern(Windows):
 
 interface AppBroadcastViewerCountChangedEventArgs : Windows.Media.Capture.IAppBroadcastViewerCountChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT32 ViewerCount()
 	{
 		UINT32 _ret;
@@ -2577,7 +2577,7 @@ extern(Windows):
 
 interface AppCapture : Windows.Media.Capture.IAppCapture
 {
-extern(Windows):
+extern(D):
 	final bool IsCapturingAudio()
 	{
 		bool _ret;
@@ -2617,7 +2617,7 @@ extern(Windows):
 
 interface AppCaptureAlternateShortcutKeys : Windows.Media.Capture.IAppCaptureAlternateShortcutKeys, Windows.Media.Capture.IAppCaptureAlternateShortcutKeys2, Windows.Media.Capture.IAppCaptureAlternateShortcutKeys3
 {
-extern(Windows):
+extern(D):
 	final void ToggleGameBarKey(Windows.System.VirtualKey value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppCaptureAlternateShortcutKeys)this.asInterface(uuid("19e8e0ef-236c-40f9-b38f-9b7dd65d1ccc"))).set_ToggleGameBarKey(value));
@@ -2782,7 +2782,7 @@ extern(Windows):
 
 interface AppCaptureDurationGeneratedEventArgs : Windows.Media.Capture.IAppCaptureDurationGeneratedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Duration()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -2793,7 +2793,7 @@ extern(Windows):
 
 interface AppCaptureFileGeneratedEventArgs : Windows.Media.Capture.IAppCaptureFileGeneratedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFile File()
 	{
 		Windows.Storage.StorageFile _ret;
@@ -2824,7 +2824,7 @@ interface AppCaptureManager
 
 interface AppCaptureMicrophoneCaptureStateChangedEventArgs : Windows.Media.Capture.IAppCaptureMicrophoneCaptureStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppCaptureMicrophoneCaptureState State()
 	{
 		Windows.Media.Capture.AppCaptureMicrophoneCaptureState _ret;
@@ -2841,7 +2841,7 @@ extern(Windows):
 
 interface AppCaptureRecordOperation : Windows.Media.Capture.IAppCaptureRecordOperation
 {
-extern(Windows):
+extern(D):
 	final void StopRecording()
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppCaptureRecordOperation)this.asInterface(uuid("c66020a9-1538-495c-9bbb-2ba870ec5861"))).abi_StopRecording());
@@ -2910,7 +2910,7 @@ extern(Windows):
 
 interface AppCaptureRecordingStateChangedEventArgs : Windows.Media.Capture.IAppCaptureRecordingStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppCaptureRecordingState State()
 	{
 		Windows.Media.Capture.AppCaptureRecordingState _ret;
@@ -2927,7 +2927,7 @@ extern(Windows):
 
 interface AppCaptureServices : Windows.Media.Capture.IAppCaptureServices
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.AppCaptureRecordOperation Record()
 	{
 		Windows.Media.Capture.AppCaptureRecordOperation _ret;
@@ -2956,7 +2956,7 @@ extern(Windows):
 
 interface AppCaptureSettings : Windows.Media.Capture.IAppCaptureSettings, Windows.Media.Capture.IAppCaptureSettings2, Windows.Media.Capture.IAppCaptureSettings3, Windows.Media.Capture.IAppCaptureSettings4, Windows.Media.Capture.IAppCaptureSettings5
 {
-extern(Windows):
+extern(D):
 	final void AppCaptureDestinationFolder(Windows.Storage.StorageFolder value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IAppCaptureSettings)this.asInterface(uuid("14683a86-8807-48d3-883a-970ee4532a39"))).set_AppCaptureDestinationFolder(value));
@@ -3227,7 +3227,7 @@ extern(Windows):
 
 interface AppCaptureState : Windows.Media.Capture.IAppCaptureState
 {
-extern(Windows):
+extern(D):
 	final bool IsTargetRunning()
 	{
 		bool _ret;
@@ -3290,7 +3290,7 @@ extern(Windows):
 
 interface CameraCaptureUI : Windows.Media.Capture.ICameraCaptureUI
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings PhotoSettings()
 	{
 		Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings _ret;
@@ -3319,7 +3319,7 @@ extern(Windows):
 
 interface CameraCaptureUIPhotoCaptureSettings : Windows.Media.Capture.ICameraCaptureUIPhotoCaptureSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CameraCaptureUIPhotoFormat Format()
 	{
 		Windows.Media.Capture.CameraCaptureUIPhotoFormat _ret;
@@ -3374,7 +3374,7 @@ extern(Windows):
 
 interface CameraCaptureUIVideoCaptureSettings : Windows.Media.Capture.ICameraCaptureUIVideoCaptureSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CameraCaptureUIVideoFormat Format()
 	{
 		Windows.Media.Capture.CameraCaptureUIVideoFormat _ret;
@@ -3433,7 +3433,7 @@ interface CameraOptionsUI
 
 interface CapturedFrame : Windows.Media.Capture.ICapturedFrame, Windows.Storage.Streams.IRandomAccessStreamWithContentType, Windows.Storage.Streams.IContentTypeProvider, Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream, Windows.Media.Capture.ICapturedFrameWithSoftwareBitmap
 {
-extern(Windows):
+extern(D):
 	final UINT32 Width()
 	{
 		UINT32 _ret;
@@ -3534,7 +3534,7 @@ extern(Windows):
 
 interface CapturedFrameControlValues : Windows.Media.Capture.ICapturedFrameControlValues, Windows.Media.Capture.ICapturedFrameControlValues2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) Exposure()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) _ret;
@@ -3623,7 +3623,7 @@ extern(Windows):
 
 interface CapturedPhoto : Windows.Media.Capture.ICapturedPhoto
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -3640,7 +3640,7 @@ extern(Windows):
 
 interface GameBarServices : Windows.Media.Capture.IGameBarServices
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.GameBarTargetCapturePolicy TargetCapturePolicy()
 	{
 		Windows.Media.Capture.GameBarTargetCapturePolicy _ret;
@@ -3693,7 +3693,7 @@ extern(Windows):
 
 interface GameBarServicesCommandEventArgs : Windows.Media.Capture.IGameBarServicesCommandEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.GameBarCommand Command()
 	{
 		Windows.Media.Capture.GameBarCommand _ret;
@@ -3710,7 +3710,7 @@ extern(Windows):
 
 interface GameBarServicesManager : Windows.Media.Capture.IGameBarServicesManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnGameBarServicesCreated(void delegate(Windows.Media.Capture.GameBarServicesManager, Windows.Media.Capture.GameBarServicesManagerGameBarServicesCreatedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -3738,7 +3738,7 @@ extern(Windows):
 
 interface GameBarServicesManagerGameBarServicesCreatedEventArgs : Windows.Media.Capture.IGameBarServicesManagerGameBarServicesCreatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.GameBarServices GameBarServices()
 	{
 		Windows.Media.Capture.GameBarServices _ret;
@@ -3749,7 +3749,7 @@ extern(Windows):
 
 interface GameBarServicesTargetInfo : Windows.Media.Capture.IGameBarServicesTargetInfo
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -3778,7 +3778,7 @@ extern(Windows):
 
 interface LowLagMediaRecording : Windows.Media.Capture.ILowLagMediaRecording, Windows.Media.Capture.ILowLagMediaRecording2, Windows.Media.Capture.ILowLagMediaRecording3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction StartAsync()
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -3825,7 +3825,7 @@ extern(Windows):
 
 interface LowLagPhotoCapture : Windows.Media.Capture.ILowLagPhotoCapture
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.CapturedPhoto) CaptureAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.CapturedPhoto) _ret;
@@ -3842,7 +3842,7 @@ extern(Windows):
 
 interface LowLagPhotoSequenceCapture : Windows.Media.Capture.ILowLagPhotoSequenceCapture
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction StartAsync()
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -3875,7 +3875,7 @@ extern(Windows):
 
 interface MediaCapture : Windows.Media.Capture.IMediaCapture, Windows.Media.Capture.IMediaCaptureVideoPreview, Windows.Media.Capture.IMediaCapture2, Windows.Foundation.IClosable, Windows.Media.Capture.IMediaCapture3, Windows.Media.Capture.IMediaCapture4, Windows.Media.Capture.IMediaCapture5, Windows.Media.Capture.IMediaCapture6
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction InitializeAsync()
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -4297,7 +4297,7 @@ extern(Windows):
 
 interface MediaCaptureDeviceExclusiveControlStatusChangedEventArgs : Windows.Media.Capture.IMediaCaptureDeviceExclusiveControlStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -4314,7 +4314,7 @@ extern(Windows):
 
 interface MediaCaptureFailedEventArgs : Windows.Media.Capture.IMediaCaptureFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Message()
 	{
 		HSTRING _ret;
@@ -4331,7 +4331,7 @@ extern(Windows):
 
 interface MediaCaptureFocusChangedEventArgs : Windows.Media.Capture.IMediaCaptureFocusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.MediaCaptureFocusState FocusState()
 	{
 		Windows.Media.Devices.MediaCaptureFocusState _ret;
@@ -4342,7 +4342,7 @@ extern(Windows):
 
 interface MediaCaptureInitializationSettings : Windows.Media.Capture.IMediaCaptureInitializationSettings, Windows.Media.Capture.IMediaCaptureInitializationSettings2, Windows.Media.Capture.IMediaCaptureInitializationSettings3, Windows.Media.Capture.IMediaCaptureInitializationSettings4, Windows.Media.Capture.IMediaCaptureInitializationSettings5, Windows.Media.Capture.IMediaCaptureInitializationSettings6
 {
-extern(Windows):
+extern(D):
 	final void AudioDeviceId(wstring value)
 	{
 		Debug.OK((cast(Windows.Media.Capture.IMediaCaptureInitializationSettings)this.asInterface(uuid("9782ba70-ea65-4900-9356-8ca887726884"))).set_AudioDeviceId(hstring(value).handle));
@@ -4513,7 +4513,7 @@ extern(Windows):
 
 interface MediaCapturePauseResult : Windows.Media.Capture.IMediaCapturePauseResult, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.VideoFrame LastFrame()
 	{
 		Windows.Media.VideoFrame _ret;
@@ -4534,7 +4534,7 @@ extern(Windows):
 
 interface MediaCaptureSettings : Windows.Media.Capture.IMediaCaptureSettings, Windows.Media.Capture.IMediaCaptureSettings2
 {
-extern(Windows):
+extern(D):
 	final wstring AudioDeviceId()
 	{
 		HSTRING _ret;
@@ -4617,7 +4617,7 @@ extern(Windows):
 
 interface MediaCaptureStopResult : Windows.Media.Capture.IMediaCaptureStopResult, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.VideoFrame LastFrame()
 	{
 		Windows.Media.VideoFrame _ret;
@@ -4638,7 +4638,7 @@ extern(Windows):
 
 interface MediaCaptureVideoProfile : Windows.Media.Capture.IMediaCaptureVideoProfile
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -4679,7 +4679,7 @@ extern(Windows):
 
 interface MediaCaptureVideoProfileMediaDescription : Windows.Media.Capture.IMediaCaptureVideoProfileMediaDescription
 {
-extern(Windows):
+extern(D):
 	final UINT32 Width()
 	{
 		UINT32 _ret;
@@ -4714,7 +4714,7 @@ extern(Windows):
 
 interface OptionalReferencePhotoCapturedEventArgs : Windows.Media.Capture.IOptionalReferencePhotoCapturedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -4731,7 +4731,7 @@ extern(Windows):
 
 interface PhotoCapturedEventArgs : Windows.Media.Capture.IPhotoCapturedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -4754,7 +4754,7 @@ extern(Windows):
 
 interface PhotoConfirmationCapturedEventArgs : Windows.Media.Capture.IPhotoConfirmationCapturedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -4771,7 +4771,7 @@ extern(Windows):
 
 interface VideoStreamConfiguration : Windows.Media.Capture.IVideoStreamConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.VideoEncodingProperties InputProperties()
 	{
 		Windows.Media.MediaProperties.VideoEncodingProperties _ret;

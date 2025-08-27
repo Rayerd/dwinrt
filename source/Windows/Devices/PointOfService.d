@@ -1058,7 +1058,7 @@ extern(Windows):
 
 interface BarcodeScanner : Windows.Devices.PointOfService.IBarcodeScanner, Windows.Devices.PointOfService.IBarcodeScanner2, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1162,7 +1162,7 @@ extern(Windows):
 
 interface BarcodeScannerCapabilities : Windows.Devices.PointOfService.IBarcodeScannerCapabilities, Windows.Devices.PointOfService.IBarcodeScannerCapabilities1
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.UnifiedPosPowerReportingType PowerReportingType()
 	{
 		Windows.Devices.PointOfService.UnifiedPosPowerReportingType _ret;
@@ -1197,7 +1197,7 @@ extern(Windows):
 
 interface BarcodeScannerDataReceivedEventArgs : Windows.Devices.PointOfService.IBarcodeScannerDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.BarcodeScannerReport Report()
 	{
 		Windows.Devices.PointOfService.BarcodeScannerReport _ret;
@@ -1208,7 +1208,7 @@ extern(Windows):
 
 interface BarcodeScannerErrorOccurredEventArgs : Windows.Devices.PointOfService.IBarcodeScannerErrorOccurredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.BarcodeScannerReport PartialInputData()
 	{
 		Windows.Devices.PointOfService.BarcodeScannerReport _ret;
@@ -1231,7 +1231,7 @@ extern(Windows):
 
 interface BarcodeScannerImagePreviewReceivedEventArgs : Windows.Devices.PointOfService.IBarcodeScannerImagePreviewReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStreamWithContentType Preview()
 	{
 		Windows.Storage.Streams.IRandomAccessStreamWithContentType _ret;
@@ -1242,7 +1242,7 @@ extern(Windows):
 
 interface BarcodeScannerReport : Windows.Devices.PointOfService.IBarcodeScannerReport
 {
-extern(Windows):
+extern(D):
 	final UINT32 ScanDataType()
 	{
 		UINT32 _ret;
@@ -1265,7 +1265,7 @@ extern(Windows):
 
 interface BarcodeScannerStatusUpdatedEventArgs : Windows.Devices.PointOfService.IBarcodeScannerStatusUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.BarcodeScannerStatus Status()
 	{
 		Windows.Devices.PointOfService.BarcodeScannerStatus _ret;
@@ -1856,7 +1856,7 @@ interface BarcodeSymbologies
 
 interface BarcodeSymbologyAttributes : Windows.Devices.PointOfService.IBarcodeSymbologyAttributes
 {
-extern(Windows):
+extern(D):
 	final bool IsCheckDigitValidationEnabled()
 	{
 		bool _ret;
@@ -1929,7 +1929,7 @@ extern(Windows):
 
 interface CashDrawer : Windows.Devices.PointOfService.ICashDrawer, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2021,7 +2021,7 @@ extern(Windows):
 
 interface CashDrawerCapabilities : Windows.Devices.PointOfService.ICashDrawerCapabilities
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.UnifiedPosPowerReportingType PowerReportingType()
 	{
 		Windows.Devices.PointOfService.UnifiedPosPowerReportingType _ret;
@@ -2062,7 +2062,7 @@ extern(Windows):
 
 interface CashDrawerCloseAlarm : Windows.Devices.PointOfService.ICashDrawerCloseAlarm
 {
-extern(Windows):
+extern(D):
 	final void AlarmTimeout(Windows.Foundation.TimeSpan value)
 	{
 		Debug.OK((cast(Windows.Devices.PointOfService.ICashDrawerCloseAlarm)this.asInterface(uuid("6bf88cc7-6f63-430e-ab3b-95d75ffbe87f"))).set_AlarmTimeout(value));
@@ -2123,7 +2123,7 @@ extern(Windows):
 
 interface CashDrawerClosedEventArgs : Windows.Devices.PointOfService.ICashDrawerEventSourceEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.CashDrawer CashDrawer()
 	{
 		Windows.Devices.PointOfService.CashDrawer _ret;
@@ -2134,7 +2134,7 @@ extern(Windows):
 
 interface CashDrawerEventSource : Windows.Devices.PointOfService.ICashDrawerEventSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnDrawerClosed(void delegate(Windows.Devices.PointOfService.CashDrawerEventSource, Windows.Devices.PointOfService.CashDrawerClosedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2159,7 +2159,7 @@ extern(Windows):
 
 interface CashDrawerOpenedEventArgs : Windows.Devices.PointOfService.ICashDrawerEventSourceEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.CashDrawer CashDrawer()
 	{
 		Windows.Devices.PointOfService.CashDrawer _ret;
@@ -2170,7 +2170,7 @@ extern(Windows):
 
 interface CashDrawerStatus : Windows.Devices.PointOfService.ICashDrawerStatus
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.CashDrawerStatusKind StatusKind()
 	{
 		Windows.Devices.PointOfService.CashDrawerStatusKind _ret;
@@ -2187,7 +2187,7 @@ extern(Windows):
 
 interface CashDrawerStatusUpdatedEventArgs : Windows.Devices.PointOfService.ICashDrawerStatusUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.CashDrawerStatus Status()
 	{
 		Windows.Devices.PointOfService.CashDrawerStatus _ret;
@@ -2198,7 +2198,7 @@ extern(Windows):
 
 interface ClaimedBarcodeScanner : Windows.Devices.PointOfService.IClaimedBarcodeScanner, Windows.Foundation.IClosable, Windows.Devices.PointOfService.IClaimedBarcodeScanner1, Windows.Devices.PointOfService.IClaimedBarcodeScanner2
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2363,7 +2363,7 @@ extern(Windows):
 
 interface ClaimedCashDrawer : Windows.Devices.PointOfService.IClaimedCashDrawer, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2442,7 +2442,7 @@ extern(Windows):
 
 interface ClaimedJournalPrinter : Windows.Devices.PointOfService.IClaimedJournalPrinter, Windows.Devices.PointOfService.ICommonClaimedPosPrinterStation
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.JournalPrintJob CreateJob()
 	{
 		Windows.Devices.PointOfService.JournalPrintJob _ret;
@@ -2557,7 +2557,7 @@ extern(Windows):
 
 interface ClaimedLineDisplay : Windows.Devices.PointOfService.IClaimedLineDisplay, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2654,7 +2654,7 @@ extern(Windows):
 
 interface ClaimedMagneticStripeReader : Windows.Devices.PointOfService.IClaimedMagneticStripeReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2837,7 +2837,7 @@ extern(Windows):
 
 interface ClaimedPosPrinter : Windows.Devices.PointOfService.IClaimedPosPrinter, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2952,7 +2952,7 @@ extern(Windows):
 
 interface ClaimedReceiptPrinter : Windows.Devices.PointOfService.IClaimedReceiptPrinter, Windows.Devices.PointOfService.ICommonClaimedPosPrinterStation
 {
-extern(Windows):
+extern(D):
 	final UINT32 SidewaysMaxLines()
 	{
 		UINT32 _ret;
@@ -3097,7 +3097,7 @@ extern(Windows):
 
 interface ClaimedSlipPrinter : Windows.Devices.PointOfService.IClaimedSlipPrinter, Windows.Devices.PointOfService.ICommonClaimedPosPrinterStation
 {
-extern(Windows):
+extern(D):
 	final UINT32 SidewaysMaxLines()
 	{
 		UINT32 _ret;
@@ -3278,7 +3278,7 @@ extern(Windows):
 
 interface JournalPrintJob : Windows.Devices.PointOfService.IPosPrinterJob
 {
-extern(Windows):
+extern(D):
 	final void Print(wstring data)
 	{
 		Debug.OK((cast(Windows.Devices.PointOfService.IPosPrinterJob)this.asInterface(uuid("9a94005c-0615-4591-a58f-30f87edfe2e4"))).abi_Print(hstring(data).handle));
@@ -3302,7 +3302,7 @@ extern(Windows):
 
 interface JournalPrinterCapabilities : Windows.Devices.PointOfService.IJournalPrinterCapabilities, Windows.Devices.PointOfService.ICommonPosPrintStationCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool IsPrinterPresent()
 	{
 		bool _ret;
@@ -3385,7 +3385,7 @@ extern(Windows):
 
 interface LineDisplay : Windows.Devices.PointOfService.ILineDisplay, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -3474,7 +3474,7 @@ extern(Windows):
 
 interface LineDisplayCapabilities : Windows.Devices.PointOfService.ILineDisplayCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool IsStatisticsReportingSupported()
 	{
 		bool _ret;
@@ -3587,7 +3587,7 @@ extern(Windows):
 
 interface LineDisplayWindow : Windows.Devices.PointOfService.ILineDisplayWindow, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size SizeInCharacters()
 	{
 		Windows.Foundation.Size _ret;
@@ -3650,7 +3650,7 @@ extern(Windows):
 
 interface MagneticStripeReader : Windows.Devices.PointOfService.IMagneticStripeReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -3742,7 +3742,7 @@ extern(Windows):
 
 interface MagneticStripeReaderAamvaCardDataReceivedEventArgs : Windows.Devices.PointOfService.IMagneticStripeReaderAamvaCardDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.MagneticStripeReaderReport Report()
 	{
 		Windows.Devices.PointOfService.MagneticStripeReaderReport _ret;
@@ -3861,7 +3861,7 @@ extern(Windows):
 
 interface MagneticStripeReaderBankCardDataReceivedEventArgs : Windows.Devices.PointOfService.IMagneticStripeReaderBankCardDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.MagneticStripeReaderReport Report()
 	{
 		Windows.Devices.PointOfService.MagneticStripeReaderReport _ret;
@@ -3920,7 +3920,7 @@ extern(Windows):
 
 interface MagneticStripeReaderCapabilities : Windows.Devices.PointOfService.IMagneticStripeReaderCapabilities
 {
-extern(Windows):
+extern(D):
 	final wstring CardAuthentication()
 	{
 		HSTRING _ret;
@@ -4053,7 +4053,7 @@ interface MagneticStripeReaderEncryptionAlgorithms
 
 interface MagneticStripeReaderErrorOccurredEventArgs : Windows.Devices.PointOfService.IMagneticStripeReaderErrorOccurredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType Track1Status()
 	{
 		Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType _ret;
@@ -4094,7 +4094,7 @@ extern(Windows):
 
 interface MagneticStripeReaderReport : Windows.Devices.PointOfService.IMagneticStripeReaderReport
 {
-extern(Windows):
+extern(D):
 	final UINT32 CardType()
 	{
 		UINT32 _ret;
@@ -4153,7 +4153,7 @@ extern(Windows):
 
 interface MagneticStripeReaderStatusUpdatedEventArgs : Windows.Devices.PointOfService.IMagneticStripeReaderStatusUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.MagneticStripeReaderStatus Status()
 	{
 		Windows.Devices.PointOfService.MagneticStripeReaderStatus _ret;
@@ -4170,7 +4170,7 @@ extern(Windows):
 
 interface MagneticStripeReaderTrackData : Windows.Devices.PointOfService.IMagneticStripeReaderTrackData
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Data()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -4193,7 +4193,7 @@ extern(Windows):
 
 interface MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs : Windows.Devices.PointOfService.IMagneticStripeReaderVendorSpecificCardDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.MagneticStripeReaderReport Report()
 	{
 		Windows.Devices.PointOfService.MagneticStripeReaderReport _ret;
@@ -4204,7 +4204,7 @@ extern(Windows):
 
 interface PosPrinter : Windows.Devices.PointOfService.IPosPrinter, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -4296,7 +4296,7 @@ extern(Windows):
 
 interface PosPrinterCapabilities : Windows.Devices.PointOfService.IPosPrinterCapabilities
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.UnifiedPosPowerReportingType PowerReportingType()
 	{
 		Windows.Devices.PointOfService.UnifiedPosPowerReportingType _ret;
@@ -4393,7 +4393,7 @@ interface PosPrinterReleaseDeviceRequestedEventArgs : Windows.Devices.PointOfSer
 
 interface PosPrinterStatus : Windows.Devices.PointOfService.IPosPrinterStatus
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.PosPrinterStatusKind StatusKind()
 	{
 		Windows.Devices.PointOfService.PosPrinterStatusKind _ret;
@@ -4410,7 +4410,7 @@ extern(Windows):
 
 interface PosPrinterStatusUpdatedEventArgs : Windows.Devices.PointOfService.IPosPrinterStatusUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.PointOfService.PosPrinterStatus Status()
 	{
 		Windows.Devices.PointOfService.PosPrinterStatus _ret;
@@ -4421,7 +4421,7 @@ extern(Windows):
 
 interface ReceiptPrintJob : Windows.Devices.PointOfService.IReceiptPrintJob, Windows.Devices.PointOfService.IReceiptOrSlipJob, Windows.Devices.PointOfService.IPosPrinterJob
 {
-extern(Windows):
+extern(D):
 	final void MarkFeed(Windows.Devices.PointOfService.PosPrinterMarkFeedKind kind)
 	{
 		Debug.OK((cast(Windows.Devices.PointOfService.IReceiptPrintJob)this.asInterface(uuid("aa96066e-acad-4b79-9d0f-c0cfc08dc77b"))).abi_MarkFeed(kind));
@@ -4522,7 +4522,7 @@ extern(Windows):
 
 interface ReceiptPrinterCapabilities : Windows.Devices.PointOfService.IReceiptPrinterCapabilities, Windows.Devices.PointOfService.ICommonReceiptSlipCapabilities, Windows.Devices.PointOfService.ICommonPosPrintStationCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool CanCutPaper()
 	{
 		bool _ret;
@@ -4677,7 +4677,7 @@ extern(Windows):
 
 interface SlipPrintJob : Windows.Devices.PointOfService.IReceiptOrSlipJob, Windows.Devices.PointOfService.IPosPrinterJob
 {
-extern(Windows):
+extern(D):
 	final void SetBarcodeRotation(Windows.Devices.PointOfService.PosPrinterRotation value)
 	{
 		Debug.OK((cast(Windows.Devices.PointOfService.IReceiptOrSlipJob)this.asInterface(uuid("532199be-c8c3-4dc2-89e9-5c4a37b34ddc"))).abi_SetBarcodeRotation(value));
@@ -4765,7 +4765,7 @@ extern(Windows):
 
 interface SlipPrinterCapabilities : Windows.Devices.PointOfService.ISlipPrinterCapabilities, Windows.Devices.PointOfService.ICommonReceiptSlipCapabilities, Windows.Devices.PointOfService.ICommonPosPrintStationCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool IsFullLengthSupported()
 	{
 		bool _ret;
@@ -4914,7 +4914,7 @@ extern(Windows):
 
 interface UnifiedPosErrorData : Windows.Devices.PointOfService.IUnifiedPosErrorData
 {
-extern(Windows):
+extern(D):
 	final wstring Message()
 	{
 		HSTRING _ret;

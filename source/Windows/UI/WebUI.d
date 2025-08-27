@@ -163,7 +163,7 @@ extern(Windows):
 
 interface ActivatedDeferral : Windows.UI.WebUI.IActivatedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.WebUI.IActivatedDeferral)this.asInterface(uuid("c3bd1978-a431-49d8-a76a-395a4e03dcf3"))).abi_Complete());
@@ -172,7 +172,7 @@ extern(Windows):
 
 interface ActivatedOperation : Windows.UI.WebUI.IActivatedOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.WebUI.ActivatedDeferral GetDeferral()
 	{
 		Windows.UI.WebUI.ActivatedDeferral _ret;
@@ -183,7 +183,7 @@ extern(Windows):
 
 interface EnteredBackgroundEventArgs : Windows.ApplicationModel.IEnteredBackgroundEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -194,7 +194,7 @@ extern(Windows):
 
 interface HtmlPrintDocumentSource : Windows.UI.WebUI.IHtmlPrintDocumentSource, Windows.Graphics.Printing.IPrintDocumentSource, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.WebUI.PrintContent Content()
 	{
 		Windows.UI.WebUI.PrintContent _ret;
@@ -295,7 +295,7 @@ extern(Windows):
 
 interface LeavingBackgroundEventArgs : Windows.ApplicationModel.ILeavingBackgroundEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -306,7 +306,7 @@ extern(Windows):
 
 interface SuspendingDeferral : Windows.ApplicationModel.ISuspendingDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.ISuspendingDeferral)this.asInterface(uuid("59140509-8bc9-4eb4-b636-dabdc4f46f66"))).abi_Complete());
@@ -315,7 +315,7 @@ extern(Windows):
 
 interface SuspendingEventArgs : Windows.ApplicationModel.ISuspendingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.SuspendingOperation SuspendingOperation()
 	{
 		Windows.ApplicationModel.SuspendingOperation _ret;
@@ -326,7 +326,7 @@ extern(Windows):
 
 interface SuspendingOperation : Windows.ApplicationModel.ISuspendingOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.SuspendingDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.SuspendingDeferral _ret;
@@ -393,7 +393,7 @@ interface WebUIApplication
 
 interface WebUIAppointmentsProviderAddAppointmentActivatedEventArgs : Windows.ApplicationModel.Activation.IAppointmentsProviderAddAppointmentActivatedEventArgs, Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation AddAppointmentOperation()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation _ret;
@@ -440,7 +440,7 @@ extern(Windows):
 
 interface WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs : Windows.ApplicationModel.Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgs, Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation RemoveAppointmentOperation()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation _ret;
@@ -487,7 +487,7 @@ extern(Windows):
 
 interface WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs : Windows.ApplicationModel.Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgs, Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation ReplaceAppointmentOperation()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation _ret;
@@ -534,7 +534,7 @@ extern(Windows):
 
 interface WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs : Windows.ApplicationModel.Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs, Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) InstanceStartDate()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -593,7 +593,7 @@ extern(Windows):
 
 interface WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs : Windows.ApplicationModel.Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgs, Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime TimeToShow()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -662,7 +662,7 @@ interface WebUIBackgroundTaskInstance
 
 interface WebUIBackgroundTaskInstanceRuntimeClass : Windows.UI.WebUI.IWebUIBackgroundTaskInstance, Windows.ApplicationModel.Background.IBackgroundTaskInstance
 {
-extern(Windows):
+extern(D):
 	final bool Succeeded()
 	{
 		bool _ret;
@@ -727,7 +727,7 @@ extern(Windows):
 
 interface WebUICachedFileUpdaterActivatedEventArgs : Windows.ApplicationModel.Activation.ICachedFileUpdaterActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Provider.CachedFileUpdaterUI CachedFileUpdaterUI()
 	{
 		Windows.Storage.Provider.CachedFileUpdaterUI _ret;
@@ -768,7 +768,7 @@ extern(Windows):
 
 interface WebUICameraSettingsActivatedEventArgs : Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final IInspectable VideoDeviceController()
 	{
 		IInspectable _ret;
@@ -809,7 +809,7 @@ extern(Windows):
 
 interface WebUIContactCallActivatedEventArgs : Windows.ApplicationModel.Activation.IContactCallActivatedEventArgs, Windows.ApplicationModel.Activation.IContactActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceId()
 	{
 		HSTRING _ret;
@@ -862,7 +862,7 @@ extern(Windows):
 
 interface WebUIContactMapActivatedEventArgs : Windows.ApplicationModel.Activation.IContactMapActivatedEventArgs, Windows.ApplicationModel.Activation.IContactActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactAddress Address()
 	{
 		Windows.ApplicationModel.Contacts.ContactAddress _ret;
@@ -909,7 +909,7 @@ extern(Windows):
 
 interface WebUIContactMessageActivatedEventArgs : Windows.ApplicationModel.Activation.IContactMessageActivatedEventArgs, Windows.ApplicationModel.Activation.IContactActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceId()
 	{
 		HSTRING _ret;
@@ -962,7 +962,7 @@ extern(Windows):
 
 interface WebUIContactPanelActivatedEventArgs : Windows.ApplicationModel.Activation.IContactPanelActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactPanel ContactPanel()
 	{
 		Windows.ApplicationModel.Contacts.ContactPanel _ret;
@@ -1009,7 +1009,7 @@ extern(Windows):
 
 interface WebUIContactPickerActivatedEventArgs : Windows.ApplicationModel.Activation.IContactPickerActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.Provider.ContactPickerUI ContactPickerUI()
 	{
 		Windows.ApplicationModel.Contacts.Provider.ContactPickerUI _ret;
@@ -1044,7 +1044,7 @@ extern(Windows):
 
 interface WebUIContactPostActivatedEventArgs : Windows.ApplicationModel.Activation.IContactPostActivatedEventArgs, Windows.ApplicationModel.Activation.IContactActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceId()
 	{
 		HSTRING _ret;
@@ -1097,7 +1097,7 @@ extern(Windows):
 
 interface WebUIContactVideoCallActivatedEventArgs : Windows.ApplicationModel.Activation.IContactVideoCallActivatedEventArgs, Windows.ApplicationModel.Activation.IContactActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceId()
 	{
 		HSTRING _ret;
@@ -1150,7 +1150,7 @@ extern(Windows):
 
 interface WebUIDeviceActivatedEventArgs : Windows.ApplicationModel.Activation.IDeviceActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceInformationId()
 	{
 		HSTRING _ret;
@@ -1203,7 +1203,7 @@ extern(Windows):
 
 interface WebUIDevicePairingActivatedEventArgs : Windows.ApplicationModel.Activation.IDevicePairingActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation DeviceInformation()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -1244,7 +1244,7 @@ extern(Windows):
 
 interface WebUIDialReceiverActivatedEventArgs : Windows.ApplicationModel.Activation.IDialReceiverActivatedEventArgs, Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final wstring AppName()
 	{
 		HSTRING _ret;
@@ -1303,7 +1303,7 @@ extern(Windows):
 
 interface WebUIFileActivatedEventArgs : Windows.ApplicationModel.Activation.IFileActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IFileActivatedEventArgsWithNeighboringFiles, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Storage.IStorageItem) Files()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Storage.IStorageItem) _ret;
@@ -1362,7 +1362,7 @@ extern(Windows):
 
 interface WebUIFileOpenPickerActivatedEventArgs : Windows.ApplicationModel.Activation.IFileOpenPickerActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IFileOpenPickerActivatedEventArgs2, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.FileOpenPickerUI FileOpenPickerUI()
 	{
 		Windows.Storage.Pickers.Provider.FileOpenPickerUI _ret;
@@ -1409,7 +1409,7 @@ extern(Windows):
 
 interface WebUIFileOpenPickerContinuationEventArgs : Windows.ApplicationModel.Activation.IFileOpenPickerContinuationEventArgs, Windows.ApplicationModel.Activation.IContinuationActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile) Files()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile) _ret;
@@ -1456,7 +1456,7 @@ extern(Windows):
 
 interface WebUIFileSavePickerActivatedEventArgs : Windows.ApplicationModel.Activation.IFileSavePickerActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IFileSavePickerActivatedEventArgs2, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.FileSavePickerUI FileSavePickerUI()
 	{
 		Windows.Storage.Pickers.Provider.FileSavePickerUI _ret;
@@ -1509,7 +1509,7 @@ extern(Windows):
 
 interface WebUIFileSavePickerContinuationEventArgs : Windows.ApplicationModel.Activation.IFileSavePickerContinuationEventArgs, Windows.ApplicationModel.Activation.IContinuationActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFile File()
 	{
 		Windows.Storage.StorageFile _ret;
@@ -1556,7 +1556,7 @@ extern(Windows):
 
 interface WebUIFolderPickerContinuationEventArgs : Windows.ApplicationModel.Activation.IFolderPickerContinuationEventArgs, Windows.ApplicationModel.Activation.IContinuationActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFolder Folder()
 	{
 		Windows.Storage.StorageFolder _ret;
@@ -1603,7 +1603,7 @@ extern(Windows):
 
 interface WebUILaunchActivatedEventArgs : Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IPrelaunchActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final wstring Arguments()
 	{
 		HSTRING _ret;
@@ -1662,7 +1662,7 @@ extern(Windows):
 
 interface WebUILockScreenActivatedEventArgs : Windows.ApplicationModel.Activation.ILockScreenActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final IInspectable Info()
 	{
 		IInspectable _ret;
@@ -1709,7 +1709,7 @@ extern(Windows):
 
 interface WebUILockScreenCallActivatedEventArgs : Windows.ApplicationModel.Activation.ILockScreenCallActivatedEventArgs, Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.LockScreenCallUI CallUI()
 	{
 		Windows.ApplicationModel.Calls.LockScreenCallUI _ret;
@@ -1762,7 +1762,7 @@ extern(Windows):
 
 interface WebUILockScreenComponentActivatedEventArgs : Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Activation.ActivationKind Kind()
 	{
 		Windows.ApplicationModel.Activation.ActivationKind _ret;
@@ -1791,7 +1791,7 @@ extern(Windows):
 
 interface WebUINavigatedDeferral : Windows.UI.WebUI.IWebUINavigatedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.WebUI.IWebUINavigatedDeferral)this.asInterface(uuid("d804204d-831f-46e2-b432-3afce211f962"))).abi_Complete());
@@ -1800,7 +1800,7 @@ extern(Windows):
 
 interface WebUINavigatedEventArgs : Windows.UI.WebUI.IWebUINavigatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.WebUI.WebUINavigatedOperation NavigatedOperation()
 	{
 		Windows.UI.WebUI.WebUINavigatedOperation _ret;
@@ -1811,7 +1811,7 @@ extern(Windows):
 
 interface WebUINavigatedOperation : Windows.UI.WebUI.IWebUINavigatedOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.WebUI.WebUINavigatedDeferral GetDeferral()
 	{
 		Windows.UI.WebUI.WebUINavigatedDeferral _ret;
@@ -1822,7 +1822,7 @@ extern(Windows):
 
 interface WebUIPrint3DWorkflowActivatedEventArgs : Windows.ApplicationModel.Activation.IPrint3DWorkflowActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Printers.Extensions.Print3DWorkflow Workflow()
 	{
 		Windows.Devices.Printers.Extensions.Print3DWorkflow _ret;
@@ -1857,7 +1857,7 @@ extern(Windows):
 
 interface WebUIPrintTaskSettingsActivatedEventArgs : Windows.ApplicationModel.Activation.IPrintTaskSettingsActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Printers.Extensions.PrintTaskConfiguration Configuration()
 	{
 		Windows.Devices.Printers.Extensions.PrintTaskConfiguration _ret;
@@ -1892,7 +1892,7 @@ extern(Windows):
 
 interface WebUIPrintWorkflowForegroundTaskActivatedEventArgs : Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Activation.ActivationKind Kind()
 	{
 		Windows.ApplicationModel.Activation.ActivationKind _ret;
@@ -1921,7 +1921,7 @@ extern(Windows):
 
 interface WebUIProtocolActivatedEventArgs : Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -1980,7 +1980,7 @@ extern(Windows):
 
 interface WebUIProtocolForResultsActivatedEventArgs : Windows.ApplicationModel.Activation.IProtocolForResultsActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.IProtocolActivatedEventArgs, Windows.ApplicationModel.Activation.IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.System.ProtocolForResultsOperation ProtocolForResultsOperation()
 	{
 		Windows.System.ProtocolForResultsOperation _ret;
@@ -2045,7 +2045,7 @@ extern(Windows):
 
 interface WebUIRestrictedLaunchActivatedEventArgs : Windows.ApplicationModel.Activation.IRestrictedLaunchActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final IInspectable SharedContext()
 	{
 		IInspectable _ret;
@@ -2086,7 +2086,7 @@ extern(Windows):
 
 interface WebUISearchActivatedEventArgs : Windows.ApplicationModel.Activation.ISearchActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.ApplicationModel.Activation.ISearchActivatedEventArgsWithLinguisticDetails, Windows.ApplicationModel.Activation.IApplicationViewActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring QueryText()
 	{
 		HSTRING _ret;
@@ -2139,7 +2139,7 @@ extern(Windows):
 
 interface WebUIShareTargetActivatedEventArgs : Windows.ApplicationModel.Activation.IShareTargetActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation ShareOperation()
 	{
 		Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation _ret;
@@ -2180,7 +2180,7 @@ extern(Windows):
 
 interface WebUIToastNotificationActivatedEventArgs : Windows.ApplicationModel.Activation.IToastNotificationActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final wstring Argument()
 	{
 		HSTRING _ret;
@@ -2227,7 +2227,7 @@ extern(Windows):
 
 interface WebUIUserDataAccountProviderActivatedEventArgs : Windows.ApplicationModel.Activation.IUserDataAccountProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderOperation Operation()
 	{
 		Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderOperation _ret;
@@ -2262,7 +2262,7 @@ extern(Windows):
 
 interface WebUIVoiceCommandActivatedEventArgs : Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionResult Result()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionResult _ret;
@@ -2303,7 +2303,7 @@ extern(Windows):
 
 interface WebUIWalletActionActivatedEventArgs : Windows.ApplicationModel.Activation.IWalletActionActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final wstring ItemId()
 	{
 		HSTRING _ret;
@@ -2350,7 +2350,7 @@ extern(Windows):
 
 interface WebUIWebAccountProviderActivatedEventArgs : Windows.ApplicationModel.Activation.IWebAccountProviderActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral, Windows.ApplicationModel.Activation.IActivatedEventArgsWithUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation Operation()
 	{
 		Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation _ret;
@@ -2391,7 +2391,7 @@ extern(Windows):
 
 interface WebUIWebAuthenticationBrokerContinuationEventArgs : Windows.ApplicationModel.Activation.IWebAuthenticationBrokerContinuationEventArgs, Windows.ApplicationModel.Activation.IContinuationActivatedEventArgs, Windows.ApplicationModel.Activation.IActivatedEventArgs, Windows.UI.WebUI.IActivatedEventArgsDeferral
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.WebAuthenticationResult WebAuthenticationResult()
 	{
 		Windows.Security.Authentication.Web.WebAuthenticationResult _ret;

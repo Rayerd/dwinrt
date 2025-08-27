@@ -142,7 +142,7 @@ extern(Windows):
 
 interface VoiceCommand : Windows.ApplicationModel.VoiceCommands.IVoiceCommand
 {
-extern(Windows):
+extern(D):
 	final wstring CommandName()
 	{
 		HSTRING _ret;
@@ -165,7 +165,7 @@ extern(Windows):
 
 interface VoiceCommandCompletedEventArgs : Windows.ApplicationModel.VoiceCommands.IVoiceCommandCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason Reason()
 	{
 		Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason _ret;
@@ -176,7 +176,7 @@ extern(Windows):
 
 interface VoiceCommandConfirmationResult : Windows.ApplicationModel.VoiceCommands.IVoiceCommandConfirmationResult
 {
-extern(Windows):
+extern(D):
 	final bool Confirmed()
 	{
 		bool _ret;
@@ -187,7 +187,7 @@ extern(Windows):
 
 interface VoiceCommandContentTile : Windows.ApplicationModel.VoiceCommands.IVoiceCommandContentTile
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface VoiceCommandDefinition : Windows.ApplicationModel.VoiceCommands.IVoiceCommandDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring Language()
 	{
 		HSTRING _ret;
@@ -323,7 +323,7 @@ interface VoiceCommandDefinitionManager
 
 interface VoiceCommandDisambiguationResult : Windows.ApplicationModel.VoiceCommands.IVoiceCommandDisambiguationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile SelectedItem()
 	{
 		Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile _ret;
@@ -334,7 +334,7 @@ extern(Windows):
 
 interface VoiceCommandResponse : Windows.ApplicationModel.VoiceCommands.IVoiceCommandResponse
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage Message()
 	{
 		Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage _ret;
@@ -414,7 +414,7 @@ extern(Windows):
 
 interface VoiceCommandServiceConnection : Windows.ApplicationModel.VoiceCommands.IVoiceCommandServiceConnection
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.VoiceCommands.VoiceCommand) GetVoiceCommandAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.VoiceCommands.VoiceCommand) _ret;
@@ -490,7 +490,7 @@ extern(Windows):
 
 interface VoiceCommandUserMessage : Windows.ApplicationModel.VoiceCommands.IVoiceCommandUserMessage
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayMessage()
 	{
 		HSTRING _ret;

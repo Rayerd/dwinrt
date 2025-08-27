@@ -160,7 +160,7 @@ interface StoreConfiguration
 
 interface StoreHardwareManufacturerInfo : Windows.ApplicationModel.Store.Preview.IStoreHardwareManufacturerInfo
 {
-extern(Windows):
+extern(D):
 	final wstring HardwareManufacturerId()
 	{
 		HSTRING _ret;
@@ -211,7 +211,7 @@ interface StorePreview
 
 interface StorePreviewProductInfo : Windows.ApplicationModel.Store.Preview.IStorePreviewProductInfo
 {
-extern(Windows):
+extern(D):
 	final wstring ProductId()
 	{
 		HSTRING _ret;
@@ -246,7 +246,7 @@ extern(Windows):
 
 interface StorePreviewPurchaseResults : Windows.ApplicationModel.Store.Preview.IStorePreviewPurchaseResults
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus ProductPurchaseStatus()
 	{
 		Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus _ret;
@@ -257,7 +257,7 @@ extern(Windows):
 
 interface StorePreviewSkuInfo : Windows.ApplicationModel.Store.Preview.IStorePreviewSkuInfo
 {
-extern(Windows):
+extern(D):
 	final wstring ProductId()
 	{
 		HSTRING _ret;

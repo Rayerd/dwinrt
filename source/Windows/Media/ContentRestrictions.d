@@ -59,7 +59,7 @@ extern(Windows):
 
 interface ContentRestrictionsBrowsePolicy : Windows.Media.ContentRestrictions.IContentRestrictionsBrowsePolicy
 {
-extern(Windows):
+extern(D):
 	final wstring GeographicRegion()
 	{
 		HSTRING _ret;
@@ -82,7 +82,7 @@ extern(Windows):
 
 interface RatedContentDescription : Windows.Media.ContentRestrictions.IRatedContentDescription
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -144,7 +144,7 @@ extern(Windows):
 
 interface RatedContentRestrictions : Windows.Media.ContentRestrictions.IRatedContentRestrictions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy) GetBrowsePolicyAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy) _ret;

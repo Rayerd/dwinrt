@@ -361,7 +361,7 @@ extern(Windows):
 
 interface BackgroundDownloader : Windows.Networking.BackgroundTransfer.IBackgroundDownloader, Windows.Networking.BackgroundTransfer.IBackgroundTransferBase, Windows.Networking.BackgroundTransfer.IBackgroundDownloader2, Windows.Networking.BackgroundTransfer.IBackgroundDownloader3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.BackgroundTransfer.DownloadOperation CreateDownload(Windows.Foundation.Uri uri, Windows.Storage.IStorageFile resultFile)
 	{
 		Windows.Networking.BackgroundTransfer.DownloadOperation _ret;
@@ -531,7 +531,7 @@ extern(Windows):
 
 interface BackgroundTransferCompletionGroup : Windows.Networking.BackgroundTransfer.IBackgroundTransferCompletionGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Background.IBackgroundTrigger Trigger()
 	{
 		Windows.ApplicationModel.Background.IBackgroundTrigger _ret;
@@ -558,7 +558,7 @@ extern(Windows):
 
 interface BackgroundTransferCompletionGroupTriggerDetails : Windows.Networking.BackgroundTransfer.IBackgroundTransferCompletionGroupTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.BackgroundTransfer.DownloadOperation) Downloads()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.BackgroundTransfer.DownloadOperation) _ret;
@@ -575,7 +575,7 @@ extern(Windows):
 
 interface BackgroundTransferContentPart : Windows.Networking.BackgroundTransfer.IBackgroundTransferContentPart
 {
-extern(Windows):
+extern(D):
 	final void SetHeader(wstring headerName, wstring headerValue)
 	{
 		Debug.OK((cast(Windows.Networking.BackgroundTransfer.IBackgroundTransferContentPart)this.asInterface(uuid("e8e15657-d7d1-4ed8-838e-674ac217ace6"))).abi_SetHeader(hstring(headerName).handle, hstring(headerValue).handle));
@@ -628,7 +628,7 @@ interface BackgroundTransferError
 
 interface BackgroundTransferGroup : Windows.Networking.BackgroundTransfer.IBackgroundTransferGroup
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -662,7 +662,7 @@ extern(Windows):
 
 interface BackgroundUploader : Windows.Networking.BackgroundTransfer.IBackgroundUploader, Windows.Networking.BackgroundTransfer.IBackgroundTransferBase, Windows.Networking.BackgroundTransfer.IBackgroundUploader2, Windows.Networking.BackgroundTransfer.IBackgroundUploader3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.BackgroundTransfer.UploadOperation CreateUpload(Windows.Foundation.Uri uri, Windows.Storage.IStorageFile sourceFile)
 	{
 		Windows.Networking.BackgroundTransfer.UploadOperation _ret;
@@ -872,7 +872,7 @@ interface ContentPrefetcher
 
 interface DownloadOperation : Windows.Networking.BackgroundTransfer.IDownloadOperation, Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation, Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority, Windows.Networking.BackgroundTransfer.IDownloadOperation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.IStorageFile ResultFile()
 	{
 		Windows.Storage.IStorageFile _ret;
@@ -972,7 +972,7 @@ extern(Windows):
 
 interface ResponseInformation : Windows.Networking.BackgroundTransfer.IResponseInformation
 {
-extern(Windows):
+extern(D):
 	final bool IsResumable()
 	{
 		bool _ret;
@@ -1001,7 +1001,7 @@ extern(Windows):
 
 interface UnconstrainedTransferRequestResult : Windows.Networking.BackgroundTransfer.IUnconstrainedTransferRequestResult
 {
-extern(Windows):
+extern(D):
 	deprecated("IsUnconstrained is deprecated and may not work on all platforms. For more info, see MSDN.")
 	final bool IsUnconstrained()
 	{
@@ -1013,7 +1013,7 @@ extern(Windows):
 
 interface UploadOperation : Windows.Networking.BackgroundTransfer.IUploadOperation, Windows.Networking.BackgroundTransfer.IBackgroundTransferOperation, Windows.Networking.BackgroundTransfer.IBackgroundTransferOperationPriority, Windows.Networking.BackgroundTransfer.IUploadOperation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.IStorageFile SourceFile()
 	{
 		Windows.Storage.IStorageFile _ret;

@@ -70,7 +70,7 @@ interface IWorkspace : IWorkspace_Base, Windows.Web.Syndication.ISyndicationNode
 
 interface AtomPubClient : Windows.Web.AtomPub.IAtomPubClient, Windows.Web.Syndication.ISyndicationClient
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(Windows.Web.AtomPub.ServiceDocument, Windows.Web.Syndication.RetrievalProgress) RetrieveServiceDocumentAsync(Windows.Foundation.Uri uri)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(Windows.Web.AtomPub.ServiceDocument, Windows.Web.Syndication.RetrievalProgress) _ret;
@@ -212,7 +212,7 @@ extern(Windows):
 
 interface ResourceCollection : Windows.Web.AtomPub.IResourceCollection, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Syndication.ISyndicationText Title()
 	{
 		Windows.Web.Syndication.ISyndicationText _ret;
@@ -309,7 +309,7 @@ extern(Windows):
 
 interface ServiceDocument : Windows.Web.AtomPub.IServiceDocument, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Web.AtomPub.Workspace) Workspaces()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Web.AtomPub.Workspace) _ret;
@@ -388,7 +388,7 @@ extern(Windows):
 
 interface Workspace : Windows.Web.AtomPub.IWorkspace, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Syndication.ISyndicationText Title()
 	{
 		Windows.Web.Syndication.ISyndicationText _ret;

@@ -20,7 +20,7 @@ extern(Windows):
 
 interface InkWorkspaceHostedAppManager : Windows.ApplicationModel.Preview.InkWorkspace.IInkWorkspaceHostedAppManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SetThumbnailAsync(Windows.Graphics.Imaging.SoftwareBitmap bitmap)
 	{
 		Windows.Foundation.IAsyncAction _ret;

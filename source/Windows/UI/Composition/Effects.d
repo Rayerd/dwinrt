@@ -21,7 +21,7 @@ extern(Windows):
 
 interface SceneLightingEffect : Windows.UI.Composition.Effects.ISceneLightingEffect, Windows.Graphics.Effects.IGraphicsEffect, Windows.Graphics.Effects.IGraphicsEffectSource
 {
-extern(Windows):
+extern(D):
 	final float AmbientAmount()
 	{
 		float _ret;

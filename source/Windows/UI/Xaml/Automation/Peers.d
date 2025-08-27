@@ -1303,7 +1303,7 @@ extern(Windows):
 
 interface AppBarAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IAppBarAutomationPeer, Windows.UI.Xaml.Automation.Provider.IToggleProvider, Windows.UI.Xaml.Automation.Provider.IExpandCollapseProvider, Windows.UI.Xaml.Automation.Provider.IWindowProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ToggleState ToggleState()
 	{
 		Windows.UI.Xaml.Automation.ToggleState _ret;
@@ -1963,7 +1963,7 @@ interface AutoSuggestBoxAutomationPeer : Windows.UI.Xaml.Automation.Peers.Framew
 
 interface AutomationPeer : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Automation.Peers.IAutomationPeer, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides, Windows.UI.Xaml.Automation.Peers.IAutomationPeerProtected, Windows.UI.Xaml.Automation.Peers.IAutomationPeer2, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides2, Windows.UI.Xaml.Automation.Peers.IAutomationPeer3, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3, Windows.UI.Xaml.Automation.Peers.IAutomationPeer4, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4, Windows.UI.Xaml.Automation.Peers.IAutomationPeer5, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides5, Windows.UI.Xaml.Automation.Peers.IAutomationPeer6, Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides6
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.Peers.AutomationPeer EventsSource()
 	{
 		Windows.UI.Xaml.Automation.Peers.AutomationPeer _ret;
@@ -2468,7 +2468,7 @@ class AutomationPeerT(Base) : AgileObject!Base, AutomationPeer
 
 interface AutomationPeerAnnotation : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Automation.Peers.IAutomationPeerAnnotation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.AnnotationType Type()
 	{
 		Windows.UI.Xaml.Automation.AnnotationType _ret;
@@ -2532,7 +2532,7 @@ extern(Windows):
 
 interface ButtonAutomationPeer : Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer, Windows.UI.Xaml.Automation.Peers.IButtonAutomationPeer, Windows.UI.Xaml.Automation.Provider.IInvokeProvider
 {
-extern(Windows):
+extern(D):
 	final void Invoke()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IInvokeProvider)this.asInterface(uuid("f7d1a187-b13c-4540-b09e-6778e2dc9ba5"))).abi_Invoke());
@@ -3278,7 +3278,7 @@ class CheckBoxAutomationPeerT(Base) : AgileObject!Base, CheckBoxAutomationPeer
 
 interface ComboBoxAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorAutomationPeer, Windows.UI.Xaml.Automation.Peers.IComboBoxAutomationPeer, Windows.UI.Xaml.Automation.Provider.IExpandCollapseProvider, Windows.UI.Xaml.Automation.Provider.IValueProvider, Windows.UI.Xaml.Automation.Provider.IWindowProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ExpandCollapseState ExpandCollapseState()
 	{
 		Windows.UI.Xaml.Automation.ExpandCollapseState _ret;
@@ -3756,7 +3756,7 @@ class ComboBoxItemAutomationPeerT(Base) : AgileObject!Base, ComboBoxItemAutomati
 
 interface ComboBoxItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IComboBoxItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -4523,7 +4523,7 @@ class FlipViewItemAutomationPeerT(Base) : AgileObject!Base, FlipViewItemAutomati
 
 interface FlipViewItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IFlipViewItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -4907,7 +4907,7 @@ class FlyoutPresenterAutomationPeerT(Base) : AgileObject!Base, FlyoutPresenterAu
 
 interface FrameworkElementAutomationPeer : Windows.UI.Xaml.Automation.Peers.AutomationPeer, Windows.UI.Xaml.Automation.Peers.IFrameworkElementAutomationPeer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Owner()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -5683,7 +5683,7 @@ class GridViewItemAutomationPeerT(Base) : AgileObject!Base, GridViewItemAutomati
 
 interface GridViewItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IGridViewItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -6251,7 +6251,7 @@ class HubAutomationPeerT(Base) : AgileObject!Base, HubAutomationPeer
 
 interface HubSectionAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IHubSectionAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -6442,7 +6442,7 @@ class HubSectionAutomationPeerT(Base) : AgileObject!Base, HubSectionAutomationPe
 
 interface HyperlinkButtonAutomationPeer : Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer, Windows.UI.Xaml.Automation.Peers.IHyperlinkButtonAutomationPeer, Windows.UI.Xaml.Automation.Provider.IInvokeProvider
 {
-extern(Windows):
+extern(D):
 	final void Invoke()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IInvokeProvider)this.asInterface(uuid("f7d1a187-b13c-4540-b09e-6778e2dc9ba5"))).abi_Invoke());
@@ -6821,7 +6821,7 @@ interface InkToolbarAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkE
 
 interface ItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.AutomationPeer, Windows.UI.Xaml.Automation.Peers.IItemAutomationPeer, Windows.UI.Xaml.Automation.Provider.IVirtualizedItemProvider
 {
-extern(Windows):
+extern(D):
 	final IInspectable Item()
 	{
 		IInspectable _ret;
@@ -7025,7 +7025,7 @@ class ItemAutomationPeerT(Base) : AgileObject!Base, ItemAutomationPeer
 
 interface ItemsControlAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IItemsControlAutomationPeer, Windows.UI.Xaml.Automation.Provider.IItemContainerProvider, Windows.UI.Xaml.Automation.Peers.IItemsControlAutomationPeer2, Windows.UI.Xaml.Automation.Peers.IItemsControlAutomationPeerOverrides2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple FindItemByProperty(Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple startAfter, Windows.UI.Xaml.Automation.AutomationProperty automationProperty, IInspectable value)
 	{
 		Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple _ret;
@@ -7608,7 +7608,7 @@ class ListBoxItemAutomationPeerT(Base) : AgileObject!Base, ListBoxItemAutomation
 
 interface ListBoxItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IListBoxItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -8010,7 +8010,7 @@ class ListViewAutomationPeerT(Base) : AgileObject!Base, ListViewAutomationPeer
 
 interface ListViewBaseAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorAutomationPeer, Windows.UI.Xaml.Automation.Peers.IListViewBaseAutomationPeer, Windows.UI.Xaml.Automation.Provider.IDropTargetProvider
 {
-extern(Windows):
+extern(D):
 	final wstring DropEffect()
 	{
 		HSTRING _ret;
@@ -8773,7 +8773,7 @@ class ListViewItemAutomationPeerT(Base) : AgileObject!Base, ListViewItemAutomati
 
 interface ListViewItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IListViewItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -8973,7 +8973,7 @@ class ListViewItemDataAutomationPeerT(Base) : AgileObject!Base, ListViewItemData
 
 interface LoopingSelectorAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.ILoopingSelectorAutomationPeer, Windows.UI.Xaml.Automation.Provider.IExpandCollapseProvider, Windows.UI.Xaml.Automation.Provider.IItemContainerProvider, Windows.UI.Xaml.Automation.Provider.IScrollProvider, Windows.UI.Xaml.Automation.Provider.ISelectionProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ExpandCollapseState ExpandCollapseState()
 	{
 		Windows.UI.Xaml.Automation.ExpandCollapseState _ret;
@@ -9060,7 +9060,7 @@ extern(Windows):
 
 interface LoopingSelectorItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.ILoopingSelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider, Windows.UI.Xaml.Automation.Provider.ISelectionItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -9093,7 +9093,7 @@ extern(Windows):
 
 interface LoopingSelectorItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.AutomationPeer, Windows.UI.Xaml.Automation.Peers.ILoopingSelectorItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IVirtualizedItemProvider
 {
-extern(Windows):
+extern(D):
 	final void Realize()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IVirtualizedItemProvider)this.asInterface(uuid("17d4a04b-d658-48e0-a574-5a516c58dfa7"))).abi_Realize());
@@ -9102,7 +9102,7 @@ extern(Windows):
 
 interface MapControlAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IMapControlAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollProvider, Windows.UI.Xaml.Automation.Provider.ITransformProvider2, Windows.UI.Xaml.Automation.Provider.ITransformProvider
 {
-extern(Windows):
+extern(D):
 	final bool HorizontallyScrollable()
 	{
 		bool _ret;
@@ -9765,7 +9765,7 @@ class MediaTransportControlsAutomationPeerT(Base) : AgileObject!Base, MediaTrans
 
 interface MenuFlyoutItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IMenuFlyoutItemAutomationPeer, Windows.UI.Xaml.Automation.Provider.IInvokeProvider
 {
-extern(Windows):
+extern(D):
 	final void Invoke()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IInvokeProvider)this.asInterface(uuid("f7d1a187-b13c-4540-b09e-6778e2dc9ba5"))).abi_Invoke());
@@ -10335,7 +10335,7 @@ interface PickerFlyoutPresenterAutomationPeer : Windows.UI.Xaml.Automation.Peers
 
 interface PivotAutomationPeer : Windows.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer, Windows.UI.Xaml.Automation.Peers.IPivotAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollProvider, Windows.UI.Xaml.Automation.Provider.ISelectionProvider
 {
-extern(Windows):
+extern(D):
 	final bool HorizontallyScrollable()
 	{
 		bool _ret;
@@ -10420,7 +10420,7 @@ interface PivotItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkEl
 
 interface PivotItemDataAutomationPeer : Windows.UI.Xaml.Automation.Peers.ItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.IPivotItemDataAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollItemProvider, Windows.UI.Xaml.Automation.Provider.ISelectionItemProvider, Windows.UI.Xaml.Automation.Provider.IVirtualizedItemProvider
 {
-extern(Windows):
+extern(D):
 	final void ScrollIntoView()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IScrollItemProvider)this.asInterface(uuid("9a3ec090-5d2c-4e42-9ee6-9d58db100b55"))).abi_ScrollIntoView());
@@ -10840,7 +10840,7 @@ class ProgressRingAutomationPeerT(Base) : AgileObject!Base, ProgressRingAutomati
 
 interface RadioButtonAutomationPeer : Windows.UI.Xaml.Automation.Peers.ToggleButtonAutomationPeer, Windows.UI.Xaml.Automation.Peers.IRadioButtonAutomationPeer, Windows.UI.Xaml.Automation.Provider.ISelectionItemProvider
 {
-extern(Windows):
+extern(D):
 	final bool IsSelected()
 	{
 		bool _ret;
@@ -11058,7 +11058,7 @@ class RadioButtonAutomationPeerT(Base) : AgileObject!Base, RadioButtonAutomation
 
 interface RangeBaseAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IRangeBaseAutomationPeer, Windows.UI.Xaml.Automation.Provider.IRangeValueProvider
 {
-extern(Windows):
+extern(D):
 	final bool IsReadOnly()
 	{
 		bool _ret;
@@ -11291,7 +11291,7 @@ class RangeBaseAutomationPeerT(Base) : AgileObject!Base, RangeBaseAutomationPeer
 
 interface RepeatButtonAutomationPeer : Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer, Windows.UI.Xaml.Automation.Peers.IRepeatButtonAutomationPeer, Windows.UI.Xaml.Automation.Provider.IInvokeProvider
 {
-extern(Windows):
+extern(D):
 	final void Invoke()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Automation.Provider.IInvokeProvider)this.asInterface(uuid("f7d1a187-b13c-4540-b09e-6778e2dc9ba5"))).abi_Invoke());
@@ -12226,7 +12226,7 @@ class ScrollBarAutomationPeerT(Base) : AgileObject!Base, ScrollBarAutomationPeer
 
 interface ScrollViewerAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IScrollViewerAutomationPeer, Windows.UI.Xaml.Automation.Provider.IScrollProvider
 {
-extern(Windows):
+extern(D):
 	final bool HorizontallyScrollable()
 	{
 		bool _ret;
@@ -12648,7 +12648,7 @@ class SearchBoxAutomationPeerT(Base) : AgileObject!Base, SearchBoxAutomationPeer
 
 interface SelectorAutomationPeer : Windows.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer, Windows.UI.Xaml.Automation.Peers.ISelectorAutomationPeer, Windows.UI.Xaml.Automation.Provider.ISelectionProvider
 {
-extern(Windows):
+extern(D):
 	final bool CanSelectMultiple()
 	{
 		bool _ret;
@@ -12862,7 +12862,7 @@ class SelectorAutomationPeerT(Base) : AgileObject!Base, SelectorAutomationPeer
 
 interface SelectorItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.ItemAutomationPeer, Windows.UI.Xaml.Automation.Peers.ISelectorItemAutomationPeer, Windows.UI.Xaml.Automation.Provider.ISelectionItemProvider
 {
-extern(Windows):
+extern(D):
 	final bool IsSelected()
 	{
 		bool _ret;
@@ -13080,7 +13080,7 @@ class SelectorItemAutomationPeerT(Base) : AgileObject!Base, SelectorItemAutomati
 
 interface SemanticZoomAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.ISemanticZoomAutomationPeer, Windows.UI.Xaml.Automation.Provider.IToggleProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ToggleState ToggleState()
 	{
 		Windows.UI.Xaml.Automation.ToggleState _ret;
@@ -14394,7 +14394,7 @@ interface TimePickerFlyoutPresenterAutomationPeer : Windows.UI.Xaml.Automation.P
 
 interface ToggleButtonAutomationPeer : Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer, Windows.UI.Xaml.Automation.Peers.IToggleButtonAutomationPeer, Windows.UI.Xaml.Automation.Provider.IToggleProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ToggleState ToggleState()
 	{
 		Windows.UI.Xaml.Automation.ToggleState _ret;
@@ -14592,7 +14592,7 @@ class ToggleButtonAutomationPeerT(Base) : AgileObject!Base, ToggleButtonAutomati
 
 interface ToggleMenuFlyoutItemAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IToggleMenuFlyoutItemAutomationPeer, Windows.UI.Xaml.Automation.Provider.IToggleProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ToggleState ToggleState()
 	{
 		Windows.UI.Xaml.Automation.ToggleState _ret;
@@ -14790,7 +14790,7 @@ class ToggleMenuFlyoutItemAutomationPeerT(Base) : AgileObject!Base, ToggleMenuFl
 
 interface ToggleSwitchAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer, Windows.UI.Xaml.Automation.Peers.IToggleSwitchAutomationPeer, Windows.UI.Xaml.Automation.Provider.IToggleProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.ToggleState ToggleState()
 	{
 		Windows.UI.Xaml.Automation.ToggleState _ret;

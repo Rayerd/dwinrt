@@ -151,7 +151,7 @@ extern(Windows):
 
 interface WebAccountEventArgs : Windows.Security.Authentication.Web.Core.IWebAccountEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccount Account()
 	{
 		Windows.Security.Credentials.WebAccount _ret;
@@ -162,7 +162,7 @@ extern(Windows):
 
 interface WebAccountMonitor : Windows.Security.Authentication.Web.Core.IWebAccountMonitor
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnUpdated(void delegate(Windows.Security.Authentication.Web.Core.WebAccountMonitor, Windows.Security.Authentication.Web.Core.WebAccountEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -252,7 +252,7 @@ interface WebAuthenticationCoreManager
 
 interface WebProviderError : Windows.Security.Authentication.Web.Core.IWebProviderError
 {
-extern(Windows):
+extern(D):
 	final UINT32 ErrorCode()
 	{
 		UINT32 _ret;
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface WebTokenRequest : Windows.Security.Authentication.Web.Core.IWebTokenRequest, Windows.Security.Authentication.Web.Core.IWebTokenRequest2, Windows.Security.Authentication.Web.Core.IWebTokenRequest3
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccountProvider WebAccountProvider()
 	{
 		Windows.Security.Credentials.WebAccountProvider _ret;
@@ -361,7 +361,7 @@ extern(Windows):
 
 interface WebTokenRequestResult : Windows.Security.Authentication.Web.Core.IWebTokenRequestResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Web.Core.WebTokenResponse) ResponseData()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Web.Core.WebTokenResponse) _ret;
@@ -390,7 +390,7 @@ extern(Windows):
 
 interface WebTokenResponse : Windows.Security.Authentication.Web.Core.IWebTokenResponse
 {
-extern(Windows):
+extern(D):
 	final wstring Token()
 	{
 		HSTRING _ret;

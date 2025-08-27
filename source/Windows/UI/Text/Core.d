@@ -225,7 +225,7 @@ extern(Windows):
 
 interface CoreTextCompositionCompletedEventArgs : Windows.UI.Text.Core.ICoreTextCompositionCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsCanceled()
 	{
 		bool _ret;
@@ -248,7 +248,7 @@ extern(Windows):
 
 interface CoreTextCompositionSegment : Windows.UI.Text.Core.ICoreTextCompositionSegment
 {
-extern(Windows):
+extern(D):
 	final wstring PreconversionString()
 	{
 		HSTRING _ret;
@@ -265,7 +265,7 @@ extern(Windows):
 
 interface CoreTextCompositionStartedEventArgs : Windows.UI.Text.Core.ICoreTextCompositionStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsCanceled()
 	{
 		bool _ret;
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface CoreTextEditContext : Windows.UI.Text.Core.ICoreTextEditContext, Windows.UI.Text.Core.ICoreTextEditContext2
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -447,7 +447,7 @@ extern(Windows):
 
 interface CoreTextFormatUpdatingEventArgs : Windows.UI.Text.Core.ICoreTextFormatUpdatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Range()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;
@@ -510,7 +510,7 @@ extern(Windows):
 
 interface CoreTextLayoutBounds : Windows.UI.Text.Core.ICoreTextLayoutBounds
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect TextBounds()
 	{
 		Windows.Foundation.Rect _ret;
@@ -535,7 +535,7 @@ extern(Windows):
 
 interface CoreTextLayoutRequest : Windows.UI.Text.Core.ICoreTextLayoutRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Range()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;
@@ -564,7 +564,7 @@ extern(Windows):
 
 interface CoreTextLayoutRequestedEventArgs : Windows.UI.Text.Core.ICoreTextLayoutRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextLayoutRequest Request()
 	{
 		Windows.UI.Text.Core.CoreTextLayoutRequest _ret;
@@ -575,7 +575,7 @@ extern(Windows):
 
 interface CoreTextSelectionRequest : Windows.UI.Text.Core.ICoreTextSelectionRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Selection()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;
@@ -602,7 +602,7 @@ extern(Windows):
 
 interface CoreTextSelectionRequestedEventArgs : Windows.UI.Text.Core.ICoreTextSelectionRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextSelectionRequest Request()
 	{
 		Windows.UI.Text.Core.CoreTextSelectionRequest _ret;
@@ -613,7 +613,7 @@ extern(Windows):
 
 interface CoreTextSelectionUpdatingEventArgs : Windows.UI.Text.Core.ICoreTextSelectionUpdatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Selection()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;
@@ -662,7 +662,7 @@ interface CoreTextServicesConstants
 
 interface CoreTextServicesManager : Windows.UI.Text.Core.ICoreTextServicesManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Globalization.Language InputLanguage()
 	{
 		Windows.Globalization.Language _ret;
@@ -702,7 +702,7 @@ extern(Windows):
 
 interface CoreTextTextRequest : Windows.UI.Text.Core.ICoreTextTextRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Range()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;
@@ -735,7 +735,7 @@ extern(Windows):
 
 interface CoreTextTextRequestedEventArgs : Windows.UI.Text.Core.ICoreTextTextRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextTextRequest Request()
 	{
 		Windows.UI.Text.Core.CoreTextTextRequest _ret;
@@ -746,7 +746,7 @@ extern(Windows):
 
 interface CoreTextTextUpdatingEventArgs : Windows.UI.Text.Core.ICoreTextTextUpdatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.Core.CoreTextRange Range()
 	{
 		Windows.UI.Text.Core.CoreTextRange _ret;

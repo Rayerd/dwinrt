@@ -42,7 +42,7 @@ extern(Windows):
 
 interface CortanaPermissionsManager : Windows.Services.Cortana.ICortanaPermissionsManager
 {
-extern(Windows):
+extern(D):
 	final bool IsSupported()
 	{
 		bool _ret;
@@ -84,7 +84,7 @@ extern(Windows):
 
 interface CortanaSettings : Windows.Services.Cortana.ICortanaSettings
 {
-extern(Windows):
+extern(D):
 	final bool HasUserConsentToVoiceActivation()
 	{
 		bool _ret;

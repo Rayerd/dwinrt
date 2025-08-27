@@ -206,7 +206,7 @@ extern(Windows):
 
 interface AlternateWordForm : Windows.Data.Text.IAlternateWordForm
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Text.TextSegment SourceTextSegment()
 	{
 		Windows.Data.Text.TextSegment _ret;
@@ -229,7 +229,7 @@ extern(Windows):
 
 interface SelectableWordSegment : Windows.Data.Text.ISelectableWordSegment
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -246,7 +246,7 @@ extern(Windows):
 
 interface SelectableWordsSegmenter : Windows.Data.Text.ISelectableWordsSegmenter
 {
-extern(Windows):
+extern(D):
 	final wstring ResolvedLanguage()
 	{
 		HSTRING _ret;
@@ -280,7 +280,7 @@ extern(Windows):
 
 interface SemanticTextQuery : Windows.Data.Text.ISemanticTextQuery
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Data.Text.TextSegment) Find(wstring content)
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Data.Text.TextSegment) _ret;
@@ -311,7 +311,7 @@ extern(Windows):
 
 interface TextConversionGenerator : Windows.Data.Text.ITextConversionGenerator
 {
-extern(Windows):
+extern(D):
 	final wstring ResolvedLanguage()
 	{
 		HSTRING _ret;
@@ -348,7 +348,7 @@ extern(Windows):
 
 interface TextPhoneme : Windows.Data.Text.ITextPhoneme
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayText()
 	{
 		HSTRING _ret;
@@ -365,7 +365,7 @@ extern(Windows):
 
 interface TextPredictionGenerator : Windows.Data.Text.ITextPredictionGenerator
 {
-extern(Windows):
+extern(D):
 	final wstring ResolvedLanguage()
 	{
 		HSTRING _ret;
@@ -402,7 +402,7 @@ extern(Windows):
 
 interface TextReverseConversionGenerator : Windows.Data.Text.ITextReverseConversionGenerator, Windows.Data.Text.ITextReverseConversionGenerator2
 {
-extern(Windows):
+extern(D):
 	final wstring ResolvedLanguage()
 	{
 		HSTRING _ret;
@@ -548,7 +548,7 @@ interface UnicodeCharacters
 
 interface WordSegment : Windows.Data.Text.IWordSegment
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -571,7 +571,7 @@ extern(Windows):
 
 interface WordsSegmenter : Windows.Data.Text.IWordsSegmenter
 {
-extern(Windows):
+extern(D):
 	final wstring ResolvedLanguage()
 	{
 		HSTRING _ret;

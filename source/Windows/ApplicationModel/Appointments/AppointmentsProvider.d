@@ -65,7 +65,7 @@ extern(Windows):
 
 interface AddAppointmentOperation : Windows.ApplicationModel.Appointments.AppointmentsProvider.IAddAppointmentOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.Appointment AppointmentInformation()
 	{
 		Windows.ApplicationModel.Appointments.Appointment _ret;
@@ -132,7 +132,7 @@ interface AppointmentsProviderLaunchActionVerbs
 
 interface RemoveAppointmentOperation : Windows.ApplicationModel.Appointments.AppointmentsProvider.IRemoveAppointmentOperation
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentId()
 	{
 		HSTRING _ret;
@@ -171,7 +171,7 @@ extern(Windows):
 
 interface ReplaceAppointmentOperation : Windows.ApplicationModel.Appointments.AppointmentsProvider.IReplaceAppointmentOperation
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentId()
 	{
 		HSTRING _ret;

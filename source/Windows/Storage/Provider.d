@@ -94,7 +94,7 @@ interface CachedFileUpdater
 
 interface CachedFileUpdaterUI : Windows.Storage.Provider.ICachedFileUpdaterUI, Windows.Storage.Provider.ICachedFileUpdaterUI2
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -153,7 +153,7 @@ extern(Windows):
 
 interface FileUpdateRequest : Windows.Storage.Provider.IFileUpdateRequest, Windows.Storage.Provider.IFileUpdateRequest2
 {
-extern(Windows):
+extern(D):
 	final wstring ContentId()
 	{
 		HSTRING _ret;
@@ -200,7 +200,7 @@ extern(Windows):
 
 interface FileUpdateRequestDeferral : Windows.Storage.Provider.IFileUpdateRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Storage.Provider.IFileUpdateRequestDeferral)this.asInterface(uuid("ffcedb2b-8ade-44a5-bb00-164c4e72f13a"))).abi_Complete());
@@ -209,7 +209,7 @@ extern(Windows):
 
 interface FileUpdateRequestedEventArgs : Windows.Storage.Provider.IFileUpdateRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Provider.FileUpdateRequest Request()
 	{
 		Windows.Storage.Provider.FileUpdateRequest _ret;

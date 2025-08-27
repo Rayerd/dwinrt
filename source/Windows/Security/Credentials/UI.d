@@ -95,7 +95,7 @@ interface CredentialPicker
 
 interface CredentialPickerOptions : Windows.Security.Credentials.UI.ICredentialPickerOptions
 {
-extern(Windows):
+extern(D):
 	final void Caption(wstring value)
 	{
 		Debug.OK((cast(Windows.Security.Credentials.UI.ICredentialPickerOptions)this.asInterface(uuid("965a0b4c-95fa-467f-992b-0b22e5859bf6"))).set_Caption(hstring(value).handle));
@@ -206,7 +206,7 @@ extern(Windows):
 
 interface CredentialPickerResults : Windows.Security.Credentials.UI.ICredentialPickerResults
 {
-extern(Windows):
+extern(D):
 	final UINT32 ErrorCode()
 	{
 		UINT32 _ret;

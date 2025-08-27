@@ -100,7 +100,7 @@ interface IRampForceEffect : IRampForceEffect_Base, Windows.Gaming.Input.ForceFe
 
 interface ConditionForceEffect : Windows.Gaming.Input.ForceFeedback.IForceFeedbackEffect, Windows.Gaming.Input.ForceFeedback.IConditionForceEffect
 {
-extern(Windows):
+extern(D):
 	final double Gain()
 	{
 		double _ret;
@@ -146,7 +146,7 @@ extern(Windows):
 
 interface ConstantForceEffect : Windows.Gaming.Input.ForceFeedback.IForceFeedbackEffect, Windows.Gaming.Input.ForceFeedback.IConstantForceEffect
 {
-extern(Windows):
+extern(D):
 	final double Gain()
 	{
 		double _ret;
@@ -189,7 +189,7 @@ extern(Windows):
 
 interface ForceFeedbackMotor : Windows.Gaming.Input.ForceFeedback.IForceFeedbackMotor
 {
-extern(Windows):
+extern(D):
 	final bool AreEffectsPaused()
 	{
 		bool _ret;
@@ -264,7 +264,7 @@ extern(Windows):
 
 interface PeriodicForceEffect : Windows.Gaming.Input.ForceFeedback.IForceFeedbackEffect, Windows.Gaming.Input.ForceFeedback.IPeriodicForceEffect
 {
-extern(Windows):
+extern(D):
 	final double Gain()
 	{
 		double _ret;
@@ -314,7 +314,7 @@ extern(Windows):
 
 interface RampForceEffect : Windows.Gaming.Input.ForceFeedback.IForceFeedbackEffect, Windows.Gaming.Input.ForceFeedback.IRampForceEffect
 {
-extern(Windows):
+extern(D):
 	final double Gain()
 	{
 		double _ret;

@@ -452,7 +452,7 @@ interface Clipboard
 
 interface DataPackage : Windows.ApplicationModel.DataTransfer.IDataPackage, Windows.ApplicationModel.DataTransfer.IDataPackage2, Windows.ApplicationModel.DataTransfer.IDataPackage3
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageView GetView()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageView _ret;
@@ -567,7 +567,7 @@ extern(Windows):
 
 interface DataPackagePropertySet : Windows.ApplicationModel.DataTransfer.IDataPackagePropertySet, Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable)), Windows.ApplicationModel.DataTransfer.IDataPackagePropertySet2, Windows.ApplicationModel.DataTransfer.IDataPackagePropertySet3
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -730,7 +730,7 @@ extern(Windows):
 
 interface DataPackagePropertySetView : Windows.ApplicationModel.DataTransfer.IDataPackagePropertySetView, Windows.Foundation.Collections.IMapView!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable)), Windows.ApplicationModel.DataTransfer.IDataPackagePropertySetView2, Windows.ApplicationModel.DataTransfer.IDataPackagePropertySetView3
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -833,7 +833,7 @@ extern(Windows):
 
 interface DataPackageView : Windows.ApplicationModel.DataTransfer.IDataPackageView, Windows.ApplicationModel.DataTransfer.IDataPackageView2, Windows.ApplicationModel.DataTransfer.IDataPackageView3, Windows.ApplicationModel.DataTransfer.IDataPackageView4
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView Properties()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView _ret;
@@ -957,7 +957,7 @@ extern(Windows):
 
 interface DataProviderDeferral : Windows.ApplicationModel.DataTransfer.IDataProviderDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.DataTransfer.IDataProviderDeferral)this.asInterface(uuid("c2cf2373-2d26-43d9-b69d-dcb86d03f6da"))).abi_Complete());
@@ -966,7 +966,7 @@ extern(Windows):
 
 interface DataProviderRequest : Windows.ApplicationModel.DataTransfer.IDataProviderRequest
 {
-extern(Windows):
+extern(D):
 	final wstring FormatId()
 	{
 		HSTRING _ret;
@@ -993,7 +993,7 @@ extern(Windows):
 
 interface DataRequest : Windows.ApplicationModel.DataTransfer.IDataRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackage Data()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackage _ret;
@@ -1024,7 +1024,7 @@ extern(Windows):
 
 interface DataRequestDeferral : Windows.ApplicationModel.DataTransfer.IDataRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.DataTransfer.IDataRequestDeferral)this.asInterface(uuid("6dc4b89f-0386-4263-87c1-ed7dce30890e"))).abi_Complete());
@@ -1033,7 +1033,7 @@ extern(Windows):
 
 interface DataRequestedEventArgs : Windows.ApplicationModel.DataTransfer.IDataRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataRequest Request()
 	{
 		Windows.ApplicationModel.DataTransfer.DataRequest _ret;
@@ -1044,7 +1044,7 @@ extern(Windows):
 
 interface DataTransferManager : Windows.ApplicationModel.DataTransfer.IDataTransferManager, Windows.ApplicationModel.DataTransfer.IDataTransferManager2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnDataRequested(void delegate(Windows.ApplicationModel.DataTransfer.DataTransferManager, Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1118,7 +1118,7 @@ interface HtmlFormatHelper
 
 interface OperationCompletedEventArgs : Windows.ApplicationModel.DataTransfer.IOperationCompletedEventArgs, Windows.ApplicationModel.DataTransfer.IOperationCompletedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageOperation Operation()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageOperation _ret;
@@ -1135,7 +1135,7 @@ extern(Windows):
 
 interface ShareCompletedEventArgs : Windows.ApplicationModel.DataTransfer.IShareCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.ShareTargetInfo ShareTarget()
 	{
 		Windows.ApplicationModel.DataTransfer.ShareTargetInfo _ret;
@@ -1146,7 +1146,7 @@ extern(Windows):
 
 interface ShareProvider : Windows.ApplicationModel.DataTransfer.IShareProvider
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -1186,7 +1186,7 @@ extern(Windows):
 
 interface ShareProviderOperation : Windows.ApplicationModel.DataTransfer.IShareProviderOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageView Data()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageView _ret;
@@ -1207,7 +1207,7 @@ extern(Windows):
 
 interface ShareProvidersRequestedEventArgs : Windows.ApplicationModel.DataTransfer.IShareProvidersRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.ApplicationModel.DataTransfer.ShareProvider) Providers()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.ApplicationModel.DataTransfer.ShareProvider) _ret;
@@ -1230,7 +1230,7 @@ extern(Windows):
 
 interface ShareTargetInfo : Windows.ApplicationModel.DataTransfer.IShareTargetInfo
 {
-extern(Windows):
+extern(D):
 	final wstring AppUserModelId()
 	{
 		HSTRING _ret;
@@ -1320,7 +1320,7 @@ interface StandardDataFormats
 
 interface TargetApplicationChosenEventArgs : Windows.ApplicationModel.DataTransfer.ITargetApplicationChosenEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring ApplicationName()
 	{
 		HSTRING _ret;

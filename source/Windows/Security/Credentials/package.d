@@ -166,7 +166,7 @@ extern(Windows):
 
 interface KeyCredential : Windows.Security.Credentials.IKeyCredential
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -203,7 +203,7 @@ extern(Windows):
 
 interface KeyCredentialAttestationResult : Windows.Security.Credentials.IKeyCredentialAttestationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer CertificateChainBuffer()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -266,7 +266,7 @@ interface KeyCredentialManager
 
 interface KeyCredentialOperationResult : Windows.Security.Credentials.IKeyCredentialOperationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Result()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -283,7 +283,7 @@ extern(Windows):
 
 interface KeyCredentialRetrievalResult : Windows.Security.Credentials.IKeyCredentialRetrievalResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.KeyCredential Credential()
 	{
 		Windows.Security.Credentials.KeyCredential _ret;
@@ -300,7 +300,7 @@ extern(Windows):
 
 interface PasswordCredential : Windows.Security.Credentials.IPasswordCredential
 {
-extern(Windows):
+extern(D):
 	final wstring Resource()
 	{
 		HSTRING _ret;
@@ -358,7 +358,7 @@ extern(Windows):
 
 interface PasswordCredentialPropertyStore : Windows.Foundation.Collections.IPropertySet, Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable))this).remove_MapChanged(token));
@@ -415,7 +415,7 @@ extern(Windows):
 
 interface PasswordVault : Windows.Security.Credentials.IPasswordVault
 {
-extern(Windows):
+extern(D):
 	final void Add(Windows.Security.Credentials.PasswordCredential credential)
 	{
 		Debug.OK((cast(Windows.Security.Credentials.IPasswordVault)this.asInterface(uuid("61fd2c0b-c8d4-48c1-a54f-bc5a64205af2"))).abi_Add(credential));
@@ -458,7 +458,7 @@ extern(Windows):
 
 interface WebAccount : Windows.Security.Credentials.IWebAccount, Windows.Security.Credentials.IWebAccount2
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccountProvider WebAccountProvider()
 	{
 		Windows.Security.Credentials.WebAccountProvider _ret;
@@ -519,7 +519,7 @@ extern(Windows):
 
 interface WebAccountProvider : Windows.Security.Credentials.IWebAccountProvider, Windows.Security.Credentials.IWebAccountProvider2, Windows.Security.Credentials.IWebAccountProvider3
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;

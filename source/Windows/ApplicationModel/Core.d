@@ -195,7 +195,7 @@ extern(Windows):
 
 interface AppListEntry : Windows.ApplicationModel.Core.IAppListEntry
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.AppDisplayInfo DisplayInfo()
 	{
 		Windows.ApplicationModel.AppDisplayInfo _ret;
@@ -268,7 +268,7 @@ interface CoreApplication
 
 interface CoreApplicationView : Windows.ApplicationModel.Core.ICoreApplicationView, Windows.ApplicationModel.Core.ICoreApplicationView2, Windows.ApplicationModel.Core.ICoreApplicationView3, Windows.ApplicationModel.Core.ICoreApplicationView5
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreWindow CoreWindow()
 	{
 		Windows.UI.Core.CoreWindow _ret;
@@ -335,7 +335,7 @@ extern(Windows):
 
 interface CoreApplicationViewTitleBar : Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar
 {
-extern(Windows):
+extern(D):
 	final void ExtendViewIntoTitleBar(bool value)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Core.ICoreApplicationViewTitleBar)this.asInterface(uuid("006d35e3-e1f1-431b-9508-29b96926ac53"))).set_ExtendViewIntoTitleBar(value));
@@ -394,7 +394,7 @@ extern(Windows):
 
 interface HostedViewClosingEventArgs : Windows.ApplicationModel.Core.IHostedViewClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -405,7 +405,7 @@ extern(Windows):
 
 interface UnhandledError : Windows.ApplicationModel.Core.IUnhandledError
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -420,7 +420,7 @@ extern(Windows):
 
 interface UnhandledErrorDetectedEventArgs : Windows.ApplicationModel.Core.IUnhandledErrorDetectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Core.UnhandledError UnhandledError()
 	{
 		Windows.ApplicationModel.Core.UnhandledError _ret;

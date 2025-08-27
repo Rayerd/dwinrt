@@ -178,7 +178,7 @@ extern(Windows):
 
 interface HidBooleanControl : Windows.Devices.HumanInterfaceDevice.IHidBooleanControl
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -217,7 +217,7 @@ extern(Windows):
 
 interface HidBooleanControlDescription : Windows.Devices.HumanInterfaceDevice.IHidBooleanControlDescription, Windows.Devices.HumanInterfaceDevice.IHidBooleanControlDescription2
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -264,7 +264,7 @@ extern(Windows):
 
 interface HidCollection : Windows.Devices.HumanInterfaceDevice.IHidCollection
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -293,7 +293,7 @@ extern(Windows):
 
 interface HidDevice : Windows.Devices.HumanInterfaceDevice.IHidDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final UINT16 VendorId()
 	{
 		UINT16 _ret;
@@ -444,7 +444,7 @@ extern(Windows):
 
 interface HidFeatureReport : Windows.Devices.HumanInterfaceDevice.IHidFeatureReport
 {
-extern(Windows):
+extern(D):
 	final UINT16 Id()
 	{
 		UINT16 _ret;
@@ -489,7 +489,7 @@ extern(Windows):
 
 interface HidInputReport : Windows.Devices.HumanInterfaceDevice.IHidInputReport
 {
-extern(Windows):
+extern(D):
 	final UINT16 Id()
 	{
 		UINT16 _ret;
@@ -542,7 +542,7 @@ extern(Windows):
 
 interface HidInputReportReceivedEventArgs : Windows.Devices.HumanInterfaceDevice.IHidInputReportReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.HumanInterfaceDevice.HidInputReport Report()
 	{
 		Windows.Devices.HumanInterfaceDevice.HidInputReport _ret;
@@ -553,7 +553,7 @@ extern(Windows):
 
 interface HidNumericControl : Windows.Devices.HumanInterfaceDevice.IHidNumericControl
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -608,7 +608,7 @@ extern(Windows):
 
 interface HidNumericControlDescription : Windows.Devices.HumanInterfaceDevice.IHidNumericControlDescription
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -709,7 +709,7 @@ extern(Windows):
 
 interface HidOutputReport : Windows.Devices.HumanInterfaceDevice.IHidOutputReport
 {
-extern(Windows):
+extern(D):
 	final UINT16 Id()
 	{
 		UINT16 _ret;

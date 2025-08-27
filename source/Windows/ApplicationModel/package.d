@@ -370,7 +370,7 @@ extern(Windows):
 
 interface AppDisplayInfo : Windows.ApplicationModel.IAppDisplayInfo
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -393,7 +393,7 @@ extern(Windows):
 
 interface AppInfo : Windows.ApplicationModel.IAppInfo
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -438,7 +438,7 @@ interface DesignMode
 
 interface EnteredBackgroundEventArgs : Windows.ApplicationModel.IEnteredBackgroundEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -485,7 +485,7 @@ interface FullTrustProcessLauncher
 
 interface LeavingBackgroundEventArgs : Windows.ApplicationModel.ILeavingBackgroundEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -496,7 +496,7 @@ extern(Windows):
 
 interface Package : Windows.ApplicationModel.IPackage, Windows.ApplicationModel.IPackage2, Windows.ApplicationModel.IPackage3, Windows.ApplicationModel.IPackageWithMetadata, Windows.ApplicationModel.IPackage4, Windows.ApplicationModel.IPackage5
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.PackageId Id()
 	{
 		Windows.ApplicationModel.PackageId _ret;
@@ -664,7 +664,7 @@ extern(Windows):
 
 interface PackageCatalog : Windows.ApplicationModel.IPackageCatalog, Windows.ApplicationModel.IPackageCatalog2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPackageStaging(void delegate(Windows.ApplicationModel.PackageCatalog, Windows.ApplicationModel.PackageStagingEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -754,7 +754,7 @@ extern(Windows):
 
 interface PackageCatalogAddOptionalPackageResult : Windows.ApplicationModel.IPackageCatalogAddOptionalPackageResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Package Package()
 	{
 		Windows.ApplicationModel.Package _ret;
@@ -771,7 +771,7 @@ extern(Windows):
 
 interface PackageContentGroup : Windows.ApplicationModel.IPackageContentGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Package Package()
 	{
 		Windows.ApplicationModel.Package _ret;
@@ -813,7 +813,7 @@ extern(Windows):
 
 interface PackageContentGroupStagingEventArgs : Windows.ApplicationModel.IPackageContentGroupStagingEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -860,7 +860,7 @@ extern(Windows):
 
 interface PackageId : Windows.ApplicationModel.IPackageId, Windows.ApplicationModel.IPackageIdWithMetadata
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -925,7 +925,7 @@ extern(Windows):
 
 interface PackageInstallingEventArgs : Windows.ApplicationModel.IPackageInstallingEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -960,7 +960,7 @@ extern(Windows):
 
 interface PackageStagingEventArgs : Windows.ApplicationModel.IPackageStagingEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -995,7 +995,7 @@ extern(Windows):
 
 interface PackageStatus : Windows.ApplicationModel.IPackageStatus, Windows.ApplicationModel.IPackageStatus2
 {
-extern(Windows):
+extern(D):
 	final bool VerifyIsOK()
 	{
 		bool _ret;
@@ -1078,7 +1078,7 @@ extern(Windows):
 
 interface PackageStatusChangedEventArgs : Windows.ApplicationModel.IPackageStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Package Package()
 	{
 		Windows.ApplicationModel.Package _ret;
@@ -1089,7 +1089,7 @@ extern(Windows):
 
 interface PackageUninstallingEventArgs : Windows.ApplicationModel.IPackageUninstallingEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -1124,7 +1124,7 @@ extern(Windows):
 
 interface PackageUpdatingEventArgs : Windows.ApplicationModel.IPackageUpdatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -1165,7 +1165,7 @@ extern(Windows):
 
 interface StartupTask : Windows.ApplicationModel.IStartupTask
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.StartupTaskState) RequestEnableAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.StartupTaskState) _ret;
@@ -1211,7 +1211,7 @@ extern(Windows):
 
 interface SuspendingDeferral : Windows.ApplicationModel.ISuspendingDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.ISuspendingDeferral)this.asInterface(uuid("59140509-8bc9-4eb4-b636-dabdc4f46f66"))).abi_Complete());
@@ -1220,7 +1220,7 @@ extern(Windows):
 
 interface SuspendingEventArgs : Windows.ApplicationModel.ISuspendingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.SuspendingOperation SuspendingOperation()
 	{
 		Windows.ApplicationModel.SuspendingOperation _ret;
@@ -1231,7 +1231,7 @@ extern(Windows):
 
 interface SuspendingOperation : Windows.ApplicationModel.ISuspendingOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.SuspendingDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.SuspendingDeferral _ret;

@@ -673,7 +673,7 @@ extern(Windows):
 
 interface HotspotAuthenticationContext : Windows.Networking.NetworkOperators.IHotspotAuthenticationContext, Windows.Networking.NetworkOperators.IHotspotAuthenticationContext2
 {
-extern(Windows):
+extern(D):
 	final ubyte* WirelessNetworkId(UINT32* out___valueSize)
 	{
 		ubyte* _ret;
@@ -743,7 +743,7 @@ extern(Windows):
 
 interface HotspotAuthenticationEventDetails : Windows.Networking.NetworkOperators.IHotspotAuthenticationEventDetails
 {
-extern(Windows):
+extern(D):
 	final wstring EventToken()
 	{
 		HSTRING _ret;
@@ -754,7 +754,7 @@ extern(Windows):
 
 interface HotspotCredentialsAuthenticationResult : Windows.Networking.NetworkOperators.IHotspotCredentialsAuthenticationResult
 {
-extern(Windows):
+extern(D):
 	final bool HasNetworkErrorOccurred()
 	{
 		bool _ret;
@@ -913,7 +913,7 @@ interface KnownUSimFilePaths
 
 interface MobileBroadbandAccount : Windows.Networking.NetworkOperators.IMobileBroadbandAccount, Windows.Networking.NetworkOperators.IMobileBroadbandAccount2, Windows.Networking.NetworkOperators.IMobileBroadbandAccount3
 {
-extern(Windows):
+extern(D):
 	final wstring NetworkAccountId()
 	{
 		HSTRING _ret;
@@ -979,7 +979,7 @@ extern(Windows):
 
 interface MobileBroadbandAccountEventArgs : Windows.Networking.NetworkOperators.IMobileBroadbandAccountEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring NetworkAccountId()
 	{
 		HSTRING _ret;
@@ -990,7 +990,7 @@ extern(Windows):
 
 interface MobileBroadbandAccountUpdatedEventArgs : Windows.Networking.NetworkOperators.IMobileBroadbandAccountUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring NetworkAccountId()
 	{
 		HSTRING _ret;
@@ -1013,7 +1013,7 @@ extern(Windows):
 
 interface MobileBroadbandAccountWatcher : Windows.Networking.NetworkOperators.IMobileBroadbandAccountWatcher
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAccountAdded(void delegate(Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher, Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1088,7 +1088,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceInformation : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceInformation, Windows.Networking.NetworkOperators.IMobileBroadbandDeviceInformation2, Windows.Networking.NetworkOperators.IMobileBroadbandDeviceInformation3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.NetworkDeviceStatus NetworkDeviceStatus()
 	{
 		Windows.Networking.NetworkOperators.NetworkDeviceStatus _ret;
@@ -1213,7 +1213,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceService : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceService
 {
-extern(Windows):
+extern(D):
 	final GUID DeviceServiceId()
 	{
 		GUID _ret;
@@ -1242,7 +1242,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceCommandResult : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceCommandResult
 {
-extern(Windows):
+extern(D):
 	final UINT32 StatusCode()
 	{
 		UINT32 _ret;
@@ -1259,7 +1259,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceCommandSession : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceCommandSession
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult) SendQueryCommandAsync(UINT32 commandId, Windows.Storage.Streams.IBuffer data)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult) _ret;
@@ -1280,7 +1280,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceDataReceivedEventArgs : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer ReceivedData()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1291,7 +1291,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceDataSession : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceDataSession
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction WriteDataAsync(Windows.Storage.Streams.IBuffer value)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -1316,7 +1316,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceInformation : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceInformation
 {
-extern(Windows):
+extern(D):
 	final GUID DeviceServiceId()
 	{
 		GUID _ret;
@@ -1339,7 +1339,7 @@ extern(Windows):
 
 interface MobileBroadbandDeviceServiceTriggerDetails : Windows.Networking.NetworkOperators.IMobileBroadbandDeviceServiceTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1362,7 +1362,7 @@ extern(Windows):
 
 interface MobileBroadbandModem : Windows.Networking.NetworkOperators.IMobileBroadbandModem
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandAccount CurrentAccount()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandAccount _ret;
@@ -1452,7 +1452,7 @@ extern(Windows):
 
 interface MobileBroadbandModemConfiguration : Windows.Networking.NetworkOperators.IMobileBroadbandModemConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandUicc Uicc()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandUicc _ret;
@@ -1475,7 +1475,7 @@ extern(Windows):
 
 interface MobileBroadbandNetwork : Windows.Networking.NetworkOperators.IMobileBroadbandNetwork, Windows.Networking.NetworkOperators.IMobileBroadbandNetwork2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.NetworkAdapter NetworkAdapter()
 	{
 		Windows.Networking.Connectivity.NetworkAdapter _ret;
@@ -1550,7 +1550,7 @@ extern(Windows):
 
 interface MobileBroadbandNetworkRegistrationStateChange : Windows.Networking.NetworkOperators.IMobileBroadbandNetworkRegistrationStateChange
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1567,7 +1567,7 @@ extern(Windows):
 
 interface MobileBroadbandNetworkRegistrationStateChangeTriggerDetails : Windows.Networking.NetworkOperators.IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange) NetworkRegistrationStateChanges()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange) _ret;
@@ -1578,7 +1578,7 @@ extern(Windows):
 
 interface MobileBroadbandPin : Windows.Networking.NetworkOperators.IMobileBroadbandPin
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandPinType Type()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandPinType _ret;
@@ -1655,7 +1655,7 @@ extern(Windows):
 
 interface MobileBroadbandPinLockStateChange : Windows.Networking.NetworkOperators.IMobileBroadbandPinLockStateChange
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1678,7 +1678,7 @@ extern(Windows):
 
 interface MobileBroadbandPinLockStateChangeTriggerDetails : Windows.Networking.NetworkOperators.IMobileBroadbandPinLockStateChangeTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChange) PinLockStateChanges()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChange) _ret;
@@ -1689,7 +1689,7 @@ extern(Windows):
 
 interface MobileBroadbandPinManager : Windows.Networking.NetworkOperators.IMobileBroadbandPinManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandPinType) SupportedPins()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandPinType) _ret;
@@ -1706,7 +1706,7 @@ extern(Windows):
 
 interface MobileBroadbandPinOperationResult : Windows.Networking.NetworkOperators.IMobileBroadbandPinOperationResult
 {
-extern(Windows):
+extern(D):
 	final bool IsSuccessful()
 	{
 		bool _ret;
@@ -1723,7 +1723,7 @@ extern(Windows):
 
 interface MobileBroadbandRadioStateChange : Windows.Networking.NetworkOperators.IMobileBroadbandRadioStateChange
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1740,7 +1740,7 @@ extern(Windows):
 
 interface MobileBroadbandRadioStateChangeTriggerDetails : Windows.Networking.NetworkOperators.IMobileBroadbandRadioStateChangeTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChange) RadioStateChanges()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChange) _ret;
@@ -1751,7 +1751,7 @@ extern(Windows):
 
 interface MobileBroadbandUicc : Windows.Networking.NetworkOperators.IMobileBroadbandUicc
 {
-extern(Windows):
+extern(D):
 	final wstring SimIccId()
 	{
 		HSTRING _ret;
@@ -1768,7 +1768,7 @@ extern(Windows):
 
 interface MobileBroadbandUiccApp : Windows.Networking.NetworkOperators.IMobileBroadbandUiccApp
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Id()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1797,7 +1797,7 @@ extern(Windows):
 
 interface MobileBroadbandUiccAppReadRecordResult : Windows.Networking.NetworkOperators.IMobileBroadbandUiccAppReadRecordResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus Status()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus _ret;
@@ -1814,7 +1814,7 @@ extern(Windows):
 
 interface MobileBroadbandUiccAppRecordDetailsResult : Windows.Networking.NetworkOperators.IMobileBroadbandUiccAppRecordDetailsResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus Status()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus _ret;
@@ -1855,7 +1855,7 @@ extern(Windows):
 
 interface MobileBroadbandUiccAppsResult : Windows.Networking.NetworkOperators.IMobileBroadbandUiccAppsResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus Status()
 	{
 		Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus _ret;
@@ -1872,7 +1872,7 @@ extern(Windows):
 
 interface NetworkOperatorNotificationEventDetails : Windows.Networking.NetworkOperators.INetworkOperatorNotificationEventDetails, Windows.Networking.NetworkOperators.INetworkOperatorTetheringEntitlementCheck
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType NotificationType()
 	{
 		Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType _ret;
@@ -1917,7 +1917,7 @@ extern(Windows):
 
 interface NetworkOperatorTetheringAccessPointConfiguration : Windows.Networking.NetworkOperators.INetworkOperatorTetheringAccessPointConfiguration
 {
-extern(Windows):
+extern(D):
 	final wstring Ssid()
 	{
 		HSTRING _ret;
@@ -1948,7 +1948,7 @@ extern(Windows):
 
 interface NetworkOperatorTetheringClient : Windows.Networking.NetworkOperators.INetworkOperatorTetheringClient
 {
-extern(Windows):
+extern(D):
 	final wstring MacAddress()
 	{
 		HSTRING _ret;
@@ -1965,7 +1965,7 @@ extern(Windows):
 
 interface NetworkOperatorTetheringManager : Windows.Networking.NetworkOperators.INetworkOperatorTetheringManager, Windows.Networking.NetworkOperators.INetworkOperatorTetheringClientManager
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxClientCount()
 	{
 		UINT32 _ret;
@@ -2037,7 +2037,7 @@ extern(Windows):
 
 interface NetworkOperatorTetheringOperationResult : Windows.Networking.NetworkOperators.INetworkOperatorTetheringOperationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.TetheringOperationStatus Status()
 	{
 		Windows.Networking.NetworkOperators.TetheringOperationStatus _ret;
@@ -2054,7 +2054,7 @@ extern(Windows):
 
 interface ProvisionFromXmlDocumentResults : Windows.Networking.NetworkOperators.IProvisionFromXmlDocumentResults
 {
-extern(Windows):
+extern(D):
 	final bool AllElementsProvisioned()
 	{
 		bool _ret;
@@ -2071,7 +2071,7 @@ extern(Windows):
 
 interface ProvisionedProfile : Windows.Networking.NetworkOperators.IProvisionedProfile
 {
-extern(Windows):
+extern(D):
 	final void UpdateCost(Windows.Networking.Connectivity.NetworkCostType value)
 	{
 		Debug.OK((cast(Windows.Networking.NetworkOperators.IProvisionedProfile)this.asInterface(uuid("217700e0-8202-11df-adb9-f4ce462d9137"))).abi_UpdateCost(value));
@@ -2084,7 +2084,7 @@ extern(Windows):
 
 interface ProvisioningAgent : Windows.Networking.NetworkOperators.IProvisioningAgent
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults) ProvisionFromXmlDocumentAsync(wstring provisioningXmlDocument)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults) _ret;
@@ -2120,7 +2120,7 @@ extern(Windows):
 
 interface UssdMessage : Windows.Networking.NetworkOperators.IUssdMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte DataCodingScheme()
 	{
 		ubyte _ret;
@@ -2162,7 +2162,7 @@ extern(Windows):
 
 interface UssdReply : Windows.Networking.NetworkOperators.IUssdReply
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.NetworkOperators.UssdResultCode ResultCode()
 	{
 		Windows.Networking.NetworkOperators.UssdResultCode _ret;
@@ -2179,7 +2179,7 @@ extern(Windows):
 
 interface UssdSession : Windows.Networking.NetworkOperators.IUssdSession
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.UssdReply) SendMessageAndGetReplyAsync(Windows.Networking.NetworkOperators.UssdMessage message)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Networking.NetworkOperators.UssdReply) _ret;

@@ -277,7 +277,7 @@ extern(Windows):
 
 interface CompositionConditionalValue : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.Interactions.ICompositionConditionalValue
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.ExpressionAnimation Condition()
 	{
 		Windows.UI.Composition.ExpressionAnimation _ret;
@@ -315,7 +315,7 @@ extern(Windows):
 
 interface CompositionInteractionSourceCollection : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.Interactions.ICompositionInteractionSourceCollection, Windows.Foundation.Collections.IIterable!(Windows.UI.Composition.Interactions.ICompositionInteractionSource)
 {
-extern(Windows):
+extern(D):
 	final INT32 Count()
 	{
 		INT32 _ret;
@@ -342,7 +342,7 @@ extern(Windows):
 
 interface InteractionTracker : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.Interactions.IInteractionTracker, Windows.UI.Composition.Interactions.IInteractionTracker2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.Interactions.CompositionInteractionSourceCollection InteractionSources()
 	{
 		Windows.UI.Composition.Interactions.CompositionInteractionSourceCollection _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface InteractionTrackerCustomAnimationStateEnteredArgs : Windows.UI.Composition.Interactions.IInteractionTrackerCustomAnimationStateEnteredArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 RequestId()
 	{
 		INT32 _ret;
@@ -561,7 +561,7 @@ extern(Windows):
 
 interface InteractionTrackerIdleStateEnteredArgs : Windows.UI.Composition.Interactions.IInteractionTrackerIdleStateEnteredArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 RequestId()
 	{
 		INT32 _ret;
@@ -604,7 +604,7 @@ class InteractionTrackerInertiaModifierT(Base) : AgileObject!Base, InteractionTr
 
 interface InteractionTrackerInertiaMotion : Windows.UI.Composition.Interactions.InteractionTrackerInertiaModifier, Windows.UI.Composition.Interactions.IInteractionTrackerInertiaMotion
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.ExpressionAnimation Condition()
 	{
 		Windows.UI.Composition.ExpressionAnimation _ret;
@@ -642,7 +642,7 @@ extern(Windows):
 
 interface InteractionTrackerInertiaRestingValue : Windows.UI.Composition.Interactions.InteractionTrackerInertiaModifier, Windows.UI.Composition.Interactions.IInteractionTrackerInertiaRestingValue
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.ExpressionAnimation Condition()
 	{
 		Windows.UI.Composition.ExpressionAnimation _ret;
@@ -680,7 +680,7 @@ extern(Windows):
 
 interface InteractionTrackerInertiaStateEnteredArgs : Windows.UI.Composition.Interactions.IInteractionTrackerInertiaStateEnteredArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) ModifiedRestingPosition()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) _ret;
@@ -727,7 +727,7 @@ extern(Windows):
 
 interface InteractionTrackerInteractingStateEnteredArgs : Windows.UI.Composition.Interactions.IInteractionTrackerInteractingStateEnteredArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 RequestId()
 	{
 		INT32 _ret;
@@ -738,7 +738,7 @@ extern(Windows):
 
 interface InteractionTrackerRequestIgnoredArgs : Windows.UI.Composition.Interactions.IInteractionTrackerRequestIgnoredArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 RequestId()
 	{
 		INT32 _ret;
@@ -749,7 +749,7 @@ extern(Windows):
 
 interface InteractionTrackerValuesChangedArgs : Windows.UI.Composition.Interactions.IInteractionTrackerValuesChangedArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -772,7 +772,7 @@ extern(Windows):
 
 interface VisualInteractionSource : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.Interactions.IVisualInteractionSource, Windows.UI.Composition.Interactions.ICompositionInteractionSource, Windows.UI.Composition.Interactions.IVisualInteractionSource2
 {
-extern(Windows):
+extern(D):
 	final bool IsPositionXRailsEnabled()
 	{
 		bool _ret;

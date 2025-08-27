@@ -610,7 +610,7 @@ extern(Windows):
 
 interface ControlChannelTrigger : Windows.Networking.Sockets.IControlChannelTrigger, Windows.Foundation.IClosable, Windows.Networking.Sockets.IControlChannelTrigger2
 {
-extern(Windows):
+extern(D):
 	final wstring ControlChannelTriggerId()
 	{
 		HSTRING _ret;
@@ -697,7 +697,7 @@ extern(Windows):
 
 interface DatagramSocket : Windows.Networking.Sockets.IDatagramSocket, Windows.Foundation.IClosable, Windows.Networking.Sockets.IDatagramSocket2, Windows.Networking.Sockets.IDatagramSocket3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.DatagramSocketControl Control()
 	{
 		Windows.Networking.Sockets.DatagramSocketControl _ret;
@@ -838,7 +838,7 @@ extern(Windows):
 
 interface DatagramSocketControl : Windows.Networking.Sockets.IDatagramSocketControl, Windows.Networking.Sockets.IDatagramSocketControl2, Windows.Networking.Sockets.IDatagramSocketControl3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.SocketQualityOfService QualityOfService()
 	{
 		Windows.Networking.Sockets.SocketQualityOfService _ret;
@@ -893,7 +893,7 @@ extern(Windows):
 
 interface DatagramSocketInformation : Windows.Networking.Sockets.IDatagramSocketInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName LocalAddress()
 	{
 		Windows.Networking.HostName _ret;
@@ -922,7 +922,7 @@ extern(Windows):
 
 interface DatagramSocketMessageReceivedEventArgs : Windows.Networking.Sockets.IDatagramSocketMessageReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName RemoteAddress()
 	{
 		Windows.Networking.HostName _ret;
@@ -957,7 +957,7 @@ extern(Windows):
 
 interface MessageWebSocket : Windows.Networking.Sockets.IMessageWebSocket, Windows.Networking.Sockets.IWebSocket, Windows.Foundation.IClosable, Windows.Networking.Sockets.IMessageWebSocket2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.MessageWebSocketControl Control()
 	{
 		Windows.Networking.Sockets.MessageWebSocketControl _ret;
@@ -1035,7 +1035,7 @@ extern(Windows):
 
 interface MessageWebSocketControl : Windows.Networking.Sockets.IMessageWebSocketControl, Windows.Networking.Sockets.IWebSocketControl, Windows.Networking.Sockets.IWebSocketControl2
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxMessageSize()
 	{
 		UINT32 _ret;
@@ -1102,7 +1102,7 @@ extern(Windows):
 
 interface MessageWebSocketInformation : Windows.Networking.Sockets.IWebSocketInformation, Windows.Networking.Sockets.IWebSocketInformation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName LocalAddress()
 	{
 		Windows.Networking.HostName _ret;
@@ -1149,7 +1149,7 @@ extern(Windows):
 
 interface MessageWebSocketMessageReceivedEventArgs : Windows.Networking.Sockets.IMessageWebSocketMessageReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.SocketMessageType MessageType()
 	{
 		Windows.Networking.Sockets.SocketMessageType _ret;
@@ -1172,7 +1172,7 @@ extern(Windows):
 
 interface SocketActivityContext : Windows.Networking.Sockets.ISocketActivityContext
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Data()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1190,7 +1190,7 @@ extern(Windows):
 
 interface SocketActivityInformation : Windows.Networking.Sockets.ISocketActivityInformation
 {
-extern(Windows):
+extern(D):
 	final GUID TaskId()
 	{
 		GUID _ret;
@@ -1250,7 +1250,7 @@ extern(Windows):
 
 interface SocketActivityTriggerDetails : Windows.Networking.Sockets.ISocketActivityTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.SocketActivityTriggerReason Reason()
 	{
 		Windows.Networking.Sockets.SocketActivityTriggerReason _ret;
@@ -1283,7 +1283,7 @@ interface SocketError
 
 interface StreamSocket : Windows.Networking.Sockets.IStreamSocket, Windows.Foundation.IClosable, Windows.Networking.Sockets.IStreamSocket2, Windows.Networking.Sockets.IStreamSocket3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.StreamSocketControl Control()
 	{
 		Windows.Networking.Sockets.StreamSocketControl _ret;
@@ -1411,7 +1411,7 @@ extern(Windows):
 
 interface StreamSocketControl : Windows.Networking.Sockets.IStreamSocketControl, Windows.Networking.Sockets.IStreamSocketControl2, Windows.Networking.Sockets.IStreamSocketControl3
 {
-extern(Windows):
+extern(D):
 	final bool NoDelay()
 	{
 		bool _ret;
@@ -1492,7 +1492,7 @@ extern(Windows):
 
 interface StreamSocketInformation : Windows.Networking.Sockets.IStreamSocketInformation, Windows.Networking.Sockets.IStreamSocketInformation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName LocalAddress()
 	{
 		Windows.Networking.HostName _ret;
@@ -1581,7 +1581,7 @@ extern(Windows):
 
 interface StreamSocketListener : Windows.Networking.Sockets.IStreamSocketListener, Windows.Foundation.IClosable, Windows.Networking.Sockets.IStreamSocketListener2, Windows.Networking.Sockets.IStreamSocketListener3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.StreamSocketListenerControl Control()
 	{
 		Windows.Networking.Sockets.StreamSocketListenerControl _ret;
@@ -1668,7 +1668,7 @@ extern(Windows):
 
 interface StreamSocketListenerConnectionReceivedEventArgs : Windows.Networking.Sockets.IStreamSocketListenerConnectionReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.StreamSocket Socket()
 	{
 		Windows.Networking.Sockets.StreamSocket _ret;
@@ -1679,7 +1679,7 @@ extern(Windows):
 
 interface StreamSocketListenerControl : Windows.Networking.Sockets.IStreamSocketListenerControl, Windows.Networking.Sockets.IStreamSocketListenerControl2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.SocketQualityOfService QualityOfService()
 	{
 		Windows.Networking.Sockets.SocketQualityOfService _ret;
@@ -1734,7 +1734,7 @@ extern(Windows):
 
 interface StreamSocketListenerInformation : Windows.Networking.Sockets.IStreamSocketListenerInformation
 {
-extern(Windows):
+extern(D):
 	final wstring LocalPort()
 	{
 		HSTRING _ret;
@@ -1745,7 +1745,7 @@ extern(Windows):
 
 interface StreamWebSocket : Windows.Networking.Sockets.IStreamWebSocket, Windows.Networking.Sockets.IWebSocket, Windows.Foundation.IClosable, Windows.Networking.Sockets.IStreamWebSocket2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.StreamWebSocketControl Control()
 	{
 		Windows.Networking.Sockets.StreamWebSocketControl _ret;
@@ -1819,7 +1819,7 @@ extern(Windows):
 
 interface StreamWebSocketControl : Windows.Networking.Sockets.IStreamWebSocketControl, Windows.Networking.Sockets.IWebSocketControl, Windows.Networking.Sockets.IWebSocketControl2
 {
-extern(Windows):
+extern(D):
 	final bool NoDelay()
 	{
 		bool _ret;
@@ -1876,7 +1876,7 @@ extern(Windows):
 
 interface StreamWebSocketInformation : Windows.Networking.Sockets.IWebSocketInformation, Windows.Networking.Sockets.IWebSocketInformation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName LocalAddress()
 	{
 		Windows.Networking.HostName _ret;
@@ -1923,7 +1923,7 @@ extern(Windows):
 
 interface WebSocketClosedEventArgs : Windows.Networking.Sockets.IWebSocketClosedEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT16 Code()
 	{
 		UINT16 _ret;
@@ -1956,7 +1956,7 @@ interface WebSocketError
 
 interface WebSocketKeepAlive : Windows.ApplicationModel.Background.IBackgroundTask
 {
-extern(Windows):
+extern(D):
 	final void Run(Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Background.IBackgroundTask)this.asInterface(uuid("7d13d534-fd12-43ce-8c22-ea1ff13c06df"))).abi_Run(taskInstance));
@@ -1971,7 +1971,7 @@ extern(Windows):
 
 interface WebSocketServerCustomValidationRequestedEventArgs : Windows.Networking.Sockets.IWebSocketServerCustomValidationRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.Certificate ServerCertificate()
 	{
 		Windows.Security.Cryptography.Certificates.Certificate _ret;

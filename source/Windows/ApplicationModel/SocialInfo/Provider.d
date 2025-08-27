@@ -63,7 +63,7 @@ extern(Windows):
 
 interface SocialDashboardItemUpdater : Windows.ApplicationModel.SocialInfo.Provider.ISocialDashboardItemUpdater
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialDashboardItemUpdater is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final wstring OwnerRemoteId()
 	{
@@ -125,7 +125,7 @@ extern(Windows):
 
 interface SocialFeedUpdater : Windows.ApplicationModel.SocialInfo.Provider.ISocialFeedUpdater
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialFeedUpdater is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final wstring OwnerRemoteId()
 	{

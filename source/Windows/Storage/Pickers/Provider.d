@@ -104,7 +104,7 @@ extern(Windows):
 
 interface FileOpenPickerUI : Windows.Storage.Pickers.Provider.IFileOpenPickerUI
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.AddFileResult AddFile(wstring id, Windows.Storage.IStorageFile file)
 	{
 		Windows.Storage.Pickers.Provider.AddFileResult _ret;
@@ -181,7 +181,7 @@ extern(Windows):
 
 interface FileRemovedEventArgs : Windows.Storage.Pickers.Provider.IFileRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("Since Windows 10, only apps can remove files, not end users so the FileRemoved event will not be raised.")
 	final wstring Id()
 	{
@@ -193,7 +193,7 @@ extern(Windows):
 
 interface FileSavePickerUI : Windows.Storage.Pickers.Provider.IFileSavePickerUI
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -252,7 +252,7 @@ extern(Windows):
 
 interface PickerClosingDeferral : Windows.Storage.Pickers.Provider.IPickerClosingDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Storage.Pickers.Provider.IPickerClosingDeferral)this.asInterface(uuid("7af7f71e-1a67-4a31-ae80-e907708a619b"))).abi_Complete());
@@ -261,7 +261,7 @@ extern(Windows):
 
 interface PickerClosingEventArgs : Windows.Storage.Pickers.Provider.IPickerClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.PickerClosingOperation ClosingOperation()
 	{
 		Windows.Storage.Pickers.Provider.PickerClosingOperation _ret;
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface PickerClosingOperation : Windows.Storage.Pickers.Provider.IPickerClosingOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.PickerClosingDeferral GetDeferral()
 	{
 		Windows.Storage.Pickers.Provider.PickerClosingDeferral _ret;
@@ -295,7 +295,7 @@ extern(Windows):
 
 interface TargetFileRequest : Windows.Storage.Pickers.Provider.ITargetFileRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.IStorageFile TargetFile()
 	{
 		Windows.Storage.IStorageFile _ret;
@@ -316,7 +316,7 @@ extern(Windows):
 
 interface TargetFileRequestDeferral : Windows.Storage.Pickers.Provider.ITargetFileRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Storage.Pickers.Provider.ITargetFileRequestDeferral)this.asInterface(uuid("4aee9d91-bf15-4da9-95f6-f6b7d558225b"))).abi_Complete());
@@ -325,7 +325,7 @@ extern(Windows):
 
 interface TargetFileRequestedEventArgs : Windows.Storage.Pickers.Provider.ITargetFileRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.Provider.TargetFileRequest Request()
 	{
 		Windows.Storage.Pickers.Provider.TargetFileRequest _ret;

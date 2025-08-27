@@ -75,7 +75,7 @@ extern(Windows):
 
 interface I2cConnectionSettings : Windows.Devices.I2c.II2cConnectionSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 SlaveAddress()
 	{
 		INT32 _ret;
@@ -117,7 +117,7 @@ extern(Windows):
 
 interface I2cController : Windows.Devices.I2c.II2cController
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.I2c.I2cDevice GetDevice(Windows.Devices.I2c.I2cConnectionSettings settings)
 	{
 		Windows.Devices.I2c.I2cDevice _ret;
@@ -147,7 +147,7 @@ extern(Windows):
 
 interface I2cDevice : Windows.Devices.I2c.II2cDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;

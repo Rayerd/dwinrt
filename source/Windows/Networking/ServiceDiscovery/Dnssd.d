@@ -60,7 +60,7 @@ extern(Windows):
 
 interface DnssdRegistrationResult : Windows.Networking.ServiceDiscovery.Dnssd.IDnssdRegistrationResult, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus Status()
 	{
 		Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus _ret;
@@ -95,7 +95,7 @@ extern(Windows):
 
 interface DnssdServiceInstance : Windows.Networking.ServiceDiscovery.Dnssd.IDnssdServiceInstance, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring DnssdServiceInstanceName()
 	{
 		HSTRING _ret;
@@ -197,7 +197,7 @@ extern(Windows):
 
 interface DnssdServiceInstanceCollection : Windows.Foundation.Collections.IVectorView!(Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance), Windows.Foundation.Collections.IIterable!(Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance))this).abi_GetAt(index, out_item));
@@ -226,7 +226,7 @@ extern(Windows):
 
 interface DnssdServiceWatcher : Windows.Networking.ServiceDiscovery.Dnssd.IDnssdServiceWatcher
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAdded(void delegate(Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher, Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance) fn)
 	{
 		EventRegistrationToken tok;

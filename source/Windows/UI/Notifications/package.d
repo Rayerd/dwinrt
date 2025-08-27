@@ -651,7 +651,7 @@ extern(Windows):
 
 interface AdaptiveNotificationText : Windows.UI.Notifications.IAdaptiveNotificationText, Windows.UI.Notifications.IAdaptiveNotificationContent
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -694,7 +694,7 @@ extern(Windows):
 
 interface BadgeNotification : Windows.UI.Notifications.IBadgeNotification
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -757,7 +757,7 @@ interface BadgeUpdateManager
 
 interface BadgeUpdateManagerForUser : Windows.UI.Notifications.IBadgeUpdateManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.BadgeUpdater CreateBadgeUpdaterForApplication()
 	{
 		Windows.UI.Notifications.BadgeUpdater _ret;
@@ -787,7 +787,7 @@ extern(Windows):
 
 interface BadgeUpdater : Windows.UI.Notifications.IBadgeUpdater
 {
-extern(Windows):
+extern(D):
 	final void Update(Windows.UI.Notifications.BadgeNotification notification)
 	{
 		Debug.OK((cast(Windows.UI.Notifications.IBadgeUpdater)this.asInterface(uuid("b5fa1fd4-7562-4f6c-bfa3-1b6ed2e57f2f"))).abi_Update(notification));
@@ -999,7 +999,7 @@ interface KnownNotificationBindings
 
 interface Notification : Windows.UI.Notifications.INotification
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) ExpirationTime()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -1030,7 +1030,7 @@ extern(Windows):
 
 interface NotificationBinding : Windows.UI.Notifications.INotificationBinding
 {
-extern(Windows):
+extern(D):
 	final wstring Template()
 	{
 		HSTRING _ret;
@@ -1067,7 +1067,7 @@ extern(Windows):
 
 interface NotificationData : Windows.UI.Notifications.INotificationData
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMap!(HSTRING, HSTRING) Values()
 	{
 		Windows.Foundation.Collections.IMap!(HSTRING, HSTRING) _ret;
@@ -1110,7 +1110,7 @@ extern(Windows):
 
 interface NotificationVisual : Windows.UI.Notifications.INotificationVisual
 {
-extern(Windows):
+extern(D):
 	final wstring Language()
 	{
 		HSTRING _ret;
@@ -1137,7 +1137,7 @@ extern(Windows):
 
 interface ScheduledTileNotification : Windows.UI.Notifications.IScheduledTileNotification
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -1191,7 +1191,7 @@ extern(Windows):
 
 interface ScheduledToastNotification : Windows.UI.Notifications.IScheduledToastNotification, Windows.UI.Notifications.IScheduledToastNotification2, Windows.UI.Notifications.IScheduledToastNotification3
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -1294,7 +1294,7 @@ extern(Windows):
 
 interface ShownTileNotification : Windows.UI.Notifications.IShownTileNotification
 {
-extern(Windows):
+extern(D):
 	final wstring Arguments()
 	{
 		HSTRING _ret;
@@ -1305,7 +1305,7 @@ extern(Windows):
 
 interface TileFlyoutNotification : Windows.UI.Notifications.ITileFlyoutNotification
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -1368,7 +1368,7 @@ interface TileFlyoutUpdateManager
 
 interface TileFlyoutUpdater : Windows.UI.Notifications.ITileFlyoutUpdater
 {
-extern(Windows):
+extern(D):
 	final void Update(Windows.UI.Notifications.TileFlyoutNotification notification)
 	{
 		Debug.OK((cast(Windows.UI.Notifications.ITileFlyoutUpdater)this.asInterface(uuid("8d40c76a-c465-4052-a740-5c2654c1a089"))).abi_Update(notification));
@@ -1400,7 +1400,7 @@ extern(Windows):
 
 interface TileNotification : Windows.UI.Notifications.ITileNotification
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -1473,7 +1473,7 @@ interface TileUpdateManager
 
 interface TileUpdateManagerForUser : Windows.UI.Notifications.ITileUpdateManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.TileUpdater CreateTileUpdaterForApplication()
 	{
 		Windows.UI.Notifications.TileUpdater _ret;
@@ -1504,7 +1504,7 @@ extern(Windows):
 
 interface TileUpdater : Windows.UI.Notifications.ITileUpdater, Windows.UI.Notifications.ITileUpdater2
 {
-extern(Windows):
+extern(D):
 	final void Update(Windows.UI.Notifications.TileNotification notification)
 	{
 		Debug.OK((cast(Windows.UI.Notifications.ITileUpdater)this.asInterface(uuid("0942a48b-1d91-44ec-9243-c1e821c29a20"))).abi_Update(notification));
@@ -1575,7 +1575,7 @@ extern(Windows):
 
 interface ToastActivatedEventArgs : Windows.UI.Notifications.IToastActivatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Arguments()
 	{
 		HSTRING _ret;
@@ -1586,7 +1586,7 @@ extern(Windows):
 
 interface ToastCollection : Windows.UI.Notifications.IToastCollection
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1634,7 +1634,7 @@ extern(Windows):
 
 interface ToastCollectionManager : Windows.UI.Notifications.IToastCollectionManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SaveToastCollectionAsync(Windows.UI.Notifications.ToastCollection collection)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -1681,7 +1681,7 @@ extern(Windows):
 
 interface ToastDismissedEventArgs : Windows.UI.Notifications.IToastDismissedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.ToastDismissalReason Reason()
 	{
 		Windows.UI.Notifications.ToastDismissalReason _ret;
@@ -1692,7 +1692,7 @@ extern(Windows):
 
 interface ToastFailedEventArgs : Windows.UI.Notifications.IToastFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT ErrorCode()
 	{
 		HRESULT _ret;
@@ -1703,7 +1703,7 @@ extern(Windows):
 
 interface ToastNotification : Windows.UI.Notifications.IToastNotification, Windows.UI.Notifications.IToastNotification2, Windows.UI.Notifications.IToastNotification3, Windows.UI.Notifications.IToastNotification4
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocument Content()
 	{
 		Windows.Data.Xml.Dom.XmlDocument _ret;
@@ -1831,7 +1831,7 @@ extern(Windows):
 
 interface ToastNotificationActionTriggerDetail : Windows.UI.Notifications.IToastNotificationActionTriggerDetail
 {
-extern(Windows):
+extern(D):
 	final wstring Argument()
 	{
 		HSTRING _ret;
@@ -1848,7 +1848,7 @@ extern(Windows):
 
 interface ToastNotificationHistory : Windows.UI.Notifications.IToastNotificationHistory, Windows.UI.Notifications.IToastNotificationHistory2
 {
-extern(Windows):
+extern(D):
 	final void RemoveGroup(wstring group)
 	{
 		Debug.OK((cast(Windows.UI.Notifications.IToastNotificationHistory)this.asInterface(uuid("5caddc63-01d3-4c97-986f-0533483fee14"))).abi_RemoveGroup(hstring(group).handle));
@@ -1898,7 +1898,7 @@ extern(Windows):
 
 interface ToastNotificationHistoryChangedTriggerDetail : Windows.UI.Notifications.IToastNotificationHistoryChangedTriggerDetail, Windows.UI.Notifications.IToastNotificationHistoryChangedTriggerDetail2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.ToastHistoryChangedType ChangeType()
 	{
 		Windows.UI.Notifications.ToastHistoryChangedType _ret;
@@ -1944,7 +1944,7 @@ interface ToastNotificationManager
 
 interface ToastNotificationManagerForUser : Windows.UI.Notifications.IToastNotificationManagerForUser, Windows.UI.Notifications.IToastNotificationManagerForUser2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.ToastNotifier CreateToastNotifier()
 	{
 		Windows.UI.Notifications.ToastNotifier _ret;
@@ -1999,7 +1999,7 @@ extern(Windows):
 
 interface ToastNotifier : Windows.UI.Notifications.IToastNotifier, Windows.UI.Notifications.IToastNotifier2
 {
-extern(Windows):
+extern(D):
 	final void Show(Windows.UI.Notifications.ToastNotification notification)
 	{
 		Debug.OK((cast(Windows.UI.Notifications.IToastNotifier)this.asInterface(uuid("75927b93-03f3-41ec-91d3-6e5bac1b38e7"))).abi_Show(notification));
@@ -2046,7 +2046,7 @@ extern(Windows):
 
 interface UserNotification : Windows.UI.Notifications.IUserNotification
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.Notification Notification()
 	{
 		Windows.UI.Notifications.Notification _ret;
@@ -2075,7 +2075,7 @@ extern(Windows):
 
 interface UserNotificationChangedEventArgs : Windows.UI.Notifications.IUserNotificationChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Notifications.UserNotificationChangedKind ChangeKind()
 	{
 		Windows.UI.Notifications.UserNotificationChangedKind _ret;

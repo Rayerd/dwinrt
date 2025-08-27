@@ -85,7 +85,7 @@ extern(Windows):
 
 interface AddPagesEventArgs : Windows.UI.Xaml.Printing.IAddPagesEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.PrintTaskOptions PrintTaskOptions()
 	{
 		Windows.Graphics.Printing.PrintTaskOptions _ret;
@@ -102,7 +102,7 @@ extern(Windows):
 
 interface GetPreviewPageEventArgs : Windows.UI.Xaml.Printing.IGetPreviewPageEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 PageNumber()
 	{
 		INT32 _ret;
@@ -119,7 +119,7 @@ extern(Windows):
 
 interface PaginateEventArgs : Windows.UI.Xaml.Printing.IPaginateEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.PrintTaskOptions PrintTaskOptions()
 	{
 		Windows.Graphics.Printing.PrintTaskOptions _ret;
@@ -142,7 +142,7 @@ extern(Windows):
 
 interface PrintDocument : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Printing.IPrintDocument
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.IPrintDocumentSource DocumentSource()
 	{
 		Windows.Graphics.Printing.IPrintDocumentSource _ret;

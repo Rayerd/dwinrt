@@ -627,7 +627,7 @@ interface AnnotationPatternIdentifiers : Windows.UI.Xaml.Automation.IAnnotationP
 
 interface AutomationAnnotation : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Automation.IAutomationAnnotation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Automation.AnnotationType Type()
 	{
 		Windows.UI.Xaml.Automation.AnnotationType _ret;

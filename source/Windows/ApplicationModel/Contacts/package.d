@@ -954,7 +954,7 @@ extern(Windows):
 
 interface AggregateContactManager : Windows.ApplicationModel.Contacts.IAggregateContactManager, Windows.ApplicationModel.Contacts.IAggregateContactManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact)) FindRawContactsAsync(Windows.ApplicationModel.Contacts.Contact contact)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact)) _ret;
@@ -989,7 +989,7 @@ extern(Windows):
 
 interface Contact : Windows.ApplicationModel.Contacts.IContact, Windows.ApplicationModel.Contacts.IContact2, Windows.ApplicationModel.Contacts.IContactName, Windows.ApplicationModel.Contacts.IContact3
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1312,7 +1312,7 @@ extern(Windows):
 
 interface ContactAddress : Windows.ApplicationModel.Contacts.IContactAddress
 {
-extern(Windows):
+extern(D):
 	final wstring StreetAddress()
 	{
 		HSTRING _ret;
@@ -1393,7 +1393,7 @@ extern(Windows):
 
 interface ContactAnnotation : Windows.ApplicationModel.Contacts.IContactAnnotation, Windows.ApplicationModel.Contacts.IContactAnnotation2
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1468,7 +1468,7 @@ extern(Windows):
 
 interface ContactAnnotationList : Windows.ApplicationModel.Contacts.IContactAnnotationList
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1527,7 +1527,7 @@ extern(Windows):
 
 interface ContactAnnotationStore : Windows.ApplicationModel.Contacts.IContactAnnotationStore, Windows.ApplicationModel.Contacts.IContactAnnotationStore2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(HSTRING)) FindContactIdsByEmailAsync(wstring emailAddress)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(HSTRING)) _ret;
@@ -1587,7 +1587,7 @@ extern(Windows):
 
 interface ContactBatch : Windows.ApplicationModel.Contacts.IContactBatch
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact) Contacts()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact) _ret;
@@ -1604,7 +1604,7 @@ extern(Windows):
 
 interface ContactCardDelayedDataLoader : Windows.ApplicationModel.Contacts.IContactCardDelayedDataLoader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void SetData(Windows.ApplicationModel.Contacts.Contact contact)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Contacts.IContactCardDelayedDataLoader)this.asInterface(uuid("b60af902-1546-434d-869c-6e3520760ef3"))).abi_SetData(contact));
@@ -1617,7 +1617,7 @@ extern(Windows):
 
 interface ContactCardOptions : Windows.ApplicationModel.Contacts.IContactCardOptions, Windows.ApplicationModel.Contacts.IContactCardOptions2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactCardHeaderKind HeaderKind()
 	{
 		Windows.ApplicationModel.Contacts.ContactCardHeaderKind _ret;
@@ -1654,7 +1654,7 @@ extern(Windows):
 
 interface ContactChange : Windows.ApplicationModel.Contacts.IContactChange
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactChangeType ChangeType()
 	{
 		Windows.ApplicationModel.Contacts.ContactChangeType _ret;
@@ -1671,7 +1671,7 @@ extern(Windows):
 
 interface ContactChangeReader : Windows.ApplicationModel.Contacts.IContactChangeReader
 {
-extern(Windows):
+extern(D):
 	final void AcceptChanges()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Contacts.IContactChangeReader)this.asInterface(uuid("217319fa-2d0c-42e0-a9da-3ecd56a78a47"))).abi_AcceptChanges());
@@ -1690,7 +1690,7 @@ extern(Windows):
 
 interface ContactChangeTracker : Windows.ApplicationModel.Contacts.IContactChangeTracker
 {
-extern(Windows):
+extern(D):
 	final void Enable()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Contacts.IContactChangeTracker)this.asInterface(uuid("6e992952-309b-404d-9712-b37bd30278aa"))).abi_Enable());
@@ -1709,7 +1709,7 @@ extern(Windows):
 
 interface ContactChangedDeferral : Windows.ApplicationModel.Contacts.IContactChangedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Contacts.IContactChangedDeferral)this.asInterface(uuid("c5143ae8-1b03-46f8-b694-a523e83cfcb6"))).abi_Complete());
@@ -1718,7 +1718,7 @@ extern(Windows):
 
 interface ContactChangedEventArgs : Windows.ApplicationModel.Contacts.IContactChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactChangedDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.Contacts.ContactChangedDeferral _ret;
@@ -1729,7 +1729,7 @@ extern(Windows):
 
 interface ContactConnectedServiceAccount : Windows.ApplicationModel.Contacts.IContactConnectedServiceAccount
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1760,7 +1760,7 @@ extern(Windows):
 
 interface ContactDate : Windows.ApplicationModel.Contacts.IContactDate
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(UINT32) Day()
 	{
 		Windows.Foundation.IReference!(UINT32) _ret;
@@ -1821,7 +1821,7 @@ extern(Windows):
 
 interface ContactEmail : Windows.ApplicationModel.Contacts.IContactEmail
 {
-extern(Windows):
+extern(D):
 	final wstring Address()
 	{
 		HSTRING _ret;
@@ -1862,7 +1862,7 @@ extern(Windows):
 
 interface ContactField : Windows.ApplicationModel.Contacts.IContactField
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactFieldType Type()
 	{
 		Windows.ApplicationModel.Contacts.ContactFieldType _ret;
@@ -1915,7 +1915,7 @@ extern(Windows):
 
 interface ContactFieldFactory : Windows.ApplicationModel.Contacts.IContactFieldFactory, Windows.ApplicationModel.Contacts.IContactLocationFieldFactory, Windows.ApplicationModel.Contacts.IContactInstantMessageFieldFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactField CreateField_Default(wstring value, Windows.ApplicationModel.Contacts.ContactFieldType type)
 	{
 		Windows.ApplicationModel.Contacts.ContactField _ret;
@@ -1993,7 +1993,7 @@ interface ContactGroup : Windows.ApplicationModel.Contacts.IContactGroup
 
 interface ContactInformation : Windows.ApplicationModel.Contacts.IContactInformation
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2046,7 +2046,7 @@ extern(Windows):
 
 interface ContactInstantMessageField : Windows.ApplicationModel.Contacts.IContactInstantMessageField, Windows.ApplicationModel.Contacts.IContactField
 {
-extern(Windows):
+extern(D):
 	final wstring UserName()
 	{
 		HSTRING _ret;
@@ -2123,7 +2123,7 @@ extern(Windows):
 
 interface ContactJobInfo : Windows.ApplicationModel.Contacts.IContactJobInfo
 {
-extern(Windows):
+extern(D):
 	final wstring CompanyName()
 	{
 		HSTRING _ret;
@@ -2254,7 +2254,7 @@ interface ContactLaunchActionVerbs
 
 interface ContactList : Windows.ApplicationModel.Contacts.IContactList, Windows.ApplicationModel.Contacts.IContactList2
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -2416,7 +2416,7 @@ extern(Windows):
 
 interface ContactListSyncConstraints : Windows.ApplicationModel.Contacts.IContactListSyncConstraints
 {
-extern(Windows):
+extern(D):
 	final bool CanSyncDescriptions()
 	{
 		bool _ret;
@@ -2701,7 +2701,7 @@ extern(Windows):
 
 interface ContactListSyncManager : Windows.ApplicationModel.Contacts.IContactListSyncManager, Windows.ApplicationModel.Contacts.IContactListSyncManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactListSyncStatus Status()
 	{
 		Windows.ApplicationModel.Contacts.ContactListSyncStatus _ret;
@@ -2752,7 +2752,7 @@ extern(Windows):
 
 interface ContactLocationField : Windows.ApplicationModel.Contacts.IContactLocationField, Windows.ApplicationModel.Contacts.IContactField
 {
-extern(Windows):
+extern(D):
 	final wstring UnstructuredAddress()
 	{
 		HSTRING _ret;
@@ -2866,7 +2866,7 @@ interface ContactManager
 
 interface ContactManagerForUser : Windows.ApplicationModel.Contacts.IContactManagerForUser, Windows.ApplicationModel.Contacts.IContactManagerForUser2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.RandomAccessStreamReference) ConvertContactToVCardAsync(Windows.ApplicationModel.Contacts.Contact contact)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.RandomAccessStreamReference) _ret;
@@ -2932,7 +2932,7 @@ extern(Windows):
 
 interface ContactMatchReason : Windows.ApplicationModel.Contacts.IContactMatchReason
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactMatchReasonKind Field()
 	{
 		Windows.ApplicationModel.Contacts.ContactMatchReasonKind _ret;
@@ -2955,7 +2955,7 @@ extern(Windows):
 
 interface ContactPanel : Windows.ApplicationModel.Contacts.IContactPanel
 {
-extern(Windows):
+extern(D):
 	final void ClosePanel()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Contacts.IContactPanel)this.asInterface(uuid("41bf1265-d2ee-4b97-a80a-7d8d64cca6f5"))).abi_ClosePanel());
@@ -2994,7 +2994,7 @@ extern(Windows):
 
 interface ContactPanelClosingEventArgs : Windows.ApplicationModel.Contacts.IContactPanelClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;
@@ -3005,7 +3005,7 @@ extern(Windows):
 
 interface ContactPanelLaunchFullAppRequestedEventArgs : Windows.ApplicationModel.Contacts.IContactPanelLaunchFullAppRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -3020,7 +3020,7 @@ extern(Windows):
 
 interface ContactPhone : Windows.ApplicationModel.Contacts.IContactPhone
 {
-extern(Windows):
+extern(D):
 	final wstring Number()
 	{
 		HSTRING _ret;
@@ -3061,7 +3061,7 @@ extern(Windows):
 
 interface ContactPicker : Windows.ApplicationModel.Contacts.IContactPicker, Windows.ApplicationModel.Contacts.IContactPicker2, Windows.ApplicationModel.Contacts.IContactPicker3
 {
-extern(Windows):
+extern(D):
 	final wstring CommitButtonText()
 	{
 		HSTRING _ret;
@@ -3153,7 +3153,7 @@ extern(Windows):
 
 interface ContactQueryOptions : Windows.ApplicationModel.Contacts.IContactQueryOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactQueryTextSearch TextSearch()
 	{
 		Windows.ApplicationModel.Contacts.ContactQueryTextSearch _ret;
@@ -3226,7 +3226,7 @@ extern(Windows):
 
 interface ContactQueryTextSearch : Windows.ApplicationModel.Contacts.IContactQueryTextSearch
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.ContactQuerySearchFields Fields()
 	{
 		Windows.ApplicationModel.Contacts.ContactQuerySearchFields _ret;
@@ -3261,7 +3261,7 @@ extern(Windows):
 
 interface ContactReader : Windows.ApplicationModel.Contacts.IContactReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Contacts.ContactBatch) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Contacts.ContactBatch) _ret;
@@ -3278,7 +3278,7 @@ extern(Windows):
 
 interface ContactSignificantOther : Windows.ApplicationModel.Contacts.IContactSignificantOther, Windows.ApplicationModel.Contacts.IContactSignificantOther2
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -3319,7 +3319,7 @@ extern(Windows):
 
 interface ContactStore : Windows.ApplicationModel.Contacts.IContactStore, Windows.ApplicationModel.Contacts.IContactStore2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact)) FindContactsAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Contacts.Contact)) _ret;
@@ -3413,7 +3413,7 @@ interface ContactStoreNotificationTriggerDetails : Windows.ApplicationModel.Cont
 
 interface ContactWebsite : Windows.ApplicationModel.Contacts.IContactWebsite, Windows.ApplicationModel.Contacts.IContactWebsite2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -3454,7 +3454,7 @@ extern(Windows):
 
 interface FullContactCardOptions : Windows.ApplicationModel.Contacts.IFullContactCardOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ViewManagement.ViewSizePreference DesiredRemainingView()
 	{
 		Windows.UI.ViewManagement.ViewSizePreference _ret;
@@ -3527,7 +3527,7 @@ interface KnownContactField
 
 interface PinnedContactIdsQueryResult : Windows.ApplicationModel.Contacts.IPinnedContactIdsQueryResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) ContactIds()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -3538,7 +3538,7 @@ extern(Windows):
 
 interface PinnedContactManager : Windows.ApplicationModel.Contacts.IPinnedContactManager
 {
-extern(Windows):
+extern(D):
 	final Windows.System.User User()
 	{
 		Windows.System.User _ret;

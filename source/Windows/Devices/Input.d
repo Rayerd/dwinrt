@@ -106,7 +106,7 @@ extern(Windows):
 
 interface KeyboardCapabilities : Windows.Devices.Input.IKeyboardCapabilities
 {
-extern(Windows):
+extern(D):
 	final INT32 KeyboardPresent()
 	{
 		INT32 _ret;
@@ -123,7 +123,7 @@ extern(Windows):
 
 interface MouseCapabilities : Windows.Devices.Input.IMouseCapabilities
 {
-extern(Windows):
+extern(D):
 	final INT32 MousePresent()
 	{
 		INT32 _ret;
@@ -164,7 +164,7 @@ extern(Windows):
 
 interface MouseDevice : Windows.Devices.Input.IMouseDevice
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnMouseMoved(void delegate(Windows.Devices.Input.MouseDevice, Windows.Devices.Input.MouseEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -192,7 +192,7 @@ extern(Windows):
 
 interface MouseEventArgs : Windows.Devices.Input.IMouseEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.MouseDelta MouseDelta()
 	{
 		Windows.Devices.Input.MouseDelta _ret;
@@ -203,7 +203,7 @@ extern(Windows):
 
 interface PointerDevice : Windows.Devices.Input.IPointerDevice, Windows.Devices.Input.IPointerDevice2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -269,7 +269,7 @@ extern(Windows):
 
 interface TouchCapabilities : Windows.Devices.Input.ITouchCapabilities
 {
-extern(Windows):
+extern(D):
 	final INT32 TouchPresent()
 	{
 		INT32 _ret;

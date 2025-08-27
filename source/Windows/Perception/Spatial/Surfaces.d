@@ -96,7 +96,7 @@ interface ISpatialSurfaceObserverStatics2 : ISpatialSurfaceObserverStatics2_Base
 
 interface SpatialSurfaceInfo : Windows.Perception.Spatial.Surfaces.ISpatialSurfaceInfo
 {
-extern(Windows):
+extern(D):
 	final GUID Id()
 	{
 		GUID _ret;
@@ -132,7 +132,7 @@ extern(Windows):
 
 interface SpatialSurfaceMesh : Windows.Perception.Spatial.Surfaces.ISpatialSurfaceMesh
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo SurfaceInfo()
 	{
 		Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo _ret;
@@ -173,7 +173,7 @@ extern(Windows):
 
 interface SpatialSurfaceMeshBuffer : Windows.Perception.Spatial.Surfaces.ISpatialSurfaceMeshBuffer
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.DirectX.DirectXPixelFormat Format()
 	{
 		Windows.Graphics.DirectX.DirectXPixelFormat _ret;
@@ -202,7 +202,7 @@ extern(Windows):
 
 interface SpatialSurfaceMeshOptions : Windows.Perception.Spatial.Surfaces.ISpatialSurfaceMeshOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.DirectX.DirectXPixelFormat VertexPositionFormat()
 	{
 		Windows.Graphics.DirectX.DirectXPixelFormat _ret;
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface SpatialSurfaceObserver : Windows.Perception.Spatial.Surfaces.ISpatialSurfaceObserver
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(GUID, Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) GetObservedSurfaces()
 	{
 		Windows.Foundation.Collections.IMapView!(GUID, Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) _ret;

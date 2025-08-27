@@ -128,7 +128,7 @@ extern(Windows):
 
 interface RfcommDeviceService : Windows.Devices.Bluetooth.Rfcomm.IRfcommDeviceService, Windows.Devices.Bluetooth.Rfcomm.IRfcommDeviceService2, Windows.Foundation.IClosable, Windows.Devices.Bluetooth.Rfcomm.IRfcommDeviceService3
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName ConnectionHostName()
 	{
 		Windows.Networking.HostName _ret;
@@ -217,7 +217,7 @@ extern(Windows):
 
 interface RfcommDeviceServicesResult : Windows.Devices.Bluetooth.Rfcomm.IRfcommDeviceServicesResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.BluetoothError Error()
 	{
 		Windows.Devices.Bluetooth.BluetoothError _ret;
@@ -234,7 +234,7 @@ extern(Windows):
 
 interface RfcommServiceId : Windows.Devices.Bluetooth.Rfcomm.IRfcommServiceId
 {
-extern(Windows):
+extern(D):
 	final GUID Uuid()
 	{
 		GUID _ret;
@@ -312,7 +312,7 @@ extern(Windows):
 
 interface RfcommServiceProvider : Windows.Devices.Bluetooth.Rfcomm.IRfcommServiceProvider, Windows.Devices.Bluetooth.Rfcomm.IRfcommServiceProvider2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId ServiceId()
 	{
 		Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId _ret;

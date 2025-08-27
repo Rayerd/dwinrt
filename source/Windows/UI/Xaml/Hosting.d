@@ -121,7 +121,7 @@ interface ElementCompositionPreview : Windows.UI.Xaml.Hosting.IElementCompositio
 
 interface XamlUIPresenter : Windows.UI.Xaml.Hosting.IXamlUIPresenter
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement RootElement()
 	{
 		Windows.UI.Xaml.UIElement _ret;

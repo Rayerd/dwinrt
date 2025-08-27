@@ -220,7 +220,7 @@ extern(Windows):
 
 interface CameraIntrinsics : Windows.Media.Devices.Core.ICameraIntrinsics, Windows.Media.Devices.Core.ICameraIntrinsics2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector2 FocalLength()
 	{
 		Windows.Foundation.Numerics.Vector2 _ret;
@@ -307,7 +307,7 @@ extern(Windows):
 
 interface DepthCorrelatedCoordinateMapper : Windows.Media.Devices.Core.IDepthCorrelatedCoordinateMapper, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 UnprojectPoint(Windows.Foundation.Point sourcePoint, Windows.Perception.Spatial.SpatialCoordinateSystem targetCoordinateSystem)
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -336,7 +336,7 @@ extern(Windows):
 
 interface FrameControlCapabilities : Windows.Media.Devices.Core.IFrameControlCapabilities, Windows.Media.Devices.Core.IFrameControlCapabilities2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.Core.FrameExposureCapabilities Exposure()
 	{
 		Windows.Media.Devices.Core.FrameExposureCapabilities _ret;
@@ -377,7 +377,7 @@ extern(Windows):
 
 interface FrameController : Windows.Media.Devices.Core.IFrameController, Windows.Media.Devices.Core.IFrameController2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.Core.FrameExposureControl ExposureControl()
 	{
 		Windows.Media.Devices.Core.FrameExposureControl _ret;
@@ -428,7 +428,7 @@ extern(Windows):
 
 interface FrameExposureCapabilities : Windows.Media.Devices.Core.IFrameExposureCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -457,7 +457,7 @@ extern(Windows):
 
 interface FrameExposureCompensationCapabilities : Windows.Media.Devices.Core.IFrameExposureCompensationCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -486,7 +486,7 @@ extern(Windows):
 
 interface FrameExposureCompensationControl : Windows.Media.Devices.Core.IFrameExposureCompensationControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(float) Value()
 	{
 		Windows.Foundation.IReference!(float) _ret;
@@ -501,7 +501,7 @@ extern(Windows):
 
 interface FrameExposureControl : Windows.Media.Devices.Core.IFrameExposureControl
 {
-extern(Windows):
+extern(D):
 	final bool Auto()
 	{
 		bool _ret;
@@ -526,7 +526,7 @@ extern(Windows):
 
 interface FrameFlashCapabilities : Windows.Media.Devices.Core.IFrameFlashCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -549,7 +549,7 @@ extern(Windows):
 
 interface FrameFlashControl : Windows.Media.Devices.Core.IFrameFlashControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.Core.FrameFlashMode Mode()
 	{
 		Windows.Media.Devices.Core.FrameFlashMode _ret;
@@ -594,7 +594,7 @@ extern(Windows):
 
 interface FrameFocusCapabilities : Windows.Media.Devices.Core.IFrameFocusCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -623,7 +623,7 @@ extern(Windows):
 
 interface FrameFocusControl : Windows.Media.Devices.Core.IFrameFocusControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(UINT32) Value()
 	{
 		Windows.Foundation.IReference!(UINT32) _ret;
@@ -638,7 +638,7 @@ extern(Windows):
 
 interface FrameIsoSpeedCapabilities : Windows.Media.Devices.Core.IFrameIsoSpeedCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -667,7 +667,7 @@ extern(Windows):
 
 interface FrameIsoSpeedControl : Windows.Media.Devices.Core.IFrameIsoSpeedControl
 {
-extern(Windows):
+extern(D):
 	final bool Auto()
 	{
 		bool _ret;
@@ -692,7 +692,7 @@ extern(Windows):
 
 interface VariablePhotoSequenceController : Windows.Media.Devices.Core.IVariablePhotoSequenceController
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;

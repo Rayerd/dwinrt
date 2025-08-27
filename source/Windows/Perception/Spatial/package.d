@@ -303,7 +303,7 @@ extern(Windows):
 
 interface SpatialAnchor : Windows.Perception.Spatial.ISpatialAnchor, Windows.Perception.Spatial.ISpatialAnchor2
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialCoordinateSystem CoordinateSystem()
 	{
 		Windows.Perception.Spatial.SpatialCoordinateSystem _ret;
@@ -379,7 +379,7 @@ interface SpatialAnchorManager
 
 interface SpatialAnchorRawCoordinateSystemAdjustedEventArgs : Windows.Perception.Spatial.ISpatialAnchorRawCoordinateSystemAdjustedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Matrix4x4 OldRawCoordinateSystemToNewRawCoordinateSystemTransform()
 	{
 		Windows.Foundation.Numerics.Matrix4x4 _ret;
@@ -390,7 +390,7 @@ extern(Windows):
 
 interface SpatialAnchorStore : Windows.Perception.Spatial.ISpatialAnchorStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Perception.Spatial.SpatialAnchor) GetAllSavedAnchors()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Perception.Spatial.SpatialAnchor) _ret;
@@ -480,7 +480,7 @@ interface SpatialBoundingVolume : Windows.Perception.Spatial.ISpatialBoundingVol
 
 interface SpatialCoordinateSystem : Windows.Perception.Spatial.ISpatialCoordinateSystem
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Numerics.Matrix4x4) TryGetTransformTo(Windows.Perception.Spatial.SpatialCoordinateSystem target)
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Numerics.Matrix4x4) _ret;
@@ -491,7 +491,7 @@ extern(Windows):
 
 interface SpatialEntity : Windows.Perception.Spatial.ISpatialEntity
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -528,7 +528,7 @@ extern(Windows):
 
 interface SpatialEntityAddedEventArgs : Windows.Perception.Spatial.ISpatialEntityAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialEntity Entity()
 	{
 		Windows.Perception.Spatial.SpatialEntity _ret;
@@ -539,7 +539,7 @@ extern(Windows):
 
 interface SpatialEntityRemovedEventArgs : Windows.Perception.Spatial.ISpatialEntityRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialEntity Entity()
 	{
 		Windows.Perception.Spatial.SpatialEntity _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface SpatialEntityStore : Windows.Perception.Spatial.ISpatialEntityStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SaveAsync(Windows.Perception.Spatial.SpatialEntity entity)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -593,7 +593,7 @@ extern(Windows):
 
 interface SpatialEntityUpdatedEventArgs : Windows.Perception.Spatial.ISpatialEntityUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialEntity Entity()
 	{
 		Windows.Perception.Spatial.SpatialEntity _ret;
@@ -604,7 +604,7 @@ extern(Windows):
 
 interface SpatialEntityWatcher : Windows.Perception.Spatial.ISpatialEntityWatcher
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialEntityWatcherStatus Status()
 	{
 		Windows.Perception.Spatial.SpatialEntityWatcherStatus _ret;
@@ -663,7 +663,7 @@ extern(Windows):
 
 interface SpatialLocation : Windows.Perception.Spatial.ISpatialLocation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -704,7 +704,7 @@ extern(Windows):
 
 interface SpatialLocator : Windows.Perception.Spatial.ISpatialLocator
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialLocatability Locatability()
 	{
 		Windows.Perception.Spatial.SpatialLocatability _ret;
@@ -808,7 +808,7 @@ extern(Windows):
 
 interface SpatialLocatorAttachedFrameOfReference : Windows.Perception.Spatial.ISpatialLocatorAttachedFrameOfReference
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 RelativePosition()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -849,7 +849,7 @@ extern(Windows):
 
 interface SpatialLocatorPositionalTrackingDeactivatingEventArgs : Windows.Perception.Spatial.ISpatialLocatorPositionalTrackingDeactivatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Canceled()
 	{
 		bool _ret;
@@ -864,7 +864,7 @@ extern(Windows):
 
 interface SpatialStageFrameOfReference : Windows.Perception.Spatial.ISpatialStageFrameOfReference
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialCoordinateSystem CoordinateSystem()
 	{
 		Windows.Perception.Spatial.SpatialCoordinateSystem _ret;
@@ -928,7 +928,7 @@ extern(Windows):
 
 interface SpatialStationaryFrameOfReference : Windows.Perception.Spatial.ISpatialStationaryFrameOfReference
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.Spatial.SpatialCoordinateSystem CoordinateSystem()
 	{
 		Windows.Perception.Spatial.SpatialCoordinateSystem _ret;

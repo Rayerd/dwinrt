@@ -66,7 +66,7 @@ extern(Windows):
 
 interface SpeechSynthesisStream : Windows.Media.SpeechSynthesis.ISpeechSynthesisStream, Windows.Storage.Streams.IRandomAccessStreamWithContentType, Windows.Storage.Streams.IContentTypeProvider, Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream, Windows.Media.Core.ITimedMetadataTrackProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.IMediaMarker) Markers()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.IMediaMarker) _ret;
@@ -161,7 +161,7 @@ extern(Windows):
 
 interface SpeechSynthesizer : Windows.Media.SpeechSynthesis.ISpeechSynthesizer, Windows.Foundation.IClosable, Windows.Media.SpeechSynthesis.ISpeechSynthesizer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.SpeechSynthesis.SpeechSynthesisStream) SynthesizeTextToStreamAsync(wstring text)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.SpeechSynthesis.SpeechSynthesisStream) _ret;
@@ -223,7 +223,7 @@ extern(Windows):
 
 interface SpeechSynthesizerOptions : Windows.Media.SpeechSynthesis.ISpeechSynthesizerOptions
 {
-extern(Windows):
+extern(D):
 	final bool IncludeWordBoundaryMetadata()
 	{
 		bool _ret;
@@ -248,7 +248,7 @@ extern(Windows):
 
 interface VoiceInformation : Windows.Media.SpeechSynthesis.IVoiceInformation
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;

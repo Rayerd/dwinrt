@@ -1125,7 +1125,7 @@ extern(Windows):
 
 interface ArcSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IArcSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Point()
 	{
 		Windows.Foundation.Point _ret;
@@ -1223,7 +1223,7 @@ extern(Windows):
 
 interface BezierSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IBezierSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Point1()
 	{
 		Windows.Foundation.Point _ret;
@@ -1299,7 +1299,7 @@ interface BitmapCache : Windows.UI.Xaml.Media.CacheMode, Windows.UI.Xaml.Media.I
 
 interface Brush : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IBrush
 {
-extern(Windows):
+extern(D):
 	final double Opacity()
 	{
 		double _ret;
@@ -1396,7 +1396,7 @@ class BrushT(Base) : AgileObject!Base, Brush
 
 interface BrushCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Brush), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Brush)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -1499,7 +1499,7 @@ class CacheModeT(Base) : AgileObject!Base, CacheMode
 
 interface CompositeTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.ICompositeTransform
 {
-extern(Windows):
+extern(D):
 	final double CenterX()
 	{
 		double _ret;
@@ -1691,7 +1691,7 @@ interface CompositionTarget : Windows.UI.Xaml.Media.ICompositionTarget
 
 interface DoubleCollection : Windows.Foundation.Collections.IVector!(double), Windows.Foundation.Collections.IIterable!(double)
 {
-extern(Windows):
+extern(D):
 	final double GetAt(uint index)
 	{
 		double _ret;
@@ -1760,7 +1760,7 @@ extern(Windows):
 
 interface EllipseGeometry : Windows.UI.Xaml.Media.Geometry, Windows.UI.Xaml.Media.IEllipseGeometry
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Center()
 	{
 		Windows.Foundation.Point _ret;
@@ -1826,7 +1826,7 @@ extern(Windows):
 
 interface FontFamily : Windows.UI.Xaml.Media.IFontFamily
 {
-extern(Windows):
+extern(D):
 	final wstring Source()
 	{
 		HSTRING _ret;
@@ -1865,7 +1865,7 @@ class FontFamilyT(Base) : AgileObject!Base, FontFamily
 
 interface GeneralTransform : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IGeneralTransform, Windows.UI.Xaml.Media.IGeneralTransformOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.GeneralTransform Inverse()
 	{
 		Windows.UI.Xaml.Media.GeneralTransform _ret;
@@ -1936,7 +1936,7 @@ class GeneralTransformT(Base) : AgileObject!Base, GeneralTransform
 
 interface Geometry : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IGeometry
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Transform Transform()
 	{
 		Windows.UI.Xaml.Media.Transform _ret;
@@ -2009,7 +2009,7 @@ class GeometryT(Base) : AgileObject!Base, Geometry
 
 interface GeometryCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Geometry), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Geometry)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Geometry GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Geometry _ret;
@@ -2078,7 +2078,7 @@ extern(Windows):
 
 interface GeometryGroup : Windows.UI.Xaml.Media.Geometry, Windows.UI.Xaml.Media.IGeometryGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.FillRule FillRule()
 	{
 		Windows.UI.Xaml.Media.FillRule _ret;
@@ -2128,7 +2128,7 @@ extern(Windows):
 
 interface GradientBrush : Windows.UI.Xaml.Media.Brush, Windows.UI.Xaml.Media.IGradientBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.GradientSpreadMethod SpreadMethod()
 	{
 		Windows.UI.Xaml.Media.GradientSpreadMethod _ret;
@@ -2250,7 +2250,7 @@ class GradientBrushT(Base) : AgileObject!Base, GradientBrush
 
 interface GradientStop : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IGradientStop
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -2300,7 +2300,7 @@ extern(Windows):
 
 interface GradientStopCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.GradientStop), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.GradientStop)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.GradientStop GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.GradientStop _ret;
@@ -2369,7 +2369,7 @@ extern(Windows):
 
 interface ImageBrush : Windows.UI.Xaml.Media.TileBrush, Windows.UI.Xaml.Media.IImageBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.ImageSource ImageSource()
 	{
 		Windows.UI.Xaml.Media.ImageSource _ret;
@@ -2450,7 +2450,7 @@ class ImageSourceT(Base) : AgileObject!Base, ImageSource
 
 interface LineGeometry : Windows.UI.Xaml.Media.Geometry, Windows.UI.Xaml.Media.ILineGeometry
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point StartPoint()
 	{
 		Windows.Foundation.Point _ret;
@@ -2500,7 +2500,7 @@ extern(Windows):
 
 interface LineSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.ILineSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Point()
 	{
 		Windows.Foundation.Point _ret;
@@ -2534,7 +2534,7 @@ extern(Windows):
 
 interface LinearGradientBrush : Windows.UI.Xaml.Media.GradientBrush, Windows.UI.Xaml.Media.ILinearGradientBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point StartPoint()
 	{
 		Windows.Foundation.Point _ret;
@@ -2591,7 +2591,7 @@ extern(Windows):
 
 interface LoadedImageSourceLoadCompletedEventArgs : Windows.UI.Xaml.Media.ILoadedImageSourceLoadCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.LoadedImageSourceLoadStatus Status()
 	{
 		Windows.UI.Xaml.Media.LoadedImageSourceLoadStatus _ret;
@@ -2602,7 +2602,7 @@ extern(Windows):
 
 interface LoadedImageSurface : Windows.UI.Xaml.Media.ILoadedImageSurface, Windows.Foundation.IClosable, Windows.UI.Composition.ICompositionSurface
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size DecodedPhysicalSize()
 	{
 		Windows.Foundation.Size _ret;
@@ -2672,7 +2672,7 @@ extern(Windows):
 
 interface Matrix3DProjection : Windows.UI.Xaml.Media.Projection, Windows.UI.Xaml.Media.IMatrix3DProjection
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Media3D.Matrix3D ProjectionMatrix()
 	{
 		Windows.UI.Xaml.Media.Media3D.Matrix3D _ret;
@@ -2740,7 +2740,7 @@ interface MatrixHelper : Windows.UI.Xaml.Media.IMatrixHelper
 
 interface MatrixTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.IMatrixTransform
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Matrix Matrix()
 	{
 		Windows.UI.Xaml.Media.Matrix _ret;
@@ -2774,7 +2774,7 @@ extern(Windows):
 
 interface MediaTransportControlsThumbnailRequestedEventArgs : Windows.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void SetThumbnailImage(Windows.Storage.Streams.IInputStream source)
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Media.IMediaTransportControlsThumbnailRequestedEventArgs)this.asInterface(uuid("e4a8b21c-e3c2-485c-ae69-f1537b76755a"))).abi_SetThumbnailImage(source));
@@ -2789,7 +2789,7 @@ extern(Windows):
 
 interface PartialMediaFailureDetectedEventArgs : Windows.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs, Windows.UI.Xaml.Media.IPartialMediaFailureDetectedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.FailedMediaStreamKind StreamKind()
 	{
 		Windows.Media.Playback.FailedMediaStreamKind _ret;
@@ -2812,7 +2812,7 @@ extern(Windows):
 
 interface PathFigure : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IPathFigure
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PathSegmentCollection Segments()
 	{
 		Windows.UI.Xaml.Media.PathSegmentCollection _ret;
@@ -2894,7 +2894,7 @@ extern(Windows):
 
 interface PathFigureCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.PathFigure), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.PathFigure)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PathFigure GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.PathFigure _ret;
@@ -2963,7 +2963,7 @@ extern(Windows):
 
 interface PathGeometry : Windows.UI.Xaml.Media.Geometry, Windows.UI.Xaml.Media.IPathGeometry
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.FillRule FillRule()
 	{
 		Windows.UI.Xaml.Media.FillRule _ret;
@@ -3040,7 +3040,7 @@ class PathSegmentT(Base) : AgileObject!Base, PathSegment
 
 interface PathSegmentCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.PathSegment), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.PathSegment)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PathSegment GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.PathSegment _ret;
@@ -3109,7 +3109,7 @@ extern(Windows):
 
 interface PlaneProjection : Windows.UI.Xaml.Media.Projection, Windows.UI.Xaml.Media.IPlaneProjection
 {
-extern(Windows):
+extern(D):
 	final double LocalOffsetX()
 	{
 		double _ret;
@@ -3331,7 +3331,7 @@ extern(Windows):
 
 interface PointCollection : Windows.Foundation.Collections.IVector!(Windows.Foundation.Point), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Point)
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point GetAt(uint index)
 	{
 		Windows.Foundation.Point _ret;
@@ -3400,7 +3400,7 @@ extern(Windows):
 
 interface PolyBezierSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IPolyBezierSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PointCollection Points()
 	{
 		Windows.UI.Xaml.Media.PointCollection _ret;
@@ -3434,7 +3434,7 @@ extern(Windows):
 
 interface PolyLineSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IPolyLineSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PointCollection Points()
 	{
 		Windows.UI.Xaml.Media.PointCollection _ret;
@@ -3468,7 +3468,7 @@ extern(Windows):
 
 interface PolyQuadraticBezierSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IPolyQuadraticBezierSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.PointCollection Points()
 	{
 		Windows.UI.Xaml.Media.PointCollection _ret;
@@ -3536,7 +3536,7 @@ class ProjectionT(Base) : AgileObject!Base, Projection
 
 interface QuadraticBezierSegment : Windows.UI.Xaml.Media.PathSegment, Windows.UI.Xaml.Media.IQuadraticBezierSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Point1()
 	{
 		Windows.Foundation.Point _ret;
@@ -3596,7 +3596,7 @@ interface RateChangedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.
 
 interface RectangleGeometry : Windows.UI.Xaml.Media.Geometry, Windows.UI.Xaml.Media.IRectangleGeometry
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect Rect()
 	{
 		Windows.Foundation.Rect _ret;
@@ -3630,7 +3630,7 @@ extern(Windows):
 
 interface RenderingEventArgs : Windows.UI.Xaml.Media.IRenderingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan RenderingTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -3641,7 +3641,7 @@ extern(Windows):
 
 interface RotateTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.IRotateTransform
 {
-extern(Windows):
+extern(D):
 	final double CenterX()
 	{
 		double _ret;
@@ -3707,7 +3707,7 @@ extern(Windows):
 
 interface ScaleTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.IScaleTransform
 {
-extern(Windows):
+extern(D):
 	final double CenterX()
 	{
 		double _ret;
@@ -3789,7 +3789,7 @@ extern(Windows):
 
 interface SkewTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.ISkewTransform
 {
-extern(Windows):
+extern(D):
 	final double CenterX()
 	{
 		double _ret;
@@ -3871,7 +3871,7 @@ extern(Windows):
 
 interface SolidColorBrush : Windows.UI.Xaml.Media.Brush, Windows.UI.Xaml.Media.ISolidColorBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -3912,7 +3912,7 @@ extern(Windows):
 
 interface TileBrush : Windows.UI.Xaml.Media.Brush, Windows.UI.Xaml.Media.ITileBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.AlignmentX AlignmentX()
 	{
 		Windows.UI.Xaml.Media.AlignmentX _ret;
@@ -4016,7 +4016,7 @@ class TileBrushT(Base) : AgileObject!Base, TileBrush
 
 interface TimelineMarker : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.ITimelineMarker
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Time()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -4082,7 +4082,7 @@ extern(Windows):
 
 interface TimelineMarkerCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.TimelineMarker), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.TimelineMarker)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.TimelineMarker GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.TimelineMarker _ret;
@@ -4151,7 +4151,7 @@ extern(Windows):
 
 interface TimelineMarkerRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Media.ITimelineMarkerRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.TimelineMarker Marker()
 	{
 		Windows.UI.Xaml.Media.TimelineMarker _ret;
@@ -4211,7 +4211,7 @@ class TransformT(Base) : AgileObject!Base, Transform
 
 interface TransformCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Transform), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Transform)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Transform GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Transform _ret;
@@ -4280,7 +4280,7 @@ extern(Windows):
 
 interface TransformGroup : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.ITransformGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.TransformCollection Children()
 	{
 		Windows.UI.Xaml.Media.TransformCollection _ret;
@@ -4320,7 +4320,7 @@ extern(Windows):
 
 interface TranslateTransform : Windows.UI.Xaml.Media.Transform, Windows.UI.Xaml.Media.ITranslateTransform
 {
-extern(Windows):
+extern(D):
 	final double X()
 	{
 		double _ret;
@@ -4430,7 +4430,7 @@ interface VisualTreeHelper : Windows.UI.Xaml.Media.IVisualTreeHelper
 
 interface XamlCompositionBrushBase : Windows.UI.Xaml.Media.Brush, Windows.UI.Xaml.Media.IXamlCompositionBrushBase, Windows.UI.Xaml.Media.IXamlCompositionBrushBaseOverrides, Windows.UI.Xaml.Media.IXamlCompositionBrushBaseProtected
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color FallbackColor()
 	{
 		Windows.UI.Color _ret;
@@ -4516,7 +4516,7 @@ class XamlCompositionBrushBaseT(Base) : AgileObject!Base, XamlCompositionBrushBa
 
 interface XamlLight : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.IXamlLight, Windows.UI.Xaml.Media.IXamlLightOverrides, Windows.UI.Xaml.Media.IXamlLightProtected
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionLight CompositionLight()
 	{
 		Windows.UI.Composition.CompositionLight _ret;

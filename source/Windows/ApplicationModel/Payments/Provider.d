@@ -55,7 +55,7 @@ extern(Windows):
 
 interface PaymentAppManager : Windows.ApplicationModel.Payments.Provider.IPaymentAppManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction RegisterAsync(Windows.Foundation.Collections.IIterable!(HSTRING) supportedPaymentMethodIds)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -85,7 +85,7 @@ extern(Windows):
 
 interface PaymentTransaction : Windows.ApplicationModel.Payments.Provider.IPaymentTransaction
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentRequest PaymentRequest()
 	{
 		Windows.ApplicationModel.Payments.PaymentRequest _ret;
@@ -161,7 +161,7 @@ extern(Windows):
 
 interface PaymentTransactionAcceptResult : Windows.ApplicationModel.Payments.Provider.IPaymentTransactionAcceptResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentRequestCompletionStatus Status()
 	{
 		Windows.ApplicationModel.Payments.PaymentRequestCompletionStatus _ret;

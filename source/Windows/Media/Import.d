@@ -262,7 +262,7 @@ extern(Windows):
 
 interface PhotoImportDeleteImportedItemsFromSourceResult : Windows.Media.Import.IPhotoImportDeleteImportedItemsFromSourceResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportSession Session()
 	{
 		Windows.Media.Import.PhotoImportSession _ret;
@@ -345,7 +345,7 @@ extern(Windows):
 
 interface PhotoImportFindItemsResult : Windows.Media.Import.IPhotoImportFindItemsResult, Windows.Media.Import.IPhotoImportFindItemsResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportSession Session()
 	{
 		Windows.Media.Import.PhotoImportSession _ret;
@@ -542,7 +542,7 @@ extern(Windows):
 
 interface PhotoImportImportItemsResult : Windows.Media.Import.IPhotoImportImportItemsResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportSession Session()
 	{
 		Windows.Media.Import.PhotoImportSession _ret;
@@ -631,7 +631,7 @@ extern(Windows):
 
 interface PhotoImportItem : Windows.Media.Import.IPhotoImportItem
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -712,7 +712,7 @@ extern(Windows):
 
 interface PhotoImportItemImportedEventArgs : Windows.Media.Import.IPhotoImportItemImportedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportItem ImportedItem()
 	{
 		Windows.Media.Import.PhotoImportItem _ret;
@@ -751,7 +751,7 @@ interface PhotoImportManager
 
 interface PhotoImportOperation : Windows.Media.Import.IPhotoImportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportStage Stage()
 	{
 		Windows.Media.Import.PhotoImportStage _ret;
@@ -786,7 +786,7 @@ extern(Windows):
 
 interface PhotoImportSelectionChangedEventArgs : Windows.Media.Import.IPhotoImportSelectionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsSelectionEmpty()
 	{
 		bool _ret;
@@ -797,7 +797,7 @@ extern(Windows):
 
 interface PhotoImportSession : Windows.Media.Import.IPhotoImportSession, Windows.Foundation.IClosable, Windows.Media.Import.IPhotoImportSession2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Import.PhotoImportSource Source()
 	{
 		Windows.Media.Import.PhotoImportSource _ret;
@@ -884,7 +884,7 @@ extern(Windows):
 
 interface PhotoImportSidecar : Windows.Media.Import.IPhotoImportSidecar
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -907,7 +907,7 @@ extern(Windows):
 
 interface PhotoImportSource : Windows.Media.Import.IPhotoImportSource
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1033,7 +1033,7 @@ extern(Windows):
 
 interface PhotoImportStorageMedium : Windows.Media.Import.IPhotoImportStorageMedium
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1084,7 +1084,7 @@ extern(Windows):
 
 interface PhotoImportVideoSegment : Windows.Media.Import.IPhotoImportVideoSegment
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;

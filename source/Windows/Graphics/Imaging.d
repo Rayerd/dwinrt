@@ -263,7 +263,7 @@ extern(Windows):
 
 interface BitmapBuffer : Windows.Graphics.Imaging.IBitmapBuffer, Windows.Foundation.IMemoryBuffer, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final INT32 GetPlaneCount()
 	{
 		INT32 _ret;
@@ -290,7 +290,7 @@ extern(Windows):
 
 interface BitmapCodecInformation : Windows.Graphics.Imaging.IBitmapCodecInformation
 {
-extern(Windows):
+extern(D):
 	final GUID CodecId()
 	{
 		GUID _ret;
@@ -319,7 +319,7 @@ extern(Windows):
 
 interface BitmapDecoder : Windows.Graphics.Imaging.IBitmapDecoder, Windows.Graphics.Imaging.IBitmapFrame, Windows.Graphics.Imaging.IBitmapFrameWithSoftwareBitmap
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Imaging.BitmapPropertiesView BitmapContainerProperties()
 	{
 		Windows.Graphics.Imaging.BitmapPropertiesView _ret;
@@ -515,7 +515,7 @@ extern(Windows):
 
 interface BitmapEncoder : Windows.Graphics.Imaging.IBitmapEncoder, Windows.Graphics.Imaging.IBitmapEncoderWithSoftwareBitmap
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Imaging.BitmapCodecInformation EncoderInformation()
 	{
 		Windows.Graphics.Imaging.BitmapCodecInformation _ret;
@@ -675,7 +675,7 @@ extern(Windows):
 
 interface BitmapFrame : Windows.Graphics.Imaging.IBitmapFrame, Windows.Graphics.Imaging.IBitmapFrameWithSoftwareBitmap
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Graphics.Imaging.ImageStream) GetThumbnailAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Graphics.Imaging.ImageStream) _ret;
@@ -773,7 +773,7 @@ extern(Windows):
 
 interface BitmapProperties : Windows.Graphics.Imaging.IBitmapProperties, Windows.Graphics.Imaging.IBitmapPropertiesView
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SetPropertiesAsync(Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.Graphics.Imaging.BitmapTypedValue)) propertiesToSet)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -790,7 +790,7 @@ extern(Windows):
 
 interface BitmapPropertiesView : Windows.Graphics.Imaging.IBitmapPropertiesView
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Graphics.Imaging.BitmapPropertySet) GetPropertiesAsync(Windows.Foundation.Collections.IIterable!(HSTRING) propertiesToRetrieve)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Graphics.Imaging.BitmapPropertySet) _ret;
@@ -801,7 +801,7 @@ extern(Windows):
 
 interface BitmapPropertySet : Windows.Foundation.Collections.IMap!(HSTRING, Windows.Graphics.Imaging.BitmapTypedValue), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.Graphics.Imaging.BitmapTypedValue))
 {
-extern(Windows):
+extern(D):
 	final  Windows.Graphics.Imaging.BitmapTypedValue Lookup(wstring key)
 	{
 		 Windows.Graphics.Imaging.BitmapTypedValue _ret;
@@ -854,7 +854,7 @@ extern(Windows):
 
 interface BitmapTransform : Windows.Graphics.Imaging.IBitmapTransform
 {
-extern(Windows):
+extern(D):
 	final UINT32 ScaledWidth()
 	{
 		UINT32 _ret;
@@ -925,7 +925,7 @@ extern(Windows):
 
 interface BitmapTypedValue : Windows.Graphics.Imaging.IBitmapTypedValue
 {
-extern(Windows):
+extern(D):
 	final IInspectable Value()
 	{
 		IInspectable _ret;
@@ -949,7 +949,7 @@ extern(Windows):
 
 interface ImageStream : Windows.Storage.Streams.IRandomAccessStreamWithContentType, Windows.Storage.Streams.IContentTypeProvider, Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream
 {
-extern(Windows):
+extern(D):
 	final wstring ContentType()
 	{
 		HSTRING _ret;
@@ -1032,7 +1032,7 @@ extern(Windows):
 
 interface PixelDataProvider : Windows.Graphics.Imaging.IPixelDataProvider
 {
-extern(Windows):
+extern(D):
 	final ubyte* DetachPixelData(UINT32* out___pixelDataSize)
 	{
 		ubyte* _ret;
@@ -1043,7 +1043,7 @@ extern(Windows):
 
 interface SoftwareBitmap : Windows.Graphics.Imaging.ISoftwareBitmap, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Imaging.BitmapPixelFormat BitmapPixelFormat()
 	{
 		Windows.Graphics.Imaging.BitmapPixelFormat _ret;

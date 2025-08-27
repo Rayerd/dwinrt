@@ -71,7 +71,7 @@ extern(Windows):
 
 interface CoreInkIndependentInputSource : Windows.UI.Input.Inking.Core.ICoreInkIndependentInputSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPointerEntering(void delegate(Windows.UI.Input.Inking.Core.CoreInkIndependentInputSource, Windows.UI.Core.PointerEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -165,7 +165,7 @@ extern(Windows):
 
 interface CoreWetStrokeUpdateEventArgs : Windows.UI.Input.Inking.Core.ICoreWetStrokeUpdateEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Input.Inking.InkPoint) NewInkPoints()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Input.Inking.InkPoint) _ret;
@@ -192,7 +192,7 @@ extern(Windows):
 
 interface CoreWetStrokeUpdateSource : Windows.UI.Input.Inking.Core.ICoreWetStrokeUpdateSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnWetStrokeStarting(void delegate(Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateSource, Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateEventArgs) fn)
 	{
 		EventRegistrationToken tok;

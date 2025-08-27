@@ -333,7 +333,7 @@ interface IEnclosureLocation2 : IEnclosureLocation2_Base, Windows.Devices.Enumer
 
 interface DeviceAccessChangedEventArgs : Windows.Devices.Enumeration.IDeviceAccessChangedEventArgs, Windows.Devices.Enumeration.IDeviceAccessChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceAccessStatus Status()
 	{
 		Windows.Devices.Enumeration.DeviceAccessStatus _ret;
@@ -350,7 +350,7 @@ extern(Windows):
 
 interface DeviceAccessInformation : Windows.Devices.Enumeration.IDeviceAccessInformation
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAccessChanged(void delegate(Windows.Devices.Enumeration.DeviceAccessInformation, Windows.Devices.Enumeration.DeviceAccessChangedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -396,7 +396,7 @@ extern(Windows):
 
 interface DeviceConnectionChangeTriggerDetails : Windows.Devices.Enumeration.IDeviceConnectionChangeTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -407,7 +407,7 @@ extern(Windows):
 
 interface DeviceDisconnectButtonClickedEventArgs : Windows.Devices.Enumeration.IDeviceDisconnectButtonClickedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation Device()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -418,7 +418,7 @@ extern(Windows):
 
 interface DeviceInformation : Windows.Devices.Enumeration.IDeviceInformation, Windows.Devices.Enumeration.IDeviceInformation2
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -561,7 +561,7 @@ extern(Windows):
 
 interface DeviceInformationCollection : Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.DeviceInformation), Windows.Foundation.Collections.IIterable!(Windows.Devices.Enumeration.DeviceInformation)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Devices.Enumeration.DeviceInformation* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.DeviceInformation))this).abi_GetAt(index, out_item));
@@ -590,7 +590,7 @@ extern(Windows):
 
 interface DeviceInformationCustomPairing : Windows.Devices.Enumeration.IDeviceInformationCustomPairing
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Devices.Enumeration.DevicePairingResult) PairAsync(Windows.Devices.Enumeration.DevicePairingKinds pairingKindsSupported)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Devices.Enumeration.DevicePairingResult) _ret;
@@ -625,7 +625,7 @@ extern(Windows):
 
 interface DeviceInformationPairing : Windows.Devices.Enumeration.IDeviceInformationPairing, Windows.Devices.Enumeration.IDeviceInformationPairing2
 {
-extern(Windows):
+extern(D):
 	final bool IsPaired()
 	{
 		bool _ret;
@@ -693,7 +693,7 @@ extern(Windows):
 
 interface DeviceInformationUpdate : Windows.Devices.Enumeration.IDeviceInformationUpdate, Windows.Devices.Enumeration.IDeviceInformationUpdate2
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -716,7 +716,7 @@ extern(Windows):
 
 interface DevicePairingRequestedEventArgs : Windows.Devices.Enumeration.IDevicePairingRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation DeviceInformation()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -754,7 +754,7 @@ extern(Windows):
 
 interface DevicePairingResult : Windows.Devices.Enumeration.IDevicePairingResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DevicePairingResultStatus Status()
 	{
 		Windows.Devices.Enumeration.DevicePairingResultStatus _ret;
@@ -771,7 +771,7 @@ extern(Windows):
 
 interface DevicePicker : Windows.Devices.Enumeration.IDevicePicker
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DevicePickerFilter Filter()
 	{
 		Windows.Devices.Enumeration.DevicePickerFilter _ret;
@@ -860,7 +860,7 @@ extern(Windows):
 
 interface DevicePickerAppearance : Windows.Devices.Enumeration.IDevicePickerAppearance
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -935,7 +935,7 @@ extern(Windows):
 
 interface DevicePickerFilter : Windows.Devices.Enumeration.IDevicePickerFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Devices.Enumeration.DeviceClass) SupportedDeviceClasses()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Devices.Enumeration.DeviceClass) _ret;
@@ -952,7 +952,7 @@ extern(Windows):
 
 interface DeviceSelectedEventArgs : Windows.Devices.Enumeration.IDeviceSelectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation SelectedDevice()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -963,7 +963,7 @@ extern(Windows):
 
 interface DeviceThumbnail : Windows.Storage.Streams.IRandomAccessStreamWithContentType, Windows.Storage.Streams.IContentTypeProvider, Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream
 {
-extern(Windows):
+extern(D):
 	final wstring ContentType()
 	{
 		HSTRING _ret;
@@ -1046,7 +1046,7 @@ extern(Windows):
 
 interface DeviceUnpairingResult : Windows.Devices.Enumeration.IDeviceUnpairingResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceUnpairingResultStatus Status()
 	{
 		Windows.Devices.Enumeration.DeviceUnpairingResultStatus _ret;
@@ -1057,7 +1057,7 @@ extern(Windows):
 
 interface DeviceWatcher : Windows.Devices.Enumeration.IDeviceWatcher, Windows.Devices.Enumeration.IDeviceWatcher2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAdded(void delegate(Windows.Devices.Enumeration.DeviceWatcher, Windows.Devices.Enumeration.DeviceInformation) fn)
 	{
 		EventRegistrationToken tok;
@@ -1132,7 +1132,7 @@ extern(Windows):
 
 interface DeviceWatcherEvent : Windows.Devices.Enumeration.IDeviceWatcherEvent
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceWatcherEventKind Kind()
 	{
 		Windows.Devices.Enumeration.DeviceWatcherEventKind _ret;
@@ -1155,7 +1155,7 @@ extern(Windows):
 
 interface DeviceWatcherTriggerDetails : Windows.Devices.Enumeration.IDeviceWatcherTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.DeviceWatcherEvent) DeviceWatcherEvents()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.DeviceWatcherEvent) _ret;
@@ -1166,7 +1166,7 @@ extern(Windows):
 
 interface EnclosureLocation : Windows.Devices.Enumeration.IEnclosureLocation, Windows.Devices.Enumeration.IEnclosureLocation2
 {
-extern(Windows):
+extern(D):
 	final bool InDock()
 	{
 		bool _ret;

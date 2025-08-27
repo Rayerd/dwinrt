@@ -42,7 +42,7 @@ extern(Windows):
 
 interface LanguageFont : Windows.Globalization.Fonts.ILanguageFont
 {
-extern(Windows):
+extern(D):
 	final wstring FontFamily()
 	{
 		HSTRING _ret;
@@ -77,7 +77,7 @@ extern(Windows):
 
 interface LanguageFontGroup : Windows.Globalization.Fonts.ILanguageFontGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.Globalization.Fonts.LanguageFont UITextFont()
 	{
 		Windows.Globalization.Fonts.LanguageFont _ret;

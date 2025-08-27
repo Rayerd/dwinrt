@@ -119,7 +119,7 @@ extern(Windows):
 
 interface InjectedInputKeyboardInfo : Windows.UI.Input.Preview.Injection.IInjectedInputKeyboardInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Preview.Injection.InjectedInputKeyOptions KeyOptions()
 	{
 		Windows.UI.Input.Preview.Injection.InjectedInputKeyOptions _ret;
@@ -160,7 +160,7 @@ extern(Windows):
 
 interface InjectedInputMouseInfo : Windows.UI.Input.Preview.Injection.IInjectedInputMouseInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Preview.Injection.InjectedInputMouseOptions MouseOptions()
 	{
 		Windows.UI.Input.Preview.Injection.InjectedInputMouseOptions _ret;
@@ -221,7 +221,7 @@ extern(Windows):
 
 interface InjectedInputPenInfo : Windows.UI.Input.Preview.Injection.IInjectedInputPenInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Preview.Injection.InjectedInputPointerInfo PointerInfo()
 	{
 		Windows.UI.Input.Preview.Injection.InjectedInputPointerInfo _ret;
@@ -302,7 +302,7 @@ extern(Windows):
 
 interface InjectedInputTouchInfo : Windows.UI.Input.Preview.Injection.IInjectedInputTouchInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Preview.Injection.InjectedInputRectangle Contact()
 	{
 		Windows.UI.Input.Preview.Injection.InjectedInputRectangle _ret;
@@ -363,7 +363,7 @@ extern(Windows):
 
 interface InputInjector : Windows.UI.Input.Preview.Injection.IInputInjector
 {
-extern(Windows):
+extern(D):
 	final void InjectKeyboardInput(Windows.Foundation.Collections.IIterable!(Windows.UI.Input.Preview.Injection.InjectedInputKeyboardInfo) input)
 	{
 		Debug.OK((cast(Windows.UI.Input.Preview.Injection.IInputInjector)this.asInterface(uuid("8ec26f84-0b02-4bd2-ad7a-3d4658be3e18"))).abi_InjectKeyboardInput(input));

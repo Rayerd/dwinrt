@@ -292,7 +292,7 @@ extern(Windows):
 
 interface CivicAddress : Windows.Devices.Geolocation.ICivicAddress
 {
-extern(Windows):
+extern(D):
 	final wstring Country()
 	{
 		HSTRING _ret;
@@ -327,7 +327,7 @@ extern(Windows):
 
 interface GeoboundingBox : Windows.Devices.Geolocation.IGeoboundingBox, Windows.Devices.Geolocation.IGeoshape
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.BasicGeoposition NorthwestCorner()
 	{
 		Windows.Devices.Geolocation.BasicGeoposition _ret;
@@ -428,7 +428,7 @@ extern(Windows):
 
 interface Geocircle : Windows.Devices.Geolocation.IGeocircle, Windows.Devices.Geolocation.IGeoshape
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.BasicGeoposition Center()
 	{
 		Windows.Devices.Geolocation.BasicGeoposition _ret;
@@ -484,7 +484,7 @@ extern(Windows):
 
 interface Geocoordinate : Windows.Devices.Geolocation.IGeocoordinate, Windows.Devices.Geolocation.IGeocoordinateWithPositionData, Windows.Devices.Geolocation.IGeocoordinateWithPoint, Windows.Devices.Geolocation.IGeocoordinateWithPositionSourceTimestamp
 {
-extern(Windows):
+extern(D):
 	deprecated("Latitude may be altered or unavailable after Windows 8.1. Instead, use Point.Position.Latitude")
 	final double Latitude()
 	{
@@ -564,7 +564,7 @@ extern(Windows):
 
 interface GeocoordinateSatelliteData : Windows.Devices.Geolocation.IGeocoordinateSatelliteData
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(double) PositionDilutionOfPrecision()
 	{
 		Windows.Foundation.IReference!(double) _ret;
@@ -587,7 +587,7 @@ extern(Windows):
 
 interface Geolocator : Windows.Devices.Geolocation.IGeolocator, Windows.Devices.Geolocation.IGeolocatorWithScalarAccuracy, Windows.Devices.Geolocation.IGeolocator2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.PositionAccuracy DesiredAccuracy()
 	{
 		Windows.Devices.Geolocation.PositionAccuracy _ret;
@@ -707,7 +707,7 @@ extern(Windows):
 
 interface Geopath : Windows.Devices.Geolocation.IGeopath, Windows.Devices.Geolocation.IGeoshape
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Geolocation.BasicGeoposition) Positions()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Geolocation.BasicGeoposition) _ret;
@@ -757,7 +757,7 @@ extern(Windows):
 
 interface Geopoint : Windows.Devices.Geolocation.IGeopoint, Windows.Devices.Geolocation.IGeoshape
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.BasicGeoposition Position()
 	{
 		Windows.Devices.Geolocation.BasicGeoposition _ret;
@@ -807,7 +807,7 @@ extern(Windows):
 
 interface Geoposition : Windows.Devices.Geolocation.IGeoposition, Windows.Devices.Geolocation.IGeoposition2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geocoordinate Coordinate()
 	{
 		Windows.Devices.Geolocation.Geocoordinate _ret;
@@ -830,7 +830,7 @@ extern(Windows):
 
 interface PositionChangedEventArgs : Windows.Devices.Geolocation.IPositionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geoposition Position()
 	{
 		Windows.Devices.Geolocation.Geoposition _ret;
@@ -841,7 +841,7 @@ extern(Windows):
 
 interface StatusChangedEventArgs : Windows.Devices.Geolocation.IStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.PositionStatus Status()
 	{
 		Windows.Devices.Geolocation.PositionStatus _ret;
@@ -852,7 +852,7 @@ extern(Windows):
 
 interface VenueData : Windows.Devices.Geolocation.IVenueData
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;

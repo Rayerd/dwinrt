@@ -552,7 +552,7 @@ interface ApplicationLanguages
 
 interface Calendar : Windows.Globalization.ICalendar, Windows.Globalization.ITimeZoneOnCalendar
 {
-extern(Windows):
+extern(D):
 	final Windows.Globalization.Calendar Clone()
 	{
 		Windows.Globalization.Calendar _ret;
@@ -2178,7 +2178,7 @@ interface CurrencyIdentifiers
 
 interface GeographicRegion : Windows.Globalization.IGeographicRegion
 {
-extern(Windows):
+extern(D):
 	final wstring Code()
 	{
 		HSTRING _ret;
@@ -2251,7 +2251,7 @@ extern(Windows):
 
 interface JapanesePhoneme : Windows.Globalization.IJapanesePhoneme
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayText()
 	{
 		HSTRING _ret;
@@ -2297,7 +2297,7 @@ interface JapanesePhoneticAnalyzer
 
 interface Language : Windows.Globalization.ILanguage, Windows.Globalization.ILanguageExtensionSubtags
 {
-extern(Windows):
+extern(D):
 	final wstring LanguageTag()
 	{
 		HSTRING _ret;

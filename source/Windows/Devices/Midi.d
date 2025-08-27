@@ -296,7 +296,7 @@ extern(Windows):
 
 interface MidiActiveSensingMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -325,7 +325,7 @@ extern(Windows):
 
 interface MidiChannelPressureMessage : Windows.Devices.Midi.IMidiChannelPressureMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -367,7 +367,7 @@ extern(Windows):
 
 interface MidiContinueMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -396,7 +396,7 @@ extern(Windows):
 
 interface MidiControlChangeMessage : Windows.Devices.Midi.IMidiControlChangeMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -444,7 +444,7 @@ extern(Windows):
 
 interface MidiInPort : Windows.Devices.Midi.IMidiInPort, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnMessageReceived(void delegate(Windows.Devices.Midi.MidiInPort, Windows.Devices.Midi.MidiMessageReceivedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -488,7 +488,7 @@ extern(Windows):
 
 interface MidiMessageReceivedEventArgs : Windows.Devices.Midi.IMidiMessageReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Midi.IMidiMessage Message()
 	{
 		Windows.Devices.Midi.IMidiMessage _ret;
@@ -499,7 +499,7 @@ extern(Windows):
 
 interface MidiNoteOffMessage : Windows.Devices.Midi.IMidiNoteOffMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -547,7 +547,7 @@ extern(Windows):
 
 interface MidiNoteOnMessage : Windows.Devices.Midi.IMidiNoteOnMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -595,7 +595,7 @@ extern(Windows):
 
 interface MidiOutPort : Windows.Devices.Midi.IMidiOutPort, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void SendMessage(Windows.Devices.Midi.IMidiMessage midiMessage)
 	{
 		Debug.OK((cast(Windows.Devices.Midi.IMidiOutPort)this.asInterface(uuid("931d6d9f-57a2-4a3a-adb8-4640886f6693"))).abi_SendMessage(midiMessage));
@@ -637,7 +637,7 @@ extern(Windows):
 
 interface MidiPitchBendChangeMessage : Windows.Devices.Midi.IMidiPitchBendChangeMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -679,7 +679,7 @@ extern(Windows):
 
 interface MidiPolyphonicKeyPressureMessage : Windows.Devices.Midi.IMidiPolyphonicKeyPressureMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -727,7 +727,7 @@ extern(Windows):
 
 interface MidiProgramChangeMessage : Windows.Devices.Midi.IMidiProgramChangeMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Channel()
 	{
 		ubyte _ret;
@@ -769,7 +769,7 @@ extern(Windows):
 
 interface MidiSongPositionPointerMessage : Windows.Devices.Midi.IMidiSongPositionPointerMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final UINT16 Beats()
 	{
 		UINT16 _ret;
@@ -805,7 +805,7 @@ extern(Windows):
 
 interface MidiSongSelectMessage : Windows.Devices.Midi.IMidiSongSelectMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte Song()
 	{
 		ubyte _ret;
@@ -841,7 +841,7 @@ extern(Windows):
 
 interface MidiStartMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -870,7 +870,7 @@ extern(Windows):
 
 interface MidiStopMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -899,7 +899,7 @@ extern(Windows):
 
 interface MidiSynthesizer : Windows.Devices.Midi.IMidiSynthesizer, Windows.Devices.Midi.IMidiOutPort, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation AudioDevice()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -964,7 +964,7 @@ extern(Windows):
 
 interface MidiSystemExclusiveMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -994,7 +994,7 @@ extern(Windows):
 
 interface MidiSystemResetMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1023,7 +1023,7 @@ extern(Windows):
 
 interface MidiTimeCodeMessage : Windows.Devices.Midi.IMidiTimeCodeMessage, Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte FrameType()
 	{
 		ubyte _ret;
@@ -1065,7 +1065,7 @@ extern(Windows):
 
 interface MidiTimingClockMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1094,7 +1094,7 @@ extern(Windows):
 
 interface MidiTuneRequestMessage : Windows.Devices.Midi.IMidiMessage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Timestamp()
 	{
 		Windows.Foundation.TimeSpan _ret;

@@ -71,7 +71,7 @@ extern(Windows):
 
 interface PdfDocument : Windows.Data.Pdf.IPdfDocument
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Pdf.PdfPage GetPage(UINT32 pageIndex)
 	{
 		Windows.Data.Pdf.PdfPage _ret;
@@ -127,7 +127,7 @@ extern(Windows):
 
 interface PdfPage : Windows.Data.Pdf.IPdfPage, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction RenderToStreamAsync(Windows.Storage.Streams.IRandomAccessStream outputStream)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -185,7 +185,7 @@ extern(Windows):
 
 interface PdfPageDimensions : Windows.Data.Pdf.IPdfPageDimensions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect MediaBox()
 	{
 		Windows.Foundation.Rect _ret;
@@ -220,7 +220,7 @@ extern(Windows):
 
 interface PdfPageRenderOptions : Windows.Data.Pdf.IPdfPageRenderOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect SourceRect()
 	{
 		Windows.Foundation.Rect _ret;

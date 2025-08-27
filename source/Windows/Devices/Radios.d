@@ -28,7 +28,7 @@ extern(Windows):
 
 interface Radio : Windows.Devices.Radios.IRadio
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Devices.Radios.RadioAccessStatus) SetStateAsync(Windows.Devices.Radios.RadioState value)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Devices.Radios.RadioAccessStatus) _ret;

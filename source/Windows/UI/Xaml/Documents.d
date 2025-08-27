@@ -592,7 +592,7 @@ interface IUnderline : IInspectable
 
 interface Block : Windows.UI.Xaml.Documents.TextElement, Windows.UI.Xaml.Documents.IBlock
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.TextAlignment TextAlignment()
 	{
 		Windows.UI.Xaml.TextAlignment _ret;
@@ -762,7 +762,7 @@ class BlockT(Base) : AgileObject!Base, Block
 
 interface BlockCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Documents.Block), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Documents.Block)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Documents.Block GetAt(uint index)
 	{
 		Windows.UI.Xaml.Documents.Block _ret;
@@ -835,7 +835,7 @@ interface Bold : Windows.UI.Xaml.Documents.Span, Windows.UI.Xaml.Documents.IBold
 
 interface Glyphs : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Documents.IGlyphs, Windows.UI.Xaml.Documents.IGlyphs2
 {
-extern(Windows):
+extern(D):
 	final wstring UnicodeString()
 	{
 		HSTRING _ret;
@@ -1001,7 +1001,7 @@ extern(Windows):
 
 interface Hyperlink : Windows.UI.Xaml.Documents.Span, Windows.UI.Xaml.Documents.IHyperlink, Windows.UI.Xaml.Documents.IHyperlink2, Windows.UI.Xaml.Documents.IHyperlink3, Windows.UI.Xaml.Documents.IHyperlink4
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri NavigateUri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -1270,7 +1270,7 @@ class InlineT(Base) : AgileObject!Base, Inline
 
 interface InlineCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Documents.Inline), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Documents.Inline)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Documents.Inline GetAt(uint index)
 	{
 		Windows.UI.Xaml.Documents.Inline _ret;
@@ -1333,7 +1333,7 @@ extern(Windows):
 
 interface InlineUIContainer : Windows.UI.Xaml.Documents.Inline, Windows.UI.Xaml.Documents.IInlineUIContainer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Child()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -1374,7 +1374,7 @@ interface LineBreak : Windows.UI.Xaml.Documents.Inline, Windows.UI.Xaml.Document
 
 interface Paragraph : Windows.UI.Xaml.Documents.Block, Windows.UI.Xaml.Documents.IParagraph
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Documents.InlineCollection Inlines()
 	{
 		Windows.UI.Xaml.Documents.InlineCollection _ret;
@@ -1414,7 +1414,7 @@ extern(Windows):
 
 interface Run : Windows.UI.Xaml.Documents.Inline, Windows.UI.Xaml.Documents.IRun
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -1458,7 +1458,7 @@ extern(Windows):
 
 interface Span : Windows.UI.Xaml.Documents.Inline, Windows.UI.Xaml.Documents.ISpan
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Documents.InlineCollection Inlines()
 	{
 		Windows.UI.Xaml.Documents.InlineCollection _ret;
@@ -1561,7 +1561,7 @@ class SpanT(Base) : AgileObject!Base, Span
 
 interface TextElement : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Documents.ITextElement, Windows.UI.Xaml.Documents.ITextElementOverrides, Windows.UI.Xaml.Documents.ITextElement2, Windows.UI.Xaml.Documents.ITextElement3, Windows.UI.Xaml.Documents.ITextElement4
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1945,7 +1945,7 @@ class TextElementT(Base) : AgileObject!Base, TextElement
 
 interface TextPointer : Windows.UI.Xaml.Documents.ITextPointer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyObject Parent()
 	{
 		Windows.UI.Xaml.DependencyObject _ret;

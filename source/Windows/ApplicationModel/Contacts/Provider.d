@@ -37,7 +37,7 @@ extern(Windows):
 
 interface ContactPickerUI : Windows.ApplicationModel.Contacts.Provider.IContactPickerUI, Windows.ApplicationModel.Contacts.Provider.IContactPickerUI2
 {
-extern(Windows):
+extern(D):
 	deprecated("AddContact may be altered or unavailable for releases after Windows 8.1. Instead, use AddContact without the ID.")
 	final Windows.ApplicationModel.Contacts.Provider.AddContactResult AddContact(wstring id, Windows.ApplicationModel.Contacts.Contact contact)
 	{
@@ -94,7 +94,7 @@ extern(Windows):
 
 interface ContactRemovedEventArgs : Windows.ApplicationModel.Contacts.Provider.IContactRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;

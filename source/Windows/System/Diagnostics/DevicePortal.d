@@ -40,7 +40,7 @@ extern(Windows):
 
 interface DevicePortalConnection : Windows.System.Diagnostics.DevicePortal.IDevicePortalConnection
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnClosed(void delegate(Windows.System.Diagnostics.DevicePortal.DevicePortalConnection, Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -78,7 +78,7 @@ extern(Windows):
 
 interface DevicePortalConnectionClosedEventArgs : Windows.System.Diagnostics.DevicePortal.IDevicePortalConnectionClosedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedReason Reason()
 	{
 		Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedReason _ret;
@@ -89,7 +89,7 @@ extern(Windows):
 
 interface DevicePortalConnectionRequestReceivedEventArgs : Windows.System.Diagnostics.DevicePortal.IDevicePortalConnectionRequestReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.HttpRequestMessage RequestMessage()
 	{
 		Windows.Web.Http.HttpRequestMessage _ret;

@@ -620,7 +620,7 @@ extern(Windows):
 
 interface ChatCapabilities : Windows.ApplicationModel.Chat.IChatCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool IsOnline()
 	{
 		bool _ret;
@@ -677,7 +677,7 @@ interface ChatCapabilitiesManager
 
 interface ChatConversation : Windows.ApplicationModel.Chat.IChatConversation, Windows.ApplicationModel.Chat.IChatConversation2, Windows.ApplicationModel.Chat.IChatItem
 {
-extern(Windows):
+extern(D):
 	final bool HasUnreadMessages()
 	{
 		bool _ret;
@@ -797,7 +797,7 @@ extern(Windows):
 
 interface ChatConversationReader : Windows.ApplicationModel.Chat.IChatConversationReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.ChatConversation)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.ChatConversation)) _ret;
@@ -815,7 +815,7 @@ extern(Windows):
 
 interface ChatConversationThreadingInfo : Windows.ApplicationModel.Chat.IChatConversationThreadingInfo
 {
-extern(Windows):
+extern(D):
 	final wstring ContactId()
 	{
 		HSTRING _ret;
@@ -872,7 +872,7 @@ extern(Windows):
 
 interface ChatMessage : Windows.ApplicationModel.Chat.IChatMessage, Windows.ApplicationModel.Chat.IChatMessage2, Windows.ApplicationModel.Chat.IChatMessage3, Windows.ApplicationModel.Chat.IChatMessage4, Windows.ApplicationModel.Chat.IChatItem
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.ApplicationModel.Chat.ChatMessageAttachment) Attachments()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.ApplicationModel.Chat.ChatMessageAttachment) _ret;
@@ -1137,7 +1137,7 @@ extern(Windows):
 
 interface ChatMessageAttachment : Windows.ApplicationModel.Chat.IChatMessageAttachment, Windows.ApplicationModel.Chat.IChatMessageAttachment2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStreamReference DataStreamReference()
 	{
 		Windows.Storage.Streams.IRandomAccessStreamReference _ret;
@@ -1235,7 +1235,7 @@ interface ChatMessageBlocking
 
 interface ChatMessageChange : Windows.ApplicationModel.Chat.IChatMessageChange
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.ChatMessageChangeType ChangeType()
 	{
 		Windows.ApplicationModel.Chat.ChatMessageChangeType _ret;
@@ -1252,7 +1252,7 @@ extern(Windows):
 
 interface ChatMessageChangeReader : Windows.ApplicationModel.Chat.IChatMessageChangeReader
 {
-extern(Windows):
+extern(D):
 	final void AcceptChanges()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Chat.IChatMessageChangeReader)this.asInterface(uuid("14267020-28ce-5f26-7b05-9a5c7cce87ca"))).abi_AcceptChanges());
@@ -1271,7 +1271,7 @@ extern(Windows):
 
 interface ChatMessageChangeTracker : Windows.ApplicationModel.Chat.IChatMessageChangeTracker
 {
-extern(Windows):
+extern(D):
 	final void Enable()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Chat.IChatMessageChangeTracker)this.asInterface(uuid("60b7f066-70a0-5224-508c-242ef7c1d06f"))).abi_Enable());
@@ -1290,7 +1290,7 @@ extern(Windows):
 
 interface ChatMessageChangedDeferral : Windows.ApplicationModel.Chat.IChatMessageChangedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Chat.IChatMessageChangedDeferral)this.asInterface(uuid("fbc6b30c-788c-4dcc-ace7-6282382968cf"))).abi_Complete());
@@ -1299,7 +1299,7 @@ extern(Windows):
 
 interface ChatMessageChangedEventArgs : Windows.ApplicationModel.Chat.IChatMessageChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.ChatMessageChangedDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.Chat.ChatMessageChangedDeferral _ret;
@@ -1332,7 +1332,7 @@ interface ChatMessageManager
 
 interface ChatMessageNotificationTriggerDetails : Windows.ApplicationModel.Chat.IChatMessageNotificationTriggerDetails, Windows.ApplicationModel.Chat.IChatMessageNotificationTriggerDetails2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.ChatMessage ChatMessage()
 	{
 		Windows.ApplicationModel.Chat.ChatMessage _ret;
@@ -1367,7 +1367,7 @@ extern(Windows):
 
 interface ChatMessageReader : Windows.ApplicationModel.Chat.IChatMessageReader, Windows.ApplicationModel.Chat.IChatMessageReader2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.ChatMessage)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.ChatMessage)) _ret;
@@ -1385,7 +1385,7 @@ extern(Windows):
 
 interface ChatMessageStore : Windows.ApplicationModel.Chat.IChatMessageStore, Windows.ApplicationModel.Chat.IChatMessageStore2, Windows.ApplicationModel.Chat.IChatMessageStore3
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.ChatMessageChangeTracker ChangeTracker()
 	{
 		Windows.ApplicationModel.Chat.ChatMessageChangeTracker _ret;
@@ -1572,7 +1572,7 @@ extern(Windows):
 
 interface ChatMessageStoreChangedEventArgs : Windows.ApplicationModel.Chat.IChatMessageStoreChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1589,7 +1589,7 @@ extern(Windows):
 
 interface ChatMessageTransport : Windows.ApplicationModel.Chat.IChatMessageTransport, Windows.ApplicationModel.Chat.IChatMessageTransport2
 {
-extern(Windows):
+extern(D):
 	final bool IsAppSetAsNotificationProvider()
 	{
 		bool _ret;
@@ -1636,7 +1636,7 @@ extern(Windows):
 
 interface ChatMessageTransportConfiguration : Windows.ApplicationModel.Chat.IChatMessageTransportConfiguration
 {
-extern(Windows):
+extern(D):
 	final INT32 MaxAttachmentCount()
 	{
 		INT32 _ret;
@@ -1671,7 +1671,7 @@ extern(Windows):
 
 interface ChatMessageValidationResult : Windows.ApplicationModel.Chat.IChatMessageValidationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(UINT32) MaxPartCount()
 	{
 		Windows.Foundation.IReference!(UINT32) _ret;
@@ -1700,7 +1700,7 @@ extern(Windows):
 
 interface ChatQueryOptions : Windows.ApplicationModel.Chat.IChatQueryOptions
 {
-extern(Windows):
+extern(D):
 	final wstring SearchString()
 	{
 		HSTRING _ret;
@@ -1721,7 +1721,7 @@ extern(Windows):
 
 interface ChatRecipientDeliveryInfo : Windows.ApplicationModel.Chat.IChatRecipientDeliveryInfo
 {
-extern(Windows):
+extern(D):
 	final wstring TransportAddress()
 	{
 		HSTRING _ret;
@@ -1792,7 +1792,7 @@ extern(Windows):
 
 interface ChatSearchReader : Windows.ApplicationModel.Chat.IChatSearchReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.IChatItem)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Chat.IChatItem)) _ret;
@@ -1810,7 +1810,7 @@ extern(Windows):
 
 interface ChatSyncConfiguration : Windows.ApplicationModel.Chat.IChatSyncConfiguration
 {
-extern(Windows):
+extern(D):
 	final bool IsSyncEnabled()
 	{
 		bool _ret;
@@ -1835,7 +1835,7 @@ extern(Windows):
 
 interface ChatSyncManager : Windows.ApplicationModel.Chat.IChatSyncManager
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.ChatSyncConfiguration Configuration()
 	{
 		Windows.ApplicationModel.Chat.ChatSyncConfiguration _ret;
@@ -1874,7 +1874,7 @@ extern(Windows):
 
 interface RcsEndUserMessage : Windows.ApplicationModel.Chat.IRcsEndUserMessage
 {
-extern(Windows):
+extern(D):
 	final wstring TransportId()
 	{
 		HSTRING _ret;
@@ -1921,7 +1921,7 @@ extern(Windows):
 
 interface RcsEndUserMessageAction : Windows.ApplicationModel.Chat.IRcsEndUserMessageAction
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -1932,7 +1932,7 @@ extern(Windows):
 
 interface RcsEndUserMessageAvailableEventArgs : Windows.ApplicationModel.Chat.IRcsEndUserMessageAvailableEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsMessageAvailable()
 	{
 		bool _ret;
@@ -1949,7 +1949,7 @@ extern(Windows):
 
 interface RcsEndUserMessageAvailableTriggerDetails : Windows.ApplicationModel.Chat.IRcsEndUserMessageAvailableTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -1966,7 +1966,7 @@ extern(Windows):
 
 interface RcsEndUserMessageManager : Windows.ApplicationModel.Chat.IRcsEndUserMessageManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnMessageAvailableChanged(void delegate(Windows.ApplicationModel.Chat.RcsEndUserMessageManager, Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2015,7 +2015,7 @@ interface RcsManager
 
 interface RcsServiceKindSupportedChangedEventArgs : Windows.ApplicationModel.Chat.IRcsServiceKindSupportedChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Chat.RcsServiceKind ServiceKind()
 	{
 		Windows.ApplicationModel.Chat.RcsServiceKind _ret;
@@ -2026,7 +2026,7 @@ extern(Windows):
 
 interface RcsTransport : Windows.ApplicationModel.Chat.IRcsTransport
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, IInspectable) ExtendedProperties()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, IInspectable) _ret;
@@ -2083,7 +2083,7 @@ extern(Windows):
 
 interface RcsTransportConfiguration : Windows.ApplicationModel.Chat.IRcsTransportConfiguration
 {
-extern(Windows):
+extern(D):
 	final INT32 MaxAttachmentCount()
 	{
 		INT32 _ret;
@@ -2124,7 +2124,7 @@ extern(Windows):
 
 interface RemoteParticipantComposingChangedEventArgs : Windows.ApplicationModel.Chat.IRemoteParticipantComposingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring TransportId()
 	{
 		HSTRING _ret;

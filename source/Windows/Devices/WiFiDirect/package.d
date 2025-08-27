@@ -171,7 +171,7 @@ extern(Windows):
 
 interface WiFiDirectAdvertisement : Windows.Devices.WiFiDirect.IWiFiDirectAdvertisement, Windows.Devices.WiFiDirect.IWiFiDirectAdvertisement2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Devices.WiFiDirect.WiFiDirectInformationElement) InformationElements()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Devices.WiFiDirect.WiFiDirectInformationElement) _ret;
@@ -218,7 +218,7 @@ extern(Windows):
 
 interface WiFiDirectAdvertisementPublisher : Windows.Devices.WiFiDirect.IWiFiDirectAdvertisementPublisher
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.WiFiDirectAdvertisement Advertisement()
 	{
 		Windows.Devices.WiFiDirect.WiFiDirectAdvertisement _ret;
@@ -259,7 +259,7 @@ extern(Windows):
 
 interface WiFiDirectAdvertisementPublisherStatusChangedEventArgs : Windows.Devices.WiFiDirect.IWiFiDirectAdvertisementPublisherStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus Status()
 	{
 		Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus _ret;
@@ -276,7 +276,7 @@ extern(Windows):
 
 interface WiFiDirectConnectionListener : Windows.Devices.WiFiDirect.IWiFiDirectConnectionListener
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnConnectionRequested(void delegate(Windows.Devices.WiFiDirect.WiFiDirectConnectionListener, Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -297,7 +297,7 @@ extern(Windows):
 
 interface WiFiDirectConnectionParameters : Windows.Devices.WiFiDirect.IWiFiDirectConnectionParameters, Windows.Devices.WiFiDirect.IWiFiDirectConnectionParameters2, Windows.Devices.Enumeration.IDevicePairingSettings
 {
-extern(Windows):
+extern(D):
 	final INT16 GroupOwnerIntent()
 	{
 		INT16 _ret;
@@ -347,7 +347,7 @@ extern(Windows):
 
 interface WiFiDirectConnectionRequest : Windows.Devices.WiFiDirect.IWiFiDirectConnectionRequest, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation DeviceInformation()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -362,7 +362,7 @@ extern(Windows):
 
 interface WiFiDirectConnectionRequestedEventArgs : Windows.Devices.WiFiDirect.IWiFiDirectConnectionRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest GetConnectionRequest()
 	{
 		Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest _ret;
@@ -373,7 +373,7 @@ extern(Windows):
 
 interface WiFiDirectDevice : Windows.Devices.WiFiDirect.IWiFiDirectDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.WiFiDirectConnectionStatus ConnectionStatus()
 	{
 		Windows.Devices.WiFiDirect.WiFiDirectConnectionStatus _ret;
@@ -429,7 +429,7 @@ extern(Windows):
 
 interface WiFiDirectInformationElement : Windows.Devices.WiFiDirect.IWiFiDirectInformationElement
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Oui()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -489,7 +489,7 @@ extern(Windows):
 
 interface WiFiDirectLegacySettings : Windows.Devices.WiFiDirect.IWiFiDirectLegacySettings
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;

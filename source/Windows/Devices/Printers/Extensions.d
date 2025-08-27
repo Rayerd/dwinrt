@@ -100,7 +100,7 @@ extern(Windows):
 
 interface Print3DWorkflow : Windows.Devices.Printers.Extensions.IPrint3DWorkflow, Windows.Devices.Printers.Extensions.IPrint3DWorkflow2
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceID()
 	{
 		HSTRING _ret;
@@ -147,7 +147,7 @@ extern(Windows):
 
 interface Print3DWorkflowPrintRequestedEventArgs : Windows.Devices.Printers.Extensions.IPrint3DWorkflowPrintRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Printers.Extensions.Print3DWorkflowStatus Status()
 	{
 		Windows.Devices.Printers.Extensions.Print3DWorkflowStatus _ret;
@@ -170,7 +170,7 @@ extern(Windows):
 
 interface Print3DWorkflowPrinterChangedEventArgs : Windows.Devices.Printers.Extensions.IPrint3DWorkflowPrinterChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring NewDeviceId()
 	{
 		HSTRING _ret;
@@ -197,7 +197,7 @@ interface PrintExtensionContext
 
 interface PrintNotificationEventDetails : Windows.Devices.Printers.Extensions.IPrintNotificationEventDetails
 {
-extern(Windows):
+extern(D):
 	final wstring PrinterName()
 	{
 		HSTRING _ret;
@@ -218,7 +218,7 @@ extern(Windows):
 
 interface PrintTaskConfiguration : Windows.Devices.Printers.Extensions.IPrintTaskConfiguration
 {
-extern(Windows):
+extern(D):
 	final IInspectable PrinterExtensionContext()
 	{
 		IInspectable _ret;
@@ -239,7 +239,7 @@ extern(Windows):
 
 interface PrintTaskConfigurationSaveRequest : Windows.Devices.Printers.Extensions.IPrintTaskConfigurationSaveRequest
 {
-extern(Windows):
+extern(D):
 	final void Cancel()
 	{
 		Debug.OK((cast(Windows.Devices.Printers.Extensions.IPrintTaskConfigurationSaveRequest)this.asInterface(uuid("eeaf2fcb-621e-4b62-ac77-b281cce08d60"))).abi_Cancel());
@@ -264,7 +264,7 @@ extern(Windows):
 
 interface PrintTaskConfigurationSaveRequestedDeferral : Windows.Devices.Printers.Extensions.IPrintTaskConfigurationSaveRequestedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Devices.Printers.Extensions.IPrintTaskConfigurationSaveRequestedDeferral)this.asInterface(uuid("e959d568-f729-44a4-871d-bd0628696a33"))).abi_Complete());
@@ -273,7 +273,7 @@ extern(Windows):
 
 interface PrintTaskConfigurationSaveRequestedEventArgs : Windows.Devices.Printers.Extensions.IPrintTaskConfigurationSaveRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest Request()
 	{
 		Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest _ret;

@@ -63,7 +63,7 @@ extern(Windows):
 
 interface Geofence : Windows.Devices.Geolocation.Geofencing.IGeofence
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime StartTime()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -138,7 +138,7 @@ extern(Windows):
 
 interface GeofenceMonitor : Windows.Devices.Geolocation.Geofencing.IGeofenceMonitor
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus Status()
 	{
 		Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus _ret;
@@ -200,7 +200,7 @@ extern(Windows):
 
 interface GeofenceStateChangeReport : Windows.Devices.Geolocation.Geofencing.IGeofenceStateChangeReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geofencing.GeofenceState NewState()
 	{
 		Windows.Devices.Geolocation.Geofencing.GeofenceState _ret;

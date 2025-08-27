@@ -131,7 +131,7 @@ interface IFolderPicker2 : IFolderPicker2_Base, Windows.Storage.Pickers.IFolderP
 
 interface FileExtensionVector : Windows.Foundation.Collections.IVector!(HSTRING), Windows.Foundation.Collections.IIterable!(HSTRING)
 {
-extern(Windows):
+extern(D):
 	final wstring GetAt(uint index)
 	{
 		HSTRING _ret;
@@ -194,7 +194,7 @@ extern(Windows):
 
 interface FileOpenPicker : Windows.Storage.Pickers.IFileOpenPicker, Windows.Storage.Pickers.IFileOpenPickerWithOperationId, Windows.Storage.Pickers.IFileOpenPicker2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.PickerViewMode ViewMode()
 	{
 		Windows.Storage.Pickers.PickerViewMode _ret;
@@ -300,7 +300,7 @@ extern(Windows):
 
 interface FilePickerFileTypesOrderedMap : Windows.Foundation.Collections.IMap!(HSTRING, Windows.Foundation.Collections.IVector!(HSTRING)), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.Foundation.Collections.IVector!(HSTRING)))
 {
-extern(Windows):
+extern(D):
 	final  Windows.Foundation.Collections.IVector!(HSTRING) Lookup(wstring key)
 	{
 		 Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -347,7 +347,7 @@ extern(Windows):
 
 interface FilePickerSelectedFilesArray : Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile), Windows.Foundation.Collections.IIterable!(Windows.Storage.StorageFile)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Storage.StorageFile* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile))this).abi_GetAt(index, out_item));
@@ -376,7 +376,7 @@ extern(Windows):
 
 interface FileSavePicker : Windows.Storage.Pickers.IFileSavePicker, Windows.Storage.Pickers.IFileSavePicker2, Windows.Storage.Pickers.IFileSavePicker3
 {
-extern(Windows):
+extern(D):
 	final wstring SettingsIdentifier()
 	{
 		HSTRING _ret;
@@ -480,7 +480,7 @@ extern(Windows):
 
 interface FolderPicker : Windows.Storage.Pickers.IFolderPicker, Windows.Storage.Pickers.IFolderPicker2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Pickers.PickerViewMode ViewMode()
 	{
 		Windows.Storage.Pickers.PickerViewMode _ret;

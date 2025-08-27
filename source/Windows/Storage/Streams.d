@@ -203,7 +203,7 @@ interface IRandomAccessStreamWithContentType : IRandomAccessStreamWithContentTyp
 
 interface Buffer : Windows.Storage.Streams.IBuffer
 {
-extern(Windows):
+extern(D):
 	final UINT32 Capacity()
 	{
 		UINT32 _ret;
@@ -250,7 +250,7 @@ extern(Windows):
 
 interface DataReader : Windows.Storage.Streams.IDataReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final UINT32 UnconsumedBufferLength()
 	{
 		UINT32 _ret;
@@ -427,7 +427,7 @@ extern(Windows):
 
 interface DataReaderLoadOperation : Windows.Foundation.IAsyncOperation!(UINT32)
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncOperationCompletedHandler!(UINT32) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperation!(UINT32))this).set_Completed(handler));
@@ -448,7 +448,7 @@ extern(Windows):
 
 interface DataWriter : Windows.Storage.Streams.IDataWriter, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final UINT32 UnstoredBufferLength()
 	{
 		UINT32 _ret;
@@ -597,7 +597,7 @@ extern(Windows):
 
 interface DataWriterStoreOperation : Windows.Foundation.IAsyncOperation!(UINT32)
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncOperationCompletedHandler!(UINT32) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperation!(UINT32))this).set_Completed(handler));
@@ -618,7 +618,7 @@ extern(Windows):
 
 interface FileInputStream : Windows.Storage.Streams.IInputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(Windows.Storage.Streams.IBuffer, UINT32) ReadAsync(Windows.Storage.Streams.IBuffer buffer, UINT32 count, Windows.Storage.Streams.InputStreamOptions options)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(Windows.Storage.Streams.IBuffer, UINT32) _ret;
@@ -633,7 +633,7 @@ extern(Windows):
 
 interface FileOutputStream : Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) WriteAsync(Windows.Storage.Streams.IBuffer buffer)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) _ret;
@@ -654,7 +654,7 @@ extern(Windows):
 
 interface FileRandomAccessStream : Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream
 {
-extern(Windows):
+extern(D):
 	final ulong Size()
 	{
 		ulong _ret;
@@ -731,7 +731,7 @@ extern(Windows):
 
 interface InMemoryRandomAccessStream : Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream
 {
-extern(Windows):
+extern(D):
 	final ulong Size()
 	{
 		ulong _ret;
@@ -814,7 +814,7 @@ extern(Windows):
 
 interface InputStreamOverStream : Windows.Storage.Streams.IInputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(Windows.Storage.Streams.IBuffer, UINT32) ReadAsync(Windows.Storage.Streams.IBuffer buffer, UINT32 count, Windows.Storage.Streams.InputStreamOptions options)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(Windows.Storage.Streams.IBuffer, UINT32) _ret;
@@ -829,7 +829,7 @@ extern(Windows):
 
 interface OutputStreamOverStream : Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) WriteAsync(Windows.Storage.Streams.IBuffer buffer)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) _ret;
@@ -879,7 +879,7 @@ interface RandomAccessStream
 
 interface RandomAccessStreamOverStream : Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream
 {
-extern(Windows):
+extern(D):
 	final ulong Size()
 	{
 		ulong _ret;
@@ -956,7 +956,7 @@ extern(Windows):
 
 interface RandomAccessStreamReference : Windows.Storage.Streams.IRandomAccessStreamReference
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStreamWithContentType) OpenReadAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStreamWithContentType) _ret;

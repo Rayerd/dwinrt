@@ -273,7 +273,7 @@ extern(Windows):
 
 interface SpeechContinuousRecognitionCompletedEventArgs : Windows.Media.SpeechRecognition.ISpeechContinuousRecognitionCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus Status()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus _ret;
@@ -284,7 +284,7 @@ extern(Windows):
 
 interface SpeechContinuousRecognitionResultGeneratedEventArgs : Windows.Media.SpeechRecognition.ISpeechContinuousRecognitionResultGeneratedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionResult Result()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionResult _ret;
@@ -295,7 +295,7 @@ extern(Windows):
 
 interface SpeechContinuousRecognitionSession : Windows.Media.SpeechRecognition.ISpeechContinuousRecognitionSession
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan AutoStopSilenceTimeout()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -365,7 +365,7 @@ extern(Windows):
 
 interface SpeechRecognitionCompilationResult : Windows.Media.SpeechRecognition.ISpeechRecognitionCompilationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus Status()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus _ret;
@@ -376,7 +376,7 @@ extern(Windows):
 
 interface SpeechRecognitionGrammarFileConstraint : Windows.Media.SpeechRecognition.ISpeechRecognitionGrammarFileConstraint, Windows.Media.SpeechRecognition.ISpeechRecognitionConstraint
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFile GrammarFile()
 	{
 		Windows.Storage.StorageFile _ret;
@@ -437,7 +437,7 @@ extern(Windows):
 
 interface SpeechRecognitionHypothesis : Windows.Media.SpeechRecognition.ISpeechRecognitionHypothesis
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -448,7 +448,7 @@ extern(Windows):
 
 interface SpeechRecognitionHypothesisGeneratedEventArgs : Windows.Media.SpeechRecognition.ISpeechRecognitionHypothesisGeneratedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis Hypothesis()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis _ret;
@@ -459,7 +459,7 @@ extern(Windows):
 
 interface SpeechRecognitionListConstraint : Windows.Media.SpeechRecognition.ISpeechRecognitionListConstraint, Windows.Media.SpeechRecognition.ISpeechRecognitionConstraint
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) Commands()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -520,7 +520,7 @@ extern(Windows):
 
 interface SpeechRecognitionQualityDegradingEventArgs : Windows.Media.SpeechRecognition.ISpeechRecognitionQualityDegradingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem Problem()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem _ret;
@@ -531,7 +531,7 @@ extern(Windows):
 
 interface SpeechRecognitionResult : Windows.Media.SpeechRecognition.ISpeechRecognitionResult, Windows.Media.SpeechRecognition.ISpeechRecognitionResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus Status()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus _ret;
@@ -596,7 +596,7 @@ extern(Windows):
 
 interface SpeechRecognitionSemanticInterpretation : Windows.Media.SpeechRecognition.ISpeechRecognitionSemanticInterpretation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Foundation.Collections.IVectorView!(HSTRING)) Properties()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Foundation.Collections.IVectorView!(HSTRING)) _ret;
@@ -607,7 +607,7 @@ extern(Windows):
 
 interface SpeechRecognitionTopicConstraint : Windows.Media.SpeechRecognition.ISpeechRecognitionTopicConstraint, Windows.Media.SpeechRecognition.ISpeechRecognitionConstraint
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognitionScenario Scenario()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognitionScenario _ret;
@@ -674,7 +674,7 @@ extern(Windows):
 
 interface SpeechRecognitionVoiceCommandDefinitionConstraint : Windows.Media.SpeechRecognition.ISpeechRecognitionVoiceCommandDefinitionConstraint, Windows.Media.SpeechRecognition.ISpeechRecognitionConstraint
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -715,7 +715,7 @@ extern(Windows):
 
 interface SpeechRecognizer : Windows.Media.SpeechRecognition.ISpeechRecognizer, Windows.Foundation.IClosable, Windows.Media.SpeechRecognition.ISpeechRecognizer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Globalization.Language CurrentLanguage()
 	{
 		Windows.Globalization.Language _ret;
@@ -852,7 +852,7 @@ extern(Windows):
 
 interface SpeechRecognizerStateChangedEventArgs : Windows.Media.SpeechRecognition.ISpeechRecognizerStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SpeechRecognition.SpeechRecognizerState State()
 	{
 		Windows.Media.SpeechRecognition.SpeechRecognizerState _ret;
@@ -863,7 +863,7 @@ extern(Windows):
 
 interface SpeechRecognizerTimeouts : Windows.Media.SpeechRecognition.ISpeechRecognizerTimeouts
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan InitialSilenceTimeout()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -898,7 +898,7 @@ extern(Windows):
 
 interface SpeechRecognizerUIOptions : Windows.Media.SpeechRecognition.ISpeechRecognizerUIOptions
 {
-extern(Windows):
+extern(D):
 	final wstring ExampleText()
 	{
 		HSTRING _ret;

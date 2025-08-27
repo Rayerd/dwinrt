@@ -409,7 +409,7 @@ interface AsyncCausalityTracer
 
 interface ErrorDetails : Windows.Foundation.Diagnostics.IErrorDetails
 {
-extern(Windows):
+extern(D):
 	final wstring Description()
 	{
 		HSTRING _ret;
@@ -445,7 +445,7 @@ extern(Windows):
 
 interface FileLoggingSession : Windows.Foundation.Diagnostics.IFileLoggingSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -496,7 +496,7 @@ extern(Windows):
 
 interface LogFileGeneratedEventArgs : Windows.Foundation.Diagnostics.ILogFileGeneratedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFile File()
 	{
 		Windows.Storage.StorageFile _ret;
@@ -507,7 +507,7 @@ extern(Windows):
 
 interface LoggingActivity : Windows.Foundation.Diagnostics.ILoggingActivity, Windows.Foundation.IClosable, Windows.Foundation.Diagnostics.ILoggingActivity2, Windows.Foundation.Diagnostics.ILoggingTarget
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -628,7 +628,7 @@ extern(Windows):
 
 interface LoggingChannel : Windows.Foundation.Diagnostics.ILoggingChannel, Windows.Foundation.IClosable, Windows.Foundation.Diagnostics.ILoggingChannel2, Windows.Foundation.Diagnostics.ILoggingTarget
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -763,7 +763,7 @@ extern(Windows):
 
 interface LoggingChannelOptions : Windows.Foundation.Diagnostics.ILoggingChannelOptions
 {
-extern(Windows):
+extern(D):
 	final GUID Group()
 	{
 		GUID _ret;
@@ -791,7 +791,7 @@ extern(Windows):
 
 interface LoggingFields : Windows.Foundation.Diagnostics.ILoggingFields
 {
-extern(Windows):
+extern(D):
 	final void Clear()
 	{
 		Debug.OK((cast(Windows.Foundation.Diagnostics.ILoggingFields)this.asInterface(uuid("d7f6b7af-762d-4579-83bd-52c23bc333bc"))).abi_Clear());
@@ -1337,7 +1337,7 @@ extern(Windows):
 
 interface LoggingOptions : Windows.Foundation.Diagnostics.ILoggingOptions
 {
-extern(Windows):
+extern(D):
 	final INT64 Keywords()
 	{
 		INT64 _ret;
@@ -1415,7 +1415,7 @@ extern(Windows):
 
 interface LoggingSession : Windows.Foundation.Diagnostics.ILoggingSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1456,7 +1456,7 @@ extern(Windows):
 
 interface RuntimeBrokerErrorSettings : Windows.Foundation.Diagnostics.IErrorReportingSettings
 {
-extern(Windows):
+extern(D):
 	final void SetErrorOptions(Windows.Foundation.Diagnostics.ErrorOptions value)
 	{
 		Debug.OK((cast(Windows.Foundation.Diagnostics.IErrorReportingSettings)this.asInterface(uuid("16369792-b03e-4ba1-8bb8-d28f4ab4d2c0"))).abi_SetErrorOptions(value));
@@ -1477,7 +1477,7 @@ extern(Windows):
 
 interface TracingStatusChangedEventArgs : Windows.Foundation.Diagnostics.ITracingStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Enabled()
 	{
 		bool _ret;

@@ -238,7 +238,7 @@ extern(Windows):
 
 interface BufferMediaFrame : Windows.Media.Capture.Frames.IBufferMediaFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameReference FrameReference()
 	{
 		Windows.Media.Capture.Frames.MediaFrameReference _ret;
@@ -255,7 +255,7 @@ extern(Windows):
 
 interface DepthMediaFrame : Windows.Media.Capture.Frames.IDepthMediaFrame, Windows.Media.Capture.Frames.IDepthMediaFrame2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameReference FrameReference()
 	{
 		Windows.Media.Capture.Frames.MediaFrameReference _ret;
@@ -296,7 +296,7 @@ extern(Windows):
 
 interface DepthMediaFrameFormat : Windows.Media.Capture.Frames.IDepthMediaFrameFormat
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.VideoMediaFrameFormat VideoFormat()
 	{
 		Windows.Media.Capture.Frames.VideoMediaFrameFormat _ret;
@@ -313,7 +313,7 @@ extern(Windows):
 
 interface InfraredMediaFrame : Windows.Media.Capture.Frames.IInfraredMediaFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameReference FrameReference()
 	{
 		Windows.Media.Capture.Frames.MediaFrameReference _ret;
@@ -340,7 +340,7 @@ interface MediaFrameArrivedEventArgs : Windows.Media.Capture.Frames.IMediaFrameA
 
 interface MediaFrameFormat : Windows.Media.Capture.Frames.IMediaFrameFormat
 {
-extern(Windows):
+extern(D):
 	final wstring MajorType()
 	{
 		HSTRING _ret;
@@ -375,7 +375,7 @@ extern(Windows):
 
 interface MediaFrameReader : Windows.Media.Capture.Frames.IMediaFrameReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnFrameArrived(void delegate(Windows.Media.Capture.Frames.MediaFrameReader, Windows.Media.Capture.Frames.MediaFrameArrivedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -412,7 +412,7 @@ extern(Windows):
 
 interface MediaFrameReference : Windows.Media.Capture.Frames.IMediaFrameReference, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameSourceKind SourceKind()
 	{
 		Windows.Media.Capture.Frames.MediaFrameSourceKind _ret;
@@ -469,7 +469,7 @@ extern(Windows):
 
 interface MediaFrameSource : Windows.Media.Capture.Frames.IMediaFrameSource
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameSourceInfo Info()
 	{
 		Windows.Media.Capture.Frames.MediaFrameSourceInfo _ret;
@@ -520,7 +520,7 @@ extern(Windows):
 
 interface MediaFrameSourceController : Windows.Media.Capture.Frames.IMediaFrameSourceController, Windows.Media.Capture.Frames.IMediaFrameSourceController2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.Frames.MediaFrameSourceGetPropertyResult) GetPropertyAsync(wstring propertyId)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.Capture.Frames.MediaFrameSourceGetPropertyResult) _ret;
@@ -555,7 +555,7 @@ extern(Windows):
 
 interface MediaFrameSourceGetPropertyResult : Windows.Media.Capture.Frames.IMediaFrameSourceGetPropertyResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameSourceGetPropertyStatus Status()
 	{
 		Windows.Media.Capture.Frames.MediaFrameSourceGetPropertyStatus _ret;
@@ -572,7 +572,7 @@ extern(Windows):
 
 interface MediaFrameSourceGroup : Windows.Media.Capture.Frames.IMediaFrameSourceGroup
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -620,7 +620,7 @@ extern(Windows):
 
 interface MediaFrameSourceInfo : Windows.Media.Capture.Frames.IMediaFrameSourceInfo
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -671,7 +671,7 @@ interface MultiSourceMediaFrameArrivedEventArgs : Windows.Media.Capture.Frames.I
 
 interface MultiSourceMediaFrameReader : Windows.Media.Capture.Frames.IMultiSourceMediaFrameReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnFrameArrived(void delegate(Windows.Media.Capture.Frames.MultiSourceMediaFrameReader, Windows.Media.Capture.Frames.MultiSourceMediaFrameArrivedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -708,7 +708,7 @@ extern(Windows):
 
 interface MultiSourceMediaFrameReference : Windows.Media.Capture.Frames.IMultiSourceMediaFrameReference, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameReference TryGetFrameReferenceBySourceId(wstring sourceId)
 	{
 		Windows.Media.Capture.Frames.MediaFrameReference _ret;
@@ -723,7 +723,7 @@ extern(Windows):
 
 interface VideoMediaFrame : Windows.Media.Capture.Frames.IVideoMediaFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameReference FrameReference()
 	{
 		Windows.Media.Capture.Frames.MediaFrameReference _ret;
@@ -776,7 +776,7 @@ extern(Windows):
 
 interface VideoMediaFrameFormat : Windows.Media.Capture.Frames.IVideoMediaFrameFormat
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.Frames.MediaFrameFormat MediaFrameFormat()
 	{
 		Windows.Media.Capture.Frames.MediaFrameFormat _ret;

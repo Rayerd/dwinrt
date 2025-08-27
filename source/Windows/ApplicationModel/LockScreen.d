@@ -70,7 +70,7 @@ extern(Windows):
 
 interface LockApplicationHost : Windows.ApplicationModel.LockScreen.ILockApplicationHost
 {
-extern(Windows):
+extern(D):
 	final void RequestUnlock()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.LockScreen.ILockApplicationHost)this.asInterface(uuid("38ee31ad-d94f-4e7c-81fa-4f4436506281"))).abi_RequestUnlock());
@@ -102,7 +102,7 @@ extern(Windows):
 
 interface LockScreenBadge : Windows.ApplicationModel.LockScreen.ILockScreenBadge
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStream Logo()
 	{
 		Windows.Storage.Streams.IRandomAccessStream _ret;
@@ -135,7 +135,7 @@ extern(Windows):
 
 interface LockScreenInfo : Windows.ApplicationModel.LockScreen.ILockScreenInfo
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnLockScreenImageChanged(void delegate(Windows.ApplicationModel.LockScreen.LockScreenInfo, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -204,7 +204,7 @@ extern(Windows):
 
 interface LockScreenUnlockingDeferral : Windows.ApplicationModel.LockScreen.ILockScreenUnlockingDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.LockScreen.ILockScreenUnlockingDeferral)this.asInterface(uuid("7e7d1ad6-5203-43e7-9bd6-7c3947d1e3fe"))).abi_Complete());
@@ -213,7 +213,7 @@ extern(Windows):
 
 interface LockScreenUnlockingEventArgs : Windows.ApplicationModel.LockScreen.ILockScreenUnlockingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral _ret;

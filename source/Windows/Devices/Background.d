@@ -23,7 +23,7 @@ extern(Windows):
 
 interface DeviceServicingDetails : Windows.Devices.Background.IDeviceServicingDetails
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -46,7 +46,7 @@ extern(Windows):
 
 interface DeviceUseDetails : Windows.Devices.Background.IDeviceUseDetails
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;

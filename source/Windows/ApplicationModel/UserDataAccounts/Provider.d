@@ -58,7 +58,7 @@ interface IUserDataAccountProviderSettingsOperation : IUserDataAccountProviderSe
 
 interface UserDataAccountPartnerAccountInfo : Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountPartnerAccountInfo
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -81,7 +81,7 @@ extern(Windows):
 
 interface UserDataAccountProviderAddAccountOperation : Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderAddAccountOperation, Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataAccounts.UserDataAccountContentKinds ContentKinds()
 	{
 		Windows.ApplicationModel.UserDataAccounts.UserDataAccountContentKinds _ret;
@@ -108,7 +108,7 @@ extern(Windows):
 
 interface UserDataAccountProviderResolveErrorsOperation : Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderResolveErrorsOperation, Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderOperation
 {
-extern(Windows):
+extern(D):
 	final wstring UserDataAccountId()
 	{
 		HSTRING _ret;
@@ -129,7 +129,7 @@ extern(Windows):
 
 interface UserDataAccountProviderSettingsOperation : Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderSettingsOperation, Windows.ApplicationModel.UserDataAccounts.Provider.IUserDataAccountProviderOperation
 {
-extern(Windows):
+extern(D):
 	final wstring UserDataAccountId()
 	{
 		HSTRING _ret;

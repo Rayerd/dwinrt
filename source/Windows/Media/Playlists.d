@@ -23,7 +23,7 @@ extern(Windows):
 
 interface Playlist : Windows.Media.Playlists.IPlaylist
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Storage.StorageFile) Files()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Storage.StorageFile) _ret;

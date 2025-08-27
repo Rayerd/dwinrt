@@ -104,7 +104,7 @@ interface KnownSimpleHapticsControllerWaveforms
 
 interface SimpleHapticsController : Windows.Devices.Haptics.ISimpleHapticsController
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -166,7 +166,7 @@ extern(Windows):
 
 interface SimpleHapticsControllerFeedback : Windows.Devices.Haptics.ISimpleHapticsControllerFeedback
 {
-extern(Windows):
+extern(D):
 	final UINT16 Waveform()
 	{
 		UINT16 _ret;
@@ -183,7 +183,7 @@ extern(Windows):
 
 interface VibrationDevice : Windows.Devices.Haptics.IVibrationDevice
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;

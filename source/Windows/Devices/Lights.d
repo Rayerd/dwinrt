@@ -42,7 +42,7 @@ extern(Windows):
 
 interface Lamp : Windows.Devices.Lights.ILamp, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -128,7 +128,7 @@ extern(Windows):
 
 interface LampAvailabilityChangedEventArgs : Windows.Devices.Lights.ILampAvailabilityChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsAvailable()
 	{
 		bool _ret;

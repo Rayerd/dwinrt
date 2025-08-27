@@ -766,7 +766,7 @@ interface IEmailStoreNotificationTriggerDetails : IInspectable
 
 interface EmailAttachment : Windows.ApplicationModel.Email.IEmailAttachment, Windows.ApplicationModel.Email.IEmailAttachment2
 {
-extern(Windows):
+extern(D):
 	final wstring FileName()
 	{
 		HSTRING _ret;
@@ -876,7 +876,7 @@ extern(Windows):
 
 interface EmailConversation : Windows.ApplicationModel.Email.IEmailConversation
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -972,7 +972,7 @@ extern(Windows):
 
 interface EmailConversationBatch : Windows.ApplicationModel.Email.IEmailConversationBatch
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailConversation) Conversations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailConversation) _ret;
@@ -989,7 +989,7 @@ extern(Windows):
 
 interface EmailConversationReader : Windows.ApplicationModel.Email.IEmailConversationReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Email.EmailConversationBatch) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Email.EmailConversationBatch) _ret;
@@ -1000,7 +1000,7 @@ extern(Windows):
 
 interface EmailFolder : Windows.ApplicationModel.Email.IEmailFolder
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1150,7 +1150,7 @@ extern(Windows):
 
 interface EmailIrmInfo : Windows.ApplicationModel.Email.IEmailIrmInfo
 {
-extern(Windows):
+extern(D):
 	final bool CanEdit()
 	{
 		bool _ret;
@@ -1288,7 +1288,7 @@ extern(Windows):
 
 interface EmailIrmTemplate : Windows.ApplicationModel.Email.IEmailIrmTemplate
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1336,7 +1336,7 @@ extern(Windows):
 
 interface EmailItemCounts : Windows.ApplicationModel.Email.IEmailItemCounts
 {
-extern(Windows):
+extern(D):
 	final UINT32 Flagged()
 	{
 		UINT32 _ret;
@@ -1365,7 +1365,7 @@ extern(Windows):
 
 interface EmailMailbox : Windows.ApplicationModel.Email.IEmailMailbox, Windows.ApplicationModel.Email.IEmailMailbox2, Windows.ApplicationModel.Email.IEmailMailbox3, Windows.ApplicationModel.Email.IEmailMailbox4
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxCapabilities Capabilities()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxCapabilities _ret;
@@ -1718,7 +1718,7 @@ extern(Windows):
 
 interface EmailMailboxAction : Windows.ApplicationModel.Email.IEmailMailboxAction
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxActionKind Kind()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxActionKind _ret;
@@ -1735,7 +1735,7 @@ extern(Windows):
 
 interface EmailMailboxAutoReply : Windows.ApplicationModel.Email.IEmailMailboxAutoReply
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -1760,7 +1760,7 @@ extern(Windows):
 
 interface EmailMailboxAutoReplySettings : Windows.ApplicationModel.Email.IEmailMailboxAutoReplySettings
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -1829,7 +1829,7 @@ extern(Windows):
 
 interface EmailMailboxCapabilities : Windows.ApplicationModel.Email.IEmailMailboxCapabilities, Windows.ApplicationModel.Email.IEmailMailboxCapabilities2, Windows.ApplicationModel.Email.IEmailMailboxCapabilities3
 {
-extern(Windows):
+extern(D):
 	final bool CanForwardMeetings()
 	{
 		bool _ret;
@@ -1974,7 +1974,7 @@ extern(Windows):
 
 interface EmailMailboxChange : Windows.ApplicationModel.Email.IEmailMailboxChange
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxChangeType ChangeType()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxChangeType _ret;
@@ -2003,7 +2003,7 @@ extern(Windows):
 
 interface EmailMailboxChangeReader : Windows.ApplicationModel.Email.IEmailMailboxChangeReader
 {
-extern(Windows):
+extern(D):
 	final void AcceptChanges()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Email.IEmailMailboxChangeReader)this.asInterface(uuid("bdbd0ebb-c53d-4331-97be-be75a2146a75"))).abi_AcceptChanges());
@@ -2022,7 +2022,7 @@ extern(Windows):
 
 interface EmailMailboxChangeTracker : Windows.ApplicationModel.Email.IEmailMailboxChangeTracker
 {
-extern(Windows):
+extern(D):
 	final bool IsTracking()
 	{
 		bool _ret;
@@ -2047,7 +2047,7 @@ extern(Windows):
 
 interface EmailMailboxChangedDeferral : Windows.ApplicationModel.Email.IEmailMailboxChangedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Email.IEmailMailboxChangedDeferral)this.asInterface(uuid("779a74c1-97c5-4b54-b30d-306232623e6d"))).abi_Complete());
@@ -2056,7 +2056,7 @@ extern(Windows):
 
 interface EmailMailboxChangedEventArgs : Windows.ApplicationModel.Email.IEmailMailboxChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxChangedDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxChangedDeferral _ret;
@@ -2067,7 +2067,7 @@ extern(Windows):
 
 interface EmailMailboxCreateFolderResult : Windows.ApplicationModel.Email.IEmailMailboxCreateFolderResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus Status()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus _ret;
@@ -2084,7 +2084,7 @@ extern(Windows):
 
 interface EmailMailboxPolicies : Windows.ApplicationModel.Email.IEmailMailboxPolicies, Windows.ApplicationModel.Email.IEmailMailboxPolicies2, Windows.ApplicationModel.Email.IEmailMailboxPolicies3
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation AllowedSmimeEncryptionAlgorithmNegotiation()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation _ret;
@@ -2149,7 +2149,7 @@ extern(Windows):
 
 interface EmailMailboxSyncManager : Windows.ApplicationModel.Email.IEmailMailboxSyncManager, Windows.ApplicationModel.Email.IEmailMailboxSyncManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailMailboxSyncStatus Status()
 	{
 		Windows.ApplicationModel.Email.EmailMailboxSyncStatus _ret;
@@ -2216,7 +2216,7 @@ interface EmailManager
 
 interface EmailManagerForUser : Windows.ApplicationModel.Email.IEmailManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction ShowComposeNewEmailAsync(Windows.ApplicationModel.Email.EmailMessage message)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -2239,7 +2239,7 @@ extern(Windows):
 
 interface EmailMeetingInfo : Windows.ApplicationModel.Email.IEmailMeetingInfo, Windows.ApplicationModel.Email.IEmailMeetingInfo2
 {
-extern(Windows):
+extern(D):
 	final bool AllowNewTimeProposal()
 	{
 		bool _ret;
@@ -2386,7 +2386,7 @@ extern(Windows):
 
 interface EmailMessage : Windows.ApplicationModel.Email.IEmailMessage, Windows.ApplicationModel.Email.IEmailMessage2, Windows.ApplicationModel.Email.IEmailMessage3, Windows.ApplicationModel.Email.IEmailMessage4
 {
-extern(Windows):
+extern(D):
 	final wstring Subject()
 	{
 		HSTRING _ret;
@@ -2713,7 +2713,7 @@ extern(Windows):
 
 interface EmailMessageBatch : Windows.ApplicationModel.Email.IEmailMessageBatch
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailMessage) Messages()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailMessage) _ret;
@@ -2730,7 +2730,7 @@ extern(Windows):
 
 interface EmailMessageReader : Windows.ApplicationModel.Email.IEmailMessageReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Email.EmailMessageBatch) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Email.EmailMessageBatch) _ret;
@@ -2741,7 +2741,7 @@ extern(Windows):
 
 interface EmailQueryOptions : Windows.ApplicationModel.Email.IEmailQueryOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailQueryTextSearch TextSearch()
 	{
 		Windows.ApplicationModel.Email.EmailQueryTextSearch _ret;
@@ -2808,7 +2808,7 @@ extern(Windows):
 
 interface EmailQueryTextSearch : Windows.ApplicationModel.Email.IEmailQueryTextSearch
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailQuerySearchFields Fields()
 	{
 		Windows.ApplicationModel.Email.EmailQuerySearchFields _ret;
@@ -2843,7 +2843,7 @@ extern(Windows):
 
 interface EmailRecipient : Windows.ApplicationModel.Email.IEmailRecipient
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2888,7 +2888,7 @@ extern(Windows):
 
 interface EmailRecipientResolutionResult : Windows.ApplicationModel.Email.IEmailRecipientResolutionResult, Windows.ApplicationModel.Email.IEmailRecipientResolutionResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.EmailRecipientResolutionStatus Status()
 	{
 		Windows.ApplicationModel.Email.EmailRecipientResolutionStatus _ret;
@@ -2919,7 +2919,7 @@ extern(Windows):
 
 interface EmailStore : Windows.ApplicationModel.Email.IEmailStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailMailbox)) FindMailboxesAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Email.EmailMailbox)) _ret;

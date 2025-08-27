@@ -216,7 +216,7 @@ extern(Windows):
 
 interface ContentIndexer : Windows.Storage.Search.IContentIndexer, Windows.Storage.Search.IContentIndexerQueryOperations
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction AddAsync(Windows.Storage.Search.IIndexableContent indexableContent)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -303,7 +303,7 @@ extern(Windows):
 
 interface ContentIndexerQuery : Windows.Storage.Search.IContentIndexerQuery
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(UINT32) GetCountAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(UINT32) _ret;
@@ -346,7 +346,7 @@ extern(Windows):
 
 interface IndexableContent : Windows.Storage.Search.IIndexableContent
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -393,7 +393,7 @@ extern(Windows):
 
 interface QueryOptions : Windows.Storage.Search.IQueryOptions, Windows.Storage.Search.IQueryOptionsWithProviderFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) FileTypeFilter()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -516,7 +516,7 @@ extern(Windows):
 
 interface SortEntryVector : Windows.Foundation.Collections.IVector!(Windows.Storage.Search.SortEntry), Windows.Foundation.Collections.IIterable!(Windows.Storage.Search.SortEntry)
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Search.SortEntry GetAt(uint index)
 	{
 		Windows.Storage.Search.SortEntry _ret;
@@ -579,7 +579,7 @@ extern(Windows):
 
 interface StorageFileQueryResult : Windows.Storage.Search.IStorageFileQueryResult, Windows.Storage.Search.IStorageQueryResultBase, Windows.Storage.Search.IStorageFileQueryResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile)) GetFilesAsync(UINT32 startIndex, UINT32 maxNumberOfItems)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile)) _ret;
@@ -651,7 +651,7 @@ extern(Windows):
 
 interface StorageFolderQueryResult : Windows.Storage.Search.IStorageFolderQueryResult, Windows.Storage.Search.IStorageQueryResultBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFolder)) GetFoldersAsync(UINT32 startIndex, UINT32 maxNumberOfItems)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFolder)) _ret;
@@ -717,7 +717,7 @@ extern(Windows):
 
 interface StorageItemQueryResult : Windows.Storage.Search.IStorageItemQueryResult, Windows.Storage.Search.IStorageQueryResultBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.IStorageItem)) GetItemsAsync(UINT32 startIndex, UINT32 maxNumberOfItems)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.IStorageItem)) _ret;
@@ -783,7 +783,7 @@ extern(Windows):
 
 interface StorageLibraryContentChangedTriggerDetails : Windows.Storage.Search.IStorageLibraryContentChangedTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFolder Folder()
 	{
 		Windows.Storage.StorageFolder _ret;
@@ -800,7 +800,7 @@ extern(Windows):
 
 interface ValueAndLanguage : Windows.Storage.Search.IValueAndLanguage
 {
-extern(Windows):
+extern(D):
 	final wstring Language()
 	{
 		HSTRING _ret;

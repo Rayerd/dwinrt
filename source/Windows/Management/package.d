@@ -50,7 +50,7 @@ extern(Windows):
 
 interface MdmAlert : Windows.Management.IMdmAlert
 {
-extern(Windows):
+extern(D):
 	final wstring Data()
 	{
 		HSTRING _ret;
@@ -127,7 +127,7 @@ extern(Windows):
 
 interface MdmSession : Windows.Management.IMdmSession
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Management.MdmAlert) Alerts()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Management.MdmAlert) _ret;

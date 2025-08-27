@@ -148,7 +148,7 @@ extern(Windows):
 
 interface BrightnessOverride : Windows.Graphics.Display.IBrightnessOverride
 {
-extern(Windows):
+extern(D):
 	final bool IsSupported()
 	{
 		bool _ret;
@@ -248,7 +248,7 @@ extern(Windows):
 
 interface DisplayInformation : Windows.Graphics.Display.IDisplayInformation, Windows.Graphics.Display.IDisplayInformation2, Windows.Graphics.Display.IDisplayInformation3, Windows.Graphics.Display.IDisplayInformation4
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Display.DisplayOrientations CurrentOrientation()
 	{
 		Windows.Graphics.Display.DisplayOrientations _ret;

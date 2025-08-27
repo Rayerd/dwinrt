@@ -176,7 +176,7 @@ extern(Windows):
 
 interface CardAddedEventArgs : Windows.Devices.SmartCards.ICardAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SmartCards.SmartCard SmartCard()
 	{
 		Windows.Devices.SmartCards.SmartCard _ret;
@@ -187,7 +187,7 @@ extern(Windows):
 
 interface CardRemovedEventArgs : Windows.Devices.SmartCards.ICardRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SmartCards.SmartCard SmartCard()
 	{
 		Windows.Devices.SmartCards.SmartCard _ret;
@@ -198,7 +198,7 @@ extern(Windows):
 
 interface SmartCard : Windows.Devices.SmartCards.ISmartCard, Windows.Devices.SmartCards.ISmartCardConnect
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SmartCards.SmartCardReader Reader()
 	{
 		Windows.Devices.SmartCards.SmartCardReader _ret;
@@ -227,7 +227,7 @@ extern(Windows):
 
 interface SmartCardChallengeContext : Windows.Devices.SmartCards.ISmartCardChallengeContext, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Challenge()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -267,7 +267,7 @@ extern(Windows):
 
 interface SmartCardConnection : Windows.Devices.SmartCards.ISmartCardConnection, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IBuffer) TransmitAsync(Windows.Storage.Streams.IBuffer command)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IBuffer) _ret;
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface SmartCardPinPolicy : Windows.Devices.SmartCards.ISmartCardPinPolicy
 {
-extern(Windows):
+extern(D):
 	final UINT32 MinLength()
 	{
 		UINT32 _ret;
@@ -353,7 +353,7 @@ extern(Windows):
 
 interface SmartCardPinResetDeferral : Windows.Devices.SmartCards.ISmartCardPinResetDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Devices.SmartCards.ISmartCardPinResetDeferral)this.asInterface(uuid("18c94aac-7805-4004-85e4-bbefac8f6884"))).abi_Complete());
@@ -362,7 +362,7 @@ extern(Windows):
 
 interface SmartCardPinResetRequest : Windows.Devices.SmartCards.ISmartCardPinResetRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Challenge()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -389,7 +389,7 @@ extern(Windows):
 
 interface SmartCardProvisioning : Windows.Devices.SmartCards.ISmartCardProvisioning, Windows.Devices.SmartCards.ISmartCardProvisioning2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SmartCards.SmartCard SmartCard()
 	{
 		Windows.Devices.SmartCards.SmartCard _ret;
@@ -468,7 +468,7 @@ extern(Windows):
 
 interface SmartCardReader : Windows.Devices.SmartCards.ISmartCardReader
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;

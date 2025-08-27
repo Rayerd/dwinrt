@@ -125,7 +125,7 @@ extern(Windows):
 
 interface DeviceAccountConfiguration : Windows.ApplicationModel.UserDataAccounts.SystemAccess.IDeviceAccountConfiguration, Windows.ApplicationModel.UserDataAccounts.SystemAccess.IDeviceAccountConfiguration2
 {
-extern(Windows):
+extern(D):
 	final wstring AccountName()
 	{
 		HSTRING _ret;

@@ -62,7 +62,7 @@ interface IScaleAnimation : IScaleAnimation_Base, Windows.UI.Core.AnimationMetri
 
 interface AnimationDescription : Windows.UI.Core.AnimationMetrics.IAnimationDescription
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.UI.Core.AnimationMetrics.IPropertyAnimation) Animations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.UI.Core.AnimationMetrics.IPropertyAnimation) _ret;
@@ -104,7 +104,7 @@ extern(Windows):
 
 interface OpacityAnimation : Windows.UI.Core.AnimationMetrics.IOpacityAnimation, Windows.UI.Core.AnimationMetrics.IPropertyAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(float) InitialOpacity()
 	{
 		Windows.Foundation.IReference!(float) _ret;
@@ -151,7 +151,7 @@ extern(Windows):
 
 interface PropertyAnimation : Windows.UI.Core.AnimationMetrics.IPropertyAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.AnimationMetrics.PropertyAnimationType Type()
 	{
 		Windows.UI.Core.AnimationMetrics.PropertyAnimationType _ret;
@@ -186,7 +186,7 @@ extern(Windows):
 
 interface ScaleAnimation : Windows.UI.Core.AnimationMetrics.IScaleAnimation, Windows.UI.Core.AnimationMetrics.IPropertyAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(float) InitialScaleX()
 	{
 		Windows.Foundation.IReference!(float) _ret;
@@ -251,7 +251,7 @@ extern(Windows):
 
 interface TranslationAnimation : Windows.UI.Core.AnimationMetrics.IPropertyAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.AnimationMetrics.PropertyAnimationType Type()
 	{
 		Windows.UI.Core.AnimationMetrics.PropertyAnimationType _ret;

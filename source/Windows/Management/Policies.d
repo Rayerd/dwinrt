@@ -55,7 +55,7 @@ interface NamedPolicy
 
 interface NamedPolicyData : Windows.Management.Policies.INamedPolicyData
 {
-extern(Windows):
+extern(D):
 	final wstring Area()
 	{
 		HSTRING _ret;

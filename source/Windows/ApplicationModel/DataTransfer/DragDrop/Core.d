@@ -106,7 +106,7 @@ extern(Windows):
 
 interface CoreDragDropManager : Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragDropManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnTargetRequested(void delegate(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragDropManager, Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDropOperationTargetRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -144,7 +144,7 @@ extern(Windows):
 
 interface CoreDragInfo : Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragInfo, Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragInfo2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageView Data()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageView _ret;
@@ -173,7 +173,7 @@ extern(Windows):
 
 interface CoreDragOperation : Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragOperation, Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragOperation2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackage Data()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackage _ret;
@@ -229,7 +229,7 @@ extern(Windows):
 
 interface CoreDragUIOverride : Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragUIOverride
 {
-extern(Windows):
+extern(D):
 	final void SetContentFromSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDragUIOverride)this.asInterface(uuid("89a85064-3389-4f4f-8897-7e8a3ffb3c93"))).abi_SetContentFromSoftwareBitmap(softwareBitmap));
@@ -287,7 +287,7 @@ extern(Windows):
 
 interface CoreDropOperationTargetRequestedEventArgs : Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDropOperationTargetRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void SetTarget(Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDropOperationTarget target)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.DataTransfer.DragDrop.Core.ICoreDropOperationTargetRequestedEventArgs)this.asInterface(uuid("2aca929a-5e28-4ea6-829e-29134e665d6d"))).abi_SetTarget(target));

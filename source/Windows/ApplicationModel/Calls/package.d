@@ -246,7 +246,7 @@ extern(Windows):
 
 interface CallAnswerEventArgs : Windows.ApplicationModel.Calls.ICallAnswerEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.VoipPhoneCallMedia AcceptedMedia()
 	{
 		Windows.ApplicationModel.Calls.VoipPhoneCallMedia _ret;
@@ -257,7 +257,7 @@ extern(Windows):
 
 interface CallRejectEventArgs : Windows.ApplicationModel.Calls.ICallRejectEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason RejectReason()
 	{
 		Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason _ret;
@@ -268,7 +268,7 @@ extern(Windows):
 
 interface CallStateChangeEventArgs : Windows.ApplicationModel.Calls.ICallStateChangeEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.VoipPhoneCallState State()
 	{
 		Windows.ApplicationModel.Calls.VoipPhoneCallState _ret;
@@ -279,7 +279,7 @@ extern(Windows):
 
 interface LockScreenCallEndCallDeferral : Windows.ApplicationModel.Calls.ILockScreenCallEndCallDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Calls.ILockScreenCallEndCallDeferral)this.asInterface(uuid("2dd7ed0d-98ed-4041-9632-50ff812b773f"))).abi_Complete());
@@ -288,7 +288,7 @@ extern(Windows):
 
 interface LockScreenCallEndRequestedEventArgs : Windows.ApplicationModel.Calls.ILockScreenCallEndRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral _ret;
@@ -305,7 +305,7 @@ extern(Windows):
 
 interface LockScreenCallUI : Windows.ApplicationModel.Calls.ILockScreenCallUI
 {
-extern(Windows):
+extern(D):
 	final void Dismiss()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Calls.ILockScreenCallUI)this.asInterface(uuid("c596fd8d-73c9-4a14-b021-ec1c50a3b727"))).abi_Dismiss());
@@ -344,7 +344,7 @@ extern(Windows):
 
 interface MuteChangeEventArgs : Windows.ApplicationModel.Calls.IMuteChangeEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Muted()
 	{
 		bool _ret;
@@ -355,7 +355,7 @@ extern(Windows):
 
 interface PhoneCallHistoryEntry : Windows.ApplicationModel.Calls.IPhoneCallHistoryEntry
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -538,7 +538,7 @@ extern(Windows):
 
 interface PhoneCallHistoryEntryAddress : Windows.ApplicationModel.Calls.IPhoneCallHistoryEntryAddress
 {
-extern(Windows):
+extern(D):
 	final wstring ContactId()
 	{
 		HSTRING _ret;
@@ -596,7 +596,7 @@ extern(Windows):
 
 interface PhoneCallHistoryEntryQueryOptions : Windows.ApplicationModel.Calls.IPhoneCallHistoryEntryQueryOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia DesiredMedia()
 	{
 		Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia _ret;
@@ -623,7 +623,7 @@ extern(Windows):
 
 interface PhoneCallHistoryEntryReader : Windows.ApplicationModel.Calls.IPhoneCallHistoryEntryReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Calls.PhoneCallHistoryEntry)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Calls.PhoneCallHistoryEntry)) _ret;
@@ -650,7 +650,7 @@ interface PhoneCallHistoryManager
 
 interface PhoneCallHistoryManagerForUser : Windows.ApplicationModel.Calls.IPhoneCallHistoryManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.PhoneCallHistoryStore) RequestStoreAsync(Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType accessType)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.PhoneCallHistoryStore) _ret;
@@ -667,7 +667,7 @@ extern(Windows):
 
 interface PhoneCallHistoryStore : Windows.ApplicationModel.Calls.IPhoneCallHistoryStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.PhoneCallHistoryEntry) GetEntryAsync(wstring callHistoryEntryId)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.PhoneCallHistoryEntry) _ret;
@@ -745,7 +745,7 @@ extern(Windows):
 
 interface VoipCallCoordinator : Windows.ApplicationModel.Calls.IVoipCallCoordinator
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.VoipPhoneCallResourceReservationStatus) ReserveCallResourcesAsync(wstring taskEntryPoint)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Calls.VoipPhoneCallResourceReservationStatus) _ret;
@@ -819,7 +819,7 @@ extern(Windows):
 
 interface VoipPhoneCall : Windows.ApplicationModel.Calls.IVoipPhoneCall
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnEndRequested(void delegate(Windows.ApplicationModel.Calls.VoipPhoneCall, Windows.ApplicationModel.Calls.CallStateChangeEventArgs) fn)
 	{
 		EventRegistrationToken tok;

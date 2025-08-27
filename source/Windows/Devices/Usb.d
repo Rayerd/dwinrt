@@ -333,7 +333,7 @@ extern(Windows):
 
 interface UsbBulkInEndpointDescriptor : Windows.Devices.Usb.IUsbBulkInEndpointDescriptor
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxPacketSize()
 	{
 		UINT32 _ret;
@@ -356,7 +356,7 @@ extern(Windows):
 
 interface UsbBulkInPipe : Windows.Devices.Usb.IUsbBulkInPipe
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxTransferSizeBytes()
 	{
 		UINT32 _ret;
@@ -399,7 +399,7 @@ extern(Windows):
 
 interface UsbBulkOutEndpointDescriptor : Windows.Devices.Usb.IUsbBulkOutEndpointDescriptor
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxPacketSize()
 	{
 		UINT32 _ret;
@@ -422,7 +422,7 @@ extern(Windows):
 
 interface UsbBulkOutPipe : Windows.Devices.Usb.IUsbBulkOutPipe
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Usb.UsbBulkOutEndpointDescriptor EndpointDescriptor()
 	{
 		Windows.Devices.Usb.UsbBulkOutEndpointDescriptor _ret;
@@ -455,7 +455,7 @@ extern(Windows):
 
 interface UsbConfiguration : Windows.Devices.Usb.IUsbConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbInterface) UsbInterfaces()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbInterface) _ret;
@@ -478,7 +478,7 @@ extern(Windows):
 
 interface UsbConfigurationDescriptor : Windows.Devices.Usb.IUsbConfigurationDescriptor
 {
-extern(Windows):
+extern(D):
 	final ubyte ConfigurationValue()
 	{
 		ubyte _ret;
@@ -526,7 +526,7 @@ extern(Windows):
 
 interface UsbControlRequestType : Windows.Devices.Usb.IUsbControlRequestType
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Usb.UsbTransferDirection Direction()
 	{
 		Windows.Devices.Usb.UsbTransferDirection _ret;
@@ -577,7 +577,7 @@ extern(Windows):
 
 interface UsbDescriptor : Windows.Devices.Usb.IUsbDescriptor
 {
-extern(Windows):
+extern(D):
 	final ubyte Length()
 	{
 		ubyte _ret;
@@ -598,7 +598,7 @@ extern(Windows):
 
 interface UsbDevice : Windows.Devices.Usb.IUsbDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(UINT32) SendControlOutTransferAsync(Windows.Devices.Usb.UsbSetupPacket setupPacket, Windows.Storage.Streams.IBuffer buffer)
 	{
 		Windows.Foundation.IAsyncOperation!(UINT32) _ret;
@@ -690,7 +690,7 @@ extern(Windows):
 
 interface UsbDeviceClass : Windows.Devices.Usb.IUsbDeviceClass
 {
-extern(Windows):
+extern(D):
 	final ubyte ClassCode()
 	{
 		ubyte _ret;
@@ -795,7 +795,7 @@ interface UsbDeviceClasses : Windows.Devices.Usb.IUsbDeviceClasses
 
 interface UsbDeviceDescriptor : Windows.Devices.Usb.IUsbDeviceDescriptor
 {
-extern(Windows):
+extern(D):
 	final UINT32 BcdUsb()
 	{
 		UINT32 _ret;
@@ -836,7 +836,7 @@ extern(Windows):
 
 interface UsbEndpointDescriptor : Windows.Devices.Usb.IUsbEndpointDescriptor
 {
-extern(Windows):
+extern(D):
 	final ubyte EndpointNumber()
 	{
 		ubyte _ret;
@@ -902,7 +902,7 @@ extern(Windows):
 
 interface UsbInterface : Windows.Devices.Usb.IUsbInterface
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbBulkInPipe) BulkInPipes()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbBulkInPipe) _ret;
@@ -949,7 +949,7 @@ extern(Windows):
 
 interface UsbInterfaceDescriptor : Windows.Devices.Usb.IUsbInterfaceDescriptor
 {
-extern(Windows):
+extern(D):
 	final ubyte ClassCode()
 	{
 		ubyte _ret;
@@ -1003,7 +1003,7 @@ extern(Windows):
 
 interface UsbInterfaceSetting : Windows.Devices.Usb.IUsbInterfaceSetting
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbBulkInEndpointDescriptor) BulkInEndpoints()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Usb.UsbBulkInEndpointDescriptor) _ret;
@@ -1056,7 +1056,7 @@ extern(Windows):
 
 interface UsbInterruptInEndpointDescriptor : Windows.Devices.Usb.IUsbInterruptInEndpointDescriptor
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxPacketSize()
 	{
 		UINT32 _ret;
@@ -1085,7 +1085,7 @@ extern(Windows):
 
 interface UsbInterruptInEventArgs : Windows.Devices.Usb.IUsbInterruptInEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer InterruptData()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1096,7 +1096,7 @@ extern(Windows):
 
 interface UsbInterruptInPipe : Windows.Devices.Usb.IUsbInterruptInPipe
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Usb.UsbInterruptInEndpointDescriptor EndpointDescriptor()
 	{
 		Windows.Devices.Usb.UsbInterruptInEndpointDescriptor _ret;
@@ -1123,7 +1123,7 @@ extern(Windows):
 
 interface UsbInterruptOutEndpointDescriptor : Windows.Devices.Usb.IUsbInterruptOutEndpointDescriptor
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxPacketSize()
 	{
 		UINT32 _ret;
@@ -1152,7 +1152,7 @@ extern(Windows):
 
 interface UsbInterruptOutPipe : Windows.Devices.Usb.IUsbInterruptOutPipe
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor EndpointDescriptor()
 	{
 		Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor _ret;
@@ -1185,7 +1185,7 @@ extern(Windows):
 
 interface UsbSetupPacket : Windows.Devices.Usb.IUsbSetupPacket
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Usb.UsbControlRequestType RequestType()
 	{
 		Windows.Devices.Usb.UsbControlRequestType _ret;

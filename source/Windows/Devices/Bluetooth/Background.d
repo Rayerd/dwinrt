@@ -100,7 +100,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementPublisherTriggerDetails : Windows.Devices.Bluetooth.Background.IBluetoothLEAdvertisementPublisherTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus Status()
 	{
 		Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus _ret;
@@ -117,7 +117,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementWatcherTriggerDetails : Windows.Devices.Bluetooth.Background.IBluetoothLEAdvertisementWatcherTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.BluetoothError Error()
 	{
 		Windows.Devices.Bluetooth.BluetoothError _ret;
@@ -140,7 +140,7 @@ extern(Windows):
 
 interface GattCharacteristicNotificationTriggerDetails : Windows.Devices.Bluetooth.Background.IGattCharacteristicNotificationTriggerDetails, Windows.Devices.Bluetooth.Background.IGattCharacteristicNotificationTriggerDetails2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic Characteristic()
 	{
 		Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic _ret;
@@ -175,7 +175,7 @@ extern(Windows):
 
 interface GattServiceProviderConnection : Windows.Devices.Bluetooth.Background.IGattServiceProviderConnection
 {
-extern(Windows):
+extern(D):
 	final wstring TriggerId()
 	{
 		HSTRING _ret;
@@ -209,7 +209,7 @@ extern(Windows):
 
 interface GattServiceProviderTriggerDetails : Windows.Devices.Bluetooth.Background.IGattServiceProviderTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Background.GattServiceProviderConnection Connection()
 	{
 		Windows.Devices.Bluetooth.Background.GattServiceProviderConnection _ret;
@@ -220,7 +220,7 @@ extern(Windows):
 
 interface RfcommConnectionTriggerDetails : Windows.Devices.Bluetooth.Background.IRfcommConnectionTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Sockets.StreamSocket Socket()
 	{
 		Windows.Networking.Sockets.StreamSocket _ret;
@@ -243,7 +243,7 @@ extern(Windows):
 
 interface RfcommInboundConnectionInformation : Windows.Devices.Bluetooth.Background.IRfcommInboundConnectionInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer SdpRecord()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface RfcommOutboundConnectionInformation : Windows.Devices.Bluetooth.Background.IRfcommOutboundConnectionInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId RemoteServiceId()
 	{
 		Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId _ret;

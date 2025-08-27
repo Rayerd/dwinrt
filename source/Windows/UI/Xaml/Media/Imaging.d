@@ -277,7 +277,7 @@ extern(Windows):
 
 interface BitmapImage : Windows.UI.Xaml.Media.Imaging.BitmapSource, Windows.UI.Xaml.Media.Imaging.IBitmapImage, Windows.UI.Xaml.Media.Imaging.IBitmapImage2, Windows.UI.Xaml.Media.Imaging.IBitmapImage3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions CreateOptions()
 	{
 		Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions _ret;
@@ -436,7 +436,7 @@ extern(Windows):
 
 interface BitmapSource : Windows.UI.Xaml.Media.ImageSource, Windows.UI.Xaml.Media.Imaging.IBitmapSource
 {
-extern(Windows):
+extern(D):
 	final INT32 PixelWidth()
 	{
 		INT32 _ret;
@@ -517,7 +517,7 @@ class BitmapSourceT(Base) : AgileObject!Base, BitmapSource
 
 interface DownloadProgressEventArgs : Windows.UI.Xaml.Media.Imaging.IDownloadProgressEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 Progress()
 	{
 		INT32 _ret;
@@ -532,7 +532,7 @@ extern(Windows):
 
 interface RenderTargetBitmap : Windows.UI.Xaml.Media.ImageSource, Windows.UI.Xaml.Media.Imaging.IRenderTargetBitmap
 {
-extern(Windows):
+extern(D):
 	final INT32 PixelWidth()
 	{
 		INT32 _ret;
@@ -593,7 +593,7 @@ extern(Windows):
 
 interface SoftwareBitmapSource : Windows.UI.Xaml.Media.ImageSource, Windows.UI.Xaml.Media.Imaging.ISoftwareBitmapSource, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SetBitmapAsync(Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -641,7 +641,7 @@ class SurfaceImageSourceT(Base) : AgileObject!Base, SurfaceImageSource
 
 interface SvgImageSource : Windows.UI.Xaml.Media.ImageSource, Windows.UI.Xaml.Media.Imaging.ISvgImageSource
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri UriSource()
 	{
 		Windows.Foundation.Uri _ret;
@@ -769,7 +769,7 @@ class SvgImageSourceT(Base) : AgileObject!Base, SvgImageSource
 
 interface SvgImageSourceFailedEventArgs : Windows.UI.Xaml.Media.Imaging.ISvgImageSourceFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Imaging.SvgImageSourceLoadStatus Status()
 	{
 		Windows.UI.Xaml.Media.Imaging.SvgImageSourceLoadStatus _ret;
@@ -802,7 +802,7 @@ interface VirtualSurfaceImageSource : Windows.UI.Xaml.Media.Imaging.SurfaceImage
 
 interface WriteableBitmap : Windows.UI.Xaml.Media.Imaging.BitmapSource, Windows.UI.Xaml.Media.Imaging.IWriteableBitmap
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer PixelBuffer()
 	{
 		Windows.Storage.Streams.IBuffer _ret;

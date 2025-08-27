@@ -568,7 +568,7 @@ extern(Windows):
 
 interface ApplicationData : Windows.Storage.IApplicationData, Windows.Storage.IApplicationData2, Windows.Storage.IApplicationData3
 {
-extern(Windows):
+extern(D):
 	final UINT32 Version()
 	{
 		UINT32 _ret;
@@ -685,7 +685,7 @@ extern(Windows):
 
 interface ApplicationDataCompositeValue : Windows.Foundation.Collections.IPropertySet, Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable))this).remove_MapChanged(token));
@@ -742,7 +742,7 @@ extern(Windows):
 
 interface ApplicationDataContainer : Windows.Storage.IApplicationDataContainer
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -781,7 +781,7 @@ extern(Windows):
 
 interface ApplicationDataContainerSettings : Windows.Foundation.Collections.IPropertySet, Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable))this).remove_MapChanged(token));
@@ -1116,7 +1116,7 @@ interface PathIO
 
 interface SetVersionDeferral : Windows.Storage.ISetVersionDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Storage.ISetVersionDeferral)this.asInterface(uuid("033508a2-781a-437a-b078-3f32badcfe47"))).abi_Complete());
@@ -1125,7 +1125,7 @@ extern(Windows):
 
 interface SetVersionRequest : Windows.Storage.ISetVersionRequest
 {
-extern(Windows):
+extern(D):
 	final UINT32 CurrentVersion()
 	{
 		UINT32 _ret;
@@ -1148,7 +1148,7 @@ extern(Windows):
 
 interface StorageFile : Windows.Storage.IStorageFile, Windows.Storage.Streams.IInputStreamReference, Windows.Storage.Streams.IRandomAccessStreamReference, Windows.Storage.IStorageItem, Windows.Storage.IStorageItemProperties, Windows.Storage.IStorageItemProperties2, Windows.Storage.IStorageItem2, Windows.Storage.IStorageItemPropertiesWithProvider, Windows.Storage.IStorageFilePropertiesWithAvailability, Windows.Storage.IStorageFile2
 {
-extern(Windows):
+extern(D):
 	final wstring FileType()
 	{
 		HSTRING _ret;
@@ -1450,7 +1450,7 @@ extern(Windows):
 
 interface StorageFolder : Windows.Storage.IStorageFolder, Windows.Storage.IStorageItem, Windows.Storage.Search.IStorageFolderQueryOperations, Windows.Storage.IStorageItemProperties, Windows.Storage.IStorageItemProperties2, Windows.Storage.IStorageItem2, Windows.Storage.IStorageFolder2, Windows.Storage.IStorageItemPropertiesWithProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.StorageFile) CreateFileAsyncOverloadDefaultOptions(wstring desiredName)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.StorageFile) _ret;
@@ -1789,7 +1789,7 @@ extern(Windows):
 
 interface StorageLibrary : Windows.Storage.IStorageLibrary, Windows.Storage.IStorageLibrary2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.StorageFolder) RequestAddFolderAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.StorageFolder) _ret;
@@ -1847,7 +1847,7 @@ extern(Windows):
 
 interface StorageLibraryChange : Windows.Storage.IStorageLibraryChange
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageLibraryChangeType ChangeType()
 	{
 		Windows.Storage.StorageLibraryChangeType _ret;
@@ -1882,7 +1882,7 @@ extern(Windows):
 
 interface StorageLibraryChangeReader : Windows.Storage.IStorageLibraryChangeReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageLibraryChange)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageLibraryChange)) _ret;
@@ -1899,7 +1899,7 @@ extern(Windows):
 
 interface StorageLibraryChangeTracker : Windows.Storage.IStorageLibraryChangeTracker
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageLibraryChangeReader GetChangeReader()
 	{
 		Windows.Storage.StorageLibraryChangeReader _ret;
@@ -1918,7 +1918,7 @@ extern(Windows):
 
 interface StorageProvider : Windows.Storage.IStorageProvider
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1935,7 +1935,7 @@ extern(Windows):
 
 interface StorageStreamTransaction : Windows.Storage.IStorageStreamTransaction, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStream Stream()
 	{
 		Windows.Storage.Streams.IRandomAccessStream _ret;
@@ -1956,7 +1956,7 @@ extern(Windows):
 
 interface StreamedFileDataRequest : Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.IStreamedFileDataRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) WriteAsync(Windows.Storage.Streams.IBuffer buffer)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(UINT32, UINT32) _ret;
@@ -1981,7 +1981,7 @@ extern(Windows):
 
 interface SystemAudioProperties : Windows.Storage.ISystemAudioProperties
 {
-extern(Windows):
+extern(D):
 	final wstring EncodingBitrate()
 	{
 		HSTRING _ret;
@@ -1992,7 +1992,7 @@ extern(Windows):
 
 interface SystemGPSProperties : Windows.Storage.ISystemGPSProperties
 {
-extern(Windows):
+extern(D):
 	final wstring LatitudeDecimal()
 	{
 		HSTRING _ret;
@@ -2009,7 +2009,7 @@ extern(Windows):
 
 interface SystemImageProperties : Windows.Storage.ISystemImageProperties
 {
-extern(Windows):
+extern(D):
 	final wstring HorizontalSize()
 	{
 		HSTRING _ret;
@@ -2026,7 +2026,7 @@ extern(Windows):
 
 interface SystemMediaProperties : Windows.Storage.ISystemMediaProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Duration()
 	{
 		HSTRING _ret;
@@ -2067,7 +2067,7 @@ extern(Windows):
 
 interface SystemMusicProperties : Windows.Storage.ISystemMusicProperties
 {
-extern(Windows):
+extern(D):
 	final wstring AlbumArtist()
 	{
 		HSTRING _ret;
@@ -2120,7 +2120,7 @@ extern(Windows):
 
 interface SystemPhotoProperties : Windows.Storage.ISystemPhotoProperties
 {
-extern(Windows):
+extern(D):
 	final wstring CameraManufacturer()
 	{
 		HSTRING _ret;
@@ -2243,7 +2243,7 @@ interface SystemProperties
 
 interface SystemVideoProperties : Windows.Storage.ISystemVideoProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Director()
 	{
 		HSTRING _ret;

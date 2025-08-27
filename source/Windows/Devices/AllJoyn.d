@@ -455,7 +455,7 @@ extern(Windows):
 
 interface AllJoynAboutData : Windows.Devices.AllJoyn.IAllJoynAboutData
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -568,7 +568,7 @@ extern(Windows):
 
 interface AllJoynAboutDataView : Windows.Devices.AllJoyn.IAllJoynAboutDataView
 {
-extern(Windows):
+extern(D):
 	final INT32 Status()
 	{
 		INT32 _ret;
@@ -689,7 +689,7 @@ extern(Windows):
 
 interface AllJoynAcceptSessionJoinerEventArgs : Windows.Devices.AllJoyn.IAllJoynAcceptSessionJoinerEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring UniqueName()
 	{
 		HSTRING _ret;
@@ -735,7 +735,7 @@ extern(Windows):
 
 interface AllJoynAuthenticationCompleteEventArgs : Windows.Devices.AllJoyn.IAllJoynAuthenticationCompleteEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism AuthenticationMechanism()
 	{
 		Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism _ret;
@@ -758,7 +758,7 @@ extern(Windows):
 
 interface AllJoynBusAttachment : Windows.Devices.AllJoyn.IAllJoynBusAttachment, Windows.Devices.AllJoyn.IAllJoynBusAttachment2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynAboutData AboutData()
 	{
 		Windows.Devices.AllJoyn.AllJoynAboutData _ret;
@@ -912,7 +912,7 @@ extern(Windows):
 
 interface AllJoynBusAttachmentStateChangedEventArgs : Windows.Devices.AllJoyn.IAllJoynBusAttachmentStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynBusAttachmentState State()
 	{
 		Windows.Devices.AllJoyn.AllJoynBusAttachmentState _ret;
@@ -929,7 +929,7 @@ extern(Windows):
 
 interface AllJoynBusObject : Windows.Devices.AllJoyn.IAllJoynBusObject
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.Devices.AllJoyn.IAllJoynBusObject)this.asInterface(uuid("e8fd825e-f73a-490c-8804-04e026643047"))).abi_Start());
@@ -988,7 +988,7 @@ extern(Windows):
 
 interface AllJoynBusObjectStoppedEventArgs : Windows.Devices.AllJoyn.IAllJoynBusObjectStoppedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 Status()
 	{
 		INT32 _ret;
@@ -1006,7 +1006,7 @@ extern(Windows):
 
 interface AllJoynCredentials : Windows.Devices.AllJoyn.IAllJoynCredentials
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism AuthenticationMechanism()
 	{
 		Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism _ret;
@@ -1047,7 +1047,7 @@ extern(Windows):
 
 interface AllJoynCredentialsRequestedEventArgs : Windows.Devices.AllJoyn.IAllJoynCredentialsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT16 AttemptCount()
 	{
 		UINT16 _ret;
@@ -1082,7 +1082,7 @@ extern(Windows):
 
 interface AllJoynCredentialsVerificationRequestedEventArgs : Windows.Devices.AllJoyn.IAllJoynCredentialsVerificationRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism AuthenticationMechanism()
 	{
 		Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism _ret;
@@ -1133,7 +1133,7 @@ extern(Windows):
 
 interface AllJoynMessageInfo : Windows.Devices.AllJoyn.IAllJoynMessageInfo
 {
-extern(Windows):
+extern(D):
 	final wstring SenderUniqueName()
 	{
 		HSTRING _ret;
@@ -1151,7 +1151,7 @@ extern(Windows):
 
 interface AllJoynProducerStoppedEventArgs : Windows.Devices.AllJoyn.IAllJoynProducerStoppedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 Status()
 	{
 		INT32 _ret;
@@ -1169,7 +1169,7 @@ extern(Windows):
 
 interface AllJoynServiceInfo : Windows.Devices.AllJoyn.IAllJoynServiceInfo
 {
-extern(Windows):
+extern(D):
 	final wstring UniqueName()
 	{
 		HSTRING _ret;
@@ -1212,7 +1212,7 @@ extern(Windows):
 
 interface AllJoynServiceInfoRemovedEventArgs : Windows.Devices.AllJoyn.IAllJoynServiceInfoRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring UniqueName()
 	{
 		HSTRING _ret;
@@ -1230,7 +1230,7 @@ extern(Windows):
 
 interface AllJoynSession : Windows.Devices.AllJoyn.IAllJoynSession
 {
-extern(Windows):
+extern(D):
 	final INT32 Id()
 	{
 		INT32 _ret;
@@ -1303,7 +1303,7 @@ extern(Windows):
 
 interface AllJoynSessionJoinedEventArgs : Windows.Devices.AllJoyn.IAllJoynSessionJoinedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynSession Session()
 	{
 		Windows.Devices.AllJoyn.AllJoynSession _ret;
@@ -1321,7 +1321,7 @@ extern(Windows):
 
 interface AllJoynSessionLostEventArgs : Windows.Devices.AllJoyn.IAllJoynSessionLostEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.AllJoyn.AllJoynSessionLostReason Reason()
 	{
 		Windows.Devices.AllJoyn.AllJoynSessionLostReason _ret;
@@ -1339,7 +1339,7 @@ extern(Windows):
 
 interface AllJoynSessionMemberAddedEventArgs : Windows.Devices.AllJoyn.IAllJoynSessionMemberAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring UniqueName()
 	{
 		HSTRING _ret;
@@ -1357,7 +1357,7 @@ extern(Windows):
 
 interface AllJoynSessionMemberRemovedEventArgs : Windows.Devices.AllJoyn.IAllJoynSessionMemberRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring UniqueName()
 	{
 		HSTRING _ret;
@@ -1493,7 +1493,7 @@ interface AllJoynStatus
 
 interface AllJoynWatcherStoppedEventArgs : Windows.Devices.AllJoyn.IAllJoynWatcherStoppedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 Status()
 	{
 		INT32 _ret;

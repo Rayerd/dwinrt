@@ -261,7 +261,7 @@ extern(Windows):
 
 interface CurrentTimeChangeRequestedEventArgs : Windows.Media.PlayTo.ICurrentTimeChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Time()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -272,7 +272,7 @@ extern(Windows):
 
 interface MuteChangeRequestedEventArgs : Windows.Media.PlayTo.IMuteChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Mute()
 	{
 		bool _ret;
@@ -283,7 +283,7 @@ extern(Windows):
 
 interface PlayToConnection : Windows.Media.PlayTo.IPlayToConnection
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToConnection may be altered or unavailable for releases after Windows 10. Instead, use CastingConnection.")
 	final Windows.Media.PlayTo.PlayToConnectionState State()
 	{
@@ -331,7 +331,7 @@ extern(Windows):
 
 interface PlayToConnectionErrorEventArgs : Windows.Media.PlayTo.IPlayToConnectionErrorEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToConnectionErrorEventArgs may be altered or unavailable for releases after Windows 10. Instead, use CastingConnectionErrorOccurredEventArgs.")
 	final Windows.Media.PlayTo.PlayToConnectionError Code()
 	{
@@ -350,7 +350,7 @@ extern(Windows):
 
 interface PlayToConnectionStateChangedEventArgs : Windows.Media.PlayTo.IPlayToConnectionStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToConnectionStateChangedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final Windows.Media.PlayTo.PlayToConnectionState PreviousState()
 	{
@@ -369,7 +369,7 @@ extern(Windows):
 
 interface PlayToConnectionTransferredEventArgs : Windows.Media.PlayTo.IPlayToConnectionTransferredEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToConnectionTransferredEventArgs may be altered or unavailable for releases after Windows 10.")
 	final Windows.Media.PlayTo.PlayToSource PreviousSource()
 	{
@@ -388,7 +388,7 @@ extern(Windows):
 
 interface PlayToManager : Windows.Media.PlayTo.IPlayToManager
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToManager may be altered or unavailable for releases after Windows 10.")
 	final EventRegistrationToken OnSourceRequested(void delegate(Windows.Media.PlayTo.PlayToManager, Windows.Media.PlayTo.PlayToSourceRequestedEventArgs) fn)
 	{
@@ -448,7 +448,7 @@ extern(Windows):
 
 interface PlayToReceiver : Windows.Media.PlayTo.IPlayToReceiver
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPlayRequested(void delegate(Windows.Media.PlayTo.PlayToReceiver, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -655,7 +655,7 @@ extern(Windows):
 
 interface PlayToSource : Windows.Media.PlayTo.IPlayToSource, Windows.Media.PlayTo.IPlayToSourceWithPreferredSourceUri
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToSource may be altered or unavailable for releases after Windows 10. Instead, use CastingSource.")
 	final Windows.Media.PlayTo.PlayToConnection Connection()
 	{
@@ -696,7 +696,7 @@ extern(Windows):
 
 interface PlayToSourceDeferral : Windows.Media.PlayTo.IPlayToSourceDeferral
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToSourceDeferral may be altered or unavailable for releases after Windows 10.")
 	final void Complete()
 	{
@@ -706,7 +706,7 @@ extern(Windows):
 
 interface PlayToSourceRequest : Windows.Media.PlayTo.IPlayToSourceRequest
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToSourceRequest may be altered or unavailable for releases after Windows 10.")
 	final Windows.Foundation.DateTime Deadline()
 	{
@@ -735,7 +735,7 @@ extern(Windows):
 
 interface PlayToSourceRequestedEventArgs : Windows.Media.PlayTo.IPlayToSourceRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToSourceRequestedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final Windows.Media.PlayTo.PlayToSourceRequest SourceRequest()
 	{
@@ -747,7 +747,7 @@ extern(Windows):
 
 interface PlayToSourceSelectedEventArgs : Windows.Media.PlayTo.IPlayToSourceSelectedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PlayToSourceSelectedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final wstring FriendlyName()
 	{
@@ -787,7 +787,7 @@ extern(Windows):
 
 interface PlaybackRateChangeRequestedEventArgs : Windows.Media.PlayTo.IPlaybackRateChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double Rate()
 	{
 		double _ret;
@@ -798,7 +798,7 @@ extern(Windows):
 
 interface SourceChangeRequestedEventArgs : Windows.Media.PlayTo.ISourceChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStreamWithContentType Stream()
 	{
 		Windows.Storage.Streams.IRandomAccessStreamWithContentType _ret;
@@ -863,7 +863,7 @@ extern(Windows):
 
 interface VolumeChangeRequestedEventArgs : Windows.Media.PlayTo.IVolumeChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double Volume()
 	{
 		double _ret;

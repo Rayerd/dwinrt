@@ -155,7 +155,7 @@ extern(Windows):
 
 interface WiFiDirectService : Windows.Devices.WiFiDirect.Services.IWiFiDirectService
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer RemoteServiceInfo()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -253,7 +253,7 @@ extern(Windows):
 
 interface WiFiDirectServiceAdvertiser : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceAdvertiser
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceName()
 	{
 		HSTRING _ret;
@@ -406,7 +406,7 @@ extern(Windows):
 
 interface WiFiDirectServiceAutoAcceptSessionConnectedEventArgs : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceAutoAcceptSessionConnectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession Session()
 	{
 		Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession _ret;
@@ -423,7 +423,7 @@ extern(Windows):
 
 interface WiFiDirectServiceProvisioningInfo : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceProvisioningInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.Services.WiFiDirectServiceConfigurationMethod SelectedConfigurationMethod()
 	{
 		Windows.Devices.WiFiDirect.Services.WiFiDirectServiceConfigurationMethod _ret;
@@ -440,7 +440,7 @@ extern(Windows):
 
 interface WiFiDirectServiceRemotePortAddedEventArgs : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceRemotePortAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Networking.EndpointPair) EndpointPairs()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Networking.EndpointPair) _ret;
@@ -457,7 +457,7 @@ extern(Windows):
 
 interface WiFiDirectServiceSession : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring ServiceName()
 	{
 		HSTRING _ret;
@@ -546,7 +546,7 @@ extern(Windows):
 
 interface WiFiDirectServiceSessionDeferredEventArgs : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceSessionDeferredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer DeferredSessionInfo()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -557,7 +557,7 @@ extern(Windows):
 
 interface WiFiDirectServiceSessionRequest : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceSessionRequest, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation DeviceInformation()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -584,7 +584,7 @@ extern(Windows):
 
 interface WiFiDirectServiceSessionRequestedEventArgs : Windows.Devices.WiFiDirect.Services.IWiFiDirectServiceSessionRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest GetSessionRequest()
 	{
 		Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest _ret;

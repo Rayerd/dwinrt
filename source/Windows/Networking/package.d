@@ -56,7 +56,7 @@ extern(Windows):
 
 interface EndpointPair : Windows.Networking.IEndpointPair
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.HostName LocalHostName()
 	{
 		Windows.Networking.HostName _ret;
@@ -108,7 +108,7 @@ extern(Windows):
 
 interface HostName : Windows.Networking.IHostName, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.IPInformation IPInformation()
 	{
 		Windows.Networking.Connectivity.IPInformation _ret;

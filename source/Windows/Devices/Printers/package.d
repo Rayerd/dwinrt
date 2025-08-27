@@ -31,7 +31,7 @@ extern(Windows):
 
 interface Print3DDevice : Windows.Devices.Printers.IPrint3DDevice
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Printers.PrintSchema PrintSchema()
 	{
 		Windows.Devices.Printers.PrintSchema _ret;
@@ -61,7 +61,7 @@ extern(Windows):
 
 interface PrintSchema : Windows.Devices.Printers.IPrintSchema
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStreamWithContentType) GetDefaultPrintTicketAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStreamWithContentType) _ret;

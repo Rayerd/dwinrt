@@ -21,7 +21,7 @@ extern(Windows):
 
 interface PerceptionTimestamp : Windows.Perception.IPerceptionTimestamp
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime TargetTime()
 	{
 		Windows.Foundation.DateTime _ret;

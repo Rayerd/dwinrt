@@ -663,7 +663,7 @@ extern(Windows):
 
 interface AdvancedPhotoCaptureSettings : Windows.Media.Devices.IAdvancedPhotoCaptureSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.AdvancedPhotoMode Mode()
 	{
 		Windows.Media.Devices.AdvancedPhotoMode _ret;
@@ -684,7 +684,7 @@ extern(Windows):
 
 interface AdvancedPhotoControl : Windows.Media.Devices.IAdvancedPhotoControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -711,7 +711,7 @@ extern(Windows):
 
 interface AudioDeviceController : Windows.Media.Devices.IAudioDeviceController, Windows.Media.Devices.IMediaDeviceController
 {
-extern(Windows):
+extern(D):
 	final void Muted(bool value)
 	{
 		Debug.OK((cast(Windows.Media.Devices.IAudioDeviceController)this.asInterface(uuid("edd4a388-79c7-4f7c-90e8-ef934b21580a"))).set_Muted(value));
@@ -754,7 +754,7 @@ extern(Windows):
 
 interface AudioDeviceModule : Windows.Media.Devices.IAudioDeviceModule
 {
-extern(Windows):
+extern(D):
 	final wstring ClassId()
 	{
 		HSTRING _ret;
@@ -795,7 +795,7 @@ extern(Windows):
 
 interface AudioDeviceModuleNotificationEventArgs : Windows.Media.Devices.IAudioDeviceModuleNotificationEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.AudioDeviceModule Module()
 	{
 		Windows.Media.Devices.AudioDeviceModule _ret;
@@ -812,7 +812,7 @@ extern(Windows):
 
 interface AudioDeviceModulesManager : Windows.Media.Devices.IAudioDeviceModulesManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnModuleNotificationReceived(void delegate(Windows.Media.Devices.AudioDeviceModulesManager, Windows.Media.Devices.AudioDeviceModuleNotificationEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -846,7 +846,7 @@ extern(Windows):
 
 interface CallControl : Windows.Media.Devices.ICallControl
 {
-extern(Windows):
+extern(D):
 	final ulong IndicateNewIncomingCall(bool enableRinger, wstring callerId)
 	{
 		ulong _ret;
@@ -956,7 +956,7 @@ extern(Windows):
 
 interface DefaultAudioCaptureDeviceChangedEventArgs : Windows.Media.Devices.IDefaultAudioDeviceChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -973,7 +973,7 @@ extern(Windows):
 
 interface DefaultAudioRenderDeviceChangedEventArgs : Windows.Media.Devices.IDefaultAudioDeviceChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -990,7 +990,7 @@ extern(Windows):
 
 interface DialRequestedEventArgs : Windows.Media.Devices.IDialRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void Handled()
 	{
 		Debug.OK((cast(Windows.Media.Devices.IDialRequestedEventArgs)this.asInterface(uuid("037b929e-953c-4286-8866-4f0f376c855a"))).abi_Handled());
@@ -1005,7 +1005,7 @@ extern(Windows):
 
 interface ExposureCompensationControl : Windows.Media.Devices.IExposureCompensationControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1046,7 +1046,7 @@ extern(Windows):
 
 interface ExposureControl : Windows.Media.Devices.IExposureControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1099,7 +1099,7 @@ extern(Windows):
 
 interface ExposurePriorityVideoControl : Windows.Media.Devices.IExposurePriorityVideoControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1120,7 +1120,7 @@ extern(Windows):
 
 interface FlashControl : Windows.Media.Devices.IFlashControl, Windows.Media.Devices.IFlashControl2
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1199,7 +1199,7 @@ extern(Windows):
 
 interface FocusControl : Windows.Media.Devices.IFocusControl, Windows.Media.Devices.IFocusControl2
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1329,7 +1329,7 @@ extern(Windows):
 
 interface FocusSettings : Windows.Media.Devices.IFocusSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.FocusMode Mode()
 	{
 		Windows.Media.Devices.FocusMode _ret;
@@ -1400,7 +1400,7 @@ extern(Windows):
 
 interface HdrVideoControl : Windows.Media.Devices.IHdrVideoControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1427,7 +1427,7 @@ extern(Windows):
 
 interface IsoSpeedControl : Windows.Media.Devices.IIsoSpeedControl, Windows.Media.Devices.IIsoSpeedControl2
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1501,7 +1501,7 @@ extern(Windows):
 
 interface KeypadPressedEventArgs : Windows.Media.Devices.IKeypadPressedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.TelephonyKey TelephonyKey()
 	{
 		Windows.Media.Devices.TelephonyKey _ret;
@@ -1512,7 +1512,7 @@ extern(Windows):
 
 interface LowLagPhotoControl : Windows.Media.Devices.ILowLagPhotoControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.MediaRatio GetHighestConcurrentFrameRate(Windows.Media.MediaProperties.IMediaEncodingProperties captureProperties)
 	{
 		Windows.Media.MediaProperties.MediaRatio _ret;
@@ -1565,7 +1565,7 @@ extern(Windows):
 
 interface LowLagPhotoSequenceControl : Windows.Media.Devices.ILowLagPhotoSequenceControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1716,7 +1716,7 @@ interface MediaDevice
 
 interface MediaDeviceControl : Windows.Media.Devices.IMediaDeviceControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.MediaDeviceControlCapabilities Capabilities()
 	{
 		Windows.Media.Devices.MediaDeviceControlCapabilities _ret;
@@ -1751,7 +1751,7 @@ extern(Windows):
 
 interface MediaDeviceControlCapabilities : Windows.Media.Devices.IMediaDeviceControlCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1792,7 +1792,7 @@ extern(Windows):
 
 interface ModuleCommandResult : Windows.Media.Devices.IModuleCommandResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.SendCommandStatus Status()
 	{
 		Windows.Media.Devices.SendCommandStatus _ret;
@@ -1809,7 +1809,7 @@ extern(Windows):
 
 interface OpticalImageStabilizationControl : Windows.Media.Devices.IOpticalImageStabilizationControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1836,7 +1836,7 @@ extern(Windows):
 
 interface PhotoConfirmationControl : Windows.Media.Devices.IPhotoConfirmationControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -1867,7 +1867,7 @@ extern(Windows):
 
 interface RedialRequestedEventArgs : Windows.Media.Devices.IRedialRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void Handled()
 	{
 		Debug.OK((cast(Windows.Media.Devices.IRedialRequestedEventArgs)this.asInterface(uuid("7eb55209-76ab-4c31-b40e-4b58379d580c"))).abi_Handled());
@@ -1876,7 +1876,7 @@ extern(Windows):
 
 interface RegionOfInterest : Windows.Media.Devices.IRegionOfInterest, Windows.Media.Devices.IRegionOfInterest2
 {
-extern(Windows):
+extern(D):
 	final bool AutoFocusEnabled()
 	{
 		bool _ret;
@@ -1957,7 +1957,7 @@ extern(Windows):
 
 interface RegionsOfInterestControl : Windows.Media.Devices.IRegionsOfInterestControl
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxRegions()
 	{
 		UINT32 _ret;
@@ -2005,7 +2005,7 @@ extern(Windows):
 
 interface SceneModeControl : Windows.Media.Devices.ISceneModeControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Devices.CaptureSceneMode) SupportedModes()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Devices.CaptureSceneMode) _ret;
@@ -2028,7 +2028,7 @@ extern(Windows):
 
 interface TorchControl : Windows.Media.Devices.ITorchControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -2065,7 +2065,7 @@ extern(Windows):
 
 interface VideoDeviceController : Windows.Media.Devices.IVideoDeviceController, Windows.Media.Devices.IMediaDeviceController, Windows.Media.Devices.IAdvancedVideoCaptureDeviceController, Windows.Media.Devices.IAdvancedVideoCaptureDeviceController2, Windows.Media.Devices.IAdvancedVideoCaptureDeviceController3, Windows.Media.Devices.IAdvancedVideoCaptureDeviceController4, Windows.Media.Devices.IAdvancedVideoCaptureDeviceController5
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.MediaDeviceControl Brightness()
 	{
 		Windows.Media.Devices.MediaDeviceControl _ret;
@@ -2334,7 +2334,7 @@ extern(Windows):
 
 interface VideoDeviceControllerGetDevicePropertyResult : Windows.Media.Devices.IVideoDeviceControllerGetDevicePropertyResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.VideoDeviceControllerGetDevicePropertyStatus Status()
 	{
 		Windows.Media.Devices.VideoDeviceControllerGetDevicePropertyStatus _ret;
@@ -2351,7 +2351,7 @@ extern(Windows):
 
 interface WhiteBalanceControl : Windows.Media.Devices.IWhiteBalanceControl
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -2404,7 +2404,7 @@ extern(Windows):
 
 interface ZoomControl : Windows.Media.Devices.IZoomControl, Windows.Media.Devices.IZoomControl2
 {
-extern(Windows):
+extern(D):
 	final bool Supported()
 	{
 		bool _ret;
@@ -2459,7 +2459,7 @@ extern(Windows):
 
 interface ZoomSettings : Windows.Media.Devices.IZoomSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Devices.ZoomTransitionMode Mode()
 	{
 		Windows.Media.Devices.ZoomTransitionMode _ret;

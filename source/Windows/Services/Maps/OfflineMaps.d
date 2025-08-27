@@ -45,7 +45,7 @@ extern(Windows):
 
 interface OfflineMapPackage : Windows.Services.Maps.OfflineMaps.IOfflineMapPackage
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.OfflineMaps.OfflineMapPackageStatus Status()
 	{
 		Windows.Services.Maps.OfflineMaps.OfflineMapPackageStatus _ret;
@@ -115,7 +115,7 @@ extern(Windows):
 
 interface OfflineMapPackageQueryResult : Windows.Services.Maps.OfflineMaps.IOfflineMapPackageQueryResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.OfflineMaps.OfflineMapPackageQueryStatus Status()
 	{
 		Windows.Services.Maps.OfflineMaps.OfflineMapPackageQueryStatus _ret;
@@ -132,7 +132,7 @@ extern(Windows):
 
 interface OfflineMapPackageStartDownloadResult : Windows.Services.Maps.OfflineMaps.IOfflineMapPackageStartDownloadResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.OfflineMaps.OfflineMapPackageStartDownloadStatus Status()
 	{
 		Windows.Services.Maps.OfflineMaps.OfflineMapPackageStartDownloadStatus _ret;

@@ -195,7 +195,7 @@ interface Ellipse : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.IEllips
 
 interface Line : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.ILine
 {
-extern(Windows):
+extern(D):
 	final double X1()
 	{
 		double _ret;
@@ -277,7 +277,7 @@ extern(Windows):
 
 interface Path : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.IPath
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Geometry Data()
 	{
 		Windows.UI.Xaml.Media.Geometry _ret;
@@ -615,7 +615,7 @@ class PathT(Base) : AgileObject!Base, Path
 
 interface Polygon : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.IPolygon
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.FillRule FillRule()
 	{
 		Windows.UI.Xaml.Media.FillRule _ret;
@@ -665,7 +665,7 @@ extern(Windows):
 
 interface Polyline : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.IPolyline
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.FillRule FillRule()
 	{
 		Windows.UI.Xaml.Media.FillRule _ret;
@@ -715,7 +715,7 @@ extern(Windows):
 
 interface Rectangle : Windows.UI.Xaml.Shapes.Shape, Windows.UI.Xaml.Shapes.IRectangle
 {
-extern(Windows):
+extern(D):
 	final double RadiusX()
 	{
 		double _ret;
@@ -765,7 +765,7 @@ extern(Windows):
 
 interface Shape : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Shapes.IShape, Windows.UI.Xaml.Shapes.IShape2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush Fill()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;

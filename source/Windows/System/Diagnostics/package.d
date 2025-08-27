@@ -145,7 +145,7 @@ extern(Windows):
 
 interface ProcessCpuUsage : Windows.System.Diagnostics.IProcessCpuUsage
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.ProcessCpuUsageReport GetReport()
 	{
 		Windows.System.Diagnostics.ProcessCpuUsageReport _ret;
@@ -156,7 +156,7 @@ extern(Windows):
 
 interface ProcessCpuUsageReport : Windows.System.Diagnostics.IProcessCpuUsageReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan KernelTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -173,7 +173,7 @@ extern(Windows):
 
 interface ProcessDiagnosticInfo : Windows.System.Diagnostics.IProcessDiagnosticInfo
 {
-extern(Windows):
+extern(D):
 	final UINT32 ProcessId()
 	{
 		UINT32 _ret;
@@ -239,7 +239,7 @@ extern(Windows):
 
 interface ProcessDiskUsage : Windows.System.Diagnostics.IProcessDiskUsage
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.ProcessDiskUsageReport GetReport()
 	{
 		Windows.System.Diagnostics.ProcessDiskUsageReport _ret;
@@ -250,7 +250,7 @@ extern(Windows):
 
 interface ProcessDiskUsageReport : Windows.System.Diagnostics.IProcessDiskUsageReport
 {
-extern(Windows):
+extern(D):
 	final INT64 ReadOperationCount()
 	{
 		INT64 _ret;
@@ -291,7 +291,7 @@ extern(Windows):
 
 interface ProcessMemoryUsage : Windows.System.Diagnostics.IProcessMemoryUsage
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.ProcessMemoryUsageReport GetReport()
 	{
 		Windows.System.Diagnostics.ProcessMemoryUsageReport _ret;
@@ -302,7 +302,7 @@ extern(Windows):
 
 interface ProcessMemoryUsageReport : Windows.System.Diagnostics.IProcessMemoryUsageReport
 {
-extern(Windows):
+extern(D):
 	final ulong NonPagedPoolSizeInBytes()
 	{
 		ulong _ret;
@@ -379,7 +379,7 @@ extern(Windows):
 
 interface SystemCpuUsage : Windows.System.Diagnostics.ISystemCpuUsage
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.SystemCpuUsageReport GetReport()
 	{
 		Windows.System.Diagnostics.SystemCpuUsageReport _ret;
@@ -390,7 +390,7 @@ extern(Windows):
 
 interface SystemCpuUsageReport : Windows.System.Diagnostics.ISystemCpuUsageReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan KernelTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -413,7 +413,7 @@ extern(Windows):
 
 interface SystemDiagnosticInfo : Windows.System.Diagnostics.ISystemDiagnosticInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.SystemMemoryUsage MemoryUsage()
 	{
 		Windows.System.Diagnostics.SystemMemoryUsage _ret;
@@ -443,7 +443,7 @@ extern(Windows):
 
 interface SystemMemoryUsage : Windows.System.Diagnostics.ISystemMemoryUsage
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.SystemMemoryUsageReport GetReport()
 	{
 		Windows.System.Diagnostics.SystemMemoryUsageReport _ret;
@@ -454,7 +454,7 @@ extern(Windows):
 
 interface SystemMemoryUsageReport : Windows.System.Diagnostics.ISystemMemoryUsageReport
 {
-extern(Windows):
+extern(D):
 	final ulong TotalPhysicalSizeInBytes()
 	{
 		ulong _ret;

@@ -138,7 +138,7 @@ interface LocalCategories
 
 interface LocalLocation : Windows.Services.Maps.LocalSearch.ILocalLocation, Windows.Services.Maps.LocalSearch.ILocalLocation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.MapAddress Address()
 	{
 		Windows.Services.Maps.MapAddress _ret;
@@ -219,7 +219,7 @@ interface LocalLocationFinder
 
 interface LocalLocationFinderResult : Windows.Services.Maps.LocalSearch.ILocalLocationFinderResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) LocalLocations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) _ret;
@@ -236,7 +236,7 @@ extern(Windows):
 
 interface LocalLocationHoursOfOperationItem : Windows.Services.Maps.LocalSearch.ILocalLocationHoursOfOperationItem
 {
-extern(Windows):
+extern(D):
 	final Windows.Globalization.DayOfWeek Day()
 	{
 		Windows.Globalization.DayOfWeek _ret;
@@ -259,7 +259,7 @@ extern(Windows):
 
 interface LocalLocationRatingInfo : Windows.Services.Maps.LocalSearch.ILocalLocationRatingInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(double) AggregateRating()
 	{
 		Windows.Foundation.IReference!(double) _ret;

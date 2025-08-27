@@ -73,7 +73,7 @@ extern(Windows):
 
 interface MicrosoftAccountMultiFactorAuthenticationManager : Windows.Security.Authentication.Identity.Core.IMicrosoftAccountMultiFactorAuthenticationManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorOneTimeCodedInfo) GetOneTimePassCodeAsync(wstring userAccountId, UINT32 codeLength)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorOneTimeCodedInfo) _ret;
@@ -153,7 +153,7 @@ extern(Windows):
 
 interface MicrosoftAccountMultiFactorGetSessionsResult : Windows.Security.Authentication.Identity.Core.IMicrosoftAccountMultiFactorGetSessionsResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorSessionInfo) Sessions()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorSessionInfo) _ret;
@@ -170,7 +170,7 @@ extern(Windows):
 
 interface MicrosoftAccountMultiFactorOneTimeCodedInfo : Windows.Security.Authentication.Identity.Core.IMicrosoftAccountMultiFactorOneTimeCodedInfo
 {
-extern(Windows):
+extern(D):
 	final wstring Code()
 	{
 		HSTRING _ret;
@@ -199,7 +199,7 @@ extern(Windows):
 
 interface MicrosoftAccountMultiFactorSessionInfo : Windows.Security.Authentication.Identity.Core.IMicrosoftAccountMultiFactorSessionInfo
 {
-extern(Windows):
+extern(D):
 	final wstring UserAccountId()
 	{
 		HSTRING _ret;
@@ -246,7 +246,7 @@ extern(Windows):
 
 interface MicrosoftAccountMultiFactorUnregisteredAccountsAndSessionInfo : Windows.Security.Authentication.Identity.Core.IMicrosoftAccountMultiFactorUnregisteredAccountsAndSessionInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorSessionInfo) Sessions()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.Core.MicrosoftAccountMultiFactorSessionInfo) _ret;

@@ -446,7 +446,7 @@ extern(Windows):
 
 interface AppDiagnosticInfo : Windows.System.IAppDiagnosticInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.AppInfo AppInfo()
 	{
 		Windows.ApplicationModel.AppInfo _ret;
@@ -470,7 +470,7 @@ extern(Windows):
 
 interface AppMemoryReport : Windows.System.IAppMemoryReport
 {
-extern(Windows):
+extern(D):
 	final ulong PrivateCommitUsage()
 	{
 		ulong _ret;
@@ -499,7 +499,7 @@ extern(Windows):
 
 interface AppMemoryUsageLimitChangingEventArgs : Windows.System.IAppMemoryUsageLimitChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final ulong OldLimit()
 	{
 		ulong _ret;
@@ -516,7 +516,7 @@ extern(Windows):
 
 interface FolderLauncherOptions : Windows.System.IFolderLauncherOptions, Windows.System.ILauncherViewOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Storage.IStorageItem) ItemsToSelect()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Storage.IStorageItem) _ret;
@@ -607,7 +607,7 @@ interface KnownUserProperties
 
 interface LaunchUriResult : Windows.System.ILaunchUriResult
 {
-extern(Windows):
+extern(D):
 	final Windows.System.LaunchUriStatus Status()
 	{
 		Windows.System.LaunchUriStatus _ret;
@@ -660,7 +660,7 @@ interface Launcher
 
 interface LauncherOptions : Windows.System.ILauncherOptions, Windows.System.ILauncherViewOptions, Windows.System.ILauncherOptions2, Windows.System.ILauncherOptions3, Windows.System.ILauncherOptions4
 {
-extern(Windows):
+extern(D):
 	final bool TreatAsUntrusted()
 	{
 		bool _ret;
@@ -787,7 +787,7 @@ extern(Windows):
 
 interface LauncherUIOptions : Windows.System.ILauncherUIOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Point) InvocationPoint()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Point) _ret;
@@ -903,7 +903,7 @@ interface ProcessLauncher
 
 interface ProcessLauncherOptions : Windows.System.IProcessLauncherOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IInputStream StandardInput()
 	{
 		Windows.Storage.Streams.IInputStream _ret;
@@ -954,7 +954,7 @@ extern(Windows):
 
 interface ProcessLauncherResult : Windows.System.IProcessLauncherResult
 {
-extern(Windows):
+extern(D):
 	final UINT32 ExitCode()
 	{
 		UINT32 _ret;
@@ -965,7 +965,7 @@ extern(Windows):
 
 interface ProcessMemoryReport : Windows.System.IProcessMemoryReport
 {
-extern(Windows):
+extern(D):
 	final ulong PrivateWorkingSetUsage()
 	{
 		ulong _ret;
@@ -982,7 +982,7 @@ extern(Windows):
 
 interface ProtocolForResultsOperation : Windows.System.IProtocolForResultsOperation
 {
-extern(Windows):
+extern(D):
 	final void ReportCompleted(Windows.Foundation.Collections.ValueSet data)
 	{
 		Debug.OK((cast(Windows.System.IProtocolForResultsOperation)this.asInterface(uuid("d581293a-6de9-4d28-9378-f86782e182bb"))).abi_ReportCompleted(data));
@@ -1021,7 +1021,7 @@ interface RemoteLauncher
 
 interface RemoteLauncherOptions : Windows.System.IRemoteLauncherOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri FallbackUri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -1098,7 +1098,7 @@ interface TimeZoneSettings
 
 interface User : Windows.System.IUser
 {
-extern(Windows):
+extern(D):
 	final wstring NonRoamableId()
 	{
 		HSTRING _ret;
@@ -1178,7 +1178,7 @@ extern(Windows):
 
 interface UserAuthenticationStatusChangeDeferral : Windows.System.IUserAuthenticationStatusChangeDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.System.IUserAuthenticationStatusChangeDeferral)this.asInterface(uuid("88b59568-bb30-42fb-a270-e9902e40efa7"))).abi_Complete());
@@ -1187,7 +1187,7 @@ extern(Windows):
 
 interface UserAuthenticationStatusChangingEventArgs : Windows.System.IUserAuthenticationStatusChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.UserAuthenticationStatusChangeDeferral GetDeferral()
 	{
 		Windows.System.UserAuthenticationStatusChangeDeferral _ret;
@@ -1216,7 +1216,7 @@ extern(Windows):
 
 interface UserChangedEventArgs : Windows.System.IUserChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.User User()
 	{
 		Windows.System.User _ret;
@@ -1253,7 +1253,7 @@ interface UserDeviceAssociation
 
 interface UserDeviceAssociationChangedEventArgs : Windows.System.IUserDeviceAssociationChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1276,7 +1276,7 @@ extern(Windows):
 
 interface UserPicker : Windows.System.IUserPicker
 {
-extern(Windows):
+extern(D):
 	final bool AllowGuestAccounts()
 	{
 		bool _ret;
@@ -1326,7 +1326,7 @@ extern(Windows):
 
 interface UserWatcher : Windows.System.IUserWatcher
 {
-extern(Windows):
+extern(D):
 	final Windows.System.UserWatcherStatus Status()
 	{
 		Windows.System.UserWatcherStatus _ret;

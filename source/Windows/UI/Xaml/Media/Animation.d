@@ -1415,7 +1415,7 @@ interface AddDeleteThemeTransition : Windows.UI.Xaml.Media.Animation.Transition,
 
 interface BackEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windows.UI.Xaml.Media.Animation.IBackEase
 {
-extern(Windows):
+extern(D):
 	final double Amplitude()
 	{
 		double _ret;
@@ -1449,7 +1449,7 @@ extern(Windows):
 
 interface BeginStoryboard : Windows.UI.Xaml.TriggerAction, Windows.UI.Xaml.Media.Animation.IBeginStoryboard
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.Storyboard Storyboard()
 	{
 		Windows.UI.Xaml.Media.Animation.Storyboard _ret;
@@ -1483,7 +1483,7 @@ extern(Windows):
 
 interface BounceEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windows.UI.Xaml.Media.Animation.IBounceEase
 {
-extern(Windows):
+extern(D):
 	final INT32 Bounces()
 	{
 		INT32 _ret;
@@ -1543,7 +1543,7 @@ interface CircleEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windo
 
 interface ColorAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IColorAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.UI.Color) From()
 	{
 		Windows.Foundation.IReference!(Windows.UI.Color) _ret;
@@ -1641,7 +1641,7 @@ extern(Windows):
 
 interface ColorAnimationUsingKeyFrames : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IColorAnimationUsingKeyFrames
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.ColorKeyFrameCollection KeyFrames()
 	{
 		Windows.UI.Xaml.Media.Animation.ColorKeyFrameCollection _ret;
@@ -1681,7 +1681,7 @@ extern(Windows):
 
 interface ColorKeyFrame : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IColorKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Value()
 	{
 		Windows.UI.Color _ret;
@@ -1760,7 +1760,7 @@ class ColorKeyFrameT(Base) : AgileObject!Base, ColorKeyFrame
 
 interface ColorKeyFrameCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.ColorKeyFrame), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.ColorKeyFrame)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.ColorKeyFrame GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.ColorKeyFrame _ret;
@@ -1829,7 +1829,7 @@ extern(Windows):
 
 interface CommonNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo, Windows.UI.Xaml.Media.Animation.ICommonNavigationTransitionInfo
 {
-extern(Windows):
+extern(D):
 	final bool IsStaggeringEnabled()
 	{
 		bool _ret;
@@ -1879,7 +1879,7 @@ extern(Windows):
 
 interface ConnectedAnimation : Windows.UI.Xaml.Media.Animation.IConnectedAnimation, Windows.UI.Xaml.Media.Animation.IConnectedAnimation2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnCompleted(void delegate(Windows.UI.Xaml.Media.Animation.ConnectedAnimation, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -1925,7 +1925,7 @@ extern(Windows):
 
 interface ConnectedAnimationService : Windows.UI.Xaml.Media.Animation.IConnectedAnimationService
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan DefaultDuration()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1975,7 +1975,7 @@ extern(Windows):
 
 interface ContentThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IContentThemeTransition
 {
-extern(Windows):
+extern(D):
 	final double HorizontalOffset()
 	{
 		double _ret;
@@ -2025,7 +2025,7 @@ extern(Windows):
 
 interface ContinuumNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo, Windows.UI.Xaml.Media.Animation.IContinuumNavigationTransitionInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement ExitElement()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -2157,7 +2157,7 @@ interface DiscretePointKeyFrame : Windows.UI.Xaml.Media.Animation.PointKeyFrame,
 
 interface DoubleAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDoubleAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(double) From()
 	{
 		Windows.Foundation.IReference!(double) _ret;
@@ -2255,7 +2255,7 @@ extern(Windows):
 
 interface DoubleAnimationUsingKeyFrames : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDoubleAnimationUsingKeyFrames
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.DoubleKeyFrameCollection KeyFrames()
 	{
 		Windows.UI.Xaml.Media.Animation.DoubleKeyFrameCollection _ret;
@@ -2295,7 +2295,7 @@ extern(Windows):
 
 interface DoubleKeyFrame : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IDoubleKeyFrame
 {
-extern(Windows):
+extern(D):
 	final double Value()
 	{
 		double _ret;
@@ -2374,7 +2374,7 @@ class DoubleKeyFrameT(Base) : AgileObject!Base, DoubleKeyFrame
 
 interface DoubleKeyFrameCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.DoubleKeyFrame), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.DoubleKeyFrame)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.DoubleKeyFrame GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.DoubleKeyFrame _ret;
@@ -2443,7 +2443,7 @@ extern(Windows):
 
 interface DragItemThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDragItemThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -2477,7 +2477,7 @@ extern(Windows):
 
 interface DragOverThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDragOverThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -2553,7 +2553,7 @@ interface DrillInNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.Navi
 
 interface DrillInThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDrillInThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring EntranceTargetName()
 	{
 		HSTRING _ret;
@@ -2635,7 +2635,7 @@ extern(Windows):
 
 interface DrillOutThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDrillOutThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring EntranceTargetName()
 	{
 		HSTRING _ret;
@@ -2717,7 +2717,7 @@ extern(Windows):
 
 interface DropTargetItemThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IDropTargetItemThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -2751,7 +2751,7 @@ extern(Windows):
 
 interface EasingColorKeyFrame : Windows.UI.Xaml.Media.Animation.ColorKeyFrame, Windows.UI.Xaml.Media.Animation.IEasingColorKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.EasingFunctionBase EasingFunction()
 	{
 		Windows.UI.Xaml.Media.Animation.EasingFunctionBase _ret;
@@ -2785,7 +2785,7 @@ extern(Windows):
 
 interface EasingDoubleKeyFrame : Windows.UI.Xaml.Media.Animation.DoubleKeyFrame, Windows.UI.Xaml.Media.Animation.IEasingDoubleKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.EasingFunctionBase EasingFunction()
 	{
 		Windows.UI.Xaml.Media.Animation.EasingFunctionBase _ret;
@@ -2819,7 +2819,7 @@ extern(Windows):
 
 interface EasingFunctionBase : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IEasingFunctionBase
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.EasingMode EasingMode()
 	{
 		Windows.UI.Xaml.Media.Animation.EasingMode _ret;
@@ -2880,7 +2880,7 @@ class EasingFunctionBaseT(Base) : AgileObject!Base, EasingFunctionBase
 
 interface EasingPointKeyFrame : Windows.UI.Xaml.Media.Animation.PointKeyFrame, Windows.UI.Xaml.Media.Animation.IEasingPointKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.EasingFunctionBase EasingFunction()
 	{
 		Windows.UI.Xaml.Media.Animation.EasingFunctionBase _ret;
@@ -2914,7 +2914,7 @@ extern(Windows):
 
 interface EdgeUIThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IEdgeUIThemeTransition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation Edge()
 	{
 		Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation _ret;
@@ -2948,7 +2948,7 @@ extern(Windows):
 
 interface ElasticEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windows.UI.Xaml.Media.Animation.IElasticEase
 {
-extern(Windows):
+extern(D):
 	final INT32 Oscillations()
 	{
 		INT32 _ret;
@@ -3030,7 +3030,7 @@ interface EntranceNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.Nav
 
 interface EntranceThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IEntranceThemeTransition
 {
-extern(Windows):
+extern(D):
 	final double FromHorizontalOffset()
 	{
 		double _ret;
@@ -3096,7 +3096,7 @@ extern(Windows):
 
 interface ExponentialEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windows.UI.Xaml.Media.Animation.IExponentialEase
 {
-extern(Windows):
+extern(D):
 	final double Exponent()
 	{
 		double _ret;
@@ -3130,7 +3130,7 @@ extern(Windows):
 
 interface FadeInThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IFadeInThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -3164,7 +3164,7 @@ extern(Windows):
 
 interface FadeOutThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IFadeOutThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -3198,7 +3198,7 @@ extern(Windows):
 
 interface KeySpline : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IKeySpline
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point ControlPoint1()
 	{
 		Windows.Foundation.Point _ret;
@@ -3275,7 +3275,7 @@ interface LinearPointKeyFrame : Windows.UI.Xaml.Media.Animation.PointKeyFrame, W
 
 interface NavigationThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.INavigationThemeTransition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo DefaultNavigationTransitionInfo()
 	{
 		Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo _ret;
@@ -3348,7 +3348,7 @@ class NavigationTransitionInfoT(Base) : AgileObject!Base, NavigationTransitionIn
 
 interface ObjectAnimationUsingKeyFrames : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IObjectAnimationUsingKeyFrames
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection KeyFrames()
 	{
 		Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection _ret;
@@ -3388,7 +3388,7 @@ extern(Windows):
 
 interface ObjectKeyFrame : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IObjectKeyFrame
 {
-extern(Windows):
+extern(D):
 	final IInspectable Value()
 	{
 		IInspectable _ret;
@@ -3467,7 +3467,7 @@ class ObjectKeyFrameT(Base) : AgileObject!Base, ObjectKeyFrame
 
 interface ObjectKeyFrameCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.ObjectKeyFrame), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.ObjectKeyFrame)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.ObjectKeyFrame GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.ObjectKeyFrame _ret;
@@ -3536,7 +3536,7 @@ extern(Windows):
 
 interface PaneThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IPaneThemeTransition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation Edge()
 	{
 		Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation _ret;
@@ -3570,7 +3570,7 @@ extern(Windows):
 
 interface PointAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPointAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Point) From()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Point) _ret;
@@ -3668,7 +3668,7 @@ extern(Windows):
 
 interface PointAnimationUsingKeyFrames : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPointAnimationUsingKeyFrames
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.PointKeyFrameCollection KeyFrames()
 	{
 		Windows.UI.Xaml.Media.Animation.PointKeyFrameCollection _ret;
@@ -3708,7 +3708,7 @@ extern(Windows):
 
 interface PointKeyFrame : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.IPointKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Value()
 	{
 		Windows.Foundation.Point _ret;
@@ -3787,7 +3787,7 @@ class PointKeyFrameT(Base) : AgileObject!Base, PointKeyFrame
 
 interface PointKeyFrameCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.PointKeyFrame), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.PointKeyFrame)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.PointKeyFrame GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.PointKeyFrame _ret;
@@ -3856,7 +3856,7 @@ extern(Windows):
 
 interface PointerDownThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPointerDownThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -3890,7 +3890,7 @@ extern(Windows):
 
 interface PointerUpThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPointerUpThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -3924,7 +3924,7 @@ extern(Windows):
 
 interface PopInThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPopInThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -3990,7 +3990,7 @@ extern(Windows):
 
 interface PopOutThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IPopOutThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -4024,7 +4024,7 @@ extern(Windows):
 
 interface PopupThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IPopupThemeTransition
 {
-extern(Windows):
+extern(D):
 	final double FromHorizontalOffset()
 	{
 		double _ret;
@@ -4074,7 +4074,7 @@ extern(Windows):
 
 interface PowerEase : Windows.UI.Xaml.Media.Animation.EasingFunctionBase, Windows.UI.Xaml.Media.Animation.IPowerEase
 {
-extern(Windows):
+extern(D):
 	final double Power()
 	{
 		double _ret;
@@ -4194,7 +4194,7 @@ interface RepeatBehaviorHelper : Windows.UI.Xaml.Media.Animation.IRepeatBehavior
 
 interface RepositionThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IRepositionThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -4260,7 +4260,7 @@ extern(Windows):
 
 interface RepositionThemeTransition : Windows.UI.Xaml.Media.Animation.Transition, Windows.UI.Xaml.Media.Animation.IRepositionThemeTransition, Windows.UI.Xaml.Media.Animation.IRepositionThemeTransition2
 {
-extern(Windows):
+extern(D):
 	final bool IsStaggeringEnabled()
 	{
 		bool _ret;
@@ -4314,7 +4314,7 @@ interface SlideNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.Naviga
 
 interface SplineColorKeyFrame : Windows.UI.Xaml.Media.Animation.ColorKeyFrame, Windows.UI.Xaml.Media.Animation.ISplineColorKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.KeySpline KeySpline()
 	{
 		Windows.UI.Xaml.Media.Animation.KeySpline _ret;
@@ -4348,7 +4348,7 @@ extern(Windows):
 
 interface SplineDoubleKeyFrame : Windows.UI.Xaml.Media.Animation.DoubleKeyFrame, Windows.UI.Xaml.Media.Animation.ISplineDoubleKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.KeySpline KeySpline()
 	{
 		Windows.UI.Xaml.Media.Animation.KeySpline _ret;
@@ -4382,7 +4382,7 @@ extern(Windows):
 
 interface SplinePointKeyFrame : Windows.UI.Xaml.Media.Animation.PointKeyFrame, Windows.UI.Xaml.Media.Animation.ISplinePointKeyFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.KeySpline KeySpline()
 	{
 		Windows.UI.Xaml.Media.Animation.KeySpline _ret;
@@ -4416,7 +4416,7 @@ extern(Windows):
 
 interface SplitCloseThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.ISplitCloseThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring OpenedTargetName()
 	{
 		HSTRING _ret;
@@ -4610,7 +4610,7 @@ extern(Windows):
 
 interface SplitOpenThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.ISplitOpenThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring OpenedTargetName()
 	{
 		HSTRING _ret;
@@ -4804,7 +4804,7 @@ extern(Windows):
 
 interface Storyboard : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.IStoryboard
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.TimelineCollection Children()
 	{
 		Windows.UI.Xaml.Media.Animation.TimelineCollection _ret;
@@ -4914,7 +4914,7 @@ interface SuppressNavigationTransitionInfo : Windows.UI.Xaml.Media.Animation.Nav
 
 interface SwipeBackThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.ISwipeBackThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -4980,7 +4980,7 @@ extern(Windows):
 
 interface SwipeHintThemeAnimation : Windows.UI.Xaml.Media.Animation.Timeline, Windows.UI.Xaml.Media.Animation.ISwipeHintThemeAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring TargetName()
 	{
 		HSTRING _ret;
@@ -5046,7 +5046,7 @@ extern(Windows):
 
 interface Timeline : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Media.Animation.ITimeline
 {
-extern(Windows):
+extern(D):
 	final bool AutoReverse()
 	{
 		bool _ret;
@@ -5219,7 +5219,7 @@ class TimelineT(Base) : AgileObject!Base, Timeline
 
 interface TimelineCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.Timeline), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.Timeline)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.Timeline GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.Timeline _ret;
@@ -5315,7 +5315,7 @@ class TransitionT(Base) : AgileObject!Base, Transition
 
 interface TransitionCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Animation.Transition), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Media.Animation.Transition)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Animation.Transition GetAt(uint index)
 	{
 		Windows.UI.Xaml.Media.Animation.Transition _ret;

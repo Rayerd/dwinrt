@@ -52,7 +52,7 @@ extern(Windows):
 
 interface GpioPinProviderValueChangedEventArgs : Windows.Devices.Gpio.Provider.IGpioPinProviderValueChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Gpio.Provider.ProviderGpioPinEdge Edge()
 	{
 		Windows.Devices.Gpio.Provider.ProviderGpioPinEdge _ret;

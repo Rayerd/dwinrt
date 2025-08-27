@@ -733,7 +733,7 @@ extern(Windows):
 
 interface HttpCacheDirectiveHeaderValueCollection : Windows.Web.Http.Headers.IHttpCacheDirectiveHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpNameValueHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) MaxAge()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) _ret;
@@ -852,7 +852,7 @@ extern(Windows):
 
 interface HttpChallengeHeaderValue : Windows.Web.Http.Headers.IHttpChallengeHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) Parameters()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) _ret;
@@ -914,7 +914,7 @@ extern(Windows):
 
 interface HttpChallengeHeaderValueCollection : Windows.Web.Http.Headers.IHttpChallengeHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpChallengeHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpChallengeHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpChallengeHeaderValueCollection)this.asInterface(uuid("ca9e5f81-aee0-4353-a10b-e625babd64c2"))).abi_ParseAdd(hstring(input).handle));
@@ -993,7 +993,7 @@ extern(Windows):
 
 interface HttpConnectionOptionHeaderValue : Windows.Web.Http.Headers.IHttpConnectionOptionHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Token()
 	{
 		HSTRING _ret;
@@ -1036,7 +1036,7 @@ extern(Windows):
 
 interface HttpConnectionOptionHeaderValueCollection : Windows.Web.Http.Headers.IHttpConnectionOptionHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpConnectionOptionHeaderValueCollection)this.asInterface(uuid("e4f56c1d-5142-4e00-8e0f-019509337629"))).abi_ParseAdd(hstring(input).handle));
@@ -1115,7 +1115,7 @@ extern(Windows):
 
 interface HttpContentCodingHeaderValue : Windows.Web.Http.Headers.IHttpContentCodingHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring ContentCoding()
 	{
 		HSTRING _ret;
@@ -1158,7 +1158,7 @@ extern(Windows):
 
 interface HttpContentCodingHeaderValueCollection : Windows.Web.Http.Headers.IHttpContentCodingHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpContentCodingHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpContentCodingHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpContentCodingHeaderValueCollection)this.asInterface(uuid("7d221721-a6db-436e-8e83-91596192819c"))).abi_ParseAdd(hstring(input).handle));
@@ -1237,7 +1237,7 @@ extern(Windows):
 
 interface HttpContentCodingWithQualityHeaderValue : Windows.Web.Http.Headers.IHttpContentCodingWithQualityHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring ContentCoding()
 	{
 		HSTRING _ret;
@@ -1293,7 +1293,7 @@ extern(Windows):
 
 interface HttpContentCodingWithQualityHeaderValueCollection : Windows.Web.Http.Headers.IHttpContentCodingWithQualityHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpContentCodingWithQualityHeaderValueCollection)this.asInterface(uuid("7c0d753e-e899-4378-b5c8-412d820711cc"))).abi_ParseAdd(hstring(input).handle));
@@ -1372,7 +1372,7 @@ extern(Windows):
 
 interface HttpContentDispositionHeaderValue : Windows.Web.Http.Headers.IHttpContentDispositionHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring DispositionType()
 	{
 		HSTRING _ret;
@@ -1465,7 +1465,7 @@ extern(Windows):
 
 interface HttpContentHeaderCollection : Windows.Web.Http.Headers.IHttpContentHeaderCollection, Windows.Foundation.Collections.IMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING)), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentDispositionHeaderValue ContentDisposition()
 	{
 		Windows.Web.Http.Headers.HttpContentDispositionHeaderValue _ret;
@@ -1626,7 +1626,7 @@ extern(Windows):
 
 interface HttpContentRangeHeaderValue : Windows.Web.Http.Headers.IHttpContentRangeHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(ulong) FirstBytePosition()
 	{
 		Windows.Foundation.IReference!(ulong) _ret;
@@ -1705,7 +1705,7 @@ extern(Windows):
 
 interface HttpCookiePairHeaderValue : Windows.Web.Http.Headers.IHttpCookiePairHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1765,7 +1765,7 @@ extern(Windows):
 
 interface HttpCookiePairHeaderValueCollection : Windows.Web.Http.Headers.IHttpCookiePairHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpCookiePairHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpCookiePairHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpCookiePairHeaderValueCollection)this.asInterface(uuid("f3f44350-581e-4ecc-9f59-e507d04f06e6"))).abi_ParseAdd(hstring(input).handle));
@@ -1844,7 +1844,7 @@ extern(Windows):
 
 interface HttpCredentialsHeaderValue : Windows.Web.Http.Headers.IHttpCredentialsHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) Parameters()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) _ret;
@@ -1906,7 +1906,7 @@ extern(Windows):
 
 interface HttpDateOrDeltaHeaderValue : Windows.Web.Http.Headers.IHttpDateOrDeltaHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) Date()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -1948,7 +1948,7 @@ extern(Windows):
 
 interface HttpExpectationHeaderValue : Windows.Web.Http.Headers.IHttpExpectationHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2014,7 +2014,7 @@ extern(Windows):
 
 interface HttpExpectationHeaderValueCollection : Windows.Web.Http.Headers.IHttpExpectationHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpExpectationHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpExpectationHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpExpectationHeaderValueCollection)this.asInterface(uuid("e78521b3-a0e2-4ac4-9e66-79706cb9fd58"))).abi_ParseAdd(hstring(input).handle));
@@ -2093,7 +2093,7 @@ extern(Windows):
 
 interface HttpLanguageHeaderValueCollection : Windows.Web.Http.Headers.IHttpLanguageHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Globalization.Language), Windows.Foundation.Collections.IIterable!(Windows.Globalization.Language), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpLanguageHeaderValueCollection)this.asInterface(uuid("9ebd7ca3-8219-44f6-9902-8c56dfd3340c"))).abi_ParseAdd(hstring(input).handle));
@@ -2172,7 +2172,7 @@ extern(Windows):
 
 interface HttpLanguageRangeWithQualityHeaderValue : Windows.Web.Http.Headers.IHttpLanguageRangeWithQualityHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring LanguageRange()
 	{
 		HSTRING _ret;
@@ -2228,7 +2228,7 @@ extern(Windows):
 
 interface HttpLanguageRangeWithQualityHeaderValueCollection : Windows.Web.Http.Headers.IHttpLanguageRangeWithQualityHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpLanguageRangeWithQualityHeaderValueCollection)this.asInterface(uuid("885d5abd-4b4f-480a-89ce-8aedcee6e3a0"))).abi_ParseAdd(hstring(input).handle));
@@ -2307,7 +2307,7 @@ extern(Windows):
 
 interface HttpMediaTypeHeaderValue : Windows.Web.Http.Headers.IHttpMediaTypeHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring CharSet()
 	{
 		HSTRING _ret;
@@ -2370,7 +2370,7 @@ extern(Windows):
 
 interface HttpMediaTypeWithQualityHeaderValue : Windows.Web.Http.Headers.IHttpMediaTypeWithQualityHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring CharSet()
 	{
 		HSTRING _ret;
@@ -2450,7 +2450,7 @@ extern(Windows):
 
 interface HttpMediaTypeWithQualityHeaderValueCollection : Windows.Web.Http.Headers.IHttpMediaTypeWithQualityHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpMediaTypeWithQualityHeaderValueCollection)this.asInterface(uuid("3c0c6b73-1342-4587-a056-18d02ff67165"))).abi_ParseAdd(hstring(input).handle));
@@ -2529,7 +2529,7 @@ extern(Windows):
 
 interface HttpMethodHeaderValueCollection : Windows.Web.Http.Headers.IHttpMethodHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.HttpMethod), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.HttpMethod), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpMethodHeaderValueCollection)this.asInterface(uuid("43bc3ff4-6119-4adf-938c-34bfffcf92ed"))).abi_ParseAdd(hstring(input).handle));
@@ -2608,7 +2608,7 @@ extern(Windows):
 
 interface HttpNameValueHeaderValue : Windows.Web.Http.Headers.IHttpNameValueHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2668,7 +2668,7 @@ extern(Windows):
 
 interface HttpProductHeaderValue : Windows.Web.Http.Headers.IHttpProductHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2724,7 +2724,7 @@ extern(Windows):
 
 interface HttpProductInfoHeaderValue : Windows.Web.Http.Headers.IHttpProductInfoHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpProductHeaderValue Product()
 	{
 		Windows.Web.Http.Headers.HttpProductHeaderValue _ret;
@@ -2780,7 +2780,7 @@ extern(Windows):
 
 interface HttpProductInfoHeaderValueCollection : Windows.Web.Http.Headers.IHttpProductInfoHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpProductInfoHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpProductInfoHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpProductInfoHeaderValueCollection)this.asInterface(uuid("877df74a-d69b-44f8-ad4f-453af9c42ed0"))).abi_ParseAdd(hstring(input).handle));
@@ -2859,7 +2859,7 @@ extern(Windows):
 
 interface HttpRequestHeaderCollection : Windows.Web.Http.Headers.IHttpRequestHeaderCollection, Windows.Foundation.Collections.IMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING)), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValueCollection Accept()
 	{
 		Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValueCollection _ret;
@@ -3066,7 +3066,7 @@ extern(Windows):
 
 interface HttpResponseHeaderCollection : Windows.Web.Http.Headers.IHttpResponseHeaderCollection, Windows.Foundation.Collections.IMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING)), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) Age()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) _ret;
@@ -3205,7 +3205,7 @@ extern(Windows):
 
 interface HttpTransferCodingHeaderValue : Windows.Web.Http.Headers.IHttpTransferCodingHeaderValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) Parameters()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpNameValueHeaderValue) _ret;
@@ -3254,7 +3254,7 @@ extern(Windows):
 
 interface HttpTransferCodingHeaderValueCollection : Windows.Web.Http.Headers.IHttpTransferCodingHeaderValueCollection, Windows.Foundation.Collections.IVector!(Windows.Web.Http.Headers.HttpTransferCodingHeaderValue), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.Headers.HttpTransferCodingHeaderValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final void ParseAdd(wstring input)
 	{
 		Debug.OK((cast(Windows.Web.Http.Headers.IHttpTransferCodingHeaderValueCollection)this.asInterface(uuid("202c8c34-2c03-49b8-9665-73e27cb2fc79"))).abi_ParseAdd(hstring(input).handle));

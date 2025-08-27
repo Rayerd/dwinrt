@@ -121,7 +121,7 @@ interface IPropertySet : IPropertySet_Base, Windows.Foundation.Collections.IObse
 
 interface PropertySet : Windows.Foundation.Collections.IPropertySet, Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable))this).remove_MapChanged(token));
@@ -178,7 +178,7 @@ extern(Windows):
 
 interface StringMap : Windows.Foundation.Collections.IMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING)), Windows.Foundation.Collections.IObservableMap!(HSTRING, HSTRING)
 {
-extern(Windows):
+extern(D):
 	final  HSTRING Lookup(wstring key)
 	{
 		 HSTRING _ret;
@@ -235,7 +235,7 @@ extern(Windows):
 
 interface ValueSet : Windows.Foundation.Collections.IPropertySet, Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IMap!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, IInspectable))this).remove_MapChanged(token));

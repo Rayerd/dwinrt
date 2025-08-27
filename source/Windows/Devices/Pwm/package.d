@@ -61,7 +61,7 @@ interface IPwmPin : IPwmPin_Base, Windows.Foundation.IClosable {}
 
 interface PwmController : Windows.Devices.Pwm.IPwmController
 {
-extern(Windows):
+extern(D):
 	final INT32 PinCount()
 	{
 		INT32 _ret;
@@ -115,7 +115,7 @@ extern(Windows):
 
 interface PwmPin : Windows.Devices.Pwm.IPwmPin, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Pwm.PwmController Controller()
 	{
 		Windows.Devices.Pwm.PwmController _ret;

@@ -200,7 +200,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisement : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisement
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags) Flags()
 	{
 		Windows.Foundation.IReference!(Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags) _ret;
@@ -261,7 +261,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementBytePattern : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementBytePattern
 {
-extern(Windows):
+extern(D):
 	final ubyte DataType()
 	{
 		ubyte _ret;
@@ -309,7 +309,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementDataSection : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementDataSection
 {
-extern(Windows):
+extern(D):
 	final ubyte DataType()
 	{
 		ubyte _ret;
@@ -489,7 +489,7 @@ interface BluetoothLEAdvertisementDataTypes
 
 interface BluetoothLEAdvertisementFilter : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement Advertisement()
 	{
 		Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement _ret;
@@ -516,7 +516,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementPublisher : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementPublisher
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus Status()
 	{
 		Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus _ret;
@@ -564,7 +564,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementPublisherStatusChangedEventArgs : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementPublisherStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus Status()
 	{
 		Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus _ret;
@@ -581,7 +581,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementReceivedEventArgs : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT16 RawSignalStrengthInDBm()
 	{
 		INT16 _ret;
@@ -616,7 +616,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementWatcher : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementWatcher
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan MinSamplingInterval()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -722,7 +722,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementWatcherStoppedEventArgs : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEAdvertisementWatcherStoppedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.BluetoothError Error()
 	{
 		Windows.Devices.Bluetooth.BluetoothError _ret;
@@ -733,7 +733,7 @@ extern(Windows):
 
 interface BluetoothLEManufacturerData : Windows.Devices.Bluetooth.Advertisement.IBluetoothLEManufacturerData
 {
-extern(Windows):
+extern(D):
 	final UINT16 CompanyId()
 	{
 		UINT16 _ret;

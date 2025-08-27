@@ -858,7 +858,7 @@ extern(Windows):
 
 interface ActivitySensorTrigger : Windows.ApplicationModel.Background.IActivitySensorTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Devices.Sensors.ActivityType) SubscribedActivities()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Devices.Sensors.ActivityType) _ret;
@@ -916,7 +916,7 @@ interface AlarmApplicationManager
 
 interface AppBroadcastTrigger : Windows.ApplicationModel.Background.IBackgroundTrigger, Windows.ApplicationModel.Background.IAppBroadcastTrigger
 {
-extern(Windows):
+extern(D):
 	final void ProviderInfo(Windows.ApplicationModel.Background.AppBroadcastTriggerProviderInfo value)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Background.IAppBroadcastTrigger)this.asInterface(uuid("74d4f496-8d37-44ec-9481-2a0b9854eb48"))).set_ProviderInfo(value));
@@ -938,7 +938,7 @@ extern(Windows):
 
 interface AppBroadcastTriggerProviderInfo : Windows.ApplicationModel.Background.IAppBroadcastTriggerProviderInfo
 {
-extern(Windows):
+extern(D):
 	final void DisplayNameResource(wstring value)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Background.IAppBroadcastTriggerProviderInfo)this.asInterface(uuid("f219352d-9de8-4420-9ce2-5eff8f17376b"))).set_DisplayNameResource(hstring(value).handle));
@@ -1003,7 +1003,7 @@ extern(Windows):
 
 interface ApplicationTrigger : Windows.ApplicationModel.Background.IApplicationTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.ApplicationTriggerResult) RequestAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.ApplicationTriggerResult) _ret;
@@ -1027,7 +1027,7 @@ extern(Windows):
 
 interface ApplicationTriggerDetails : Windows.ApplicationModel.Background.IApplicationTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.ValueSet Arguments()
 	{
 		Windows.Foundation.Collections.ValueSet _ret;
@@ -1093,7 +1093,7 @@ interface BackgroundExecutionManager
 
 interface BackgroundTaskBuilder : Windows.ApplicationModel.Background.IBackgroundTaskBuilder, Windows.ApplicationModel.Background.IBackgroundTaskBuilder2, Windows.ApplicationModel.Background.IBackgroundTaskBuilder3, Windows.ApplicationModel.Background.IBackgroundTaskBuilder4
 {
-extern(Windows):
+extern(D):
 	final void TaskEntryPoint(wstring value)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Background.IBackgroundTaskBuilder)this.asInterface(uuid("0351550e-3e64-4572-a93a-84075a37c917"))).set_TaskEntryPoint(hstring(value).handle));
@@ -1168,7 +1168,7 @@ extern(Windows):
 
 interface BackgroundTaskCompletedEventArgs : Windows.ApplicationModel.Background.IBackgroundTaskCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID InstanceId()
 	{
 		GUID _ret;
@@ -1183,7 +1183,7 @@ extern(Windows):
 
 interface BackgroundTaskDeferral : Windows.ApplicationModel.Background.IBackgroundTaskDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Background.IBackgroundTaskDeferral)this.asInterface(uuid("93cc156d-af27-4dd3-846e-24ee40cadd25"))).abi_Complete());
@@ -1192,7 +1192,7 @@ extern(Windows):
 
 interface BackgroundTaskProgressEventArgs : Windows.ApplicationModel.Background.IBackgroundTaskProgressEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID InstanceId()
 	{
 		GUID _ret;
@@ -1209,7 +1209,7 @@ extern(Windows):
 
 interface BackgroundTaskRegistration : Windows.ApplicationModel.Background.IBackgroundTaskRegistration, Windows.ApplicationModel.Background.IBackgroundTaskRegistration2, Windows.ApplicationModel.Background.IBackgroundTaskRegistration3
 {
-extern(Windows):
+extern(D):
 	final GUID TaskId()
 	{
 		GUID _ret;
@@ -1275,7 +1275,7 @@ extern(Windows):
 
 interface BackgroundTaskRegistrationGroup : Windows.ApplicationModel.Background.IBackgroundTaskRegistrationGroup
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1338,7 +1338,7 @@ interface BackgroundWorkCost
 
 interface BluetoothLEAdvertisementPublisherTrigger : Windows.ApplicationModel.Background.IBluetoothLEAdvertisementPublisherTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement Advertisement()
 	{
 		Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement _ret;
@@ -1355,7 +1355,7 @@ extern(Windows):
 
 interface BluetoothLEAdvertisementWatcherTrigger : Windows.ApplicationModel.Background.IBluetoothLEAdvertisementWatcherTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan MinSamplingInterval()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1420,7 +1420,7 @@ interface CachedFileUpdaterTrigger : Windows.ApplicationModel.Background.ICached
 
 interface CachedFileUpdaterTriggerDetails : Windows.ApplicationModel.Background.ICachedFileUpdaterTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Provider.CachedFileTarget UpdateTarget()
 	{
 		Windows.Storage.Provider.CachedFileTarget _ret;
@@ -1473,7 +1473,7 @@ interface ContactStoreNotificationTrigger : Windows.ApplicationModel.Background.
 
 interface ContentPrefetchTrigger : Windows.ApplicationModel.Background.IContentPrefetchTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan WaitInterval()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1497,7 +1497,7 @@ extern(Windows):
 
 interface DeviceConnectionChangeTrigger : Windows.ApplicationModel.Background.IDeviceConnectionChangeTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1537,7 +1537,7 @@ extern(Windows):
 
 interface DeviceManufacturerNotificationTrigger : Windows.ApplicationModel.Background.IDeviceManufacturerNotificationTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final wstring TriggerQualifier()
 	{
 		HSTRING _ret;
@@ -1561,7 +1561,7 @@ extern(Windows):
 
 interface DeviceServicingTrigger : Windows.ApplicationModel.Background.IDeviceServicingTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.DeviceTriggerResult) RequestAsyncSimple(wstring deviceId, Windows.Foundation.TimeSpan expectedDuration)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.DeviceTriggerResult) _ret;
@@ -1586,7 +1586,7 @@ extern(Windows):
 
 interface DeviceUseTrigger : Windows.ApplicationModel.Background.IDeviceUseTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.DeviceTriggerResult) RequestAsyncSimple(wstring deviceId)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.DeviceTriggerResult) _ret;
@@ -1625,7 +1625,7 @@ interface EmailStoreNotificationTrigger : Windows.ApplicationModel.Background.IB
 
 interface GattCharacteristicNotificationTrigger : Windows.ApplicationModel.Background.IGattCharacteristicNotificationTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger, Windows.ApplicationModel.Background.IGattCharacteristicNotificationTrigger2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic Characteristic()
 	{
 		Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic _ret;
@@ -1650,7 +1650,7 @@ extern(Windows):
 
 interface GattServiceProviderTrigger : Windows.ApplicationModel.Background.IBackgroundTrigger, Windows.ApplicationModel.Background.IGattServiceProviderTrigger
 {
-extern(Windows):
+extern(D):
 	final wstring TriggerId()
 	{
 		HSTRING _ret;
@@ -1690,7 +1690,7 @@ extern(Windows):
 
 interface GattServiceProviderTriggerResult : Windows.ApplicationModel.Background.IGattServiceProviderTriggerResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Background.GattServiceProviderTrigger Trigger()
 	{
 		Windows.ApplicationModel.Background.GattServiceProviderTrigger _ret;
@@ -1707,7 +1707,7 @@ extern(Windows):
 
 interface LocationTrigger : Windows.ApplicationModel.Background.ILocationTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Background.LocationTriggerType TriggerType()
 	{
 		Windows.ApplicationModel.Background.LocationTriggerType _ret;
@@ -1725,7 +1725,7 @@ extern(Windows):
 
 interface MaintenanceTrigger : Windows.ApplicationModel.Background.IMaintenanceTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final UINT32 FreshnessTime()
 	{
 		UINT32 _ret;
@@ -1749,7 +1749,7 @@ extern(Windows):
 
 interface MediaProcessingTrigger : Windows.ApplicationModel.Background.IMediaProcessingTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.MediaProcessingTriggerResult) RequestAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.Background.MediaProcessingTriggerResult) _ret;
@@ -1823,7 +1823,7 @@ interface NetworkOperatorHotspotAuthenticationTrigger : Windows.ApplicationModel
 
 interface NetworkOperatorNotificationTrigger : Windows.ApplicationModel.Background.INetworkOperatorNotificationTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final wstring NetworkAccountId()
 	{
 		HSTRING _ret;
@@ -1841,7 +1841,7 @@ extern(Windows):
 
 interface PhoneTrigger : Windows.ApplicationModel.Background.IPhoneTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final bool OneShot()
 	{
 		bool _ret;
@@ -1892,7 +1892,7 @@ interface RcsEndUserMessageAvailableTrigger : Windows.ApplicationModel.Backgroun
 
 interface RfcommConnectionTrigger : Windows.ApplicationModel.Background.IRfcommConnectionTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation InboundConnection()
 	{
 		Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation _ret;
@@ -1977,7 +1977,7 @@ interface SmsMessageReceivedTrigger : Windows.ApplicationModel.Background.IBackg
 
 interface SocketActivityTrigger : Windows.ApplicationModel.Background.IBackgroundTrigger, Windows.ApplicationModel.Background.ISocketActivityTrigger
 {
-extern(Windows):
+extern(D):
 	final bool IsWakeFromLowPowerSupported()
 	{
 		bool _ret;
@@ -2016,7 +2016,7 @@ interface StorageLibraryContentChangedTrigger : Windows.ApplicationModel.Backgro
 
 interface SystemCondition : Windows.ApplicationModel.Background.ISystemCondition, Windows.ApplicationModel.Background.IBackgroundCondition
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Background.SystemConditionType ConditionType()
 	{
 		Windows.ApplicationModel.Background.SystemConditionType _ret;
@@ -2034,7 +2034,7 @@ extern(Windows):
 
 interface SystemTrigger : Windows.ApplicationModel.Background.ISystemTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final bool OneShot()
 	{
 		bool _ret;
@@ -2058,7 +2058,7 @@ extern(Windows):
 
 interface TimeTrigger : Windows.ApplicationModel.Background.ITimeTrigger, Windows.ApplicationModel.Background.IBackgroundTrigger
 {
-extern(Windows):
+extern(D):
 	final UINT32 FreshnessTime()
 	{
 		UINT32 _ret;

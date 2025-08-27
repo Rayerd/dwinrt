@@ -185,7 +185,7 @@ extern(Windows):
 
 interface UserDataTask : Windows.ApplicationModel.UserDataTasks.IUserDataTask
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -334,7 +334,7 @@ extern(Windows):
 
 interface UserDataTaskBatch : Windows.ApplicationModel.UserDataTasks.IUserDataTaskBatch
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.UserDataTasks.UserDataTask) Tasks()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.UserDataTasks.UserDataTask) _ret;
@@ -345,7 +345,7 @@ extern(Windows):
 
 interface UserDataTaskList : Windows.ApplicationModel.UserDataTasks.IUserDataTaskList
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -459,7 +459,7 @@ extern(Windows):
 
 interface UserDataTaskListLimitedWriteOperations : Windows.ApplicationModel.UserDataTasks.IUserDataTaskListLimitedWriteOperations
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(HSTRING) TryCompleteTaskAsync(wstring userDataTaskId)
 	{
 		Windows.Foundation.IAsyncOperation!(HSTRING) _ret;
@@ -488,7 +488,7 @@ extern(Windows):
 
 interface UserDataTaskListSyncManager : Windows.ApplicationModel.UserDataTasks.IUserDataTaskListSyncManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime LastAttemptedSyncTime()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -539,7 +539,7 @@ extern(Windows):
 
 interface UserDataTaskManager : Windows.ApplicationModel.UserDataTasks.IUserDataTaskManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskStore) RequestStoreAsync(Windows.ApplicationModel.UserDataTasks.UserDataTaskStoreAccessType accessType)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskStore) _ret;
@@ -575,7 +575,7 @@ extern(Windows):
 
 interface UserDataTaskQueryOptions : Windows.ApplicationModel.UserDataTasks.IUserDataTaskQueryOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.UserDataTaskQuerySortProperty SortProperty()
 	{
 		Windows.ApplicationModel.UserDataTasks.UserDataTaskQuerySortProperty _ret;
@@ -606,7 +606,7 @@ extern(Windows):
 
 interface UserDataTaskReader : Windows.ApplicationModel.UserDataTasks.IUserDataTaskReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskBatch) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskBatch) _ret;
@@ -617,7 +617,7 @@ extern(Windows):
 
 interface UserDataTaskRecurrenceProperties : Windows.ApplicationModel.UserDataTasks.IUserDataTaskRecurrenceProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.UserDataTaskRecurrenceUnit Unit()
 	{
 		Windows.ApplicationModel.UserDataTasks.UserDataTaskRecurrenceUnit _ret;
@@ -708,7 +708,7 @@ extern(Windows):
 
 interface UserDataTaskRegenerationProperties : Windows.ApplicationModel.UserDataTasks.IUserDataTaskRegenerationProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.UserDataTaskRegenerationUnit Unit()
 	{
 		Windows.ApplicationModel.UserDataTasks.UserDataTaskRegenerationUnit _ret;
@@ -759,7 +759,7 @@ extern(Windows):
 
 interface UserDataTaskStore : Windows.ApplicationModel.UserDataTasks.IUserDataTaskStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskList) CreateListAsync(wstring name)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataTasks.UserDataTaskList) _ret;

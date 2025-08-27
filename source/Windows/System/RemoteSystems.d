@@ -471,7 +471,7 @@ interface KnownRemoteSystemCapabilities
 
 interface RemoteSystem : Windows.System.RemoteSystems.IRemoteSystem, Windows.System.RemoteSystems.IRemoteSystem2
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface RemoteSystemAddedEventArgs : Windows.System.RemoteSystems.IRemoteSystemAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystem RemoteSystem()
 	{
 		Windows.System.RemoteSystems.RemoteSystem _ret;
@@ -561,7 +561,7 @@ extern(Windows):
 
 interface RemoteSystemAuthorizationKindFilter : Windows.System.RemoteSystems.IRemoteSystemAuthorizationKindFilter, Windows.System.RemoteSystems.IRemoteSystemFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemAuthorizationKind RemoteSystemAuthorizationKind()
 	{
 		Windows.System.RemoteSystems.RemoteSystemAuthorizationKind _ret;
@@ -579,7 +579,7 @@ extern(Windows):
 
 interface RemoteSystemConnectionRequest : Windows.System.RemoteSystems.IRemoteSystemConnectionRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystem RemoteSystem()
 	{
 		Windows.System.RemoteSystems.RemoteSystem _ret;
@@ -597,7 +597,7 @@ extern(Windows):
 
 interface RemoteSystemDiscoveryTypeFilter : Windows.System.RemoteSystems.IRemoteSystemDiscoveryTypeFilter, Windows.System.RemoteSystems.IRemoteSystemFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemDiscoveryType RemoteSystemDiscoveryType()
 	{
 		Windows.System.RemoteSystems.RemoteSystemDiscoveryType _ret;
@@ -615,7 +615,7 @@ extern(Windows):
 
 interface RemoteSystemKindFilter : Windows.System.RemoteSystems.IRemoteSystemKindFilter, Windows.System.RemoteSystems.IRemoteSystemFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) RemoteSystemKinds()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -673,7 +673,7 @@ interface RemoteSystemKinds
 
 interface RemoteSystemRemovedEventArgs : Windows.System.RemoteSystems.IRemoteSystemRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring RemoteSystemId()
 	{
 		HSTRING _ret;
@@ -684,7 +684,7 @@ extern(Windows):
 
 interface RemoteSystemSession : Windows.System.RemoteSystems.IRemoteSystemSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -746,7 +746,7 @@ extern(Windows):
 
 interface RemoteSystemSessionAddedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionInfo SessionInfo()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionInfo _ret;
@@ -757,7 +757,7 @@ extern(Windows):
 
 interface RemoteSystemSessionController : Windows.System.RemoteSystems.IRemoteSystemSessionController
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnJoinRequested(void delegate(Windows.System.RemoteSystems.RemoteSystemSessionController, Windows.System.RemoteSystems.RemoteSystemSessionJoinRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -800,7 +800,7 @@ extern(Windows):
 
 interface RemoteSystemSessionCreationResult : Windows.System.RemoteSystems.IRemoteSystemSessionCreationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionCreationStatus Status()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionCreationStatus _ret;
@@ -817,7 +817,7 @@ extern(Windows):
 
 interface RemoteSystemSessionDisconnectedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionDisconnectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionDisconnectedReason Reason()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionDisconnectedReason _ret;
@@ -828,7 +828,7 @@ extern(Windows):
 
 interface RemoteSystemSessionInfo : Windows.System.RemoteSystems.IRemoteSystemSessionInfo
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -851,7 +851,7 @@ extern(Windows):
 
 interface RemoteSystemSessionInvitation : Windows.System.RemoteSystems.IRemoteSystemSessionInvitation
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystem Sender()
 	{
 		Windows.System.RemoteSystems.RemoteSystem _ret;
@@ -868,7 +868,7 @@ extern(Windows):
 
 interface RemoteSystemSessionInvitationListener : Windows.System.RemoteSystems.IRemoteSystemSessionInvitationListener
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnInvitationReceived(void delegate(Windows.System.RemoteSystems.RemoteSystemSessionInvitationListener, Windows.System.RemoteSystems.RemoteSystemSessionInvitationReceivedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -889,7 +889,7 @@ extern(Windows):
 
 interface RemoteSystemSessionInvitationReceivedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionInvitationReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionInvitation Invitation()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionInvitation _ret;
@@ -900,7 +900,7 @@ extern(Windows):
 
 interface RemoteSystemSessionJoinRequest : Windows.System.RemoteSystems.IRemoteSystemSessionJoinRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionParticipant Participant()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionParticipant _ret;
@@ -915,7 +915,7 @@ extern(Windows):
 
 interface RemoteSystemSessionJoinRequestedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionJoinRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionJoinRequest JoinRequest()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionJoinRequest _ret;
@@ -932,7 +932,7 @@ extern(Windows):
 
 interface RemoteSystemSessionJoinResult : Windows.System.RemoteSystems.IRemoteSystemSessionJoinResult
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionJoinStatus Status()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionJoinStatus _ret;
@@ -949,7 +949,7 @@ extern(Windows):
 
 interface RemoteSystemSessionMessageChannel : Windows.System.RemoteSystems.IRemoteSystemSessionMessageChannel
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSession Session()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSession _ret;
@@ -1004,7 +1004,7 @@ extern(Windows):
 
 interface RemoteSystemSessionOptions : Windows.System.RemoteSystems.IRemoteSystemSessionOptions
 {
-extern(Windows):
+extern(D):
 	final bool IsInviteOnly()
 	{
 		bool _ret;
@@ -1025,7 +1025,7 @@ extern(Windows):
 
 interface RemoteSystemSessionParticipant : Windows.System.RemoteSystems.IRemoteSystemSessionParticipant
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystem RemoteSystem()
 	{
 		Windows.System.RemoteSystems.RemoteSystem _ret;
@@ -1042,7 +1042,7 @@ extern(Windows):
 
 interface RemoteSystemSessionParticipantAddedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionParticipantAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionParticipant Participant()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionParticipant _ret;
@@ -1053,7 +1053,7 @@ extern(Windows):
 
 interface RemoteSystemSessionParticipantRemovedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionParticipantRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionParticipant Participant()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionParticipant _ret;
@@ -1064,7 +1064,7 @@ extern(Windows):
 
 interface RemoteSystemSessionParticipantWatcher : Windows.System.RemoteSystems.IRemoteSystemSessionParticipantWatcher
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.System.RemoteSystems.IRemoteSystemSessionParticipantWatcher)this.asInterface(uuid("dcdd02cc-aa87-4d79-b6cc-4459b3e92075"))).abi_Start());
@@ -1113,7 +1113,7 @@ extern(Windows):
 
 interface RemoteSystemSessionRemovedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionInfo SessionInfo()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionInfo _ret;
@@ -1124,7 +1124,7 @@ extern(Windows):
 
 interface RemoteSystemSessionUpdatedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionInfo SessionInfo()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionInfo _ret;
@@ -1135,7 +1135,7 @@ extern(Windows):
 
 interface RemoteSystemSessionValueSetReceivedEventArgs : Windows.System.RemoteSystems.IRemoteSystemSessionValueSetReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemSessionParticipant Sender()
 	{
 		Windows.System.RemoteSystems.RemoteSystemSessionParticipant _ret;
@@ -1152,7 +1152,7 @@ extern(Windows):
 
 interface RemoteSystemSessionWatcher : Windows.System.RemoteSystems.IRemoteSystemSessionWatcher
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.System.RemoteSystems.IRemoteSystemSessionWatcher)this.asInterface(uuid("8003e340-0c41-4a62-b6d7-bdbe2b19be2d"))).abi_Start());
@@ -1201,7 +1201,7 @@ extern(Windows):
 
 interface RemoteSystemStatusTypeFilter : Windows.System.RemoteSystems.IRemoteSystemStatusTypeFilter, Windows.System.RemoteSystems.IRemoteSystemFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystemStatusType RemoteSystemStatusType()
 	{
 		Windows.System.RemoteSystems.RemoteSystemStatusType _ret;
@@ -1219,7 +1219,7 @@ extern(Windows):
 
 interface RemoteSystemUpdatedEventArgs : Windows.System.RemoteSystems.IRemoteSystemUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.System.RemoteSystems.RemoteSystem RemoteSystem()
 	{
 		Windows.System.RemoteSystems.RemoteSystem _ret;
@@ -1230,7 +1230,7 @@ extern(Windows):
 
 interface RemoteSystemWatcher : Windows.System.RemoteSystems.IRemoteSystemWatcher
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.System.RemoteSystems.IRemoteSystemWatcher)this.asInterface(uuid("5d600c7e-2c07-48c5-889c-455d2b099771"))).abi_Start());

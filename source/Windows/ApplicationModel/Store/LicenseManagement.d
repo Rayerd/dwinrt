@@ -66,7 +66,7 @@ interface LicenseManager
 
 interface LicenseSatisfactionInfo : Windows.ApplicationModel.Store.LicenseManagement.ILicenseSatisfactionInfo
 {
-extern(Windows):
+extern(D):
 	final bool SatisfiedByDevice()
 	{
 		bool _ret;
@@ -113,7 +113,7 @@ extern(Windows):
 
 interface LicenseSatisfactionResult : Windows.ApplicationModel.Store.LicenseManagement.ILicenseSatisfactionResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionInfo) LicenseSatisfactionInfos()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionInfo) _ret;

@@ -119,7 +119,7 @@ interface AppServiceCatalog
 
 interface AppServiceClosedEventArgs : Windows.ApplicationModel.AppService.IAppServiceClosedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.AppService.AppServiceClosedStatus Status()
 	{
 		Windows.ApplicationModel.AppService.AppServiceClosedStatus _ret;
@@ -130,7 +130,7 @@ extern(Windows):
 
 interface AppServiceConnection : Windows.ApplicationModel.AppService.IAppServiceConnection, Windows.Foundation.IClosable, Windows.ApplicationModel.AppService.IAppServiceConnection2
 {
-extern(Windows):
+extern(D):
 	final wstring AppServiceName()
 	{
 		HSTRING _ret;
@@ -213,7 +213,7 @@ extern(Windows):
 
 interface AppServiceDeferral : Windows.ApplicationModel.AppService.IAppServiceDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.AppService.IAppServiceDeferral)this.asInterface(uuid("7e1b5322-eab0-4248-ae04-fdf93838e472"))).abi_Complete());
@@ -222,7 +222,7 @@ extern(Windows):
 
 interface AppServiceRequest : Windows.ApplicationModel.AppService.IAppServiceRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.ValueSet Message()
 	{
 		Windows.Foundation.Collections.ValueSet _ret;
@@ -239,7 +239,7 @@ extern(Windows):
 
 interface AppServiceRequestReceivedEventArgs : Windows.ApplicationModel.AppService.IAppServiceRequestReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.AppService.AppServiceRequest Request()
 	{
 		Windows.ApplicationModel.AppService.AppServiceRequest _ret;
@@ -256,7 +256,7 @@ extern(Windows):
 
 interface AppServiceResponse : Windows.ApplicationModel.AppService.IAppServiceResponse
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.ValueSet Message()
 	{
 		Windows.Foundation.Collections.ValueSet _ret;
@@ -273,7 +273,7 @@ extern(Windows):
 
 interface AppServiceTriggerDetails : Windows.ApplicationModel.AppService.IAppServiceTriggerDetails, Windows.ApplicationModel.AppService.IAppServiceTriggerDetails2
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;

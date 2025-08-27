@@ -131,7 +131,7 @@ extern(Windows):
 
 interface GpioChangeCounter : Windows.Devices.Gpio.IGpioChangeCounter, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void Polarity(Windows.Devices.Gpio.GpioChangePolarity value)
 	{
 		Debug.OK((cast(Windows.Devices.Gpio.IGpioChangeCounter)this.asInterface(uuid("cb5ec0de-6801-43ff-803d-4576628a8b26"))).set_Polarity(value));
@@ -183,7 +183,7 @@ extern(Windows):
 
 interface GpioChangeReader : Windows.Devices.Gpio.IGpioChangeReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final INT32 Capacity()
 	{
 		INT32 _ret;
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface GpioController : Windows.Devices.Gpio.IGpioController
 {
-extern(Windows):
+extern(D):
 	final INT32 PinCount()
 	{
 		INT32 _ret;
@@ -325,7 +325,7 @@ extern(Windows):
 
 interface GpioPin : Windows.Devices.Gpio.IGpioPin, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnValueChanged(void delegate(Windows.Devices.Gpio.GpioPin, Windows.Devices.Gpio.GpioPinValueChangedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -392,7 +392,7 @@ extern(Windows):
 
 interface GpioPinValueChangedEventArgs : Windows.Devices.Gpio.IGpioPinValueChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Gpio.GpioPinEdge Edge()
 	{
 		Windows.Devices.Gpio.GpioPinEdge _ret;

@@ -7258,7 +7258,7 @@ extern(Windows):
 
 interface AppBar : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IAppBar, Windows.UI.Xaml.Controls.IAppBarOverrides, Windows.UI.Xaml.Controls.IAppBar2, Windows.UI.Xaml.Controls.IAppBar3, Windows.UI.Xaml.Controls.IAppBarOverrides3, Windows.UI.Xaml.Controls.IAppBar4
 {
-extern(Windows):
+extern(D):
 	final bool IsOpen()
 	{
 		bool _ret;
@@ -7826,7 +7826,7 @@ class AppBarT(Base) : AgileObject!Base, AppBar
 
 interface AppBarButton : Windows.UI.Xaml.Controls.Button, Windows.UI.Xaml.Controls.IAppBarButton, Windows.UI.Xaml.Controls.ICommandBarElement, Windows.UI.Xaml.Controls.IAppBarButton3, Windows.UI.Xaml.Controls.ICommandBarElement2
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -8368,7 +8368,7 @@ class AppBarButtonT(Base) : AgileObject!Base, AppBarButton
 
 interface AppBarSeparator : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IAppBarSeparator, Windows.UI.Xaml.Controls.ICommandBarElement, Windows.UI.Xaml.Controls.ICommandBarElement2
 {
-extern(Windows):
+extern(D):
 	final bool IsCompact()
 	{
 		bool _ret;
@@ -8828,7 +8828,7 @@ class AppBarSeparatorT(Base) : AgileObject!Base, AppBarSeparator
 
 interface AppBarToggleButton : Windows.UI.Xaml.Controls.Primitives.ToggleButton, Windows.UI.Xaml.Controls.IAppBarToggleButton, Windows.UI.Xaml.Controls.ICommandBarElement, Windows.UI.Xaml.Controls.IAppBarToggleButton3, Windows.UI.Xaml.Controls.ICommandBarElement2
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -9381,7 +9381,7 @@ class AppBarToggleButtonT(Base) : AgileObject!Base, AppBarToggleButton
 
 interface AutoSuggestBox : Windows.UI.Xaml.Controls.ItemsControl, Windows.UI.Xaml.Controls.IAutoSuggestBox, Windows.UI.Xaml.Controls.IAutoSuggestBox2, Windows.UI.Xaml.Controls.IAutoSuggestBox3
 {
-extern(Windows):
+extern(D):
 	final double MaxSuggestionListHeight()
 	{
 		double _ret;
@@ -9593,7 +9593,7 @@ extern(Windows):
 
 interface AutoSuggestBoxQuerySubmittedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IAutoSuggestBoxQuerySubmittedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring QueryText()
 	{
 		HSTRING _ret;
@@ -9616,7 +9616,7 @@ extern(Windows):
 
 interface AutoSuggestBoxSuggestionChosenEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IAutoSuggestBoxSuggestionChosenEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable SelectedItem()
 	{
 		IInspectable _ret;
@@ -9633,7 +9633,7 @@ extern(Windows):
 
 interface AutoSuggestBoxTextChangedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IAutoSuggestBoxTextChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.AutoSuggestionBoxTextChangeReason Reason()
 	{
 		Windows.UI.Xaml.Controls.AutoSuggestionBoxTextChangeReason _ret;
@@ -9673,7 +9673,7 @@ extern(Windows):
 
 interface BackClickEventArgs : Windows.UI.Xaml.Controls.IBackClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -9694,7 +9694,7 @@ extern(Windows):
 
 interface BitmapIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.Controls.IBitmapIcon, Windows.UI.Xaml.Controls.IBitmapIcon2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri UriSource()
 	{
 		Windows.Foundation.Uri _ret;
@@ -10022,7 +10022,7 @@ class BitmapIconT(Base) : AgileObject!Base, BitmapIcon
 
 interface Border : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IBorder
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush BorderBrush()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -10146,7 +10146,7 @@ extern(Windows):
 
 interface Button : Windows.UI.Xaml.Controls.Primitives.ButtonBase, Windows.UI.Xaml.Controls.IButton, Windows.UI.Xaml.Controls.IButtonWithFlyout
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.FlyoutBase Flyout()
 	{
 		Windows.UI.Xaml.Controls.Primitives.FlyoutBase _ret;
@@ -10615,7 +10615,7 @@ class ButtonT(Base) : AgileObject!Base, Button
 
 interface CalendarDatePicker : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ICalendarDatePicker, Windows.UI.Xaml.Controls.ICalendarDatePicker2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) Date()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -11396,7 +11396,7 @@ class CalendarDatePickerT(Base) : AgileObject!Base, CalendarDatePicker
 
 interface CalendarDatePickerDateChangedEventArgs : Windows.UI.Xaml.Controls.ICalendarDatePickerDateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) NewDate()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -11413,7 +11413,7 @@ extern(Windows):
 
 interface CalendarView : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ICalendarView
 {
-extern(Windows):
+extern(D):
 	final wstring CalendarIdentifier()
 	{
 		HSTRING _ret;
@@ -12777,7 +12777,7 @@ class CalendarViewT(Base) : AgileObject!Base, CalendarView
 
 interface CalendarViewDayItem : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ICalendarViewDayItem
 {
-extern(Windows):
+extern(D):
 	final bool IsBlackout()
 	{
 		bool _ret;
@@ -13235,7 +13235,7 @@ class CalendarViewDayItemT(Base) : AgileObject!Base, CalendarViewDayItem
 
 interface CalendarViewDayItemChangingEventArgs : Windows.UI.Xaml.Controls.ICalendarViewDayItemChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool InRecycleQueue()
 	{
 		bool _ret;
@@ -13267,7 +13267,7 @@ extern(Windows):
 
 interface CalendarViewSelectedDatesChangedEventArgs : Windows.UI.Xaml.Controls.ICalendarViewSelectedDatesChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Foundation.DateTime) AddedDates()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Foundation.DateTime) _ret;
@@ -13284,7 +13284,7 @@ extern(Windows):
 
 interface CandidateWindowBoundsChangedEventArgs : Windows.UI.Xaml.Controls.ICandidateWindowBoundsChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect Bounds()
 	{
 		Windows.Foundation.Rect _ret;
@@ -13641,7 +13641,7 @@ class CanvasT(Base) : AgileObject!Base, Canvas
 
 interface CaptureElement : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.ICaptureElement
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.MediaCapture Source()
 	{
 		Windows.Media.Capture.MediaCapture _ret;
@@ -14147,7 +14147,7 @@ class CheckBoxT(Base) : AgileObject!Base, CheckBox
 
 interface ChoosingGroupHeaderContainerEventArgs : Windows.UI.Xaml.Controls.IChoosingGroupHeaderContainerEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ListViewBaseHeaderItem GroupHeaderContainer()
 	{
 		Windows.UI.Xaml.Controls.ListViewBaseHeaderItem _ret;
@@ -14180,7 +14180,7 @@ extern(Windows):
 
 interface ChoosingItemContainerEventArgs : Windows.UI.Xaml.Controls.IChoosingItemContainerEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 ItemIndex()
 	{
 		INT32 _ret;
@@ -14223,7 +14223,7 @@ extern(Windows):
 
 interface CleanUpVirtualizedItemEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.ICleanUpVirtualizedItemEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable Value()
 	{
 		IInspectable _ret;
@@ -14250,7 +14250,7 @@ extern(Windows):
 
 interface ColumnDefinition : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IColumnDefinition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.GridLength Width()
 	{
 		Windows.UI.Xaml.GridLength _ret;
@@ -14322,7 +14322,7 @@ extern(Windows):
 
 interface ColumnDefinitionCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.ColumnDefinition), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Controls.ColumnDefinition)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ColumnDefinition GetAt(uint index)
 	{
 		Windows.UI.Xaml.Controls.ColumnDefinition _ret;
@@ -14385,7 +14385,7 @@ extern(Windows):
 
 interface ComboBox : Windows.UI.Xaml.Controls.Primitives.Selector, Windows.UI.Xaml.Controls.IComboBox, Windows.UI.Xaml.Controls.IComboBoxOverrides, Windows.UI.Xaml.Controls.IComboBox2, Windows.UI.Xaml.Controls.IComboBox3, Windows.UI.Xaml.Controls.IComboBox4
 {
-extern(Windows):
+extern(D):
 	final bool IsDropDownOpen()
 	{
 		bool _ret;
@@ -15482,7 +15482,7 @@ class ComboBoxItemT(Base) : AgileObject!Base, ComboBoxItem
 
 interface CommandBar : Windows.UI.Xaml.Controls.AppBar, Windows.UI.Xaml.Controls.ICommandBar, Windows.UI.Xaml.Controls.ICommandBar2, Windows.UI.Xaml.Controls.ICommandBar3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IObservableVector!(Windows.UI.Xaml.Controls.ICommandBarElement) PrimaryCommands()
 	{
 		Windows.Foundation.Collections.IObservableVector!(Windows.UI.Xaml.Controls.ICommandBarElement) _ret;
@@ -16514,7 +16514,7 @@ class CommandBarOverflowPresenterT(Base) : AgileObject!Base, CommandBarOverflowP
 
 interface ContainerContentChangingEventArgs : Windows.UI.Xaml.Controls.IContainerContentChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.SelectorItem ItemContainer()
 	{
 		Windows.UI.Xaml.Controls.Primitives.SelectorItem _ret;
@@ -16574,7 +16574,7 @@ extern(Windows):
 
 interface ContentControl : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IContentControl, Windows.UI.Xaml.Controls.IContentControlOverrides, Windows.UI.Xaml.Controls.IContentControl2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Content()
 	{
 		IInspectable _ret;
@@ -17083,7 +17083,7 @@ class ContentControlT(Base) : AgileObject!Base, ContentControl
 
 interface ContentDialog : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IContentDialog, Windows.UI.Xaml.Controls.IContentDialog2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Title()
 	{
 		IInspectable _ret;
@@ -17890,7 +17890,7 @@ class ContentDialogT(Base) : AgileObject!Base, ContentDialog
 
 interface ContentDialogButtonClickDeferral : Windows.UI.Xaml.Controls.IContentDialogButtonClickDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Controls.IContentDialogButtonClickDeferral)this.asInterface(uuid("bd0d3637-19ce-4946-8e77-bd03fe8ebe03"))).abi_Complete());
@@ -17899,7 +17899,7 @@ extern(Windows):
 
 interface ContentDialogButtonClickEventArgs : Windows.UI.Xaml.Controls.IContentDialogButtonClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -17920,7 +17920,7 @@ extern(Windows):
 
 interface ContentDialogClosedEventArgs : Windows.UI.Xaml.Controls.IContentDialogClosedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ContentDialogResult Result()
 	{
 		Windows.UI.Xaml.Controls.ContentDialogResult _ret;
@@ -17931,7 +17931,7 @@ extern(Windows):
 
 interface ContentDialogClosingDeferral : Windows.UI.Xaml.Controls.IContentDialogClosingDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Controls.IContentDialogClosingDeferral)this.asInterface(uuid("215d4d11-7e30-4cb9-a710-5a4f9cca8b42"))).abi_Complete());
@@ -17940,7 +17940,7 @@ extern(Windows):
 
 interface ContentDialogClosingEventArgs : Windows.UI.Xaml.Controls.IContentDialogClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ContentDialogResult Result()
 	{
 		Windows.UI.Xaml.Controls.ContentDialogResult _ret;
@@ -17971,7 +17971,7 @@ interface ContentDialogOpenedEventArgs : Windows.UI.Xaml.Controls.IContentDialog
 
 interface ContentPresenter : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IContentPresenter, Windows.UI.Xaml.Controls.IContentPresenterOverrides, Windows.UI.Xaml.Controls.IContentPresenter2, Windows.UI.Xaml.Controls.IContentPresenter3, Windows.UI.Xaml.Controls.IContentPresenter4
 {
-extern(Windows):
+extern(D):
 	final IInspectable Content()
 	{
 		IInspectable _ret;
@@ -18639,7 +18639,7 @@ class ContentPresenterT(Base) : AgileObject!Base, ContentPresenter
 
 interface ContextMenuEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.IContextMenuEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -18666,7 +18666,7 @@ extern(Windows):
 
 interface Control : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IControl, Windows.UI.Xaml.Controls.IControlOverrides, Windows.UI.Xaml.Controls.IControlProtected, Windows.UI.Xaml.Controls.IControl2, Windows.UI.Xaml.Controls.IControl3, Windows.UI.Xaml.Controls.IControl4, Windows.UI.Xaml.Controls.IControl5
 {
-extern(Windows):
+extern(D):
 	final double FontSize()
 	{
 		double _ret;
@@ -19565,7 +19565,7 @@ class ControlT(Base) : AgileObject!Base, Control
 
 interface ControlTemplate : Windows.UI.Xaml.FrameworkTemplate, Windows.UI.Xaml.Controls.IControlTemplate
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Interop.TypeName TargetType()
 	{
 		Windows.UI.Xaml.Interop.TypeName _ret;
@@ -19586,7 +19586,7 @@ extern(Windows):
 
 interface DataTemplateSelector : Windows.UI.Xaml.Controls.IDataTemplateSelector, Windows.UI.Xaml.Controls.IDataTemplateSelectorOverrides, Windows.UI.Xaml.Controls.IDataTemplateSelector2, Windows.UI.Xaml.Controls.IDataTemplateSelectorOverrides2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DataTemplate SelectTemplate(IInspectable item, Windows.UI.Xaml.DependencyObject container)
 	{
 		Windows.UI.Xaml.DataTemplate _ret;
@@ -19634,7 +19634,7 @@ class DataTemplateSelectorT(Base) : AgileObject!Base, DataTemplateSelector
 
 interface DatePickedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IDatePickedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime OldDate()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -19657,7 +19657,7 @@ extern(Windows):
 
 interface DatePicker : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IDatePicker, Windows.UI.Xaml.Controls.IDatePicker2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -20338,7 +20338,7 @@ class DatePickerT(Base) : AgileObject!Base, DatePicker
 
 interface DatePickerFlyout : Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase, Windows.UI.Xaml.Controls.IDatePickerFlyout, Windows.UI.Xaml.Controls.IDatePickerFlyout2
 {
-extern(Windows):
+extern(D):
 	final wstring CalendarIdentifier()
 	{
 		HSTRING _ret;
@@ -20514,7 +20514,7 @@ extern(Windows):
 
 interface DatePickerFlyoutItem : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IDatePickerFlyoutItem, Windows.UI.Xaml.Data.ICustomPropertyProvider
 {
-extern(Windows):
+extern(D):
 	final wstring PrimaryText()
 	{
 		HSTRING _ret;
@@ -20586,7 +20586,7 @@ interface DatePickerFlyoutPresenter : Windows.UI.Xaml.Controls.Control, Windows.
 
 interface DatePickerValueChangedEventArgs : Windows.UI.Xaml.Controls.IDatePickerValueChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime OldDate()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -20603,7 +20603,7 @@ extern(Windows):
 
 interface DragItemsCompletedEventArgs : Windows.UI.Xaml.Controls.IDragItemsCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(IInspectable) Items()
 	{
 		Windows.Foundation.Collections.IVectorView!(IInspectable) _ret;
@@ -20620,7 +20620,7 @@ extern(Windows):
 
 interface DragItemsStartingEventArgs : Windows.UI.Xaml.Controls.IDragItemsStartingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -20653,7 +20653,7 @@ extern(Windows):
 
 interface DynamicOverflowItemsChangingEventArgs : Windows.UI.Xaml.Controls.IDynamicOverflowItemsChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.CommandBarDynamicOverflowAction Action()
 	{
 		Windows.UI.Xaml.Controls.CommandBarDynamicOverflowAction _ret;
@@ -20670,7 +20670,7 @@ extern(Windows):
 
 interface FlipView : Windows.UI.Xaml.Controls.Primitives.Selector, Windows.UI.Xaml.Controls.IFlipView, Windows.UI.Xaml.Controls.IFlipView2
 {
-extern(Windows):
+extern(D):
 	final bool UseTouchAnimationsForAllNavigation()
 	{
 		bool _ret;
@@ -21610,7 +21610,7 @@ class FlipViewItemT(Base) : AgileObject!Base, FlipViewItem
 
 interface Flyout : Windows.UI.Xaml.Controls.Primitives.FlyoutBase, Windows.UI.Xaml.Controls.IFlyout
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Content()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -22153,7 +22153,7 @@ interface FocusDisengagedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI
 
 interface FocusEngagedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.IFocusEngagedEventArgs, Windows.UI.Xaml.Controls.IFocusEngagedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -22168,7 +22168,7 @@ extern(Windows):
 
 interface FontIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.Controls.IFontIcon, Windows.UI.Xaml.Controls.IFontIcon2, Windows.UI.Xaml.Controls.IFontIcon3
 {
-extern(Windows):
+extern(D):
 	final wstring Glyph()
 	{
 		HSTRING _ret;
@@ -22581,7 +22581,7 @@ class FontIconT(Base) : AgileObject!Base, FontIcon
 
 interface Frame : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IFrame, Windows.UI.Xaml.Controls.INavigate, Windows.UI.Xaml.Controls.IFrame2, Windows.UI.Xaml.Controls.IFrame3, Windows.UI.Xaml.Controls.IFrame4
 {
-extern(Windows):
+extern(D):
 	final INT32 CacheSize()
 	{
 		INT32 _ret;
@@ -23229,7 +23229,7 @@ class FrameT(Base) : AgileObject!Base, Frame
 
 interface Grid : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IGrid, Windows.UI.Xaml.Controls.IGrid2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.RowDefinitionCollection RowDefinitions()
 	{
 		Windows.UI.Xaml.Controls.RowDefinitionCollection _ret;
@@ -24647,7 +24647,7 @@ class GridViewHeaderItemT(Base) : AgileObject!Base, GridViewHeaderItem
 
 interface GridViewItem : Windows.UI.Xaml.Controls.Primitives.SelectorItem, Windows.UI.Xaml.Controls.IGridViewItem
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.GridViewItemTemplateSettings TemplateSettings()
 	{
 		Windows.UI.Xaml.Controls.Primitives.GridViewItemTemplateSettings _ret;
@@ -25521,7 +25521,7 @@ class GroupItemT(Base) : AgileObject!Base, GroupItem
 
 interface GroupStyle : Windows.UI.Xaml.Controls.IGroupStyle, Windows.UI.Xaml.Data.INotifyPropertyChanged, Windows.UI.Xaml.Controls.IGroupStyle2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ItemsPanelTemplate Panel()
 	{
 		Windows.UI.Xaml.Controls.ItemsPanelTemplate _ret;
@@ -25649,7 +25649,7 @@ class GroupStyleT(Base) : AgileObject!Base, GroupStyle
 
 interface GroupStyleSelector : Windows.UI.Xaml.Controls.IGroupStyleSelector, Windows.UI.Xaml.Controls.IGroupStyleSelectorOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.GroupStyle SelectGroupStyle(IInspectable group, UINT32 level)
 	{
 		Windows.UI.Xaml.Controls.GroupStyle _ret;
@@ -25685,7 +25685,7 @@ class GroupStyleSelectorT(Base) : AgileObject!Base, GroupStyleSelector
 
 interface Hub : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IHub, Windows.UI.Xaml.Controls.ISemanticZoomInformation
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -26319,7 +26319,7 @@ class HubT(Base) : AgileObject!Base, Hub
 
 interface HubSection : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IHubSection
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -26813,7 +26813,7 @@ class HubSectionT(Base) : AgileObject!Base, HubSection
 
 interface HubSectionCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.HubSection), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Controls.HubSection)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.HubSection GetAt(uint index)
 	{
 		Windows.UI.Xaml.Controls.HubSection _ret;
@@ -26876,7 +26876,7 @@ extern(Windows):
 
 interface HubSectionHeaderClickEventArgs : Windows.UI.Xaml.Controls.IHubSectionHeaderClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.HubSection Section()
 	{
 		Windows.UI.Xaml.Controls.HubSection _ret;
@@ -26893,7 +26893,7 @@ extern(Windows):
 
 interface HyperlinkButton : Windows.UI.Xaml.Controls.Primitives.ButtonBase, Windows.UI.Xaml.Controls.IHyperlinkButton
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri NavigateUri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -27362,7 +27362,7 @@ class HyperlinkButtonT(Base) : AgileObject!Base, HyperlinkButton
 
 interface IconElement : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IIconElement
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush Foreground()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -27667,7 +27667,7 @@ class IconElementT(Base) : AgileObject!Base, IconElement
 
 interface Image : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IImage, Windows.UI.Xaml.Controls.IImage2, Windows.UI.Xaml.Controls.IImage3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.ImageSource Source()
 	{
 		Windows.UI.Xaml.Media.ImageSource _ret;
@@ -27779,7 +27779,7 @@ extern(Windows):
 
 interface InkCanvas : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IInkCanvas
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkPresenter InkPresenter()
 	{
 		Windows.UI.Input.Inking.InkPresenter _ret;
@@ -28073,7 +28073,7 @@ class InkCanvasT(Base) : AgileObject!Base, InkCanvas
 
 interface InkToolbar : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IInkToolbar, Windows.UI.Xaml.Controls.IInkToolbar2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarInitialControls InitialControls()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarInitialControls _ret;
@@ -29188,7 +29188,7 @@ class InkToolbarBallpointPenButtonT(Base) : AgileObject!Base, InkToolbarBallpoin
 
 interface InkToolbarCustomPen : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IInkToolbarCustomPen, Windows.UI.Xaml.Controls.IInkToolbarCustomPenOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkDrawingAttributes CreateInkDrawingAttributes(Windows.UI.Xaml.Media.Brush brush, double strokeWidth)
 	{
 		Windows.UI.Input.Inking.InkDrawingAttributes _ret;
@@ -29234,7 +29234,7 @@ class InkToolbarCustomPenT(Base) : AgileObject!Base, InkToolbarCustomPen
 
 interface InkToolbarCustomPenButton : Windows.UI.Xaml.Controls.InkToolbarPenButton, Windows.UI.Xaml.Controls.IInkToolbarCustomPenButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarCustomPen CustomPen()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarCustomPen _ret;
@@ -30212,7 +30212,7 @@ class InkToolbarCustomToggleButtonT(Base) : AgileObject!Base, InkToolbarCustomTo
 
 interface InkToolbarCustomToolButton : Windows.UI.Xaml.Controls.InkToolbarToolButton, Windows.UI.Xaml.Controls.IInkToolbarCustomToolButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement ConfigurationContent()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -30702,7 +30702,7 @@ class InkToolbarCustomToolButtonT(Base) : AgileObject!Base, InkToolbarCustomTool
 
 interface InkToolbarEraserButton : Windows.UI.Xaml.Controls.InkToolbarToolButton, Windows.UI.Xaml.Controls.IInkToolbarEraserButton, Windows.UI.Xaml.Controls.IInkToolbarEraserButton2
 {
-extern(Windows):
+extern(D):
 	final bool IsClearAllVisible()
 	{
 		bool _ret;
@@ -31192,7 +31192,7 @@ class InkToolbarEraserButtonT(Base) : AgileObject!Base, InkToolbarEraserButton
 
 interface InkToolbarFlyoutItem : Windows.UI.Xaml.Controls.Primitives.ButtonBase, Windows.UI.Xaml.Controls.IInkToolbarFlyoutItem
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarFlyoutItemKind Kind()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarFlyoutItemKind _ret;
@@ -32178,7 +32178,7 @@ class InkToolbarHighlighterButtonT(Base) : AgileObject!Base, InkToolbarHighlight
 
 interface InkToolbarIsStencilButtonCheckedChangedEventArgs : Windows.UI.Xaml.Controls.IInkToolbarIsStencilButtonCheckedChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarStencilButton StencilButton()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarStencilButton _ret;
@@ -32201,7 +32201,7 @@ extern(Windows):
 
 interface InkToolbarMenuButton : Windows.UI.Xaml.Controls.Primitives.ToggleButton, Windows.UI.Xaml.Controls.IInkToolbarMenuButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarMenuKind MenuKind()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarMenuKind _ret;
@@ -32684,7 +32684,7 @@ class InkToolbarMenuButtonT(Base) : AgileObject!Base, InkToolbarMenuButton
 
 interface InkToolbarPenButton : Windows.UI.Xaml.Controls.InkToolbarToolButton, Windows.UI.Xaml.Controls.IInkToolbarPenButton
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Brush) Palette()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Media.Brush) _ret;
@@ -33252,7 +33252,7 @@ class InkToolbarPenButtonT(Base) : AgileObject!Base, InkToolbarPenButton
 
 interface InkToolbarPenConfigurationControl : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IInkToolbarPenConfigurationControl
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarPenButton PenButton()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarPenButton _ret;
@@ -34162,7 +34162,7 @@ class InkToolbarPencilButtonT(Base) : AgileObject!Base, InkToolbarPencilButton
 
 interface InkToolbarRulerButton : Windows.UI.Xaml.Controls.InkToolbarToggleButton, Windows.UI.Xaml.Controls.IInkToolbarRulerButton
 {
-extern(Windows):
+extern(D):
 	deprecated("InkToolbarRulerButton is deprecated starting from Windows 10 Creators Update. Please use InkToolbarStencilButton going forward. For more info, see MSDN.")
 	final Windows.UI.Input.Inking.InkPresenterRuler Ruler()
 	{
@@ -34644,7 +34644,7 @@ class InkToolbarRulerButtonT(Base) : AgileObject!Base, InkToolbarRulerButton
 
 interface InkToolbarStencilButton : Windows.UI.Xaml.Controls.InkToolbarMenuButton, Windows.UI.Xaml.Controls.IInkToolbarStencilButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkPresenterRuler Ruler()
 	{
 		Windows.UI.Input.Inking.InkPresenterRuler _ret;
@@ -35193,7 +35193,7 @@ class InkToolbarStencilButtonT(Base) : AgileObject!Base, InkToolbarStencilButton
 
 interface InkToolbarToggleButton : Windows.UI.Xaml.Controls.CheckBox, Windows.UI.Xaml.Controls.IInkToolbarToggleButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarToggle ToggleKind()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarToggle _ret;
@@ -35651,7 +35651,7 @@ class InkToolbarToggleButtonT(Base) : AgileObject!Base, InkToolbarToggleButton
 
 interface InkToolbarToolButton : Windows.UI.Xaml.Controls.RadioButton, Windows.UI.Xaml.Controls.IInkToolbarToolButton
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.InkToolbarTool ToolKind()
 	{
 		Windows.UI.Xaml.Controls.InkToolbarTool _ret;
@@ -36137,7 +36137,7 @@ class InkToolbarToolButtonT(Base) : AgileObject!Base, InkToolbarToolButton
 
 interface ItemClickEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.IItemClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable ClickedItem()
 	{
 		IInspectable _ret;
@@ -36154,7 +36154,7 @@ extern(Windows):
 
 interface ItemCollection : Windows.Foundation.Collections.IObservableVector!(IInspectable), Windows.Foundation.Collections.IVector!(IInspectable), Windows.Foundation.Collections.IIterable!(IInspectable)
 {
-extern(Windows):
+extern(D):
 	final void removeVectorChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableVector!(IInspectable))this).remove_VectorChanged(token));
@@ -36221,7 +36221,7 @@ extern(Windows):
 
 interface ItemContainerGenerator : Windows.UI.Xaml.Controls.IItemContainerGenerator
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnItemsChanged(void delegate(IInspectable, Windows.UI.Xaml.Controls.Primitives.ItemsChangedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -36312,7 +36312,7 @@ extern(Windows):
 
 interface ItemsControl : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IItemsControl, Windows.UI.Xaml.Controls.IItemsControlOverrides, Windows.UI.Xaml.Controls.IItemsControl2, Windows.UI.Xaml.Controls.IItemContainerMapping, Windows.UI.Xaml.Controls.IItemsControl3
 {
-extern(Windows):
+extern(D):
 	final IInspectable ItemsSource()
 	{
 		IInspectable _ret;
@@ -37018,7 +37018,7 @@ interface ItemsPanelTemplate : Windows.UI.Xaml.FrameworkTemplate, Windows.UI.Xam
 
 interface ItemsPickedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IItemsPickedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(IInspectable) AddedItems()
 	{
 		Windows.Foundation.Collections.IVector!(IInspectable) _ret;
@@ -37041,7 +37041,7 @@ extern(Windows):
 
 interface ItemsPresenter : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IItemsPresenter, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo, Windows.UI.Xaml.Controls.IItemsPresenter2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -37197,7 +37197,7 @@ extern(Windows):
 
 interface ItemsStackPanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IItemsStackPanel, Windows.UI.Xaml.Controls.IItemsStackPanel2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Thickness GroupPadding()
 	{
 		Windows.UI.Xaml.Thickness _ret;
@@ -37329,7 +37329,7 @@ extern(Windows):
 
 interface ItemsWrapGrid : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IItemsWrapGrid, Windows.UI.Xaml.Controls.IItemsWrapGrid2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Thickness GroupPadding()
 	{
 		Windows.UI.Xaml.Thickness _ret;
@@ -37499,7 +37499,7 @@ extern(Windows):
 
 interface ListBox : Windows.UI.Xaml.Controls.Primitives.Selector, Windows.UI.Xaml.Controls.IListBox, Windows.UI.Xaml.Controls.IListBox2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(IInspectable) SelectedItems()
 	{
 		Windows.Foundation.Collections.IVector!(IInspectable) _ret;
@@ -38469,7 +38469,7 @@ class ListBoxItemT(Base) : AgileObject!Base, ListBoxItem
 
 interface ListPickerFlyout : Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase, Windows.UI.Xaml.Controls.IListPickerFlyout
 {
-extern(Windows):
+extern(D):
 	final IInspectable ItemsSource()
 	{
 		IInspectable _ret;
@@ -39200,7 +39200,7 @@ class ListViewT(Base) : AgileObject!Base, ListView
 
 interface ListViewBase : Windows.UI.Xaml.Controls.Primitives.Selector, Windows.UI.Xaml.Controls.IListViewBase, Windows.UI.Xaml.Controls.ISemanticZoomInformation, Windows.UI.Xaml.Controls.IListViewBase2, Windows.UI.Xaml.Controls.IListViewBase3, Windows.UI.Xaml.Controls.IListViewBase4, Windows.UI.Xaml.Controls.IListViewBase5, Windows.UI.Xaml.Controls.IListViewBase6
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(IInspectable) SelectedItems()
 	{
 		Windows.Foundation.Collections.IVector!(IInspectable) _ret;
@@ -41065,7 +41065,7 @@ class ListViewHeaderItemT(Base) : AgileObject!Base, ListViewHeaderItem
 
 interface ListViewItem : Windows.UI.Xaml.Controls.Primitives.SelectorItem, Windows.UI.Xaml.Controls.IListViewItem
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.ListViewItemTemplateSettings TemplateSettings()
 	{
 		Windows.UI.Xaml.Controls.Primitives.ListViewItemTemplateSettings _ret;
@@ -41530,7 +41530,7 @@ interface ListViewPersistenceHelper : Windows.UI.Xaml.Controls.IListViewPersiste
 
 interface MediaElement : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IMediaElement, Windows.UI.Xaml.Controls.IMediaElement2, Windows.UI.Xaml.Controls.IMediaElement3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.ImageSource PosterSource()
 	{
 		Windows.UI.Xaml.Media.ImageSource _ret;
@@ -42236,7 +42236,7 @@ extern(Windows):
 
 interface MediaPlayerElement : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IMediaPlayerElement
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.IMediaPlaybackSource Source()
 	{
 		Windows.Media.Playback.IMediaPlaybackSource _ret;
@@ -42796,7 +42796,7 @@ class MediaPlayerElementT(Base) : AgileObject!Base, MediaPlayerElement
 
 interface MediaPlayerPresenter : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IMediaPlayerPresenter
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlayer MediaPlayer()
 	{
 		Windows.Media.Playback.MediaPlayer _ret;
@@ -43144,7 +43144,7 @@ class MediaPlayerPresenterT(Base) : AgileObject!Base, MediaPlayerPresenter
 
 interface MediaTransportControls : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IMediaTransportControls, Windows.UI.Xaml.Controls.IMediaTransportControls2
 {
-extern(Windows):
+extern(D):
 	final bool IsFullWindowButtonVisible()
 	{
 		bool _ret;
@@ -43995,7 +43995,7 @@ interface MediaTransportControlsHelper : Windows.UI.Xaml.Controls.IMediaTranspor
 
 interface MenuFlyout : Windows.UI.Xaml.Controls.Primitives.FlyoutBase, Windows.UI.Xaml.Controls.IMenuFlyout, Windows.UI.Xaml.Controls.IMenuFlyout2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.MenuFlyoutItemBase) Items()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.MenuFlyoutItemBase) _ret;
@@ -44098,7 +44098,7 @@ class MenuFlyoutT(Base) : AgileObject!Base, MenuFlyout
 
 interface MenuFlyoutItem : Windows.UI.Xaml.Controls.MenuFlyoutItemBase, Windows.UI.Xaml.Controls.IMenuFlyoutItem, Windows.UI.Xaml.Controls.IMenuFlyoutItem2
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -45005,7 +45005,7 @@ class MenuFlyoutItemBaseT(Base) : AgileObject!Base, MenuFlyoutItemBase
 
 interface MenuFlyoutPresenter : Windows.UI.Xaml.Controls.ItemsControl, Windows.UI.Xaml.Controls.IMenuFlyoutPresenter, Windows.UI.Xaml.Controls.IMenuFlyoutPresenter2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.MenuFlyoutPresenterTemplateSettings TemplateSettings()
 	{
 		Windows.UI.Xaml.Controls.Primitives.MenuFlyoutPresenterTemplateSettings _ret;
@@ -45893,7 +45893,7 @@ class MenuFlyoutSeparatorT(Base) : AgileObject!Base, MenuFlyoutSeparator
 
 interface MenuFlyoutSubItem : Windows.UI.Xaml.Controls.MenuFlyoutItemBase, Windows.UI.Xaml.Controls.IMenuFlyoutSubItem, Windows.UI.Xaml.Controls.IMenuFlyoutSubItem2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.MenuFlyoutItemBase) Items()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.MenuFlyoutItemBase) _ret;
@@ -45943,7 +45943,7 @@ extern(Windows):
 
 interface NotifyEventArgs : Windows.UI.Xaml.Controls.INotifyEventArgs, Windows.UI.Xaml.Controls.INotifyEventArgs2
 {
-extern(Windows):
+extern(D):
 	final wstring Value()
 	{
 		HSTRING _ret;
@@ -45960,7 +45960,7 @@ extern(Windows):
 
 interface Page : Windows.UI.Xaml.Controls.UserControl, Windows.UI.Xaml.Controls.IPage, Windows.UI.Xaml.Controls.IPageOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Frame Frame()
 	{
 		Windows.UI.Xaml.Controls.Frame _ret;
@@ -46453,7 +46453,7 @@ class PageT(Base) : AgileObject!Base, Page
 
 interface Panel : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IPanel
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.UIElementCollection Children()
 	{
 		Windows.UI.Xaml.Controls.UIElementCollection _ret;
@@ -46803,7 +46803,7 @@ class PanelT(Base) : AgileObject!Base, Panel
 
 interface PasswordBox : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IPasswordBox, Windows.UI.Xaml.Controls.IPasswordBox2, Windows.UI.Xaml.Controls.IPasswordBox3
 {
-extern(Windows):
+extern(D):
 	final wstring Password()
 	{
 		HSTRING _ret;
@@ -47002,7 +47002,7 @@ extern(Windows):
 
 interface PathIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.Controls.IPathIcon
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Geometry Data()
 	{
 		Windows.UI.Xaml.Media.Geometry _ret;
@@ -47327,7 +47327,7 @@ interface PickerConfirmedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.U
 
 interface PickerFlyout : Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase, Windows.UI.Xaml.Controls.IPickerFlyout
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Content()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -47397,7 +47397,7 @@ interface PickerFlyoutPresenter : Windows.UI.Xaml.Controls.ContentControl, Windo
 
 interface Pivot : Windows.UI.Xaml.Controls.ItemsControl, Windows.UI.Xaml.Controls.IPivot, Windows.UI.Xaml.Controls.IPivot2, Windows.UI.Xaml.Controls.IPivot3
 {
-extern(Windows):
+extern(D):
 	final IInspectable Title()
 	{
 		IInspectable _ret;
@@ -48130,7 +48130,7 @@ class PivotT(Base) : AgileObject!Base, Pivot
 
 interface PivotItem : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IPivotItem
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -48588,7 +48588,7 @@ class PivotItemT(Base) : AgileObject!Base, PivotItem
 
 interface PivotItemEventArgs : Windows.UI.Xaml.Controls.IPivotItemEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.PivotItem Item()
 	{
 		Windows.UI.Xaml.Controls.PivotItem _ret;
@@ -48609,7 +48609,7 @@ extern(Windows):
 
 interface ProgressBar : Windows.UI.Xaml.Controls.Primitives.RangeBase, Windows.UI.Xaml.Controls.IProgressBar
 {
-extern(Windows):
+extern(D):
 	final bool IsIndeterminate()
 	{
 		bool _ret;
@@ -49112,7 +49112,7 @@ class ProgressBarT(Base) : AgileObject!Base, ProgressBar
 
 interface ProgressRing : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IProgressRing
 {
-extern(Windows):
+extern(D):
 	final bool IsActive()
 	{
 		bool _ret;
@@ -49152,7 +49152,7 @@ extern(Windows):
 
 interface RadioButton : Windows.UI.Xaml.Controls.Primitives.ToggleButton, Windows.UI.Xaml.Controls.IRadioButton
 {
-extern(Windows):
+extern(D):
 	final wstring GroupName()
 	{
 		HSTRING _ret;
@@ -49635,7 +49635,7 @@ class RadioButtonT(Base) : AgileObject!Base, RadioButton
 
 interface RelativePanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IRelativePanel
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush BorderBrush()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -50264,7 +50264,7 @@ class RelativePanelT(Base) : AgileObject!Base, RelativePanel
 
 interface RichEditBox : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IRichEditBox, Windows.UI.Xaml.Controls.IRichEditBox2, Windows.UI.Xaml.Controls.IRichEditBox3, Windows.UI.Xaml.Controls.IRichEditBox4, Windows.UI.Xaml.Controls.IRichEditBox5
 {
-extern(Windows):
+extern(D):
 	final bool IsReadOnly()
 	{
 		bool _ret;
@@ -51070,7 +51070,7 @@ class RichEditBoxT(Base) : AgileObject!Base, RichEditBox
 
 interface RichEditBoxTextChangingEventArgs : Windows.UI.Xaml.Controls.IRichEditBoxTextChangingEventArgs, Windows.UI.Xaml.Controls.IRichEditBoxTextChangingEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool IsContentChanging()
 	{
 		bool _ret;
@@ -51081,7 +51081,7 @@ extern(Windows):
 
 interface RichTextBlock : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IRichTextBlock, Windows.UI.Xaml.Controls.IRichTextBlock2, Windows.UI.Xaml.Controls.IRichTextBlock3, Windows.UI.Xaml.Controls.IRichTextBlock4
 {
-extern(Windows):
+extern(D):
 	final double FontSize()
 	{
 		double _ret;
@@ -51535,7 +51535,7 @@ extern(Windows):
 
 interface RichTextBlockOverflow : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IRichTextBlockOverflow, Windows.UI.Xaml.Controls.IRichTextBlockOverflow2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.RichTextBlockOverflow OverflowContentTarget()
 	{
 		Windows.UI.Xaml.Controls.RichTextBlockOverflow _ret;
@@ -51643,7 +51643,7 @@ extern(Windows):
 
 interface RowDefinition : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.IRowDefinition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.GridLength Height()
 	{
 		Windows.UI.Xaml.GridLength _ret;
@@ -51715,7 +51715,7 @@ extern(Windows):
 
 interface RowDefinitionCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.RowDefinition), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.Controls.RowDefinition)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.RowDefinition GetAt(uint index)
 	{
 		Windows.UI.Xaml.Controls.RowDefinition _ret;
@@ -51778,7 +51778,7 @@ extern(Windows):
 
 interface ScrollContentPresenter : Windows.UI.Xaml.Controls.ContentPresenter, Windows.UI.Xaml.Controls.IScrollContentPresenter
 {
-extern(Windows):
+extern(D):
 	final bool CanVerticallyScroll()
 	{
 		bool _ret;
@@ -51917,7 +51917,7 @@ extern(Windows):
 
 interface ScrollViewer : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IScrollViewer, Windows.UI.Xaml.Controls.IScrollViewer2, Windows.UI.Xaml.Controls.IScrollViewer3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ScrollBarVisibility HorizontalScrollBarVisibility()
 	{
 		Windows.UI.Xaml.Controls.ScrollBarVisibility _ret;
@@ -52657,7 +52657,7 @@ extern(Windows):
 
 interface ScrollViewerView : Windows.UI.Xaml.Controls.IScrollViewerView
 {
-extern(Windows):
+extern(D):
 	final double HorizontalOffset()
 	{
 		double _ret;
@@ -52680,7 +52680,7 @@ extern(Windows):
 
 interface ScrollViewerViewChangedEventArgs : Windows.UI.Xaml.Controls.IScrollViewerViewChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsIntermediate()
 	{
 		bool _ret;
@@ -52697,7 +52697,7 @@ extern(Windows):
 
 interface ScrollViewerViewChangingEventArgs : Windows.UI.Xaml.Controls.IScrollViewerViewChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ScrollViewerView NextView()
 	{
 		Windows.UI.Xaml.Controls.ScrollViewerView _ret;
@@ -52720,7 +52720,7 @@ extern(Windows):
 
 interface SearchBox : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ISearchBox
 {
-extern(Windows):
+extern(D):
 	final bool SearchHistoryEnabled()
 	{
 		bool _ret;
@@ -53315,7 +53315,7 @@ class SearchBoxT(Base) : AgileObject!Base, SearchBox
 
 interface SearchBoxQueryChangedEventArgs : Windows.UI.Xaml.Controls.ISearchBoxQueryChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring QueryText()
 	{
 		HSTRING _ret;
@@ -53338,7 +53338,7 @@ extern(Windows):
 
 interface SearchBoxQuerySubmittedEventArgs : Windows.UI.Xaml.Controls.ISearchBoxQuerySubmittedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring QueryText()
 	{
 		HSTRING _ret;
@@ -53367,7 +53367,7 @@ extern(Windows):
 
 interface SearchBoxResultSuggestionChosenEventArgs : Windows.UI.Xaml.Controls.ISearchBoxResultSuggestionChosenEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Tag()
 	{
 		HSTRING _ret;
@@ -53390,7 +53390,7 @@ extern(Windows):
 
 interface SearchBoxSuggestionsRequestedEventArgs : Windows.UI.Xaml.Controls.ISearchBoxSuggestionsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring QueryText()
 	{
 		HSTRING _ret;
@@ -53419,7 +53419,7 @@ extern(Windows):
 
 interface SectionsInViewChangedEventArgs : Windows.UI.Xaml.Controls.ISectionsInViewChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.HubSection) AddedSections()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Controls.HubSection) _ret;
@@ -53452,7 +53452,7 @@ class SectionsInViewChangedEventArgsT(Base) : AgileObject!Base, SectionsInViewCh
 
 interface SelectionChangedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.ISelectionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(IInspectable) AddedItems()
 	{
 		Windows.Foundation.Collections.IVector!(IInspectable) _ret;
@@ -53487,7 +53487,7 @@ class SelectionChangedEventArgsT(Base) : AgileObject!Base, SelectionChangedEvent
 
 interface SemanticZoom : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ISemanticZoom
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ISemanticZoomInformation ZoomedInView()
 	{
 		Windows.UI.Xaml.Controls.ISemanticZoomInformation _ret;
@@ -53609,7 +53609,7 @@ extern(Windows):
 
 interface SemanticZoomLocation : Windows.UI.Xaml.Controls.ISemanticZoomLocation
 {
-extern(Windows):
+extern(D):
 	final IInspectable Item()
 	{
 		IInspectable _ret;
@@ -53640,7 +53640,7 @@ extern(Windows):
 
 interface SemanticZoomViewChangedEventArgs : Windows.UI.Xaml.Controls.ISemanticZoomViewChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsSourceZoomedInView()
 	{
 		bool _ret;
@@ -53681,7 +53681,7 @@ extern(Windows):
 
 interface SettingsFlyout : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.ISettingsFlyout
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -54227,7 +54227,7 @@ class SettingsFlyoutT(Base) : AgileObject!Base, SettingsFlyout
 
 interface Slider : Windows.UI.Xaml.Controls.Primitives.RangeBase, Windows.UI.Xaml.Controls.ISlider, Windows.UI.Xaml.Controls.ISlider2
 {
-extern(Windows):
+extern(D):
 	final double IntermediateValue()
 	{
 		double _ret;
@@ -54856,7 +54856,7 @@ class SliderT(Base) : AgileObject!Base, Slider
 
 interface SplitView : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ISplitView, Windows.UI.Xaml.Controls.ISplitView2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Content()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -55472,7 +55472,7 @@ class SplitViewT(Base) : AgileObject!Base, SplitView
 
 interface SplitViewPaneClosingEventArgs : Windows.UI.Xaml.Controls.ISplitViewPaneClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -55487,7 +55487,7 @@ extern(Windows):
 
 interface StackPanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IStackPanel, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo, Windows.UI.Xaml.Controls.IStackPanel2, Windows.UI.Xaml.Controls.IInsertionPanel
 {
-extern(Windows):
+extern(D):
 	final bool AreScrollSnapPointsRegular()
 	{
 		bool _ret;
@@ -55932,7 +55932,7 @@ class StackPanelT(Base) : AgileObject!Base, StackPanel
 
 interface StyleSelector : Windows.UI.Xaml.Controls.IStyleSelector, Windows.UI.Xaml.Controls.IStyleSelectorOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Style SelectStyle(IInspectable item, Windows.UI.Xaml.DependencyObject container)
 	{
 		Windows.UI.Xaml.Style _ret;
@@ -55968,7 +55968,7 @@ class StyleSelectorT(Base) : AgileObject!Base, StyleSelector
 
 interface SwapChainBackgroundPanel : Windows.UI.Xaml.Controls.Grid, Windows.UI.Xaml.Controls.ISwapChainBackgroundPanel, Windows.UI.Xaml.Controls.ISwapChainBackgroundPanel2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreIndependentInputSource CreateCoreIndependentInputSource(Windows.UI.Core.CoreInputDeviceTypes deviceTypes)
 	{
 		Windows.UI.Core.CoreIndependentInputSource _ret;
@@ -56281,7 +56281,7 @@ class SwapChainBackgroundPanelT(Base) : AgileObject!Base, SwapChainBackgroundPan
 
 interface SwapChainPanel : Windows.UI.Xaml.Controls.Grid, Windows.UI.Xaml.Controls.ISwapChainPanel
 {
-extern(Windows):
+extern(D):
 	final float CompositionScaleX()
 	{
 		float _ret;
@@ -56639,7 +56639,7 @@ class SwapChainPanelT(Base) : AgileObject!Base, SwapChainPanel
 
 interface SymbolIcon : Windows.UI.Xaml.Controls.IconElement, Windows.UI.Xaml.Controls.ISymbolIcon
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Symbol Symbol()
 	{
 		Windows.UI.Xaml.Controls.Symbol _ret;
@@ -56680,7 +56680,7 @@ extern(Windows):
 
 interface TextBlock : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.ITextBlock, Windows.UI.Xaml.Controls.ITextBlock2, Windows.UI.Xaml.Controls.ITextBlock3, Windows.UI.Xaml.Controls.ITextBlock4, Windows.UI.Xaml.Controls.ITextBlock5
 {
-extern(Windows):
+extern(D):
 	final double FontSize()
 	{
 		double _ret;
@@ -57106,7 +57106,7 @@ extern(Windows):
 
 interface TextBox : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ITextBox, Windows.UI.Xaml.Controls.ITextBox2, Windows.UI.Xaml.Controls.ITextBox3, Windows.UI.Xaml.Controls.ITextBox4, Windows.UI.Xaml.Controls.ITextBox5
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -57970,7 +57970,7 @@ class TextBoxT(Base) : AgileObject!Base, TextBox
 
 interface TextBoxTextChangingEventArgs : Windows.UI.Xaml.Controls.ITextBoxTextChangingEventArgs, Windows.UI.Xaml.Controls.ITextBoxTextChangingEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool IsContentChanging()
 	{
 		bool _ret;
@@ -57985,7 +57985,7 @@ interface TextChangedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xam
 
 interface TextCompositionChangedEventArgs : Windows.UI.Xaml.Controls.ITextCompositionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 StartIndex()
 	{
 		INT32 _ret;
@@ -58002,7 +58002,7 @@ extern(Windows):
 
 interface TextCompositionEndedEventArgs : Windows.UI.Xaml.Controls.ITextCompositionEndedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 StartIndex()
 	{
 		INT32 _ret;
@@ -58019,7 +58019,7 @@ extern(Windows):
 
 interface TextCompositionStartedEventArgs : Windows.UI.Xaml.Controls.ITextCompositionStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 StartIndex()
 	{
 		INT32 _ret;
@@ -58036,7 +58036,7 @@ extern(Windows):
 
 interface TextControlPasteEventArgs : Windows.UI.Xaml.Controls.ITextControlPasteEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -58051,7 +58051,7 @@ extern(Windows):
 
 interface TimePickedEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.ITimePickedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan OldTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -58074,7 +58074,7 @@ extern(Windows):
 
 interface TimePicker : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.ITimePicker, Windows.UI.Xaml.Controls.ITimePicker2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Header()
 	{
 		IInspectable _ret;
@@ -58611,7 +58611,7 @@ class TimePickerT(Base) : AgileObject!Base, TimePicker
 
 interface TimePickerFlyout : Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase, Windows.UI.Xaml.Controls.ITimePickerFlyout
 {
-extern(Windows):
+extern(D):
 	final wstring ClockIdentifier()
 	{
 		HSTRING _ret;
@@ -58697,7 +58697,7 @@ interface TimePickerFlyoutPresenter : Windows.UI.Xaml.Controls.Control, Windows.
 
 interface TimePickerValueChangedEventArgs : Windows.UI.Xaml.Controls.ITimePickerValueChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan OldTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -58714,7 +58714,7 @@ extern(Windows):
 
 interface ToggleMenuFlyoutItem : Windows.UI.Xaml.Controls.MenuFlyoutItem, Windows.UI.Xaml.Controls.IToggleMenuFlyoutItem
 {
-extern(Windows):
+extern(D):
 	final bool IsChecked()
 	{
 		bool _ret;
@@ -59166,7 +59166,7 @@ class ToggleMenuFlyoutItemT(Base) : AgileObject!Base, ToggleMenuFlyoutItem
 
 interface ToggleSwitch : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IToggleSwitch, Windows.UI.Xaml.Controls.IToggleSwitchOverrides
 {
-extern(Windows):
+extern(D):
 	final bool IsOn()
 	{
 		bool _ret;
@@ -59312,7 +59312,7 @@ extern(Windows):
 
 interface ToolTip : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.IToolTip
 {
-extern(Windows):
+extern(D):
 	final double HorizontalOffset()
 	{
 		double _ret;
@@ -59931,7 +59931,7 @@ interface ToolTipService : Windows.UI.Xaml.Controls.IToolTipService
 
 interface UIElementCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.UIElement), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.UIElement), Windows.UI.Xaml.Controls.IUIElementCollection
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement GetAt(uint index)
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -59998,7 +59998,7 @@ extern(Windows):
 
 interface UserControl : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.IUserControl
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Content()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -60438,7 +60438,7 @@ class UserControlT(Base) : AgileObject!Base, UserControl
 
 interface VariableSizedWrapGrid : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IVariableSizedWrapGrid
 {
-extern(Windows):
+extern(D):
 	final double ItemHeight()
 	{
 		double _ret;
@@ -60584,7 +60584,7 @@ extern(Windows):
 
 interface Viewbox : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IViewbox
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Child()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -60644,7 +60644,7 @@ extern(Windows):
 
 interface VirtualizingPanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.IVirtualizingPanel, Windows.UI.Xaml.Controls.IVirtualizingPanelOverrides, Windows.UI.Xaml.Controls.IVirtualizingPanelProtected
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ItemContainerGenerator ItemContainerGenerator()
 	{
 		Windows.UI.Xaml.Controls.ItemContainerGenerator _ret;
@@ -60961,7 +60961,7 @@ class VirtualizingPanelT(Base) : AgileObject!Base, VirtualizingPanel
 
 interface VirtualizingStackPanel : Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel, Windows.UI.Xaml.Controls.IVirtualizingStackPanel, Windows.UI.Xaml.Controls.IVirtualizingStackPanelOverrides
 {
-extern(Windows):
+extern(D):
 	final bool AreScrollSnapPointsRegular()
 	{
 		bool _ret;
@@ -61049,7 +61049,7 @@ extern(Windows):
 
 interface WebView : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.IWebView, Windows.UI.Xaml.Controls.IWebView2, Windows.UI.Xaml.Controls.IWebView3, Windows.UI.Xaml.Controls.IWebView4, Windows.UI.Xaml.Controls.IWebView5
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Source()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61485,7 +61485,7 @@ extern(Windows):
 
 interface WebViewBrush : Windows.UI.Xaml.Media.TileBrush, Windows.UI.Xaml.Controls.IWebViewBrush
 {
-extern(Windows):
+extern(D):
 	final wstring SourceName()
 	{
 		HSTRING _ret;
@@ -61527,7 +61527,7 @@ extern(Windows):
 
 interface WebViewContentLoadingEventArgs : Windows.UI.Xaml.Controls.IWebViewContentLoadingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61538,7 +61538,7 @@ extern(Windows):
 
 interface WebViewDOMContentLoadedEventArgs : Windows.UI.Xaml.Controls.IWebViewDOMContentLoadedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61549,7 +61549,7 @@ extern(Windows):
 
 interface WebViewDeferredPermissionRequest : Windows.UI.Xaml.Controls.IWebViewDeferredPermissionRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61580,7 +61580,7 @@ extern(Windows):
 
 interface WebViewLongRunningScriptDetectedEventArgs : Windows.UI.Xaml.Controls.IWebViewLongRunningScriptDetectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan ExecutionTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -61601,7 +61601,7 @@ extern(Windows):
 
 interface WebViewNavigationCompletedEventArgs : Windows.UI.Xaml.Controls.IWebViewNavigationCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61624,7 +61624,7 @@ extern(Windows):
 
 interface WebViewNavigationFailedEventArgs : Windows.UI.Xaml.Controls.IWebViewNavigationFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61641,7 +61641,7 @@ extern(Windows):
 
 interface WebViewNavigationStartingEventArgs : Windows.UI.Xaml.Controls.IWebViewNavigationStartingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61662,7 +61662,7 @@ extern(Windows):
 
 interface WebViewNewWindowRequestedEventArgs : Windows.UI.Xaml.Controls.IWebViewNewWindowRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61689,7 +61689,7 @@ extern(Windows):
 
 interface WebViewPermissionRequest : Windows.UI.Xaml.Controls.IWebViewPermissionRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61730,7 +61730,7 @@ extern(Windows):
 
 interface WebViewPermissionRequestedEventArgs : Windows.UI.Xaml.Controls.IWebViewPermissionRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.WebViewPermissionRequest PermissionRequest()
 	{
 		Windows.UI.Xaml.Controls.WebViewPermissionRequest _ret;
@@ -61741,7 +61741,7 @@ extern(Windows):
 
 interface WebViewSettings : Windows.UI.Xaml.Controls.IWebViewSettings
 {
-extern(Windows):
+extern(D):
 	final bool IsJavaScriptEnabled()
 	{
 		bool _ret;
@@ -61766,7 +61766,7 @@ extern(Windows):
 
 interface WebViewUnsupportedUriSchemeIdentifiedEventArgs : Windows.UI.Xaml.Controls.IWebViewUnsupportedUriSchemeIdentifiedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61787,7 +61787,7 @@ extern(Windows):
 
 interface WebViewUnviewableContentIdentifiedEventArgs : Windows.UI.Xaml.Controls.IWebViewUnviewableContentIdentifiedEventArgs, Windows.UI.Xaml.Controls.IWebViewUnviewableContentIdentifiedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -61810,7 +61810,7 @@ extern(Windows):
 
 interface WrapGrid : Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel, Windows.UI.Xaml.Controls.IWrapGrid
 {
-extern(Windows):
+extern(D):
 	final double ItemWidth()
 	{
 		double _ret;

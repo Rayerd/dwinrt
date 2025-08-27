@@ -129,7 +129,7 @@ extern(Windows):
 
 interface UserDataTaskDataProviderConnection : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskDataProviderConnection
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnCreateOrUpdateTaskRequested(void delegate(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderConnection, Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequestEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -188,7 +188,7 @@ extern(Windows):
 
 interface UserDataTaskDataProviderTriggerDetails : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskDataProviderTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderConnection Connection()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderConnection _ret;
@@ -199,7 +199,7 @@ extern(Windows):
 
 interface UserDataTaskListCompleteTaskRequest : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListCompleteTaskRequest
 {
-extern(Windows):
+extern(D):
 	final wstring TaskListId()
 	{
 		HSTRING _ret;
@@ -228,7 +228,7 @@ extern(Windows):
 
 interface UserDataTaskListCompleteTaskRequestEventArgs : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListCompleteTaskRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequest Request()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequest _ret;
@@ -245,7 +245,7 @@ extern(Windows):
 
 interface UserDataTaskListCreateOrUpdateTaskRequest : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListCreateOrUpdateTaskRequest
 {
-extern(Windows):
+extern(D):
 	final wstring TaskListId()
 	{
 		HSTRING _ret;
@@ -274,7 +274,7 @@ extern(Windows):
 
 interface UserDataTaskListCreateOrUpdateTaskRequestEventArgs : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListCreateOrUpdateTaskRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequest Request()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequest _ret;
@@ -291,7 +291,7 @@ extern(Windows):
 
 interface UserDataTaskListDeleteTaskRequest : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListDeleteTaskRequest
 {
-extern(Windows):
+extern(D):
 	final wstring TaskListId()
 	{
 		HSTRING _ret;
@@ -320,7 +320,7 @@ extern(Windows):
 
 interface UserDataTaskListDeleteTaskRequestEventArgs : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListDeleteTaskRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequest Request()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequest _ret;
@@ -337,7 +337,7 @@ extern(Windows):
 
 interface UserDataTaskListSkipOccurrenceRequest : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListSkipOccurrenceRequest
 {
-extern(Windows):
+extern(D):
 	final wstring TaskListId()
 	{
 		HSTRING _ret;
@@ -366,7 +366,7 @@ extern(Windows):
 
 interface UserDataTaskListSkipOccurrenceRequestEventArgs : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListSkipOccurrenceRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequest Request()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequest _ret;
@@ -383,7 +383,7 @@ extern(Windows):
 
 interface UserDataTaskListSyncManagerSyncRequest : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListSyncManagerSyncRequest
 {
-extern(Windows):
+extern(D):
 	final wstring TaskListId()
 	{
 		HSTRING _ret;
@@ -406,7 +406,7 @@ extern(Windows):
 
 interface UserDataTaskListSyncManagerSyncRequestEventArgs : Windows.ApplicationModel.UserDataTasks.DataProvider.IUserDataTaskListSyncManagerSyncRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequest Request()
 	{
 		Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequest _ret;

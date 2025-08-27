@@ -440,7 +440,7 @@ extern(Windows):
 
 interface Print3DManager : Windows.Graphics.Printing3D.IPrint3DManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnTaskRequested(void delegate(Windows.Graphics.Printing3D.Print3DManager, Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -474,7 +474,7 @@ extern(Windows):
 
 interface Print3DTask : Windows.Graphics.Printing3D.IPrint3DTask
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3D3MFPackage Source()
 	{
 		Windows.Graphics.Printing3D.Printing3D3MFPackage _ret;
@@ -515,7 +515,7 @@ extern(Windows):
 
 interface Print3DTaskCompletedEventArgs : Windows.Graphics.Printing3D.IPrint3DTaskCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Print3DTaskCompletion Completion()
 	{
 		Windows.Graphics.Printing3D.Print3DTaskCompletion _ret;
@@ -532,7 +532,7 @@ extern(Windows):
 
 interface Print3DTaskRequest : Windows.Graphics.Printing3D.IPrint3DTaskRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Print3DTask CreateTask(wstring title, wstring printerId, Windows.Graphics.Printing3D.Print3DTaskSourceRequestedHandler handler)
 	{
 		Windows.Graphics.Printing3D.Print3DTask _ret;
@@ -543,7 +543,7 @@ extern(Windows):
 
 interface Print3DTaskRequestedEventArgs : Windows.Graphics.Printing3D.IPrint3DTaskRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Print3DTaskRequest Request()
 	{
 		Windows.Graphics.Printing3D.Print3DTaskRequest _ret;
@@ -554,7 +554,7 @@ extern(Windows):
 
 interface Print3DTaskSourceChangedEventArgs : Windows.Graphics.Printing3D.IPrint3DTaskSourceChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3D3MFPackage Source()
 	{
 		Windows.Graphics.Printing3D.Printing3D3MFPackage _ret;
@@ -565,7 +565,7 @@ extern(Windows):
 
 interface Print3DTaskSourceRequestedArgs : Windows.Graphics.Printing3D.IPrint3DTaskSourceRequestedArgs
 {
-extern(Windows):
+extern(D):
 	final void SetSource(Windows.Graphics.Printing3D.Printing3D3MFPackage source)
 	{
 		Debug.OK((cast(Windows.Graphics.Printing3D.IPrint3DTaskSourceRequestedArgs)this.asInterface(uuid("c77c9aba-24af-424d-a3bf-92250c355602"))).abi_SetSource(source));
@@ -574,7 +574,7 @@ extern(Windows):
 
 interface Printing3D3MFPackage : Windows.Graphics.Printing3D.IPrinting3D3MFPackage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStream) SaveAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IRandomAccessStream) _ret;
@@ -652,7 +652,7 @@ extern(Windows):
 
 interface Printing3DBaseMaterial : Windows.Graphics.Printing3D.IPrinting3DBaseMaterial
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -702,7 +702,7 @@ extern(Windows):
 
 interface Printing3DBaseMaterialGroup : Windows.Graphics.Printing3D.IPrinting3DBaseMaterialGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DBaseMaterial) Bases()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DBaseMaterial) _ret;
@@ -726,7 +726,7 @@ extern(Windows):
 
 interface Printing3DColorMaterial : Windows.Graphics.Printing3D.IPrinting3DColorMaterial, Windows.Graphics.Printing3D.IPrinting3DColorMaterial2
 {
-extern(Windows):
+extern(D):
 	final UINT32 Value()
 	{
 		UINT32 _ret;
@@ -757,7 +757,7 @@ extern(Windows):
 
 interface Printing3DColorMaterialGroup : Windows.Graphics.Printing3D.IPrinting3DColorMaterialGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DColorMaterial) Colors()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DColorMaterial) _ret;
@@ -781,7 +781,7 @@ extern(Windows):
 
 interface Printing3DComponent : Windows.Graphics.Printing3D.IPrinting3DComponent
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3DMesh Mesh()
 	{
 		Windows.Graphics.Printing3D.Printing3DMesh _ret;
@@ -848,7 +848,7 @@ extern(Windows):
 
 interface Printing3DComponentWithMatrix : Windows.Graphics.Printing3D.IPrinting3DComponentWithMatrix
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3DComponent Component()
 	{
 		Windows.Graphics.Printing3D.Printing3DComponent _ret;
@@ -879,7 +879,7 @@ extern(Windows):
 
 interface Printing3DCompositeMaterial : Windows.Graphics.Printing3D.IPrinting3DCompositeMaterial
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(double) Values()
 	{
 		Windows.Foundation.Collections.IVector!(double) _ret;
@@ -896,7 +896,7 @@ extern(Windows):
 
 interface Printing3DCompositeMaterialGroup : Windows.Graphics.Printing3D.IPrinting3DCompositeMaterialGroup, Windows.Graphics.Printing3D.IPrinting3DCompositeMaterialGroup2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DCompositeMaterial) Composites()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DCompositeMaterial) _ret;
@@ -936,7 +936,7 @@ extern(Windows):
 
 interface Printing3DFaceReductionOptions : Windows.Graphics.Printing3D.IPrinting3DFaceReductionOptions
 {
-extern(Windows):
+extern(D):
 	final double MaxReductionArea()
 	{
 		double _ret;
@@ -977,7 +977,7 @@ extern(Windows):
 
 interface Printing3DMaterial : Windows.Graphics.Printing3D.IPrinting3DMaterial
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DBaseMaterialGroup) BaseGroups()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DBaseMaterialGroup) _ret;
@@ -1018,7 +1018,7 @@ extern(Windows):
 
 interface Printing3DMesh : Windows.Graphics.Printing3D.IPrinting3DMesh
 {
-extern(Windows):
+extern(D):
 	final UINT32 VertexCount()
 	{
 		UINT32 _ret;
@@ -1147,7 +1147,7 @@ extern(Windows):
 
 interface Printing3DMeshVerificationResult : Windows.Graphics.Printing3D.IPrinting3DMeshVerificationResult
 {
-extern(Windows):
+extern(D):
 	final bool IsValid()
 	{
 		bool _ret;
@@ -1170,7 +1170,7 @@ extern(Windows):
 
 interface Printing3DModel : Windows.Graphics.Printing3D.IPrinting3DModel, Windows.Graphics.Printing3D.IPrinting3DModel2
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3DModelUnit Unit()
 	{
 		Windows.Graphics.Printing3D.Printing3DModelUnit _ret;
@@ -1302,7 +1302,7 @@ extern(Windows):
 
 interface Printing3DModelTexture : Windows.Graphics.Printing3D.IPrinting3DModelTexture
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3DTextureResource TextureResource()
 	{
 		Windows.Graphics.Printing3D.Printing3DTextureResource _ret;
@@ -1343,7 +1343,7 @@ extern(Windows):
 
 interface Printing3DMultiplePropertyMaterial : Windows.Graphics.Printing3D.IPrinting3DMultiplePropertyMaterial
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(UINT32) MaterialIndices()
 	{
 		Windows.Foundation.Collections.IVector!(UINT32) _ret;
@@ -1360,7 +1360,7 @@ extern(Windows):
 
 interface Printing3DMultiplePropertyMaterialGroup : Windows.Graphics.Printing3D.IPrinting3DMultiplePropertyMaterialGroup
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterial) MultipleProperties()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterial) _ret;
@@ -1390,7 +1390,7 @@ extern(Windows):
 
 interface Printing3DTexture2CoordMaterial : Windows.Graphics.Printing3D.IPrinting3DTexture2CoordMaterial
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing3D.Printing3DModelTexture Texture()
 	{
 		Windows.Graphics.Printing3D.Printing3DModelTexture _ret;
@@ -1431,7 +1431,7 @@ extern(Windows):
 
 interface Printing3DTexture2CoordMaterialGroup : Windows.Graphics.Printing3D.IPrinting3DTexture2CoordMaterialGroup, Windows.Graphics.Printing3D.IPrinting3DTexture2CoordMaterialGroup2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial) Texture2Coords()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial) _ret;
@@ -1465,7 +1465,7 @@ extern(Windows):
 
 interface Printing3DTextureResource : Windows.Graphics.Printing3D.IPrinting3DTextureResource
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStreamWithContentType TextureData()
 	{
 		Windows.Storage.Streams.IRandomAccessStreamWithContentType _ret;

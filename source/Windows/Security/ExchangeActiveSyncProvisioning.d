@@ -81,7 +81,7 @@ interface IEasComplianceResults2 : IEasComplianceResults2_Base, Windows.Security
 
 interface EasClientDeviceInformation : Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation, Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2
 {
-extern(Windows):
+extern(D):
 	final GUID Id()
 	{
 		GUID _ret;
@@ -140,7 +140,7 @@ extern(Windows):
 
 interface EasClientSecurityPolicy : Windows.Security.ExchangeActiveSyncProvisioning.IEasClientSecurityPolicy
 {
-extern(Windows):
+extern(D):
 	final bool RequireEncryption()
 	{
 		bool _ret;
@@ -243,7 +243,7 @@ extern(Windows):
 
 interface EasComplianceResults : Windows.Security.ExchangeActiveSyncProvisioning.IEasComplianceResults, Windows.Security.ExchangeActiveSyncProvisioning.IEasComplianceResults2
 {
-extern(Windows):
+extern(D):
 	final bool Compliant()
 	{
 		bool _ret;

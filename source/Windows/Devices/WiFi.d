@@ -66,7 +66,7 @@ extern(Windows):
 
 interface WiFiAdapter : Windows.Devices.WiFi.IWiFiAdapter
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.NetworkAdapter NetworkAdapter()
 	{
 		Windows.Networking.Connectivity.NetworkAdapter _ret;
@@ -154,7 +154,7 @@ extern(Windows):
 
 interface WiFiAvailableNetwork : Windows.Devices.WiFi.IWiFiAvailableNetwork
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Uptime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -225,7 +225,7 @@ extern(Windows):
 
 interface WiFiConnectionResult : Windows.Devices.WiFi.IWiFiConnectionResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.WiFi.WiFiConnectionStatus ConnectionStatus()
 	{
 		Windows.Devices.WiFi.WiFiConnectionStatus _ret;
@@ -236,7 +236,7 @@ extern(Windows):
 
 interface WiFiNetworkReport : Windows.Devices.WiFi.IWiFiNetworkReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;

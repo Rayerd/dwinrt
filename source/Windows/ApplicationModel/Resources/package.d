@@ -49,7 +49,7 @@ extern(Windows):
 
 interface ResourceLoader : Windows.ApplicationModel.Resources.IResourceLoader, Windows.ApplicationModel.Resources.IResourceLoader2
 {
-extern(Windows):
+extern(D):
 	final wstring GetString(wstring resource)
 	{
 		HSTRING _ret;

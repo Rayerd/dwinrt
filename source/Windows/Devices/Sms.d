@@ -456,7 +456,7 @@ interface ISmsWapMessage : ISmsWapMessage_Base, Windows.Devices.Sms.ISmsMessageB
 
 interface DeleteSmsMessageOperation : Windows.Foundation.IAsyncAction
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncActionCompletedHandler handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncAction)this.asInterface(uuid("5a648006-843a-4da9-865b-9d26e5dfad7b"))).set_Completed(handler));
@@ -475,7 +475,7 @@ extern(Windows):
 
 interface DeleteSmsMessagesOperation : Windows.Foundation.IAsyncAction
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncActionCompletedHandler handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncAction)this.asInterface(uuid("5a648006-843a-4da9-865b-9d26e5dfad7b"))).set_Completed(handler));
@@ -494,7 +494,7 @@ extern(Windows):
 
 interface GetSmsDeviceOperation : Windows.Foundation.IAsyncOperation!(Windows.Devices.Sms.SmsDevice)
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncOperationCompletedHandler!(Windows.Devices.Sms.SmsDevice) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperation!(Windows.Devices.Sms.SmsDevice))this).set_Completed(handler));
@@ -515,7 +515,7 @@ extern(Windows):
 
 interface GetSmsMessageOperation : Windows.Foundation.IAsyncOperation!(Windows.Devices.Sms.ISmsMessage)
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncOperationCompletedHandler!(Windows.Devices.Sms.ISmsMessage) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperation!(Windows.Devices.Sms.ISmsMessage))this).set_Completed(handler));
@@ -536,7 +536,7 @@ extern(Windows):
 
 interface GetSmsMessagesOperation : Windows.Foundation.IAsyncOperationWithProgress!(Windows.Foundation.Collections.IVectorView!(Windows.Devices.Sms.ISmsMessage), INT32)
 {
-extern(Windows):
+extern(D):
 	final void Progress(Windows.Foundation.AsyncOperationProgressHandler!(Windows.Foundation.Collections.IVectorView!(Windows.Devices.Sms.ISmsMessage),	 INT32) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperationWithProgress!(Windows.Foundation.Collections.IVectorView!(Windows.Devices.Sms.ISmsMessage), INT32))this).set_Progress(handler));
@@ -567,7 +567,7 @@ extern(Windows):
 
 interface SendSmsMessageOperation : Windows.Foundation.IAsyncAction
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncActionCompletedHandler handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncAction)this.asInterface(uuid("5a648006-843a-4da9-865b-9d26e5dfad7b"))).set_Completed(handler));
@@ -586,7 +586,7 @@ extern(Windows):
 
 interface SmsAppMessage : Windows.Devices.Sms.ISmsAppMessage, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -739,7 +739,7 @@ extern(Windows):
 
 interface SmsBinaryMessage : Windows.Devices.Sms.ISmsBinaryMessage, Windows.Devices.Sms.ISmsMessage
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsBinaryMessage may be altered or unavailable for releases after Windows 10. Instead, use SmsAppMessage.")
 	final Windows.Devices.Sms.SmsDataFormat Format()
 	{
@@ -786,7 +786,7 @@ extern(Windows):
 
 interface SmsBroadcastMessage : Windows.Devices.Sms.ISmsBroadcastMessage, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -881,7 +881,7 @@ extern(Windows):
 
 interface SmsDevice : Windows.Devices.Sms.ISmsDevice
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsDevice may be altered or unavailable for releases after Windows 10. Instead, use SmsDevice2.")
 	final Windows.Devices.Sms.SendSmsMessageOperation SendMessageAsync(Windows.Devices.Sms.ISmsMessage message)
 	{
@@ -980,7 +980,7 @@ extern(Windows):
 
 interface SmsDevice2 : Windows.Devices.Sms.ISmsDevice2
 {
-extern(Windows):
+extern(D):
 	final wstring SmscAddress()
 	{
 		HSTRING _ret;
@@ -1078,7 +1078,7 @@ extern(Windows):
 
 interface SmsDeviceMessageStore : Windows.Devices.Sms.ISmsDeviceMessageStore
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsDeviceMessageStore may be altered or unavailable for releases after Windows 10.")
 	final Windows.Foundation.IAsyncAction DeleteMessageAsync(UINT32 messageId)
 	{
@@ -1118,7 +1118,7 @@ extern(Windows):
 
 interface SmsFilterRule : Windows.Devices.Sms.ISmsFilterRule
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sms.SmsMessageType MessageType()
 	{
 		Windows.Devices.Sms.SmsMessageType _ret;
@@ -1212,7 +1212,7 @@ extern(Windows):
 
 interface SmsFilterRules : Windows.Devices.Sms.ISmsFilterRules
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sms.SmsFilterActionType ActionType()
 	{
 		Windows.Devices.Sms.SmsFilterActionType _ret;
@@ -1236,7 +1236,7 @@ extern(Windows):
 
 interface SmsMessageReceivedEventArgs : Windows.Devices.Sms.ISmsMessageReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsMessageReceivedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final Windows.Devices.Sms.SmsTextMessage TextMessage()
 	{
@@ -1255,7 +1255,7 @@ extern(Windows):
 
 interface SmsMessageReceivedTriggerDetails : Windows.Devices.Sms.ISmsMessageReceivedTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sms.SmsMessageType MessageType()
 	{
 		Windows.Devices.Sms.SmsMessageType _ret;
@@ -1310,7 +1310,7 @@ extern(Windows):
 
 interface SmsMessageRegistration : Windows.Devices.Sms.ISmsMessageRegistration
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1354,7 +1354,7 @@ extern(Windows):
 
 interface SmsReceivedEventDetails : Windows.Devices.Sms.ISmsReceivedEventDetails, Windows.Devices.Sms.ISmsReceivedEventDetails2
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsReceivedEventDetails may be altered or unavailable for releases after Windows 10. Instead, use SmsMessageReceivedTriggerDetails.")
 	final wstring DeviceId()
 	{
@@ -1387,7 +1387,7 @@ extern(Windows):
 
 interface SmsSendMessageResult : Windows.Devices.Sms.ISmsSendMessageResult
 {
-extern(Windows):
+extern(D):
 	final bool IsSuccessful()
 	{
 		bool _ret;
@@ -1434,7 +1434,7 @@ extern(Windows):
 
 interface SmsStatusMessage : Windows.Devices.Sms.ISmsStatusMessage, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final wstring To()
 	{
 		HSTRING _ret;
@@ -1511,7 +1511,7 @@ extern(Windows):
 
 interface SmsTextMessage : Windows.Devices.Sms.ISmsTextMessage, Windows.Devices.Sms.ISmsMessage
 {
-extern(Windows):
+extern(D):
 	deprecated("SmsTextMessage may be altered or unavailable for releases after Windows 10. Instead, use SmsTextMessage2.")
 	final Windows.Foundation.DateTime Timestamp()
 	{
@@ -1638,7 +1638,7 @@ extern(Windows):
 
 interface SmsTextMessage2 : Windows.Devices.Sms.ISmsTextMessage2, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1763,7 +1763,7 @@ extern(Windows):
 
 interface SmsVoicemailMessage : Windows.Devices.Sms.ISmsVoicemailMessage, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1822,7 +1822,7 @@ extern(Windows):
 
 interface SmsWapMessage : Windows.Devices.Sms.ISmsWapMessage, Windows.Devices.Sms.ISmsMessageBase
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;

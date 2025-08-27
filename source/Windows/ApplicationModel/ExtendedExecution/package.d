@@ -31,7 +31,7 @@ interface IExtendedExecutionSession : IExtendedExecutionSession_Base, Windows.Fo
 
 interface ExtendedExecutionRevokedEventArgs : Windows.ApplicationModel.ExtendedExecution.IExtendedExecutionRevokedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason Reason()
 	{
 		Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason _ret;
@@ -42,7 +42,7 @@ extern(Windows):
 
 interface ExtendedExecutionSession : Windows.ApplicationModel.ExtendedExecution.IExtendedExecutionSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason Reason()
 	{
 		Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason _ret;

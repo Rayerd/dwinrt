@@ -14,7 +14,7 @@ extern(Windows):
 
 interface HeadPose : Windows.Perception.People.IHeadPose
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;

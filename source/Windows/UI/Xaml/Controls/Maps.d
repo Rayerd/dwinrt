@@ -1010,7 +1010,7 @@ extern(Windows):
 
 interface CustomMapTileDataSource : Windows.UI.Xaml.Controls.Maps.MapTileDataSource, Windows.UI.Xaml.Controls.Maps.ICustomMapTileDataSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnBitmapRequested(void delegate(Windows.UI.Xaml.Controls.Maps.CustomMapTileDataSource, Windows.UI.Xaml.Controls.Maps.MapTileBitmapRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1058,7 +1058,7 @@ class CustomMapTileDataSourceT(Base) : AgileObject!Base, CustomMapTileDataSource
 
 interface HttpMapTileDataSource : Windows.UI.Xaml.Controls.Maps.MapTileDataSource, Windows.UI.Xaml.Controls.Maps.IHttpMapTileDataSource
 {
-extern(Windows):
+extern(D):
 	final wstring UriFormatString()
 	{
 		HSTRING _ret;
@@ -1137,7 +1137,7 @@ class HttpMapTileDataSourceT(Base) : AgileObject!Base, HttpMapTileDataSource
 
 interface LocalMapTileDataSource : Windows.UI.Xaml.Controls.Maps.MapTileDataSource, Windows.UI.Xaml.Controls.Maps.ILocalMapTileDataSource
 {
-extern(Windows):
+extern(D):
 	final wstring UriFormatString()
 	{
 		HSTRING _ret;
@@ -1197,7 +1197,7 @@ class LocalMapTileDataSourceT(Base) : AgileObject!Base, LocalMapTileDataSource
 
 interface MapActualCameraChangedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapActualCameraChangedEventArgs, Windows.UI.Xaml.Controls.Maps.IMapActualCameraChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Maps.MapCamera Camera()
 	{
 		Windows.UI.Xaml.Controls.Maps.MapCamera _ret;
@@ -1220,7 +1220,7 @@ extern(Windows):
 
 interface MapActualCameraChangingEventArgs : Windows.UI.Xaml.Controls.Maps.IMapActualCameraChangingEventArgs, Windows.UI.Xaml.Controls.Maps.IMapActualCameraChangingEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Maps.MapCamera Camera()
 	{
 		Windows.UI.Xaml.Controls.Maps.MapCamera _ret;
@@ -1243,7 +1243,7 @@ extern(Windows):
 
 interface MapBillboard : Windows.UI.Xaml.Controls.Maps.MapElement, Windows.UI.Xaml.Controls.Maps.IMapBillboard
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Location()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -1326,7 +1326,7 @@ extern(Windows):
 
 interface MapCamera : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapCamera
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Location()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -1409,7 +1409,7 @@ extern(Windows):
 
 interface MapContextRequestedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapContextRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -1438,7 +1438,7 @@ extern(Windows):
 
 interface MapControl : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.Maps.IMapControl, Windows.UI.Xaml.Controls.Maps.IMapControl2, Windows.UI.Xaml.Controls.Maps.IMapControl3, Windows.UI.Xaml.Controls.Maps.IMapControl4, Windows.UI.Xaml.Controls.Maps.IMapControl5
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Center()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -2267,7 +2267,7 @@ extern(Windows):
 
 interface MapControlBusinessLandmarkClickEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlBusinessLandmarkClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) LocalLocations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) _ret;
@@ -2284,7 +2284,7 @@ extern(Windows):
 
 interface MapControlBusinessLandmarkPointerEnteredEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlBusinessLandmarkPointerEnteredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) LocalLocations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) _ret;
@@ -2301,7 +2301,7 @@ extern(Windows):
 
 interface MapControlBusinessLandmarkPointerExitedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlBusinessLandmarkPointerExitedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) LocalLocations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) _ret;
@@ -2318,7 +2318,7 @@ extern(Windows):
 
 interface MapControlBusinessLandmarkRightTappedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlBusinessLandmarkRightTappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) LocalLocations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.LocalSearch.LocalLocation) _ret;
@@ -2335,7 +2335,7 @@ extern(Windows):
 
 interface MapControlDataHelper : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapControlDataHelper, Windows.UI.Xaml.Controls.Maps.IMapControlDataHelper2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnBusinessLandmarkClick(void delegate(Windows.UI.Xaml.Controls.Maps.MapControl, Windows.UI.Xaml.Controls.Maps.MapControlBusinessLandmarkClickEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2427,7 +2427,7 @@ extern(Windows):
 
 interface MapControlTransitFeatureClickEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlTransitFeatureClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -2456,7 +2456,7 @@ extern(Windows):
 
 interface MapControlTransitFeaturePointerEnteredEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlTransitFeaturePointerEnteredEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -2485,7 +2485,7 @@ extern(Windows):
 
 interface MapControlTransitFeaturePointerExitedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlTransitFeaturePointerExitedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -2514,7 +2514,7 @@ extern(Windows):
 
 interface MapControlTransitFeatureRightTappedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapControlTransitFeatureRightTappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -2587,7 +2587,7 @@ interface MapCustomExperienceChangedEventArgs : Windows.UI.Xaml.Controls.Maps.IM
 
 interface MapElement : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapElement, Windows.UI.Xaml.Controls.Maps.IMapElement2
 {
-extern(Windows):
+extern(D):
 	final INT32 ZIndex()
 	{
 		INT32 _ret;
@@ -2679,7 +2679,7 @@ class MapElementT(Base) : AgileObject!Base, MapElement
 
 interface MapElementClickEventArgs : Windows.UI.Xaml.Controls.Maps.IMapElementClickEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -2708,7 +2708,7 @@ extern(Windows):
 
 interface MapElementPointerEnteredEventArgs : Windows.UI.Xaml.Controls.Maps.IMapElementPointerEnteredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -2737,7 +2737,7 @@ extern(Windows):
 
 interface MapElementPointerExitedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapElementPointerExitedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -2766,7 +2766,7 @@ extern(Windows):
 
 interface MapIcon : Windows.UI.Xaml.Controls.Maps.MapElement, Windows.UI.Xaml.Controls.Maps.IMapIcon, Windows.UI.Xaml.Controls.Maps.IMapIcon2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Location()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -2852,7 +2852,7 @@ extern(Windows):
 
 interface MapInputEventArgs : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapInputEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -2875,7 +2875,7 @@ extern(Windows):
 
 interface MapItemsControl : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapItemsControl
 {
-extern(Windows):
+extern(D):
 	final IInspectable ItemsSource()
 	{
 		IInspectable _ret;
@@ -2937,7 +2937,7 @@ extern(Windows):
 
 interface MapPolygon : Windows.UI.Xaml.Controls.Maps.MapElement, Windows.UI.Xaml.Controls.Maps.IMapPolygon, Windows.UI.Xaml.Controls.Maps.IMapPolygon2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopath Path()
 	{
 		Windows.Devices.Geolocation.Geopath _ret;
@@ -3029,7 +3029,7 @@ extern(Windows):
 
 interface MapPolyline : Windows.UI.Xaml.Controls.Maps.MapElement, Windows.UI.Xaml.Controls.Maps.IMapPolyline
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopath Path()
 	{
 		Windows.Devices.Geolocation.Geopath _ret;
@@ -3099,7 +3099,7 @@ extern(Windows):
 
 interface MapRightTappedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapRightTappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -3122,7 +3122,7 @@ extern(Windows):
 
 interface MapRouteView : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapRouteView
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color RouteColor()
 	{
 		Windows.UI.Color _ret;
@@ -3182,7 +3182,7 @@ class MapRouteViewT(Base) : AgileObject!Base, MapRouteView
 
 interface MapScene : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapScene
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Maps.MapCamera TargetCamera()
 	{
 		Windows.UI.Xaml.Controls.Maps.MapCamera _ret;
@@ -3332,7 +3332,7 @@ interface MapStyleSheet : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Cont
 
 interface MapTargetCameraChangedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapTargetCameraChangedEventArgs, Windows.UI.Xaml.Controls.Maps.IMapTargetCameraChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Maps.MapCamera Camera()
 	{
 		Windows.UI.Xaml.Controls.Maps.MapCamera _ret;
@@ -3355,7 +3355,7 @@ extern(Windows):
 
 interface MapTileBitmapRequest : Windows.UI.Xaml.Controls.Maps.IMapTileBitmapRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IRandomAccessStreamReference PixelData()
 	{
 		Windows.Storage.Streams.IRandomAccessStreamReference _ret;
@@ -3382,7 +3382,7 @@ extern(Windows):
 
 interface MapTileBitmapRequestDeferral : Windows.UI.Xaml.Controls.Maps.IMapTileBitmapRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Controls.Maps.IMapTileBitmapRequestDeferral)this.asInterface(uuid("fe370542-a4ac-4efa-9665-0490b0cafdd2"))).abi_Complete());
@@ -3397,7 +3397,7 @@ extern(Windows):
 
 interface MapTileBitmapRequestedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapTileBitmapRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 X()
 	{
 		INT32 _ret;
@@ -3466,7 +3466,7 @@ class MapTileDataSourceT(Base) : AgileObject!Base, MapTileDataSource
 
 interface MapTileSource : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IMapTileSource
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Maps.MapTileDataSource DataSource()
 	{
 		Windows.UI.Xaml.Controls.Maps.MapTileDataSource _ret;
@@ -3707,7 +3707,7 @@ class MapTileSourceT(Base) : AgileObject!Base, MapTileSource
 
 interface MapTileUriRequest : Windows.UI.Xaml.Controls.Maps.IMapTileUriRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -3734,7 +3734,7 @@ extern(Windows):
 
 interface MapTileUriRequestDeferral : Windows.UI.Xaml.Controls.Maps.IMapTileUriRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.Controls.Maps.IMapTileUriRequestDeferral)this.asInterface(uuid("c117ade0-bf3e-4c51-8faa-4b593cf68eb2"))).abi_Complete());
@@ -3749,7 +3749,7 @@ extern(Windows):
 
 interface MapTileUriRequestedEventArgs : Windows.UI.Xaml.Controls.Maps.IMapTileUriRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 X()
 	{
 		INT32 _ret;
@@ -3784,7 +3784,7 @@ extern(Windows):
 
 interface StreetsideExperience : Windows.UI.Xaml.Controls.Maps.MapCustomExperience, Windows.UI.Xaml.Controls.Maps.IStreetsideExperience
 {
-extern(Windows):
+extern(D):
 	final bool AddressTextVisible()
 	{
 		bool _ret;
@@ -3863,7 +3863,7 @@ extern(Windows):
 
 interface StreetsidePanorama : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Maps.IStreetsidePanorama
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Location()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;

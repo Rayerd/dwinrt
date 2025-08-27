@@ -83,7 +83,7 @@ extern(Windows):
 
 interface SpiBusInfo : Windows.Devices.Spi.ISpiBusInfo
 {
-extern(Windows):
+extern(D):
 	final INT32 ChipSelectLineCount()
 	{
 		INT32 _ret;
@@ -112,7 +112,7 @@ extern(Windows):
 
 interface SpiConnectionSettings : Windows.Devices.Spi.ISpiConnectionSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 ChipSelectLine()
 	{
 		INT32 _ret;
@@ -174,7 +174,7 @@ extern(Windows):
 
 interface SpiController : Windows.Devices.Spi.ISpiController
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Spi.SpiDevice GetDevice(Windows.Devices.Spi.SpiConnectionSettings settings)
 	{
 		Windows.Devices.Spi.SpiDevice _ret;
@@ -204,7 +204,7 @@ extern(Windows):
 
 interface SpiDevice : Windows.Devices.Spi.ISpiDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;

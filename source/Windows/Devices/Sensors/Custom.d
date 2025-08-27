@@ -44,7 +44,7 @@ extern(Windows):
 
 interface CustomSensor : Windows.Devices.Sensors.Custom.ICustomSensor
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.Custom.CustomSensorReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.Custom.CustomSensorReading _ret;
@@ -106,7 +106,7 @@ extern(Windows):
 
 interface CustomSensorReading : Windows.Devices.Sensors.Custom.ICustomSensorReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -123,7 +123,7 @@ extern(Windows):
 
 interface CustomSensorReadingChangedEventArgs : Windows.Devices.Sensors.Custom.ICustomSensorReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.Custom.CustomSensorReading Reading()
 	{
 		Windows.Devices.Sensors.Custom.CustomSensorReading _ret;

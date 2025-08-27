@@ -66,7 +66,7 @@ extern(Windows):
 
 interface ContactDataProviderConnection : Windows.ApplicationModel.Contacts.DataProvider.IContactDataProviderConnection
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnSyncRequested(void delegate(Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderConnection, Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequestEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -95,7 +95,7 @@ extern(Windows):
 
 interface ContactDataProviderTriggerDetails : Windows.ApplicationModel.Contacts.DataProvider.IContactDataProviderTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderConnection Connection()
 	{
 		Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderConnection _ret;
@@ -106,7 +106,7 @@ extern(Windows):
 
 interface ContactListServerSearchReadBatchRequest : Windows.ApplicationModel.Contacts.DataProvider.IContactListServerSearchReadBatchRequest
 {
-extern(Windows):
+extern(D):
 	final wstring SessionId()
 	{
 		HSTRING _ret;
@@ -153,7 +153,7 @@ extern(Windows):
 
 interface ContactListServerSearchReadBatchRequestEventArgs : Windows.ApplicationModel.Contacts.DataProvider.IContactListServerSearchReadBatchRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequest Request()
 	{
 		Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequest _ret;
@@ -170,7 +170,7 @@ extern(Windows):
 
 interface ContactListSyncManagerSyncRequest : Windows.ApplicationModel.Contacts.DataProvider.IContactListSyncManagerSyncRequest
 {
-extern(Windows):
+extern(D):
 	final wstring ContactListId()
 	{
 		HSTRING _ret;
@@ -193,7 +193,7 @@ extern(Windows):
 
 interface ContactListSyncManagerSyncRequestEventArgs : Windows.ApplicationModel.Contacts.DataProvider.IContactListSyncManagerSyncRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequest Request()
 	{
 		Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequest _ret;

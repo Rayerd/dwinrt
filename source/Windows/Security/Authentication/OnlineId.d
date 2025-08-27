@@ -100,7 +100,7 @@ extern(Windows):
 
 interface OnlineIdAuthenticator : Windows.Security.Authentication.OnlineId.IOnlineIdAuthenticator
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.OnlineId.UserAuthenticationOperation AuthenticateUserAsync(Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest request)
 	{
 		Windows.Security.Authentication.OnlineId.UserAuthenticationOperation _ret;
@@ -152,7 +152,7 @@ extern(Windows):
 
 interface OnlineIdServiceTicket : Windows.Security.Authentication.OnlineId.IOnlineIdServiceTicket
 {
-extern(Windows):
+extern(D):
 	final wstring Value()
 	{
 		HSTRING _ret;
@@ -175,7 +175,7 @@ extern(Windows):
 
 interface OnlineIdServiceTicketRequest : Windows.Security.Authentication.OnlineId.IOnlineIdServiceTicketRequest
 {
-extern(Windows):
+extern(D):
 	final wstring Service()
 	{
 		HSTRING _ret;
@@ -228,7 +228,7 @@ interface OnlineIdSystemAuthenticator
 
 interface OnlineIdSystemAuthenticatorForUser : Windows.Security.Authentication.OnlineId.IOnlineIdSystemAuthenticatorForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.OnlineId.OnlineIdSystemTicketResult) GetTicketAsync(Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest request)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.OnlineId.OnlineIdSystemTicketResult) _ret;
@@ -255,7 +255,7 @@ extern(Windows):
 
 interface OnlineIdSystemIdentity : Windows.Security.Authentication.OnlineId.IOnlineIdSystemIdentity
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket Ticket()
 	{
 		Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket _ret;
@@ -272,7 +272,7 @@ extern(Windows):
 
 interface OnlineIdSystemTicketResult : Windows.Security.Authentication.OnlineId.IOnlineIdSystemTicketResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.OnlineId.OnlineIdSystemIdentity Identity()
 	{
 		Windows.Security.Authentication.OnlineId.OnlineIdSystemIdentity _ret;
@@ -295,7 +295,7 @@ extern(Windows):
 
 interface SignOutUserOperation : Windows.Foundation.IAsyncAction
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncActionCompletedHandler handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncAction)this.asInterface(uuid("5a648006-843a-4da9-865b-9d26e5dfad7b"))).set_Completed(handler));
@@ -314,7 +314,7 @@ extern(Windows):
 
 interface UserAuthenticationOperation : Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.OnlineId.UserIdentity)
 {
-extern(Windows):
+extern(D):
 	final void Completed(Windows.Foundation.AsyncOperationCompletedHandler!(Windows.Security.Authentication.OnlineId.UserIdentity) handler)
 	{
 		Debug.OK((cast(Windows.Foundation.IAsyncOperation!(Windows.Security.Authentication.OnlineId.UserIdentity))this).set_Completed(handler));
@@ -335,7 +335,7 @@ extern(Windows):
 
 interface UserIdentity : Windows.Security.Authentication.OnlineId.IUserIdentity
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket) Tickets()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket) _ret;

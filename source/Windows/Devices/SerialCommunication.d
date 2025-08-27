@@ -74,7 +74,7 @@ extern(Windows):
 
 interface ErrorReceivedEventArgs : Windows.Devices.SerialCommunication.IErrorReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SerialCommunication.SerialError Error()
 	{
 		Windows.Devices.SerialCommunication.SerialError _ret;
@@ -85,7 +85,7 @@ extern(Windows):
 
 interface PinChangedEventArgs : Windows.Devices.SerialCommunication.IPinChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.SerialCommunication.SerialPinChange PinChange()
 	{
 		Windows.Devices.SerialCommunication.SerialPinChange _ret;
@@ -96,7 +96,7 @@ extern(Windows):
 
 interface SerialDevice : Windows.Devices.SerialCommunication.ISerialDevice, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final UINT32 BaudRate()
 	{
 		UINT32 _ret;

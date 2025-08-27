@@ -44,7 +44,7 @@ extern(Windows):
 
 interface Compressor : Windows.Storage.Compression.ICompressor, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(bool) FinishAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(bool) _ret;
@@ -91,7 +91,7 @@ extern(Windows):
 
 interface Decompressor : Windows.Storage.Compression.IDecompressor, Windows.Storage.Streams.IInputStream, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IInputStream DetachStream()
 	{
 		Windows.Storage.Streams.IInputStream _ret;

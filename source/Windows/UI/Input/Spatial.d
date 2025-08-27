@@ -404,7 +404,7 @@ extern(Windows):
 
 interface SpatialGestureRecognizer : Windows.UI.Input.Spatial.ISpatialGestureRecognizer
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnRecognitionStarted(void delegate(Windows.UI.Input.Spatial.SpatialGestureRecognizer, Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -576,7 +576,7 @@ extern(Windows):
 
 interface SpatialHoldCanceledEventArgs : Windows.UI.Input.Spatial.ISpatialHoldCanceledEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -587,7 +587,7 @@ extern(Windows):
 
 interface SpatialHoldCompletedEventArgs : Windows.UI.Input.Spatial.ISpatialHoldCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -598,7 +598,7 @@ extern(Windows):
 
 interface SpatialHoldStartedEventArgs : Windows.UI.Input.Spatial.ISpatialHoldStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -615,7 +615,7 @@ extern(Windows):
 
 interface SpatialInteraction : Windows.UI.Input.Spatial.ISpatialInteraction
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceState SourceState()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceState _ret;
@@ -626,7 +626,7 @@ extern(Windows):
 
 interface SpatialInteractionController : Windows.UI.Input.Spatial.ISpatialInteractionController
 {
-extern(Windows):
+extern(D):
 	final bool HasTouchpad()
 	{
 		bool _ret;
@@ -667,7 +667,7 @@ extern(Windows):
 
 interface SpatialInteractionControllerProperties : Windows.UI.Input.Spatial.ISpatialInteractionControllerProperties
 {
-extern(Windows):
+extern(D):
 	final bool IsTouchpadTouched()
 	{
 		bool _ret;
@@ -714,7 +714,7 @@ extern(Windows):
 
 interface SpatialInteractionDetectedEventArgs : Windows.UI.Input.Spatial.ISpatialInteractionDetectedEventArgs, Windows.UI.Input.Spatial.ISpatialInteractionDetectedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -743,7 +743,7 @@ extern(Windows):
 
 interface SpatialInteractionManager : Windows.UI.Input.Spatial.ISpatialInteractionManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnSourceDetected(void delegate(Windows.UI.Input.Spatial.SpatialInteractionManager, Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -827,7 +827,7 @@ extern(Windows):
 
 interface SpatialInteractionSource : Windows.UI.Input.Spatial.ISpatialInteractionSource, Windows.UI.Input.Spatial.ISpatialInteractionSource2
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -874,7 +874,7 @@ extern(Windows):
 
 interface SpatialInteractionSourceEventArgs : Windows.UI.Input.Spatial.ISpatialInteractionSourceEventArgs, Windows.UI.Input.Spatial.ISpatialInteractionSourceEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceState State()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceState _ret;
@@ -891,7 +891,7 @@ extern(Windows):
 
 interface SpatialInteractionSourceLocation : Windows.UI.Input.Spatial.ISpatialInteractionSourceLocation, Windows.UI.Input.Spatial.ISpatialInteractionSourceLocation2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) Position()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) _ret;
@@ -914,7 +914,7 @@ extern(Windows):
 
 interface SpatialInteractionSourceProperties : Windows.UI.Input.Spatial.ISpatialInteractionSourceProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) TryGetSourceLossMitigationDirection(Windows.Perception.Spatial.SpatialCoordinateSystem coordinateSystem)
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.Numerics.Vector3) _ret;
@@ -937,7 +937,7 @@ extern(Windows):
 
 interface SpatialInteractionSourceState : Windows.UI.Input.Spatial.ISpatialInteractionSourceState, Windows.UI.Input.Spatial.ISpatialInteractionSourceState2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSource Source()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSource _ret;
@@ -1002,7 +1002,7 @@ extern(Windows):
 
 interface SpatialManipulationCanceledEventArgs : Windows.UI.Input.Spatial.ISpatialManipulationCanceledEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1013,7 +1013,7 @@ extern(Windows):
 
 interface SpatialManipulationCompletedEventArgs : Windows.UI.Input.Spatial.ISpatialManipulationCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1030,7 +1030,7 @@ extern(Windows):
 
 interface SpatialManipulationDelta : Windows.UI.Input.Spatial.ISpatialManipulationDelta
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Translation()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -1041,7 +1041,7 @@ extern(Windows):
 
 interface SpatialManipulationStartedEventArgs : Windows.UI.Input.Spatial.ISpatialManipulationStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1058,7 +1058,7 @@ extern(Windows):
 
 interface SpatialManipulationUpdatedEventArgs : Windows.UI.Input.Spatial.ISpatialManipulationUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1075,7 +1075,7 @@ extern(Windows):
 
 interface SpatialNavigationCanceledEventArgs : Windows.UI.Input.Spatial.ISpatialNavigationCanceledEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1086,7 +1086,7 @@ extern(Windows):
 
 interface SpatialNavigationCompletedEventArgs : Windows.UI.Input.Spatial.ISpatialNavigationCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1103,7 +1103,7 @@ extern(Windows):
 
 interface SpatialNavigationStartedEventArgs : Windows.UI.Input.Spatial.ISpatialNavigationStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1138,7 +1138,7 @@ extern(Windows):
 
 interface SpatialNavigationUpdatedEventArgs : Windows.UI.Input.Spatial.ISpatialNavigationUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1155,7 +1155,7 @@ extern(Windows):
 
 interface SpatialPointerInteractionSourcePose : Windows.UI.Input.Spatial.ISpatialPointerInteractionSourcePose
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -1178,7 +1178,7 @@ extern(Windows):
 
 interface SpatialPointerPose : Windows.UI.Input.Spatial.ISpatialPointerPose, Windows.UI.Input.Spatial.ISpatialPointerPose2
 {
-extern(Windows):
+extern(D):
 	final Windows.Perception.PerceptionTimestamp Timestamp()
 	{
 		Windows.Perception.PerceptionTimestamp _ret;
@@ -1214,7 +1214,7 @@ extern(Windows):
 
 interface SpatialRecognitionEndedEventArgs : Windows.UI.Input.Spatial.ISpatialRecognitionEndedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1225,7 +1225,7 @@ extern(Windows):
 
 interface SpatialRecognitionStartedEventArgs : Windows.UI.Input.Spatial.ISpatialRecognitionStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;
@@ -1248,7 +1248,7 @@ extern(Windows):
 
 interface SpatialTappedEventArgs : Windows.UI.Input.Spatial.ISpatialTappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Spatial.SpatialInteractionSourceKind InteractionSourceKind()
 	{
 		Windows.UI.Input.Spatial.SpatialInteractionSourceKind _ret;

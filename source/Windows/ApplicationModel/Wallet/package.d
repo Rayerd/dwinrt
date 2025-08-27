@@ -196,7 +196,7 @@ extern(Windows):
 
 interface WalletBarcode : Windows.ApplicationModel.Wallet.IWalletBarcode
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Wallet.WalletBarcodeSymbology Symbology()
 	{
 		Windows.ApplicationModel.Wallet.WalletBarcodeSymbology _ret;
@@ -233,7 +233,7 @@ extern(Windows):
 
 interface WalletItem : Windows.ApplicationModel.Wallet.IWalletItem
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -511,7 +511,7 @@ extern(Windows):
 
 interface WalletItemCustomProperty : Windows.ApplicationModel.Wallet.IWalletItemCustomProperty
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -573,7 +573,7 @@ extern(Windows):
 
 interface WalletItemStore : Windows.ApplicationModel.Wallet.IWalletItemStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction AddAsync(wstring id, Windows.ApplicationModel.Wallet.WalletItem item)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -656,7 +656,7 @@ interface WalletManager
 
 interface WalletRelevantLocation : Windows.ApplicationModel.Wallet.IWalletRelevantLocation
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.BasicGeoposition Position()
 	{
 		Windows.Devices.Geolocation.BasicGeoposition _ret;
@@ -687,7 +687,7 @@ extern(Windows):
 
 interface WalletTransaction : Windows.ApplicationModel.Wallet.IWalletTransaction
 {
-extern(Windows):
+extern(D):
 	final wstring Description()
 	{
 		HSTRING _ret;
@@ -758,7 +758,7 @@ extern(Windows):
 
 interface WalletVerb : Windows.ApplicationModel.Wallet.IWalletVerb
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;

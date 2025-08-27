@@ -1251,7 +1251,7 @@ extern(Windows):
 
 interface AppBarTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IAppBarTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect ClipRect()
 	{
 		Windows.Foundation.Rect _ret;
@@ -1298,7 +1298,7 @@ extern(Windows):
 
 interface ButtonBase : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.Primitives.IButtonBase
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.ClickMode ClickMode()
 	{
 		Windows.UI.Xaml.Controls.ClickMode _ret;
@@ -1840,7 +1840,7 @@ interface CalendarPanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Contro
 
 interface CalendarViewTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.ICalendarViewTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double MinViewWidth()
 	{
 		double _ret;
@@ -1935,7 +1935,7 @@ extern(Windows):
 
 interface CarouselPanel : Windows.UI.Xaml.Controls.VirtualizingPanel, Windows.UI.Xaml.Controls.Primitives.ICarouselPanel, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo
 {
-extern(Windows):
+extern(D):
 	final bool CanVerticallyScroll()
 	{
 		bool _ret;
@@ -2450,7 +2450,7 @@ class CarouselPanelT(Base) : AgileObject!Base, CarouselPanel
 
 interface ComboBoxTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IComboBoxTemplateSettings, Windows.UI.Xaml.Controls.Primitives.IComboBoxTemplateSettings2
 {
-extern(Windows):
+extern(D):
 	final double DropDownOpenedHeight()
 	{
 		double _ret;
@@ -2485,7 +2485,7 @@ extern(Windows):
 
 interface CommandBarTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.ICommandBarTemplateSettings, Windows.UI.Xaml.Controls.Primitives.ICommandBarTemplateSettings2, Windows.UI.Xaml.Controls.Primitives.ICommandBarTemplateSettings3
 {
-extern(Windows):
+extern(D):
 	final double ContentHeight()
 	{
 		double _ret;
@@ -2544,7 +2544,7 @@ extern(Windows):
 
 interface DragCompletedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.Primitives.IDragCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double HorizontalChange()
 	{
 		double _ret;
@@ -2586,7 +2586,7 @@ class DragCompletedEventArgsT(Base) : AgileObject!Base, DragCompletedEventArgs
 
 interface DragDeltaEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.Primitives.IDragDeltaEventArgs
 {
-extern(Windows):
+extern(D):
 	final double HorizontalChange()
 	{
 		double _ret;
@@ -2621,7 +2621,7 @@ class DragDeltaEventArgsT(Base) : AgileObject!Base, DragDeltaEventArgs
 
 interface DragStartedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.Primitives.IDragStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double HorizontalOffset()
 	{
 		double _ret;
@@ -2656,7 +2656,7 @@ class DragStartedEventArgsT(Base) : AgileObject!Base, DragStartedEventArgs
 
 interface FlyoutBase : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IFlyoutBase, Windows.UI.Xaml.Controls.Primitives.IFlyoutBaseOverrides, Windows.UI.Xaml.Controls.Primitives.IFlyoutBase2, Windows.UI.Xaml.Controls.Primitives.IFlyoutBase3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode Placement()
 	{
 		Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode _ret;
@@ -2867,7 +2867,7 @@ class FlyoutBaseT(Base) : AgileObject!Base, FlyoutBase
 
 interface FlyoutBaseClosingEventArgs : Windows.UI.Xaml.Controls.Primitives.IFlyoutBaseClosingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -2898,7 +2898,7 @@ interface GeneratorPositionHelper : Windows.UI.Xaml.Controls.Primitives.IGenerat
 
 interface GridViewItemPresenter : Windows.UI.Xaml.Controls.ContentPresenter, Windows.UI.Xaml.Controls.Primitives.IGridViewItemPresenter
 {
-extern(Windows):
+extern(D):
 	final bool SelectionCheckMarkVisualEnabled()
 	{
 		bool _ret;
@@ -3656,7 +3656,7 @@ class GridViewItemPresenterT(Base) : AgileObject!Base, GridViewItemPresenter
 
 interface GridViewItemTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IGridViewItemTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 DragItemsCount()
 	{
 		INT32 _ret;
@@ -3667,7 +3667,7 @@ extern(Windows):
 
 interface ItemsChangedEventArgs : Windows.UI.Xaml.Controls.Primitives.IItemsChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 Action()
 	{
 		INT32 _ret;
@@ -3702,7 +3702,7 @@ extern(Windows):
 
 interface JumpListItemBackgroundConverter : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IJumpListItemBackgroundConverter, Windows.UI.Xaml.Data.IValueConverter
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush Enabled()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -3764,7 +3764,7 @@ extern(Windows):
 
 interface JumpListItemForegroundConverter : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IJumpListItemForegroundConverter, Windows.UI.Xaml.Data.IValueConverter
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush Enabled()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -3848,7 +3848,7 @@ interface LayoutInformation : Windows.UI.Xaml.Controls.Primitives.ILayoutInforma
 
 interface ListViewItemPresenter : Windows.UI.Xaml.Controls.ContentPresenter, Windows.UI.Xaml.Controls.Primitives.IListViewItemPresenter, Windows.UI.Xaml.Controls.Primitives.IListViewItemPresenter2
 {
-extern(Windows):
+extern(D):
 	final bool SelectionCheckMarkVisualEnabled()
 	{
 		bool _ret;
@@ -4679,7 +4679,7 @@ class ListViewItemPresenterT(Base) : AgileObject!Base, ListViewItemPresenter
 
 interface ListViewItemTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IListViewItemTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 DragItemsCount()
 	{
 		INT32 _ret;
@@ -4690,7 +4690,7 @@ extern(Windows):
 
 interface LoopingSelector : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.Primitives.ILoopingSelector
 {
-extern(Windows):
+extern(D):
 	final bool ShouldLoop()
 	{
 		bool _ret;
@@ -4828,7 +4828,7 @@ interface LoopingSelectorItem : Windows.UI.Xaml.Controls.ContentControl, Windows
 
 interface LoopingSelectorPanel : Windows.UI.Xaml.Controls.Canvas, Windows.UI.Xaml.Controls.Primitives.ILoopingSelectorPanel, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo
 {
-extern(Windows):
+extern(D):
 	final bool AreHorizontalSnapPointsRegular()
 	{
 		bool _ret;
@@ -4877,7 +4877,7 @@ extern(Windows):
 
 interface MenuFlyoutPresenterTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IMenuFlyoutPresenterTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double FlyoutContentMinWidth()
 	{
 		double _ret;
@@ -4888,7 +4888,7 @@ extern(Windows):
 
 interface OrientedVirtualizingPanel : Windows.UI.Xaml.Controls.VirtualizingPanel, Windows.UI.Xaml.Controls.Primitives.IOrientedVirtualizingPanel, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo, Windows.UI.Xaml.Controls.IInsertionPanel
 {
-extern(Windows):
+extern(D):
 	final bool CanVerticallyScroll()
 	{
 		bool _ret;
@@ -5933,7 +5933,7 @@ interface PivotHeaderPanel : Windows.UI.Xaml.Controls.Canvas, Windows.UI.Xaml.Co
 
 interface PivotPanel : Windows.UI.Xaml.Controls.Panel, Windows.UI.Xaml.Controls.Primitives.IPivotPanel, Windows.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo
 {
-extern(Windows):
+extern(D):
 	final bool AreHorizontalSnapPointsRegular()
 	{
 		bool _ret;
@@ -5988,7 +5988,7 @@ extern(Windows):
 
 interface Popup : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.Primitives.IPopup, Windows.UI.Xaml.Controls.Primitives.IPopup2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Child()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -6132,7 +6132,7 @@ extern(Windows):
 
 interface ProgressBarTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IProgressBarTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double EllipseDiameter()
 	{
 		double _ret;
@@ -6179,7 +6179,7 @@ extern(Windows):
 
 interface ProgressRingTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IProgressRingTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double EllipseDiameter()
 	{
 		double _ret;
@@ -6202,7 +6202,7 @@ extern(Windows):
 
 interface RangeBase : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.Primitives.IRangeBase, Windows.UI.Xaml.Controls.Primitives.IRangeBaseOverrides
 {
-extern(Windows):
+extern(D):
 	final double Minimum()
 	{
 		double _ret;
@@ -6733,7 +6733,7 @@ class RangeBaseT(Base) : AgileObject!Base, RangeBase
 
 interface RangeBaseValueChangedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.Primitives.IRangeBaseValueChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double OldValue()
 	{
 		double _ret;
@@ -6750,7 +6750,7 @@ extern(Windows):
 
 interface RepeatButton : Windows.UI.Xaml.Controls.Primitives.ButtonBase, Windows.UI.Xaml.Controls.Primitives.IRepeatButton
 {
-extern(Windows):
+extern(D):
 	final INT32 Delay()
 	{
 		INT32 _ret;
@@ -6800,7 +6800,7 @@ extern(Windows):
 
 interface ScrollBar : Windows.UI.Xaml.Controls.Primitives.RangeBase, Windows.UI.Xaml.Controls.Primitives.IScrollBar
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Controls.Orientation Orientation()
 	{
 		Windows.UI.Xaml.Controls.Orientation _ret;
@@ -6876,7 +6876,7 @@ extern(Windows):
 
 interface ScrollEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Controls.Primitives.IScrollEventArgs
 {
-extern(Windows):
+extern(D):
 	final double NewValue()
 	{
 		double _ret;
@@ -6899,7 +6899,7 @@ extern(Windows):
 
 interface Selector : Windows.UI.Xaml.Controls.ItemsControl, Windows.UI.Xaml.Controls.Primitives.ISelector
 {
-extern(Windows):
+extern(D):
 	final INT32 SelectedIndex()
 	{
 		INT32 _ret;
@@ -7475,7 +7475,7 @@ class SelectorT(Base) : AgileObject!Base, Selector
 
 interface SelectorItem : Windows.UI.Xaml.Controls.ContentControl, Windows.UI.Xaml.Controls.Primitives.ISelectorItem
 {
-extern(Windows):
+extern(D):
 	final bool IsSelected()
 	{
 		bool _ret;
@@ -7933,7 +7933,7 @@ class SelectorItemT(Base) : AgileObject!Base, SelectorItem
 
 interface SettingsFlyoutTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.ISettingsFlyoutTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush HeaderBackground()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -7974,7 +7974,7 @@ extern(Windows):
 
 interface SplitViewTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.ISplitViewTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double OpenPaneLength()
 	{
 		double _ret;
@@ -8015,7 +8015,7 @@ extern(Windows):
 
 interface Thumb : Windows.UI.Xaml.Controls.Control, Windows.UI.Xaml.Controls.Primitives.IThumb
 {
-extern(Windows):
+extern(D):
 	final bool IsDragging()
 	{
 		bool _ret;
@@ -8079,7 +8079,7 @@ extern(Windows):
 
 interface TickBar : Windows.UI.Xaml.FrameworkElement, Windows.UI.Xaml.Controls.Primitives.ITickBar
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Media.Brush Fill()
 	{
 		Windows.UI.Xaml.Media.Brush _ret;
@@ -8113,7 +8113,7 @@ extern(Windows):
 
 interface ToggleButton : Windows.UI.Xaml.Controls.Primitives.ButtonBase, Windows.UI.Xaml.Controls.Primitives.IToggleButton, Windows.UI.Xaml.Controls.Primitives.IToggleButtonOverrides
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(bool) IsChecked()
 	{
 		Windows.Foundation.IReference!(bool) _ret;
@@ -8639,7 +8639,7 @@ class ToggleButtonT(Base) : AgileObject!Base, ToggleButton
 
 interface ToggleSwitchTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IToggleSwitchTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double KnobCurrentToOnOffset()
 	{
 		double _ret;
@@ -8692,7 +8692,7 @@ extern(Windows):
 
 interface ToolTipTemplateSettings : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Controls.Primitives.IToolTipTemplateSettings
 {
-extern(Windows):
+extern(D):
 	final double FromHorizontalOffset()
 	{
 		double _ret;

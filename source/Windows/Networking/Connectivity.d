@@ -363,7 +363,7 @@ extern(Windows):
 
 interface AttributedNetworkUsage : Windows.Networking.Connectivity.IAttributedNetworkUsage
 {
-extern(Windows):
+extern(D):
 	final ulong BytesSent()
 	{
 		ulong _ret;
@@ -398,7 +398,7 @@ extern(Windows):
 
 interface CellularApnContext : Windows.Networking.Connectivity.ICellularApnContext
 {
-extern(Windows):
+extern(D):
 	final wstring ProviderId()
 	{
 		HSTRING _ret;
@@ -469,7 +469,7 @@ extern(Windows):
 
 interface ConnectionCost : Windows.Networking.Connectivity.IConnectionCost, Windows.Networking.Connectivity.IConnectionCost2
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.NetworkCostType NetworkCostType()
 	{
 		Windows.Networking.Connectivity.NetworkCostType _ret;
@@ -504,7 +504,7 @@ extern(Windows):
 
 interface ConnectionProfile : Windows.Networking.Connectivity.IConnectionProfile, Windows.Networking.Connectivity.IConnectionProfile2, Windows.Networking.Connectivity.IConnectionProfile3
 {
-extern(Windows):
+extern(D):
 	final wstring ProfileName()
 	{
 		HSTRING _ret;
@@ -626,7 +626,7 @@ extern(Windows):
 
 interface ConnectionProfileFilter : Windows.Networking.Connectivity.IConnectionProfileFilter, Windows.Networking.Connectivity.IConnectionProfileFilter2
 {
-extern(Windows):
+extern(D):
 	final void IsConnected(bool value)
 	{
 		Debug.OK((cast(Windows.Networking.Connectivity.IConnectionProfileFilter)this.asInterface(uuid("204c7cc8-bd2d-4e8d-a4b3-455ec337388a"))).set_IsConnected(value));
@@ -723,7 +723,7 @@ extern(Windows):
 
 interface ConnectionSession : Windows.Networking.Connectivity.IConnectionSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.ConnectionProfile ConnectionProfile()
 	{
 		Windows.Networking.Connectivity.ConnectionProfile _ret;
@@ -738,7 +738,7 @@ extern(Windows):
 
 interface ConnectivityInterval : Windows.Networking.Connectivity.IConnectivityInterval
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime StartTime()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -779,7 +779,7 @@ interface ConnectivityManager
 
 interface DataPlanStatus : Windows.Networking.Connectivity.IDataPlanStatus
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.DataPlanUsage DataPlanUsage()
 	{
 		Windows.Networking.Connectivity.DataPlanUsage _ret;
@@ -820,7 +820,7 @@ extern(Windows):
 
 interface DataPlanUsage : Windows.Networking.Connectivity.IDataPlanUsage
 {
-extern(Windows):
+extern(D):
 	final UINT32 MegabytesUsed()
 	{
 		UINT32 _ret;
@@ -837,7 +837,7 @@ extern(Windows):
 
 interface DataUsage : Windows.Networking.Connectivity.IDataUsage
 {
-extern(Windows):
+extern(D):
 	deprecated("IDataUsage may be altered or unavailable for releases after Windows 8.1. Instead, use INetworkUsage.")
 	final ulong BytesSent()
 	{
@@ -856,7 +856,7 @@ extern(Windows):
 
 interface IPInformation : Windows.Networking.Connectivity.IIPInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.NetworkAdapter NetworkAdapter()
 	{
 		Windows.Networking.Connectivity.NetworkAdapter _ret;
@@ -873,7 +873,7 @@ extern(Windows):
 
 interface LanIdentifier : Windows.Networking.Connectivity.ILanIdentifier
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.LanIdentifierData InfrastructureId()
 	{
 		Windows.Networking.Connectivity.LanIdentifierData _ret;
@@ -896,7 +896,7 @@ extern(Windows):
 
 interface LanIdentifierData : Windows.Networking.Connectivity.ILanIdentifierData
 {
-extern(Windows):
+extern(D):
 	final UINT32 Type()
 	{
 		UINT32 _ret;
@@ -913,7 +913,7 @@ extern(Windows):
 
 interface NetworkAdapter : Windows.Networking.Connectivity.INetworkAdapter
 {
-extern(Windows):
+extern(D):
 	final ulong OutboundMaxBitsPerSecond()
 	{
 		ulong _ret;
@@ -1010,7 +1010,7 @@ interface NetworkInformation
 
 interface NetworkItem : Windows.Networking.Connectivity.INetworkItem
 {
-extern(Windows):
+extern(D):
 	final GUID NetworkId()
 	{
 		GUID _ret;
@@ -1027,7 +1027,7 @@ extern(Windows):
 
 interface NetworkSecuritySettings : Windows.Networking.Connectivity.INetworkSecuritySettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.NetworkAuthenticationType NetworkAuthenticationType()
 	{
 		Windows.Networking.Connectivity.NetworkAuthenticationType _ret;
@@ -1044,7 +1044,7 @@ extern(Windows):
 
 interface NetworkStateChangeEventDetails : Windows.Networking.Connectivity.INetworkStateChangeEventDetails, Windows.Networking.Connectivity.INetworkStateChangeEventDetails2
 {
-extern(Windows):
+extern(D):
 	final bool HasNewInternetConnectionProfile()
 	{
 		bool _ret;
@@ -1097,7 +1097,7 @@ extern(Windows):
 
 interface NetworkUsage : Windows.Networking.Connectivity.INetworkUsage
 {
-extern(Windows):
+extern(D):
 	final ulong BytesSent()
 	{
 		ulong _ret;
@@ -1120,7 +1120,7 @@ extern(Windows):
 
 interface ProxyConfiguration : Windows.Networking.Connectivity.IProxyConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Foundation.Uri) ProxyUris()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Foundation.Uri) _ret;
@@ -1137,7 +1137,7 @@ extern(Windows):
 
 interface RoutePolicy : Windows.Networking.Connectivity.IRoutePolicy
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Connectivity.ConnectionProfile ConnectionProfile()
 	{
 		Windows.Networking.Connectivity.ConnectionProfile _ret;
@@ -1167,7 +1167,7 @@ extern(Windows):
 
 interface WlanConnectionProfileDetails : Windows.Networking.Connectivity.IWlanConnectionProfileDetails
 {
-extern(Windows):
+extern(D):
 	final wstring GetConnectedSsid()
 	{
 		HSTRING _ret;
@@ -1178,7 +1178,7 @@ extern(Windows):
 
 interface WwanConnectionProfileDetails : Windows.Networking.Connectivity.IWwanConnectionProfileDetails
 {
-extern(Windows):
+extern(D):
 	final wstring HomeProviderId()
 	{
 		HSTRING _ret;

@@ -97,7 +97,7 @@ extern(Windows):
 
 interface DialApp : Windows.Media.DialProtocol.IDialApp
 {
-extern(Windows):
+extern(D):
 	final wstring AppName()
 	{
 		HSTRING _ret;
@@ -126,7 +126,7 @@ extern(Windows):
 
 interface DialAppStateDetails : Windows.Media.DialProtocol.IDialAppStateDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.DialProtocol.DialAppState State()
 	{
 		Windows.Media.DialProtocol.DialAppState _ret;
@@ -143,7 +143,7 @@ extern(Windows):
 
 interface DialDevice : Windows.Media.DialProtocol.IDialDevice, Windows.Media.DialProtocol.IDialDevice2
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -197,7 +197,7 @@ extern(Windows):
 
 interface DialDevicePicker : Windows.Media.DialProtocol.IDialDevicePicker
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.DialProtocol.DialDevicePickerFilter Filter()
 	{
 		Windows.Media.DialProtocol.DialDevicePickerFilter _ret;
@@ -280,7 +280,7 @@ extern(Windows):
 
 interface DialDevicePickerFilter : Windows.Media.DialProtocol.IDialDevicePickerFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) SupportedAppNames()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -291,7 +291,7 @@ extern(Windows):
 
 interface DialDeviceSelectedEventArgs : Windows.Media.DialProtocol.IDialDeviceSelectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.DialProtocol.DialDevice SelectedDialDevice()
 	{
 		Windows.Media.DialProtocol.DialDevice _ret;
@@ -302,7 +302,7 @@ extern(Windows):
 
 interface DialDisconnectButtonClickedEventArgs : Windows.Media.DialProtocol.IDialDisconnectButtonClickedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.DialProtocol.DialDevice Device()
 	{
 		Windows.Media.DialProtocol.DialDevice _ret;

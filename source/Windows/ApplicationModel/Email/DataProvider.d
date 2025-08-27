@@ -370,7 +370,7 @@ extern(Windows):
 
 interface EmailDataProviderConnection : Windows.ApplicationModel.Email.DataProvider.IEmailDataProviderConnection
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnMailboxSyncRequested(void delegate(Windows.ApplicationModel.Email.DataProvider.EmailDataProviderConnection, Windows.ApplicationModel.Email.DataProvider.EmailMailboxSyncManagerSyncRequestEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -529,7 +529,7 @@ extern(Windows):
 
 interface EmailDataProviderTriggerDetails : Windows.ApplicationModel.Email.DataProvider.IEmailDataProviderTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailDataProviderConnection Connection()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailDataProviderConnection _ret;
@@ -540,7 +540,7 @@ extern(Windows):
 
 interface EmailMailboxCreateFolderRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxCreateFolderRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -575,7 +575,7 @@ extern(Windows):
 
 interface EmailMailboxCreateFolderRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxCreateFolderRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxCreateFolderRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxCreateFolderRequest _ret;
@@ -592,7 +592,7 @@ extern(Windows):
 
 interface EmailMailboxDeleteFolderRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDeleteFolderRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -621,7 +621,7 @@ extern(Windows):
 
 interface EmailMailboxDeleteFolderRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDeleteFolderRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxDeleteFolderRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxDeleteFolderRequest _ret;
@@ -638,7 +638,7 @@ extern(Windows):
 
 interface EmailMailboxDownloadAttachmentRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDownloadAttachmentRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -673,7 +673,7 @@ extern(Windows):
 
 interface EmailMailboxDownloadAttachmentRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDownloadAttachmentRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadAttachmentRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadAttachmentRequest _ret;
@@ -690,7 +690,7 @@ extern(Windows):
 
 interface EmailMailboxDownloadMessageRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDownloadMessageRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -719,7 +719,7 @@ extern(Windows):
 
 interface EmailMailboxDownloadMessageRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxDownloadMessageRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadMessageRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadMessageRequest _ret;
@@ -736,7 +736,7 @@ extern(Windows):
 
 interface EmailMailboxEmptyFolderRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxEmptyFolderRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -765,7 +765,7 @@ extern(Windows):
 
 interface EmailMailboxEmptyFolderRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxEmptyFolderRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxEmptyFolderRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxEmptyFolderRequest _ret;
@@ -782,7 +782,7 @@ extern(Windows):
 
 interface EmailMailboxForwardMeetingRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxForwardMeetingRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -841,7 +841,7 @@ extern(Windows):
 
 interface EmailMailboxForwardMeetingRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxForwardMeetingRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxForwardMeetingRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxForwardMeetingRequest _ret;
@@ -858,7 +858,7 @@ extern(Windows):
 
 interface EmailMailboxGetAutoReplySettingsRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxGetAutoReplySettingsRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -887,7 +887,7 @@ extern(Windows):
 
 interface EmailMailboxGetAutoReplySettingsRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxGetAutoReplySettingsRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxGetAutoReplySettingsRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxGetAutoReplySettingsRequest _ret;
@@ -904,7 +904,7 @@ extern(Windows):
 
 interface EmailMailboxMoveFolderRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxMoveFolderRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -945,7 +945,7 @@ extern(Windows):
 
 interface EmailMailboxMoveFolderRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxMoveFolderRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxMoveFolderRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxMoveFolderRequest _ret;
@@ -962,7 +962,7 @@ extern(Windows):
 
 interface EmailMailboxProposeNewTimeForMeetingRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxProposeNewTimeForMeetingRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1015,7 +1015,7 @@ extern(Windows):
 
 interface EmailMailboxProposeNewTimeForMeetingRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxProposeNewTimeForMeetingRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxProposeNewTimeForMeetingRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxProposeNewTimeForMeetingRequest _ret;
@@ -1032,7 +1032,7 @@ extern(Windows):
 
 interface EmailMailboxResolveRecipientsRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxResolveRecipientsRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1061,7 +1061,7 @@ extern(Windows):
 
 interface EmailMailboxResolveRecipientsRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxResolveRecipientsRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxResolveRecipientsRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxResolveRecipientsRequest _ret;
@@ -1078,7 +1078,7 @@ extern(Windows):
 
 interface EmailMailboxServerSearchReadBatchRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxServerSearchReadBatchRequest
 {
-extern(Windows):
+extern(D):
 	final wstring SessionId()
 	{
 		HSTRING _ret;
@@ -1131,7 +1131,7 @@ extern(Windows):
 
 interface EmailMailboxServerSearchReadBatchRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxServerSearchReadBatchRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxServerSearchReadBatchRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxServerSearchReadBatchRequest _ret;
@@ -1148,7 +1148,7 @@ extern(Windows):
 
 interface EmailMailboxSetAutoReplySettingsRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxSetAutoReplySettingsRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1177,7 +1177,7 @@ extern(Windows):
 
 interface EmailMailboxSetAutoReplySettingsRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxSetAutoReplySettingsRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxSetAutoReplySettingsRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxSetAutoReplySettingsRequest _ret;
@@ -1194,7 +1194,7 @@ extern(Windows):
 
 interface EmailMailboxSyncManagerSyncRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxSyncManagerSyncRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1217,7 +1217,7 @@ extern(Windows):
 
 interface EmailMailboxSyncManagerSyncRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxSyncManagerSyncRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxSyncManagerSyncRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxSyncManagerSyncRequest _ret;
@@ -1234,7 +1234,7 @@ extern(Windows):
 
 interface EmailMailboxUpdateMeetingResponseRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxUpdateMeetingResponseRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1287,7 +1287,7 @@ extern(Windows):
 
 interface EmailMailboxUpdateMeetingResponseRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxUpdateMeetingResponseRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxUpdateMeetingResponseRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxUpdateMeetingResponseRequest _ret;
@@ -1304,7 +1304,7 @@ extern(Windows):
 
 interface EmailMailboxValidateCertificatesRequest : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxValidateCertificatesRequest
 {
-extern(Windows):
+extern(D):
 	final wstring EmailMailboxId()
 	{
 		HSTRING _ret;
@@ -1333,7 +1333,7 @@ extern(Windows):
 
 interface EmailMailboxValidateCertificatesRequestEventArgs : Windows.ApplicationModel.Email.DataProvider.IEmailMailboxValidateCertificatesRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Email.DataProvider.EmailMailboxValidateCertificatesRequest Request()
 	{
 		Windows.ApplicationModel.Email.DataProvider.EmailMailboxValidateCertificatesRequest _ret;

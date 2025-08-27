@@ -196,7 +196,7 @@ extern(Windows):
 
 interface AccountsSettingsPane : Windows.UI.ApplicationSettings.IAccountsSettingsPane
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAccountCommandsRequested(void delegate(Windows.UI.ApplicationSettings.AccountsSettingsPane, Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -228,7 +228,7 @@ extern(Windows):
 
 interface AccountsSettingsPaneCommandsRequestedEventArgs : Windows.UI.ApplicationSettings.IAccountsSettingsPaneCommandsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.ApplicationSettings.WebAccountProviderCommand) WebAccountProviderCommands()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.ApplicationSettings.WebAccountProviderCommand) _ret;
@@ -273,7 +273,7 @@ extern(Windows):
 
 interface AccountsSettingsPaneEventDeferral : Windows.UI.ApplicationSettings.IAccountsSettingsPaneEventDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.ApplicationSettings.IAccountsSettingsPaneEventDeferral)this.asInterface(uuid("cbf25d3f-e5ba-40ef-93da-65e096e5fb04"))).abi_Complete());
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface CredentialCommand : Windows.UI.ApplicationSettings.ICredentialCommand
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.PasswordCredential PasswordCredential()
 	{
 		Windows.Security.Credentials.PasswordCredential _ret;
@@ -313,7 +313,7 @@ extern(Windows):
 
 interface SettingsCommand : Windows.UI.Popups.IUICommand
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -330,9 +330,9 @@ extern(Windows):
 		Debug.OK((cast(Windows.UI.Popups.IUICommand)this.asInterface(uuid("4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f"))).get_Invoked(&_ret));
 		return _ret;
 	}
-	final void Invoked(Windows.UI.Popups.UICommandInvokedHandler value)
+	final void Invoked(void delegate(Windows.UI.Popups.IUICommand) value)
 	{
-		Debug.OK((cast(Windows.UI.Popups.IUICommand)this.asInterface(uuid("4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f"))).set_Invoked(value));
+		Debug.OK((cast(Windows.UI.Popups.IUICommand)this.asInterface(uuid("4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f"))).set_Invoked(event!(Windows.UI.Popups.UICommandInvokedHandler, Windows.UI.Popups.IUICommand)(value)));
 	}
 	final IInspectable Id()
 	{
@@ -357,18 +357,18 @@ extern(Windows):
 		Debug.OK(staticInstance.get_AccountsCommand(&_ret));
 		return _ret;
 	}
-	static Windows.UI.ApplicationSettings.SettingsCommand New(IInspectable settingsCommandId, wstring label, Windows.UI.Popups.UICommandInvokedHandler handler)
+	static Windows.UI.ApplicationSettings.SettingsCommand New(IInspectable settingsCommandId, wstring label, void delegate(Windows.UI.Popups.IUICommand) handler)
 	{
 		auto factory = factory!(Windows.UI.ApplicationSettings.ISettingsCommandFactory);
 		Windows.UI.ApplicationSettings.SettingsCommand _ret;
-		Debug.OK((cast(Windows.UI.ApplicationSettings.ISettingsCommandFactory)factory.asInterface(uuid("68e15b33-1c83-433a-aa5a-ceeea5bd4764"))).abi_CreateSettingsCommand(settingsCommandId, hstring(label).handle, handler, &_ret));
+		Debug.OK((cast(Windows.UI.ApplicationSettings.ISettingsCommandFactory)factory.asInterface(uuid("68e15b33-1c83-433a-aa5a-ceeea5bd4764"))).abi_CreateSettingsCommand(settingsCommandId, hstring(label).handle, event!(Windows.UI.Popups.UICommandInvokedHandler, Windows.UI.Popups.IUICommand)(handler), &_ret));
 		return _ret;
 	}
 }
 
 interface SettingsPane : Windows.UI.ApplicationSettings.ISettingsPane
 {
-extern(Windows):
+extern(D):
 	deprecated("SettingsPane is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final EventRegistrationToken OnCommandsRequested(void delegate(Windows.UI.ApplicationSettings.SettingsPane, Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs) fn)
 	{
@@ -411,7 +411,7 @@ extern(Windows):
 
 interface SettingsPaneCommandsRequest : Windows.UI.ApplicationSettings.ISettingsPaneCommandsRequest
 {
-extern(Windows):
+extern(D):
 	deprecated("SettingsPaneCommandsRequest is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Foundation.Collections.IVector!(Windows.UI.ApplicationSettings.SettingsCommand) ApplicationCommands()
 	{
@@ -423,7 +423,7 @@ extern(Windows):
 
 interface SettingsPaneCommandsRequestedEventArgs : Windows.UI.ApplicationSettings.ISettingsPaneCommandsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("SettingsPaneCommandsRequestedEventArgs is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest Request()
 	{
@@ -435,7 +435,7 @@ extern(Windows):
 
 interface WebAccountCommand : Windows.UI.ApplicationSettings.IWebAccountCommand
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccount WebAccount()
 	{
 		Windows.Security.Credentials.WebAccount _ret;
@@ -465,7 +465,7 @@ extern(Windows):
 
 interface WebAccountInvokedArgs : Windows.UI.ApplicationSettings.IWebAccountInvokedArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ApplicationSettings.WebAccountAction Action()
 	{
 		Windows.UI.ApplicationSettings.WebAccountAction _ret;
@@ -476,7 +476,7 @@ extern(Windows):
 
 interface WebAccountProviderCommand : Windows.UI.ApplicationSettings.IWebAccountProviderCommand
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccountProvider WebAccountProvider()
 	{
 		Windows.Security.Credentials.WebAccountProvider _ret;

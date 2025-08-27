@@ -485,7 +485,7 @@ extern(Windows):
 
 interface Appointment : Windows.ApplicationModel.Appointments.IAppointment, Windows.ApplicationModel.Appointments.IAppointment2, Windows.ApplicationModel.Appointments.IAppointment3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime StartTime()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -752,7 +752,7 @@ extern(Windows):
 
 interface AppointmentCalendar : Windows.ApplicationModel.Appointments.IAppointmentCalendar, Windows.ApplicationModel.Appointments.IAppointmentCalendar2, Windows.ApplicationModel.Appointments.IAppointmentCalendar3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color DisplayColor()
 	{
 		Windows.UI.Color _ret;
@@ -1044,7 +1044,7 @@ extern(Windows):
 
 interface AppointmentCalendarSyncManager : Windows.ApplicationModel.Appointments.IAppointmentCalendarSyncManager, Windows.ApplicationModel.Appointments.IAppointmentCalendarSyncManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus Status()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus _ret;
@@ -1095,7 +1095,7 @@ extern(Windows):
 
 interface AppointmentConflictResult : Windows.ApplicationModel.Appointments.IAppointmentConflictResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentConflictType Type()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentConflictType _ret;
@@ -1112,7 +1112,7 @@ extern(Windows):
 
 interface AppointmentException : Windows.ApplicationModel.Appointments.IAppointmentException
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.Appointment Appointment()
 	{
 		Windows.ApplicationModel.Appointments.Appointment _ret;
@@ -1135,7 +1135,7 @@ extern(Windows):
 
 interface AppointmentInvitee : Windows.ApplicationModel.Appointments.IAppointmentInvitee, Windows.ApplicationModel.Appointments.IAppointmentParticipant
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentParticipantRole Role()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentParticipantRole _ret;
@@ -1255,7 +1255,7 @@ interface AppointmentManager
 
 interface AppointmentManagerForUser : Windows.ApplicationModel.Appointments.IAppointmentManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(HSTRING) ShowAddAppointmentAsync(Windows.ApplicationModel.Appointments.Appointment appointment, Windows.Foundation.Rect selection)
 	{
 		Windows.Foundation.IAsyncOperation!(HSTRING) _ret;
@@ -1350,7 +1350,7 @@ extern(Windows):
 
 interface AppointmentOrganizer : Windows.ApplicationModel.Appointments.IAppointmentParticipant
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -1529,7 +1529,7 @@ interface AppointmentProperties
 
 interface AppointmentRecurrence : Windows.ApplicationModel.Appointments.IAppointmentRecurrence, Windows.ApplicationModel.Appointments.IAppointmentRecurrence2, Windows.ApplicationModel.Appointments.IAppointmentRecurrence3
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit Unit()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit _ret;
@@ -1642,7 +1642,7 @@ extern(Windows):
 
 interface AppointmentStore : Windows.ApplicationModel.Appointments.IAppointmentStore, Windows.ApplicationModel.Appointments.IAppointmentStore2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker ChangeTracker()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker _ret;
@@ -1796,7 +1796,7 @@ extern(Windows):
 
 interface AppointmentStoreChange : Windows.ApplicationModel.Appointments.IAppointmentStoreChange, Windows.ApplicationModel.Appointments.IAppointmentStoreChange2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.Appointment Appointment()
 	{
 		Windows.ApplicationModel.Appointments.Appointment _ret;
@@ -1819,7 +1819,7 @@ extern(Windows):
 
 interface AppointmentStoreChangeReader : Windows.ApplicationModel.Appointments.IAppointmentStoreChangeReader
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Appointments.AppointmentStoreChange)) ReadBatchAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Appointments.AppointmentStoreChange)) _ret;
@@ -1838,7 +1838,7 @@ extern(Windows):
 
 interface AppointmentStoreChangeTracker : Windows.ApplicationModel.Appointments.IAppointmentStoreChangeTracker
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader GetChangeReader()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentStoreChangeReader _ret;
@@ -1857,7 +1857,7 @@ extern(Windows):
 
 interface AppointmentStoreChangedDeferral : Windows.ApplicationModel.Appointments.IAppointmentStoreChangedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Appointments.IAppointmentStoreChangedDeferral)this.asInterface(uuid("4cb82026-fedb-4bc3-9662-95a9befdf4df"))).abi_Complete());
@@ -1866,7 +1866,7 @@ extern(Windows):
 
 interface AppointmentStoreChangedEventArgs : Windows.ApplicationModel.Appointments.IAppointmentStoreChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.AppointmentStoreChangedDeferral GetDeferral()
 	{
 		Windows.ApplicationModel.Appointments.AppointmentStoreChangedDeferral _ret;
@@ -1881,7 +1881,7 @@ interface AppointmentStoreNotificationTriggerDetails : Windows.ApplicationModel.
 
 interface FindAppointmentsOptions : Windows.ApplicationModel.Appointments.IFindAppointmentsOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) CalendarIds()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;

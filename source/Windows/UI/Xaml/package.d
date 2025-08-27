@@ -1718,7 +1718,7 @@ extern(Windows):
 
 interface AdaptiveTrigger : Windows.UI.Xaml.StateTriggerBase, Windows.UI.Xaml.IAdaptiveTrigger
 {
-extern(Windows):
+extern(D):
 	final double MinWindowWidth()
 	{
 		double _ret;
@@ -1799,7 +1799,7 @@ class AdaptiveTriggerT(Base) : AgileObject!Base, AdaptiveTrigger
 
 interface Application : Windows.UI.Xaml.IApplication, Windows.UI.Xaml.IApplicationOverrides, Windows.UI.Xaml.IApplication2, Windows.UI.Xaml.IApplicationOverrides2, Windows.UI.Xaml.IApplication3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.ResourceDictionary Resources()
 	{
 		Windows.UI.Xaml.ResourceDictionary _ret;
@@ -2011,7 +2011,7 @@ interface ApplicationInitializationCallbackParams : Windows.UI.Xaml.IApplication
 
 interface BindingFailedEventArgs : Windows.UI.Xaml.IBindingFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring Message()
 	{
 		HSTRING _ret;
@@ -2022,7 +2022,7 @@ extern(Windows):
 
 interface BringIntoViewOptions : Windows.UI.Xaml.IBringIntoViewOptions
 {
-extern(Windows):
+extern(D):
 	final bool AnimationDesired()
 	{
 		bool _ret;
@@ -2075,7 +2075,7 @@ interface CornerRadiusHelper : Windows.UI.Xaml.ICornerRadiusHelper
 
 interface DataContextChangedEventArgs : Windows.UI.Xaml.IDataContextChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable NewValue()
 	{
 		IInspectable _ret;
@@ -2096,7 +2096,7 @@ extern(Windows):
 
 interface DataTemplate : Windows.UI.Xaml.FrameworkTemplate, Windows.UI.Xaml.IDataTemplate
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyObject LoadContent()
 	{
 		Windows.UI.Xaml.DependencyObject _ret;
@@ -2162,7 +2162,7 @@ class DataTemplateT(Base) : AgileObject!Base, DataTemplate
 
 interface DataTemplateKey : Windows.UI.Xaml.IDataTemplateKey
 {
-extern(Windows):
+extern(D):
 	final IInspectable DataType()
 	{
 		IInspectable _ret;
@@ -2200,7 +2200,7 @@ class DataTemplateKeyT(Base) : AgileObject!Base, DataTemplateKey
 
 interface DebugSettings : Windows.UI.Xaml.IDebugSettings, Windows.UI.Xaml.IDebugSettings2, Windows.UI.Xaml.IDebugSettings3
 {
-extern(Windows):
+extern(D):
 	final bool EnableFrameRateCounter()
 	{
 		bool _ret;
@@ -2265,7 +2265,7 @@ extern(Windows):
 
 interface DependencyObject : Windows.UI.Xaml.IDependencyObject, Windows.UI.Xaml.IDependencyObject2
 {
-extern(Windows):
+extern(D):
 	final IInspectable GetValue(Windows.UI.Xaml.DependencyProperty dp)
 	{
 		IInspectable _ret;
@@ -2342,7 +2342,7 @@ class DependencyObjectT(Base) : AgileObject!Base, DependencyObject
 
 interface DependencyObjectCollection : Windows.UI.Xaml.DependencyObject, Windows.Foundation.Collections.IObservableVector!(Windows.UI.Xaml.DependencyObject), Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.DependencyObject), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.DependencyObject)
 {
-extern(Windows):
+extern(D):
 	final void removeVectorChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableVector!(Windows.UI.Xaml.DependencyObject))this).remove_VectorChanged(token));
@@ -2457,7 +2457,7 @@ class DependencyObjectCollectionT(Base) : AgileObject!Base, DependencyObjectColl
 
 interface DependencyProperty : Windows.UI.Xaml.IDependencyProperty
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.PropertyMetadata GetMetadata(Windows.UI.Xaml.Interop.TypeName forType)
 	{
 		Windows.UI.Xaml.PropertyMetadata _ret;
@@ -2493,7 +2493,7 @@ extern(Windows):
 
 interface DependencyPropertyChangedEventArgs : Windows.UI.Xaml.IDependencyPropertyChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyProperty Property()
 	{
 		Windows.UI.Xaml.DependencyProperty _ret;
@@ -2516,7 +2516,7 @@ extern(Windows):
 
 interface DispatcherTimer : Windows.UI.Xaml.IDispatcherTimer
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Interval()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -2583,7 +2583,7 @@ class DispatcherTimerT(Base) : AgileObject!Base, DispatcherTimer
 
 interface DragEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.IDragEventArgs, Windows.UI.Xaml.IDragEventArgs2, Windows.UI.Xaml.IDragEventArgs3
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -2654,7 +2654,7 @@ extern(Windows):
 
 interface DragOperationDeferral : Windows.UI.Xaml.IDragOperationDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.Xaml.IDragOperationDeferral)this.asInterface(uuid("ba73ecba-1b73-4086-b3d3-c223beea1633"))).abi_Complete());
@@ -2663,7 +2663,7 @@ extern(Windows):
 
 interface DragStartingEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.IDragStartingEventArgs, Windows.UI.Xaml.IDragStartingEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -2712,7 +2712,7 @@ extern(Windows):
 
 interface DragUI : Windows.UI.Xaml.IDragUI
 {
-extern(Windows):
+extern(D):
 	final void SetContentFromBitmapImage(Windows.UI.Xaml.Media.Imaging.BitmapImage bitmapImage)
 	{
 		Debug.OK((cast(Windows.UI.Xaml.IDragUI)this.asInterface(uuid("2d9bd838-7c60-4842-9170-346fe10a226a"))).abi_SetContentFromBitmapImage(bitmapImage));
@@ -2739,7 +2739,7 @@ extern(Windows):
 
 interface DragUIOverride : Windows.UI.Xaml.IDragUIOverride
 {
-extern(Windows):
+extern(D):
 	final wstring Caption()
 	{
 		HSTRING _ret;
@@ -2806,7 +2806,7 @@ extern(Windows):
 
 interface DropCompletedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.IDropCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageOperation DropResult()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageOperation _ret;
@@ -2909,7 +2909,7 @@ interface ElementSoundPlayer : Windows.UI.Xaml.IElementSoundPlayer
 
 interface EventTrigger : Windows.UI.Xaml.TriggerBase, Windows.UI.Xaml.IEventTrigger
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.RoutedEvent RoutedEvent()
 	{
 		Windows.UI.Xaml.RoutedEvent _ret;
@@ -2936,7 +2936,7 @@ extern(Windows):
 
 interface ExceptionRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.IExceptionRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring ErrorMessage()
 	{
 		HSTRING _ret;
@@ -2964,7 +2964,7 @@ class ExceptionRoutedEventArgsT(Base) : AgileObject!Base, ExceptionRoutedEventAr
 
 interface FrameworkElement : Windows.UI.Xaml.UIElement, Windows.UI.Xaml.IFrameworkElement, Windows.UI.Xaml.IFrameworkElementOverrides, Windows.UI.Xaml.IFrameworkElement2, Windows.UI.Xaml.IFrameworkElementOverrides2, Windows.UI.Xaml.IFrameworkElement3, Windows.UI.Xaml.IFrameworkElement4
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.TriggerCollection Triggers()
 	{
 		Windows.UI.Xaml.TriggerCollection _ret;
@@ -3739,7 +3739,7 @@ class FrameworkTemplateT(Base) : AgileObject!Base, FrameworkTemplate
 
 interface FrameworkView : Windows.UI.Xaml.IFrameworkView, Windows.ApplicationModel.Core.IFrameworkView
 {
-extern(Windows):
+extern(D):
 	final void Initialize(Windows.ApplicationModel.Core.CoreApplicationView applicationView)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Core.IFrameworkView)this.asInterface(uuid("faab5cd0-8924-45ac-ad0f-a08fae5d0324"))).abi_Initialize(applicationView));
@@ -3770,7 +3770,7 @@ extern(Windows):
 
 interface FrameworkViewSource : Windows.UI.Xaml.IFrameworkViewSource, Windows.ApplicationModel.Core.IFrameworkViewSource
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Core.IFrameworkView CreateView()
 	{
 		Windows.ApplicationModel.Core.IFrameworkView _ret;
@@ -3839,7 +3839,7 @@ interface GridLengthHelper : Windows.UI.Xaml.IGridLengthHelper
 
 interface MediaFailedRoutedEventArgs : Windows.UI.Xaml.ExceptionRoutedEventArgs, Windows.UI.Xaml.IMediaFailedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring ErrorTrace()
 	{
 		HSTRING _ret;
@@ -3866,7 +3866,7 @@ interface PointHelper : Windows.UI.Xaml.IPointHelper
 
 interface PropertyMetadata : Windows.UI.Xaml.IPropertyMetadata
 {
-extern(Windows):
+extern(D):
 	final IInspectable DefaultValue()
 	{
 		IInspectable _ret;
@@ -3934,7 +3934,7 @@ class PropertyMetadataT(Base) : AgileObject!Base, PropertyMetadata
 
 interface PropertyPath : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IPropertyPath
 {
-extern(Windows):
+extern(D):
 	final wstring Path()
 	{
 		HSTRING _ret;
@@ -4048,7 +4048,7 @@ interface RectHelper : Windows.UI.Xaml.IRectHelper
 
 interface ResourceDictionary : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IResourceDictionary, Windows.Foundation.Collections.IMap!(IInspectable, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(IInspectable, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Source()
 	{
 		Windows.Foundation.Uri _ret;
@@ -4166,7 +4166,7 @@ interface RoutedEvent : Windows.UI.Xaml.IRoutedEvent
 
 interface RoutedEventArgs : Windows.UI.Xaml.IRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable OriginalSource()
 	{
 		IInspectable _ret;
@@ -4199,7 +4199,7 @@ class RoutedEventArgsT(Base) : AgileObject!Base, RoutedEventArgs
 
 interface Setter : Windows.UI.Xaml.SetterBase, Windows.UI.Xaml.ISetter, Windows.UI.Xaml.ISetter2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyProperty Property()
 	{
 		Windows.UI.Xaml.DependencyProperty _ret;
@@ -4247,7 +4247,7 @@ extern(Windows):
 
 interface SetterBase : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.ISetterBase
 {
-extern(Windows):
+extern(D):
 	final bool IsSealed()
 	{
 		bool _ret;
@@ -4283,7 +4283,7 @@ class SetterBaseT(Base) : AgileObject!Base, SetterBase
 
 interface SetterBaseCollection : Windows.UI.Xaml.ISetterBaseCollection, Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.SetterBase), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.SetterBase)
 {
-extern(Windows):
+extern(D):
 	final bool IsSealed()
 	{
 		bool _ret;
@@ -4358,7 +4358,7 @@ extern(Windows):
 
 interface SizeChangedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.ISizeChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size PreviousSize()
 	{
 		Windows.Foundation.Size _ret;
@@ -4409,7 +4409,7 @@ interface SizeHelper : Windows.UI.Xaml.ISizeHelper
 
 interface StateTrigger : Windows.UI.Xaml.StateTriggerBase, Windows.UI.Xaml.IStateTrigger
 {
-extern(Windows):
+extern(D):
 	final bool IsActive()
 	{
 		bool _ret;
@@ -4443,7 +4443,7 @@ extern(Windows):
 
 interface StateTriggerBase : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IStateTriggerBase, Windows.UI.Xaml.IStateTriggerBaseProtected
 {
-extern(Windows):
+extern(D):
 	final void SetActive(bool IsActive)
 	{
 		Debug.OK((cast(Windows.UI.Xaml.IStateTriggerBaseProtected)this.asInterface(uuid("3c41e253-8d14-4216-994c-f9930429f6e5"))).abi_SetActive(IsActive));
@@ -4484,7 +4484,7 @@ class StateTriggerBaseT(Base) : AgileObject!Base, StateTriggerBase
 
 interface Style : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IStyle
 {
-extern(Windows):
+extern(D):
 	final bool IsSealed()
 	{
 		bool _ret;
@@ -4538,7 +4538,7 @@ extern(Windows):
 
 interface TargetPropertyPath : Windows.UI.Xaml.ITargetPropertyPath
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.PropertyPath Path()
 	{
 		Windows.UI.Xaml.PropertyPath _ret;
@@ -4625,7 +4625,7 @@ class TriggerActionT(Base) : AgileObject!Base, TriggerAction
 
 interface TriggerActionCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.TriggerAction), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.TriggerAction)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.TriggerAction GetAt(uint index)
 	{
 		Windows.UI.Xaml.TriggerAction _ret;
@@ -4721,7 +4721,7 @@ class TriggerBaseT(Base) : AgileObject!Base, TriggerBase
 
 interface TriggerCollection : Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.TriggerBase), Windows.Foundation.Collections.IIterable!(Windows.UI.Xaml.TriggerBase)
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.TriggerBase GetAt(uint index)
 	{
 		Windows.UI.Xaml.TriggerBase _ret;
@@ -4784,7 +4784,7 @@ extern(Windows):
 
 interface UIElement : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IUIElement, Windows.UI.Xaml.IUIElementOverrides, Windows.UI.Xaml.IUIElement2, Windows.UI.Xaml.IUIElement3, Windows.UI.Xaml.IUIElement4, Windows.UI.Xaml.IUIElement5
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size DesiredSize()
 	{
 		Windows.Foundation.Size _ret;
@@ -6011,7 +6011,7 @@ class UIElementT(Base) : AgileObject!Base, UIElement
 
 interface UnhandledExceptionEventArgs : Windows.UI.Xaml.IUnhandledExceptionEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT Exception()
 	{
 		HRESULT _ret;
@@ -6038,7 +6038,7 @@ extern(Windows):
 
 interface VisualState : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IVisualState, Windows.UI.Xaml.IVisualState2
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -6077,7 +6077,7 @@ extern(Windows):
 
 interface VisualStateChangedEventArgs : Windows.UI.Xaml.IVisualStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.VisualState OldState()
 	{
 		Windows.UI.Xaml.VisualState _ret;
@@ -6118,7 +6118,7 @@ extern(Windows):
 
 interface VisualStateGroup : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IVisualStateGroup
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -6173,7 +6173,7 @@ extern(Windows):
 
 interface VisualStateManager : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IVisualStateManager, Windows.UI.Xaml.IVisualStateManagerOverrides, Windows.UI.Xaml.IVisualStateManagerProtected
 {
-extern(Windows):
+extern(D):
 	final void RaiseCurrentStateChanging(Windows.UI.Xaml.VisualStateGroup stateGroup, Windows.UI.Xaml.VisualState oldState, Windows.UI.Xaml.VisualState newState, Windows.UI.Xaml.Controls.Control control)
 	{
 		Debug.OK((cast(Windows.UI.Xaml.IVisualStateManagerProtected)this.asInterface(uuid("4b3b8640-b0b7-404c-9ef4-d949640e245d"))).abi_RaiseCurrentStateChanging(stateGroup, oldState, newState, control));
@@ -6257,7 +6257,7 @@ class VisualStateManagerT(Base) : AgileObject!Base, VisualStateManager
 
 interface VisualTransition : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.IVisualTransition
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Duration GeneratedDuration()
 	{
 		Windows.UI.Xaml.Duration _ret;
@@ -6353,7 +6353,7 @@ class VisualTransitionT(Base) : AgileObject!Base, VisualTransition
 
 interface Window : Windows.UI.Xaml.IWindow, Windows.UI.Xaml.IWindow2, Windows.UI.Xaml.IWindow3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect Bounds()
 	{
 		Windows.Foundation.Rect _ret;
@@ -6463,7 +6463,7 @@ extern(Windows):
 
 interface WindowCreatedEventArgs : Windows.UI.Xaml.IWindowCreatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Window Window()
 	{
 		Windows.UI.Xaml.Window _ret;

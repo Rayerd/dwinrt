@@ -99,7 +99,7 @@ interface PlatformDiagnosticActions
 
 interface PlatformDiagnosticTraceInfo : Windows.System.Diagnostics.TraceReporting.IPlatformDiagnosticTraceInfo
 {
-extern(Windows):
+extern(D):
 	final GUID ScenarioId()
 	{
 		GUID _ret;
@@ -140,7 +140,7 @@ extern(Windows):
 
 interface PlatformDiagnosticTraceRuntimeInfo : Windows.System.Diagnostics.TraceReporting.IPlatformDiagnosticTraceRuntimeInfo
 {
-extern(Windows):
+extern(D):
 	final INT64 RuntimeFileTime()
 	{
 		INT64 _ret;

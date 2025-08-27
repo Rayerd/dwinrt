@@ -13,7 +13,7 @@ extern(Windows):
 
 interface DisplayRequest : Windows.System.Display.IDisplayRequest
 {
-extern(Windows):
+extern(D):
 	final void RequestActive()
 	{
 		Debug.OK((cast(Windows.System.Display.IDisplayRequest)this.asInterface(uuid("e5732044-f49f-4b60-8dd4-5e7e3a632ac0"))).abi_RequestActive());

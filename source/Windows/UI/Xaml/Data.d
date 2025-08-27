@@ -325,7 +325,7 @@ extern(Windows):
 
 interface Binding : Windows.UI.Xaml.Data.BindingBase, Windows.UI.Xaml.Data.IBinding, Windows.UI.Xaml.Data.IBinding2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.PropertyPath Path()
 	{
 		Windows.UI.Xaml.PropertyPath _ret;
@@ -528,7 +528,7 @@ class BindingBaseT(Base) : AgileObject!Base, BindingBase
 
 interface BindingExpression : Windows.UI.Xaml.Data.BindingExpressionBase, Windows.UI.Xaml.Data.IBindingExpression
 {
-extern(Windows):
+extern(D):
 	final IInspectable DataItem()
 	{
 		IInspectable _ret;
@@ -597,7 +597,7 @@ interface BindingOperations : Windows.UI.Xaml.Data.IBindingOperations
 
 interface CollectionViewSource : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Data.ICollectionViewSource
 {
-extern(Windows):
+extern(D):
 	final IInspectable Source()
 	{
 		IInspectable _ret;
@@ -675,7 +675,7 @@ extern(Windows):
 
 interface CurrentChangingEventArgs : Windows.UI.Xaml.Data.ICurrentChangingEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -720,7 +720,7 @@ class CurrentChangingEventArgsT(Base) : AgileObject!Base, CurrentChangingEventAr
 
 interface ItemIndexRange : Windows.UI.Xaml.Data.IItemIndexRange
 {
-extern(Windows):
+extern(D):
 	final INT32 FirstIndex()
 	{
 		INT32 _ret;
@@ -767,7 +767,7 @@ class ItemIndexRangeT(Base) : AgileObject!Base, ItemIndexRange
 
 interface PropertyChangedEventArgs : Windows.UI.Xaml.Data.IPropertyChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring PropertyName()
 	{
 		HSTRING _ret;
@@ -800,7 +800,7 @@ class PropertyChangedEventArgsT(Base) : AgileObject!Base, PropertyChangedEventAr
 
 interface RelativeSource : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Data.IRelativeSource
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Data.RelativeSourceMode Mode()
 	{
 		Windows.UI.Xaml.Data.RelativeSourceMode _ret;

@@ -32,7 +32,7 @@ extern(Windows):
 
 interface EnterpriseKeyCredentialRegistrationInfo : Windows.Security.Authentication.Identity.IEnterpriseKeyCredentialRegistrationInfo
 {
-extern(Windows):
+extern(D):
 	final wstring TenantId()
 	{
 		HSTRING _ret;
@@ -67,7 +67,7 @@ extern(Windows):
 
 interface EnterpriseKeyCredentialRegistrationManager : Windows.Security.Authentication.Identity.IEnterpriseKeyCredentialRegistrationManager
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.EnterpriseKeyCredentialRegistrationInfo)) GetRegistrationsAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Security.Authentication.Identity.EnterpriseKeyCredentialRegistrationInfo)) _ret;

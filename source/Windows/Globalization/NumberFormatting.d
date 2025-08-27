@@ -185,7 +185,7 @@ extern(Windows):
 
 interface CurrencyFormatter : Windows.Globalization.NumberFormatting.ICurrencyFormatter, Windows.Globalization.NumberFormatting.INumberParser, Windows.Globalization.NumberFormatting.INumberFormatter2, Windows.Globalization.NumberFormatting.INumberFormatter, Windows.Globalization.NumberFormatting.INumberFormatterOptions, Windows.Globalization.NumberFormatting.ICurrencyFormatter2, Windows.Globalization.NumberFormatting.ISignificantDigitsOption, Windows.Globalization.NumberFormatting.INumberRounderOption, Windows.Globalization.NumberFormatting.ISignedZeroOption
 {
-extern(Windows):
+extern(D):
 	final wstring Currency()
 	{
 		HSTRING _ret;
@@ -369,7 +369,7 @@ extern(Windows):
 
 interface DecimalFormatter : Windows.Globalization.NumberFormatting.INumberFormatterOptions, Windows.Globalization.NumberFormatting.INumberFormatter, Windows.Globalization.NumberFormatting.INumberFormatter2, Windows.Globalization.NumberFormatting.INumberParser, Windows.Globalization.NumberFormatting.ISignificantDigitsOption, Windows.Globalization.NumberFormatting.INumberRounderOption, Windows.Globalization.NumberFormatting.ISignedZeroOption
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Languages()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -530,7 +530,7 @@ extern(Windows):
 
 interface IncrementNumberRounder : Windows.Globalization.NumberFormatting.INumberRounder, Windows.Globalization.NumberFormatting.IIncrementNumberRounder
 {
-extern(Windows):
+extern(D):
 	final INT32 RoundInt32(INT32 value)
 	{
 		INT32 _ret;
@@ -597,7 +597,7 @@ extern(Windows):
 
 interface NumeralSystemTranslator : Windows.Globalization.NumberFormatting.INumeralSystemTranslator
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Languages()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -643,7 +643,7 @@ extern(Windows):
 
 interface PercentFormatter : Windows.Globalization.NumberFormatting.INumberFormatterOptions, Windows.Globalization.NumberFormatting.INumberFormatter, Windows.Globalization.NumberFormatting.INumberFormatter2, Windows.Globalization.NumberFormatting.INumberParser, Windows.Globalization.NumberFormatting.ISignificantDigitsOption, Windows.Globalization.NumberFormatting.INumberRounderOption, Windows.Globalization.NumberFormatting.ISignedZeroOption
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Languages()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -804,7 +804,7 @@ extern(Windows):
 
 interface PermilleFormatter : Windows.Globalization.NumberFormatting.INumberFormatterOptions, Windows.Globalization.NumberFormatting.INumberFormatter, Windows.Globalization.NumberFormatting.INumberFormatter2, Windows.Globalization.NumberFormatting.INumberParser, Windows.Globalization.NumberFormatting.ISignificantDigitsOption, Windows.Globalization.NumberFormatting.INumberRounderOption, Windows.Globalization.NumberFormatting.ISignedZeroOption
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Languages()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -965,7 +965,7 @@ extern(Windows):
 
 interface SignificantDigitsNumberRounder : Windows.Globalization.NumberFormatting.INumberRounder, Windows.Globalization.NumberFormatting.ISignificantDigitsNumberRounder
 {
-extern(Windows):
+extern(D):
 	final INT32 RoundInt32(INT32 value)
 	{
 		INT32 _ret;

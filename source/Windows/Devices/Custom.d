@@ -51,7 +51,7 @@ extern(Windows):
 
 interface CustomDevice : Windows.Devices.Custom.ICustomDevice
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IInputStream InputStream()
 	{
 		Windows.Storage.Streams.IInputStream _ret;
@@ -99,7 +99,7 @@ extern(Windows):
 
 interface IOControlCode : Windows.Devices.Custom.IIOControlCode
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Custom.IOControlAccessMode AccessMode()
 	{
 		Windows.Devices.Custom.IOControlAccessMode _ret;

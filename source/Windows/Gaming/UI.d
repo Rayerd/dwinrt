@@ -99,7 +99,7 @@ interface GameBar
 
 interface GameChatMessageReceivedEventArgs : Windows.Gaming.UI.IGameChatMessageReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppId()
 	{
 		HSTRING _ret;
@@ -134,7 +134,7 @@ extern(Windows):
 
 interface GameChatOverlay : Windows.Gaming.UI.IGameChatOverlay
 {
-extern(Windows):
+extern(D):
 	final Windows.Gaming.UI.GameChatOverlayPosition DesiredPosition()
 	{
 		Windows.Gaming.UI.GameChatOverlayPosition _ret;
@@ -166,7 +166,7 @@ extern(Windows):
 
 interface GameChatOverlayMessageSource : Windows.Gaming.UI.IGameChatOverlayMessageSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnMessageReceived(void delegate(Windows.Gaming.UI.GameChatOverlayMessageSource, Windows.Gaming.UI.GameChatMessageReceivedEventArgs) fn)
 	{
 		EventRegistrationToken tok;

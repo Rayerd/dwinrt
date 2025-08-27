@@ -525,7 +525,7 @@ interface AccessKeyDisplayDismissedEventArgs : Windows.UI.Xaml.Input.IAccessKeyD
 
 interface AccessKeyDisplayRequestedEventArgs : Windows.UI.Xaml.Input.IAccessKeyDisplayRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring PressedKeys()
 	{
 		HSTRING _ret;
@@ -542,7 +542,7 @@ extern(Windows):
 
 interface AccessKeyInvokedEventArgs : Windows.UI.Xaml.Input.IAccessKeyInvokedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -593,7 +593,7 @@ interface AccessKeyManager : Windows.UI.Xaml.Input.IAccessKeyManager
 
 interface ContextRequestedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IContextRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -620,7 +620,7 @@ extern(Windows):
 
 interface DoubleTappedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IDoubleTappedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -653,7 +653,7 @@ extern(Windows):
 
 interface FindNextElementOptions : Windows.UI.Xaml.Input.IFindNextElementOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyObject SearchRoot()
 	{
 		Windows.UI.Xaml.DependencyObject _ret;
@@ -720,7 +720,7 @@ interface FocusManager : Windows.UI.Xaml.Input.IFocusManager
 
 interface GettingFocusEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IGettingFocusEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyObject OldFocusedElement()
 	{
 		Windows.UI.Xaml.DependencyObject _ret;
@@ -779,7 +779,7 @@ extern(Windows):
 
 interface HoldingRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IHoldingRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -818,7 +818,7 @@ extern(Windows):
 
 interface InertiaExpansionBehavior : Windows.UI.Xaml.Input.IInertiaExpansionBehavior
 {
-extern(Windows):
+extern(D):
 	final double DesiredDeceleration()
 	{
 		double _ret;
@@ -843,7 +843,7 @@ extern(Windows):
 
 interface InertiaRotationBehavior : Windows.UI.Xaml.Input.IInertiaRotationBehavior
 {
-extern(Windows):
+extern(D):
 	final double DesiredDeceleration()
 	{
 		double _ret;
@@ -868,7 +868,7 @@ extern(Windows):
 
 interface InertiaTranslationBehavior : Windows.UI.Xaml.Input.IInertiaTranslationBehavior
 {
-extern(Windows):
+extern(D):
 	final double DesiredDeceleration()
 	{
 		double _ret;
@@ -893,7 +893,7 @@ extern(Windows):
 
 interface InputScope : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Input.IInputScope
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Input.InputScopeName) Names()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Xaml.Input.InputScopeName) _ret;
@@ -910,7 +910,7 @@ extern(Windows):
 
 interface InputScopeName : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Input.IInputScopeName
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Input.InputScopeNameValue NameValue()
 	{
 		Windows.UI.Xaml.Input.InputScopeNameValue _ret;
@@ -938,7 +938,7 @@ extern(Windows):
 
 interface KeyRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IKeyRoutedEventArgs, Windows.UI.Xaml.Input.IKeyRoutedEventArgs2, Windows.UI.Xaml.Input.IKeyRoutedEventArgs3
 {
-extern(Windows):
+extern(D):
 	final Windows.System.VirtualKey Key()
 	{
 		Windows.System.VirtualKey _ret;
@@ -977,7 +977,7 @@ extern(Windows):
 
 interface LosingFocusEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.ILosingFocusEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.DependencyObject OldFocusedElement()
 	{
 		Windows.UI.Xaml.DependencyObject _ret;
@@ -1036,7 +1036,7 @@ extern(Windows):
 
 interface ManipulationCompletedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IManipulationCompletedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Container()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -1093,7 +1093,7 @@ extern(Windows):
 
 interface ManipulationDeltaRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IManipulationDeltaRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Container()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -1160,7 +1160,7 @@ extern(Windows):
 
 interface ManipulationInertiaStartingRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IManipulationInertiaStartingRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Container()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -1241,7 +1241,7 @@ extern(Windows):
 
 interface ManipulationPivot : Windows.UI.Xaml.Input.IManipulationPivot
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Center()
 	{
 		Windows.Foundation.Point _ret;
@@ -1279,7 +1279,7 @@ extern(Windows):
 
 interface ManipulationStartedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IManipulationStartedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.UIElement Container()
 	{
 		Windows.UI.Xaml.UIElement _ret;
@@ -1352,7 +1352,7 @@ class ManipulationStartedRoutedEventArgsT(Base) : AgileObject!Base, Manipulation
 
 interface ManipulationStartingRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IManipulationStartingRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Input.ManipulationModes Mode()
 	{
 		Windows.UI.Xaml.Input.ManipulationModes _ret;
@@ -1403,7 +1403,7 @@ extern(Windows):
 
 interface NoFocusCandidateFoundEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.INoFocusCandidateFoundEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Input.FocusNavigationDirection Direction()
 	{
 		Windows.UI.Xaml.Input.FocusNavigationDirection _ret;
@@ -1430,7 +1430,7 @@ extern(Windows):
 
 interface Pointer : Windows.UI.Xaml.Input.IPointer
 {
-extern(Windows):
+extern(D):
 	final UINT32 PointerId()
 	{
 		UINT32 _ret;
@@ -1459,7 +1459,7 @@ extern(Windows):
 
 interface PointerRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IPointerRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Input.Pointer Pointer()
 	{
 		Windows.UI.Xaml.Input.Pointer _ret;
@@ -1498,7 +1498,7 @@ extern(Windows):
 
 interface RightTappedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.IRightTappedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1531,7 +1531,7 @@ extern(Windows):
 
 interface TappedRoutedEventArgs : Windows.UI.Xaml.RoutedEventArgs, Windows.UI.Xaml.Input.ITappedRoutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;

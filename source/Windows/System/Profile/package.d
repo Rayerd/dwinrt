@@ -153,7 +153,7 @@ interface AnalyticsInfo
 
 interface AnalyticsVersionInfo : Windows.System.Profile.IAnalyticsVersionInfo
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceFamily()
 	{
 		HSTRING _ret;
@@ -202,7 +202,7 @@ interface HardwareIdentification
 
 interface HardwareToken : Windows.System.Profile.IHardwareToken
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Id()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -459,7 +459,7 @@ interface SystemIdentification
 
 interface SystemIdentificationInfo : Windows.System.Profile.ISystemIdentificationInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Id()
 	{
 		Windows.Storage.Streams.IBuffer _ret;

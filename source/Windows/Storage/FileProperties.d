@@ -167,7 +167,7 @@ interface IVideoProperties : IVideoProperties_Base, Windows.Storage.FileProperti
 
 interface BasicProperties : Windows.Storage.FileProperties.IBasicProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final ulong Size()
 	{
 		ulong _ret;
@@ -209,7 +209,7 @@ extern(Windows):
 
 interface DocumentProperties : Windows.Storage.FileProperties.IDocumentProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) Author()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -293,7 +293,7 @@ interface GeotagHelper
 
 interface ImageProperties : Windows.Storage.FileProperties.IImageProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final UINT32 Rating()
 	{
 		UINT32 _ret;
@@ -409,7 +409,7 @@ extern(Windows):
 
 interface MusicProperties : Windows.Storage.FileProperties.IMusicProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Album()
 	{
 		HSTRING _ret;
@@ -565,7 +565,7 @@ extern(Windows):
 
 interface StorageItemContentProperties : Windows.Storage.FileProperties.IStorageItemContentProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.FileProperties.MusicProperties) GetMusicPropertiesAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.FileProperties.MusicProperties) _ret;
@@ -613,7 +613,7 @@ extern(Windows):
 
 interface StorageItemThumbnail : Windows.Storage.Streams.IRandomAccessStreamWithContentType, Windows.Storage.Streams.IContentTypeProvider, Windows.Storage.Streams.IRandomAccessStream, Windows.Storage.Streams.IOutputStream, Windows.Foundation.IClosable, Windows.Storage.Streams.IInputStream, Windows.Storage.FileProperties.IThumbnailProperties
 {
-extern(Windows):
+extern(D):
 	final wstring ContentType()
 	{
 		HSTRING _ret;
@@ -720,7 +720,7 @@ extern(Windows):
 
 interface VideoProperties : Windows.Storage.FileProperties.IVideoProperties, Windows.Storage.FileProperties.IStorageItemExtraProperties
 {
-extern(Windows):
+extern(D):
 	final UINT32 Rating()
 	{
 		UINT32 _ret;

@@ -86,7 +86,7 @@ interface ThreadPool
 
 interface ThreadPoolTimer : Windows.System.Threading.IThreadPoolTimer
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Period()
 	{
 		Windows.Foundation.TimeSpan _ret;

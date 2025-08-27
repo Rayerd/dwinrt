@@ -91,7 +91,7 @@ extern(Windows):
 
 interface HttpDiagnosticProvider : Windows.Web.Http.Diagnostics.IHttpDiagnosticProvider
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.Web.Http.Diagnostics.IHttpDiagnosticProvider)this.asInterface(uuid("bd811501-a056-4d39-b174-833b7b03b02c"))).abi_Start());
@@ -147,7 +147,7 @@ extern(Windows):
 
 interface HttpDiagnosticProviderRequestResponseCompletedEventArgs : Windows.Web.Http.Diagnostics.IHttpDiagnosticProviderRequestResponseCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final GUID ActivityId()
 	{
 		GUID _ret;
@@ -194,7 +194,7 @@ extern(Windows):
 
 interface HttpDiagnosticProviderRequestResponseTimestamps : Windows.Web.Http.Diagnostics.IHttpDiagnosticProviderRequestResponseTimestamps
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.DateTime) CacheCheckedTimestamp()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.DateTime) _ret;
@@ -253,7 +253,7 @@ extern(Windows):
 
 interface HttpDiagnosticProviderRequestSentEventArgs : Windows.Web.Http.Diagnostics.IHttpDiagnosticProviderRequestSentEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -300,7 +300,7 @@ extern(Windows):
 
 interface HttpDiagnosticProviderResponseReceivedEventArgs : Windows.Web.Http.Diagnostics.IHttpDiagnosticProviderResponseReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -323,7 +323,7 @@ extern(Windows):
 
 interface HttpDiagnosticSourceLocation : Windows.Web.Http.Diagnostics.IHttpDiagnosticSourceLocation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri SourceUri()
 	{
 		Windows.Foundation.Uri _ret;

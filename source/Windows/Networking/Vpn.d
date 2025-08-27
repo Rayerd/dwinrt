@@ -590,7 +590,7 @@ extern(Windows):
 
 interface VpnAppId : Windows.Networking.Vpn.IVpnAppId
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Vpn.VpnAppIdType Type()
 	{
 		Windows.Networking.Vpn.VpnAppIdType _ret;
@@ -622,7 +622,7 @@ extern(Windows):
 
 interface VpnChannel : Windows.Networking.Vpn.IVpnChannel, Windows.Networking.Vpn.IVpnChannel2
 {
-extern(Windows):
+extern(D):
 	final void AssociateTransport(IInspectable mainOuterTunnelTransport, IInspectable optionalOuterTunnelTransport)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnChannel)this.asInterface(uuid("4ac78d07-d1a8-4303-a091-c8d2e0915bc3"))).abi_AssociateTransport(mainOuterTunnelTransport, optionalOuterTunnelTransport));
@@ -779,7 +779,7 @@ extern(Windows):
 
 interface VpnChannelActivityEventArgs : Windows.Networking.Vpn.IVpnChannelActivityEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Vpn.VpnChannelActivityEventType Type()
 	{
 		Windows.Networking.Vpn.VpnChannelActivityEventType _ret;
@@ -790,7 +790,7 @@ extern(Windows):
 
 interface VpnChannelActivityStateChangedArgs : Windows.Networking.Vpn.IVpnChannelActivityStateChangedArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Vpn.VpnChannelActivityEventType ActivityState()
 	{
 		Windows.Networking.Vpn.VpnChannelActivityEventType _ret;
@@ -801,7 +801,7 @@ extern(Windows):
 
 interface VpnChannelConfiguration : Windows.Networking.Vpn.IVpnChannelConfiguration, Windows.Networking.Vpn.IVpnChannelConfiguration2
 {
-extern(Windows):
+extern(D):
 	final wstring ServerServiceName()
 	{
 		HSTRING _ret;
@@ -830,7 +830,7 @@ extern(Windows):
 
 interface VpnCredential : Windows.Networking.Vpn.IVpnCredential
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.PasswordCredential PasskeyCredential()
 	{
 		Windows.Security.Credentials.PasswordCredential _ret;
@@ -859,7 +859,7 @@ extern(Windows):
 
 interface VpnCustomCheckBox : Windows.Networking.Vpn.IVpnCustomCheckBox, Windows.Networking.Vpn.IVpnCustomPrompt
 {
-extern(Windows):
+extern(D):
 	final void InitialCheckState(bool value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomCheckBox)this.asInterface(uuid("43878753-03c5-4e61-93d7-a957714c4282"))).set_InitialCheckState(value));
@@ -916,7 +916,7 @@ extern(Windows):
 
 interface VpnCustomComboBox : Windows.Networking.Vpn.IVpnCustomComboBox, Windows.Networking.Vpn.IVpnCustomPrompt
 {
-extern(Windows):
+extern(D):
 	final void OptionsText(Windows.Foundation.Collections.IVectorView!(HSTRING) value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomComboBox)this.asInterface(uuid("9a24158e-dba1-4c6f-8270-dcf3c9761c4c"))).set_OptionsText(value));
@@ -973,7 +973,7 @@ extern(Windows):
 
 interface VpnCustomEditBox : Windows.Networking.Vpn.IVpnCustomEditBox, Windows.Networking.Vpn.IVpnCustomPrompt
 {
-extern(Windows):
+extern(D):
 	final void DefaultText(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomEditBox)this.asInterface(uuid("3002d9a0-cfbf-4c0b-8f3c-66f503c20b39"))).set_DefaultText(hstring(value).handle));
@@ -1040,7 +1040,7 @@ extern(Windows):
 
 interface VpnCustomErrorBox : Windows.Networking.Vpn.IVpnCustomErrorBox, Windows.Networking.Vpn.IVpnCustomPrompt
 {
-extern(Windows):
+extern(D):
 	final void Label(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomPrompt)this.asInterface(uuid("9b2ebe7b-87d5-433c-b4f6-eee6aa68a244"))).set_Label(hstring(value).handle));
@@ -1081,7 +1081,7 @@ extern(Windows):
 
 interface VpnCustomPromptBooleanInput : Windows.Networking.Vpn.IVpnCustomPromptBooleanInput, Windows.Networking.Vpn.IVpnCustomPromptElement
 {
-extern(Windows):
+extern(D):
 	final void InitialValue(bool value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomPromptBooleanInput)this.asInterface(uuid("c4c9a69e-ff47-4527-9f27-a49292019979"))).set_InitialValue(value));
@@ -1138,7 +1138,7 @@ extern(Windows):
 
 interface VpnCustomPromptOptionSelector : Windows.Networking.Vpn.IVpnCustomPromptOptionSelector, Windows.Networking.Vpn.IVpnCustomPromptElement
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) Options()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -1191,7 +1191,7 @@ extern(Windows):
 
 interface VpnCustomPromptText : Windows.Networking.Vpn.IVpnCustomPromptText, Windows.Networking.Vpn.IVpnCustomPromptElement
 {
-extern(Windows):
+extern(D):
 	final void Text(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomPromptText)this.asInterface(uuid("3bc8bdee-3a42-49a3-abdd-07b2edea752d"))).set_Text(hstring(value).handle));
@@ -1242,7 +1242,7 @@ extern(Windows):
 
 interface VpnCustomPromptTextInput : Windows.Networking.Vpn.IVpnCustomPromptTextInput, Windows.Networking.Vpn.IVpnCustomPromptElement
 {
-extern(Windows):
+extern(D):
 	final void PlaceholderText(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomPromptTextInput)this.asInterface(uuid("c9da9c75-913c-47d5-88ba-48fc48930235"))).set_PlaceholderText(hstring(value).handle));
@@ -1309,7 +1309,7 @@ extern(Windows):
 
 interface VpnCustomTextBox : Windows.Networking.Vpn.IVpnCustomTextBox, Windows.Networking.Vpn.IVpnCustomPrompt
 {
-extern(Windows):
+extern(D):
 	final void DisplayText(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnCustomTextBox)this.asInterface(uuid("daa4c3ca-8f23-4d36-91f1-76d937827942"))).set_DisplayText(hstring(value).handle));
@@ -1360,7 +1360,7 @@ extern(Windows):
 
 interface VpnDomainNameAssignment : Windows.Networking.Vpn.IVpnDomainNameAssignment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnDomainNameInfo) DomainNameList()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnDomainNameInfo) _ret;
@@ -1387,7 +1387,7 @@ extern(Windows):
 
 interface VpnDomainNameInfo : Windows.Networking.Vpn.IVpnDomainNameInfo, Windows.Networking.Vpn.IVpnDomainNameInfo2
 {
-extern(Windows):
+extern(D):
 	final void DomainName(Windows.Networking.HostName value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnDomainNameInfo)this.asInterface(uuid("ad2eb82f-ea8e-4f7a-843e-1a87e32e1b9a"))).set_DomainName(value));
@@ -1437,7 +1437,7 @@ extern(Windows):
 
 interface VpnInterfaceId : Windows.Networking.Vpn.IVpnInterfaceId
 {
-extern(Windows):
+extern(D):
 	final void GetAddressInfo(UINT32* out___idSize, ubyte** out_id)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnInterfaceId)this.asInterface(uuid("9e2ddca2-1712-4ce4-b179-8c652c6d1011"))).abi_GetAddressInfo(out___idSize, out_id));
@@ -1453,7 +1453,7 @@ extern(Windows):
 
 interface VpnManagementAgent : Windows.Networking.Vpn.IVpnManagementAgent
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Networking.Vpn.VpnManagementErrorStatus) AddProfileFromXmlAsync(wstring xml)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Networking.Vpn.VpnManagementErrorStatus) _ret;
@@ -1518,7 +1518,7 @@ extern(Windows):
 
 interface VpnNamespaceAssignment : Windows.Networking.Vpn.IVpnNamespaceAssignment
 {
-extern(Windows):
+extern(D):
 	final void NamespaceList(Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnNamespaceInfo) value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnNamespaceAssignment)this.asInterface(uuid("d7f7db18-307d-4c0e-bd62-8fa270bbadd6"))).set_NamespaceList(value));
@@ -1549,7 +1549,7 @@ extern(Windows):
 
 interface VpnNamespaceInfo : Windows.Networking.Vpn.IVpnNamespaceInfo
 {
-extern(Windows):
+extern(D):
 	final void Namespace(wstring value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnNamespaceInfo)this.asInterface(uuid("30edfb43-444f-44c5-8167-a35a91f1af94"))).set_Namespace(hstring(value).handle));
@@ -1591,7 +1591,7 @@ extern(Windows):
 
 interface VpnNativeProfile : Windows.Networking.Vpn.IVpnNativeProfile, Windows.Networking.Vpn.IVpnProfile, Windows.Networking.Vpn.IVpnNativeProfile2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) Servers()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -1728,7 +1728,7 @@ extern(Windows):
 
 interface VpnPacketBuffer : Windows.Networking.Vpn.IVpnPacketBuffer, Windows.Networking.Vpn.IVpnPacketBuffer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.Buffer Buffer()
 	{
 		Windows.Storage.Streams.Buffer _ret;
@@ -1772,7 +1772,7 @@ extern(Windows):
 
 interface VpnPacketBufferList : Windows.Networking.Vpn.IVpnPacketBufferList, Windows.Foundation.Collections.IIterable!(Windows.Networking.Vpn.VpnPacketBuffer)
 {
-extern(Windows):
+extern(D):
 	final void Append(Windows.Networking.Vpn.VpnPacketBuffer nextVpnPacketBuffer)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnPacketBufferList)this.asInterface(uuid("c2f891fc-4d5c-4a63-b70d-4e307eacce77"))).abi_Append(nextVpnPacketBuffer));
@@ -1821,7 +1821,7 @@ extern(Windows):
 
 interface VpnPickedCredential : Windows.Networking.Vpn.IVpnPickedCredential
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.PasswordCredential PasskeyCredential()
 	{
 		Windows.Security.Credentials.PasswordCredential _ret;
@@ -1844,7 +1844,7 @@ extern(Windows):
 
 interface VpnPlugInProfile : Windows.Networking.Vpn.IVpnPlugInProfile, Windows.Networking.Vpn.IVpnProfile, Windows.Networking.Vpn.IVpnPlugInProfile2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Foundation.Uri) ServerUris()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Foundation.Uri) _ret;
@@ -1951,7 +1951,7 @@ extern(Windows):
 
 interface VpnRoute : Windows.Networking.Vpn.IVpnRoute
 {
-extern(Windows):
+extern(D):
 	final void Address(Windows.Networking.HostName value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnRoute)this.asInterface(uuid("b5731b83-0969-4699-938e-7776db29cfb3"))).set_Address(value));
@@ -1983,7 +1983,7 @@ extern(Windows):
 
 interface VpnRouteAssignment : Windows.Networking.Vpn.IVpnRouteAssignment
 {
-extern(Windows):
+extern(D):
 	final void Ipv4InclusionRoutes(Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnRoute) value)
 	{
 		Debug.OK((cast(Windows.Networking.Vpn.IVpnRouteAssignment)this.asInterface(uuid("db64de22-ce39-4a76-9550-f61039f80e48"))).set_Ipv4InclusionRoutes(value));
@@ -2044,7 +2044,7 @@ extern(Windows):
 
 interface VpnSystemHealth : Windows.Networking.Vpn.IVpnSystemHealth
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.Buffer StatementOfHealth()
 	{
 		Windows.Storage.Streams.Buffer _ret;
@@ -2055,7 +2055,7 @@ extern(Windows):
 
 interface VpnTrafficFilter : Windows.Networking.Vpn.IVpnTrafficFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Vpn.VpnAppId AppId()
 	{
 		Windows.Networking.Vpn.VpnAppId _ret;
@@ -2127,7 +2127,7 @@ extern(Windows):
 
 interface VpnTrafficFilterAssignment : Windows.Networking.Vpn.IVpnTrafficFilterAssignment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnTrafficFilter) TrafficFilterList()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Networking.Vpn.VpnTrafficFilter) _ret;

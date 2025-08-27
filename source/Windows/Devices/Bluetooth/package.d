@@ -312,7 +312,7 @@ extern(Windows):
 
 interface BluetoothAdapter : Windows.Devices.Bluetooth.IBluetoothAdapter
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -390,7 +390,7 @@ extern(Windows):
 
 interface BluetoothClassOfDevice : Windows.Devices.Bluetooth.IBluetoothClassOfDevice
 {
-extern(Windows):
+extern(D):
 	final UINT32 RawValue()
 	{
 		UINT32 _ret;
@@ -438,7 +438,7 @@ extern(Windows):
 
 interface BluetoothDevice : Windows.Devices.Bluetooth.IBluetoothDevice, Windows.Foundation.IClosable, Windows.Devices.Bluetooth.IBluetoothDevice2, Windows.Devices.Bluetooth.IBluetoothDevice3
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -601,7 +601,7 @@ extern(Windows):
 
 interface BluetoothDeviceId : Windows.Devices.Bluetooth.IBluetoothDeviceId
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -624,7 +624,7 @@ extern(Windows):
 
 interface BluetoothLEAppearance : Windows.Devices.Bluetooth.IBluetoothLEAppearance
 {
-extern(Windows):
+extern(D):
 	final UINT16 RawValue()
 	{
 		UINT16 _ret;
@@ -986,7 +986,7 @@ interface BluetoothLEAppearanceSubcategories
 
 interface BluetoothLEDevice : Windows.Devices.Bluetooth.IBluetoothLEDevice, Windows.Foundation.IClosable, Windows.Devices.Bluetooth.IBluetoothLEDevice2, Windows.Devices.Bluetooth.IBluetoothLEDevice3
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -1144,7 +1144,7 @@ extern(Windows):
 
 interface BluetoothSignalStrengthFilter : Windows.Devices.Bluetooth.IBluetoothSignalStrengthFilter
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(INT16) InRangeThresholdInDBm()
 	{
 		Windows.Foundation.IReference!(INT16) _ret;

@@ -315,7 +315,7 @@ interface IXmlText : IXmlText_Base, Windows.Data.Xml.Dom.IXmlCharacterData, Wind
 
 interface DtdEntity : Windows.Data.Xml.Dom.IDtdEntity, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final IInspectable PublicId()
 	{
 		IInspectable _ret;
@@ -510,7 +510,7 @@ extern(Windows):
 
 interface DtdNotation : Windows.Data.Xml.Dom.IDtdNotation, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final IInspectable PublicId()
 	{
 		IInspectable _ret;
@@ -699,7 +699,7 @@ extern(Windows):
 
 interface XmlAttribute : Windows.Data.Xml.Dom.IXmlAttribute, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -898,7 +898,7 @@ extern(Windows):
 
 interface XmlCDataSection : Windows.Data.Xml.Dom.IXmlCDataSection, Windows.Data.Xml.Dom.IXmlText, Windows.Data.Xml.Dom.IXmlCharacterData, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.IXmlText SplitText(UINT32 offset)
 	{
 		Windows.Data.Xml.Dom.IXmlText _ret;
@@ -1119,7 +1119,7 @@ extern(Windows):
 
 interface XmlComment : Windows.Data.Xml.Dom.IXmlComment, Windows.Data.Xml.Dom.IXmlCharacterData, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final wstring Data()
 	{
 		HSTRING _ret;
@@ -1334,7 +1334,7 @@ extern(Windows):
 
 interface XmlDocument : Windows.Data.Xml.Dom.IXmlDocument, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector, Windows.Data.Xml.Dom.IXmlDocumentIO, Windows.Data.Xml.Dom.IXmlDocumentIO2
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.XmlDocumentType Doctype()
 	{
 		Windows.Data.Xml.Dom.XmlDocumentType _ret;
@@ -1676,7 +1676,7 @@ extern(Windows):
 
 interface XmlDocumentFragment : Windows.Data.Xml.Dom.IXmlDocumentFragment, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final IInspectable NodeValue()
 	{
 		IInspectable _ret;
@@ -1853,7 +1853,7 @@ extern(Windows):
 
 interface XmlDocumentType : Windows.Data.Xml.Dom.IXmlDocumentType, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -2048,7 +2048,7 @@ extern(Windows):
 
 interface XmlDomImplementation : Windows.Data.Xml.Dom.IXmlDomImplementation
 {
-extern(Windows):
+extern(D):
 	final bool HasFeature(wstring feature, IInspectable version_)
 	{
 		bool _ret;
@@ -2059,7 +2059,7 @@ extern(Windows):
 
 interface XmlElement : Windows.Data.Xml.Dom.IXmlElement, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final wstring TagName()
 	{
 		HSTRING _ret;
@@ -2306,7 +2306,7 @@ extern(Windows):
 
 interface XmlEntityReference : Windows.Data.Xml.Dom.IXmlEntityReference, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final IInspectable NodeValue()
 	{
 		IInspectable _ret;
@@ -2483,7 +2483,7 @@ extern(Windows):
 
 interface XmlLoadSettings : Windows.Data.Xml.Dom.IXmlLoadSettings
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxElementDepth()
 	{
 		UINT32 _ret;
@@ -2544,7 +2544,7 @@ extern(Windows):
 
 interface XmlNamedNodeMap : Windows.Data.Xml.Dom.IXmlNamedNodeMap, Windows.Foundation.Collections.IVectorView!(Windows.Data.Xml.Dom.IXmlNode), Windows.Foundation.Collections.IIterable!(Windows.Data.Xml.Dom.IXmlNode)
 {
-extern(Windows):
+extern(D):
 	final UINT32 Length()
 	{
 		UINT32 _ret;
@@ -2621,7 +2621,7 @@ extern(Windows):
 
 interface XmlNodeList : Windows.Data.Xml.Dom.IXmlNodeList, Windows.Foundation.Collections.IVectorView!(Windows.Data.Xml.Dom.IXmlNode), Windows.Foundation.Collections.IIterable!(Windows.Data.Xml.Dom.IXmlNode)
 {
-extern(Windows):
+extern(D):
 	final UINT32 Length()
 	{
 		UINT32 _ret;
@@ -2662,7 +2662,7 @@ extern(Windows):
 
 interface XmlProcessingInstruction : Windows.Data.Xml.Dom.IXmlProcessingInstruction, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final wstring Target()
 	{
 		HSTRING _ret;
@@ -2855,7 +2855,7 @@ extern(Windows):
 
 interface XmlText : Windows.Data.Xml.Dom.IXmlText, Windows.Data.Xml.Dom.IXmlCharacterData, Windows.Data.Xml.Dom.IXmlNode, Windows.Data.Xml.Dom.IXmlNodeSerializer, Windows.Data.Xml.Dom.IXmlNodeSelector
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Xml.Dom.IXmlText SplitText(UINT32 offset)
 	{
 		Windows.Data.Xml.Dom.IXmlText _ret;

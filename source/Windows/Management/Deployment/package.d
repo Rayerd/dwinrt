@@ -164,7 +164,7 @@ extern(Windows):
 
 interface DeploymentResult : Windows.Management.Deployment.IDeploymentResult, Windows.Management.Deployment.IDeploymentResult2
 {
-extern(Windows):
+extern(D):
 	final wstring ErrorText()
 	{
 		HSTRING _ret;
@@ -193,7 +193,7 @@ extern(Windows):
 
 interface PackageManager : Windows.Management.Deployment.IPackageManager, Windows.Management.Deployment.IPackageManager2, Windows.Management.Deployment.IPackageManager3, Windows.Management.Deployment.IPackageManager4, Windows.Management.Deployment.IPackageManager5
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(Windows.Management.Deployment.DeploymentResult, Windows.Management.Deployment.DeploymentProgress) AddPackageAsync(Windows.Foundation.Uri packageUri, Windows.Foundation.Collections.IIterable!(Windows.Foundation.Uri) dependencyPackageUris, Windows.Management.Deployment.DeploymentOptions deploymentOptions)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(Windows.Management.Deployment.DeploymentResult, Windows.Management.Deployment.DeploymentProgress) _ret;
@@ -494,7 +494,7 @@ extern(Windows):
 
 interface PackageManagerDebugSettings : Windows.Management.Deployment.IPackageManagerDebugSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction SetContentGroupStateAsync(Windows.ApplicationModel.Package package_, wstring contentGroupName, Windows.ApplicationModel.PackageContentGroupState state)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -512,7 +512,7 @@ extern(Windows):
 
 interface PackageUserInformation : Windows.Management.Deployment.IPackageUserInformation
 {
-extern(Windows):
+extern(D):
 	final wstring UserSecurityId()
 	{
 		HSTRING _ret;
@@ -529,7 +529,7 @@ extern(Windows):
 
 interface PackageVolume : Windows.Management.Deployment.IPackageVolume, Windows.Management.Deployment.IPackageVolume2
 {
-extern(Windows):
+extern(D):
 	final bool IsOffline()
 	{
 		bool _ret;

@@ -836,7 +836,7 @@ extern(Windows):
 
 interface Accelerometer : Windows.Devices.Sensors.IAccelerometer, Windows.Devices.Sensors.IAccelerometerDeviceId, Windows.Devices.Sensors.IAccelerometer2, Windows.Devices.Sensors.IAccelerometer3, Windows.Devices.Sensors.IAccelerometer4
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.AccelerometerReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.AccelerometerReading _ret;
@@ -934,7 +934,7 @@ extern(Windows):
 
 interface AccelerometerReading : Windows.Devices.Sensors.IAccelerometerReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -963,7 +963,7 @@ extern(Windows):
 
 interface AccelerometerReadingChangedEventArgs : Windows.Devices.Sensors.IAccelerometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.AccelerometerReading Reading()
 	{
 		Windows.Devices.Sensors.AccelerometerReading _ret;
@@ -974,7 +974,7 @@ extern(Windows):
 
 interface AccelerometerShakenEventArgs : Windows.Devices.Sensors.IAccelerometerShakenEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -985,7 +985,7 @@ extern(Windows):
 
 interface ActivitySensor : Windows.Devices.Sensors.IActivitySensor
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Devices.Sensors.ActivitySensorReading) GetCurrentReadingAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Devices.Sensors.ActivitySensorReading) _ret;
@@ -1074,7 +1074,7 @@ extern(Windows):
 
 interface ActivitySensorReading : Windows.Devices.Sensors.IActivitySensorReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1097,7 +1097,7 @@ extern(Windows):
 
 interface ActivitySensorReadingChangeReport : Windows.Devices.Sensors.IActivitySensorReadingChangeReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.ActivitySensorReading Reading()
 	{
 		Windows.Devices.Sensors.ActivitySensorReading _ret;
@@ -1108,7 +1108,7 @@ extern(Windows):
 
 interface ActivitySensorReadingChangedEventArgs : Windows.Devices.Sensors.IActivitySensorReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.ActivitySensorReading Reading()
 	{
 		Windows.Devices.Sensors.ActivitySensorReading _ret;
@@ -1119,7 +1119,7 @@ extern(Windows):
 
 interface ActivitySensorTriggerDetails : Windows.Devices.Sensors.IActivitySensorTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Sensors.ActivitySensorReadingChangeReport) ReadReports()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Devices.Sensors.ActivitySensorReadingChangeReport) _ret;
@@ -1130,7 +1130,7 @@ extern(Windows):
 
 interface Altimeter : Windows.Devices.Sensors.IAltimeter
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.AltimeterReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.AltimeterReading _ret;
@@ -1186,7 +1186,7 @@ extern(Windows):
 
 interface AltimeterReading : Windows.Devices.Sensors.IAltimeterReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1203,7 +1203,7 @@ extern(Windows):
 
 interface AltimeterReadingChangedEventArgs : Windows.Devices.Sensors.IAltimeterReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.AltimeterReading Reading()
 	{
 		Windows.Devices.Sensors.AltimeterReading _ret;
@@ -1214,7 +1214,7 @@ extern(Windows):
 
 interface Barometer : Windows.Devices.Sensors.IBarometer
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.BarometerReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.BarometerReading _ret;
@@ -1270,7 +1270,7 @@ extern(Windows):
 
 interface BarometerReading : Windows.Devices.Sensors.IBarometerReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1287,7 +1287,7 @@ extern(Windows):
 
 interface BarometerReadingChangedEventArgs : Windows.Devices.Sensors.IBarometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.BarometerReading Reading()
 	{
 		Windows.Devices.Sensors.BarometerReading _ret;
@@ -1298,7 +1298,7 @@ extern(Windows):
 
 interface Compass : Windows.Devices.Sensors.ICompass, Windows.Devices.Sensors.ICompassDeviceId, Windows.Devices.Sensors.ICompass2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.CompassReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.CompassReading _ret;
@@ -1364,7 +1364,7 @@ extern(Windows):
 
 interface CompassReading : Windows.Devices.Sensors.ICompassReading, Windows.Devices.Sensors.ICompassReadingHeadingAccuracy
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1393,7 +1393,7 @@ extern(Windows):
 
 interface CompassReadingChangedEventArgs : Windows.Devices.Sensors.ICompassReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.CompassReading Reading()
 	{
 		Windows.Devices.Sensors.CompassReading _ret;
@@ -1404,7 +1404,7 @@ extern(Windows):
 
 interface Gyrometer : Windows.Devices.Sensors.IGyrometer, Windows.Devices.Sensors.IGyrometerDeviceId, Windows.Devices.Sensors.IGyrometer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.GyrometerReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.GyrometerReading _ret;
@@ -1470,7 +1470,7 @@ extern(Windows):
 
 interface GyrometerReading : Windows.Devices.Sensors.IGyrometerReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1499,7 +1499,7 @@ extern(Windows):
 
 interface GyrometerReadingChangedEventArgs : Windows.Devices.Sensors.IGyrometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.GyrometerReading Reading()
 	{
 		Windows.Devices.Sensors.GyrometerReading _ret;
@@ -1510,7 +1510,7 @@ extern(Windows):
 
 interface Inclinometer : Windows.Devices.Sensors.IInclinometer, Windows.Devices.Sensors.IInclinometerDeviceId, Windows.Devices.Sensors.IInclinometer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.InclinometerReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.InclinometerReading _ret;
@@ -1582,7 +1582,7 @@ extern(Windows):
 
 interface InclinometerReading : Windows.Devices.Sensors.IInclinometerReading, Windows.Devices.Sensors.IInclinometerReadingYawAccuracy
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1617,7 +1617,7 @@ extern(Windows):
 
 interface InclinometerReadingChangedEventArgs : Windows.Devices.Sensors.IInclinometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.InclinometerReading Reading()
 	{
 		Windows.Devices.Sensors.InclinometerReading _ret;
@@ -1628,7 +1628,7 @@ extern(Windows):
 
 interface LightSensor : Windows.Devices.Sensors.ILightSensor, Windows.Devices.Sensors.ILightSensorDeviceId
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.LightSensorReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.LightSensorReading _ret;
@@ -1684,7 +1684,7 @@ extern(Windows):
 
 interface LightSensorReading : Windows.Devices.Sensors.ILightSensorReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1701,7 +1701,7 @@ extern(Windows):
 
 interface LightSensorReadingChangedEventArgs : Windows.Devices.Sensors.ILightSensorReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.LightSensorReading Reading()
 	{
 		Windows.Devices.Sensors.LightSensorReading _ret;
@@ -1712,7 +1712,7 @@ extern(Windows):
 
 interface Magnetometer : Windows.Devices.Sensors.IMagnetometer, Windows.Devices.Sensors.IMagnetometerDeviceId, Windows.Devices.Sensors.IMagnetometer2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.MagnetometerReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.MagnetometerReading _ret;
@@ -1778,7 +1778,7 @@ extern(Windows):
 
 interface MagnetometerReading : Windows.Devices.Sensors.IMagnetometerReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1813,7 +1813,7 @@ extern(Windows):
 
 interface MagnetometerReadingChangedEventArgs : Windows.Devices.Sensors.IMagnetometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.MagnetometerReading Reading()
 	{
 		Windows.Devices.Sensors.MagnetometerReading _ret;
@@ -1824,7 +1824,7 @@ extern(Windows):
 
 interface OrientationSensor : Windows.Devices.Sensors.IOrientationSensor, Windows.Devices.Sensors.IOrientationSensorDeviceId, Windows.Devices.Sensors.IOrientationSensor2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.OrientationSensorReading GetCurrentReading()
 	{
 		Windows.Devices.Sensors.OrientationSensorReading _ret;
@@ -1896,7 +1896,7 @@ extern(Windows):
 
 interface OrientationSensorReading : Windows.Devices.Sensors.IOrientationSensorReading, Windows.Devices.Sensors.IOrientationSensorReadingYawAccuracy
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -1925,7 +1925,7 @@ extern(Windows):
 
 interface OrientationSensorReadingChangedEventArgs : Windows.Devices.Sensors.IOrientationSensorReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.OrientationSensorReading Reading()
 	{
 		Windows.Devices.Sensors.OrientationSensorReading _ret;
@@ -1936,7 +1936,7 @@ extern(Windows):
 
 interface Pedometer : Windows.Devices.Sensors.IPedometer, Windows.Devices.Sensors.IPedometer2
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2034,7 +2034,7 @@ interface PedometerDataThreshold : Windows.Devices.Sensors.ISensorDataThreshold
 
 interface PedometerReading : Windows.Devices.Sensors.IPedometerReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.PedometerStepKind StepKind()
 	{
 		Windows.Devices.Sensors.PedometerStepKind _ret;
@@ -2063,7 +2063,7 @@ extern(Windows):
 
 interface PedometerReadingChangedEventArgs : Windows.Devices.Sensors.IPedometerReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.PedometerReading Reading()
 	{
 		Windows.Devices.Sensors.PedometerReading _ret;
@@ -2074,7 +2074,7 @@ extern(Windows):
 
 interface ProximitySensor : Windows.Devices.Sensors.IProximitySensor
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2149,7 +2149,7 @@ interface ProximitySensorDataThreshold : Windows.Devices.Sensors.ISensorDataThre
 
 interface ProximitySensorDisplayOnOffController : Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void Close()
 	{
 		Debug.OK((cast(Windows.Foundation.IClosable)this.asInterface(uuid("30d5a829-7fa4-4026-83bb-d75bae4ea99e"))).abi_Close());
@@ -2158,7 +2158,7 @@ extern(Windows):
 
 interface ProximitySensorReading : Windows.Devices.Sensors.IProximitySensorReading
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -2181,7 +2181,7 @@ extern(Windows):
 
 interface ProximitySensorReadingChangedEventArgs : Windows.Devices.Sensors.IProximitySensorReadingChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.ProximitySensorReading Reading()
 	{
 		Windows.Devices.Sensors.ProximitySensorReading _ret;
@@ -2192,7 +2192,7 @@ extern(Windows):
 
 interface SensorDataThresholdTriggerDetails : Windows.Devices.Sensors.ISensorDataThresholdTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -2209,7 +2209,7 @@ extern(Windows):
 
 interface SensorQuaternion : Windows.Devices.Sensors.ISensorQuaternion
 {
-extern(Windows):
+extern(D):
 	final float W()
 	{
 		float _ret;
@@ -2238,7 +2238,7 @@ extern(Windows):
 
 interface SensorRotationMatrix : Windows.Devices.Sensors.ISensorRotationMatrix
 {
-extern(Windows):
+extern(D):
 	final float M11()
 	{
 		float _ret;
@@ -2297,7 +2297,7 @@ extern(Windows):
 
 interface SimpleOrientationSensor : Windows.Devices.Sensors.ISimpleOrientationSensor, Windows.Devices.Sensors.ISimpleOrientationSensorDeviceId, Windows.Devices.Sensors.ISimpleOrientationSensor2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Sensors.SimpleOrientation GetCurrentOrientation()
 	{
 		Windows.Devices.Sensors.SimpleOrientation _ret;
@@ -2347,7 +2347,7 @@ extern(Windows):
 
 interface SimpleOrientationSensorOrientationChangedEventArgs : Windows.Devices.Sensors.ISimpleOrientationSensorOrientationChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Timestamp()
 	{
 		Windows.Foundation.DateTime _ret;

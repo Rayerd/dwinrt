@@ -43,7 +43,7 @@ extern(Windows):
 
 interface QuickLink : Windows.ApplicationModel.DataTransfer.ShareTarget.IQuickLink
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -96,7 +96,7 @@ extern(Windows):
 
 interface ShareOperation : Windows.ApplicationModel.DataTransfer.ShareTarget.IShareOperation, Windows.ApplicationModel.DataTransfer.ShareTarget.IShareOperation2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackageView Data()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackageView _ret;

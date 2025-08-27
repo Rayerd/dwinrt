@@ -280,7 +280,7 @@ extern(Windows):
 
 interface AdaptiveMediaSource : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSource, Windows.Media.Core.IMediaSource, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSource2, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSource3, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final bool IsLive()
 	{
 		bool _ret;
@@ -504,7 +504,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceAdvancedSettings : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceAdvancedSettings
 {
-extern(Windows):
+extern(D):
 	final bool AllSegmentsIndependent()
 	{
 		bool _ret;
@@ -539,7 +539,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceCorrelatedTimes : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceCorrelatedTimes
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) Position()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) _ret;
@@ -562,7 +562,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceCreationResult : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceCreationResult, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceCreationResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationStatus Status()
 	{
 		Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationStatus _ret;
@@ -591,7 +591,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDiagnosticAvailableEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDiagnosticAvailableEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnosticType DiagnosticType()
 	{
 		Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnosticType _ret;
@@ -650,7 +650,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDiagnostics : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDiagnostics
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnDiagnosticAvailable(void delegate(Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnostics, Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnosticAvailableEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -665,7 +665,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadBitrateChangedEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadBitrateChangedEventArgs, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadBitrateChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final UINT32 OldValue()
 	{
 		UINT32 _ret;
@@ -688,7 +688,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadCompletedEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadCompletedEventArgs, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadCompletedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType ResourceType()
 	{
 		Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType _ret;
@@ -741,7 +741,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadFailedEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadFailedEventArgs, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadFailedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType ResourceType()
 	{
 		Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType _ret;
@@ -800,7 +800,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadRequestedDeferral : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadRequestedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadRequestedDeferral)this.asInterface(uuid("05c68f64-fa20-4dbd-9821-4bf4c9bf77ab"))).abi_Complete());
@@ -809,7 +809,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadRequestedEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadRequestedEventArgs, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadRequestedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType ResourceType()
 	{
 		Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType _ret;
@@ -862,7 +862,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadResult : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadResult, Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri ResourceUri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -937,7 +937,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourceDownloadStatistics : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourceDownloadStatistics
 {
-extern(Windows):
+extern(D):
 	final ulong ContentBytesReceivedCount()
 	{
 		ulong _ret;
@@ -966,7 +966,7 @@ extern(Windows):
 
 interface AdaptiveMediaSourcePlaybackBitrateChangedEventArgs : Windows.Media.Streaming.Adaptive.IAdaptiveMediaSourcePlaybackBitrateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT32 OldValue()
 	{
 		UINT32 _ret;

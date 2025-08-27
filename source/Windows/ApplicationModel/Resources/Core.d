@@ -151,7 +151,7 @@ extern(Windows):
 
 interface NamedResource : Windows.ApplicationModel.Resources.Core.INamedResource
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -196,7 +196,7 @@ extern(Windows):
 
 interface ResourceCandidate : Windows.ApplicationModel.Resources.Core.IResourceCandidate, Windows.ApplicationModel.Resources.Core.IResourceCandidate2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceQualifier) Qualifiers()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceQualifier) _ret;
@@ -249,7 +249,7 @@ extern(Windows):
 
 interface ResourceCandidateVectorView : Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceCandidate), Windows.Foundation.Collections.IIterable!(Windows.ApplicationModel.Resources.Core.ResourceCandidate)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.ApplicationModel.Resources.Core.ResourceCandidate* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceCandidate))this).abi_GetAt(index, out_item));
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface ResourceContext : Windows.ApplicationModel.Resources.Core.IResourceContext
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IObservableMap!(HSTRING, HSTRING) QualifierValues()
 	{
 		Windows.Foundation.Collections.IObservableMap!(HSTRING, HSTRING) _ret;
@@ -338,7 +338,7 @@ extern(Windows):
 
 interface ResourceContextLanguagesVectorView : Windows.Foundation.Collections.IVectorView!(HSTRING), Windows.Foundation.Collections.IIterable!(HSTRING)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, HSTRING* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(HSTRING))this).abi_GetAt(index, out_item));
@@ -367,7 +367,7 @@ extern(Windows):
 
 interface ResourceManager : Windows.ApplicationModel.Resources.Core.IResourceManager, Windows.ApplicationModel.Resources.Core.IResourceManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Resources.Core.ResourceMap MainResourceMap()
 	{
 		Windows.ApplicationModel.Resources.Core.ResourceMap _ret;
@@ -430,7 +430,7 @@ extern(Windows):
 
 interface ResourceMap : Windows.ApplicationModel.Resources.Core.IResourceMap, Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Resources.Core.NamedResource), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.NamedResource))
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -487,7 +487,7 @@ extern(Windows):
 
 interface ResourceMapIterator : Windows.Foundation.Collections.IIterator!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.NamedResource))
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.NamedResource) Current()
 	{
 		Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.NamedResource) _ret;
@@ -512,7 +512,7 @@ extern(Windows):
 
 interface ResourceMapMapView : Windows.Foundation.Collections.IMapView!(HSTRING, Windows.ApplicationModel.Resources.Core.ResourceMap), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.ResourceMap))
 {
-extern(Windows):
+extern(D):
 	final  Windows.ApplicationModel.Resources.Core.ResourceMap Lookup(wstring key)
 	{
 		 Windows.ApplicationModel.Resources.Core.ResourceMap _ret;
@@ -543,7 +543,7 @@ extern(Windows):
 
 interface ResourceMapMapViewIterator : Windows.Foundation.Collections.IIterator!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.ResourceMap))
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.ResourceMap) Current()
 	{
 		Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.ApplicationModel.Resources.Core.ResourceMap) _ret;
@@ -568,7 +568,7 @@ extern(Windows):
 
 interface ResourceQualifier : Windows.ApplicationModel.Resources.Core.IResourceQualifier
 {
-extern(Windows):
+extern(D):
 	final wstring QualifierName()
 	{
 		HSTRING _ret;
@@ -603,7 +603,7 @@ extern(Windows):
 
 interface ResourceQualifierMapView : Windows.Foundation.Collections.IMapView!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING))
 {
-extern(Windows):
+extern(D):
 	final  HSTRING Lookup(wstring key)
 	{
 		 HSTRING _ret;
@@ -634,7 +634,7 @@ extern(Windows):
 
 interface ResourceQualifierObservableMap : Windows.Foundation.Collections.IObservableMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IMap!(HSTRING, HSTRING), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, HSTRING))
 {
-extern(Windows):
+extern(D):
 	final void removeMapChanged(EventRegistrationToken token)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IObservableMap!(HSTRING, HSTRING))this).remove_MapChanged(token));
@@ -685,7 +685,7 @@ extern(Windows):
 
 interface ResourceQualifierVectorView : Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceQualifier), Windows.Foundation.Collections.IIterable!(Windows.ApplicationModel.Resources.Core.ResourceQualifier)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.ApplicationModel.Resources.Core.ResourceQualifier* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Resources.Core.ResourceQualifier))this).abi_GetAt(index, out_item));

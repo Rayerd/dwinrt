@@ -914,7 +914,7 @@ interface IVisualUnorderedCollection : IVisualUnorderedCollection_Base, Windows.
 
 interface AmbientLight : Windows.UI.Composition.CompositionLight, Windows.UI.Composition.IAmbientLight
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -929,7 +929,7 @@ extern(Windows):
 
 interface ColorKeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IColorKeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionColorSpace InterpolationColorSpace()
 	{
 		Windows.UI.Composition.CompositionColorSpace _ret;
@@ -953,7 +953,7 @@ extern(Windows):
 
 interface CompositionAnimation : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionAnimation, Windows.UI.Composition.ICompositionAnimation2, Windows.UI.Composition.ICompositionAnimationBase
 {
-extern(Windows):
+extern(D):
 	final void ClearAllParameters()
 	{
 		Debug.OK((cast(Windows.UI.Composition.ICompositionAnimation)this.asInterface(uuid("464c4c2c-1caa-4061-9b40-e13fde1503ca"))).abi_ClearAllParameters());
@@ -1060,7 +1060,7 @@ class CompositionAnimationT(Base) : AgileObject!Base, CompositionAnimation
 
 interface CompositionAnimationGroup : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionAnimationGroup, Windows.Foundation.Collections.IIterable!(Windows.UI.Composition.CompositionAnimation), Windows.UI.Composition.ICompositionAnimationBase
 {
-extern(Windows):
+extern(D):
 	final INT32 Count()
 	{
 		INT32 _ret;
@@ -1127,7 +1127,7 @@ class CompositionBrushT(Base) : AgileObject!Base, CompositionBrush
 
 interface CompositionCapabilities : Windows.UI.Composition.ICompositionCapabilities
 {
-extern(Windows):
+extern(D):
 	final bool AreEffectsSupported()
 	{
 		bool _ret;
@@ -1167,7 +1167,7 @@ extern(Windows):
 
 interface CompositionClip : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionClip, Windows.UI.Composition.ICompositionClip2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector2 AnchorPoint()
 	{
 		Windows.Foundation.Numerics.Vector2 _ret;
@@ -1285,7 +1285,7 @@ class CompositionClipT(Base) : AgileObject!Base, CompositionClip
 
 interface CompositionColorBrush : Windows.UI.Composition.CompositionBrush, Windows.UI.Composition.ICompositionColorBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -1300,7 +1300,7 @@ extern(Windows):
 
 interface CompositionCommitBatch : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionCommitBatch
 {
-extern(Windows):
+extern(D):
 	final bool IsActive()
 	{
 		bool _ret;
@@ -1327,7 +1327,7 @@ extern(Windows):
 
 interface CompositionDrawingSurface : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionDrawingSurface, Windows.UI.Composition.ICompositionSurface, Windows.UI.Composition.ICompositionDrawingSurface2
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.DirectX.DirectXAlphaMode AlphaMode()
 	{
 		Windows.Graphics.DirectX.DirectXAlphaMode _ret;
@@ -1449,7 +1449,7 @@ class CompositionEasingFunctionT(Base) : AgileObject!Base, CompositionEasingFunc
 
 interface CompositionEffectBrush : Windows.UI.Composition.CompositionBrush, Windows.UI.Composition.ICompositionEffectBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionBrush GetSourceParameter(wstring name)
 	{
 		Windows.UI.Composition.CompositionBrush _ret;
@@ -1464,7 +1464,7 @@ extern(Windows):
 
 interface CompositionEffectFactory : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionEffectFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionEffectBrush CreateBrush()
 	{
 		Windows.UI.Composition.CompositionEffectBrush _ret;
@@ -1487,7 +1487,7 @@ extern(Windows):
 
 interface CompositionEffectSourceParameter : Windows.UI.Composition.ICompositionEffectSourceParameter, Windows.Graphics.Effects.IGraphicsEffectSource
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1505,7 +1505,7 @@ extern(Windows):
 
 interface CompositionGraphicsDevice : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionGraphicsDevice, Windows.UI.Composition.ICompositionGraphicsDevice2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionDrawingSurface CreateDrawingSurface(Windows.Foundation.Size sizePixels, Windows.Graphics.DirectX.DirectXPixelFormat pixelFormat, Windows.Graphics.DirectX.DirectXAlphaMode alphaMode)
 	{
 		Windows.UI.Composition.CompositionDrawingSurface _ret;
@@ -1538,7 +1538,7 @@ extern(Windows):
 
 interface CompositionLight : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionLight
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.VisualUnorderedCollection Targets()
 	{
 		Windows.UI.Composition.VisualUnorderedCollection _ret;
@@ -1579,7 +1579,7 @@ class CompositionLightT(Base) : AgileObject!Base, CompositionLight
 
 interface CompositionMaskBrush : Windows.UI.Composition.CompositionBrush, Windows.UI.Composition.ICompositionMaskBrush
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionBrush Mask()
 	{
 		Windows.UI.Composition.CompositionBrush _ret;
@@ -1604,7 +1604,7 @@ extern(Windows):
 
 interface CompositionNineGridBrush : Windows.UI.Composition.CompositionBrush, Windows.UI.Composition.ICompositionNineGridBrush
 {
-extern(Windows):
+extern(D):
 	final float BottomInset()
 	{
 		float _ret;
@@ -1727,7 +1727,7 @@ extern(Windows):
 
 interface CompositionObject : Windows.UI.Composition.ICompositionObject, Windows.Foundation.IClosable, Windows.UI.Composition.ICompositionObject2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.Compositor Compositor()
 	{
 		Windows.UI.Composition.Compositor _ret;
@@ -1818,7 +1818,7 @@ class CompositionObjectT(Base) : AgileObject!Base, CompositionObject
 
 interface CompositionPropertySet : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionPropertySet, Windows.UI.Composition.ICompositionPropertySet2
 {
-extern(Windows):
+extern(D):
 	final void InsertColor(wstring propertyName, Windows.UI.Color value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.ICompositionPropertySet)this.asInterface(uuid("c9d6d202-5f67-4453-9117-9eadd430d3c2"))).abi_InsertColor(hstring(propertyName).handle, value));
@@ -1913,7 +1913,7 @@ extern(Windows):
 
 interface CompositionScopedBatch : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionScopedBatch
 {
-extern(Windows):
+extern(D):
 	final bool IsActive()
 	{
 		bool _ret;
@@ -1984,7 +1984,7 @@ class CompositionShadowT(Base) : AgileObject!Base, CompositionShadow
 
 interface CompositionSurfaceBrush : Windows.UI.Composition.CompositionBrush, Windows.UI.Composition.ICompositionSurfaceBrush, Windows.UI.Composition.ICompositionSurfaceBrush2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionBitmapInterpolationMode BitmapInterpolationMode()
 	{
 		Windows.UI.Composition.CompositionBitmapInterpolationMode _ret;
@@ -2109,7 +2109,7 @@ extern(Windows):
 
 interface CompositionTarget : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.ICompositionTarget
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.Visual Root()
 	{
 		Windows.UI.Composition.Visual _ret;
@@ -2124,7 +2124,7 @@ extern(Windows):
 
 interface CompositionVirtualDrawingSurface : Windows.UI.Composition.CompositionDrawingSurface, Windows.UI.Composition.ICompositionVirtualDrawingSurface
 {
-extern(Windows):
+extern(D):
 	final void Trim(UINT32 __rectsSize, Windows.Graphics.RectInt32* rects)
 	{
 		Debug.OK((cast(Windows.UI.Composition.ICompositionVirtualDrawingSurface)this.asInterface(uuid("a9c384db-8740-4f94-8b9d-b68521e7863d"))).abi_Trim(__rectsSize, rects));
@@ -2174,7 +2174,7 @@ class CompositionVirtualDrawingSurfaceT(Base) : AgileObject!Base, CompositionVir
 
 interface Compositor : Windows.UI.Composition.ICompositor, Windows.Foundation.IClosable, Windows.UI.Composition.ICompositor2, Windows.UI.Composition.ICompositor3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.ColorKeyFrameAnimation CreateColorKeyFrameAnimation()
 	{
 		Windows.UI.Composition.ColorKeyFrameAnimation _ret;
@@ -2423,7 +2423,7 @@ extern(Windows):
 
 interface ContainerVisual : Windows.UI.Composition.Visual, Windows.UI.Composition.IContainerVisual
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.VisualCollection Children()
 	{
 		Windows.UI.Composition.VisualCollection _ret;
@@ -2505,7 +2505,7 @@ class ContainerVisualT(Base) : AgileObject!Base, ContainerVisual
 
 interface CubicBezierEasingFunction : Windows.UI.Composition.CompositionEasingFunction, Windows.UI.Composition.ICubicBezierEasingFunction
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector2 ControlPoint1()
 	{
 		Windows.Foundation.Numerics.Vector2 _ret;
@@ -2522,7 +2522,7 @@ extern(Windows):
 
 interface DistantLight : Windows.UI.Composition.CompositionLight, Windows.UI.Composition.IDistantLight
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -2557,7 +2557,7 @@ extern(Windows):
 
 interface DropShadow : Windows.UI.Composition.CompositionShadow, Windows.UI.Composition.IDropShadow
 {
-extern(Windows):
+extern(D):
 	final float BlurRadius()
 	{
 		float _ret;
@@ -2612,7 +2612,7 @@ extern(Windows):
 
 interface ExpressionAnimation : Windows.UI.Composition.CompositionAnimation, Windows.UI.Composition.IExpressionAnimation
 {
-extern(Windows):
+extern(D):
 	final wstring Expression()
 	{
 		HSTRING _ret;
@@ -2627,7 +2627,7 @@ extern(Windows):
 
 interface ImplicitAnimationCollection : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.IImplicitAnimationCollection, Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.UI.Composition.ICompositionAnimationBase)), Windows.Foundation.Collections.IMap!(HSTRING, Windows.UI.Composition.ICompositionAnimationBase)
 {
-extern(Windows):
+extern(D):
 	final void First(Windows.Foundation.Collections.IIterator!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.UI.Composition.ICompositionAnimationBase))* out_first)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.UI.Composition.ICompositionAnimationBase)))this).abi_First(out_first));
@@ -2674,7 +2674,7 @@ extern(Windows):
 
 interface InsetClip : Windows.UI.Composition.CompositionClip, Windows.UI.Composition.IInsetClip
 {
-extern(Windows):
+extern(D):
 	final float BottomInset()
 	{
 		float _ret;
@@ -2719,7 +2719,7 @@ extern(Windows):
 
 interface KeyFrameAnimation : Windows.UI.Composition.CompositionAnimation, Windows.UI.Composition.IKeyFrameAnimation, Windows.UI.Composition.IKeyFrameAnimation2, Windows.UI.Composition.IKeyFrameAnimation3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan DelayTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -2873,7 +2873,7 @@ class KeyFrameAnimationT(Base) : AgileObject!Base, KeyFrameAnimation
 
 interface LayerVisual : Windows.UI.Composition.ContainerVisual, Windows.UI.Composition.ILayerVisual
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionEffectBrush Effect()
 	{
 		Windows.UI.Composition.CompositionEffectBrush _ret;
@@ -2892,7 +2892,7 @@ interface LinearEasingFunction : Windows.UI.Composition.CompositionEasingFunctio
 
 interface PointLight : Windows.UI.Composition.CompositionLight, Windows.UI.Composition.IPointLight
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -2957,7 +2957,7 @@ extern(Windows):
 
 interface QuaternionKeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IQuaternionKeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final void InsertKeyFrame(float normalizedProgressKey, Windows.Foundation.Numerics.Quaternion value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.IQuaternionKeyFrameAnimation)this.asInterface(uuid("404e5835-ecf6-4240-8520-671279cf36bc"))).abi_InsertKeyFrame(normalizedProgressKey, value));
@@ -2971,7 +2971,7 @@ extern(Windows):
 
 interface RenderingDeviceReplacedEventArgs : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.IRenderingDeviceReplacedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionGraphicsDevice GraphicsDevice()
 	{
 		Windows.UI.Composition.CompositionGraphicsDevice _ret;
@@ -2982,7 +2982,7 @@ extern(Windows):
 
 interface ScalarKeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IScalarKeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final void InsertKeyFrame(float normalizedProgressKey, float value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.IScalarKeyFrameAnimation)this.asInterface(uuid("ae288fa9-252c-4b95-a725-bf85e38000a1"))).abi_InsertKeyFrame(normalizedProgressKey, value));
@@ -2996,7 +2996,7 @@ extern(Windows):
 
 interface SpotLight : Windows.UI.Composition.CompositionLight, Windows.UI.Composition.ISpotLight
 {
-extern(Windows):
+extern(D):
 	final float ConstantAttenuation()
 	{
 		float _ret;
@@ -3121,7 +3121,7 @@ extern(Windows):
 
 interface SpriteVisual : Windows.UI.Composition.ContainerVisual, Windows.UI.Composition.ISpriteVisual, Windows.UI.Composition.ISpriteVisual2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.CompositionBrush Brush()
 	{
 		Windows.UI.Composition.CompositionBrush _ret;
@@ -3146,7 +3146,7 @@ extern(Windows):
 
 interface StepEasingFunction : Windows.UI.Composition.CompositionEasingFunction, Windows.UI.Composition.IStepEasingFunction
 {
-extern(Windows):
+extern(D):
 	final INT32 FinalStep()
 	{
 		INT32 _ret;
@@ -3201,7 +3201,7 @@ extern(Windows):
 
 interface Vector2KeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IVector2KeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final void InsertKeyFrame(float normalizedProgressKey, Windows.Foundation.Numerics.Vector2 value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.IVector2KeyFrameAnimation)this.asInterface(uuid("df414515-4e29-4f11-b55e-bf2a6eb36294"))).abi_InsertKeyFrame(normalizedProgressKey, value));
@@ -3215,7 +3215,7 @@ extern(Windows):
 
 interface Vector3KeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IVector3KeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final void InsertKeyFrame(float normalizedProgressKey, Windows.Foundation.Numerics.Vector3 value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.IVector3KeyFrameAnimation)this.asInterface(uuid("c8039daa-a281-43c2-a73d-b68e3c533c40"))).abi_InsertKeyFrame(normalizedProgressKey, value));
@@ -3229,7 +3229,7 @@ extern(Windows):
 
 interface Vector4KeyFrameAnimation : Windows.UI.Composition.KeyFrameAnimation, Windows.UI.Composition.IVector4KeyFrameAnimation
 {
-extern(Windows):
+extern(D):
 	final void InsertKeyFrame(float normalizedProgressKey, Windows.Foundation.Numerics.Vector4 value)
 	{
 		Debug.OK((cast(Windows.UI.Composition.IVector4KeyFrameAnimation)this.asInterface(uuid("2457945b-addd-4385-9606-b6a3d5e4e1b9"))).abi_InsertKeyFrame(normalizedProgressKey, value));
@@ -3243,7 +3243,7 @@ extern(Windows):
 
 interface Visual : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.IVisual, Windows.UI.Composition.IVisual2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector2 AnchorPoint()
 	{
 		Windows.Foundation.Numerics.Vector2 _ret;
@@ -3513,7 +3513,7 @@ class VisualT(Base) : AgileObject!Base, Visual
 
 interface VisualCollection : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.IVisualCollection, Windows.Foundation.Collections.IIterable!(Windows.UI.Composition.Visual)
 {
-extern(Windows):
+extern(D):
 	final INT32 Count()
 	{
 		INT32 _ret;
@@ -3552,7 +3552,7 @@ extern(Windows):
 
 interface VisualUnorderedCollection : Windows.UI.Composition.CompositionObject, Windows.UI.Composition.IVisualUnorderedCollection, Windows.Foundation.Collections.IIterable!(Windows.UI.Composition.Visual)
 {
-extern(Windows):
+extern(D):
 	final INT32 Count()
 	{
 		INT32 _ret;

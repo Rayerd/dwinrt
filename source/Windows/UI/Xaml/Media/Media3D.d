@@ -130,7 +130,7 @@ extern(Windows):
 
 interface CompositeTransform3D : Windows.UI.Xaml.Media.Media3D.Transform3D, Windows.UI.Xaml.Media.Media3D.ICompositeTransform3D
 {
-extern(Windows):
+extern(D):
 	final double CenterX()
 	{
 		double _ret;
@@ -386,7 +386,7 @@ interface Matrix3DHelper : Windows.UI.Xaml.Media.Media3D.IMatrix3DHelper
 
 interface PerspectiveTransform3D : Windows.UI.Xaml.Media.Media3D.Transform3D, Windows.UI.Xaml.Media.Media3D.IPerspectiveTransform3D
 {
-extern(Windows):
+extern(D):
 	final double Depth()
 	{
 		double _ret;

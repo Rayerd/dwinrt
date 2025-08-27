@@ -148,7 +148,7 @@ extern(Windows):
 
 interface ComponentLoadFailedEventArgs : Windows.Media.Protection.IComponentLoadFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.RevocationAndRenewalInformation Information()
 	{
 		Windows.Media.Protection.RevocationAndRenewalInformation _ret;
@@ -181,7 +181,7 @@ interface ComponentRenewal
 
 interface HdcpSession : Windows.Media.Protection.IHdcpSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final bool IsEffectiveProtectionAtLeast(Windows.Media.Protection.HdcpProtection protection)
 	{
 		bool _ret;
@@ -224,7 +224,7 @@ extern(Windows):
 
 interface MediaProtectionManager : Windows.Media.Protection.IMediaProtectionManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnServiceRequested(void delegate(Windows.Media.Protection.MediaProtectionManager, Windows.Media.Protection.ServiceRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -271,7 +271,7 @@ extern(Windows):
 
 interface MediaProtectionPMPServer : Windows.Media.Protection.IMediaProtectionPMPServer
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IPropertySet Properties()
 	{
 		Windows.Foundation.Collections.IPropertySet _ret;
@@ -289,7 +289,7 @@ extern(Windows):
 
 interface MediaProtectionServiceCompletion : Windows.Media.Protection.IMediaProtectionServiceCompletion
 {
-extern(Windows):
+extern(D):
 	final void Complete(bool success)
 	{
 		Debug.OK((cast(Windows.Media.Protection.IMediaProtectionServiceCompletion)this.asInterface(uuid("8b5cca18-cfd5-44ee-a2ed-df76010c14b5"))).abi_Complete(success));
@@ -298,7 +298,7 @@ extern(Windows):
 
 interface ProtectionCapabilities : Windows.Media.Protection.IProtectionCapabilities
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.ProtectionCapabilityResult IsTypeSupported(wstring type, wstring keySystem)
 	{
 		Windows.Media.Protection.ProtectionCapabilityResult _ret;
@@ -315,7 +315,7 @@ extern(Windows):
 
 interface RevocationAndRenewalInformation : Windows.Media.Protection.IRevocationAndRenewalInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Media.Protection.RevocationAndRenewalItem) Items()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Media.Protection.RevocationAndRenewalItem) _ret;
@@ -326,7 +326,7 @@ extern(Windows):
 
 interface RevocationAndRenewalItem : Windows.Media.Protection.IRevocationAndRenewalItem
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.RevocationAndRenewalReasons Reasons()
 	{
 		Windows.Media.Protection.RevocationAndRenewalReasons _ret;
@@ -361,7 +361,7 @@ extern(Windows):
 
 interface ServiceRequestedEventArgs : Windows.Media.Protection.IServiceRequestedEventArgs, Windows.Media.Protection.IServiceRequestedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.IMediaProtectionServiceRequest Request()
 	{
 		Windows.Media.Protection.IMediaProtectionServiceRequest _ret;

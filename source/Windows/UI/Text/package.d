@@ -357,7 +357,7 @@ interface FontWeights : Windows.UI.Text.IFontWeights
 
 interface RichEditTextDocument : Windows.UI.Text.ITextDocument, Windows.UI.Text.ITextDocument2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Text.CaretType CaretType()
 	{
 		Windows.UI.Text.CaretType _ret;

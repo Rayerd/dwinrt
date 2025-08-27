@@ -490,7 +490,7 @@ extern(Windows):
 
 interface AudioBuffer : Windows.Media.IAudioBuffer, Windows.Foundation.IMemoryBuffer, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final UINT32 Capacity()
 	{
 		UINT32 _ret;
@@ -521,7 +521,7 @@ extern(Windows):
 
 interface AudioFrame : Windows.Media.IAudioFrame, Windows.Media.IMediaFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.AudioBuffer LockBuffer(Windows.Media.AudioBufferAccessMode mode)
 	{
 		Windows.Media.AudioBuffer _ret;
@@ -601,7 +601,7 @@ extern(Windows):
 
 interface AutoRepeatModeChangeRequestedEventArgs : Windows.Media.IAutoRepeatModeChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaPlaybackAutoRepeatMode RequestedAutoRepeatMode()
 	{
 		Windows.Media.MediaPlaybackAutoRepeatMode _ret;
@@ -612,7 +612,7 @@ extern(Windows):
 
 interface ImageDisplayProperties : Windows.Media.IImageDisplayProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -846,7 +846,7 @@ interface MediaControl
 
 interface MediaExtensionManager : Windows.Media.IMediaExtensionManager, Windows.Media.IMediaExtensionManager2
 {
-extern(Windows):
+extern(D):
 	final void RegisterSchemeHandler(wstring activatableClassId, wstring scheme)
 	{
 		Debug.OK((cast(Windows.Media.IMediaExtensionManager)this.asInterface(uuid("4a25eaf5-242d-4dfb-97f4-69b7c42576ff"))).abi_RegisterSchemeHandler(hstring(activatableClassId).handle, hstring(scheme).handle));
@@ -931,7 +931,7 @@ interface MediaMarkerTypes
 
 interface MediaProcessingTriggerDetails : Windows.Media.IMediaProcessingTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.ValueSet Arguments()
 	{
 		Windows.Foundation.Collections.ValueSet _ret;
@@ -942,7 +942,7 @@ extern(Windows):
 
 interface MediaTimelineController : Windows.Media.IMediaTimelineController, Windows.Media.IMediaTimelineController2
 {
-extern(Windows):
+extern(D):
 	final void Start()
 	{
 		Debug.OK((cast(Windows.Media.IMediaTimelineController)this.asInterface(uuid("8ed361f3-0b78-4360-bf71-0c841999ea1b"))).abi_Start());
@@ -1051,7 +1051,7 @@ extern(Windows):
 
 interface MediaTimelineControllerFailedEventArgs : Windows.Media.IMediaTimelineControllerFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT ExtendedError()
 	{
 		HRESULT _ret;
@@ -1062,7 +1062,7 @@ extern(Windows):
 
 interface MusicDisplayProperties : Windows.Media.IMusicDisplayProperties, Windows.Media.IMusicDisplayProperties2, Windows.Media.IMusicDisplayProperties3
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -1133,7 +1133,7 @@ extern(Windows):
 
 interface PlaybackPositionChangeRequestedEventArgs : Windows.Media.IPlaybackPositionChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan RequestedPlaybackPosition()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1144,7 +1144,7 @@ extern(Windows):
 
 interface PlaybackRateChangeRequestedEventArgs : Windows.Media.IPlaybackRateChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double RequestedPlaybackRate()
 	{
 		double _ret;
@@ -1155,7 +1155,7 @@ extern(Windows):
 
 interface ShuffleEnabledChangeRequestedEventArgs : Windows.Media.IShuffleEnabledChangeRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool RequestedShuffleEnabled()
 	{
 		bool _ret;
@@ -1166,7 +1166,7 @@ extern(Windows):
 
 interface SystemMediaTransportControls : Windows.Media.ISystemMediaTransportControls, Windows.Media.ISystemMediaTransportControls2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaPlaybackStatus PlaybackStatus()
 	{
 		Windows.Media.MediaPlaybackStatus _ret;
@@ -1410,7 +1410,7 @@ extern(Windows):
 
 interface SystemMediaTransportControlsButtonPressedEventArgs : Windows.Media.ISystemMediaTransportControlsButtonPressedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SystemMediaTransportControlsButton Button()
 	{
 		Windows.Media.SystemMediaTransportControlsButton _ret;
@@ -1421,7 +1421,7 @@ extern(Windows):
 
 interface SystemMediaTransportControlsDisplayUpdater : Windows.Media.ISystemMediaTransportControlsDisplayUpdater
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaPlaybackType Type()
 	{
 		Windows.Media.MediaPlaybackType _ret;
@@ -1488,7 +1488,7 @@ extern(Windows):
 
 interface SystemMediaTransportControlsPropertyChangedEventArgs : Windows.Media.ISystemMediaTransportControlsPropertyChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.SystemMediaTransportControlsProperty Property()
 	{
 		Windows.Media.SystemMediaTransportControlsProperty _ret;
@@ -1499,7 +1499,7 @@ extern(Windows):
 
 interface SystemMediaTransportControlsTimelineProperties : Windows.Media.ISystemMediaTransportControlsTimelineProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan StartTime()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -1560,7 +1560,7 @@ extern(Windows):
 
 interface VideoDisplayProperties : Windows.Media.IVideoDisplayProperties, Windows.Media.IVideoDisplayProperties2
 {
-extern(Windows):
+extern(D):
 	final wstring Title()
 	{
 		HSTRING _ret;
@@ -1607,7 +1607,7 @@ interface VideoEffects
 
 interface VideoFrame : Windows.Media.IVideoFrame, Windows.Media.IMediaFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Imaging.SoftwareBitmap SoftwareBitmap()
 	{
 		Windows.Graphics.Imaging.SoftwareBitmap _ret;

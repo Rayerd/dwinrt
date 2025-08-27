@@ -92,7 +92,7 @@ extern(Windows):
 
 interface AppExtension : Windows.ApplicationModel.AppExtensions.IAppExtension
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -139,7 +139,7 @@ extern(Windows):
 
 interface AppExtensionCatalog : Windows.ApplicationModel.AppExtensions.IAppExtensionCatalog
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.AppExtensions.AppExtension)) FindAllAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.AppExtensions.AppExtension)) _ret;
@@ -219,7 +219,7 @@ extern(Windows):
 
 interface AppExtensionPackageInstalledEventArgs : Windows.ApplicationModel.AppExtensions.IAppExtensionPackageInstalledEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppExtensionName()
 	{
 		HSTRING _ret;
@@ -242,7 +242,7 @@ extern(Windows):
 
 interface AppExtensionPackageStatusChangedEventArgs : Windows.ApplicationModel.AppExtensions.IAppExtensionPackageStatusChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppExtensionName()
 	{
 		HSTRING _ret;
@@ -259,7 +259,7 @@ extern(Windows):
 
 interface AppExtensionPackageUninstallingEventArgs : Windows.ApplicationModel.AppExtensions.IAppExtensionPackageUninstallingEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppExtensionName()
 	{
 		HSTRING _ret;
@@ -276,7 +276,7 @@ extern(Windows):
 
 interface AppExtensionPackageUpdatedEventArgs : Windows.ApplicationModel.AppExtensions.IAppExtensionPackageUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppExtensionName()
 	{
 		HSTRING _ret;
@@ -299,7 +299,7 @@ extern(Windows):
 
 interface AppExtensionPackageUpdatingEventArgs : Windows.ApplicationModel.AppExtensions.IAppExtensionPackageUpdatingEventArgs
 {
-extern(Windows):
+extern(D):
 	final wstring AppExtensionName()
 	{
 		HSTRING _ret;

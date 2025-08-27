@@ -111,7 +111,7 @@ extern(Windows):
 
 interface JsonArray : Windows.Data.Json.IJsonArray, Windows.Data.Json.IJsonValue, Windows.Foundation.Collections.IVector!(Windows.Data.Json.IJsonValue), Windows.Foundation.Collections.IIterable!(Windows.Data.Json.IJsonValue), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Json.JsonObject GetObjectAt(UINT32 index)
 	{
 		Windows.Data.Json.JsonObject _ret;
@@ -293,7 +293,7 @@ interface JsonError
 
 interface JsonObject : Windows.Data.Json.IJsonObject, Windows.Data.Json.IJsonValue, Windows.Foundation.Collections.IMap!(HSTRING, Windows.Data.Json.IJsonValue), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, Windows.Data.Json.IJsonValue)), Windows.Data.Json.IJsonObjectWithDefaultValues, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Json.JsonValue GetNamedValue(wstring name)
 	{
 		Windows.Data.Json.JsonValue _ret;
@@ -495,7 +495,7 @@ extern(Windows):
 
 interface JsonValue : Windows.Data.Json.IJsonValue, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Data.Json.JsonValueType ValueType()
 	{
 		Windows.Data.Json.JsonValueType _ret;

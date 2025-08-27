@@ -73,7 +73,7 @@ interface IStorageItemMostRecentlyUsedList2 : IStorageItemMostRecentlyUsedList2_
 
 interface AccessListEntryView : Windows.Foundation.Collections.IVectorView!(Windows.Storage.AccessCache.AccessListEntry), Windows.Foundation.Collections.IIterable!(Windows.Storage.AccessCache.AccessListEntry)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Storage.AccessCache.AccessListEntry* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Storage.AccessCache.AccessListEntry))this).abi_GetAt(index, out_item));
@@ -102,7 +102,7 @@ extern(Windows):
 
 interface ItemRemovedEventArgs : Windows.Storage.AccessCache.IItemRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.AccessCache.AccessListEntry RemovedEntry()
 	{
 		Windows.Storage.AccessCache.AccessListEntry _ret;
@@ -135,7 +135,7 @@ interface StorageApplicationPermissions
 
 interface StorageItemAccessList : Windows.Storage.AccessCache.IStorageItemAccessList
 {
-extern(Windows):
+extern(D):
 	final wstring AddOverloadDefaultMetadata(Windows.Storage.IStorageItem file)
 	{
 		HSTRING _ret;
@@ -233,7 +233,7 @@ extern(Windows):
 
 interface StorageItemMostRecentlyUsedList : Windows.Storage.AccessCache.IStorageItemMostRecentlyUsedList, Windows.Storage.AccessCache.IStorageItemAccessList, Windows.Storage.AccessCache.IStorageItemMostRecentlyUsedList2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnItemRemoved(void delegate(Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList, Windows.Storage.AccessCache.ItemRemovedEventArgs) fn)
 	{
 		EventRegistrationToken tok;

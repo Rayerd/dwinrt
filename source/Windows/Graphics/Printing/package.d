@@ -247,7 +247,7 @@ extern(Windows):
 
 interface PrintManager : Windows.Graphics.Printing.IPrintManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPrintTaskRequested(void delegate(Windows.Graphics.Printing.PrintManager, Windows.Graphics.Printing.PrintTaskRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -281,7 +281,7 @@ extern(Windows):
 
 interface PrintPageInfo : Windows.Graphics.Printing.IPrintPageInfo
 {
-extern(Windows):
+extern(D):
 	final void MediaSize(Windows.Graphics.Printing.PrintMediaSize value)
 	{
 		Debug.OK((cast(Windows.Graphics.Printing.IPrintPageInfo)this.asInterface(uuid("dd4be9c9-a6a1-4ada-930e-da872a4f23d3"))).set_MediaSize(value));
@@ -342,7 +342,7 @@ extern(Windows):
 
 interface PrintTask : Windows.Graphics.Printing.IPrintTask, Windows.Graphics.Printing.IPrintTaskTargetDeviceSupport, Windows.Graphics.Printing.IPrintTask2
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.DataTransfer.DataPackagePropertySet Properties()
 	{
 		Windows.ApplicationModel.DataTransfer.DataPackagePropertySet _ret;
@@ -435,7 +435,7 @@ extern(Windows):
 
 interface PrintTaskCompletedEventArgs : Windows.Graphics.Printing.IPrintTaskCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.PrintTaskCompletion Completion()
 	{
 		Windows.Graphics.Printing.PrintTaskCompletion _ret;
@@ -446,7 +446,7 @@ extern(Windows):
 
 interface PrintTaskOptions : Windows.Graphics.Printing.IPrintTaskOptionsCore, Windows.Graphics.Printing.IPrintTaskOptionsCoreProperties, Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfiguration, Windows.Graphics.Printing.IPrintTaskOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.PrintPageDescription GetPageDescription(UINT32 jobPageNumber)
 	{
 		Windows.Graphics.Printing.PrintPageDescription _ret;
@@ -601,7 +601,7 @@ extern(Windows):
 
 interface PrintTaskProgressingEventArgs : Windows.Graphics.Printing.IPrintTaskProgressingEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT32 DocumentPageCount()
 	{
 		UINT32 _ret;
@@ -612,7 +612,7 @@ extern(Windows):
 
 interface PrintTaskRequest : Windows.Graphics.Printing.IPrintTaskRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Deadline()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -635,7 +635,7 @@ extern(Windows):
 
 interface PrintTaskRequestedDeferral : Windows.Graphics.Printing.IPrintTaskRequestedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Graphics.Printing.IPrintTaskRequestedDeferral)this.asInterface(uuid("cfefb3f0-ce3e-42c7-9496-64800c622c44"))).abi_Complete());
@@ -644,7 +644,7 @@ extern(Windows):
 
 interface PrintTaskRequestedEventArgs : Windows.Graphics.Printing.IPrintTaskRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Printing.PrintTaskRequest Request()
 	{
 		Windows.Graphics.Printing.PrintTaskRequest _ret;
@@ -655,7 +655,7 @@ extern(Windows):
 
 interface PrintTaskSourceRequestedArgs : Windows.Graphics.Printing.IPrintTaskSourceRequestedArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.DateTime Deadline()
 	{
 		Windows.Foundation.DateTime _ret;
@@ -676,7 +676,7 @@ extern(Windows):
 
 interface PrintTaskSourceRequestedDeferral : Windows.Graphics.Printing.IPrintTaskSourceRequestedDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Graphics.Printing.IPrintTaskSourceRequestedDeferral)this.asInterface(uuid("4a1560d1-6992-4d9d-8555-4ca4563fb166"))).abi_Complete());

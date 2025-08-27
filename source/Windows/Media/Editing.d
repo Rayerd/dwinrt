@@ -167,7 +167,7 @@ extern(Windows):
 
 interface BackgroundAudioTrack : Windows.Media.Editing.IBackgroundAudioTrack
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan TrimTimeFromStart()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -267,7 +267,7 @@ extern(Windows):
 
 interface EmbeddedAudioTrack : Windows.Media.Editing.IEmbeddedAudioTrack
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.AudioEncodingProperties GetAudioEncodingProperties()
 	{
 		Windows.Media.MediaProperties.AudioEncodingProperties _ret;
@@ -278,7 +278,7 @@ extern(Windows):
 
 interface MediaClip : Windows.Media.Editing.IMediaClip
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan TrimTimeFromStart()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -408,7 +408,7 @@ extern(Windows):
 
 interface MediaComposition : Windows.Media.Editing.IMediaComposition, Windows.Media.Editing.IMediaComposition2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Duration()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -531,7 +531,7 @@ extern(Windows):
 
 interface MediaOverlay : Windows.Media.Editing.IMediaOverlay
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect Position()
 	{
 		Windows.Foundation.Rect _ret;
@@ -602,7 +602,7 @@ extern(Windows):
 
 interface MediaOverlayLayer : Windows.Media.Editing.IMediaOverlayLayer
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Editing.MediaOverlayLayer Clone()
 	{
 		Windows.Media.Editing.MediaOverlayLayer _ret;

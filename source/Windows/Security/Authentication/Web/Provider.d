@@ -240,7 +240,7 @@ extern(Windows):
 
 interface WebAccountClientView : Windows.Security.Authentication.Web.Provider.IWebAccountClientView
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri ApplicationCallbackUri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -347,7 +347,7 @@ interface WebAccountManager
 
 interface WebAccountProviderAddAccountOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderAddAccountOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation
 {
-extern(Windows):
+extern(D):
 	final void ReportCompleted()
 	{
 		Debug.OK((cast(Windows.Security.Authentication.Web.Provider.IWebAccountProviderAddAccountOperation)this.asInterface(uuid("73ebdccf-4378-4c79-9335-a5d7ab81594e"))).abi_ReportCompleted());
@@ -362,7 +362,7 @@ extern(Windows):
 
 interface WebAccountProviderDeleteAccountOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderDeleteAccountOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccount WebAccount()
 	{
 		Windows.Security.Credentials.WebAccount _ret;
@@ -387,7 +387,7 @@ extern(Windows):
 
 interface WebAccountProviderGetTokenSilentOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderSilentReportOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest ProviderRequest()
 	{
 		Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest _ret;
@@ -437,7 +437,7 @@ extern(Windows):
 
 interface WebAccountProviderManageAccountOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderManageAccountOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccount WebAccount()
 	{
 		Windows.Security.Credentials.WebAccount _ret;
@@ -458,7 +458,7 @@ extern(Windows):
 
 interface WebAccountProviderRequestTokenOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderUIReportOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest ProviderRequest()
 	{
 		Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest _ret;
@@ -503,7 +503,7 @@ extern(Windows):
 
 interface WebAccountProviderRetrieveCookiesOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderRetrieveCookiesOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Context()
 	{
 		Windows.Foundation.Uri _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface WebAccountProviderSignOutAccountOperation : Windows.Security.Authentication.Web.Provider.IWebAccountProviderSignOutAccountOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation, Windows.Security.Authentication.Web.Provider.IWebAccountProviderBaseReportOperation
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.WebAccount WebAccount()
 	{
 		Windows.Security.Credentials.WebAccount _ret;
@@ -587,7 +587,7 @@ extern(Windows):
 
 interface WebAccountProviderTriggerDetails : Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenObjects, Windows.Security.Authentication.Web.Provider.IWebAccountProviderTokenObjects2
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation Operation()
 	{
 		Windows.Security.Authentication.Web.Provider.IWebAccountProviderOperation _ret;
@@ -604,7 +604,7 @@ extern(Windows):
 
 interface WebProviderTokenRequest : Windows.Security.Authentication.Web.Provider.IWebProviderTokenRequest, Windows.Security.Authentication.Web.Provider.IWebProviderTokenRequest2
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Core.WebTokenRequest ClientRequest()
 	{
 		Windows.Security.Authentication.Web.Core.WebTokenRequest _ret;
@@ -645,7 +645,7 @@ extern(Windows):
 
 interface WebProviderTokenResponse : Windows.Security.Authentication.Web.Provider.IWebProviderTokenResponse
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Web.Core.WebTokenResponse ClientResponse()
 	{
 		Windows.Security.Authentication.Web.Core.WebTokenResponse _ret;

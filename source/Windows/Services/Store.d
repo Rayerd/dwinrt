@@ -351,7 +351,7 @@ extern(Windows):
 
 interface StoreAcquireLicenseResult : Windows.Services.Store.IStoreAcquireLicenseResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Store.StorePackageLicense StorePackageLicense()
 	{
 		Windows.Services.Store.StorePackageLicense _ret;
@@ -368,7 +368,7 @@ extern(Windows):
 
 interface StoreAppLicense : Windows.Services.Store.IStoreAppLicense
 {
-extern(Windows):
+extern(D):
 	final wstring SkuStoreId()
 	{
 		HSTRING _ret;
@@ -427,7 +427,7 @@ extern(Windows):
 
 interface StoreAvailability : Windows.Services.Store.IStoreAvailability
 {
-extern(Windows):
+extern(D):
 	final wstring StoreId()
 	{
 		HSTRING _ret;
@@ -469,7 +469,7 @@ extern(Windows):
 
 interface StoreCollectionData : Windows.Services.Store.IStoreCollectionData
 {
-extern(Windows):
+extern(D):
 	final bool IsTrial()
 	{
 		bool _ret;
@@ -522,7 +522,7 @@ extern(Windows):
 
 interface StoreConsumableResult : Windows.Services.Store.IStoreConsumableResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Store.StoreConsumableStatus Status()
 	{
 		Windows.Services.Store.StoreConsumableStatus _ret;
@@ -551,7 +551,7 @@ extern(Windows):
 
 interface StoreContext : Windows.Services.Store.IStoreContext, Windows.Services.Store.IStoreContext2
 {
-extern(Windows):
+extern(D):
 	final Windows.System.User User()
 	{
 		Windows.System.User _ret;
@@ -706,7 +706,7 @@ extern(Windows):
 
 interface StoreImage : Windows.Services.Store.IStoreImage
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -741,7 +741,7 @@ extern(Windows):
 
 interface StoreLicense : Windows.Services.Store.IStoreLicense
 {
-extern(Windows):
+extern(D):
 	final wstring SkuStoreId()
 	{
 		HSTRING _ret;
@@ -776,7 +776,7 @@ extern(Windows):
 
 interface StorePackageLicense : Windows.Services.Store.IStorePackageLicense, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnLicenseLost(void delegate(Windows.Services.Store.StorePackageLicense, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -811,7 +811,7 @@ extern(Windows):
 
 interface StorePackageUpdate : Windows.Services.Store.IStorePackageUpdate
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Package Package()
 	{
 		Windows.ApplicationModel.Package _ret;
@@ -828,7 +828,7 @@ extern(Windows):
 
 interface StorePackageUpdateResult : Windows.Services.Store.IStorePackageUpdateResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Store.StorePackageUpdateState OverallState()
 	{
 		Windows.Services.Store.StorePackageUpdateState _ret;
@@ -845,7 +845,7 @@ extern(Windows):
 
 interface StorePrice : Windows.Services.Store.IStorePrice
 {
-extern(Windows):
+extern(D):
 	final wstring FormattedBasePrice()
 	{
 		HSTRING _ret;
@@ -886,7 +886,7 @@ extern(Windows):
 
 interface StoreProduct : Windows.Services.Store.IStoreProduct
 {
-extern(Windows):
+extern(D):
 	final wstring StoreId()
 	{
 		HSTRING _ret;
@@ -1000,7 +1000,7 @@ extern(Windows):
 
 interface StoreProductPagedQueryResult : Windows.Services.Store.IStoreProductPagedQueryResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Services.Store.StoreProduct) Products()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Services.Store.StoreProduct) _ret;
@@ -1029,7 +1029,7 @@ extern(Windows):
 
 interface StoreProductQueryResult : Windows.Services.Store.IStoreProductQueryResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Services.Store.StoreProduct) Products()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Services.Store.StoreProduct) _ret;
@@ -1046,7 +1046,7 @@ extern(Windows):
 
 interface StoreProductResult : Windows.Services.Store.IStoreProductResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Store.StoreProduct Product()
 	{
 		Windows.Services.Store.StoreProduct _ret;
@@ -1063,7 +1063,7 @@ extern(Windows):
 
 interface StorePurchaseProperties : Windows.Services.Store.IStorePurchaseProperties
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1101,7 +1101,7 @@ extern(Windows):
 
 interface StorePurchaseResult : Windows.Services.Store.IStorePurchaseResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Store.StorePurchaseStatus Status()
 	{
 		Windows.Services.Store.StorePurchaseStatus _ret;
@@ -1134,7 +1134,7 @@ interface StoreRequestHelper
 
 interface StoreSendRequestResult : Windows.Services.Store.IStoreSendRequestResult, Windows.Services.Store.IStoreSendRequestResult2
 {
-extern(Windows):
+extern(D):
 	final wstring Response()
 	{
 		HSTRING _ret;
@@ -1157,7 +1157,7 @@ extern(Windows):
 
 interface StoreSku : Windows.Services.Store.IStoreSku
 {
-extern(Windows):
+extern(D):
 	final wstring StoreId()
 	{
 		HSTRING _ret;
@@ -1277,7 +1277,7 @@ extern(Windows):
 
 interface StoreSubscriptionInfo : Windows.Services.Store.IStoreSubscriptionInfo
 {
-extern(Windows):
+extern(D):
 	final UINT32 BillingPeriod()
 	{
 		UINT32 _ret;
@@ -1312,7 +1312,7 @@ extern(Windows):
 
 interface StoreVideo : Windows.Services.Store.IStoreVideo
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;

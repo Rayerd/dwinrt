@@ -37,7 +37,7 @@ extern(Windows):
 
 interface VariablePhotoCapturedEventArgs : Windows.Media.Capture.Core.IVariablePhotoCapturedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrame Frame()
 	{
 		Windows.Media.Capture.CapturedFrame _ret;
@@ -66,7 +66,7 @@ extern(Windows):
 
 interface VariablePhotoSequenceCapture : Windows.Media.Capture.Core.IVariablePhotoSequenceCapture, Windows.Media.Capture.Core.IVariablePhotoSequenceCapture2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction StartAsync()
 	{
 		Windows.Foundation.IAsyncAction _ret;

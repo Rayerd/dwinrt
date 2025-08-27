@@ -909,7 +909,7 @@ interface BackgroundMediaPlayer
 
 interface CurrentMediaPlaybackItemChangedEventArgs : Windows.Media.Playback.ICurrentMediaPlaybackItemChangedEventArgs, Windows.Media.Playback.ICurrentMediaPlaybackItemChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackItem NewItem()
 	{
 		Windows.Media.Playback.MediaPlaybackItem _ret;
@@ -932,7 +932,7 @@ extern(Windows):
 
 interface MediaBreak : Windows.Media.Playback.IMediaBreak
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackList PlaybackList()
 	{
 		Windows.Media.Playback.MediaPlaybackList _ret;
@@ -985,7 +985,7 @@ extern(Windows):
 
 interface MediaBreakEndedEventArgs : Windows.Media.Playback.IMediaBreakEndedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaBreak MediaBreak()
 	{
 		Windows.Media.Playback.MediaBreak _ret;
@@ -996,7 +996,7 @@ extern(Windows):
 
 interface MediaBreakManager : Windows.Media.Playback.IMediaBreakManager
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnBreaksSeekedOver(void delegate(Windows.Media.Playback.MediaBreakManager, Windows.Media.Playback.MediaBreakSeekedOverEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1061,7 +1061,7 @@ extern(Windows):
 
 interface MediaBreakSchedule : Windows.Media.Playback.IMediaBreakSchedule
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnScheduleChanged(void delegate(Windows.Media.Playback.MediaBreakSchedule, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -1116,7 +1116,7 @@ extern(Windows):
 
 interface MediaBreakSeekedOverEventArgs : Windows.Media.Playback.IMediaBreakSeekedOverEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Playback.MediaBreak) SeekedOverBreaks()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Playback.MediaBreak) _ret;
@@ -1139,7 +1139,7 @@ extern(Windows):
 
 interface MediaBreakSkippedEventArgs : Windows.Media.Playback.IMediaBreakSkippedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaBreak MediaBreak()
 	{
 		Windows.Media.Playback.MediaBreak _ret;
@@ -1150,7 +1150,7 @@ extern(Windows):
 
 interface MediaBreakStartedEventArgs : Windows.Media.Playback.IMediaBreakStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaBreak MediaBreak()
 	{
 		Windows.Media.Playback.MediaBreak _ret;
@@ -1161,7 +1161,7 @@ extern(Windows):
 
 interface MediaItemDisplayProperties : Windows.Media.Playback.IMediaItemDisplayProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaPlaybackType Type()
 	{
 		Windows.Media.MediaPlaybackType _ret;
@@ -1202,7 +1202,7 @@ extern(Windows):
 
 interface MediaPlaybackAudioTrackList : Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.AudioTrack), Windows.Foundation.Collections.IIterable!(Windows.Media.Core.AudioTrack), Windows.Media.Core.ISingleSelectMediaTrackList
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Media.Core.AudioTrack* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.AudioTrack))this).abi_GetAt(index, out_item));
@@ -1251,7 +1251,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManager : Windows.Media.Playback.IMediaPlaybackCommandManager
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -1432,7 +1432,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerAutoRepeatModeReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerAutoRepeatModeReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1459,7 +1459,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerCommandBehavior : Windows.Media.Playback.IMediaPlaybackCommandManagerCommandBehavior
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackCommandManager CommandManager()
 	{
 		Windows.Media.Playback.MediaPlaybackCommandManager _ret;
@@ -1496,7 +1496,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerFastForwardReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerFastForwardReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1517,7 +1517,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerNextReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerNextReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1538,7 +1538,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerPauseReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerPauseReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1559,7 +1559,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerPlayReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerPlayReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1580,7 +1580,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerPositionReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerPositionReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1607,7 +1607,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerPreviousReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerPreviousReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1628,7 +1628,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerRateReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerRateReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1655,7 +1655,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerRewindReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerRewindReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1676,7 +1676,7 @@ extern(Windows):
 
 interface MediaPlaybackCommandManagerShuffleReceivedEventArgs : Windows.Media.Playback.IMediaPlaybackCommandManagerShuffleReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1703,7 +1703,7 @@ extern(Windows):
 
 interface MediaPlaybackItem : Windows.Media.Playback.IMediaPlaybackItem, Windows.Media.Playback.IMediaPlaybackSource, Windows.Media.Playback.IMediaPlaybackItem2, Windows.Media.Playback.IMediaPlaybackItem3
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAudioTracksChanged(void delegate(Windows.Media.Playback.MediaPlaybackItem, Windows.Foundation.Collections.IVectorChangedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1846,7 +1846,7 @@ extern(Windows):
 
 interface MediaPlaybackItemError : Windows.Media.Playback.IMediaPlaybackItemError
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackItemErrorCode ErrorCode()
 	{
 		Windows.Media.Playback.MediaPlaybackItemErrorCode _ret;
@@ -1863,7 +1863,7 @@ extern(Windows):
 
 interface MediaPlaybackItemFailedEventArgs : Windows.Media.Playback.IMediaPlaybackItemFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackItem Item()
 	{
 		Windows.Media.Playback.MediaPlaybackItem _ret;
@@ -1880,7 +1880,7 @@ extern(Windows):
 
 interface MediaPlaybackItemOpenedEventArgs : Windows.Media.Playback.IMediaPlaybackItemOpenedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlaybackItem Item()
 	{
 		Windows.Media.Playback.MediaPlaybackItem _ret;
@@ -1891,7 +1891,7 @@ extern(Windows):
 
 interface MediaPlaybackList : Windows.Media.Playback.IMediaPlaybackList, Windows.Media.Playback.IMediaPlaybackSource, Windows.Media.Playback.IMediaPlaybackList2, Windows.Media.Playback.IMediaPlaybackList3
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnItemFailed(void delegate(Windows.Media.Playback.MediaPlaybackList, Windows.Media.Playback.MediaPlaybackItemFailedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2028,7 +2028,7 @@ extern(Windows):
 
 interface MediaPlaybackSession : Windows.Media.Playback.IMediaPlaybackSession, Windows.Media.Playback.IMediaPlaybackSession2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPlaybackStateChanged(void delegate(Windows.Media.Playback.MediaPlaybackSession, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -2313,7 +2313,7 @@ extern(Windows):
 
 interface MediaPlaybackSphericalVideoProjection : Windows.Media.Playback.IMediaPlaybackSphericalVideoProjection
 {
-extern(Windows):
+extern(D):
 	final bool IsEnabled()
 	{
 		bool _ret;
@@ -2368,7 +2368,7 @@ extern(Windows):
 
 interface MediaPlaybackTimedMetadataTrackList : Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.TimedMetadataTrack), Windows.Foundation.Collections.IIterable!(Windows.Media.Core.TimedMetadataTrack), Windows.Media.Playback.IMediaPlaybackTimedMetadataTrackList
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Media.Core.TimedMetadataTrack* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.TimedMetadataTrack))this).abi_GetAt(index, out_item));
@@ -2417,7 +2417,7 @@ extern(Windows):
 
 interface MediaPlaybackVideoTrackList : Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.VideoTrack), Windows.Foundation.Collections.IIterable!(Windows.Media.Core.VideoTrack), Windows.Media.Core.ISingleSelectMediaTrackList
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Media.Core.VideoTrack* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.VideoTrack))this).abi_GetAt(index, out_item));
@@ -2466,7 +2466,7 @@ extern(Windows):
 
 interface MediaPlayer : Windows.Media.Playback.IMediaPlayer, Windows.Media.Playback.IMediaPlayerSource, Windows.Media.Playback.IMediaPlayerSource2, Windows.Media.Playback.IMediaPlayer2, Windows.Media.Playback.IMediaPlayerEffects, Windows.Foundation.IClosable, Windows.Media.Playback.IMediaPlayer3, Windows.Media.Playback.IMediaPlayer4, Windows.Media.Playback.IMediaPlayerEffects2, Windows.Media.Playback.IMediaPlayer5
 {
-extern(Windows):
+extern(D):
 	final bool AutoPlay()
 	{
 		bool _ret;
@@ -2947,7 +2947,7 @@ extern(Windows):
 
 interface MediaPlayerDataReceivedEventArgs : Windows.Media.Playback.IMediaPlayerDataReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.ValueSet Data()
 	{
 		Windows.Foundation.Collections.ValueSet _ret;
@@ -2958,7 +2958,7 @@ extern(Windows):
 
 interface MediaPlayerFailedEventArgs : Windows.Media.Playback.IMediaPlayerFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.MediaPlayerError Error()
 	{
 		Windows.Media.Playback.MediaPlayerError _ret;
@@ -2981,7 +2981,7 @@ extern(Windows):
 
 interface MediaPlayerRateChangedEventArgs : Windows.Media.Playback.IMediaPlayerRateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final double NewRate()
 	{
 		double _ret;
@@ -2992,7 +2992,7 @@ extern(Windows):
 
 interface MediaPlayerSurface : Windows.Media.Playback.IMediaPlayerSurface, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Composition.ICompositionSurface CompositionSurface()
 	{
 		Windows.UI.Composition.ICompositionSurface _ret;
@@ -3019,7 +3019,7 @@ extern(Windows):
 
 interface PlaybackMediaMarker : Windows.Media.Playback.IPlaybackMediaMarker
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Time()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -3056,7 +3056,7 @@ extern(Windows):
 
 interface PlaybackMediaMarkerReachedEventArgs : Windows.Media.Playback.IPlaybackMediaMarkerReachedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Playback.PlaybackMediaMarker PlaybackMediaMarker()
 	{
 		Windows.Media.Playback.PlaybackMediaMarker _ret;
@@ -3067,7 +3067,7 @@ extern(Windows):
 
 interface PlaybackMediaMarkerSequence : Windows.Media.Playback.IPlaybackMediaMarkerSequence, Windows.Foundation.Collections.IIterable!(Windows.Media.Playback.PlaybackMediaMarker)
 {
-extern(Windows):
+extern(D):
 	final UINT32 Size()
 	{
 		UINT32 _ret;
@@ -3090,7 +3090,7 @@ extern(Windows):
 
 interface TimedMetadataPresentationModeChangedEventArgs : Windows.Media.Playback.ITimedMetadataPresentationModeChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedMetadataTrack Track()
 	{
 		Windows.Media.Core.TimedMetadataTrack _ret;

@@ -1521,7 +1521,12 @@ struct Interface
 			ret ~= " : " ~ (inherits ~ implements.map!"a.type".array).join(", ");
 		ret ~= "\n{\n";
 		if (methods.length)
-			ret ~= "extern(Windows):\n";
+		{
+			if (requires.length || (!staticBase.length && !simpleActivatable && !composable.length && !isRuntimeClass))
+				ret ~= "extern(Windows):\n";
+			else
+				ret ~= "extern(D):\n";
+		}
 		auto extra = name in extraMethods;
 		bool[string] alreadyWrittenMethods;
 		foreach (method; methods ~ (extra ? *extra : []))
@@ -1910,6 +1915,8 @@ InterfaceArgument[] fixArgsType(in InterfaceArgument[] args)
 		InterfaceArgument retArg = arg;
 		if (arg.type == "HSTRING")
 			retArg.type = "wstring";
+		else if (arg.type == "Windows.UI.Popups.UICommandInvokedHandler")
+			retArg.type = "void delegate(Windows.UI.Popups.IUICommand)";
 		ret ~= retArg;
 	}
 	return ret;
@@ -1923,6 +1930,8 @@ InterfaceArgument[] fixArgsName(in InterfaceArgument[] args)
 		InterfaceArgument retArg = arg;
 		if (arg.type == "HSTRING")
 			retArg.name = "hstring(" ~ arg.name.makeDSafe ~ ").handle";
+		else if (arg.type == "Windows.UI.Popups.UICommandInvokedHandler")
+			retArg.name = "event!(Windows.UI.Popups.UICommandInvokedHandler, Windows.UI.Popups.IUICommand)(" ~ arg.name.makeDSafe ~ ")";
 		ret ~= retArg;
 	}
 	return ret;

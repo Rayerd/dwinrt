@@ -47,7 +47,7 @@ extern(Windows):
 
 interface FileInformation : Windows.Storage.BulkAccess.IStorageItemInformation, Windows.Storage.IStorageFile, Windows.Storage.Streams.IInputStreamReference, Windows.Storage.Streams.IRandomAccessStreamReference, Windows.Storage.IStorageItem, Windows.Storage.IStorageItemProperties, Windows.Storage.IStorageItem2, Windows.Storage.IStorageItemPropertiesWithProvider, Windows.Storage.IStorageFilePropertiesWithAvailability, Windows.Storage.IStorageFile2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.FileProperties.MusicProperties MusicProperties()
 	{
 		Windows.Storage.FileProperties.MusicProperties _ret;
@@ -342,7 +342,7 @@ extern(Windows):
 
 interface FileInformationFactory : Windows.Storage.BulkAccess.IFileInformationFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.BulkAccess.IStorageItemInformation)) GetItemsAsync(UINT32 startIndex, UINT32 maxItemsToRetrieve)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Storage.BulkAccess.IStorageItemInformation)) _ret;
@@ -432,7 +432,7 @@ extern(Windows):
 
 interface FolderInformation : Windows.Storage.BulkAccess.IStorageItemInformation, Windows.Storage.IStorageFolder, Windows.Storage.IStorageItem, Windows.Storage.IStorageItemProperties, Windows.Storage.Search.IStorageFolderQueryOperations, Windows.Storage.IStorageItem2, Windows.Storage.IStorageFolder2, Windows.Storage.IStorageItemPropertiesWithProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.FileProperties.MusicProperties MusicProperties()
 	{
 		Windows.Storage.FileProperties.MusicProperties _ret;

@@ -308,7 +308,7 @@ interface IUINavigationControllerStatics2 : IUINavigationControllerStatics2_Base
 
 interface ArcadeStick : Windows.Gaming.Input.IArcadeStick, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Gaming.Input.GameControllerButtonLabel GetButtonLabel(Windows.Gaming.Input.ArcadeStickButtons button)
 	{
 		Windows.Gaming.Input.GameControllerButtonLabel _ret;
@@ -412,7 +412,7 @@ extern(Windows):
 
 interface FlightStick : Windows.Gaming.Input.IFlightStick, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Gaming.Input.GameControllerSwitchKind HatSwitchKind()
 	{
 		Windows.Gaming.Input.GameControllerSwitchKind _ret;
@@ -528,7 +528,7 @@ extern(Windows):
 
 interface Gamepad : Windows.Gaming.Input.IGamepad, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGamepad2, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Gaming.Input.GamepadVibration Vibration()
 	{
 		Windows.Gaming.Input.GamepadVibration _ret;
@@ -642,7 +642,7 @@ extern(Windows):
 
 interface Headset : Windows.Gaming.Input.IHeadset, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final wstring CaptureDeviceId()
 	{
 		HSTRING _ret;
@@ -665,7 +665,7 @@ extern(Windows):
 
 interface RacingWheel : Windows.Gaming.Input.IRacingWheel, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final bool HasClutch()
 	{
 		bool _ret;
@@ -805,7 +805,7 @@ extern(Windows):
 
 interface RawGameController : Windows.Gaming.Input.IRawGameController, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final INT32 AxisCount()
 	{
 		INT32 _ret;
@@ -957,7 +957,7 @@ extern(Windows):
 
 interface UINavigationController : Windows.Gaming.Input.IUINavigationController, Windows.Gaming.Input.IGameController, Windows.Gaming.Input.IGameControllerBatteryInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Gaming.Input.UINavigationReading GetCurrentReading()
 	{
 		Windows.Gaming.Input.UINavigationReading _ret;

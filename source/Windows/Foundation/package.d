@@ -540,7 +540,7 @@ extern(Windows):
 
 interface Deferral : Windows.Foundation.IDeferral, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Foundation.IDeferral)this.asInterface(uuid("d6269732-3b7f-46a7-b40b-4fdca2a2c693"))).abi_Complete());
@@ -560,7 +560,7 @@ extern(Windows):
 
 interface MemoryBuffer : Windows.Foundation.IMemoryBuffer, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IMemoryBufferReference CreateReference()
 	{
 		Windows.Foundation.IMemoryBufferReference _ret;
@@ -826,7 +826,7 @@ interface PropertyValue
 
 interface Uri : Windows.Foundation.IUriRuntimeClass, Windows.Foundation.IUriRuntimeClassWithAbsoluteCanonicalUri, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring AbsoluteUri()
 	{
 		HSTRING _ret;
@@ -984,7 +984,7 @@ extern(Windows):
 
 interface WwwFormUrlDecoder : Windows.Foundation.IWwwFormUrlDecoderRuntimeClass, Windows.Foundation.Collections.IVectorView!(Windows.Foundation.IWwwFormUrlDecoderEntry), Windows.Foundation.Collections.IIterable!(Windows.Foundation.IWwwFormUrlDecoderEntry)
 {
-extern(Windows):
+extern(D):
 	final wstring GetFirstValueByName(wstring name)
 	{
 		HSTRING _ret;
@@ -1026,7 +1026,7 @@ extern(Windows):
 
 interface WwwFormUrlDecoderEntry : Windows.Foundation.IWwwFormUrlDecoderEntry
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;

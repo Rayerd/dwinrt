@@ -272,7 +272,7 @@ extern(Windows):
 
 interface HttpBufferContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -343,7 +343,7 @@ extern(Windows):
 
 interface HttpClient : Windows.Web.Http.IHttpClient, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperationWithProgress!(Windows.Web.Http.HttpResponseMessage, Windows.Web.Http.HttpProgress) DeleteAsync(Windows.Foundation.Uri uri)
 	{
 		Windows.Foundation.IAsyncOperationWithProgress!(Windows.Web.Http.HttpResponseMessage, Windows.Web.Http.HttpProgress) _ret;
@@ -439,7 +439,7 @@ extern(Windows):
 
 interface HttpCookie : Windows.Web.Http.IHttpCookie, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -515,7 +515,7 @@ extern(Windows):
 
 interface HttpCookieCollection : Windows.Foundation.Collections.IVectorView!(Windows.Web.Http.HttpCookie), Windows.Foundation.Collections.IIterable!(Windows.Web.Http.HttpCookie)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Web.Http.HttpCookie* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Web.Http.HttpCookie))this).abi_GetAt(index, out_item));
@@ -544,7 +544,7 @@ extern(Windows):
 
 interface HttpCookieManager : Windows.Web.Http.IHttpCookieManager
 {
-extern(Windows):
+extern(D):
 	final bool SetCookie(Windows.Web.Http.HttpCookie cookie)
 	{
 		bool _ret;
@@ -572,7 +572,7 @@ extern(Windows):
 
 interface HttpFormUrlEncodedContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -636,7 +636,7 @@ extern(Windows):
 
 interface HttpMethod : Windows.Web.Http.IHttpMethod, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final wstring Method()
 	{
 		HSTRING _ret;
@@ -709,7 +709,7 @@ extern(Windows):
 
 interface HttpMultipartContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Web.Http.IHttpMultipartContent, Windows.Foundation.Collections.IIterable!(Windows.Web.Http.IHttpContent), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -794,7 +794,7 @@ extern(Windows):
 
 interface HttpMultipartFormDataContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Web.Http.IHttpMultipartFormDataContent, Windows.Foundation.Collections.IIterable!(Windows.Web.Http.IHttpContent), Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -882,7 +882,7 @@ extern(Windows):
 
 interface HttpRequestMessage : Windows.Web.Http.IHttpRequestMessage, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.IHttpContent Content()
 	{
 		Windows.Web.Http.IHttpContent _ret;
@@ -958,7 +958,7 @@ extern(Windows):
 
 interface HttpResponseMessage : Windows.Web.Http.IHttpResponseMessage, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.IHttpContent Content()
 	{
 		Windows.Web.Http.IHttpContent _ret;
@@ -1064,7 +1064,7 @@ extern(Windows):
 
 interface HttpStreamContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -1128,7 +1128,7 @@ extern(Windows):
 
 interface HttpStringContent : Windows.Web.Http.IHttpContent, Windows.Foundation.IClosable, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Headers.HttpContentHeaderCollection Headers()
 	{
 		Windows.Web.Http.Headers.HttpContentHeaderCollection _ret;
@@ -1206,7 +1206,7 @@ extern(Windows):
 
 interface HttpTransportInformation : Windows.Web.Http.IHttpTransportInformation, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.Certificate ServerCertificate()
 	{
 		Windows.Security.Cryptography.Certificates.Certificate _ret;

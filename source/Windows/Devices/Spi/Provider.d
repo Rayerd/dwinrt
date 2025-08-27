@@ -57,7 +57,7 @@ extern(Windows):
 
 interface ProviderSpiConnectionSettings : Windows.Devices.Spi.Provider.IProviderSpiConnectionSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 ChipSelectLine()
 	{
 		INT32 _ret;

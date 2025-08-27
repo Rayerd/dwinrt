@@ -119,7 +119,7 @@ interface IPrintTextOptionDetails : IPrintTextOptionDetails_Base, Windows.Graphi
 
 interface PrintBindingOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -174,7 +174,7 @@ extern(Windows):
 
 interface PrintBorderingOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -229,7 +229,7 @@ extern(Windows):
 
 interface PrintCollationOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -284,7 +284,7 @@ extern(Windows):
 
 interface PrintColorModeOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -339,7 +339,7 @@ extern(Windows):
 
 interface PrintCopiesOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintNumberOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -400,7 +400,7 @@ extern(Windows):
 
 interface PrintCustomItemDetails : Windows.Graphics.Printing.OptionDetails.IPrintCustomItemDetails
 {
-extern(Windows):
+extern(D):
 	final wstring ItemId()
 	{
 		HSTRING _ret;
@@ -421,7 +421,7 @@ extern(Windows):
 
 interface PrintCustomItemListOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintCustomOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintCustomItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -490,7 +490,7 @@ extern(Windows):
 
 interface PrintCustomTextOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintCustomOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintCustomTextOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -559,7 +559,7 @@ extern(Windows):
 
 interface PrintDuplexOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -614,7 +614,7 @@ extern(Windows):
 
 interface PrintHolePunchOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -669,7 +669,7 @@ extern(Windows):
 
 interface PrintMediaSizeOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -724,7 +724,7 @@ extern(Windows):
 
 interface PrintMediaTypeOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -779,7 +779,7 @@ extern(Windows):
 
 interface PrintOrientationOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -834,7 +834,7 @@ extern(Windows):
 
 interface PrintQualityOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -889,7 +889,7 @@ extern(Windows):
 
 interface PrintStapleOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails, Windows.Graphics.Printing.OptionDetails.IPrintItemListOptionDetails
 {
-extern(Windows):
+extern(D):
 	final wstring OptionId()
 	{
 		HSTRING _ret;
@@ -944,7 +944,7 @@ extern(Windows):
 
 interface PrintTaskOptionChangedEventArgs : Windows.Graphics.Printing.OptionDetails.IPrintTaskOptionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable OptionId()
 	{
 		IInspectable _ret;
@@ -955,7 +955,7 @@ extern(Windows):
 
 interface PrintTaskOptionDetails : Windows.Graphics.Printing.OptionDetails.IPrintTaskOptionDetails, Windows.Graphics.Printing.IPrintTaskOptionsCore, Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails) Options()
 	{
 		Windows.Foundation.Collections.IMapView!(HSTRING, Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails) _ret;

@@ -55,7 +55,7 @@ interface PlatformTelemetryClient
 
 interface PlatformTelemetryRegistrationResult : Windows.System.Diagnostics.Telemetry.IPlatformTelemetryRegistrationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationStatus Status()
 	{
 		Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationStatus _ret;
@@ -66,7 +66,7 @@ extern(Windows):
 
 interface PlatformTelemetryRegistrationSettings : Windows.System.Diagnostics.Telemetry.IPlatformTelemetryRegistrationSettings
 {
-extern(Windows):
+extern(D):
 	final UINT32 StorageSize()
 	{
 		UINT32 _ret;

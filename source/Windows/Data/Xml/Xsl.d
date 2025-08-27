@@ -28,7 +28,7 @@ extern(Windows):
 
 interface XsltProcessor : Windows.Data.Xml.Xsl.IXsltProcessor, Windows.Data.Xml.Xsl.IXsltProcessor2
 {
-extern(Windows):
+extern(D):
 	final wstring TransformToString(Windows.Data.Xml.Dom.IXmlNode inputNode)
 	{
 		HSTRING _ret;

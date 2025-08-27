@@ -48,7 +48,7 @@ extern(Windows):
 
 interface AdcChannel : Windows.Devices.Adc.IAdcChannel, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Adc.AdcController Controller()
 	{
 		Windows.Devices.Adc.AdcController _ret;
@@ -75,7 +75,7 @@ extern(Windows):
 
 interface AdcController : Windows.Devices.Adc.IAdcController
 {
-extern(Windows):
+extern(D):
 	final INT32 ChannelCount()
 	{
 		INT32 _ret;

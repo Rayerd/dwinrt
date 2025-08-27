@@ -43,7 +43,7 @@ extern(Windows):
 
 interface PhoneCallBlockedTriggerDetails : Windows.ApplicationModel.Calls.Background.IPhoneCallBlockedTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final wstring PhoneNumber()
 	{
 		HSTRING _ret;
@@ -66,7 +66,7 @@ extern(Windows):
 
 interface PhoneCallOriginDataRequestTriggerDetails : Windows.ApplicationModel.Calls.Background.IPhoneCallOriginDataRequestTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final GUID RequestId()
 	{
 		GUID _ret;
@@ -83,7 +83,7 @@ extern(Windows):
 
 interface PhoneLineChangedTriggerDetails : Windows.ApplicationModel.Calls.Background.IPhoneLineChangedTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final GUID LineId()
 	{
 		GUID _ret;
@@ -106,7 +106,7 @@ extern(Windows):
 
 interface PhoneNewVoicemailMessageTriggerDetails : Windows.ApplicationModel.Calls.Background.IPhoneNewVoicemailMessageTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final GUID LineId()
 	{
 		GUID _ret;

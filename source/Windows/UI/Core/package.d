@@ -28,7 +28,7 @@ extern(Windows):
 
 interface HostedCoreWindowFactory : Windows.UI.Core.ICoreWindowFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreWindow CreateCoreWindow(wstring windowTitle)
 	{
 		Windows.UI.Core.CoreWindow _ret;
@@ -45,7 +45,7 @@ extern(Windows):
 
 interface ImmersiveCoreWindowFactory : Windows.UI.Core.ICoreWindowFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreWindow CreateCoreWindow(wstring windowTitle)
 	{
 		Windows.UI.Core.CoreWindow _ret;
@@ -62,7 +62,7 @@ extern(Windows):
 
 interface UAPCoreWindowFactory : Windows.UI.Core.ICoreWindowFactory
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreWindow CreateCoreWindow(wstring windowTitle)
 	{
 		Windows.UI.Core.CoreWindow _ret;
@@ -656,7 +656,7 @@ interface IWindowSizeChangedEventArgs : IWindowSizeChangedEventArgs_Base, Window
 
 interface AcceleratorKeyEventArgs : Windows.UI.Core.IAcceleratorKeyEventArgs, Windows.UI.Core.ICoreWindowEventArgs, Windows.UI.Core.IAcceleratorKeyEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreAcceleratorKeyEventType EventType()
 	{
 		Windows.UI.Core.CoreAcceleratorKeyEventType _ret;
@@ -695,7 +695,7 @@ extern(Windows):
 
 interface AutomationProviderRequestedEventArgs : Windows.UI.Core.IAutomationProviderRequestedEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final IInspectable AutomationProvider()
 	{
 		IInspectable _ret;
@@ -720,7 +720,7 @@ extern(Windows):
 
 interface BackRequestedEventArgs : Windows.UI.Core.IBackRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -735,7 +735,7 @@ extern(Windows):
 
 interface CharacterReceivedEventArgs : Windows.UI.Core.ICharacterReceivedEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final UINT32 KeyCode()
 	{
 		UINT32 _ret;
@@ -762,7 +762,7 @@ extern(Windows):
 
 interface ClosestInteractiveBoundsRequestedEventArgs : Windows.UI.Core.IClosestInteractiveBoundsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point PointerPosition()
 	{
 		Windows.Foundation.Point _ret;
@@ -789,7 +789,7 @@ extern(Windows):
 
 interface CoreAcceleratorKeys : Windows.UI.Core.ICoreAcceleratorKeys
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAcceleratorKeyActivated(void delegate(Windows.UI.Core.CoreDispatcher, Windows.UI.Core.AcceleratorKeyEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -804,7 +804,7 @@ extern(Windows):
 
 interface CoreComponentInputSource : Windows.UI.Core.ICoreInputSourceBase, Windows.UI.Core.ICorePointerInputSource, Windows.UI.Core.ICoreKeyboardInputSource, Windows.UI.Core.ICoreComponentFocusable, Windows.UI.Core.ICoreTouchHitTesting, Windows.UI.Core.ICoreClosestInteractiveBoundsRequested, Windows.UI.Core.ICoreKeyboardInputSource2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreDispatcher Dispatcher()
 	{
 		Windows.UI.Core.CoreDispatcher _ret;
@@ -1023,7 +1023,7 @@ extern(Windows):
 
 interface CoreCursor : Windows.UI.Core.ICoreCursor
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -1047,7 +1047,7 @@ extern(Windows):
 
 interface CoreDispatcher : Windows.UI.Core.ICoreDispatcher, Windows.UI.Core.ICoreAcceleratorKeys, Windows.UI.Core.ICoreDispatcherWithTaskPriority, Windows.UI.Core.ICoreDispatcher2
 {
-extern(Windows):
+extern(D):
 	final bool HasThreadAccess()
 	{
 		bool _ret;
@@ -1123,7 +1123,7 @@ extern(Windows):
 
 interface CoreIndependentInputSource : Windows.UI.Core.ICoreInputSourceBase, Windows.UI.Core.ICorePointerInputSource
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreDispatcher Dispatcher()
 	{
 		Windows.UI.Core.CoreDispatcher _ret;
@@ -1254,7 +1254,7 @@ extern(Windows):
 
 interface CoreWindow : Windows.UI.Core.ICoreWindow, Windows.UI.Core.ICoreWindow2, Windows.UI.Core.ICorePointerRedirector, Windows.UI.Core.ICoreWindow3, Windows.UI.Core.ICoreWindow4
 {
-extern(Windows):
+extern(D):
 	final IInspectable AutomationHostProvider()
 	{
 		IInspectable _ret;
@@ -1606,7 +1606,7 @@ extern(Windows):
 
 interface CoreWindowDialog : Windows.UI.Core.ICoreWindowDialog
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnShowing(void delegate(Windows.UI.Core.CoreWindow, Windows.UI.Core.CoreWindowPopupShowingEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1681,9 +1681,9 @@ extern(Windows):
 		Debug.OK((cast(Windows.UI.Core.ICoreWindowDialog)this.asInterface(uuid("e7392ce0-c78d-427e-8b2c-01ff420c69d5"))).get_BackButtonCommand(&_ret));
 		return _ret;
 	}
-	final void BackButtonCommand(Windows.UI.Popups.UICommandInvokedHandler value)
+	final void BackButtonCommand(void delegate(Windows.UI.Popups.IUICommand) value)
 	{
-		Debug.OK((cast(Windows.UI.Core.ICoreWindowDialog)this.asInterface(uuid("e7392ce0-c78d-427e-8b2c-01ff420c69d5"))).set_BackButtonCommand(value));
+		Debug.OK((cast(Windows.UI.Core.ICoreWindowDialog)this.asInterface(uuid("e7392ce0-c78d-427e-8b2c-01ff420c69d5"))).set_BackButtonCommand(event!(Windows.UI.Popups.UICommandInvokedHandler, Windows.UI.Popups.IUICommand)(value)));
 	}
 	final Windows.Foundation.IAsyncOperation!(Windows.UI.Popups.IUICommand) ShowAsync()
 	{
@@ -1708,7 +1708,7 @@ extern(Windows):
 
 interface CoreWindowEventArgs : Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -1723,7 +1723,7 @@ extern(Windows):
 
 interface CoreWindowFlyout : Windows.UI.Core.ICoreWindowFlyout
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnShowing(void delegate(Windows.UI.Core.CoreWindow, Windows.UI.Core.CoreWindowPopupShowingEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1788,9 +1788,9 @@ extern(Windows):
 		Debug.OK((cast(Windows.UI.Core.ICoreWindowFlyout)this.asInterface(uuid("e89d854d-2050-40bb-b344-f6f355eeb314"))).get_BackButtonCommand(&_ret));
 		return _ret;
 	}
-	final void BackButtonCommand(Windows.UI.Popups.UICommandInvokedHandler value)
+	final void BackButtonCommand(void delegate(Windows.UI.Popups.IUICommand) value)
 	{
-		Debug.OK((cast(Windows.UI.Core.ICoreWindowFlyout)this.asInterface(uuid("e89d854d-2050-40bb-b344-f6f355eeb314"))).set_BackButtonCommand(value));
+		Debug.OK((cast(Windows.UI.Core.ICoreWindowFlyout)this.asInterface(uuid("e89d854d-2050-40bb-b344-f6f355eeb314"))).set_BackButtonCommand(event!(Windows.UI.Popups.UICommandInvokedHandler, Windows.UI.Popups.IUICommand)(value)));
 	}
 	final Windows.Foundation.IAsyncOperation!(Windows.UI.Popups.IUICommand) ShowAsync()
 	{
@@ -1816,7 +1816,7 @@ extern(Windows):
 
 interface CoreWindowPopupShowingEventArgs : Windows.UI.Core.ICoreWindowPopupShowingEventArgs
 {
-extern(Windows):
+extern(D):
 	final void SetDesiredSize(Windows.Foundation.Size value)
 	{
 		Debug.OK((cast(Windows.UI.Core.ICoreWindowPopupShowingEventArgs)this.asInterface(uuid("26155fa2-5ba5-4ea4-a3b4-2dc7d63c8e26"))).abi_SetDesiredSize(value));
@@ -1825,7 +1825,7 @@ extern(Windows):
 
 interface CoreWindowResizeManager : Windows.UI.Core.ICoreWindowResizeManager, Windows.UI.Core.ICoreWindowResizeManagerLayoutCapability
 {
-extern(Windows):
+extern(D):
 	final void NotifyLayoutCompleted()
 	{
 		Debug.OK((cast(Windows.UI.Core.ICoreWindowResizeManager)this.asInterface(uuid("b8f0b925-b350-48b3-a198-5c1a84700243"))).abi_NotifyLayoutCompleted());
@@ -1857,7 +1857,7 @@ extern(Windows):
 
 interface IdleDispatchedHandlerArgs : Windows.UI.Core.IIdleDispatchedHandlerArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsDispatcherIdle()
 	{
 		bool _ret;
@@ -1868,7 +1868,7 @@ extern(Windows):
 
 interface InputEnabledEventArgs : Windows.UI.Core.IInputEnabledEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool InputEnabled()
 	{
 		bool _ret;
@@ -1889,7 +1889,7 @@ extern(Windows):
 
 interface KeyEventArgs : Windows.UI.Core.IKeyEventArgs, Windows.UI.Core.ICoreWindowEventArgs, Windows.UI.Core.IKeyEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.System.VirtualKey VirtualKey()
 	{
 		Windows.System.VirtualKey _ret;
@@ -1922,7 +1922,7 @@ extern(Windows):
 
 interface PointerEventArgs : Windows.UI.Core.IPointerEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.PointerPoint CurrentPoint()
 	{
 		Windows.UI.Input.PointerPoint _ret;
@@ -1955,7 +1955,7 @@ extern(Windows):
 
 interface SystemNavigationManager : Windows.UI.Core.ISystemNavigationManager, Windows.UI.Core.ISystemNavigationManager2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnBackRequested(void delegate(IInspectable, Windows.UI.Core.BackRequestedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1993,7 +1993,7 @@ extern(Windows):
 
 interface TouchHitTestingEventArgs : Windows.UI.Core.ITouchHitTestingEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreProximityEvaluation ProximityEvaluation()
 	{
 		Windows.UI.Core.CoreProximityEvaluation _ret;
@@ -2044,7 +2044,7 @@ extern(Windows):
 
 interface VisibilityChangedEventArgs : Windows.UI.Core.IVisibilityChangedEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Visible()
 	{
 		bool _ret;
@@ -2065,7 +2065,7 @@ extern(Windows):
 
 interface WindowActivatedEventArgs : Windows.UI.Core.IWindowActivatedEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Core.CoreWindowActivationState WindowActivationState()
 	{
 		Windows.UI.Core.CoreWindowActivationState _ret;
@@ -2086,7 +2086,7 @@ extern(Windows):
 
 interface WindowSizeChangedEventArgs : Windows.UI.Core.IWindowSizeChangedEventArgs, Windows.UI.Core.ICoreWindowEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size Size()
 	{
 		Windows.Foundation.Size _ret;

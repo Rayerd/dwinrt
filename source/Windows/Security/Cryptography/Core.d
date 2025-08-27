@@ -507,7 +507,7 @@ interface AsymmetricAlgorithmNames
 
 interface AsymmetricKeyAlgorithmProvider : Windows.Security.Cryptography.Core.IAsymmetricKeyAlgorithmProvider, Windows.Security.Cryptography.Core.IAsymmetricKeyAlgorithmProvider2
 {
-extern(Windows):
+extern(D):
 	final wstring AlgorithmName()
 	{
 		HSTRING _ret;
@@ -629,7 +629,7 @@ interface CryptographicEngine
 
 interface CryptographicHash : Windows.Security.Cryptography.Core.IHashComputation
 {
-extern(Windows):
+extern(D):
 	final void Append(Windows.Storage.Streams.IBuffer data)
 	{
 		Debug.OK((cast(Windows.Security.Cryptography.Core.IHashComputation)this.asInterface(uuid("5904d1b6-ad31-4603-a3a4-b1bda98e2562"))).abi_Append(data));
@@ -644,7 +644,7 @@ extern(Windows):
 
 interface CryptographicKey : Windows.Security.Cryptography.Core.ICryptographicKey
 {
-extern(Windows):
+extern(D):
 	final UINT32 KeySize()
 	{
 		UINT32 _ret;
@@ -969,7 +969,7 @@ interface EccCurveNames
 
 interface EncryptedAndAuthenticatedData : Windows.Security.Cryptography.Core.IEncryptedAndAuthenticatedData
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer EncryptedData()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1026,7 +1026,7 @@ interface HashAlgorithmNames
 
 interface HashAlgorithmProvider : Windows.Security.Cryptography.Core.IHashAlgorithmProvider
 {
-extern(Windows):
+extern(D):
 	final wstring AlgorithmName()
 	{
 		HSTRING _ret;
@@ -1168,7 +1168,7 @@ interface KeyDerivationAlgorithmNames
 
 interface KeyDerivationAlgorithmProvider : Windows.Security.Cryptography.Core.IKeyDerivationAlgorithmProvider
 {
-extern(Windows):
+extern(D):
 	final wstring AlgorithmName()
 	{
 		HSTRING _ret;
@@ -1198,7 +1198,7 @@ extern(Windows):
 
 interface KeyDerivationParameters : Windows.Security.Cryptography.Core.IKeyDerivationParameters, Windows.Security.Cryptography.Core.IKeyDerivationParameters2
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer KdfGenericBinary()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -1300,7 +1300,7 @@ interface MacAlgorithmNames
 
 interface MacAlgorithmProvider : Windows.Security.Cryptography.Core.IMacAlgorithmProvider, Windows.Security.Cryptography.Core.IMacAlgorithmProvider2
 {
-extern(Windows):
+extern(D):
 	final wstring AlgorithmName()
 	{
 		HSTRING _ret;
@@ -1488,7 +1488,7 @@ interface SymmetricAlgorithmNames
 
 interface SymmetricKeyAlgorithmProvider : Windows.Security.Cryptography.Core.ISymmetricKeyAlgorithmProvider
 {
-extern(Windows):
+extern(D):
 	final wstring AlgorithmName()
 	{
 		HSTRING _ret;

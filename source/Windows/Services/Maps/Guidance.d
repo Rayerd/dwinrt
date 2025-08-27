@@ -218,7 +218,7 @@ extern(Windows):
 
 interface GuidanceAudioNotificationRequestedEventArgs : Windows.Services.Maps.Guidance.IGuidanceAudioNotificationRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.Guidance.GuidanceAudioNotificationKind AudioNotification()
 	{
 		Windows.Services.Maps.Guidance.GuidanceAudioNotificationKind _ret;
@@ -241,7 +241,7 @@ extern(Windows):
 
 interface GuidanceLaneInfo : Windows.Services.Maps.Guidance.IGuidanceLaneInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.Guidance.GuidanceLaneMarkers LaneMarkers()
 	{
 		Windows.Services.Maps.Guidance.GuidanceLaneMarkers _ret;
@@ -258,7 +258,7 @@ extern(Windows):
 
 interface GuidanceManeuver : Windows.Services.Maps.Guidance.IGuidanceManeuver
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint StartLocation()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -335,7 +335,7 @@ extern(Windows):
 
 interface GuidanceMapMatchedCoordinate : Windows.Services.Maps.Guidance.IGuidanceMapMatchedCoordinate
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Location()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -370,7 +370,7 @@ extern(Windows):
 
 interface GuidanceNavigator : Windows.Services.Maps.Guidance.IGuidanceNavigator, Windows.Services.Maps.Guidance.IGuidanceNavigator2
 {
-extern(Windows):
+extern(D):
 	final void StartNavigating(Windows.Services.Maps.Guidance.GuidanceRoute route)
 	{
 		Debug.OK((cast(Windows.Services.Maps.Guidance.IGuidanceNavigator)this.asInterface(uuid("08f17ef7-8e3f-4d9a-be8a-108f9a012c67"))).abi_StartNavigating(route));
@@ -539,7 +539,7 @@ extern(Windows):
 
 interface GuidanceReroutedEventArgs : Windows.Services.Maps.Guidance.IGuidanceReroutedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.Guidance.GuidanceRoute Route()
 	{
 		Windows.Services.Maps.Guidance.GuidanceRoute _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface GuidanceRoadSegment : Windows.Services.Maps.Guidance.IGuidanceRoadSegment
 {
-extern(Windows):
+extern(D):
 	final wstring RoadName()
 	{
 		HSTRING _ret;
@@ -609,7 +609,7 @@ extern(Windows):
 
 interface GuidanceRoadSignpost : Windows.Services.Maps.Guidance.IGuidanceRoadSignpost
 {
-extern(Windows):
+extern(D):
 	final wstring ExitNumber()
 	{
 		HSTRING _ret;
@@ -644,7 +644,7 @@ extern(Windows):
 
 interface GuidanceRoute : Windows.Services.Maps.Guidance.IGuidanceRoute
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan Duration()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -710,7 +710,7 @@ extern(Windows):
 
 interface GuidanceTelemetryCollector : Windows.Services.Maps.Guidance.IGuidanceTelemetryCollector
 {
-extern(Windows):
+extern(D):
 	final bool Enabled()
 	{
 		bool _ret;
@@ -762,7 +762,7 @@ extern(Windows):
 
 interface GuidanceUpdatedEventArgs : Windows.Services.Maps.Guidance.IGuidanceUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.Guidance.GuidanceMode Mode()
 	{
 		Windows.Services.Maps.Guidance.GuidanceMode _ret;

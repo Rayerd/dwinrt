@@ -338,7 +338,7 @@ extern(Windows):
 
 interface SyndicationAttribute : Windows.Web.Syndication.ISyndicationAttribute
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -386,7 +386,7 @@ extern(Windows):
 
 interface SyndicationCategory : Windows.Web.Syndication.ISyndicationCategory, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -509,7 +509,7 @@ extern(Windows):
 
 interface SyndicationClient : Windows.Web.Syndication.ISyndicationClient
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Credentials.PasswordCredential ServerCredential()
 	{
 		Windows.Security.Credentials.PasswordCredential _ret;
@@ -587,7 +587,7 @@ extern(Windows):
 
 interface SyndicationContent : Windows.Web.Syndication.ISyndicationText, Windows.Web.Syndication.ISyndicationNode, Windows.Web.Syndication.ISyndicationContent
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -736,7 +736,7 @@ interface SyndicationError
 
 interface SyndicationFeed : Windows.Web.Syndication.ISyndicationFeed, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Web.Syndication.SyndicationPerson) Authors()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Web.Syndication.SyndicationPerson) _ret;
@@ -970,7 +970,7 @@ extern(Windows):
 
 interface SyndicationGenerator : Windows.Web.Syndication.ISyndicationGenerator, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -1086,7 +1086,7 @@ extern(Windows):
 
 interface SyndicationItem : Windows.Web.Syndication.ISyndicationItem, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.Web.Syndication.SyndicationPerson) Authors()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.Web.Syndication.SyndicationPerson) _ret;
@@ -1318,7 +1318,7 @@ extern(Windows):
 
 interface SyndicationLink : Windows.Web.Syndication.ISyndicationLink, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final UINT32 Length()
 	{
 		UINT32 _ret;
@@ -1471,7 +1471,7 @@ extern(Windows):
 
 interface SyndicationNode : Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final wstring NodeName()
 	{
 		HSTRING _ret;
@@ -1557,7 +1557,7 @@ extern(Windows):
 
 interface SyndicationPerson : Windows.Web.Syndication.ISyndicationPerson, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final wstring Email()
 	{
 		HSTRING _ret;
@@ -1680,7 +1680,7 @@ extern(Windows):
 
 interface SyndicationText : Windows.Web.Syndication.ISyndicationText, Windows.Web.Syndication.ISyndicationNode
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;

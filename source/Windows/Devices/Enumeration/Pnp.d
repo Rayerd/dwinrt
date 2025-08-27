@@ -57,7 +57,7 @@ extern(Windows):
 
 interface PnpObject : Windows.Devices.Enumeration.Pnp.IPnpObject
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.Pnp.PnpObjectType Type()
 	{
 		Windows.Devices.Enumeration.Pnp.PnpObjectType _ret;
@@ -123,7 +123,7 @@ extern(Windows):
 
 interface PnpObjectCollection : Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.Pnp.PnpObject), Windows.Foundation.Collections.IIterable!(Windows.Devices.Enumeration.Pnp.PnpObject)
 {
-extern(Windows):
+extern(D):
 	final void GetAt(uint index, Windows.Devices.Enumeration.Pnp.PnpObject* out_item)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IVectorView!(Windows.Devices.Enumeration.Pnp.PnpObject))this).abi_GetAt(index, out_item));
@@ -152,7 +152,7 @@ extern(Windows):
 
 interface PnpObjectUpdate : Windows.Devices.Enumeration.Pnp.IPnpObjectUpdate
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.Pnp.PnpObjectType Type()
 	{
 		Windows.Devices.Enumeration.Pnp.PnpObjectType _ret;
@@ -175,7 +175,7 @@ extern(Windows):
 
 interface PnpObjectWatcher : Windows.Devices.Enumeration.Pnp.IPnpObjectWatcher
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAdded(void delegate(Windows.Devices.Enumeration.Pnp.PnpObjectWatcher, Windows.Devices.Enumeration.Pnp.PnpObject) fn)
 	{
 		EventRegistrationToken tok;

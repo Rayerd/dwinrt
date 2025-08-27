@@ -311,7 +311,7 @@ extern(Windows):
 
 interface PaymentAddress : Windows.ApplicationModel.Payments.IPaymentAddress
 {
-extern(Windows):
+extern(D):
 	final wstring Country()
 	{
 		HSTRING _ret;
@@ -438,7 +438,7 @@ extern(Windows):
 
 interface PaymentCurrencyAmount : Windows.ApplicationModel.Payments.IPaymentCurrencyAmount
 {
-extern(Windows):
+extern(D):
 	final wstring Currency()
 	{
 		HSTRING _ret;
@@ -487,7 +487,7 @@ extern(Windows):
 
 interface PaymentDetails : Windows.ApplicationModel.Payments.IPaymentDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentItem Total()
 	{
 		Windows.ApplicationModel.Payments.PaymentItem _ret;
@@ -552,7 +552,7 @@ extern(Windows):
 
 interface PaymentDetailsModifier : Windows.ApplicationModel.Payments.IPaymentDetailsModifier
 {
-extern(Windows):
+extern(D):
 	final wstring JsonData()
 	{
 		HSTRING _ret;
@@ -602,7 +602,7 @@ extern(Windows):
 
 interface PaymentItem : Windows.ApplicationModel.Payments.IPaymentItem
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -644,7 +644,7 @@ extern(Windows):
 
 interface PaymentMediator : Windows.ApplicationModel.Payments.IPaymentMediator
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(HSTRING)) GetSupportedMethodIdsAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(HSTRING)) _ret;
@@ -674,7 +674,7 @@ extern(Windows):
 
 interface PaymentMerchantInfo : Windows.ApplicationModel.Payments.IPaymentMerchantInfo
 {
-extern(Windows):
+extern(D):
 	final wstring PackageFullName()
 	{
 		HSTRING _ret;
@@ -704,7 +704,7 @@ extern(Windows):
 
 interface PaymentMethodData : Windows.ApplicationModel.Payments.IPaymentMethodData
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) SupportedMethodIds()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -735,7 +735,7 @@ extern(Windows):
 
 interface PaymentOptions : Windows.ApplicationModel.Payments.IPaymentOptions
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentOptionPresence RequestPayerEmail()
 	{
 		Windows.ApplicationModel.Payments.PaymentOptionPresence _ret;
@@ -796,7 +796,7 @@ extern(Windows):
 
 interface PaymentRequest : Windows.ApplicationModel.Payments.IPaymentRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentMerchantInfo MerchantInfo()
 	{
 		Windows.ApplicationModel.Payments.PaymentMerchantInfo _ret;
@@ -846,7 +846,7 @@ extern(Windows):
 
 interface PaymentRequestChangedArgs : Windows.ApplicationModel.Payments.IPaymentRequestChangedArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentRequestChangeKind ChangeKind()
 	{
 		Windows.ApplicationModel.Payments.PaymentRequestChangeKind _ret;
@@ -873,7 +873,7 @@ extern(Windows):
 
 interface PaymentRequestChangedResult : Windows.ApplicationModel.Payments.IPaymentRequestChangedResult
 {
-extern(Windows):
+extern(D):
 	final bool ChangeAcceptedByMerchant()
 	{
 		bool _ret;
@@ -922,7 +922,7 @@ extern(Windows):
 
 interface PaymentRequestSubmitResult : Windows.ApplicationModel.Payments.IPaymentRequestSubmitResult
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentRequestStatus Status()
 	{
 		Windows.ApplicationModel.Payments.PaymentRequestStatus _ret;
@@ -939,7 +939,7 @@ extern(Windows):
 
 interface PaymentResponse : Windows.ApplicationModel.Payments.IPaymentResponse
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Payments.PaymentToken PaymentToken()
 	{
 		Windows.ApplicationModel.Payments.PaymentToken _ret;
@@ -986,7 +986,7 @@ extern(Windows):
 
 interface PaymentShippingOption : Windows.ApplicationModel.Payments.IPaymentShippingOption
 {
-extern(Windows):
+extern(D):
 	final wstring Label()
 	{
 		HSTRING _ret;
@@ -1052,7 +1052,7 @@ extern(Windows):
 
 interface PaymentToken : Windows.ApplicationModel.Payments.IPaymentToken
 {
-extern(Windows):
+extern(D):
 	final wstring PaymentMethodId()
 	{
 		HSTRING _ret;

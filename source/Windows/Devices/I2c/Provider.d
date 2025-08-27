@@ -52,7 +52,7 @@ extern(Windows):
 
 interface ProviderI2cConnectionSettings : Windows.Devices.I2c.Provider.IProviderI2cConnectionSettings
 {
-extern(Windows):
+extern(D):
 	final INT32 SlaveAddress()
 	{
 		INT32 _ret;

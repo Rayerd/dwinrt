@@ -277,7 +277,7 @@ interface KnownPerceptionFrameKind
 
 interface PerceptionControlGroup : Windows.Devices.Perception.Provider.IPerceptionControlGroup
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionControlGroup may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) FrameProviderIds()
 	{
@@ -297,7 +297,7 @@ extern(Windows):
 
 interface PerceptionCorrelation : Windows.Devices.Perception.Provider.IPerceptionCorrelation
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionCorrelation may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final wstring TargetId()
 	{
@@ -331,7 +331,7 @@ extern(Windows):
 
 interface PerceptionCorrelationGroup : Windows.Devices.Perception.Provider.IPerceptionCorrelationGroup
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionCorrelationGroup may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final Windows.Foundation.Collections.IVectorView!(Windows.Devices.Perception.Provider.PerceptionCorrelation) RelativeLocations()
 	{
@@ -351,7 +351,7 @@ extern(Windows):
 
 interface PerceptionFaceAuthenticationGroup : Windows.Devices.Perception.Provider.IPerceptionFaceAuthenticationGroup
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionFaceAuthenticationGroup may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) FrameProviderIds()
 	{
@@ -371,7 +371,7 @@ extern(Windows):
 
 interface PerceptionFrame : Windows.Devices.Perception.Provider.IPerceptionFrame
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionFrame may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final Windows.Foundation.TimeSpan RelativeTime()
 	{
@@ -402,7 +402,7 @@ extern(Windows):
 
 interface PerceptionFrameProviderInfo : Windows.Devices.Perception.Provider.IPerceptionFrameProviderInfo
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionFrameProviderInfo may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final wstring Id()
 	{
@@ -533,7 +533,7 @@ interface PerceptionFrameProviderManagerService
 
 interface PerceptionPropertyChangeRequest : Windows.Devices.Perception.Provider.IPerceptionPropertyChangeRequest
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionPropertyChangeRequest may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final wstring Name()
 	{
@@ -571,7 +571,7 @@ extern(Windows):
 
 interface PerceptionVideoFrameAllocator : Windows.Devices.Perception.Provider.IPerceptionVideoFrameAllocator, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionVideoFrameAllocator may be unavailable after Windows Creator Update. Please refer to AVStream on MSDN.")
 	final Windows.Devices.Perception.Provider.PerceptionFrame AllocateFrame()
 	{

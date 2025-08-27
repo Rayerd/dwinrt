@@ -93,7 +93,7 @@ extern(Windows):
 
 interface PushNotificationChannel : Windows.Networking.PushNotifications.IPushNotificationChannel
 {
-extern(Windows):
+extern(D):
 	final wstring Uri()
 	{
 		HSTRING _ret;
@@ -153,7 +153,7 @@ interface PushNotificationChannelManager
 
 interface PushNotificationChannelManagerForUser : Windows.Networking.PushNotifications.IPushNotificationChannelManagerForUser, Windows.Networking.PushNotifications.IPushNotificationChannelManagerForUser2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Networking.PushNotifications.PushNotificationChannel) CreatePushNotificationChannelForApplicationAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Networking.PushNotifications.PushNotificationChannel) _ret;
@@ -196,7 +196,7 @@ extern(Windows):
 
 interface PushNotificationReceivedEventArgs : Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs
 {
-extern(Windows):
+extern(D):
 	final void Cancel(bool value)
 	{
 		Debug.OK((cast(Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs)this.asInterface(uuid("d1065e0c-36cd-484c-b935-0a99b753cf00"))).set_Cancel(value));
@@ -241,7 +241,7 @@ extern(Windows):
 
 interface RawNotification : Windows.Networking.PushNotifications.IRawNotification, Windows.Networking.PushNotifications.IRawNotification2
 {
-extern(Windows):
+extern(D):
 	final wstring Content()
 	{
 		HSTRING _ret;

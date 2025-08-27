@@ -31,7 +31,7 @@ extern(Windows):
 
 interface SystemNavigationCloseRequestedPreviewEventArgs : Windows.UI.Core.Preview.ISystemNavigationCloseRequestedPreviewEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool Handled()
 	{
 		bool _ret;
@@ -52,7 +52,7 @@ extern(Windows):
 
 interface SystemNavigationManagerPreview : Windows.UI.Core.Preview.ISystemNavigationManagerPreview
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnCloseRequested(void delegate(IInspectable, Windows.UI.Core.Preview.SystemNavigationCloseRequestedPreviewEventArgs) fn)
 	{
 		EventRegistrationToken tok;

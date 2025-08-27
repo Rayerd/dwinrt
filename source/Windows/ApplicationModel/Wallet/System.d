@@ -33,7 +33,7 @@ extern(Windows):
 
 interface WalletItemSystemStore : Windows.ApplicationModel.Wallet.System.IWalletItemSystemStore, Windows.ApplicationModel.Wallet.System.IWalletItemSystemStore2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Wallet.WalletItem)) GetItemsAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.Wallet.WalletItem)) _ret;

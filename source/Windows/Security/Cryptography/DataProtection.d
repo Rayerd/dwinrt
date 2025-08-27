@@ -23,7 +23,7 @@ extern(Windows):
 
 interface DataProtectionProvider : Windows.Security.Cryptography.DataProtection.IDataProtectionProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IBuffer) ProtectAsync(Windows.Storage.Streams.IBuffer data)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Storage.Streams.IBuffer) _ret;

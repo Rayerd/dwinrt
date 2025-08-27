@@ -27,7 +27,7 @@ extern(Windows):
 
 interface UserNotificationListener : Windows.UI.Notifications.Management.IUserNotificationListener
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.UI.Notifications.Management.UserNotificationListenerAccessStatus) RequestAccessAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.UI.Notifications.Management.UserNotificationListenerAccessStatus) _ret;

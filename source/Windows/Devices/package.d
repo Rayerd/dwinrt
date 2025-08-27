@@ -38,7 +38,7 @@ extern(Windows):
 
 interface LowLevelDevicesAggregateProvider : Windows.Devices.ILowLevelDevicesAggregateProvider
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Adc.Provider.IAdcControllerProvider AdcControllerProvider()
 	{
 		Windows.Devices.Adc.Provider.IAdcControllerProvider _ret;

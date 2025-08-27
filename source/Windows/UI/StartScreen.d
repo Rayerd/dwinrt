@@ -252,7 +252,7 @@ extern(Windows):
 
 interface JumpList : Windows.UI.StartScreen.IJumpList
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.StartScreen.JumpListItem) Items()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.StartScreen.JumpListItem) _ret;
@@ -298,7 +298,7 @@ extern(Windows):
 
 interface JumpListItem : Windows.UI.StartScreen.IJumpListItem
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.StartScreen.JumpListItemKind Kind()
 	{
 		Windows.UI.StartScreen.JumpListItemKind _ret;
@@ -380,7 +380,7 @@ extern(Windows):
 
 interface SecondaryTile : Windows.UI.StartScreen.ISecondaryTile, Windows.UI.StartScreen.ISecondaryTile2
 {
-extern(Windows):
+extern(D):
 	final void TileId(wstring value)
 	{
 		Debug.OK((cast(Windows.UI.StartScreen.ISecondaryTile)this.asInterface(uuid("9e9e51e0-2bb5-4bc0-bb8d-42b23abcc88d"))).set_TileId(hstring(value).handle));
@@ -676,7 +676,7 @@ extern(Windows):
 
 interface SecondaryTileVisualElements : Windows.UI.StartScreen.ISecondaryTileVisualElements, Windows.UI.StartScreen.ISecondaryTileVisualElements2, Windows.UI.StartScreen.ISecondaryTileVisualElements3
 {
-extern(Windows):
+extern(D):
 	deprecated("SecondaryTileVisualElements.Square30x30Logo may be altered or unavailable for release after Windows 10.")
 	final void Square30x30Logo(Windows.Foundation.Uri value)
 	{
@@ -805,7 +805,7 @@ extern(Windows):
 
 interface StartScreenManager : Windows.UI.StartScreen.IStartScreenManager
 {
-extern(Windows):
+extern(D):
 	final Windows.System.User User()
 	{
 		Windows.System.User _ret;
@@ -853,7 +853,7 @@ extern(Windows):
 
 interface VisualElementsRequest : Windows.UI.StartScreen.IVisualElementsRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.StartScreen.SecondaryTileVisualElements VisualElements()
 	{
 		Windows.UI.StartScreen.SecondaryTileVisualElements _ret;
@@ -882,7 +882,7 @@ extern(Windows):
 
 interface VisualElementsRequestDeferral : Windows.UI.StartScreen.IVisualElementsRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.UI.StartScreen.IVisualElementsRequestDeferral)this.asInterface(uuid("a1656eb0-0126-4357-8204-bd82bb2a046d"))).abi_Complete());
@@ -891,7 +891,7 @@ extern(Windows):
 
 interface VisualElementsRequestedEventArgs : Windows.UI.StartScreen.IVisualElementsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.StartScreen.VisualElementsRequest Request()
 	{
 		Windows.UI.StartScreen.VisualElementsRequest _ret;

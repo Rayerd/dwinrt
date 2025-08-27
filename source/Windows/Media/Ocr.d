@@ -53,7 +53,7 @@ extern(Windows):
 
 interface OcrEngine : Windows.Media.Ocr.IOcrEngine
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.Ocr.OcrResult) RecognizeAsync(Windows.Graphics.Imaging.SoftwareBitmap bitmap)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Media.Ocr.OcrResult) _ret;
@@ -107,7 +107,7 @@ extern(Windows):
 
 interface OcrLine : Windows.Media.Ocr.IOcrLine
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Ocr.OcrWord) Words()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Ocr.OcrWord) _ret;
@@ -124,7 +124,7 @@ extern(Windows):
 
 interface OcrResult : Windows.Media.Ocr.IOcrResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Ocr.OcrLine) Lines()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Ocr.OcrLine) _ret;
@@ -147,7 +147,7 @@ extern(Windows):
 
 interface OcrWord : Windows.Media.Ocr.IOcrWord
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect BoundingRect()
 	{
 		Windows.Foundation.Rect _ret;

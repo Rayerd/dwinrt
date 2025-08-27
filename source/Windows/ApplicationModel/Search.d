@@ -234,7 +234,7 @@ extern(Windows):
 
 interface LocalContentSuggestionSettings : Windows.ApplicationModel.Search.ILocalContentSuggestionSettings
 {
-extern(Windows):
+extern(D):
 	final void Enabled(bool value)
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Search.ILocalContentSuggestionSettings)this.asInterface(uuid("eeaeb062-743d-456e-84a3-23f06f2d15d7"))).set_Enabled(value));
@@ -277,7 +277,7 @@ extern(Windows):
 
 interface SearchPane : Windows.ApplicationModel.Search.ISearchPane
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPane may be altered or unavailable for releases after Windows 10.")
 	final void SearchHistoryEnabled(bool value)
 	{
@@ -449,7 +449,7 @@ extern(Windows):
 
 interface SearchPaneQueryChangedEventArgs : Windows.ApplicationModel.Search.ISearchPaneQueryChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneQueryChangedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final wstring QueryText()
 	{
@@ -475,7 +475,7 @@ extern(Windows):
 
 interface SearchPaneQueryLinguisticDetails : Windows.ApplicationModel.Search.ISearchPaneQueryLinguisticDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) QueryTextAlternatives()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -498,7 +498,7 @@ extern(Windows):
 
 interface SearchPaneQuerySubmittedEventArgs : Windows.ApplicationModel.Search.ISearchPaneQuerySubmittedEventArgs, Windows.ApplicationModel.Search.ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneQuerySubmittedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final wstring QueryText()
 	{
@@ -524,7 +524,7 @@ extern(Windows):
 
 interface SearchPaneResultSuggestionChosenEventArgs : Windows.ApplicationModel.Search.ISearchPaneResultSuggestionChosenEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneResultSuggestionChosenEventArgs may be altered or unavailable for releases after Windows 10.")
 	final wstring Tag()
 	{
@@ -536,7 +536,7 @@ extern(Windows):
 
 interface SearchPaneSuggestionsRequest : Windows.ApplicationModel.Search.ISearchPaneSuggestionsRequest
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneSuggestionsRequest may be altered or unavailable for releases after Windows 10.")
 	final bool IsCanceled()
 	{
@@ -562,7 +562,7 @@ extern(Windows):
 
 interface SearchPaneSuggestionsRequestDeferral : Windows.ApplicationModel.Search.ISearchPaneSuggestionsRequestDeferral
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneSuggestionsRequestDeferral may be altered or unavailable for releases after Windows 10.")
 	final void Complete()
 	{
@@ -572,7 +572,7 @@ extern(Windows):
 
 interface SearchPaneSuggestionsRequestedEventArgs : Windows.ApplicationModel.Search.ISearchPaneSuggestionsRequestedEventArgs, Windows.ApplicationModel.Search.ISearchPaneQueryChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneSuggestionsRequestedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest Request()
 	{
@@ -605,7 +605,7 @@ extern(Windows):
 
 interface SearchPaneVisibilityChangedEventArgs : Windows.ApplicationModel.Search.ISearchPaneVisibilityChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("ISearchPaneVisibilityChangedEventArgs may be altered or unavailable for releases after Windows 10.")
 	final bool Visible()
 	{
@@ -617,7 +617,7 @@ extern(Windows):
 
 interface SearchQueryLinguisticDetails : Windows.ApplicationModel.Search.ISearchQueryLinguisticDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) QueryTextAlternatives()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -647,7 +647,7 @@ extern(Windows):
 
 interface SearchSuggestionCollection : Windows.ApplicationModel.Search.ISearchSuggestionCollection
 {
-extern(Windows):
+extern(D):
 	final UINT32 Size()
 	{
 		UINT32 _ret;
@@ -674,7 +674,7 @@ extern(Windows):
 
 interface SearchSuggestionsRequest : Windows.ApplicationModel.Search.ISearchSuggestionsRequest
 {
-extern(Windows):
+extern(D):
 	final bool IsCanceled()
 	{
 		bool _ret;
@@ -697,7 +697,7 @@ extern(Windows):
 
 interface SearchSuggestionsRequestDeferral : Windows.ApplicationModel.Search.ISearchSuggestionsRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.ApplicationModel.Search.ISearchSuggestionsRequestDeferral)this.asInterface(uuid("b71598a9-c065-456d-a845-1eccec5dc28b"))).abi_Complete());

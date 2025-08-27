@@ -328,7 +328,7 @@ extern(Windows):
 
 interface AudioEncodingProperties : Windows.Media.MediaProperties.IAudioEncodingProperties, Windows.Media.MediaProperties.IMediaEncodingProperties, Windows.Media.MediaProperties.IAudioEncodingPropertiesWithFormatUserData, Windows.Media.MediaProperties.IAudioEncodingProperties2
 {
-extern(Windows):
+extern(D):
 	final void Bitrate(UINT32 value)
 	{
 		Debug.OK((cast(Windows.Media.MediaProperties.IAudioEncodingProperties)this.asInterface(uuid("62bc7a16-005c-4b3b-8a0b-0a090e9687f3"))).set_Bitrate(value));
@@ -452,7 +452,7 @@ extern(Windows):
 
 interface ContainerEncodingProperties : Windows.Media.MediaProperties.IContainerEncodingProperties, Windows.Media.MediaProperties.IMediaEncodingProperties
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.MediaPropertySet Properties()
 	{
 		Windows.Media.MediaProperties.MediaPropertySet _ret;
@@ -555,7 +555,7 @@ interface H264ProfileIds
 
 interface ImageEncodingProperties : Windows.Media.MediaProperties.IImageEncodingProperties, Windows.Media.MediaProperties.IMediaEncodingProperties
 {
-extern(Windows):
+extern(D):
 	final void Width(UINT32 value)
 	{
 		Debug.OK((cast(Windows.Media.MediaProperties.IImageEncodingProperties)this.asInterface(uuid("78625635-f331-4189-b1c3-b48d5ae034f1"))).set_Width(value));
@@ -633,7 +633,7 @@ extern(Windows):
 
 interface MediaEncodingProfile : Windows.Media.MediaProperties.IMediaEncodingProfile
 {
-extern(Windows):
+extern(D):
 	final void Audio(Windows.Media.MediaProperties.AudioEncodingProperties value)
 	{
 		Debug.OK((cast(Windows.Media.MediaProperties.IMediaEncodingProfile)this.asInterface(uuid("e7dbf5a8-1db9-4783-876b-3dfe12acfdb3"))).set_Audio(value));
@@ -973,7 +973,7 @@ interface MediaEncodingSubtypes
 
 interface MediaPropertySet : Windows.Foundation.Collections.IMap!(GUID, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(GUID, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final  IInspectable Lookup(GUID key)
 	{
 		 IInspectable _ret;
@@ -1026,7 +1026,7 @@ extern(Windows):
 
 interface MediaRatio : Windows.Media.MediaProperties.IMediaRatio
 {
-extern(Windows):
+extern(D):
 	final void Numerator(UINT32 value)
 	{
 		Debug.OK((cast(Windows.Media.MediaProperties.IMediaRatio)this.asInterface(uuid("d2d0fee5-8929-401d-ac78-7d357e378163"))).set_Numerator(value));
@@ -1091,7 +1091,7 @@ interface Mpeg2ProfileIds
 
 interface VideoEncodingProperties : Windows.Media.MediaProperties.IVideoEncodingProperties, Windows.Media.MediaProperties.IMediaEncodingProperties, Windows.Media.MediaProperties.IVideoEncodingProperties2, Windows.Media.MediaProperties.IVideoEncodingProperties3, Windows.Media.MediaProperties.IVideoEncodingProperties4
 {
-extern(Windows):
+extern(D):
 	final void Bitrate(UINT32 value)
 	{
 		Debug.OK((cast(Windows.Media.MediaProperties.IVideoEncodingProperties)this.asInterface(uuid("76ee6c9a-37c2-4f2a-880a-1282bbb4373d"))).set_Bitrate(value));

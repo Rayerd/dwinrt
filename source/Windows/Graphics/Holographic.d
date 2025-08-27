@@ -188,7 +188,7 @@ extern(Windows):
 
 interface HolographicCamera : Windows.Graphics.Holographic.IHolographicCamera, Windows.Graphics.Holographic.IHolographicCamera2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Size RenderTargetSize()
 	{
 		Windows.Foundation.Size _ret;
@@ -247,7 +247,7 @@ extern(Windows):
 
 interface HolographicCameraPose : Windows.Graphics.Holographic.IHolographicCameraPose
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Holographic.HolographicCamera HolographicCamera()
 	{
 		Windows.Graphics.Holographic.HolographicCamera _ret;
@@ -300,7 +300,7 @@ extern(Windows):
 
 interface HolographicCameraRenderingParameters : Windows.Graphics.Holographic.IHolographicCameraRenderingParameters, Windows.Graphics.Holographic.IHolographicCameraRenderingParameters2
 {
-extern(Windows):
+extern(D):
 	final void SetFocusPoint(Windows.Perception.Spatial.SpatialCoordinateSystem coordinateSystem, Windows.Foundation.Numerics.Vector3 position)
 	{
 		Debug.OK((cast(Windows.Graphics.Holographic.IHolographicCameraRenderingParameters)this.asInterface(uuid("8eac2ed1-5bf4-4e16-8236-ae0800c11d0d"))).abi_SetFocusPoint(coordinateSystem, position));
@@ -345,7 +345,7 @@ extern(Windows):
 
 interface HolographicCameraViewportParameters : Windows.Graphics.Holographic.IHolographicCameraViewportParameters
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector2* HiddenAreaMesh(UINT32* out___valueSize)
 	{
 		Windows.Foundation.Numerics.Vector2* _ret;
@@ -362,7 +362,7 @@ extern(Windows):
 
 interface HolographicDisplay : Windows.Graphics.Holographic.IHolographicDisplay
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -416,7 +416,7 @@ extern(Windows):
 
 interface HolographicFrame : Windows.Graphics.Holographic.IHolographicFrame
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Holographic.HolographicCamera) AddedCameras()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Holographic.HolographicCamera) _ret;
@@ -472,7 +472,7 @@ extern(Windows):
 
 interface HolographicFramePrediction : Windows.Graphics.Holographic.IHolographicFramePrediction
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Holographic.HolographicCameraPose) CameraPoses()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Holographic.HolographicCameraPose) _ret;
@@ -489,7 +489,7 @@ extern(Windows):
 
 interface HolographicSpace : Windows.Graphics.Holographic.IHolographicSpace
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Holographic.HolographicAdapterId PrimaryAdapterId()
 	{
 		Windows.Graphics.Holographic.HolographicAdapterId _ret;
@@ -543,7 +543,7 @@ extern(Windows):
 
 interface HolographicSpaceCameraAddedEventArgs : Windows.Graphics.Holographic.IHolographicSpaceCameraAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Holographic.HolographicCamera Camera()
 	{
 		Windows.Graphics.Holographic.HolographicCamera _ret;
@@ -560,7 +560,7 @@ extern(Windows):
 
 interface HolographicSpaceCameraRemovedEventArgs : Windows.Graphics.Holographic.IHolographicSpaceCameraRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Holographic.HolographicCamera Camera()
 	{
 		Windows.Graphics.Holographic.HolographicCamera _ret;

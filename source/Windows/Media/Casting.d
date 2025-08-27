@@ -103,7 +103,7 @@ extern(Windows):
 
 interface CastingConnection : Windows.Media.Casting.ICastingConnection, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Casting.CastingConnectionState State()
 	{
 		Windows.Media.Casting.CastingConnectionState _ret;
@@ -166,7 +166,7 @@ extern(Windows):
 
 interface CastingConnectionErrorOccurredEventArgs : Windows.Media.Casting.ICastingConnectionErrorOccurredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Casting.CastingConnectionErrorStatus ErrorStatus()
 	{
 		Windows.Media.Casting.CastingConnectionErrorStatus _ret;
@@ -183,7 +183,7 @@ extern(Windows):
 
 interface CastingDevice : Windows.Media.Casting.ICastingDevice
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -249,7 +249,7 @@ extern(Windows):
 
 interface CastingDevicePicker : Windows.Media.Casting.ICastingDevicePicker
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Casting.CastingDevicePickerFilter Filter()
 	{
 		Windows.Media.Casting.CastingDevicePickerFilter _ret;
@@ -305,7 +305,7 @@ extern(Windows):
 
 interface CastingDevicePickerFilter : Windows.Media.Casting.ICastingDevicePickerFilter
 {
-extern(Windows):
+extern(D):
 	final bool SupportsAudio()
 	{
 		bool _ret;
@@ -346,7 +346,7 @@ extern(Windows):
 
 interface CastingDeviceSelectedEventArgs : Windows.Media.Casting.ICastingDeviceSelectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Casting.CastingDevice SelectedCastingDevice()
 	{
 		Windows.Media.Casting.CastingDevice _ret;
@@ -357,7 +357,7 @@ extern(Windows):
 
 interface CastingSource : Windows.Media.Casting.ICastingSource
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri PreferredSourceUri()
 	{
 		Windows.Foundation.Uri _ret;

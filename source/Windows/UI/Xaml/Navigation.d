@@ -117,7 +117,7 @@ extern(Windows):
 
 interface NavigatingCancelEventArgs : Windows.UI.Xaml.Navigation.INavigatingCancelEventArgs, Windows.UI.Xaml.Navigation.INavigatingCancelEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool Cancel()
 	{
 		bool _ret;
@@ -156,7 +156,7 @@ extern(Windows):
 
 interface NavigationEventArgs : Windows.UI.Xaml.Navigation.INavigationEventArgs, Windows.UI.Xaml.Navigation.INavigationEventArgs2
 {
-extern(Windows):
+extern(D):
 	final IInspectable Content()
 	{
 		IInspectable _ret;
@@ -201,7 +201,7 @@ extern(Windows):
 
 interface NavigationFailedEventArgs : Windows.UI.Xaml.Navigation.INavigationFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT Exception()
 	{
 		HRESULT _ret;
@@ -228,7 +228,7 @@ extern(Windows):
 
 interface PageStackEntry : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Navigation.IPageStackEntry
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Interop.TypeName SourcePageType()
 	{
 		Windows.UI.Xaml.Interop.TypeName _ret;

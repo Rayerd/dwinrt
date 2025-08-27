@@ -280,7 +280,7 @@ interface IThreadNetworkContext : IInspectable
 
 interface BufferProtectUnprotectResult : Windows.Security.EnterpriseData.IBufferProtectUnprotectResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer Buffer()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -297,7 +297,7 @@ extern(Windows):
 
 interface DataProtectionInfo : Windows.Security.EnterpriseData.IDataProtectionInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.EnterpriseData.DataProtectionStatus Status()
 	{
 		Windows.Security.EnterpriseData.DataProtectionStatus _ret;
@@ -360,7 +360,7 @@ interface DataProtectionManager
 
 interface FileProtectionInfo : Windows.Security.EnterpriseData.IFileProtectionInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.EnterpriseData.FileProtectionStatus Status()
 	{
 		Windows.Security.EnterpriseData.FileProtectionStatus _ret;
@@ -472,7 +472,7 @@ interface FileRevocationManager
 
 interface FileUnprotectOptions : Windows.Security.EnterpriseData.IFileUnprotectOptions
 {
-extern(Windows):
+extern(D):
 	final void Audit(bool value)
 	{
 		Debug.OK((cast(Windows.Security.EnterpriseData.IFileUnprotectOptions)this.asInterface(uuid("7d1312f1-3b0d-4dd8-a1f8-1ec53822e2f3"))).set_Audit(value));
@@ -494,7 +494,7 @@ extern(Windows):
 
 interface ProtectedAccessResumedEventArgs : Windows.Security.EnterpriseData.IProtectedAccessResumedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Identities()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -505,7 +505,7 @@ extern(Windows):
 
 interface ProtectedAccessSuspendingEventArgs : Windows.Security.EnterpriseData.IProtectedAccessSuspendingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Identities()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -528,7 +528,7 @@ extern(Windows):
 
 interface ProtectedContainerExportResult : Windows.Security.EnterpriseData.IProtectedContainerExportResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.EnterpriseData.ProtectedImportExportStatus Status()
 	{
 		Windows.Security.EnterpriseData.ProtectedImportExportStatus _ret;
@@ -545,7 +545,7 @@ extern(Windows):
 
 interface ProtectedContainerImportResult : Windows.Security.EnterpriseData.IProtectedContainerImportResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.EnterpriseData.ProtectedImportExportStatus Status()
 	{
 		Windows.Security.EnterpriseData.ProtectedImportExportStatus _ret;
@@ -562,7 +562,7 @@ extern(Windows):
 
 interface ProtectedContentRevokedEventArgs : Windows.Security.EnterpriseData.IProtectedContentRevokedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Identities()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -573,7 +573,7 @@ extern(Windows):
 
 interface ProtectedFileCreateResult : Windows.Security.EnterpriseData.IProtectedFileCreateResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.StorageFile File()
 	{
 		Windows.Storage.StorageFile _ret;
@@ -596,7 +596,7 @@ extern(Windows):
 
 interface ProtectionPolicyAuditInfo : Windows.Security.EnterpriseData.IProtectionPolicyAuditInfo
 {
-extern(Windows):
+extern(D):
 	final void Action(Windows.Security.EnterpriseData.ProtectionPolicyAuditAction value)
 	{
 		Debug.OK((cast(Windows.Security.EnterpriseData.IProtectionPolicyAuditInfo)this.asInterface(uuid("425ab7e4-feb7-44fc-b3bb-c3c4d7ecbebb"))).set_Action(value));
@@ -655,7 +655,7 @@ extern(Windows):
 
 interface ProtectionPolicyManager : Windows.Security.EnterpriseData.IProtectionPolicyManager, Windows.Security.EnterpriseData.IProtectionPolicyManager2
 {
-extern(Windows):
+extern(D):
 	final void Identity(wstring value)
 	{
 		Debug.OK((cast(Windows.Security.EnterpriseData.IProtectionPolicyManager)this.asInterface(uuid("d5703e18-a08d-47e6-a240-9934d7165eb5"))).set_Identity(hstring(value).handle));
@@ -767,7 +767,7 @@ extern(Windows):
 
 interface ThreadNetworkContext : Windows.Security.EnterpriseData.IThreadNetworkContext, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void Close()
 	{
 		Debug.OK((cast(Windows.Foundation.IClosable)this.asInterface(uuid("30d5a829-7fa4-4026-83bb-d75bae4ea99e"))).abi_Close());

@@ -172,7 +172,7 @@ extern(Windows):
 
 interface AppointmentCalendarCancelMeetingRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarCancelMeetingRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -225,7 +225,7 @@ extern(Windows):
 
 interface AppointmentCalendarCancelMeetingRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarCancelMeetingRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequest _ret;
@@ -242,7 +242,7 @@ extern(Windows):
 
 interface AppointmentCalendarCreateOrUpdateAppointmentRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarCreateOrUpdateAppointmentRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -283,7 +283,7 @@ extern(Windows):
 
 interface AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequest _ret;
@@ -300,7 +300,7 @@ extern(Windows):
 
 interface AppointmentCalendarForwardMeetingRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarForwardMeetingRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -359,7 +359,7 @@ extern(Windows):
 
 interface AppointmentCalendarForwardMeetingRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarForwardMeetingRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequest _ret;
@@ -376,7 +376,7 @@ extern(Windows):
 
 interface AppointmentCalendarProposeNewTimeForMeetingRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarProposeNewTimeForMeetingRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -435,7 +435,7 @@ extern(Windows):
 
 interface AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequest _ret;
@@ -452,7 +452,7 @@ extern(Windows):
 
 interface AppointmentCalendarSyncManagerSyncRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarSyncManagerSyncRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -475,7 +475,7 @@ extern(Windows):
 
 interface AppointmentCalendarSyncManagerSyncRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarSyncManagerSyncRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequest _ret;
@@ -492,7 +492,7 @@ extern(Windows):
 
 interface AppointmentCalendarUpdateMeetingResponseRequest : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarUpdateMeetingResponseRequest
 {
-extern(Windows):
+extern(D):
 	final wstring AppointmentCalendarLocalId()
 	{
 		HSTRING _ret;
@@ -551,7 +551,7 @@ extern(Windows):
 
 interface AppointmentCalendarUpdateMeetingResponseRequestEventArgs : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentCalendarUpdateMeetingResponseRequestEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequest Request()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequest _ret;
@@ -568,7 +568,7 @@ extern(Windows):
 
 interface AppointmentDataProviderConnection : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentDataProviderConnection
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnSyncRequested(void delegate(Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderConnection, Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequestEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -637,7 +637,7 @@ extern(Windows):
 
 interface AppointmentDataProviderTriggerDetails : Windows.ApplicationModel.Appointments.DataProvider.IAppointmentDataProviderTriggerDetails
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderConnection Connection()
 	{
 		Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderConnection _ret;

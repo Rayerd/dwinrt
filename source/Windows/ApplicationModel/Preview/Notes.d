@@ -71,7 +71,7 @@ extern(Windows):
 
 interface NotePlacementChangedPreviewEventArgs : Windows.ApplicationModel.Preview.Notes.INotePlacementChangedPreviewEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 ViewId()
 	{
 		INT32 _ret;
@@ -82,7 +82,7 @@ extern(Windows):
 
 interface NoteVisibilityChangedPreviewEventArgs : Windows.ApplicationModel.Preview.Notes.INoteVisibilityChangedPreviewEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 ViewId()
 	{
 		INT32 _ret;
@@ -99,7 +99,7 @@ extern(Windows):
 
 interface NotesWindowManagerPreview : Windows.ApplicationModel.Preview.Notes.INotesWindowManagerPreview, Windows.ApplicationModel.Preview.Notes.INotesWindowManagerPreview2
 {
-extern(Windows):
+extern(D):
 	final bool IsScreenLocked()
 	{
 		bool _ret;
@@ -211,7 +211,7 @@ extern(Windows):
 
 interface NotesWindowManagerPreviewShowNoteOptions : Windows.ApplicationModel.Preview.Notes.INotesWindowManagerPreviewShowNoteOptions
 {
-extern(Windows):
+extern(D):
 	final bool ShowWithFocus()
 	{
 		bool _ret;

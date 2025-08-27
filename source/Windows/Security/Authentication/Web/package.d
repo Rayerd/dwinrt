@@ -66,7 +66,7 @@ interface WebAuthenticationBroker
 
 interface WebAuthenticationResult : Windows.Security.Authentication.Web.IWebAuthenticationResult
 {
-extern(Windows):
+extern(D):
 	final wstring ResponseData()
 	{
 		HSTRING _ret;

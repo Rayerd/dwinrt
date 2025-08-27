@@ -120,7 +120,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorAuthentication : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorAuthentication
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.Streams.IBuffer ServiceAuthenticationHmac()
 	{
 		Windows.Storage.Streams.IBuffer _ret;
@@ -196,7 +196,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorAuthenticationResult : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorAuthenticationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStatus Status()
 	{
 		Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStatus _ret;
@@ -213,7 +213,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStageInfo StageInfo()
 	{
 		Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStageInfo _ret;
@@ -224,7 +224,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorAuthenticationStageInfo : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorAuthenticationStageInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStage Stage()
 	{
 		Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStage _ret;
@@ -247,7 +247,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorInfo : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorInfo, Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorInfo2
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -294,7 +294,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorRegistration : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorRegistration
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction FinishRegisteringDeviceAsync(Windows.Storage.Streams.IBuffer deviceConfigurationData)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -343,7 +343,7 @@ extern(Windows):
 
 interface SecondaryAuthenticationFactorRegistrationResult : Windows.Security.Authentication.Identity.Provider.ISecondaryAuthenticationFactorRegistrationResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorRegistrationStatus Status()
 	{
 		Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorRegistrationStatus _ret;

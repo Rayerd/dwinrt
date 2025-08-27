@@ -104,7 +104,7 @@ extern(Windows):
 
 interface HttpBaseProtocolFilter : Windows.Web.Http.Filters.IHttpBaseProtocolFilter, Windows.Web.Http.Filters.IHttpFilter, Windows.Foundation.IClosable, Windows.Web.Http.Filters.IHttpBaseProtocolFilter2, Windows.Web.Http.Filters.IHttpBaseProtocolFilter3, Windows.Web.Http.Filters.IHttpBaseProtocolFilter4
 {
-extern(Windows):
+extern(D):
 	final bool AllowAutoRedirect()
 	{
 		bool _ret;
@@ -257,7 +257,7 @@ extern(Windows):
 
 interface HttpCacheControl : Windows.Web.Http.Filters.IHttpCacheControl
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.Filters.HttpCacheReadBehavior ReadBehavior()
 	{
 		Windows.Web.Http.Filters.HttpCacheReadBehavior _ret;
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface HttpServerCustomValidationRequestedEventArgs : Windows.Web.Http.Filters.IHttpServerCustomValidationRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Web.Http.HttpRequestMessage RequestMessage()
 	{
 		Windows.Web.Http.HttpRequestMessage _ret;

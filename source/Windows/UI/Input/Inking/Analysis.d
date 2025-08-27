@@ -142,7 +142,7 @@ extern(Windows):
 
 interface InkAnalysisInkBullet : Windows.UI.Input.Inking.Analysis.IInkAnalysisInkBullet, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -195,7 +195,7 @@ extern(Windows):
 
 interface InkAnalysisInkDrawing : Windows.UI.Input.Inking.Analysis.IInkAnalysisInkDrawing, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.Analysis.InkAnalysisDrawingKind DrawingKind()
 	{
 		Windows.UI.Input.Inking.Analysis.InkAnalysisDrawingKind _ret;
@@ -260,7 +260,7 @@ extern(Windows):
 
 interface InkAnalysisInkWord : Windows.UI.Input.Inking.Analysis.IInkAnalysisInkWord, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -319,7 +319,7 @@ extern(Windows):
 
 interface InkAnalysisLine : Windows.UI.Input.Inking.Analysis.IInkAnalysisLine, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -378,7 +378,7 @@ extern(Windows):
 
 interface InkAnalysisListItem : Windows.UI.Input.Inking.Analysis.IInkAnalysisListItem, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -431,7 +431,7 @@ extern(Windows):
 
 interface InkAnalysisNode : Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final UINT32 Id()
 	{
 		UINT32 _ret;
@@ -478,7 +478,7 @@ extern(Windows):
 
 interface InkAnalysisParagraph : Windows.UI.Input.Inking.Analysis.IInkAnalysisParagraph, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -531,7 +531,7 @@ extern(Windows):
 
 interface InkAnalysisResult : Windows.UI.Input.Inking.Analysis.IInkAnalysisResult
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.Analysis.InkAnalysisStatus Status()
 	{
 		Windows.UI.Input.Inking.Analysis.InkAnalysisStatus _ret;
@@ -542,7 +542,7 @@ extern(Windows):
 
 interface InkAnalysisRoot : Windows.UI.Input.Inking.Analysis.IInkAnalysisRoot, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -601,7 +601,7 @@ extern(Windows):
 
 interface InkAnalysisWritingRegion : Windows.UI.Input.Inking.Analysis.IInkAnalysisWritingRegion, Windows.UI.Input.Inking.Analysis.IInkAnalysisNode
 {
-extern(Windows):
+extern(D):
 	final wstring RecognizedText()
 	{
 		HSTRING _ret;
@@ -654,7 +654,7 @@ extern(Windows):
 
 interface InkAnalyzer : Windows.UI.Input.Inking.Analysis.IInkAnalyzer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.Analysis.InkAnalysisRoot AnalysisRoot()
 	{
 		Windows.UI.Input.Inking.Analysis.InkAnalysisRoot _ret;

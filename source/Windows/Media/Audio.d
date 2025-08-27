@@ -563,7 +563,7 @@ extern(Windows):
 
 interface AudioDeviceInputNode : Windows.Media.Audio.IAudioDeviceInputNode, Windows.Media.Audio.IAudioInputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioInputNode2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation Device()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -655,7 +655,7 @@ extern(Windows):
 
 interface AudioDeviceOutputNode : Windows.Media.Audio.IAudioDeviceOutputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioNodeWithListener
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Enumeration.DeviceInformation Device()
 	{
 		Windows.Devices.Enumeration.DeviceInformation _ret;
@@ -732,7 +732,7 @@ extern(Windows):
 
 interface AudioFileInputNode : Windows.Media.Audio.IAudioFileInputNode, Windows.Media.Audio.IAudioInputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioInputNode2
 {
-extern(Windows):
+extern(D):
 	final void PlaybackSpeedFactor(double value)
 	{
 		Debug.OK((cast(Windows.Media.Audio.IAudioFileInputNode)this.asInterface(uuid("905b67c8-6f65-4cd4-8890-4694843c276d"))).set_PlaybackSpeedFactor(value));
@@ -890,7 +890,7 @@ extern(Windows):
 
 interface AudioFileOutputNode : Windows.Media.Audio.IAudioFileOutputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Storage.IStorageFile File()
 	{
 		Windows.Storage.IStorageFile _ret;
@@ -969,7 +969,7 @@ extern(Windows):
 
 interface AudioFrameCompletedEventArgs : Windows.Media.Audio.IAudioFrameCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.AudioFrame Frame()
 	{
 		Windows.Media.AudioFrame _ret;
@@ -980,7 +980,7 @@ extern(Windows):
 
 interface AudioFrameInputNode : Windows.Media.Audio.IAudioFrameInputNode, Windows.Media.Audio.IAudioInputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioInputNode2
 {
-extern(Windows):
+extern(D):
 	final void PlaybackSpeedFactor(double value)
 	{
 		Debug.OK((cast(Windows.Media.Audio.IAudioFrameInputNode)this.asInterface(uuid("01b266c7-fd96-4ff5-a3c5-d27a9bf44237"))).set_PlaybackSpeedFactor(value));
@@ -1110,7 +1110,7 @@ extern(Windows):
 
 interface AudioFrameOutputNode : Windows.Media.Audio.IAudioFrameOutputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.AudioFrame GetFrame()
 	{
 		Windows.Media.AudioFrame _ret;
@@ -1177,7 +1177,7 @@ extern(Windows):
 
 interface AudioGraph : Windows.Media.Audio.IAudioGraph, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioGraph2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioFrameInputNode CreateFrameInputNode()
 	{
 		Windows.Media.Audio.AudioFrameInputNode _ret;
@@ -1395,7 +1395,7 @@ extern(Windows):
 
 interface AudioGraphBatchUpdater : Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final void Close()
 	{
 		Debug.OK((cast(Windows.Foundation.IClosable)this.asInterface(uuid("30d5a829-7fa4-4026-83bb-d75bae4ea99e"))).abi_Close());
@@ -1404,7 +1404,7 @@ extern(Windows):
 
 interface AudioGraphConnection : Windows.Media.Audio.IAudioGraphConnection
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.IAudioNode Destination()
 	{
 		Windows.Media.Audio.IAudioNode _ret;
@@ -1425,7 +1425,7 @@ extern(Windows):
 
 interface AudioGraphSettings : Windows.Media.Audio.IAudioGraphSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.AudioEncodingProperties EncodingProperties()
 	{
 		Windows.Media.MediaProperties.AudioEncodingProperties _ret;
@@ -1497,7 +1497,7 @@ extern(Windows):
 
 interface AudioGraphUnrecoverableErrorOccurredEventArgs : Windows.Media.Audio.IAudioGraphUnrecoverableErrorOccurredEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioGraphUnrecoverableError Error()
 	{
 		Windows.Media.Audio.AudioGraphUnrecoverableError _ret;
@@ -1508,7 +1508,7 @@ extern(Windows):
 
 interface AudioNodeEmitter : Windows.Media.Audio.IAudioNodeEmitter, Windows.Media.Audio.IAudioNodeEmitter2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -1614,7 +1614,7 @@ extern(Windows):
 
 interface AudioNodeEmitterConeProperties : Windows.Media.Audio.IAudioNodeEmitterConeProperties
 {
-extern(Windows):
+extern(D):
 	final double InnerAngle()
 	{
 		double _ret;
@@ -1637,7 +1637,7 @@ extern(Windows):
 
 interface AudioNodeEmitterDecayModel : Windows.Media.Audio.IAudioNodeEmitterDecayModel
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioNodeEmitterDecayKind Kind()
 	{
 		Windows.Media.Audio.AudioNodeEmitterDecayKind _ret;
@@ -1685,7 +1685,7 @@ extern(Windows):
 
 interface AudioNodeEmitterNaturalDecayModelProperties : Windows.Media.Audio.IAudioNodeEmitterNaturalDecayModelProperties
 {
-extern(Windows):
+extern(D):
 	final double UnityGainDistance()
 	{
 		double _ret;
@@ -1702,7 +1702,7 @@ extern(Windows):
 
 interface AudioNodeEmitterShape : Windows.Media.Audio.IAudioNodeEmitterShape
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioNodeEmitterShapeKind Kind()
 	{
 		Windows.Media.Audio.AudioNodeEmitterShapeKind _ret;
@@ -1738,7 +1738,7 @@ extern(Windows):
 
 interface AudioNodeListener : Windows.Media.Audio.IAudioNodeListener
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Numerics.Vector3 Position()
 	{
 		Windows.Foundation.Numerics.Vector3 _ret;
@@ -1789,7 +1789,7 @@ extern(Windows):
 
 interface AudioSubmixNode : Windows.Media.Audio.IAudioInputNode, Windows.Media.Audio.IAudioNode, Windows.Foundation.IClosable, Windows.Media.Audio.IAudioInputNode2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Audio.AudioGraphConnection) OutgoingConnections()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Audio.AudioGraphConnection) _ret;
@@ -1875,7 +1875,7 @@ extern(Windows):
 
 interface CreateAudioDeviceInputNodeResult : Windows.Media.Audio.ICreateAudioDeviceInputNodeResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioDeviceNodeCreationStatus Status()
 	{
 		Windows.Media.Audio.AudioDeviceNodeCreationStatus _ret;
@@ -1892,7 +1892,7 @@ extern(Windows):
 
 interface CreateAudioDeviceOutputNodeResult : Windows.Media.Audio.ICreateAudioDeviceOutputNodeResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioDeviceNodeCreationStatus Status()
 	{
 		Windows.Media.Audio.AudioDeviceNodeCreationStatus _ret;
@@ -1909,7 +1909,7 @@ extern(Windows):
 
 interface CreateAudioFileInputNodeResult : Windows.Media.Audio.ICreateAudioFileInputNodeResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioFileNodeCreationStatus Status()
 	{
 		Windows.Media.Audio.AudioFileNodeCreationStatus _ret;
@@ -1926,7 +1926,7 @@ extern(Windows):
 
 interface CreateAudioFileOutputNodeResult : Windows.Media.Audio.ICreateAudioFileOutputNodeResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioFileNodeCreationStatus Status()
 	{
 		Windows.Media.Audio.AudioFileNodeCreationStatus _ret;
@@ -1943,7 +1943,7 @@ extern(Windows):
 
 interface CreateAudioGraphResult : Windows.Media.Audio.ICreateAudioGraphResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Audio.AudioGraphCreationStatus Status()
 	{
 		Windows.Media.Audio.AudioGraphCreationStatus _ret;
@@ -1960,7 +1960,7 @@ extern(Windows):
 
 interface EchoEffectDefinition : Windows.Media.Audio.IEchoEffectDefinition, Windows.Media.Effects.IAudioEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final void WetDryMix(double value)
 	{
 		Debug.OK((cast(Windows.Media.Audio.IEchoEffectDefinition)this.asInterface(uuid("0e4d3faa-36b8-4c91-b9da-11f44a8a6610"))).set_WetDryMix(value));
@@ -2014,7 +2014,7 @@ extern(Windows):
 
 interface EqualizerBand : Windows.Media.Audio.IEqualizerBand
 {
-extern(Windows):
+extern(D):
 	final double Bandwidth()
 	{
 		double _ret;
@@ -2049,7 +2049,7 @@ extern(Windows):
 
 interface EqualizerEffectDefinition : Windows.Media.Audio.IEqualizerEffectDefinition, Windows.Media.Effects.IAudioEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.Audio.EqualizerBand) Bands()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.Audio.EqualizerBand) _ret;
@@ -2079,7 +2079,7 @@ extern(Windows):
 
 interface FrameInputNodeQuantumStartedEventArgs : Windows.Media.Audio.IFrameInputNodeQuantumStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final INT32 RequiredSamples()
 	{
 		INT32 _ret;
@@ -2090,7 +2090,7 @@ extern(Windows):
 
 interface LimiterEffectDefinition : Windows.Media.Audio.ILimiterEffectDefinition, Windows.Media.Effects.IAudioEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final void Release(UINT32 value)
 	{
 		Debug.OK((cast(Windows.Media.Audio.ILimiterEffectDefinition)this.asInterface(uuid("6b755d19-2603-47ba-bdeb-39055e3486dc"))).set_Release(value));
@@ -2134,7 +2134,7 @@ extern(Windows):
 
 interface ReverbEffectDefinition : Windows.Media.Audio.IReverbEffectDefinition, Windows.Media.Effects.IAudioEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final void WetDryMix(double value)
 	{
 		Debug.OK((cast(Windows.Media.Audio.IReverbEffectDefinition)this.asInterface(uuid("4606aa89-f563-4d0a-8f6e-f0cddff35d84"))).set_WetDryMix(value));

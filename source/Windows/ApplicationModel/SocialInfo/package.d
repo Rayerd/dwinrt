@@ -166,7 +166,7 @@ extern(Windows):
 
 interface SocialFeedChildItem : Windows.ApplicationModel.SocialInfo.ISocialFeedChildItem
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialFeedChildItem is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.ApplicationModel.SocialInfo.SocialUserInfo Author()
 	{
@@ -241,7 +241,7 @@ extern(Windows):
 
 interface SocialFeedContent : Windows.ApplicationModel.SocialInfo.ISocialFeedContent
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialFeedContent is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final wstring Title()
 	{
@@ -282,7 +282,7 @@ extern(Windows):
 
 interface SocialFeedItem : Windows.ApplicationModel.SocialInfo.ISocialFeedItem
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialFeedItem is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.ApplicationModel.SocialInfo.SocialUserInfo Author()
 	{
@@ -417,7 +417,7 @@ extern(Windows):
 
 interface SocialFeedSharedItem : Windows.ApplicationModel.SocialInfo.ISocialFeedSharedItem
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialFeedSharedItem is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Foundation.Uri OriginalSource()
 	{
@@ -483,7 +483,7 @@ extern(Windows):
 
 interface SocialItemThumbnail : Windows.ApplicationModel.SocialInfo.ISocialItemThumbnail
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialItemThumbnail is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Foundation.Uri TargetUri()
 	{
@@ -537,7 +537,7 @@ extern(Windows):
 
 interface SocialUserInfo : Windows.ApplicationModel.SocialInfo.ISocialUserInfo
 {
-extern(Windows):
+extern(D):
 	deprecated("ISocialUserInfo is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final wstring DisplayName()
 	{

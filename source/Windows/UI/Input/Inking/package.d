@@ -451,7 +451,7 @@ extern(Windows):
 
 interface InkDrawingAttributes : Windows.UI.Input.Inking.IInkDrawingAttributes, Windows.UI.Input.Inking.IInkDrawingAttributes2, Windows.UI.Input.Inking.IInkDrawingAttributes3, Windows.UI.Input.Inking.IInkDrawingAttributes4
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Color Color()
 	{
 		Windows.UI.Color _ret;
@@ -567,7 +567,7 @@ extern(Windows):
 
 interface InkDrawingAttributesPencilProperties : Windows.UI.Input.Inking.IInkDrawingAttributesPencilProperties
 {
-extern(Windows):
+extern(D):
 	final double Opacity()
 	{
 		double _ret;
@@ -582,7 +582,7 @@ extern(Windows):
 
 interface InkInputProcessingConfiguration : Windows.UI.Input.Inking.IInkInputProcessingConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkInputProcessingMode Mode()
 	{
 		Windows.UI.Input.Inking.InkInputProcessingMode _ret;
@@ -607,7 +607,7 @@ extern(Windows):
 
 interface InkManager : Windows.UI.Input.Inking.IInkManager, Windows.UI.Input.Inking.IInkRecognizerContainer, Windows.UI.Input.Inking.IInkStrokeContainer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkManipulationMode Mode()
 	{
 		Windows.UI.Input.Inking.InkManipulationMode _ret;
@@ -749,7 +749,7 @@ extern(Windows):
 
 interface InkPoint : Windows.UI.Input.Inking.IInkPoint, Windows.UI.Input.Inking.IInkPoint2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -791,7 +791,7 @@ extern(Windows):
 
 interface InkPresenter : Windows.UI.Input.Inking.IInkPresenter, Windows.UI.Input.Inking.IInkPresenter2
 {
-extern(Windows):
+extern(D):
 	final bool IsInputEnabled()
 	{
 		bool _ret;
@@ -894,7 +894,7 @@ extern(Windows):
 
 interface InkPresenterProtractor : Windows.UI.Input.Inking.IInkPresenterProtractor, Windows.UI.Input.Inking.IInkPresenterStencil
 {
-extern(Windows):
+extern(D):
 	final bool AreTickMarksVisible()
 	{
 		bool _ret;
@@ -1022,7 +1022,7 @@ extern(Windows):
 
 interface InkPresenterRuler : Windows.UI.Input.Inking.IInkPresenterRuler, Windows.UI.Input.Inking.IInkPresenterStencil, Windows.UI.Input.Inking.IInkPresenterRuler2
 {
-extern(Windows):
+extern(D):
 	final double Length()
 	{
 		double _ret;
@@ -1120,7 +1120,7 @@ extern(Windows):
 
 interface InkRecognitionResult : Windows.UI.Input.Inking.IInkRecognitionResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect BoundingRect()
 	{
 		Windows.Foundation.Rect _ret;
@@ -1143,7 +1143,7 @@ extern(Windows):
 
 interface InkRecognizer : Windows.UI.Input.Inking.IInkRecognizer
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -1154,7 +1154,7 @@ extern(Windows):
 
 interface InkRecognizerContainer : Windows.UI.Input.Inking.IInkRecognizerContainer
 {
-extern(Windows):
+extern(D):
 	final void SetDefaultRecognizer(Windows.UI.Input.Inking.InkRecognizer recognizer)
 	{
 		Debug.OK((cast(Windows.UI.Input.Inking.IInkRecognizerContainer)this.asInterface(uuid("a74d9a31-8047-4698-a912-f82a5085012f"))).abi_SetDefaultRecognizer(recognizer));
@@ -1181,7 +1181,7 @@ extern(Windows):
 
 interface InkStroke : Windows.UI.Input.Inking.IInkStroke, Windows.UI.Input.Inking.IInkStroke2, Windows.UI.Input.Inking.IInkStroke3
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.Inking.InkDrawingAttributes DrawingAttributes()
 	{
 		Windows.UI.Input.Inking.InkDrawingAttributes _ret;
@@ -1272,7 +1272,7 @@ extern(Windows):
 
 interface InkStrokeBuilder : Windows.UI.Input.Inking.IInkStrokeBuilder, Windows.UI.Input.Inking.IInkStrokeBuilder2, Windows.UI.Input.Inking.IInkStrokeBuilder3
 {
-extern(Windows):
+extern(D):
 	final void BeginStroke(Windows.UI.Input.PointerPoint pointerPoint)
 	{
 		Debug.OK((cast(Windows.UI.Input.Inking.IInkStrokeBuilder)this.asInterface(uuid("82bbd1dc-1c63-41dc-9e07-4b4a70ced801"))).abi_BeginStroke(pointerPoint));
@@ -1321,7 +1321,7 @@ extern(Windows):
 
 interface InkStrokeContainer : Windows.UI.Input.Inking.IInkStrokeContainer, Windows.UI.Input.Inking.IInkStrokeContainer2, Windows.UI.Input.Inking.IInkStrokeContainer3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect BoundingRect()
 	{
 		Windows.Foundation.Rect _ret;
@@ -1431,7 +1431,7 @@ extern(Windows):
 
 interface InkStrokeInput : Windows.UI.Input.Inking.IInkStrokeInput
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnStrokeStarted(void delegate(Windows.UI.Input.Inking.InkStrokeInput, Windows.UI.Core.PointerEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -1482,7 +1482,7 @@ extern(Windows):
 
 interface InkStrokeRenderingSegment : Windows.UI.Input.Inking.IInkStrokeRenderingSegment
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point Position()
 	{
 		Windows.Foundation.Point _ret;
@@ -1529,7 +1529,7 @@ extern(Windows):
 
 interface InkStrokesCollectedEventArgs : Windows.UI.Input.Inking.IInkStrokesCollectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) Strokes()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) _ret;
@@ -1540,7 +1540,7 @@ extern(Windows):
 
 interface InkStrokesErasedEventArgs : Windows.UI.Input.Inking.IInkStrokesErasedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) Strokes()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) _ret;
@@ -1551,7 +1551,7 @@ extern(Windows):
 
 interface InkSynchronizer : Windows.UI.Input.Inking.IInkSynchronizer
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) BeginDry()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.UI.Input.Inking.InkStroke) _ret;
@@ -1566,7 +1566,7 @@ extern(Windows):
 
 interface InkUnprocessedInput : Windows.UI.Input.Inking.IInkUnprocessedInput
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnPointerEntered(void delegate(Windows.UI.Input.Inking.InkUnprocessedInput, Windows.UI.Core.PointerEventArgs) fn)
 	{
 		EventRegistrationToken tok;

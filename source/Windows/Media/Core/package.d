@@ -1122,7 +1122,7 @@ extern(Windows):
 
 interface AudioStreamDescriptor : Windows.Media.Core.IAudioStreamDescriptor, Windows.Media.Core.IMediaStreamDescriptor, Windows.Media.Core.IAudioStreamDescriptor2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.AudioEncodingProperties EncodingProperties()
 	{
 		Windows.Media.MediaProperties.AudioEncodingProperties _ret;
@@ -1186,7 +1186,7 @@ extern(Windows):
 
 interface AudioTrack : Windows.Media.Core.IMediaTrack, Windows.Media.Core.IAudioTrack
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -1253,7 +1253,7 @@ extern(Windows):
 
 interface AudioTrackOpenFailedEventArgs : Windows.Media.Core.IAudioTrackOpenFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT ExtendedError()
 	{
 		HRESULT _ret;
@@ -1264,7 +1264,7 @@ extern(Windows):
 
 interface AudioTrackSupportInfo : Windows.Media.Core.IAudioTrackSupportInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaDecoderStatus DecoderStatus()
 	{
 		Windows.Media.Core.MediaDecoderStatus _ret;
@@ -1293,7 +1293,7 @@ extern(Windows):
 
 interface ChapterCue : Windows.Media.Core.IChapterCue, Windows.Media.Core.IMediaCue
 {
-extern(Windows):
+extern(D):
 	final void Title(wstring value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IChapterCue)this.asInterface(uuid("72a98001-d38a-4c0a-8fa6-75cddaf4664c"))).set_Title(hstring(value).handle));
@@ -1344,7 +1344,7 @@ extern(Windows):
 
 interface CodecInfo : Windows.Media.Core.ICodecInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.CodecKind Kind()
 	{
 		Windows.Media.Core.CodecKind _ret;
@@ -1379,7 +1379,7 @@ extern(Windows):
 
 interface CodecQuery : Windows.Media.Core.ICodecQuery
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.CodecInfo)) FindAllAsync(Windows.Media.Core.CodecKind kind, Windows.Media.Core.CodecCategory category, wstring subType)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.Media.Core.CodecInfo)) _ret;
@@ -1712,7 +1712,7 @@ interface CodecSubtypes
 
 interface DataCue : Windows.Media.Core.IDataCue, Windows.Media.Core.IMediaCue, Windows.Media.Core.IDataCue2
 {
-extern(Windows):
+extern(D):
 	final void Data(Windows.Storage.Streams.IBuffer value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IDataCue)this.asInterface(uuid("7c7f676d-1fbc-4e2d-9a87-ee38bd1dc637"))).set_Data(value));
@@ -1769,7 +1769,7 @@ extern(Windows):
 
 interface FaceDetectedEventArgs : Windows.Media.Core.IFaceDetectedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.FaceDetectionEffectFrame ResultFrame()
 	{
 		Windows.Media.Core.FaceDetectionEffectFrame _ret;
@@ -1780,7 +1780,7 @@ extern(Windows):
 
 interface FaceDetectionEffect : Windows.Media.Core.IFaceDetectionEffect, Windows.Media.IMediaExtension
 {
-extern(Windows):
+extern(D):
 	final void Enabled(bool value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IFaceDetectionEffect)this.asInterface(uuid("ae15ebd2-0542-42a9-bc90-f283a29f46c1"))).set_Enabled(value));
@@ -1819,7 +1819,7 @@ extern(Windows):
 
 interface FaceDetectionEffectDefinition : Windows.Media.Effects.IVideoEffectDefinition, Windows.Media.Core.IFaceDetectionEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -1862,7 +1862,7 @@ extern(Windows):
 
 interface FaceDetectionEffectFrame : Windows.Media.Core.IFaceDetectionEffectFrame, Windows.Media.IMediaFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Media.FaceAnalysis.DetectedFace) DetectedFaces()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Media.FaceAnalysis.DetectedFace) _ret;
@@ -1935,7 +1935,7 @@ extern(Windows):
 
 interface HighDynamicRangeControl : Windows.Media.Core.IHighDynamicRangeControl
 {
-extern(Windows):
+extern(D):
 	final void Enabled(bool value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IHighDynamicRangeControl)this.asInterface(uuid("55f1a7ae-d957-4dc9-9d1c-8553a82a7d99"))).set_Enabled(value));
@@ -1950,7 +1950,7 @@ extern(Windows):
 
 interface HighDynamicRangeOutput : Windows.Media.Core.IHighDynamicRangeOutput
 {
-extern(Windows):
+extern(D):
 	final double Certainty()
 	{
 		double _ret;
@@ -1967,7 +1967,7 @@ extern(Windows):
 
 interface ImageCue : Windows.Media.Core.IImageCue, Windows.Media.Core.IMediaCue
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedTextPoint Position()
 	{
 		Windows.Media.Core.TimedTextPoint _ret;
@@ -2038,7 +2038,7 @@ extern(Windows):
 
 interface MediaBinder : Windows.Media.Core.IMediaBinder
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnBinding(void delegate(Windows.Media.Core.MediaBinder, Windows.Media.Core.MediaBindingEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2075,7 +2075,7 @@ extern(Windows):
 
 interface MediaBindingEventArgs : Windows.Media.Core.IMediaBindingEventArgs, Windows.Media.Core.IMediaBindingEventArgs2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnCanceled(void delegate(Windows.Media.Core.MediaBindingEventArgs, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -2122,7 +2122,7 @@ extern(Windows):
 
 interface MediaCueEventArgs : Windows.Media.Core.IMediaCueEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.IMediaCue Cue()
 	{
 		Windows.Media.Core.IMediaCue _ret;
@@ -2133,7 +2133,7 @@ extern(Windows):
 
 interface MediaSource : Windows.Media.Core.IMediaSource2, Windows.Foundation.IClosable, Windows.Media.Playback.IMediaPlaybackSource, Windows.Media.Core.IMediaSource3, Windows.Media.Core.IMediaSource4
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnOpenOperationCompleted(void delegate(Windows.Media.Core.MediaSource, Windows.Media.Core.MediaSourceOpenOperationCompletedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2287,7 +2287,7 @@ extern(Windows):
 
 interface MediaSourceError : Windows.Media.Core.IMediaSourceError
 {
-extern(Windows):
+extern(D):
 	final HRESULT ExtendedError()
 	{
 		HRESULT _ret;
@@ -2298,7 +2298,7 @@ extern(Windows):
 
 interface MediaSourceOpenOperationCompletedEventArgs : Windows.Media.Core.IMediaSourceOpenOperationCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaSourceError Error()
 	{
 		Windows.Media.Core.MediaSourceError _ret;
@@ -2309,7 +2309,7 @@ extern(Windows):
 
 interface MediaSourceStateChangedEventArgs : Windows.Media.Core.IMediaSourceStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaSourceState OldState()
 	{
 		Windows.Media.Core.MediaSourceState _ret;
@@ -2326,7 +2326,7 @@ extern(Windows):
 
 interface MediaStreamSample : Windows.Media.Core.IMediaStreamSample
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnProcessed(void delegate(Windows.Media.Core.MediaStreamSample, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -2424,7 +2424,7 @@ extern(Windows):
 
 interface MediaStreamSamplePropertySet : Windows.Foundation.Collections.IMap!(GUID, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(GUID, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final  IInspectable Lookup(GUID key)
 	{
 		 IInspectable _ret;
@@ -2471,7 +2471,7 @@ extern(Windows):
 
 interface MediaStreamSampleProtectionProperties : Windows.Media.Core.IMediaStreamSampleProtectionProperties
 {
-extern(Windows):
+extern(D):
 	final void SetKeyIdentifier(UINT32 __valueSize, ubyte* value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IMediaStreamSampleProtectionProperties)this.asInterface(uuid("4eb88292-ecdf-493e-841d-dd4add7caca2"))).abi_SetKeyIdentifier(__valueSize, value));
@@ -2500,7 +2500,7 @@ extern(Windows):
 
 interface MediaStreamSource : Windows.Media.Core.IMediaStreamSource, Windows.Media.Core.IMediaSource, Windows.Media.Core.IMediaStreamSource2, Windows.Media.Core.IMediaStreamSource3
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnClosed(void delegate(Windows.Media.Core.MediaStreamSource, Windows.Media.Core.MediaStreamSourceClosedEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -2667,7 +2667,7 @@ extern(Windows):
 
 interface MediaStreamSourceClosedEventArgs : Windows.Media.Core.IMediaStreamSourceClosedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaStreamSourceClosedRequest Request()
 	{
 		Windows.Media.Core.MediaStreamSourceClosedRequest _ret;
@@ -2678,7 +2678,7 @@ extern(Windows):
 
 interface MediaStreamSourceClosedRequest : Windows.Media.Core.IMediaStreamSourceClosedRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaStreamSourceClosedReason Reason()
 	{
 		Windows.Media.Core.MediaStreamSourceClosedReason _ret;
@@ -2689,7 +2689,7 @@ extern(Windows):
 
 interface MediaStreamSourceSampleRenderedEventArgs : Windows.Media.Core.IMediaStreamSourceSampleRenderedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.TimeSpan SampleLag()
 	{
 		Windows.Foundation.TimeSpan _ret;
@@ -2700,7 +2700,7 @@ extern(Windows):
 
 interface MediaStreamSourceSampleRequest : Windows.Media.Core.IMediaStreamSourceSampleRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.IMediaStreamDescriptor StreamDescriptor()
 	{
 		Windows.Media.Core.IMediaStreamDescriptor _ret;
@@ -2731,7 +2731,7 @@ extern(Windows):
 
 interface MediaStreamSourceSampleRequestDeferral : Windows.Media.Core.IMediaStreamSourceSampleRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Media.Core.IMediaStreamSourceSampleRequestDeferral)this.asInterface(uuid("7895cc02-f982-43c8-9d16-c62d999319be"))).abi_Complete());
@@ -2740,7 +2740,7 @@ extern(Windows):
 
 interface MediaStreamSourceSampleRequestedEventArgs : Windows.Media.Core.IMediaStreamSourceSampleRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaStreamSourceSampleRequest Request()
 	{
 		Windows.Media.Core.MediaStreamSourceSampleRequest _ret;
@@ -2751,7 +2751,7 @@ extern(Windows):
 
 interface MediaStreamSourceStartingEventArgs : Windows.Media.Core.IMediaStreamSourceStartingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaStreamSourceStartingRequest Request()
 	{
 		Windows.Media.Core.MediaStreamSourceStartingRequest _ret;
@@ -2762,7 +2762,7 @@ extern(Windows):
 
 interface MediaStreamSourceStartingRequest : Windows.Media.Core.IMediaStreamSourceStartingRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) StartPosition()
 	{
 		Windows.Foundation.IReference!(Windows.Foundation.TimeSpan) _ret;
@@ -2783,7 +2783,7 @@ extern(Windows):
 
 interface MediaStreamSourceStartingRequestDeferral : Windows.Media.Core.IMediaStreamSourceStartingRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Media.Core.IMediaStreamSourceStartingRequestDeferral)this.asInterface(uuid("3f1356a5-6340-4dc4-9910-068ed9f598f8"))).abi_Complete());
@@ -2792,7 +2792,7 @@ extern(Windows):
 
 interface MediaStreamSourceSwitchStreamsRequest : Windows.Media.Core.IMediaStreamSourceSwitchStreamsRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.IMediaStreamDescriptor OldStreamDescriptor()
 	{
 		Windows.Media.Core.IMediaStreamDescriptor _ret;
@@ -2815,7 +2815,7 @@ extern(Windows):
 
 interface MediaStreamSourceSwitchStreamsRequestDeferral : Windows.Media.Core.IMediaStreamSourceSwitchStreamsRequestDeferral
 {
-extern(Windows):
+extern(D):
 	final void Complete()
 	{
 		Debug.OK((cast(Windows.Media.Core.IMediaStreamSourceSwitchStreamsRequestDeferral)this.asInterface(uuid("bee3d835-a505-4f9a-b943-2b8cb1b4bbd9"))).abi_Complete());
@@ -2824,7 +2824,7 @@ extern(Windows):
 
 interface MediaStreamSourceSwitchStreamsRequestedEventArgs : Windows.Media.Core.IMediaStreamSourceSwitchStreamsRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest Request()
 	{
 		Windows.Media.Core.MediaStreamSourceSwitchStreamsRequest _ret;
@@ -2835,7 +2835,7 @@ extern(Windows):
 
 interface MseSourceBuffer : Windows.Media.Core.IMseSourceBuffer
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnUpdateStarting(void delegate(Windows.Media.Core.MseSourceBuffer, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -2963,7 +2963,7 @@ extern(Windows):
 
 interface MseSourceBufferList : Windows.Media.Core.IMseSourceBufferList
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnSourceBufferAdded(void delegate(Windows.Media.Core.MseSourceBufferList, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -2994,7 +2994,7 @@ extern(Windows):
 
 interface MseStreamSource : Windows.Media.Core.IMseStreamSource, Windows.Media.Core.IMediaSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnOpened(void delegate(Windows.Media.Core.MseStreamSource, IInspectable) fn)
 	{
 		EventRegistrationToken tok;
@@ -3090,7 +3090,7 @@ extern(Windows):
 
 interface SceneAnalysisEffect : Windows.Media.Core.ISceneAnalysisEffect, Windows.Media.IMediaExtension
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.HighDynamicRangeControl HighDynamicRangeAnalyzer()
 	{
 		Windows.Media.Core.HighDynamicRangeControl _ret;
@@ -3125,7 +3125,7 @@ extern(Windows):
 
 interface SceneAnalysisEffectDefinition : Windows.Media.Effects.IVideoEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -3148,7 +3148,7 @@ extern(Windows):
 
 interface SceneAnalysisEffectFrame : Windows.Media.Core.ISceneAnalysisEffectFrame, Windows.Media.IMediaFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Capture.CapturedFrameControlValues FrameControlValues()
 	{
 		Windows.Media.Capture.CapturedFrameControlValues _ret;
@@ -3227,7 +3227,7 @@ extern(Windows):
 
 interface SceneAnalyzedEventArgs : Windows.Media.Core.ISceneAnalyzedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.SceneAnalysisEffectFrame ResultFrame()
 	{
 		Windows.Media.Core.SceneAnalysisEffectFrame _ret;
@@ -3238,7 +3238,7 @@ extern(Windows):
 
 interface SpeechCue : Windows.Media.Core.ISpeechCue, Windows.Media.Core.IMediaCue
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -3309,7 +3309,7 @@ extern(Windows):
 
 interface TimedMetadataTrack : Windows.Media.Core.ITimedMetadataTrack, Windows.Media.Core.IMediaTrack, Windows.Media.Core.ITimedMetadataTrack2
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnCueEntered(void delegate(Windows.Media.Core.TimedMetadataTrack, Windows.Media.Core.MediaCueEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -3423,7 +3423,7 @@ extern(Windows):
 
 interface TimedMetadataTrackError : Windows.Media.Core.ITimedMetadataTrackError
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedMetadataTrackErrorCode ErrorCode()
 	{
 		Windows.Media.Core.TimedMetadataTrackErrorCode _ret;
@@ -3440,7 +3440,7 @@ extern(Windows):
 
 interface TimedMetadataTrackFailedEventArgs : Windows.Media.Core.ITimedMetadataTrackFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedMetadataTrackError Error()
 	{
 		Windows.Media.Core.TimedMetadataTrackError _ret;
@@ -3451,7 +3451,7 @@ extern(Windows):
 
 interface TimedTextCue : Windows.Media.Core.ITimedTextCue, Windows.Media.Core.IMediaCue
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedTextRegion CueRegion()
 	{
 		Windows.Media.Core.TimedTextRegion _ret;
@@ -3518,7 +3518,7 @@ extern(Windows):
 
 interface TimedTextLine : Windows.Media.Core.ITimedTextLine
 {
-extern(Windows):
+extern(D):
 	final wstring Text()
 	{
 		HSTRING _ret;
@@ -3545,7 +3545,7 @@ extern(Windows):
 
 interface TimedTextRegion : Windows.Media.Core.ITimedTextRegion
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -3676,7 +3676,7 @@ extern(Windows):
 
 interface TimedTextSource : Windows.Media.Core.ITimedTextSource
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnResolved(void delegate(Windows.Media.Core.TimedTextSource, Windows.Media.Core.TimedTextSourceResolveResultEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -3724,7 +3724,7 @@ extern(Windows):
 
 interface TimedTextSourceResolveResultEventArgs : Windows.Media.Core.ITimedTextSourceResolveResultEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.TimedMetadataTrackError Error()
 	{
 		Windows.Media.Core.TimedMetadataTrackError _ret;
@@ -3741,7 +3741,7 @@ extern(Windows):
 
 interface TimedTextStyle : Windows.Media.Core.ITimedTextStyle, Windows.Media.Core.ITimedTextStyle2
 {
-extern(Windows):
+extern(D):
 	final wstring Name()
 	{
 		HSTRING _ret;
@@ -3912,7 +3912,7 @@ extern(Windows):
 
 interface TimedTextSubformat : Windows.Media.Core.ITimedTextSubformat
 {
-extern(Windows):
+extern(D):
 	final INT32 StartIndex()
 	{
 		INT32 _ret;
@@ -3953,7 +3953,7 @@ extern(Windows):
 
 interface VideoStabilizationEffect : Windows.Media.Core.IVideoStabilizationEffect, Windows.Media.IMediaExtension
 {
-extern(Windows):
+extern(D):
 	final void Enabled(bool value)
 	{
 		Debug.OK((cast(Windows.Media.Core.IVideoStabilizationEffect)this.asInterface(uuid("0808a650-9698-4e57-877b-bd7cb2ee0f8a"))).set_Enabled(value));
@@ -3988,7 +3988,7 @@ extern(Windows):
 
 interface VideoStabilizationEffectDefinition : Windows.Media.Effects.IVideoEffectDefinition
 {
-extern(Windows):
+extern(D):
 	final wstring ActivatableClassId()
 	{
 		HSTRING _ret;
@@ -4011,7 +4011,7 @@ extern(Windows):
 
 interface VideoStabilizationEffectEnabledChangedEventArgs : Windows.Media.Core.IVideoStabilizationEffectEnabledChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason Reason()
 	{
 		Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason _ret;
@@ -4022,7 +4022,7 @@ extern(Windows):
 
 interface VideoStreamDescriptor : Windows.Media.Core.IVideoStreamDescriptor, Windows.Media.Core.IMediaStreamDescriptor
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.MediaProperties.VideoEncodingProperties EncodingProperties()
 	{
 		Windows.Media.MediaProperties.VideoEncodingProperties _ret;
@@ -4066,7 +4066,7 @@ extern(Windows):
 
 interface VideoTrack : Windows.Media.Core.IMediaTrack, Windows.Media.Core.IVideoTrack
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -4133,7 +4133,7 @@ extern(Windows):
 
 interface VideoTrackOpenFailedEventArgs : Windows.Media.Core.IVideoTrackOpenFailedEventArgs
 {
-extern(Windows):
+extern(D):
 	final HRESULT ExtendedError()
 	{
 		HRESULT _ret;
@@ -4144,7 +4144,7 @@ extern(Windows):
 
 interface VideoTrackSupportInfo : Windows.Media.Core.IVideoTrackSupportInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Core.MediaDecoderStatus DecoderStatus()
 	{
 		Windows.Media.Core.MediaDecoderStatus _ret;

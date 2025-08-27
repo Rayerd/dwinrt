@@ -62,7 +62,7 @@ extern(Windows):
 
 interface DateTimeFormatter : Windows.Globalization.DateTimeFormatting.IDateTimeFormatter, Windows.Globalization.DateTimeFormatting.IDateTimeFormatter2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) Languages()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;

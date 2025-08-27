@@ -59,7 +59,7 @@ extern(Windows):
 
 interface PhoneNumberFormatter : Windows.Globalization.PhoneNumberFormatting.IPhoneNumberFormatter
 {
-extern(Windows):
+extern(D):
 	final wstring Format(Windows.Globalization.PhoneNumberFormatting.PhoneNumberInfo number)
 	{
 		HSTRING _ret;
@@ -130,7 +130,7 @@ extern(Windows):
 
 interface PhoneNumberInfo : Windows.Globalization.PhoneNumberFormatting.IPhoneNumberInfo, Windows.Foundation.IStringable
 {
-extern(Windows):
+extern(D):
 	final INT32 CountryCode()
 	{
 		INT32 _ret;

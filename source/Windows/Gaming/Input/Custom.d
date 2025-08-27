@@ -166,7 +166,7 @@ interface GameControllerFactoryManager
 
 interface GipFirmwareUpdateResult : Windows.Gaming.Input.Custom.IGipFirmwareUpdateResult
 {
-extern(Windows):
+extern(D):
 	final UINT32 ExtendedErrorCode()
 	{
 		UINT32 _ret;
@@ -189,7 +189,7 @@ extern(Windows):
 
 interface GipGameControllerProvider : Windows.Gaming.Input.Custom.IGipGameControllerProvider, Windows.Gaming.Input.Custom.IGameControllerProvider
 {
-extern(Windows):
+extern(D):
 	final void SendMessage(Windows.Gaming.Input.Custom.GipMessageClass messageClass, ubyte messageId, UINT32 __messageBufferSize, ubyte* messageBuffer)
 	{
 		Debug.OK((cast(Windows.Gaming.Input.Custom.IGipGameControllerProvider)this.asInterface(uuid("dbcf1e19-1af5-45a8-bf02-a0ee50c823fc"))).abi_SendMessage(messageClass, messageId, __messageBufferSize, messageBuffer));
@@ -238,7 +238,7 @@ extern(Windows):
 
 interface HidGameControllerProvider : Windows.Gaming.Input.Custom.IHidGameControllerProvider, Windows.Gaming.Input.Custom.IGameControllerProvider
 {
-extern(Windows):
+extern(D):
 	final UINT16 UsageId()
 	{
 		UINT16 _ret;
@@ -297,7 +297,7 @@ extern(Windows):
 
 interface XusbGameControllerProvider : Windows.Gaming.Input.Custom.IXusbGameControllerProvider, Windows.Gaming.Input.Custom.IGameControllerProvider
 {
-extern(Windows):
+extern(D):
 	final void SetVibration(double lowFrequencyMotorSpeed, double highFrequencyMotorSpeed)
 	{
 		Debug.OK((cast(Windows.Gaming.Input.Custom.IXusbGameControllerProvider)this.asInterface(uuid("6e2971eb-0efb-48b4-808b-837643b2f216"))).abi_SetVibration(lowFrequencyMotorSpeed, highFrequencyMotorSpeed));

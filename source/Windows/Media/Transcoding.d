@@ -46,7 +46,7 @@ extern(Windows):
 
 interface MediaTranscoder : Windows.Media.Transcoding.IMediaTranscoder, Windows.Media.Transcoding.IMediaTranscoder2
 {
-extern(Windows):
+extern(D):
 	final void TrimStartTime(Windows.Foundation.TimeSpan value)
 	{
 		Debug.OK((cast(Windows.Media.Transcoding.IMediaTranscoder)this.asInterface(uuid("190c99d2-a0aa-4d34-86bc-eed1b12c2f5b"))).set_TrimStartTime(value));
@@ -147,7 +147,7 @@ extern(Windows):
 
 interface PrepareTranscodeResult : Windows.Media.Transcoding.IPrepareTranscodeResult
 {
-extern(Windows):
+extern(D):
 	final bool CanTranscode()
 	{
 		bool _ret;

@@ -178,7 +178,7 @@ extern(Windows):
 
 interface ConnectionRequestedEventArgs : Windows.Networking.Proximity.IConnectionRequestedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Proximity.PeerInformation PeerInformation()
 	{
 		Windows.Networking.Proximity.PeerInformation _ret;
@@ -296,7 +296,7 @@ interface PeerFinder
 
 interface PeerInformation : Windows.Networking.Proximity.IPeerInformation, Windows.Networking.Proximity.IPeerInformation3, Windows.Networking.Proximity.IPeerInformationWithHostAndService
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayName()
 	{
 		HSTRING _ret;
@@ -331,7 +331,7 @@ extern(Windows):
 
 interface PeerWatcher : Windows.Networking.Proximity.IPeerWatcher
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnAdded(void delegate(Windows.Networking.Proximity.PeerWatcher, Windows.Networking.Proximity.PeerInformation) fn)
 	{
 		EventRegistrationToken tok;
@@ -400,7 +400,7 @@ extern(Windows):
 
 interface ProximityDevice : Windows.Networking.Proximity.IProximityDevice
 {
-extern(Windows):
+extern(D):
 	final INT64 SubscribeForMessage(wstring messageType, Windows.Networking.Proximity.MessageReceivedHandler messageReceivedHandler)
 	{
 		INT64 _ret;
@@ -521,7 +521,7 @@ extern(Windows):
 
 interface ProximityMessage : Windows.Networking.Proximity.IProximityMessage
 {
-extern(Windows):
+extern(D):
 	final wstring MessageType()
 	{
 		HSTRING _ret;
@@ -550,7 +550,7 @@ extern(Windows):
 
 interface TriggeredConnectionStateChangedEventArgs : Windows.Networking.Proximity.ITriggeredConnectionStateChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Networking.Proximity.TriggeredConnectState State()
 	{
 		Windows.Networking.Proximity.TriggeredConnectState _ret;

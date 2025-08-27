@@ -406,7 +406,7 @@ extern(Windows):
 
 interface AccessibilitySettings : Windows.UI.ViewManagement.IAccessibilitySettings
 {
-extern(Windows):
+extern(D):
 	final bool HighContrast()
 	{
 		bool _ret;
@@ -439,7 +439,7 @@ extern(Windows):
 
 interface ActivationViewSwitcher : Windows.UI.ViewManagement.IActivationViewSwitcher
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction ShowAsStandaloneAsync(INT32 viewId)
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -463,7 +463,7 @@ extern(Windows):
 
 interface ApplicationView : Windows.UI.ViewManagement.IApplicationView, Windows.UI.ViewManagement.IApplicationView2, Windows.UI.ViewManagement.IApplicationView3, Windows.UI.ViewManagement.IApplicationView4
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ViewManagement.ApplicationViewOrientation Orientation()
 	{
 		Windows.UI.ViewManagement.ApplicationViewOrientation _ret;
@@ -666,7 +666,7 @@ extern(Windows):
 
 interface ApplicationViewConsolidatedEventArgs : Windows.UI.ViewManagement.IApplicationViewConsolidatedEventArgs, Windows.UI.ViewManagement.IApplicationViewConsolidatedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final bool IsUserInitiated()
 	{
 		bool _ret;
@@ -765,7 +765,7 @@ interface ApplicationViewSwitcher
 
 interface ApplicationViewTitleBar : Windows.UI.ViewManagement.IApplicationViewTitleBar
 {
-extern(Windows):
+extern(D):
 	final void ForegroundColor(Windows.Foundation.IReference!(Windows.UI.Color) value)
 	{
 		Debug.OK((cast(Windows.UI.ViewManagement.IApplicationViewTitleBar)this.asInterface(uuid("00924ac0-932b-4a6b-9c4b-dc38c82478ce"))).set_ForegroundColor(value));
@@ -890,7 +890,7 @@ extern(Windows):
 
 interface ApplicationViewTransferContext : Windows.UI.ViewManagement.IApplicationViewTransferContext
 {
-extern(Windows):
+extern(D):
 	final INT32 ViewId()
 	{
 		INT32 _ret;
@@ -924,7 +924,7 @@ extern(Windows):
 
 interface InputPane : Windows.UI.ViewManagement.IInputPane, Windows.UI.ViewManagement.IInputPane2, Windows.UI.ViewManagement.IInputPaneControl
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnShowing(void delegate(Windows.UI.ViewManagement.InputPane, Windows.UI.ViewManagement.InputPaneVisibilityEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -990,7 +990,7 @@ extern(Windows):
 
 interface InputPaneVisibilityEventArgs : Windows.UI.ViewManagement.IInputPaneVisibilityEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect OccludedRect()
 	{
 		Windows.Foundation.Rect _ret;
@@ -1055,7 +1055,7 @@ interface ProjectionManager
 
 interface UISettings : Windows.UI.ViewManagement.IUISettings, Windows.UI.ViewManagement.IUISettings2, Windows.UI.ViewManagement.IUISettings3, Windows.UI.ViewManagement.IUISettings4
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ViewManagement.HandPreference HandPreference()
 	{
 		Windows.UI.ViewManagement.HandPreference _ret;
@@ -1192,7 +1192,7 @@ extern(Windows):
 
 interface UIViewSettings : Windows.UI.ViewManagement.IUIViewSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ViewManagement.UserInteractionMode UserInteractionMode()
 	{
 		Windows.UI.ViewManagement.UserInteractionMode _ret;
@@ -1216,7 +1216,7 @@ extern(Windows):
 
 interface ViewModePreferences : Windows.UI.ViewManagement.IViewModePreferences
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.ViewManagement.ViewSizePreference ViewSizePreference()
 	{
 		Windows.UI.ViewManagement.ViewSizePreference _ret;

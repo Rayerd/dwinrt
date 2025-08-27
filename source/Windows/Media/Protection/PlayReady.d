@@ -638,7 +638,7 @@ interface IPlayReadyStatics4 : IPlayReadyStatics4_Base, Windows.Media.Protection
 
 interface NDClient : Windows.Media.Protection.PlayReady.INDClient
 {
-extern(Windows):
+extern(D):
 	deprecated("INDClient is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final EventRegistrationToken OnRegistrationCompleted(void delegate(Windows.Media.Protection.PlayReady.NDClient, Windows.Media.Protection.PlayReady.INDRegistrationCompletedEventArgs) fn)
 	{
@@ -737,7 +737,7 @@ extern(Windows):
 
 interface NDCustomData : Windows.Media.Protection.PlayReady.INDCustomData
 {
-extern(Windows):
+extern(D):
 	deprecated("INDCustomData is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final ubyte* CustomDataTypeID(UINT32* out___customDataTypeIDBytesSize)
 	{
@@ -764,7 +764,7 @@ extern(Windows):
 
 interface NDDownloadEngineNotifier : Windows.Media.Protection.PlayReady.INDDownloadEngineNotifier
 {
-extern(Windows):
+extern(D):
 	deprecated("INDDownloadEngineNotifier is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final void OnStreamOpened()
 	{
@@ -805,7 +805,7 @@ extern(Windows):
 
 interface NDLicenseFetchDescriptor : Windows.Media.Protection.PlayReady.INDLicenseFetchDescriptor
 {
-extern(Windows):
+extern(D):
 	deprecated("INDLicenseFetchDescriptor is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Media.Protection.PlayReady.NDContentIDType ContentIDType()
 	{
@@ -844,7 +844,7 @@ extern(Windows):
 
 interface NDStorageFileHelper : Windows.Media.Protection.PlayReady.INDStorageFileHelper
 {
-extern(Windows):
+extern(D):
 	deprecated("INDStorageFileHelper is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Foundation.Collections.IVector!(HSTRING) GetFileURLs(Windows.Storage.IStorageFile file)
 	{
@@ -862,7 +862,7 @@ extern(Windows):
 
 interface NDStreamParserNotifier : Windows.Media.Protection.PlayReady.INDStreamParserNotifier
 {
-extern(Windows):
+extern(D):
 	deprecated("INDStreamParserNotifier is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final void OnContentIDReceived(Windows.Media.Protection.PlayReady.INDLicenseFetchDescriptor licenseFetchDescriptor)
 	{
@@ -893,7 +893,7 @@ extern(Windows):
 
 interface NDTCPMessenger : Windows.Media.Protection.PlayReady.INDMessenger
 {
-extern(Windows):
+extern(D):
 	deprecated("INDMessenger is deprecated and might not work on all platforms. For more info, see MSDN.")
 	final Windows.Foundation.IAsyncOperation!(Windows.Media.Protection.PlayReady.INDSendResult) SendRegistrationRequestAsync(UINT32 __sessionIDBytesSize, ubyte* sessionIDBytes, UINT32 __challengeDataBytesSize, ubyte* challengeDataBytes)
 	{
@@ -934,7 +934,7 @@ extern(Windows):
 
 interface PlayReadyContentHeader : Windows.Media.Protection.PlayReady.IPlayReadyContentHeader, Windows.Media.Protection.PlayReady.IPlayReadyContentHeader2
 {
-extern(Windows):
+extern(D):
 	final GUID KeyId()
 	{
 		GUID _ret;
@@ -1048,7 +1048,7 @@ interface PlayReadyContentResolver
 
 interface PlayReadyDomain : Windows.Media.Protection.PlayReady.IPlayReadyDomain
 {
-extern(Windows):
+extern(D):
 	final GUID AccountId()
 	{
 		GUID _ret;
@@ -1083,7 +1083,7 @@ extern(Windows):
 
 interface PlayReadyDomainIterable : Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadyDomain)
 {
-extern(Windows):
+extern(D):
 	final void First(Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadyDomain)* out_first)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadyDomain))this).abi_First(out_first));
@@ -1099,7 +1099,7 @@ extern(Windows):
 
 interface PlayReadyDomainIterator : Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadyDomain)
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.PlayReady.IPlayReadyDomain Current()
 	{
 		Windows.Media.Protection.PlayReady.IPlayReadyDomain _ret;
@@ -1124,7 +1124,7 @@ extern(Windows):
 
 interface PlayReadyDomainJoinServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyDomainJoinServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final GUID DomainAccountId()
 	{
 		GUID _ret;
@@ -1227,7 +1227,7 @@ extern(Windows):
 
 interface PlayReadyDomainLeaveServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyDomainLeaveServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final GUID DomainAccountId()
 	{
 		GUID _ret;
@@ -1320,7 +1320,7 @@ extern(Windows):
 
 interface PlayReadyITADataGenerator : Windows.Media.Protection.PlayReady.IPlayReadyITADataGenerator
 {
-extern(Windows):
+extern(D):
 	final ubyte* GenerateData(GUID guidCPSystemId, UINT32 countOfStreams, Windows.Foundation.Collections.IPropertySet configuration, Windows.Media.Protection.PlayReady.PlayReadyITADataFormat format, UINT32* out___dataBytesSize)
 	{
 		ubyte* _ret;
@@ -1337,7 +1337,7 @@ extern(Windows):
 
 interface PlayReadyIndividualizationServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyIndividualizationServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -1410,7 +1410,7 @@ extern(Windows):
 
 interface PlayReadyLicense : Windows.Media.Protection.PlayReady.IPlayReadyLicense, Windows.Media.Protection.PlayReady.IPlayReadyLicense2
 {
-extern(Windows):
+extern(D):
 	final bool FullyEvaluated()
 	{
 		bool _ret;
@@ -1481,7 +1481,7 @@ extern(Windows):
 
 interface PlayReadyLicenseAcquisitionServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyLicenseAcquisitionServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyLicenseAcquisitionServiceRequest2, Windows.Media.Protection.PlayReady.IPlayReadyLicenseAcquisitionServiceRequest3
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.PlayReady.PlayReadyContentHeader ContentHeader()
 	{
 		Windows.Media.Protection.PlayReady.PlayReadyContentHeader _ret;
@@ -1586,7 +1586,7 @@ extern(Windows):
 
 interface PlayReadyLicenseIterable : Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadyLicense)
 {
-extern(Windows):
+extern(D):
 	final void First(Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadyLicense)* out_first)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadyLicense))this).abi_First(out_first));
@@ -1608,7 +1608,7 @@ extern(Windows):
 
 interface PlayReadyLicenseIterator : Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadyLicense)
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.PlayReady.IPlayReadyLicense Current()
 	{
 		Windows.Media.Protection.PlayReady.IPlayReadyLicense _ret;
@@ -1649,7 +1649,7 @@ interface PlayReadyLicenseManagement
 
 interface PlayReadyLicenseSession : Windows.Media.Protection.PlayReady.IPlayReadyLicenseSession, Windows.Media.Protection.PlayReady.IPlayReadyLicenseSession2
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.PlayReady.IPlayReadyLicenseAcquisitionServiceRequest CreateLAServiceRequest()
 	{
 		Windows.Media.Protection.PlayReady.IPlayReadyLicenseAcquisitionServiceRequest _ret;
@@ -1677,7 +1677,7 @@ extern(Windows):
 
 interface PlayReadyMeteringReportServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyMeteringReportServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final ubyte* MeteringCertificate(UINT32* out___meteringCertBytesSize)
 	{
 		ubyte* _ret;
@@ -1760,7 +1760,7 @@ extern(Windows):
 
 interface PlayReadyRevocationServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadyRevocationServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Uri Uri()
 	{
 		Windows.Foundation.Uri _ret;
@@ -1833,7 +1833,7 @@ extern(Windows):
 
 interface PlayReadySecureStopIterable : Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest)
 {
-extern(Windows):
+extern(D):
 	final void First(Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest)* out_first)
 	{
 		Debug.OK((cast(Windows.Foundation.Collections.IIterable!(Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest))this).abi_First(out_first));
@@ -1849,7 +1849,7 @@ extern(Windows):
 
 interface PlayReadySecureStopIterator : Windows.Foundation.Collections.IIterator!(Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest)
 {
-extern(Windows):
+extern(D):
 	final Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest Current()
 	{
 		Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest _ret;
@@ -1874,7 +1874,7 @@ extern(Windows):
 
 interface PlayReadySecureStopServiceRequest : Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest, Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest, Windows.Media.Protection.IMediaProtectionServiceRequest
 {
-extern(Windows):
+extern(D):
 	final GUID SessionID()
 	{
 		GUID _ret;
@@ -1985,7 +1985,7 @@ extern(Windows):
 
 interface PlayReadySoapMessage : Windows.Media.Protection.PlayReady.IPlayReadySoapMessage
 {
-extern(Windows):
+extern(D):
 	final ubyte* GetMessageBody(UINT32* out___messageBodyBytesSize)
 	{
 		ubyte* _ret;

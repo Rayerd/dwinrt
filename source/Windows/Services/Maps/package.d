@@ -290,7 +290,7 @@ extern(Windows):
 
 interface EnhancedWaypoint : Windows.Services.Maps.IEnhancedWaypoint
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Point()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -314,7 +314,7 @@ extern(Windows):
 
 interface ManeuverWarning : Windows.Services.Maps.IManeuverWarning
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.ManeuverWarningKind Kind()
 	{
 		Windows.Services.Maps.ManeuverWarningKind _ret;
@@ -331,7 +331,7 @@ extern(Windows):
 
 interface MapAddress : Windows.Services.Maps.IMapAddress, Windows.Services.Maps.IMapAddress2
 {
-extern(Windows):
+extern(D):
 	final wstring BuildingName()
 	{
 		HSTRING _ret;
@@ -432,7 +432,7 @@ extern(Windows):
 
 interface MapLocation : Windows.Services.Maps.IMapLocation
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint Point()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;
@@ -490,7 +490,7 @@ interface MapLocationFinder
 
 interface MapLocationFinderResult : Windows.Services.Maps.IMapLocationFinderResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.MapLocation) Locations()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Services.Maps.MapLocation) _ret;
@@ -525,7 +525,7 @@ interface MapManager
 
 interface MapRoute : Windows.Services.Maps.IMapRoute, Windows.Services.Maps.IMapRoute2, Windows.Services.Maps.IMapRoute3
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.GeoboundingBox BoundingBox()
 	{
 		Windows.Devices.Geolocation.GeoboundingBox _ret;
@@ -590,7 +590,7 @@ extern(Windows):
 
 interface MapRouteDrivingOptions : Windows.Services.Maps.IMapRouteDrivingOptions
 {
-extern(Windows):
+extern(D):
 	final UINT32 MaxAlternateRouteCount()
 	{
 		UINT32 _ret;
@@ -717,7 +717,7 @@ interface MapRouteFinder
 
 interface MapRouteFinderResult : Windows.Services.Maps.IMapRouteFinderResult, Windows.Services.Maps.IMapRouteFinderResult2
 {
-extern(Windows):
+extern(D):
 	final Windows.Services.Maps.MapRoute Route()
 	{
 		Windows.Services.Maps.MapRoute _ret;
@@ -740,7 +740,7 @@ extern(Windows):
 
 interface MapRouteLeg : Windows.Services.Maps.IMapRouteLeg, Windows.Services.Maps.IMapRouteLeg2
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.GeoboundingBox BoundingBox()
 	{
 		Windows.Devices.Geolocation.GeoboundingBox _ret;
@@ -787,7 +787,7 @@ extern(Windows):
 
 interface MapRouteManeuver : Windows.Services.Maps.IMapRouteManeuver, Windows.Services.Maps.IMapRouteManeuver2, Windows.Services.Maps.IMapRouteManeuver3
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Geolocation.Geopoint StartingPoint()
 	{
 		Windows.Devices.Geolocation.Geopoint _ret;

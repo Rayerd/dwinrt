@@ -97,7 +97,7 @@ interface GameList
 
 interface GameListEntry : Windows.Gaming.Preview.GamesEnumeration.IGameListEntry
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.AppDisplayInfo DisplayInfo()
 	{
 		Windows.ApplicationModel.AppDisplayInfo _ret;

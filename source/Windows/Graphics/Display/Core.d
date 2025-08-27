@@ -61,7 +61,7 @@ extern(Windows):
 
 interface HdmiDisplayInformation : Windows.Graphics.Display.Core.IHdmiDisplayInformation
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Display.Core.HdmiDisplayMode) GetSupportedDisplayModes()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Graphics.Display.Core.HdmiDisplayMode) _ret;
@@ -127,7 +127,7 @@ extern(Windows):
 
 interface HdmiDisplayMode : Windows.Graphics.Display.Core.IHdmiDisplayMode
 {
-extern(Windows):
+extern(D):
 	final UINT32 ResolutionWidthInRawPixels()
 	{
 		UINT32 _ret;

@@ -107,7 +107,7 @@ extern(Windows):
 
 interface NotifyCollectionChangedEventArgs : Windows.UI.Xaml.Interop.INotifyCollectionChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Xaml.Interop.NotifyCollectionChangedAction Action()
 	{
 		Windows.UI.Xaml.Interop.NotifyCollectionChangedAction _ret;

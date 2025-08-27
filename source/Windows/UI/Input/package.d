@@ -594,7 +594,7 @@ extern(Windows):
 
 interface CrossSlidingEventArgs : Windows.UI.Input.ICrossSlidingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -617,7 +617,7 @@ extern(Windows):
 
 interface DraggingEventArgs : Windows.UI.Input.IDraggingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -640,7 +640,7 @@ extern(Windows):
 
 interface EdgeGesture : Windows.UI.Input.IEdgeGesture
 {
-extern(Windows):
+extern(D):
 	final EventRegistrationToken OnStarting(void delegate(Windows.UI.Input.EdgeGesture, Windows.UI.Input.EdgeGestureEventArgs) fn)
 	{
 		EventRegistrationToken tok;
@@ -688,7 +688,7 @@ extern(Windows):
 
 interface EdgeGestureEventArgs : Windows.UI.Input.IEdgeGestureEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.EdgeGestureKind Kind()
 	{
 		Windows.UI.Input.EdgeGestureKind _ret;
@@ -699,7 +699,7 @@ extern(Windows):
 
 interface GestureRecognizer : Windows.UI.Input.IGestureRecognizer
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.GestureSettings GestureSettings()
 	{
 		Windows.UI.Input.GestureSettings _ret;
@@ -998,7 +998,7 @@ extern(Windows):
 
 interface HoldingEventArgs : Windows.UI.Input.IHoldingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1021,7 +1021,7 @@ extern(Windows):
 
 interface KeyboardDeliveryInterceptor : Windows.UI.Input.IKeyboardDeliveryInterceptor
 {
-extern(Windows):
+extern(D):
 	final bool IsInterceptionEnabledWhenInForeground()
 	{
 		bool _ret;
@@ -1069,7 +1069,7 @@ extern(Windows):
 
 interface ManipulationCompletedEventArgs : Windows.UI.Input.IManipulationCompletedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1098,7 +1098,7 @@ extern(Windows):
 
 interface ManipulationInertiaStartingEventArgs : Windows.UI.Input.IManipulationInertiaStartingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1133,7 +1133,7 @@ extern(Windows):
 
 interface ManipulationStartedEventArgs : Windows.UI.Input.IManipulationStartedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1156,7 +1156,7 @@ extern(Windows):
 
 interface ManipulationUpdatedEventArgs : Windows.UI.Input.IManipulationUpdatedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -1191,7 +1191,7 @@ extern(Windows):
 
 interface MouseWheelParameters : Windows.UI.Input.IMouseWheelParameters
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Point CharTranslation()
 	{
 		Windows.Foundation.Point _ret;
@@ -1236,7 +1236,7 @@ extern(Windows):
 
 interface PointerPoint : Windows.UI.Input.IPointerPoint
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDevice PointerDevice()
 	{
 		Windows.Devices.Input.PointerDevice _ret;
@@ -1322,7 +1322,7 @@ extern(Windows):
 
 interface PointerPointProperties : Windows.UI.Input.IPointerPointProperties, Windows.UI.Input.IPointerPointProperties2
 {
-extern(Windows):
+extern(D):
 	final float Pressure()
 	{
 		float _ret;
@@ -1477,7 +1477,7 @@ extern(Windows):
 
 interface PointerVisualizationSettings : Windows.UI.Input.IPointerVisualizationSettings
 {
-extern(Windows):
+extern(D):
 	final void IsContactFeedbackEnabled(bool value)
 	{
 		Debug.OK((cast(Windows.UI.Input.IPointerVisualizationSettings)this.asInterface(uuid("4d1e6461-84f7-499d-bd91-2a36e2b7aaa2"))).set_IsContactFeedbackEnabled(value));
@@ -1515,7 +1515,7 @@ extern(Windows):
 
 interface RadialController : Windows.UI.Input.IRadialController, Windows.UI.Input.IRadialController2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerMenu Menu()
 	{
 		Windows.UI.Input.RadialControllerMenu _ret;
@@ -1665,7 +1665,7 @@ extern(Windows):
 
 interface RadialControllerButtonClickedEventArgs : Windows.UI.Input.IRadialControllerButtonClickedEventArgs, Windows.UI.Input.IRadialControllerButtonClickedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1682,7 +1682,7 @@ extern(Windows):
 
 interface RadialControllerButtonHoldingEventArgs : Windows.UI.Input.IRadialControllerButtonHoldingEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1699,7 +1699,7 @@ extern(Windows):
 
 interface RadialControllerButtonPressedEventArgs : Windows.UI.Input.IRadialControllerButtonPressedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1716,7 +1716,7 @@ extern(Windows):
 
 interface RadialControllerButtonReleasedEventArgs : Windows.UI.Input.IRadialControllerButtonReleasedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1733,7 +1733,7 @@ extern(Windows):
 
 interface RadialControllerConfiguration : Windows.UI.Input.IRadialControllerConfiguration, Windows.UI.Input.IRadialControllerConfiguration2
 {
-extern(Windows):
+extern(D):
 	final void SetDefaultMenuItems(Windows.Foundation.Collections.IIterable!(Windows.UI.Input.RadialControllerSystemMenuItemKind) buttons)
 	{
 		Debug.OK((cast(Windows.UI.Input.IRadialControllerConfiguration)this.asInterface(uuid("a6b79ecb-6a52-4430-910c-56370a9d6b42"))).abi_SetDefaultMenuItems(buttons));
@@ -1785,7 +1785,7 @@ extern(Windows):
 
 interface RadialControllerControlAcquiredEventArgs : Windows.UI.Input.IRadialControllerControlAcquiredEventArgs, Windows.UI.Input.IRadialControllerControlAcquiredEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1808,7 +1808,7 @@ extern(Windows):
 
 interface RadialControllerMenu : Windows.UI.Input.IRadialControllerMenu
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(Windows.UI.Input.RadialControllerMenuItem) Items()
 	{
 		Windows.Foundation.Collections.IVector!(Windows.UI.Input.RadialControllerMenuItem) _ret;
@@ -1845,7 +1845,7 @@ extern(Windows):
 
 interface RadialControllerMenuItem : Windows.UI.Input.IRadialControllerMenuItem
 {
-extern(Windows):
+extern(D):
 	final wstring DisplayText()
 	{
 		HSTRING _ret;
@@ -1895,7 +1895,7 @@ extern(Windows):
 
 interface RadialControllerRotationChangedEventArgs : Windows.UI.Input.IRadialControllerRotationChangedEventArgs, Windows.UI.Input.IRadialControllerRotationChangedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final double RotationDeltaInDegrees()
 	{
 		double _ret;
@@ -1924,7 +1924,7 @@ extern(Windows):
 
 interface RadialControllerScreenContact : Windows.UI.Input.IRadialControllerScreenContact
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Rect Bounds()
 	{
 		Windows.Foundation.Rect _ret;
@@ -1941,7 +1941,7 @@ extern(Windows):
 
 interface RadialControllerScreenContactContinuedEventArgs : Windows.UI.Input.IRadialControllerScreenContactContinuedEventArgs, Windows.UI.Input.IRadialControllerScreenContactContinuedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -1964,7 +1964,7 @@ extern(Windows):
 
 interface RadialControllerScreenContactEndedEventArgs : Windows.UI.Input.IRadialControllerScreenContactEndedEventArgs
 {
-extern(Windows):
+extern(D):
 	final bool IsButtonPressed()
 	{
 		bool _ret;
@@ -1981,7 +1981,7 @@ extern(Windows):
 
 interface RadialControllerScreenContactStartedEventArgs : Windows.UI.Input.IRadialControllerScreenContactStartedEventArgs, Windows.UI.Input.IRadialControllerScreenContactStartedEventArgs2
 {
-extern(Windows):
+extern(D):
 	final Windows.UI.Input.RadialControllerScreenContact Contact()
 	{
 		Windows.UI.Input.RadialControllerScreenContact _ret;
@@ -2004,7 +2004,7 @@ extern(Windows):
 
 interface RightTappedEventArgs : Windows.UI.Input.IRightTappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;
@@ -2021,7 +2021,7 @@ extern(Windows):
 
 interface TappedEventArgs : Windows.UI.Input.ITappedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Input.PointerDeviceType PointerDeviceType()
 	{
 		Windows.Devices.Input.PointerDeviceType _ret;

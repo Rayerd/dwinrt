@@ -49,7 +49,7 @@ extern(Windows):
 
 interface PreallocatedWorkItem : Windows.System.Threading.Core.IPreallocatedWorkItem
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncAction RunAsync()
 	{
 		Windows.Foundation.IAsyncAction _ret;
@@ -81,7 +81,7 @@ extern(Windows):
 
 interface SignalNotifier : Windows.System.Threading.Core.ISignalNotifier
 {
-extern(Windows):
+extern(D):
 	final void Enable()
 	{
 		Debug.OK((cast(Windows.System.Threading.Core.ISignalNotifier)this.asInterface(uuid("14285e06-63a7-4713-b6d9-62f64b56fb8b"))).abi_Enable());

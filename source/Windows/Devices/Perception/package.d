@@ -1041,7 +1041,7 @@ interface KnownPerceptionVideoProfileProperties
 
 interface PerceptionColorFrame : Windows.Devices.Perception.IPerceptionColorFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrame may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.VideoMediaFrame instead.")
 	final Windows.Media.VideoFrame VideoFrame()
 	{
@@ -1057,7 +1057,7 @@ extern(Windows):
 
 interface PerceptionColorFrameArrivedEventArgs : Windows.Devices.Perception.IPerceptionColorFrameArrivedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameArrivedEventArgs may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.MediaFrameArrivedEventArgs instead.")
 	final Windows.Foundation.TimeSpan RelativeTime()
 	{
@@ -1076,7 +1076,7 @@ extern(Windows):
 
 interface PerceptionColorFrameReader : Windows.Devices.Perception.IPerceptionColorFrameReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameReader may be unavailable after Windows Creator Update.	 Use Windows.Media.Capture.Frames.MediaFrameReader instead.")
 	final EventRegistrationToken OnFrameArrived(void delegate(Windows.Devices.Perception.PerceptionColorFrameReader, Windows.Devices.Perception.PerceptionColorFrameArrivedEventArgs) fn)
 	{
@@ -1123,7 +1123,7 @@ extern(Windows):
 
 interface PerceptionColorFrameSource : Windows.Devices.Perception.IPerceptionColorFrameSource, Windows.Devices.Perception.IPerceptionColorFrameSource2
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameSource may be unavailable after Windows Creator Update.	 Use Windows.Media.Capture.Frames.MediaFrameSource instead.")
 	final EventRegistrationToken OnAvailableChanged(void delegate(Windows.Devices.Perception.PerceptionColorFrameSource, IInspectable) fn)
 	{
@@ -1363,7 +1363,7 @@ extern(Windows):
 
 interface PerceptionColorFrameSourceAddedEventArgs : Windows.Devices.Perception.IPerceptionColorFrameSourceAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameSourceAddedEventArgs may be unavailable after Windows Creator Update.  Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionColorFrameSource FrameSource()
 	{
@@ -1375,7 +1375,7 @@ extern(Windows):
 
 interface PerceptionColorFrameSourceRemovedEventArgs : Windows.Devices.Perception.IPerceptionColorFrameSourceRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameSourceRemovedEventArgs may be unavailable after Windows Creator Update.	 Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionColorFrameSource FrameSource()
 	{
@@ -1387,7 +1387,7 @@ extern(Windows):
 
 interface PerceptionColorFrameSourceWatcher : Windows.Devices.Perception.IPerceptionColorFrameSourceWatcher
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionColorFrameSourceWatcher may be unavailable after Windows Creator Update.	Use Windows.Devices.Enumeration.DeviceWatcher instead.")
 	final EventRegistrationToken OnSourceAdded(void delegate(Windows.Devices.Perception.PerceptionColorFrameSourceWatcher, Windows.Devices.Perception.PerceptionColorFrameSourceAddedEventArgs) fn)
 	{
@@ -1457,7 +1457,7 @@ extern(Windows):
 
 interface PerceptionControlSession : Windows.Devices.Perception.IPerceptionControlSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionControlSession may be unavailable after Windows Creator Update.  Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final EventRegistrationToken OnControlLost(void delegate(Windows.Devices.Perception.PerceptionControlSession, IInspectable) fn)
 	{
@@ -1485,7 +1485,7 @@ extern(Windows):
 
 interface PerceptionDepthCorrelatedCameraIntrinsics : Windows.Devices.Perception.IPerceptionDepthCorrelatedCameraIntrinsics
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthCorrelatedCameraIntrinsics may be unavailable after Windows Creator Update.	Use Windows.Media.Devices.Core.DepthCorrelatedCoordinateMapper instead.")
 	final Windows.Foundation.Numerics.Vector3 UnprojectPixelAtCorrelatedDepth(Windows.Foundation.Point pixelCoordinate, Windows.Devices.Perception.PerceptionDepthFrame depthFrame)
 	{
@@ -1516,7 +1516,7 @@ extern(Windows):
 
 interface PerceptionDepthCorrelatedCoordinateMapper : Windows.Devices.Perception.IPerceptionDepthCorrelatedCoordinateMapper
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthCorrelatedCoordinateMapper may be unavailable after Windows Creator Update.	Use Windows.Media.Devices.Core.DepthCorrelatedCoordinateMapper instead.")
 	final Windows.Foundation.Point MapPixelToTarget(Windows.Foundation.Point sourcePixelCoordinate, Windows.Devices.Perception.PerceptionDepthFrame depthFrame)
 	{
@@ -1547,7 +1547,7 @@ extern(Windows):
 
 interface PerceptionDepthFrame : Windows.Devices.Perception.IPerceptionDepthFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrame may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.DepthMediaFrame instead.")
 	final Windows.Media.VideoFrame VideoFrame()
 	{
@@ -1563,7 +1563,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameArrivedEventArgs : Windows.Devices.Perception.IPerceptionDepthFrameArrivedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameArrivedEventArgs may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.MediaFrameArrivedEventArgs instead.")
 	final Windows.Foundation.TimeSpan RelativeTime()
 	{
@@ -1582,7 +1582,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameReader : Windows.Devices.Perception.IPerceptionDepthFrameReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameReader may be unavailable after Windows Creator Update.	 Use Windows.Media.Capture.Frames.MediaFrameReader instead.")
 	final EventRegistrationToken OnFrameArrived(void delegate(Windows.Devices.Perception.PerceptionDepthFrameReader, Windows.Devices.Perception.PerceptionDepthFrameArrivedEventArgs) fn)
 	{
@@ -1629,7 +1629,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameSource : Windows.Devices.Perception.IPerceptionDepthFrameSource, Windows.Devices.Perception.IPerceptionDepthFrameSource2
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameSource may be unavailable after Windows Creator Update.	 Use Windows.Media.Capture.Frames.MediaFrameSource instead.")
 	final EventRegistrationToken OnAvailableChanged(void delegate(Windows.Devices.Perception.PerceptionDepthFrameSource, IInspectable) fn)
 	{
@@ -1869,7 +1869,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameSourceAddedEventArgs : Windows.Devices.Perception.IPerceptionDepthFrameSourceAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameSourceAddedEventArgs may be unavailable after Windows Creator Update.  Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionDepthFrameSource FrameSource()
 	{
@@ -1881,7 +1881,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameSourceRemovedEventArgs : Windows.Devices.Perception.IPerceptionDepthFrameSourceRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameSourceRemovedEventArgs may be unavailable after Windows Creator Update.	 Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionDepthFrameSource FrameSource()
 	{
@@ -1893,7 +1893,7 @@ extern(Windows):
 
 interface PerceptionDepthFrameSourceWatcher : Windows.Devices.Perception.IPerceptionDepthFrameSourceWatcher
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionDepthFrameSourceWatcher may be unavailable after Windows Creator Update.	Use Windows.Devices.Enumeration.DeviceWatcher instead.")
 	final EventRegistrationToken OnSourceAdded(void delegate(Windows.Devices.Perception.PerceptionDepthFrameSourceWatcher, Windows.Devices.Perception.PerceptionDepthFrameSourceAddedEventArgs) fn)
 	{
@@ -1963,7 +1963,7 @@ extern(Windows):
 
 interface PerceptionFrameSourcePropertiesChangedEventArgs : Windows.Devices.Perception.IPerceptionFrameSourcePropertiesChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionFrameSourcePropertiesChangedEventArgs may be unavailable after Windows Creator Update.  Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Foundation.Collections.CollectionChange CollectionChange()
 	{
@@ -1982,7 +1982,7 @@ extern(Windows):
 
 interface PerceptionFrameSourcePropertyChangeResult : Windows.Devices.Perception.IPerceptionFrameSourcePropertyChangeResult
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionFrameSourcePropertyChangeResult may be unavailable after Windows Creator Update.	Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus Status()
 	{
@@ -2001,7 +2001,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrame : Windows.Devices.Perception.IPerceptionInfraredFrame, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrame may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.InfraredMediaFrame instead.")
 	final Windows.Media.VideoFrame VideoFrame()
 	{
@@ -2017,7 +2017,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameArrivedEventArgs : Windows.Devices.Perception.IPerceptionInfraredFrameArrivedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameArrivedEventArgs may be unavailable after Windows Creator Update.  Use Windows.Media.Capture.Frames.MediaFrameArrivedEventArgs instead.")
 	final Windows.Foundation.TimeSpan RelativeTime()
 	{
@@ -2036,7 +2036,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameReader : Windows.Devices.Perception.IPerceptionInfraredFrameReader, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameReader may be unavailable after Windows Creator Update.	Use Windows.Media.Capture.Frames.MediaFrameReader instead.")
 	final EventRegistrationToken OnFrameArrived(void delegate(Windows.Devices.Perception.PerceptionInfraredFrameReader, Windows.Devices.Perception.PerceptionInfraredFrameArrivedEventArgs) fn)
 	{
@@ -2083,7 +2083,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameSource : Windows.Devices.Perception.IPerceptionInfraredFrameSource, Windows.Devices.Perception.IPerceptionInfraredFrameSource2
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameSource may be unavailable after Windows Creator Update.	Use Windows.Media.Capture.Frames.MediaFrameSource instead.")
 	final EventRegistrationToken OnAvailableChanged(void delegate(Windows.Devices.Perception.PerceptionInfraredFrameSource, IInspectable) fn)
 	{
@@ -2323,7 +2323,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameSourceAddedEventArgs : Windows.Devices.Perception.IPerceptionInfraredFrameSourceAddedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameSourceAddedEventArgs may be unavailable after Windows Creator Update.  Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionInfraredFrameSource FrameSource()
 	{
@@ -2335,7 +2335,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameSourceRemovedEventArgs : Windows.Devices.Perception.IPerceptionInfraredFrameSourceRemovedEventArgs
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameSourceRemovedEventArgs may be unavailable after Windows Creator Update.	Please refer to Windows.Media.Capture.Frames APIs on MSDN.")
 	final Windows.Devices.Perception.PerceptionInfraredFrameSource FrameSource()
 	{
@@ -2347,7 +2347,7 @@ extern(Windows):
 
 interface PerceptionInfraredFrameSourceWatcher : Windows.Devices.Perception.IPerceptionInfraredFrameSourceWatcher
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionInfraredFrameSourceWatcher may be unavailable after Windows Creator Update.  Use Windows.Devices.Enumeration.DeviceWatcher instead.")
 	final EventRegistrationToken OnSourceAdded(void delegate(Windows.Devices.Perception.PerceptionInfraredFrameSourceWatcher, Windows.Devices.Perception.PerceptionInfraredFrameSourceAddedEventArgs) fn)
 	{
@@ -2417,7 +2417,7 @@ extern(Windows):
 
 interface PerceptionVideoProfile : Windows.Devices.Perception.IPerceptionVideoProfile
 {
-extern(Windows):
+extern(D):
 	deprecated("PerceptionVideoProfile may be unavailable after Windows Creator Update.	 Use Windows.Media.Capture.Frames.MediaFrameFormat instead.")
 	final Windows.Graphics.Imaging.BitmapPixelFormat BitmapPixelFormat()
 	{

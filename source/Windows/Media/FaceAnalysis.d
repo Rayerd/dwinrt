@@ -59,7 +59,7 @@ extern(Windows):
 
 interface DetectedFace : Windows.Media.FaceAnalysis.IDetectedFace
 {
-extern(Windows):
+extern(D):
 	final Windows.Graphics.Imaging.BitmapBounds FaceBox()
 	{
 		Windows.Graphics.Imaging.BitmapBounds _ret;
@@ -70,7 +70,7 @@ extern(Windows):
 
 interface FaceDetector : Windows.Media.FaceAnalysis.IFaceDetector
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVector!(Windows.Media.FaceAnalysis.DetectedFace)) DetectFacesAsync(Windows.Graphics.Imaging.SoftwareBitmap image)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVector!(Windows.Media.FaceAnalysis.DetectedFace)) _ret;
@@ -139,7 +139,7 @@ extern(Windows):
 
 interface FaceTracker : Windows.Media.FaceAnalysis.IFaceTracker
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVector!(Windows.Media.FaceAnalysis.DetectedFace)) ProcessNextFrameAsync(Windows.Media.VideoFrame videoFrame)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVector!(Windows.Media.FaceAnalysis.DetectedFace)) _ret;

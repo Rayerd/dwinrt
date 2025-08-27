@@ -126,7 +126,7 @@ extern(Windows):
 
 interface ImageScanner : Windows.Devices.Scanners.IImageScanner
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -204,7 +204,7 @@ extern(Windows):
 
 interface ImageScannerAutoConfiguration : Windows.Devices.Scanners.IImageScannerFormatConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Scanners.ImageScannerFormat DefaultFormat()
 	{
 		Windows.Devices.Scanners.ImageScannerFormat _ret;
@@ -231,7 +231,7 @@ extern(Windows):
 
 interface ImageScannerFeederConfiguration : Windows.Devices.Scanners.IImageScannerFormatConfiguration, Windows.Devices.Scanners.IImageScannerSourceConfiguration, Windows.Devices.Scanners.IImageScannerFeederConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Scanners.ImageScannerFormat DefaultFormat()
 	{
 		Windows.Devices.Scanners.ImageScannerFormat _ret;
@@ -510,7 +510,7 @@ extern(Windows):
 
 interface ImageScannerFlatbedConfiguration : Windows.Devices.Scanners.IImageScannerFormatConfiguration, Windows.Devices.Scanners.IImageScannerSourceConfiguration
 {
-extern(Windows):
+extern(D):
 	final Windows.Devices.Scanners.ImageScannerFormat DefaultFormat()
 	{
 		Windows.Devices.Scanners.ImageScannerFormat _ret;
@@ -699,7 +699,7 @@ extern(Windows):
 
 interface ImageScannerPreviewResult : Windows.Devices.Scanners.IImageScannerPreviewResult
 {
-extern(Windows):
+extern(D):
 	final bool Succeeded()
 	{
 		bool _ret;
@@ -716,7 +716,7 @@ extern(Windows):
 
 interface ImageScannerScanResult : Windows.Devices.Scanners.IImageScannerScanResult
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile) ScannedFiles()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Storage.StorageFile) _ret;

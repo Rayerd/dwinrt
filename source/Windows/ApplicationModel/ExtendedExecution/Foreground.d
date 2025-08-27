@@ -29,7 +29,7 @@ interface IExtendedExecutionForegroundSession : IExtendedExecutionForegroundSess
 
 interface ExtendedExecutionForegroundRevokedEventArgs : Windows.ApplicationModel.ExtendedExecution.Foreground.IExtendedExecutionForegroundRevokedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason Reason()
 	{
 		Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason _ret;
@@ -40,7 +40,7 @@ extern(Windows):
 
 interface ExtendedExecutionForegroundSession : Windows.ApplicationModel.ExtendedExecution.Foreground.IExtendedExecutionForegroundSession, Windows.Foundation.IClosable
 {
-extern(Windows):
+extern(D):
 	final wstring Description()
 	{
 		HSTRING _ret;

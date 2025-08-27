@@ -513,7 +513,7 @@ extern(Windows):
 
 interface Certificate : Windows.Security.Cryptography.Certificates.ICertificate, Windows.Security.Cryptography.Certificates.ICertificate2, Windows.Security.Cryptography.Certificates.ICertificate3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Security.Cryptography.Certificates.CertificateChain) BuildChainAsync(Windows.Foundation.Collections.IIterable!(Windows.Security.Cryptography.Certificates.Certificate) certificates)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Security.Cryptography.Certificates.CertificateChain) _ret;
@@ -669,7 +669,7 @@ extern(Windows):
 
 interface CertificateChain : Windows.Security.Cryptography.Certificates.ICertificateChain
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.ChainValidationResult Validate()
 	{
 		Windows.Security.Cryptography.Certificates.ChainValidationResult _ret;
@@ -721,7 +721,7 @@ interface CertificateEnrollmentManager
 
 interface CertificateExtension : Windows.Security.Cryptography.Certificates.ICertificateExtension
 {
-extern(Windows):
+extern(D):
 	final wstring ObjectId()
 	{
 		HSTRING _ret;
@@ -766,7 +766,7 @@ extern(Windows):
 
 interface CertificateKeyUsages : Windows.Security.Cryptography.Certificates.ICertificateKeyUsages
 {
-extern(Windows):
+extern(D):
 	final bool EncipherOnly()
 	{
 		bool _ret;
@@ -857,7 +857,7 @@ extern(Windows):
 
 interface CertificateQuery : Windows.Security.Cryptography.Certificates.ICertificateQuery, Windows.Security.Cryptography.Certificates.ICertificateQuery2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) EnhancedKeyUsages()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -944,7 +944,7 @@ extern(Windows):
 
 interface CertificateRequestProperties : Windows.Security.Cryptography.Certificates.ICertificateRequestProperties, Windows.Security.Cryptography.Certificates.ICertificateRequestProperties2, Windows.Security.Cryptography.Certificates.ICertificateRequestProperties3, Windows.Security.Cryptography.Certificates.ICertificateRequestProperties4
 {
-extern(Windows):
+extern(D):
 	final wstring Subject()
 	{
 		HSTRING _ret;
@@ -1143,7 +1143,7 @@ extern(Windows):
 
 interface CertificateStore : Windows.Security.Cryptography.Certificates.ICertificateStore, Windows.Security.Cryptography.Certificates.ICertificateStore2
 {
-extern(Windows):
+extern(D):
 	final void Add(Windows.Security.Cryptography.Certificates.Certificate certificate)
 	{
 		Debug.OK((cast(Windows.Security.Cryptography.Certificates.ICertificateStore)this.asInterface(uuid("b0bff720-344e-4331-af14-a7f7a7ebc93a"))).abi_Add(certificate));
@@ -1203,7 +1203,7 @@ interface CertificateStores
 
 interface ChainBuildingParameters : Windows.Security.Cryptography.Certificates.IChainBuildingParameters
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVector!(HSTRING) EnhancedKeyUsages()
 	{
 		Windows.Foundation.Collections.IVector!(HSTRING) _ret;
@@ -1276,7 +1276,7 @@ extern(Windows):
 
 interface ChainValidationParameters : Windows.Security.Cryptography.Certificates.IChainValidationParameters
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.CertificateChainPolicy CertificateChainPolicy()
 	{
 		Windows.Security.Cryptography.Certificates.CertificateChainPolicy _ret;
@@ -1307,7 +1307,7 @@ extern(Windows):
 
 interface CmsAttachedSignature : Windows.Security.Cryptography.Certificates.ICmsAttachedSignature
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Cryptography.Certificates.Certificate) Certificates()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Cryptography.Certificates.Certificate) _ret;
@@ -1356,7 +1356,7 @@ extern(Windows):
 
 interface CmsDetachedSignature : Windows.Security.Cryptography.Certificates.ICmsDetachedSignature
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(Windows.Security.Cryptography.Certificates.Certificate) Certificates()
 	{
 		Windows.Foundation.Collections.IVectorView!(Windows.Security.Cryptography.Certificates.Certificate) _ret;
@@ -1399,7 +1399,7 @@ extern(Windows):
 
 interface CmsSignerInfo : Windows.Security.Cryptography.Certificates.ICmsSignerInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.Certificate Certificate()
 	{
 		Windows.Security.Cryptography.Certificates.Certificate _ret;
@@ -1436,7 +1436,7 @@ extern(Windows):
 
 interface CmsTimestampInfo : Windows.Security.Cryptography.Certificates.ICmsTimestampInfo
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.Certificate SigningCertificate()
 	{
 		Windows.Security.Cryptography.Certificates.Certificate _ret;
@@ -1567,7 +1567,7 @@ interface KeyStorageProviderNames
 
 interface PfxImportParameters : Windows.Security.Cryptography.Certificates.IPfxImportParameters
 {
-extern(Windows):
+extern(D):
 	final Windows.Security.Cryptography.Certificates.ExportOption Exportable()
 	{
 		Windows.Security.Cryptography.Certificates.ExportOption _ret;
@@ -1676,7 +1676,7 @@ interface StandardCertificateStoreNames
 
 interface SubjectAlternativeNameInfo : Windows.Security.Cryptography.Certificates.ISubjectAlternativeNameInfo, Windows.Security.Cryptography.Certificates.ISubjectAlternativeNameInfo2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Collections.IVectorView!(HSTRING) EmailName()
 	{
 		Windows.Foundation.Collections.IVectorView!(HSTRING) _ret;
@@ -1765,7 +1765,7 @@ extern(Windows):
 
 interface UserCertificateEnrollmentManager : Windows.Security.Cryptography.Certificates.IUserCertificateEnrollmentManager, Windows.Security.Cryptography.Certificates.IUserCertificateEnrollmentManager2
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(HSTRING) CreateRequestAsync(Windows.Security.Cryptography.Certificates.CertificateRequestProperties request)
 	{
 		Windows.Foundation.IAsyncOperation!(HSTRING) _ret;
@@ -1802,7 +1802,7 @@ extern(Windows):
 
 interface UserCertificateStore : Windows.Security.Cryptography.Certificates.IUserCertificateStore
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(bool) RequestAddAsync(Windows.Security.Cryptography.Certificates.Certificate certificate)
 	{
 		Windows.Foundation.IAsyncOperation!(bool) _ret;

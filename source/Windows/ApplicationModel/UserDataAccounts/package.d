@@ -132,7 +132,7 @@ extern(Windows):
 
 interface UserDataAccount : Windows.ApplicationModel.UserDataAccounts.IUserDataAccount, Windows.ApplicationModel.UserDataAccounts.IUserDataAccount2, Windows.ApplicationModel.UserDataAccounts.IUserDataAccount3, Windows.ApplicationModel.UserDataAccounts.IUserDataAccount4
 {
-extern(Windows):
+extern(D):
 	final wstring Id()
 	{
 		HSTRING _ret;
@@ -321,7 +321,7 @@ interface UserDataAccountManager
 
 interface UserDataAccountManagerForUser : Windows.ApplicationModel.UserDataAccounts.IUserDataAccountManagerForUser
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore) RequestStoreAsync(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType storeAccessType)
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore) _ret;
@@ -338,7 +338,7 @@ extern(Windows):
 
 interface UserDataAccountStore : Windows.ApplicationModel.UserDataAccounts.IUserDataAccountStore, Windows.ApplicationModel.UserDataAccounts.IUserDataAccountStore2, Windows.ApplicationModel.UserDataAccounts.IUserDataAccountStore3
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.UserDataAccounts.UserDataAccount)) FindAccountsAsync()
 	{
 		Windows.Foundation.IAsyncOperation!(Windows.Foundation.Collections.IVectorView!(Windows.ApplicationModel.UserDataAccounts.UserDataAccount)) _ret;
@@ -385,7 +385,7 @@ extern(Windows):
 
 interface UserDataAccountStoreChangedEventArgs : Windows.ApplicationModel.UserDataAccounts.IUserDataAccountStoreChangedEventArgs
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.Deferral GetDeferral()
 	{
 		Windows.Foundation.Deferral _ret;

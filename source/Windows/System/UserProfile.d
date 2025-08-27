@@ -153,7 +153,7 @@ interface AdvertisingManager
 
 interface AdvertisingManagerForUser : Windows.System.UserProfile.IAdvertisingManagerForUser
 {
-extern(Windows):
+extern(D):
 	final wstring AdvertisingId()
 	{
 		HSTRING _ret;
@@ -170,7 +170,7 @@ extern(Windows):
 
 interface DiagnosticsSettings : Windows.System.UserProfile.IDiagnosticsSettings
 {
-extern(Windows):
+extern(D):
 	final bool CanUseDiagnosticsToTailorExperiences()
 	{
 		bool _ret;
@@ -206,7 +206,7 @@ extern(Windows):
 
 interface FirstSignInSettings : Windows.System.UserProfile.IFirstSignInSettings, Windows.Foundation.Collections.IMapView!(HSTRING, IInspectable), Windows.Foundation.Collections.IIterable!(Windows.Foundation.Collections.IKeyValuePair!(HSTRING, IInspectable))
 {
-extern(Windows):
+extern(D):
 	final  IInspectable Lookup(wstring key)
 	{
 		 IInspectable _ret;
@@ -416,7 +416,7 @@ interface UserInformation
 
 interface UserProfilePersonalizationSettings : Windows.System.UserProfile.IUserProfilePersonalizationSettings
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IAsyncOperation!(bool) TrySetLockScreenImageAsync(Windows.Storage.StorageFile imageFile)
 	{
 		Windows.Foundation.IAsyncOperation!(bool) _ret;

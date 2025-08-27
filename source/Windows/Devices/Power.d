@@ -37,7 +37,7 @@ extern(Windows):
 
 interface Battery : Windows.Devices.Power.IBattery
 {
-extern(Windows):
+extern(D):
 	final wstring DeviceId()
 	{
 		HSTRING _ret;
@@ -89,7 +89,7 @@ extern(Windows):
 
 interface BatteryReport : Windows.Devices.Power.IBatteryReport
 {
-extern(Windows):
+extern(D):
 	final Windows.Foundation.IReference!(INT32) ChargeRateInMilliwatts()
 	{
 		Windows.Foundation.IReference!(INT32) _ret;
